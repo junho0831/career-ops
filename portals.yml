@@ -1,0 +1,111 @@
+# Portal Scanner Configuration
+# Focused on Korean Backend Engineering roles (practical matching, not overly strict)
+
+title_filter:
+  positive:
+    - "Backend"
+    - "Back-end"
+    - "Server"
+    - "백엔드"
+    - "서버"
+    - "Software Engineer"
+    - "API"
+    - "REST"
+    - "Node.js"
+    - "Python"
+    - "Go"
+    - "Golang"
+    - "Kotlin"
+    - "Java "
+    - "Spring"
+    - "Spring Boot"
+    - "JPA"
+    - "MySQL"
+    - "Redis"
+  negative:
+    # Filter out non-backend roles
+    - "Frontend"
+    - "프론트엔드"
+    - "iOS"
+    - "Android"
+    - "QA"
+    - "Data Engineer"
+    - "Machine Learning"
+    - "ML"
+    - "Data Scientist"
+    - "Security Engineer"
+    - "Sales"
+    - "HR"
+    - "Marketing"
+    - "Recruiter"
+    - "Product Manager"
+    - "Design"
+    - "UX"
+    - "Blockchain"
+    - "Web3"
+    - "Crypto"
+    
+    # Filter out wrong seniority (Junior/Intern)
+    - "Junior"
+    - "Intern"
+    - "인턴"
+    - "신입"
+    
+  seniority_boost:
+    - "Senior"
+    - "Sr"
+    - "Mid"
+    - "Mid-level"
+    - "미들"
+
+search_queries:
+  - name: Lever — Korea Backend
+    query: 'site:jobs.lever.co "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+    enabled: true
+    
+  - name: Greenhouse — Korea Backend
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+    enabled: true
+
+  - name: Ashby — Korea Backend
+    query: 'site:jobs.ashbyhq.com "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+    enabled: true
+
+  - name: Workable — Korea Backend
+    query: 'site:apply.workable.com "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+    enabled: true
+
+  - name: Wellfound — Korea Backend
+    query: 'site:wellfound.com "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+    enabled: true
+
+tracked_companies:
+  - name: Sendbird
+    careers_url: https://boards.greenhouse.io/sendbird
+    api: https://boards-api.greenhouse.io/v1/boards/sendbird/jobs
+    enabled: true
+
+  - name: Coupang
+    careers_url: https://boards.greenhouse.io/coupang
+    api: https://boards-api.greenhouse.io/v1/boards/coupang/jobs
+    enabled: true
+
+  - name: Krafton
+    careers_url: https://boards.greenhouse.io/krafton
+    api: https://boards-api.greenhouse.io/v1/boards/krafton/jobs
+    enabled: true
+
+  - name: Moloco
+    careers_url: https://job-boards.greenhouse.io/moloco
+    api: https://boards-api.greenhouse.io/v1/boards/moloco/jobs
+    enabled: true
+
+  - name: Riiid
+    careers_url: https://boards.greenhouse.io/riiid
+    api: https://boards-api.greenhouse.io/v1/boards/riiid/jobs
+    enabled: true
+
+  - name: Lunit
+    careers_url: https://job-boards.greenhouse.io/lunit
+    api: https://boards-api.greenhouse.io/v1/boards/lunit/jobs
+    enabled: true

@@ -1,0 +1,66 @@
+candidate:
+  full_name: "박준호"
+  email: "junho6667@gmail.com"
+  phone: "010-3525-6275"
+  location: "South Korea"
+  linkedin: ""
+  portfolio_url: ""
+  github: "https://github.com/junho0831"
+  twitter: ""
+  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
+  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
+  # The ID starts with "D" and is 11 characters long.
+  # canva_resume_design_id: "DAxxxxxxxxx"
+
+target_roles:
+  primary:
+    - "Backend Engineer"
+    - "Platform Engineer"
+    - "Data / Batch Backend Engineer"
+  archetypes:
+    - name: "Backend Engineer"
+      level: "Mid"
+      fit: "primary"
+    - name: "Platform / Reliability Engineer"
+      level: "Mid"
+      fit: "secondary"
+    - name: "Data / Batch Backend Engineer"
+      level: "Mid"
+      fit: "secondary"
+    - name: "Search / Integration Backend Engineer"
+      level: "Mid"
+      fit: "adjacent"
+
+narrative:
+  headline: "Backend engineer who reduces operational risk with measurable improvements"
+  exit_story: "Owns the full backend lifecycle from design to deployment and turns fragile workflows into reliable systems with clear operational metrics."
+  superpowers:
+    - "End-to-end backend ownership across design, implementation, deployment, and operations"
+    - "Operational risk reduction through automation, fallback design, and idempotent processing"
+    - "Metric-driven debugging, refactoring, and reliability improvement"
+    - "Auth and session consistency design with Redis, JWT, and OAuth2"
+  proof_points:
+    - name: "CI/CD automation at Hecto KMS"
+      url: ""
+      hero_metric: "Reduced release lead time from 1 hour to 25 minutes and cut deployment failures from 5% to 0%"
+    - name: "Shared exception handling and tests at NCELL SMIP"
+      url: ""
+      hero_metric: "Reduced incident analysis lead time from 40 minutes to 12 minutes and lowered recurring errors by 30%"
+    - name: "Airflow batch migration at NCELL Prism"
+      url: ""
+      hero_metric: "Built duplicate-free reruns and selective failed-file reprocessing for a recurring file batch"
+    - name: "RAG search at Hecto SmartQ"
+      url: ""
+      hero_metric: "Improved answer accuracy from 60% to 80%, reduced wait time from 5 minutes to 1 minute, and saved 12 hours per week"
+
+compensation:
+  target_range: ""
+  currency: ""
+  minimum: ""
+  location_flexibility: ""
+
+location:
+  country: "South Korea"
+  city: ""
+  timezone: "Asia/Seoul"
+  visa_status: ""
