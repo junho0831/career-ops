@@ -8,7 +8,6 @@ title_filter:
     - "Server"
     - "백엔드"
     - "서버"
-    - "Software Engineer"
     - "API"
     - "REST"
     - "Node.js"
@@ -34,6 +33,7 @@ title_filter:
     - "ML"
     - "Data Scientist"
     - "Security Engineer"
+    - "Software Engineer, Data"
     - "Sales"
     - "HR"
     - "Marketing"
@@ -50,6 +50,15 @@ title_filter:
     - "Intern"
     - "인턴"
     - "신입"
+    - "Senior"
+    - "Sr"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Manager"
+    - "Director"
+    - "Head"
+    - "팀장"
     
   seniority_boost:
     - "Senior"
@@ -100,12 +109,17 @@ tracked_companies:
     api: https://boards-api.greenhouse.io/v1/boards/moloco/jobs
     enabled: true
 
+  - name: Daangn
+    careers_url: https://job-boards.greenhouse.io/daangn
+    api: https://boards-api.greenhouse.io/v1/boards/daangn/jobs
+    enabled: true
+
   - name: Riiid
     careers_url: https://boards.greenhouse.io/riiid
     api: https://boards-api.greenhouse.io/v1/boards/riiid/jobs
-    enabled: true
+    enabled: false
 
   - name: Lunit
     careers_url: https://job-boards.greenhouse.io/lunit
     api: https://boards-api.greenhouse.io/v1/boards/lunit/jobs
-    enabled: true
+    enabled: false
