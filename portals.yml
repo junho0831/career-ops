@@ -59,6 +59,8 @@ title_filter:
     - "Director"
     - "Head"
     - "팀장"
+    - "Expression of Interest"
+    - "채용관심등록"
     
   seniority_boost:
     - "Senior"
@@ -112,6 +114,11 @@ tracked_companies:
   - name: Daangn
     careers_url: https://job-boards.greenhouse.io/daangn
     api: https://boards-api.greenhouse.io/v1/boards/daangn/jobs
+    enabled: true
+
+  - name: Naver Cafe Workhub
+    careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L
+    api: https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/31258781/menus/8/articles?perPage=100&page=1
     enabled: true
 
   - name: Riiid

@@ -32,6 +32,11 @@ const FETCH_TIMEOUT_MS = 10_000;
 // ── API detection ───────────────────────────────────────────────────
 
 function detectApi(company) {
+  // Naver Cafe board list API
+  if (company.api && company.api.includes('cafe-boardlist-api')) {
+    return { type: 'naver-cafe', url: company.api };
+  }
+
   // Greenhouse: explicit api field
   if (company.api && company.api.includes('greenhouse')) {
     return { type: 'greenhouse', url: company.api };
@@ -101,7 +106,29 @@ function parseLever(json, companyName) {
   }));
 }
 
-const PARSERS = { greenhouse: parseGreenhouse, ashby: parseAshby, lever: parseLever };
+function parseNaverCafe(json, companyName) {
+  const rows = json?.result?.articleList || [];
+  return rows
+    .filter(row => row?.type === 'ARTICLE' && row?.item?.articleId)
+    .map(row => {
+      const item = row.item;
+      const cafeId = item.cafeId || '';
+      const articleId = item.articleId || '';
+      return {
+        title: item.subject || '',
+        url: `https://cafe.naver.com/f-e/cafes/${cafeId}/articles/${articleId}`,
+        company: companyName,
+        location: item.headName || '',
+      };
+    });
+}
+
+const PARSERS = {
+  greenhouse: parseGreenhouse,
+  ashby: parseAshby,
+  lever: parseLever,
+  'naver-cafe': parseNaverCafe,
+};
 
 // ── Fetch with timeout ──────────────────────────────────────────────
 

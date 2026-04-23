@@ -19,3 +19,8 @@
 - [x] https://about.daangn.com?gh_jid=5046759003 | Daangn | Software Engineer, Backend - 서비스 코어 (Identity Service)
 - [x] https://about.daangn.com?gh_jid=7675338003 | Daangn | Software Engineer, Backend - 로컬 잡스 (Lessons & Tutoring)
 - [x] https://about.daangn.com?gh_jid=5046753003 | Daangn | Software Engineer, Backend - 서비스 코어 (Location Intelligence)
+
+- [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33595 | Naver Cafe Workhub | [경력] ~상시 / 핀크(Finnq) - [하나금융그룹 자회사] 서버개발자
+- [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33594 | Naver Cafe Workhub | [경력] ~채용시마감 / 큐엠아이티 - [PLCO] 백엔드 개발자 / 5년 이상
+- [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33588 | Naver Cafe Workhub | ~상시 / 센트비(SentBe)｜Backend Engineer (Go/Java) – Middle
+- [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33586 | Naver Cafe Workhub | ~상시 / 센트비(SentBe)｜Backend Engineer (Java)
