@@ -2,6 +2,8 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 43 | 2026-04-24 | 워트인텔리전스 | Backend Engineer (5년 이상) | 4.6/5 | Evaluated | ✅ | [043](/Users/parkjunho/idea/Projects/career-ops/reports/043-wertintelligence-backend-engineer-2026-04-24.md) | 엄격 선별 통과: Java/Spring 또는 Python, RAG/MCP, CI/CD/운영 정합 |
+| 44 | 2026-04-24 | 중고나라 | Backend Engineer(Node.js & Java/Kotlin) | 4.2/5 | Evaluated | ✅ | [044](/Users/parkjunho/idea/Projects/career-ops/reports/044-joonggonara-backend-engineer-node-java-kotlin-2026-04-24.md) | 엄격 선별 조건부 통과: Java/Kotlin 마이그레이션과 검색/운영 안정화 정합 |
 | 28 | 2026-04-23 | 스위치원 | 백엔드 서버 개발자 (Java, 3~5년) | 4.8/5 | Evaluated | ✅ | [028](/Users/parkjunho/idea/Projects/career-ops/reports/028-switchone-backend-server-java-3-5-2026-04-23.md) | 카페 소스 추가 탐색 |
 | 29 | 2026-04-23 | 제로엑스플로우 | Backend Engineer(3년이상) | 4.6/5 | Evaluated | ✅ | [029](/Users/parkjunho/idea/Projects/career-ops/reports/029-zeroxflow-backend-engineer-3plus-2026-04-23.md) | 카페 소스 추가 탐색 |
 | 30 | 2026-04-23 | 트래블월렛 | 서비스 플랫폼 백엔드 엔지니어 (3년 이상) | 4.7/5 | Evaluated | ✅ | [030](/Users/parkjunho/idea/Projects/career-ops/reports/030-travelwallet-platform-backend-2026-04-23.md) | 카페 소스 추가 탐색 |
