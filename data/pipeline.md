@@ -42,4 +42,4 @@
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33631 | Naver Cafe Workhub | [경력] ~채용시마감 / 아토머스(마인드카페) - [아토머스] 백엔드 개발자 | 보류: 원문 기준 5-11년 + 최근 Python 3년 이상 요구로 현재 Java/Spring 중심 이력서와 정합 낮음
 - [x] #043 | https://cafe.naver.com/f-e/cafes/31258781/articles/33630 | 워트인텔리전스 | Backend Engineer (5년 이상) | 4.6/5 | PDF ✅
 - [x] #044 | https://cafe.naver.com/f-e/cafes/31258781/articles/33624 | 중고나라 | Backend Engineer(Node.js & Java/Kotlin) | 4.2/5 | PDF ✅
-- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33618 | Naver Cafe Workhub | [경력] ~상시 / 퍼플아카데미 - 빅데이터 기반 Node/NestJS 백엔드 개발자(계약직) | 제외: 원티드 원문 마감 2025.10.30 + Node/NestJS 중심으로 엄격 선별 기준 미달
+- [x] #045 | https://cafe.naver.com/f-e/cafes/31258781/articles/33647 | 인핸스(Enhans) | Backend Engineer (거버넌스 / 보안 전문) | 4.3/5 | PDF ✅
