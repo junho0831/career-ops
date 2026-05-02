@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
-> 실시간 매칭·통화 서비스 VoiceLink를 1인 개발·배포·운영 중인 백엔드 개발자
-Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 설계부터 운영까지 책임지고, 동시성·세션 정합성·네트워크 이슈를 실제 서비스에서 해결합니다.
+> 운영 중인 실시간 매칭·통화 서비스 VoiceLink를 1인 개발·배포·운영한 백엔드 개발자
+Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 매칭 상태 머신, 세션 정합성, WebRTC 네트워크, 배포·운영 이슈까지 직접 설계하고 해결합니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -14,8 +14,8 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 설계부터 운영까�
 
 | 3년+ | 1인 운영 | 60% | 30% |
 | --- | --- | --- | --- |
-| 백엔드 개발 경력 | VoiceLink 실서비스 개발·운영 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
-- Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 직접 배포·운영
+| 백엔드 개발 경력 | 실시간 서비스 1인 운영 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
+- Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 책임지고 수행
 - 문제·원인·해결·성과를 명확히 정리해 팀과 공유하며, 리팩토링과 자동화로 운영 리스크를 낮춤
 
@@ -34,25 +34,26 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 설계부터 운영까�
 서비스: https://voice-link.co.kr  
 GitHub: https://github.com/junho0831/VoiceLink
 
-> 랜덤 음성 매칭을 제공하는 실시간 통화 서비스입니다. 백엔드 API, Redis 기반 매칭 상태 관리, LiveKit 음성 연결, TURN/STUN, Docker 배포, Nginx/SSL/도메인 운영까지 1인으로 구축했습니다.
+> 랜덤 음성 매칭을 제공하는 실시간 통화 서비스입니다. 백엔드 API, Redis 기반 매칭 상태 머신, LiveKit/WebRTC 음성 연결, TURN/STUN, Docker 배포, Nginx/SSL/도메인 운영까지 1인으로 구축하고 운영했습니다.
 >
 
 ### 🔴 문제
 
-- 실시간 매칭에서 취소 직후 stale 결과가 다시 반환되거나, 종료되지 않은 세션이 재매칭 시 충돌하는 문제가 발생
+- 실시간 매칭에서 취소 직후 stale 결과가 다시 반환되거나, 종료되지 않은 세션이 재매칭 시 충돌하는 동시성 문제가 발생
 - WebRTC 기반 통화 연결은 애플리케이션 코드뿐 아니라 TURN/STUN, 방화벽, 포트포워딩, HTTPS, 도메인/SNI 설정까지 함께 맞아야 안정적으로 동작
 - 로컬에서만 동작하는 프로젝트가 아니라 실제 사용 가능한 서비스로 배포하기 위해 운영 중 장애 원인을 직접 추적해야 했음
 
 ### 🔵 해결
 
-- Redis를 매칭 상태 저장소로 선택해 멀티노드 환경에서도 공유 상태, TTL 만료, 원자적 상태 변경을 활용할 수 있게 설계
+- Redis를 매칭 상태 저장소로 선택하고 `WAITING -> MATCHED -> CONNECTING -> ENDED/CANCELED` 흐름을 상태 전이로 관리해 멀티노드 환경에서도 공유 상태, TTL 만료, 원자적 상태 변경을 활용할 수 있게 설계
 - 취소 처리 순서를 고정하고 매칭 확정 전 다단계 재확인을 넣어 stale match, 중복 매칭, 유령 세션 문제를 방지
-- LiveKit 참여자 수와 세션 상태를 연결 진입 전에 검증해 이미 종료된 통화방으로 진입하는 케이스 차단
+- LiveKit 참여자 수와 세션 상태를 연결 진입 전에 검증해 이미 종료된 통화방으로 진입하는 케이스를 차단하고, 재매칭 시 세션 충돌 가능성을 낮춤
 - Docker 기반 배포, Nginx reverse proxy/stream SNI, Let's Encrypt SSL, TURN 포트포워딩을 구성하고 DNS/네트워크 이슈를 로그와 curl로 추적
 
 ### 🟢 성과
 
 - 단순 CRUD가 아닌 동시성, 실시간성, WebRTC 네트워크, 운영 이슈가 포함된 실서비스를 직접 구축·운영
+- Redis 상태 전이와 LiveKit 참여자 검증을 결합해 stale match, 중복 매칭, 유령 세션으로 인한 사용자 연결 오류를 구조적으로 완화
 - `https://voice-link.co.kr` 도메인으로 실제 접속 가능한 서비스 운영 경험 확보
 - 장애 발생 시 API, Redis 상태, LiveKit 연결, Nginx, SSL, DNS, 포트포워딩까지 이어지는 운영 디버깅 경험 축적
 

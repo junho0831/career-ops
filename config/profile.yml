@@ -33,17 +33,18 @@ target_roles:
 
 narrative:
   headline: "Backend engineer operating VoiceLink, a real-time matching and voice-call service"
-  exit_story: "Owns the full backend lifecycle from design to deployment and operations, including a live Spring Boot, Redis, LiveKit, Docker, and Nginx service at voice-link.co.kr."
+  exit_story: "Owns the full backend lifecycle from design to deployment and operations, including a live Spring Boot, Redis, LiveKit/WebRTC, Docker, Nginx, SSL, DNS, and network-troubleshooting service at voice-link.co.kr."
   superpowers:
     - "End-to-end backend ownership across design, implementation, deployment, and operations"
     - "Operational risk reduction through automation, fallback design, and idempotent processing"
     - "Metric-driven debugging, refactoring, and reliability improvement"
     - "Auth and session consistency design with Redis, JWT, and OAuth2"
     - "Live real-time service operations across Spring Boot, Redis, LiveKit/WebRTC, Docker, Nginx, SSL, DNS, and port forwarding"
+    - "Distributed state design for real-time matching, including Redis-backed state transitions, TTL cleanup, stale match prevention, and ghost-session mitigation"
   proof_points:
     - name: "VoiceLink real-time matching and voice-call service"
       url: "https://voice-link.co.kr"
-      hero_metric: "Built and operates a live 1-person service covering Spring Boot APIs, Redis matching consistency, LiveKit/WebRTC calls, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
+      hero_metric: "Built and operates a live 1-person service covering Spring Boot APIs, Redis-backed matching state transitions, stale match and ghost-session prevention, LiveKit/WebRTC calls, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
     - name: "CI/CD automation at Hecto KMS"
       url: ""
       hero_metric: "Reduced release lead time from 1 hour to 25 minutes and cut deployment failures from 5% to 0%"
