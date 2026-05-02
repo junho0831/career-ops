@@ -43,3 +43,20 @@
 - [x] #043 | https://cafe.naver.com/f-e/cafes/31258781/articles/33630 | 워트인텔리전스 | Backend Engineer (5년 이상) | 4.6/5 | PDF ✅
 - [x] #044 | https://cafe.naver.com/f-e/cafes/31258781/articles/33624 | 중고나라 | Backend Engineer(Node.js & Java/Kotlin) | 4.2/5 | PDF ✅
 - [x] #045 | https://cafe.naver.com/f-e/cafes/31258781/articles/33647 | 인핸스(Enhans) | Backend Engineer (거버넌스 / 보안 전문) | 4.3/5 | PDF ✅
+
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33825 | Naver Cafe Workhub | [경력] ~상시 / 아임웹 - Back-end Engineer (Web Builder) | 보류: 5년 이상 도전 포지션, 아임웹 Analytics 우선 검토 후 처리
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33822 | Naver Cafe Workhub | [경력] ~채용시마감 / 휴이노 - Back-end SWE | 보류: Python/Django 중심으로 Java/Spring 이력서와 직접 정합 낮음
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33816 | Naver Cafe Workhub | [경력] ~채용시마감 / 아임웹 - Back-end Engineer (Analytics) | 보류: 5년 이상 도전 포지션, AI/Analytics 정합은 높아 별도 심화 평가 후보
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33811 | Naver Cafe Workhub | [경력] ~상시 / 아임웹 - Back-end Engineer (Creator Business) | 보류: 5년 이상 도전 포지션, 아임웹 내 우선순위 비교 필요
+- [x] #046 | https://cafe.naver.com/f-e/cafes/31258781/articles/33804 | 키트웍스 | 백엔드 웹프로그래머 (Spring, MSA) (2~4년) | 4.8/5 | PDF ✅
+- [x] #047 | https://cafe.naver.com/f-e/cafes/31258781/articles/33787 | 파인즈 | 백엔드 개발자 (3년 이상) | 4.4/5 | PDF ✅
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33768 | Naver Cafe Workhub | [경력] ~채용시마감 / 유모스원 - Backend Engineer (TMS) | 보류: 상세 스택/연차 확인 필요
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33732 | Naver Cafe Workhub | [경력] ~채용시마감 / 유모스원 - Backend Engineer (Fleet Management System) | 보류: 유모스원 TMS 공고와 비교 후 하나만 처리
+- [x] #048 | https://cafe.naver.com/f-e/cafes/31258781/articles/33731 | 엠서클 | [웰다] Backend Engineer 3년 이상 | 4.5/5 | PDF ✅
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33719 | Naver Cafe Workhub | [경력] ~상시 / 클레온 - AI스타트업 백엔드개발자 | 보류: AI 스타트업이나 상세 스택/연차 확인 필요
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33718 | Naver Cafe Workhub | [경력] ~채용시마감 / 풀림 - [신사업] 백엔드 엔지니어 (3년 이상) | 보류: 상세 스택 확인 필요
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33715 | Naver Cafe Workhub | [경력] ~상시 / 이오메모리 - 백엔드 개발자 (Backend Developer) | 보류: 상세 스택 확인 필요
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33703 | Naver Cafe Workhub | [경력] ~상시 / 휴넷 - 시스템 백엔드 개발자 5년 이상 | 보류: 5년 이상 + 상세 스택 확인 필요
+- [x] #049 | https://cafe.naver.com/f-e/cafes/31258781/articles/33696 | vox.ai | Voice Agent Backend Engineer | 4.7/5 | PDF ✅
+- [x] #050 | https://cafe.naver.com/f-e/cafes/31258781/articles/33682 | 샬레코리아 | java 백앤드 개발자 | 4.5/5 | PDF ✅
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33666 | Naver Cafe Workhub | ~상시 / 에이블리｜백엔드 엔지니어 | 보류: 에이블리 백엔드는 기대 레벨이 높을 가능성이 있어 상세 JD 확인 필요

@@ -2,6 +2,11 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 46 | 2026-05-02 | 키트웍스 | 백엔드 웹프로그래머 (Spring, MSA) (2~4년) | 4.8/5 | Evaluated | ✅ | [046](/Users/parkjunho/idea/Projects/career-ops/reports/046-kitworks-backend-spring-msa-2026-05-02.md) | 엄격 선별 통과: Spring/MSA/2~4년으로 연차·스택 정합 높음 |
+| 47 | 2026-05-02 | 파인즈 | 백엔드 개발자 (3년 이상) | 4.4/5 | Evaluated | ✅ | [047](/Users/parkjunho/idea/Projects/career-ops/reports/047-fines-backend-developer-2026-05-02.md) | 조건부 통과: 3년 이상 백엔드, 상세 JD 추가 확인 필요 |
+| 48 | 2026-05-02 | 엠서클 | [웰다] Backend Engineer 3년 이상 | 4.5/5 | Evaluated | ✅ | [048](/Users/parkjunho/idea/Projects/career-ops/reports/048-mcircle-welldoc-backend-engineer-2026-05-02.md) | 엄격 선별 통과: 3년 이상 Backend, 데이터 정합성/인증/운영 안정화 정합 |
+| 49 | 2026-05-02 | vox.ai | Voice Agent Backend Engineer | 4.7/5 | Evaluated | ✅ | [049](/Users/parkjunho/idea/Projects/career-ops/reports/049-voxai-voice-agent-backend-engineer-2026-05-02.md) | 최우선 후보: VoiceLink 실시간 음성/Redis 상태 정합성 경험과 직접 정합 |
+| 50 | 2026-05-02 | 샬레코리아 | java 백앤드 개발자 | 4.5/5 | Evaluated | ✅ | [050](/Users/parkjunho/idea/Projects/career-ops/reports/050-chaletkorea-java-backend-2026-05-02.md) | 엄격 선별 통과: Java 백엔드, 2026-07-23 마감 |
 | 45 | 2026-04-25 | 인핸스(Enhans) | Backend Engineer (거버넌스 / 보안 전문) | 4.3/5 | Evaluated | ✅ | [045](/Users/parkjunho/idea/Projects/career-ops/reports/045-enhans-backend-engineer-governance-security-2026-04-25.md) | 조건부 통과: 4년 이상 요구이나 Spring/Airflow/RAG/CI-CD/운영 자동화 정합 높음 |
 | 43 | 2026-04-24 | 워트인텔리전스 | Backend Engineer (5년 이상) | 4.6/5 | Evaluated | ✅ | [043](/Users/parkjunho/idea/Projects/career-ops/reports/043-wertintelligence-backend-engineer-2026-04-24.md) | 엄격 선별 통과: Java/Spring 또는 Python, RAG/MCP, CI/CD/운영 정합 |
 | 44 | 2026-04-24 | 중고나라 | Backend Engineer(Node.js & Java/Kotlin) | 4.2/5 | Evaluated | ✅ | [044](/Users/parkjunho/idea/Projects/career-ops/reports/044-joonggonara-backend-engineer-node-java-kotlin-2026-04-24.md) | 엄격 선별 조건부 통과: Java/Kotlin 마이그레이션과 검색/운영 안정화 정합 |
