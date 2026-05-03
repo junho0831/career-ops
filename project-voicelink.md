@@ -22,11 +22,17 @@
 
 ## 핵심 구현 근거
 
-### 1. Redis 기반 매칭 상태 관리
+### 1. Redis Lua Script 기반 매칭 큐 원자성
 
 - `WAITING -> MATCHED -> CONNECTING -> ENDED/CANCELED` 흐름으로 상태 관리
+- Redis ZSET + presence TTL로 대기열을 구성
+- `find_opponent.lua`에서 후보 조회, 자기 자신 제외, `ZREM` 기반 선점, presence 검증/삭제를 하나의 Lua Script로 처리
+- `purge_user.lua`로 ZSET 제거와 presence 삭제를 한 번에 수행
 - 취소 시 `markCancelled -> discardMatchResult -> removeAndComplete` 순서로 stale 결과를 즉시 폐기
 - 근거:
+  - [RedisMatchingStore.java](/Users/parkjunho/IdeaProjects/VoiceLink/src/main/java/kr/co/voicelink/match/infrastructure/RedisMatchingStore.java:34)
+  - [find_opponent.lua](/Users/parkjunho/IdeaProjects/VoiceLink/src/main/resources/scripts/find_opponent.lua:1)
+  - [purge_user.lua](/Users/parkjunho/IdeaProjects/VoiceLink/src/main/resources/scripts/purge_user.lua:1)
   - [MatchService.java](/Users/parkjunho/IdeaProjects/VoiceLink/src/main/java/kr/co/voicelink/match/service/MatchService.java:98)
 
 ### 2. 재매칭 레이스와 유령 세션 완화
@@ -75,7 +81,7 @@
 
 ## 이력서용 문장
 
-실시간 매칭·통화 서비스 VoiceLink를 1인 개발하고, Redis·LiveKit·Nginx·Docker 기반 운영 환경까지 직접 구축했습니다. 매칭 취소 직후 과거 결과가 재노출되는 문제와 통화 종료 후 재매칭 시 유령 세션에 진입하는 동시성 이슈를 해결하기 위해, 취소 시 결과 캐시 즉시 폐기, 현재 연결 기준 대기열 정리, LiveKit webhook 기반 세션 종료 처리, 참가자 수 기반 활성 세션 검증 로직을 적용했습니다.
+실시간 매칭·통화 서비스 VoiceLink를 1인 개발하고, Redis·LiveKit·Nginx·Docker 기반 운영 환경까지 직접 구축했습니다. 매칭 취소 직후 과거 결과가 재노출되는 문제와 통화 종료 후 재매칭 시 유령 세션에 진입하는 동시성 이슈를 해결하기 위해, Redis Lua Script 기반 원자적 후보 선점, 취소 시 결과 캐시 즉시 폐기, 현재 연결 기준 대기열 정리, LiveKit webhook 기반 세션 종료 처리, 참가자 수 기반 활성 세션 검증 로직을 적용했습니다.
 
 ## HR용 짧은 문장
 
@@ -83,4 +89,4 @@
 
 ## 면접용 30초 답변
 
-VoiceLink는 제가 1인 개발한 실시간 매칭·통화 서비스입니다. 단순히 기능 구현만 한 게 아니라 Redis 기반 매칭 상태 관리, LiveKit/WebRTC 연결, Nginx·Docker 운영 환경까지 직접 구성했습니다. 운영 중에는 취소 직후 과거 결과가 다시 보이거나 통화 종료 후 재매칭이 꼬이는 문제가 있었는데, 취소 시 결과 캐시 즉시 폐기, 현재 연결 기준 대기열 정리, LiveKit webhook 종료 처리, 참가자 수 검증 로직을 넣어서 세션 정합성을 안정화했습니다.
+VoiceLink는 제가 1인 개발한 실시간 매칭·통화 서비스입니다. 단순히 기능 구현만 한 게 아니라 Redis Lua Script 기반 매칭 큐, LiveKit/WebRTC 연결, Nginx·Docker 운영 환경까지 직접 구성했습니다. 운영 중에는 취소 직후 과거 결과가 다시 보이거나 통화 종료 후 재매칭이 꼬이는 문제가 있었는데, Lua Script로 후보 선점을 원자화하고, 취소 시 결과 캐시 즉시 폐기, 현재 연결 기준 대기열 정리, LiveKit webhook 종료 처리, 참가자 수 검증 로직을 넣어서 세션 정합성을 안정화했습니다.

@@ -33,8 +33,8 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 서비스: https://voice-link.co.kr
 
 - 실시간 매칭·통화 서비스 VoiceLink를 1인 개발하고, Docker·Nginx 기반 운영 환경까지 직접 구축했습니다.
-- Redis 기반 매칭 상태 관리와 LiveKit/WebRTC 연결 구조를 설계했습니다.
-- stale match, 유령 세션, 통화 종료 후 재매칭 충돌 문제를 해결하기 위해 세션 정합성 로직을 보강했습니다.
+- Redis Lua Script 기반 매칭 큐와 LiveKit/WebRTC 연결 구조를 설계했습니다.
+- stale match, 유령 세션, 통화 종료 후 재매칭 충돌 문제를 해결하기 위해 원자적 후보 선점, 현재 연결 기준 대기열 정리, LiveKit webhook 종료 처리를 적용했습니다.
 - SSL, DNS, 포트포워딩, TURN/STUN, HTTPS 설정을 직접 다루며 실제 서비스 운영 경험을 쌓았습니다.
 
 ---
