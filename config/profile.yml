@@ -44,7 +44,7 @@ narrative:
   proof_points:
     - name: "VoiceLink real-time matching and voice-call service"
       url: "https://voice-link.co.kr"
-      hero_metric: "Built and operates a live 1-person service covering Spring Boot APIs, Redis Lua Script based atomic matching queue operations, DB Outbox + Redis Pub/Sub result delivery, scoped DeferredResult cleanup, CallSession.ended_at based session consistency, LiveKit/WebRTC calls, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
+      hero_metric: "Built and operates a live 1-person service covering Spring Boot APIs, Redis Lua Script based atomic matching queue operations, DB Outbox + Redis Pub/Sub result delivery, scoped DeferredResult cleanup, CallSession.ended_at based session consistency, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
     - name: "CI/CD automation at Hecto KMS"
       url: ""
       hero_metric: "Reduced release lead time from 1 hour to 25 minutes and cut deployment failures from 5% to 0%"
