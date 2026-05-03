@@ -40,11 +40,11 @@ narrative:
     - "Metric-driven debugging, refactoring, and reliability improvement"
     - "Auth and session consistency design with Redis, JWT, and OAuth2"
     - "Live real-time service operations across Spring Boot, Redis, LiveKit/WebRTC, Docker, Nginx, SSL, DNS, and port forwarding"
-    - "Distributed state design for real-time matching, including Redis Lua Script based atomic opponent claiming, presence TTL cleanup, stale match prevention, and ghost-session resolution"
+    - "Distributed state design for real-time matching, including Redis Lua Script based atomic opponent claiming, Presence TTL + ZSET queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub result delivery, scoped DeferredResult cleanup, and CallSession.ended_at as session source of truth"
   proof_points:
     - name: "VoiceLink real-time matching and voice-call service"
       url: "https://voice-link.co.kr"
-      hero_metric: "Built and operates a live 1-person service covering Spring Boot APIs, Redis Lua Script based atomic matching queue operations, stale match and ghost-session prevention, LiveKit/WebRTC calls, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
+      hero_metric: "Built and operates a live 1-person service covering Spring Boot APIs, Redis Lua Script based atomic matching queue operations, DB Outbox + Redis Pub/Sub result delivery, scoped DeferredResult cleanup, CallSession.ended_at based session consistency, LiveKit/WebRTC calls, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
     - name: "CI/CD automation at Hecto KMS"
       url: ""
       hero_metric: "Reduced release lead time from 1 hour to 25 minutes and cut deployment failures from 5% to 0%"

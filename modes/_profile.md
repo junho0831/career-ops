@@ -41,7 +41,7 @@ Public profile:
 - GitHub: `https://github.com/junho0831`
 
 If a role values hands-on engineering depth, point to:
-- VoiceLink live service for distributed state, real-time matching, Redis Lua Script based atomic opponent claiming, presence TTL cleanup, stale match prevention, ghost-session resolution, LiveKit/WebRTC calls, and infrastructure debugging across Docker, Nginx, SSL, DNS, and port forwarding
+- VoiceLink live service for distributed state, real-time matching, Redis Lua Script Atomic Claim, Presence TTL + ZSET waiting queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub + TTL result key delivery, scoped DeferredResult cleanup, CallSession.ended_at as session source of truth, LiveKit/WebRTC calls, and infrastructure debugging across Docker, Nginx, SSL, DNS, and port forwarding
 - SmartQ for retrieval quality improvement and practical LLM integration
 - KMS for CI/CD automation and deployment reliability
 
