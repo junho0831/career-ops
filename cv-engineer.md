@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
 > 운영 중인 실시간 매칭·통화 서비스 VoiceLink를 1인 개발하고, Redis·LiveKit·Nginx·Docker 기반 운영 환경까지 직접 구축한 백엔드 개발자
-Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 실시간 매칭 상태 관리, 세션 정합성, WebRTC 연결, 배포·운영 이슈를 코드와 운영 환경 양쪽에서 직접 설계하고 해결합니다.
+Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 실시간 매칭 상태 관리, 세션 정합성, WebRTC 연결, 배포·운영 이슈를 코드와 운영 환경 양쪽에서 직접 설계하고 해결합니다. Redis를 fast path, DB를 source of truth로 분리해 실시간 매칭 상태와 세션 종료 정합성을 설계했습니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -18,6 +18,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
+- 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 정합성을 보장한 경험 보유
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 책임지고 수행
 
 ---
@@ -45,15 +46,15 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 - Redis ZSET 대기열과 Presence TTL을 분리하고, Lua Script 기반 Atomic Claim으로 후보 조회·선점·presence 삭제를 단일 원자 연산으로 묶어 동일 후보 중복 선점 Race Condition을 차단
 - Cancel Marker를 매칭 확정 전·결과 발행 전 재검증하고, 취소 시 `markCancelled -> discardMatchResult -> removeAndComplete` 순서로 stale 결과 캐시와 대기열 상태를 즉시 폐기
-- 매칭 결과 전달을 DB Outbox + Redis Pub/Sub + TTL result key 구조로 분리해, Pub/Sub 유실이나 노드 재시작 상황에서도 다음 `/connect`에서 결과를 회수할 수 있도록 설계
-- `DeferredResult` 현재 연결 기준 정리, LiveKit webhook 종료 처리, 참가자 수 기반 활성 세션 검증을 적용해 유령 세션 진입과 통화 종료 후 재매칭 먹통 문제를 해결
+- 매칭 결과 전달을 DB Outbox + Redis Pub/Sub + TTL result key 구조로 분리하고, Outbox 발행은 `FOR UPDATE SKIP LOCKED`로 작업을 선점해 Pub/Sub 유실이나 노드 재시작 상황에서도 다음 `/connect`에서 결과를 회수할 수 있도록 설계
+- `DeferredResult` 현재 연결 기준 정리, LiveKit webhook 종료 처리, `PESSIMISTIC_WRITE` 기반 세션 종료 직렬화, 참가자 수 기반 활성 세션 검증을 적용해 유령 세션 진입과 통화 종료 후 재매칭 먹통 문제를 해결
 - 홈서버에 Docker 기반 런타임을 직접 구성하고, Nginx reverse proxy/stream SNI, Let's Encrypt SSL, TURN 포트포워딩, DNS 연결까지 운영 환경 전체를 설계
 - self-hosted runner에서 Redis/LiveKit은 유지하고 애플리케이션만 교체하는 배포 흐름으로 운영 중단 위험을 줄임
 
 ### 성과
 
 - 단순 CRUD가 아닌 동시성, 실시간성, WebRTC 네트워크, 운영 인프라 이슈가 포함된 실서비스를 직접 구축·운영
-- Redis Lua Script 기반 Atomic Claim, Cancel Marker, DB Outbox + Redis Pub/Sub, `CallSession.ended_at` source of truth를 결합해 stale match, 중복 매칭, 유령 세션, 종료 후 재매칭 충돌을 구조적으로 해결
+- Redis Lua Script 기반 Atomic Claim, Cancel Marker, DB Outbox + Redis Pub/Sub, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`, `CallSession.ended_at` source of truth를 결합해 stale match, 중복 매칭, 유령 세션, 종료 후 재매칭 충돌을 구조적으로 해결
 - `https://voice-link.co.kr` 도메인으로 실제 접속 가능한 서비스를 상시 운영한 경험 확보
 - 장애 발생 시 API, Redis 상태, LiveKit 연결, 네트워크, Nginx, SSL, DNS, 포트포워딩까지 이어지는 운영 디버깅 경험 축적
 
@@ -65,19 +66,20 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 📅 `2026.02 ~ 현재`
 
-`Python` `Postgres` `Airflow`
+`Python` `Airflow` `SQLite` `FTP`
 
 - Java 기반 FTP 파일 처리 배치를 Python/Airflow 구조로 마이그레이션
-- 파일명 datetime + 처리 이력 기반 idempotent 구조 설계로 중복·누락 없는 재실행 흐름 구축
+- 입력일+전날 FTP 폴더 스캔, 업로드/DB commit 성공 후 원본 삭제, Rupi `source_file` unique + upsert 구조로 재실행 리스크를 줄인 파일 처리 흐름 구축
 
 ## 엔셀 - DataForge
 
 📅 `2026.01 ~ 현재`
 
-`Java` `Spring Boot` `Redis` `Elasticsearch` `JWT` `OAuth2` `MySQL`
+`Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
 
-- Elasticsearch 장애 구간에 DB fallback 자동 전환 구조를 구현해 서비스 연속성 확보
-- JWT + Redis 기반 인증 설계로 Refresh Token TTL, 재발급, 무효화 흐름 일관화
+- Elasticsearch 비활성/검색 예외 상황에서 DB fallback 검색으로 전환해 서비스 연속성 확보
+- `requester_id`, `start_at`, `status` 인덱스와 `(requester_id, start_at, end_at)`, `overtime_approvals.request_id` unique constraint로 조회 성능과 중복 데이터 방지 정합성을 함께 고려
+- JWT + Redis 기반 인증 설계로 Refresh Token 저장/검증/회전/삭제 흐름을 TTL 기반으로 일관화
 
 ## 엔셀 - SMIP 유지보수
 

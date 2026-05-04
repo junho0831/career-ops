@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
 > 운영 중인 실시간 매칭·통화 서비스 VoiceLink를 1인 개발하고, Redis·LiveKit·Nginx·Docker 기반 운영 환경까지 직접 구축한 백엔드 개발자
-Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 실시간 매칭 상태 관리, 세션 정합성, WebRTC 연결, 배포·운영 이슈를 코드와 운영 환경 양쪽에서 직접 설계하고 해결합니다.
+Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 실시간 매칭 상태 관리, 세션 정합성, WebRTC 연결, 배포·운영 이슈를 코드와 운영 환경 양쪽에서 직접 설계하고 해결합니다. Redis를 fast path, DB를 source of truth로 분리해 실시간 매칭 상태와 세션 종료 정합성을 설계했습니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -17,6 +17,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 | 백엔드 개발 경력 | 실시간 서비스 1인 운영 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
+- 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 정합성을 보장한 경험 보유
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 책임지고 수행
 - 문제·원인·해결·성과를 명확히 정리해 팀과 공유하며, 리팩토링과 자동화로 운영 리스크를 낮춤
 
@@ -47,9 +48,9 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 - Redis ZSET 대기열과 Presence TTL을 분리하고, Lua Script(`find_opponent.lua`, `purge_user.lua`) 기반 Atomic Claim으로 후보 조회·선점·presence 삭제를 단일 원자 연산으로 묶어 동일 후보 중복 선점 Race Condition을 차단
 - Cancel Marker를 매칭 확정 전·결과 발행 전 재검증하고, 취소 시 `markCancelled -> discardMatchResult -> removeAndComplete` 순서로 stale 결과 캐시와 대기열 상태를 즉시 폐기해 "나가기 직후 재매칭" stale match 문제를 해결
-- 매칭 결과 전달을 DB Outbox + Redis Pub/Sub + TTL result key 구조로 분리해, Pub/Sub 유실이나 노드 재시작 상황에서도 다음 `/connect`에서 결과를 회수할 수 있도록 설계
+- 매칭 결과 전달을 DB Outbox + Redis Pub/Sub + TTL result key 구조로 분리하고, Outbox 발행은 `FOR UPDATE SKIP LOCKED`로 작업을 선점해 Pub/Sub 유실이나 노드 재시작 상황에서도 다음 `/connect`에서 결과를 회수할 수 있도록 설계
 - `DeferredResult`를 현재 연결 인스턴스 기준으로만 제거하도록 `removeAndCompleteIfCurrent`를 적용해, 이전 SSE 종료 콜백이 새 대기열을 삭제하는 race condition을 방지
-- LiveKit webhook(`room_finished`, `participant_left`, `participant_disconnected`)과 `/match/end`를 DB `CallSession.ended_at` 기준으로 통합해 통화 종료 후 기존 active session 재사용 문제를 해결
+- LiveKit webhook(`room_finished`, `participant_left`, `participant_disconnected`)과 `/match/end`를 DB `CallSession.ended_at` 기준으로 통합하고, 세션 종료 처리는 `PESSIMISTIC_WRITE`로 직렬화해 통화 종료 후 기존 active session 재사용 문제를 해결
 - LiveKit 참가자 수 기반 활성 세션 검증을 추가해 DB에는 열려 있지만 실제 방이 비어 있는 유령 세션 진입을 차단
 - 홈서버에 Docker 기반 런타임을 직접 구성하고, Nginx reverse proxy/stream SNI, Let's Encrypt SSL, TURN 포트포워딩, DNS 연결까지 운영 환경 전체를 설계
 - 외부 접속 테스트와 로그, curl 검증을 바탕으로 DNS/네트워크 이슈를 직접 추적하며 실제 서비스가 안정적으로 연결되도록 조정
@@ -57,7 +58,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 ### 🟢 성과
 
 - 단순 CRUD가 아닌 동시성, 실시간성, WebRTC 네트워크, 홈서버 인프라 운영 이슈가 포함된 실서비스를 직접 구축·운영
-- Redis Lua Script 기반 Atomic Claim, Cancel Marker, DB Outbox + Redis Pub/Sub, `CallSession.ended_at` source of truth를 결합해 stale match, 중복 매칭, 유령 세션, 종료 후 재매칭 충돌을 구조적으로 해결
+- Redis Lua Script 기반 Atomic Claim, Cancel Marker, DB Outbox + Redis Pub/Sub, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`, `CallSession.ended_at` source of truth를 결합해 stale match, 중복 매칭, 유령 세션, 종료 후 재매칭 충돌을 구조적으로 해결
 - `https://voice-link.co.kr` 도메인으로 실제 접속 가능한 서비스를 홈서버 기반으로 상시 운영한 경험 확보
 - 장애 발생 시 API, Redis 상태, LiveKit 연결, 홈서버 네트워크, Nginx, SSL, DNS, 포트포워딩까지 이어지는 운영 디버깅 경험 축적
 - self-hosted 배포 환경에서 공유 서비스와 애플리케이션 재배포 단계를 분리해 운영 중단 위험을 낮춘 배포 흐름 구축
@@ -72,7 +73,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 📅 `2026.02 ~ 현재`
 
-`Python`  `Postgres`   `Airflow`
+`Python` `Airflow` `SQLite` `FTP`
 
 ### **🔴 문제**
 
@@ -85,18 +86,19 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 ### **🔵 해결**
 
-- Rubi(txt) / Rubp(tif) 도메인으로 분리해 처리 책임 명확화
-- Airflow DAG 기반 15분 주기 실행 구조로 배치 흐름 관리
-- 파일명 datetime + file_processing_history 상태(PROCESSING/DONE/FAIL) 기반 **idempotent 처리 구조 설계**
-- 최근 3일 폴더 스캔으로 자정 경계 누락 방지
+- Rubi(txt) / Rupi(tif) 도메인으로 분리해 텍스트 파싱, 이미지 변환, 매칭·업로드 책임을 명확화
+- Airflow DAG 기반 주기 실행 구조와 `max_active_runs=1` 설정으로 반복 실행 흐름 관리
+- 입력일과 전날 폴더를 함께 스캔해 날짜 경계에서 들어온 FTP 파일 누락 리스크 완화
+- 업로드 성공과 DB commit 이후 FTP 원본을 삭제하도록 처리 순서를 배치해 재실행 시 손실 리스크를 줄임
+- Rupi `source_file` unique 제약과 upsert 구조로 동일 이미지 파일의 중복 적재를 방지
 
 ---
 
 ### **🟢 성과**
 
 - 자바 기반 배치를 Python/Airflow 구조로 안정적으로 이관
-- 중복·누락 없이 재실행 가능한 배치 운영 구조 구축
-- 실패 파일만 재처리 가능한 구조로 운영 복구 비용 감소
+- 성공 조건을 늦게 확정하고 원본 삭제를 마지막 단계로 배치해 재실행 리스크를 줄인 배치 운영 구조 구축
+- FTP 다운로드/업로드 크기 검증과 로컬 scratch 파일 정리로 파일 처리 실패 시 추적과 복구가 쉬운 구조 마련
 
 ---
 
@@ -104,25 +106,27 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 📅 `2026.01 ~ 현재`
 
-`Java` `Spring Boot` `Redis` `Elasticsearch` `JWT` `OAuth2` `MySQL`
+`Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
 
 ### 🔴 문제
 
 - 폐쇄망 환경에서 야근 기록을 엑셀로 수기 작성 -> 상급자가 모바일로 입력 불가
 - 수동 집계로 인한 관리 부담과 데이터 정합성 문제 발생
-- 피크 타임 ES 응답 지연·타임아웃으로 야근 승인/조회 흐름이 끊어질 수 있는 상황 발생
+- ES 비활성 또는 검색 예외 상황에서 야근 승인/조회 흐름이 끊어질 수 있는 상황 발생
 - 동시 로그인·토큰 재발급이 빈번한 환경에서 토큰 상태 불일치로 세션 혼선 발생
 
 ### 🔵 해결
 
-- ES 장애 감지 조건(실패율·응답시간·연속 실패) 기반 **DB fallback 자동 전환** 구현 - ES는 검색 성능, DB는 정합성 보장 역할을 분리해 장애 시에도 서비스 연속성 확보
-- ES/DB 결과 포맷을 공통 스키마로 통합해 권한 스코프·정렬·페이지네이션 정합성 유지
-- **JWT + Redis** Stateless 인증 설계 - 서버 간 세션 공유 없이 수평 확장이 가능하고, Redis의 TTL과 원자적 연산으로 토큰 폐기·무효화를 일관되게 처리하기 위해 선택, Refresh Token 메타 정보를 Redis에 저장해 Single Source of Truth 구축
+- ES 비활성 또는 검색 예외 발생 시 DB fallback 검색으로 전환 - ES는 검색 성능, DB는 정합성 보장 역할을 분리해 장애 시에도 서비스 연속성 확보
+- ES/DB 결과 포맷을 공통 응답 스키마로 통합해 권한 스코프와 정렬 정책(`startAt desc`, `id desc`) 정합성 유지
+- `requester_id`, `start_at`, `status` 인덱스와 `(requester_id, start_at, end_at)`, `overtime_approvals.request_id` unique constraint를 적용해 조회 성능과 중복 승인/중복 신청 방지 정합성을 함께 고려
+- **JWT + Redis** Stateless 인증 설계 - Refresh Token 저장/검증/회전/삭제 경로를 Redis TTL 기반으로 일원화해 토큰 상태 관리의 기준점을 명확화
 
 ### 🟢 성과
 
 - 장애 구간에서 검색 완전 중단 없이 **부분 성능 저하로 완충**, 운영 대응 속도 향상
-- 세션 충돌·예기치 않은 재로그인 오류 감소, 보안 감사 추적 체계 마련
+- Refresh Token 라이프사이클을 Redis 기준으로 단일화해 로그인/갱신/로그아웃 흐름의 상태 불일치 리스크 감소
+- RDB 인덱스와 unique constraint를 기반으로 조회 성능과 업무 데이터 정합성을 함께 고려한 설계 경험 확보
 
 ---
 
@@ -182,7 +186,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 | 지표 | 전 | 후 |
 | --- | --- | --- |
 | 릴리스 리드타임 | 1시간 | **25분** |
-| 배포 실패율 | 5% | **0%** |
+| 배포 실패 비율 | 5% | **0%** |
 
 ---
 

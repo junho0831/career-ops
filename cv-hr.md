@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
 > 운영 중인 실시간 매칭·통화 서비스 VoiceLink를 1인 개발하고, 배포·운영까지 직접 맡은 백엔드 개발자
-Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 운영까지 전 과정을 책임졌습니다.
+Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 운영까지 전 과정을 책임졌습니다. Redis를 빠른 상태 저장소로, DB를 최종 기준 데이터로 분리해 실시간 매칭과 통화 종료 정합성을 설계했습니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -17,6 +17,7 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 | 백엔드 개발 경력 | 실시간 서비스 1인 운영 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 서비스 설계·구현·운영
+- 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 데이터 정합성을 지킨 경험
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 직접 수행
 - 운영 중 발생한 세션 충돌, 재매칭 오류, 배포 이슈를 직접 추적하고 안정화
 
@@ -34,7 +35,7 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 
 - 실시간 매칭·통화 서비스 VoiceLink를 1인 개발하고, Docker·Nginx 기반 운영 환경까지 직접 구축했습니다.
 - Redis Lua Script 기반 매칭 큐, DB Outbox + Redis Pub/Sub 결과 전파, LiveKit/WebRTC 연결 구조를 설계했습니다.
-- stale match, 유령 세션, 통화 종료 후 재매칭 충돌 문제를 해결하기 위해 원자적 후보 선점, Cancel Marker, 현재 연결 기준 대기열 정리, `CallSession.ended_at` 기준 종료 처리를 적용했습니다.
+- stale match, 유령 세션, 통화 종료 후 재매칭 충돌 문제를 해결하기 위해 원자적 후보 선점, Cancel Marker, 현재 연결 기준 대기열 정리, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`, `CallSession.ended_at` 기준 종료 처리를 적용했습니다.
 - SSL, DNS, 포트포워딩, TURN/STUN, HTTPS 설정을 직접 다루며 실제 서비스 운영 경험을 쌓았습니다.
 
 ---
@@ -45,19 +46,20 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 
 📅 `2026.02 ~ 현재`
 
-`Python` `Postgres` `Airflow`
+`Python` `Airflow` `SQLite` `FTP`
 
 - Java 기반 FTP 파일 처리 배치를 Python/Airflow 구조로 마이그레이션
-- 파일 처리 이력 기반 idempotent 구조로 중복·누락 없는 재실행 흐름 구축
+- 입력일+전날 FTP 폴더 스캔, 업로드/DB commit 성공 후 원본 삭제, Rupi `source_file` unique + upsert 구조로 재실행 리스크를 낮춘 파일 처리 흐름 구축
 
 ## 엔셀 - DataForge
 
 📅 `2026.01 ~ 현재`
 
-`Java` `Spring Boot` `Redis` `Elasticsearch` `JWT` `OAuth2` `MySQL`
+`Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
 
-- Elasticsearch 지연·타임아웃 상황에서 DB fallback 자동 전환 구조 구현
-- JWT + Redis 기반 인증 구조로 세션 혼선과 재로그인 오류 완화
+- Elasticsearch 비활성/검색 예외 상황에서 DB fallback 검색으로 전환하는 구조 구현
+- RDB 인덱스와 unique constraint로 야근 신청 조회 성능과 중복 신청/중복 승인 방지 정합성을 함께 고려
+- JWT + Redis 기반 인증 구조로 Refresh Token 저장/검증/회전/삭제 흐름 일원화
 
 ## 엔셀 - SMIP 유지보수
 
