@@ -28,14 +28,35 @@ Use the candidate's exit story from `config/profile.yml` to frame all content:
 
 ## Your Cross-cutting Advantage
 
-Frame profile as **"backend engineer who reduces operational risk with pragmatic system design"**.
+Frame profile as **"backend engineer who makes backend flows reliable with concrete mechanisms: fallback, Redis state, RDB constraints, transaction boundaries, tests, and deployment automation"**.
 
 What stands out:
 - Builds systems end-to-end instead of stopping at feature delivery
-- Has company project experience beyond side projects: Spring common exception/validation policy, Elasticsearch fallback, Redis authentication, CI/CD standardization, admin APIs, and recovery workflows
+- Has company project experience beyond side projects: Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, RDB indexes/unique constraints, CI/CD standardization, Airflow batch ordering, and reprocessing APIs
+- Has operated backend flows that recruiters recognize as real company work: overtime request/approval/rejection, employee management, search indexing, notification mail, reprocessing, batch execution, deployment verification, and admin update paths
 - Uses fallback paths, automation, and state modeling to prevent repeat incidents
 - Separates fast paths from source-of-truth storage and uses transaction boundaries, locks, unique constraint rules, and outbox patterns for consistency
 - Explains trade-offs clearly and ties changes to measurable operational outcomes
+
+## Job Screening Bias
+
+Push toward roles where the buyer wants an **operations-oriented backend engineer** rather than a large-scale platform lead.
+
+Prioritize:
+- Java/Spring backend roles around 3-5 years or "3+ years"
+- Backend operations, maintenance, internal platforms, admin APIs, reliability improvement, and production support
+- Redis, authentication/session consistency, Elasticsearch/search fallback, batch/data workflows, RDB constraints, CI/CD, and incident prevention
+- Small-to-mid teams where one backend engineer is expected to own design, implementation, deployment, debugging, and operations
+
+Deprioritize unless the JD has a strong Java/Spring operations fit:
+- Large-scale traffic ownership as a core requirement
+- Big-tech scale distributed systems or platform infrastructure expectations
+- Mandatory Kafka/MSA/Kubernetes production ownership
+- Architecture lead, DDD lead, staff-level platform ownership, or 6+ year senior scope
+
+Do not overclaim:
+- Do not present the candidate as having led large-scale traffic, big-tech systems, large MSA architecture, or company-wide platform architecture.
+- When those keywords appear in a JD, answer through adjacent evidence: Redis real-time state consistency, DB source-of-truth design, fallback/recovery paths, CI/CD, batch safety, and incident/debugging experience.
 
 ## Your Portfolio / Demo
 
@@ -44,12 +65,12 @@ Public profile:
 
 If a role values hands-on engineering depth, point to:
 - VoiceLink live service for distributed state, real-time matching, Redis Lua Script Atomic Claim, Presence TTL + ZSET waiting queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub + TTL result key delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, CallSession.ended_at as session source of truth, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, and infrastructure debugging across Docker, Nginx, SSL, DNS, and port forwarding
-- DataForge for Elasticsearch fallback, Redis TTL based refresh-token lifecycle management, requester/start/status indexes, unique constraints that protect duplicate overtime requests and duplicate approvals, admin APIs, standardized error responses, notification mail, reindex, and optional sheet CSV sync
-- Prism for Airflow-based FTP batch migration, input-date plus previous-day scans, upload/database commit before source deletion, and RUPI source_file unique plus upsert handling
+- DataForge for Elasticsearch fallback, Redis TTL based refresh-token lifecycle management, requester/start/status indexes, unique constraints that protect duplicate overtime requests and duplicate approvals, operational recovery APIs, standardized error responses, notification mail, reindex, optional sheet CSV sync, and end-to-end overtime request/approval/rejection/search/operator-update flows
+- Prism for Airflow-based FTP batch migration, input-date plus previous-day scans, upload/database commit before source deletion, FTP transfer-size validation, scratch-file cleanup, and RUPI source_file unique plus upsert handling
 - SMIP for common exception handling, validation policy, standardized error responses, JUnit5/Mockito regression tests, and MVVM/store-based UI state separation
 - SmartQ for retrieval quality improvement and practical LLM integration
 - KMS for GitLab CI/CD, Docker, Nginx, Staging standardization, and deployment reliability
-- SafeCash for scheduled batch automation, execution/result logging, Admin UI/API, and reprocessing workflows
+- SafeCash for scheduled batch automation, execution/result logging, operator-facing Admin UI/API, and reprocessing workflows
 
 ## Your Comp Targets
 
