@@ -15,8 +15,8 @@
 | 30 | 2026-04-23 | 트래블월렛 | 서비스 플랫폼 백엔드 엔지니어 (3년 이상) | 4.7/5 | Evaluated | ✅ | [030](/Users/parkjunho/idea/Projects/career-ops/reports/030-travelwallet-platform-backend-2026-04-23.md) | 카페 소스 추가 탐색 |
 | 31 | 2026-04-23 | 자버 | 백엔드 개발자 (경력 3년 이상) | 4.6/5 | Evaluated | ✅ | [031](/Users/parkjunho/idea/Projects/career-ops/reports/031-jabeo-backend-developer-3plus-2026-04-23.md) | 카페 소스 추가 탐색 |
 | 32 | 2026-04-23 | NHN KCP | [개발1팀] Java 백엔드 웹개발 담당 | 4.8/5 | Evaluated | ✅ | [032](/Users/parkjunho/idea/Projects/career-ops/reports/032-nhn-kcp-java-backend-2026-04-23.md) | 카페 소스 추가 탐색 |
-| 33 | 2026-04-23 | 와디즈 | Java 백엔드 개발자 (회원 개발) | 4.6/5 | Evaluated | ✅ | [033](/Users/parkjunho/idea/Projects/career-ops/reports/033-wadiz-java-backend-member-2026-04-23.md) | 카페 소스 추가 탐색 |
-| 34 | 2026-04-23 | 에버온 | 백엔드 개발자 (미들급) | 4.6/5 | Evaluated | ✅ | [034](/Users/parkjunho/idea/Projects/career-ops/reports/034-everon-backend-middle-2026-04-23.md) | 카페 소스 추가 탐색 |
+| 33 | 2026-04-23 | 와디즈 | Java 백엔드 개발자 (회원 개발) | 4.6/5 | Discarded | ✅ | [033](/Users/parkjunho/idea/Projects/career-ops/reports/033-wadiz-java-backend-member-2026-04-23.md) | 마감일 2026-04-26 경과로 지원 후보에서 제외 |
+| 34 | 2026-04-23 | 에버온 | 백엔드 개발자 (미들급) | 4.6/5 | Discarded | ✅ | [034](/Users/parkjunho/idea/Projects/career-ops/reports/034-everon-backend-middle-2026-04-23.md) | 마감일 2026-04-30 경과로 지원 후보에서 제외 |
 | 35 | 2026-04-23 | 스캐터랩 | Backend Engineer | 4.5/5 | Evaluated | ✅ | [035](/Users/parkjunho/idea/Projects/career-ops/reports/035-scatterlab-backend-engineer-2026-04-23.md) | 카페 소스 추가 탐색 |
 | 36 | 2026-04-23 | 비바리퍼블리카(토스) | Server Developer(Platform) | 4.7/5 | Evaluated | ✅ | [036](/Users/parkjunho/idea/Projects/career-ops/reports/036-toss-server-developer-platform-2026-04-23.md) | 카페 소스 추가 탐색 |
 | 37 | 2026-04-23 | 안랩 | SW개발(Server) | 4.5/5 | Evaluated | ✅ | [037](/Users/parkjunho/idea/Projects/career-ops/reports/037-ahnlab-sw-server-dev-2026-04-23.md) | 카페 소스 추가 탐색 |

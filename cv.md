@@ -16,6 +16,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 | --- | --- | --- | --- |
 | 백엔드 개발 경력 | 실시간 서비스 1인 운영 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
+- 회사 업무에서는 Spring 기반 업무 시스템, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, 배치 자동화를 수행
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
 - 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 정합성을 보장한 경험 보유
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 책임지고 수행
@@ -114,6 +115,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 - 수동 집계로 인한 관리 부담과 데이터 정합성 문제 발생
 - ES 비활성 또는 검색 예외 상황에서 야근 승인/조회 흐름이 끊어질 수 있는 상황 발생
 - 동시 로그인·토큰 재발급이 빈번한 환경에서 토큰 상태 불일치로 세션 혼선 발생
+- 운영자가 직원 정보, 야근 신청, 승인 상태, 검색 인덱스를 한 흐름에서 관리할 수 있는 내부 도구 필요
 
 ### 🔵 해결
 
@@ -121,12 +123,16 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 - ES/DB 결과 포맷을 공통 응답 스키마로 통합해 권한 스코프와 정렬 정책(`startAt desc`, `id desc`) 정합성 유지
 - `requester_id`, `start_at`, `status` 인덱스와 `(requester_id, start_at, end_at)`, `overtime_approvals.request_id` unique constraint를 적용해 조회 성능과 중복 승인/중복 신청 방지 정합성을 함께 고려
 - **JWT + Redis** Stateless 인증 설계 - Refresh Token 저장/검증/회전/삭제 경로를 Redis TTL 기반으로 일원화해 토큰 상태 관리의 기준점을 명확화
+- 관리자 API를 통해 직원 부서/직책/비밀번호 수정 흐름을 제공하고, `@Transactional` 경계 안에서 변경 사항을 일관되게 저장
+- 공통 예외 응답과 validation 실패 응답을 표준화해 프론트엔드와 운영자가 같은 형태로 오류를 해석할 수 있도록 정리
+- 신청/수정/반려 알림 메일, 전체 재색인 API, 선택적 시트 CSV 동기화 구조를 마련해 운영자가 수기 확인 없이 업무 흐름을 추적할 수 있게 함
 
 ### 🟢 성과
 
 - 장애 구간에서 검색 완전 중단 없이 **부분 성능 저하로 완충**, 운영 대응 속도 향상
 - Refresh Token 라이프사이클을 Redis 기준으로 단일화해 로그인/갱신/로그아웃 흐름의 상태 불일치 리스크 감소
 - RDB 인덱스와 unique constraint를 기반으로 조회 성능과 업무 데이터 정합성을 함께 고려한 설계 경험 확보
+- 관리자 API, 표준 오류 응답, 알림/재색인/동기화 흐름을 묶어 단순 CRUD가 아닌 운영 가능한 업무 시스템으로 확장
 
 ---
 
@@ -140,10 +146,12 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 - API마다 예외 처리 방식이 달라 장애 원인 추적이 오래 걸리고, 동일 오류가 반복 재발
 - Vue.js 상태를 화면에서 직접 관리 -> 복잡도 급증, 인수인계 어려움
+- 유지보수 인력이 바뀌어도 같은 기준으로 오류를 해석하고 재현할 수 있는 공통 처리 기준이 필요했음
 
 ### 🔵 해결
 
-- **공통 예외 처리 계층·데이터 검증 정책** 설계 - API마다 다른 예외 처리를 단일 진입점으로 통합해 원인 추적 경로를 표준화, JUnit5/Mockito 테스트로 회귀 리스크 차단
+- **공통 예외 처리 계층·데이터 검증 정책** 설계 - API마다 다른 예외 처리를 단일 진입점으로 통합하고, 표준 오류 응답/검증 메시지 기준을 맞춰 원인 추적 경로를 표준화
+- JUnit5/Mockito 기반 회귀 테스트를 추가해 동일 장애 재발 가능성이 높은 케이스를 배포 전 검증 흐름에 포함
 - **MVVM 패턴 + 공통 스토어** 적용 - 화면마다 흩어진 상태를 스토어로 집중시켜 변경 영향 범위를 줄이고 인수인계 비용을 낮추기 위해 선택, UI-비즈니스 로직 분리 및 상태 흐름 문서화
 
 ### 🟢 성과
@@ -165,11 +173,13 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 - 기존 키워드 검색이 맥락을 이해하지 못해 원하는 인터뷰 정보를 찾기 어려움 (스마트큐)
 - 수동 배포로 리드타임이 길고 휴먼 에러에 지속 노출, 비정형 데이터로 API 협업 비효율 (KMS)
+- 개발/검증/배포 환경이 분리되지 않아 배포 직전 이슈를 사전에 걸러내기 어려웠음
 
 ### 🔵 해결
 
 - **스마트큐** LangChain·RAG 기반 사내 문서 벡터 검색 구현 - 키워드 매칭 한계를 넘어 의미 기반 검색이 필요했고, 기존 인프라 변경 없이 도입 가능한 RAG 구조를 선택, 질의응답 API 모듈화 및 큐 기반 즉시 응답 구조 설계
-- **KMS** GitLab CI/CD + Docker로 빌드/테스트/배포 자동화 - 환경 차이로 인한 배포 실패를 없애기 위해 Docker로 실행 환경을 고정하고, GitLab CI/CD로 사람 손을 거치지 않는 배포 파이프라인 구성, Nginx + Staging 환경 표준화로 배포 검증 절차 확립
+- **KMS** GitLab CI/CD + Docker로 빌드/테스트/배포 단계를 표준화 - 환경 차이로 인한 배포 문제를 줄이기 위해 Docker로 실행 환경을 고정하고, GitLab CI/CD로 사람 손을 거치지 않는 배포 파이프라인 구성, Nginx + Staging 환경 표준화로 배포 검증 절차 확립
+- 배포 전 Staging 검증과 Nginx 라우팅 구성을 정리해 API 협업과 릴리스 확인 절차를 팀이 반복 가능한 형태로 문서화
 
 ### 🟢 성과
 
@@ -200,11 +210,13 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 - 정기 데이터 동기화·배치 작업 수동 수행 -> 휴먼 에러·지연 빈발
 - 처리 결과 확인 수단 부재로 이상 발생 시 인지 지연
+- 데이터 이상 발생 시 개발자가 DB를 직접 확인해야 하는 운영 의존도가 높았음
 
 ### 🔵 해결
 
 - Crontab 기반 정기 배치 자동화로 수동 개입 제거, 작업 실행 이력 및 결과 로깅 체계 구축
 - Admin UI·API 고도화로 데이터 조회·수정·재처리 흐름을 내부 운영 도구로 통합
+- 운영자가 직접 조회/수정/재처리를 수행할 수 있도록 복구 경로를 API와 화면에 연결해 개발자 수동 대응 범위를 축소
 
 ### 🟢 성과
 

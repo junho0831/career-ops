@@ -49,7 +49,6 @@ title_filter:
     - "Junior"
     - "Intern"
     - "인턴"
-    - "신입"
     - "Senior"
     - "Sr"
     - "Staff"
@@ -70,6 +69,14 @@ title_filter:
     - "미들"
 
 search_queries:
+  - name: Wanted — Java Spring Backend 3+
+    query: 'site:www.wanted.co.kr/wd "백엔드" "Java" "Spring" "3년" -지원마감 -프론트엔드 -Senior -Staff -Lead'
+    enabled: true
+
+  - name: Wanted — Backend Engineer Korea
+    query: 'site:www.wanted.co.kr/wd "Backend Engineer" "Java" OR "Kotlin" OR "Spring" "3년 이상" -지원마감 -Senior -Staff -Lead'
+    enabled: true
+
   - name: Lever — Korea Backend
     query: 'site:jobs.lever.co "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
     enabled: true
@@ -91,30 +98,6 @@ search_queries:
     enabled: true
 
 tracked_companies:
-  - name: Sendbird
-    careers_url: https://boards.greenhouse.io/sendbird
-    api: https://boards-api.greenhouse.io/v1/boards/sendbird/jobs
-    enabled: true
-
-  - name: Coupang
-    careers_url: https://boards.greenhouse.io/coupang
-    api: https://boards-api.greenhouse.io/v1/boards/coupang/jobs
-    enabled: true
-
-  - name: Krafton
-    careers_url: https://boards.greenhouse.io/krafton
-    api: https://boards-api.greenhouse.io/v1/boards/krafton/jobs
-    enabled: true
-
-  - name: Moloco
-    careers_url: https://job-boards.greenhouse.io/moloco
-    api: https://boards-api.greenhouse.io/v1/boards/moloco/jobs
-    enabled: true
-
-  - name: Daangn
-    careers_url: https://job-boards.greenhouse.io/daangn
-    api: https://boards-api.greenhouse.io/v1/boards/daangn/jobs
-    enabled: true
 
   - name: Naver Cafe Workhub
     careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L

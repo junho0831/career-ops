@@ -28,8 +28,6 @@
 - [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33335 | Naver Cafe Workhub | ~상시 / 트래블월렛｜비즈 & 서비스 플랫폼 백엔드 엔지니어 – 3년 이상
 - [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33221 | Naver Cafe Workhub | ~상시 / (주)자버｜백엔드 개발자 (경력 3년 이상)
 - [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33065 | Naver Cafe Workhub | ~상시 / NHN KCP｜[개발1팀] Java 백엔드 웹개발 담당
-- [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33187 | Naver Cafe Workhub | ~26.4.26 / 와디즈｜Java 백엔드 개발자 – 회원 개발
-- [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33156 | Naver Cafe Workhub | [경력] ~26.04.30 / 에버온 - 백엔드 개발자 (미들급)
 - [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33558 | Naver Cafe Workhub | ~상시 / 스캐터랩｜Backend Engineer
 - [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33486 | Naver Cafe Workhub | [경력] ~채용시마감 / 비바리퍼블리카 - [토스] Server Developer(Platform)
 - [x] https://cafe.naver.com/f-e/cafes/31258781/articles/33482 | Naver Cafe Workhub | ~상시 / 안랩｜[경력] SW개발(Server)
@@ -60,3 +58,23 @@
 - [x] #049 | https://cafe.naver.com/f-e/cafes/31258781/articles/33696 | vox.ai | Voice Agent Backend Engineer | 4.7/5 | PDF ✅
 - [x] #050 | https://cafe.naver.com/f-e/cafes/31258781/articles/33682 | 샬레코리아 | java 백앤드 개발자 | 4.5/5 | PDF ✅
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33666 | Naver Cafe Workhub | ~상시 / 에이블리｜백엔드 엔지니어 | 보류: 에이블리 백엔드는 기대 레벨이 높을 가능성이 있어 상세 JD 확인 필요
+
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/33878 | Naver Cafe Workhub | [경력] ~26.05.08 / 그로잉세일즈 - 백엔드 엔지니어 (Infra & Database Specialist)
+- [ ] https://www.wanted.co.kr/wd/349485 | 딥세일즈 | 백엔드 엔지니어(3년 이상)
+- [ ] https://groupby.kr/positions/8798 | 라이터스컴퍼니 | [Kooky] 백엔드 개발자
+- [ ] https://demoday.co.kr/recruits/10160 | 에스티엘 | 스타트투데이 백엔드 개발자
+- [ ] https://demoday.co.kr/recruits/12353 | 브이에이트코프 | 백엔드 개발자
+- [ ] https://demoday.co.kr/recruits/5662 | 헤리트 | JAVA TCP 백엔드
+- [ ] https://groupby.kr/positions/5147 | 다니엘프로젝트 | [Daione] 백엔드 개발자
+- [ ] https://groupby.kr/positions/10206 | 후플렉스 | [글로벌 App] Java 주니어 개발자
+- [ ] https://www.wanted.co.kr/wd/337958 | 미리디 | [미리캔버스] 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/286140 | 소크라에이아이 | 산타 BE Engineer (Kotlin, Spring) (3년 이상)
+- [ ] https://www.wanted.co.kr/wd/264022 | 씨디알아이(CDRI) | 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/340229 | 먼치팩토리 | [hourplace] Back-end Engineer
+- [ ] https://www.wanted.co.kr/wd/359319 | 샵라이브 | Software Engineer (Back-end) - 3년 이상
+- [ ] https://www.wanted.co.kr/wd/287859 | 비마이프렌즈 | Commerce Back-end Developer
+- [ ] https://www.wanted.co.kr/wd/358724 | 네이버페이비상장 | [개발팀] 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/355636 | 라포랩스 | Server Engineer
+- [ ] https://www.wanted.co.kr/wd/338476 | 엣지크로스 | AIoT 서비스 백앤드 개발자 (3년 이상)
+- [ ] https://www.wanted.co.kr/wd/331006 | 스팬딧(Spendit) | Back-end Engineer
+- [ ] https://www.wanted.co.kr/wd/356331 | 카닥 | 백엔드 개발자 (3-6년)

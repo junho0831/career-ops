@@ -17,6 +17,7 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 | 백엔드 개발 경력 | 실시간 서비스 1인 운영 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 서비스 설계·구현·운영
+- 회사 업무에서 Spring 기반 업무 시스템, 공통 예외/검증 정책, 검색 장애 fallback, Redis 인증, 배포 자동화, 배치 자동화 수행
 - 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 데이터 정합성을 지킨 경험
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 직접 수행
 - 운영 중 발생한 세션 충돌, 재매칭 오류, 배포 이슈를 직접 추적하고 안정화
@@ -60,6 +61,7 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 - Elasticsearch 비활성/검색 예외 상황에서 DB fallback 검색으로 전환하는 구조 구현
 - RDB 인덱스와 unique constraint로 야근 신청 조회 성능과 중복 신청/중복 승인 방지 정합성을 함께 고려
 - JWT + Redis 기반 인증 구조로 Refresh Token 저장/검증/회전/삭제 흐름 일원화
+- 관리자 API, 표준 오류 응답, 알림 메일, 전체 재색인, 선택적 시트 CSV 동기화로 운영 흐름 보강
 
 ## 엔셀 - SMIP 유지보수
 
@@ -67,8 +69,8 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 
 `Java` `Spring Boot` `Vue.js` `JUnit5` `Mockito`
 
-- 공통 예외 처리 계층과 테스트 코드 도입으로 장애 분석 리드타임 단축
-- MVVM + 공통 스토어 구조로 화면 상태 관리 복잡도 개선
+- 공통 예외 처리 계층, 표준 오류 응답, 검증 메시지 기준, 테스트 코드 도입으로 장애 분석 리드타임 단축
+- MVVM + 공통 스토어 구조로 화면 상태 관리 복잡도와 인수인계 비용 개선
 
 ## 헥토 - AI/개발팀
 
@@ -78,6 +80,7 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 
 - LangChain·RAG 기반 사내 문서 검색 기능 구현
 - GitLab CI/CD + Docker 기반 배포 자동화 파이프라인 구축
+- Nginx + Staging 환경 표준화로 배포 전 검증 절차와 API 협업 흐름 정리
 
 ## 헥토 - 세이프캐시 마이데이터개발팀
 
@@ -85,7 +88,7 @@ Spring Boot, Redis, LiveKit, Docker, Nginx 기반으로 서비스 설계부터 �
 
 `Java` `Spring Boot` `Crontab`
 
-- 정기 배치 자동화와 운영 도구 고도화로 데이터 정합성 이슈 감소
+- 정기 배치 자동화, 실행 이력/결과 로깅, Admin UI/API 재처리 흐름으로 데이터 정합성 이슈 감소
 
 ---
 

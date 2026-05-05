@@ -17,6 +17,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 | 백엔드 개발 경력 | 실시간 서비스 1인 운영 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
+- 회사 업무에서는 Spring 기반 업무 시스템, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, 배치 자동화를 수행
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
 - 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 정합성을 보장한 경험 보유
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 책임지고 수행
@@ -80,6 +81,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 - Elasticsearch 비활성/검색 예외 상황에서 DB fallback 검색으로 전환해 서비스 연속성 확보
 - `requester_id`, `start_at`, `status` 인덱스와 `(requester_id, start_at, end_at)`, `overtime_approvals.request_id` unique constraint로 조회 성능과 중복 데이터 방지 정합성을 함께 고려
 - JWT + Redis 기반 인증 설계로 Refresh Token 저장/검증/회전/삭제 흐름을 TTL 기반으로 일관화
+- 관리자 API, 표준 오류 응답, 알림 메일, 전체 재색인, 선택적 시트 CSV 동기화 흐름을 묶어 운영 가능한 업무 시스템으로 확장
 
 ## 엔셀 - SMIP 유지보수
 
@@ -88,7 +90,8 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 `Java` `Spring Boot` `Vue.js` `JUnit5` `Mockito`
 
 - 공통 예외 처리 계층과 데이터 검증 정책으로 장애 원인 추적 경로 표준화
-- JUnit5/Mockito 테스트와 MVVM + Store 구조로 회귀 리스크와 상태 관리 복잡도 완화
+- 표준 오류 응답/검증 메시지 기준과 JUnit5/Mockito 회귀 테스트를 적용해 동일 장애 재발 가능성이 높은 케이스를 배포 전 검증
+- MVVM + Store 구조로 UI 상태 흐름을 분리하고 인수인계 가능한 형태로 문서화
 
 ## 헥토 - AI/개발팀
 
@@ -98,6 +101,7 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 - LangChain·RAG 기반 사내 문서 검색 기능 구현
 - GitLab CI/CD + Docker 기반 빌드·테스트·배포 자동화 파이프라인 구축
+- Nginx + Staging 환경 표준화로 배포 전 검증 절차와 API 협업 흐름을 반복 가능한 형태로 정리
 
 ## 헥토 - 세이프캐시 마이데이터개발팀
 
@@ -105,7 +109,8 @@ Spring Boot, Redis Lua Script, DB Outbox, LiveKit, Docker, Nginx 기반으로 �
 
 `Java` `Spring Boot` `Crontab`
 
-- 정기 데이터 동기화 배치를 자동화하고 운영 도구를 고도화해 데이터 정합성 이슈 감소
+- 정기 데이터 동기화 배치를 자동화하고 실행 이력/결과 로깅을 추가해 이상 인지 지연을 줄임
+- Admin UI/API에서 조회·수정·재처리 흐름을 통합해 데이터 이상 발생 시 운영자가 직접 복구할 수 있는 경로 마련
 
 ---
 

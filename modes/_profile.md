@@ -32,6 +32,7 @@ Frame profile as **"backend engineer who reduces operational risk with pragmatic
 
 What stands out:
 - Builds systems end-to-end instead of stopping at feature delivery
+- Has company project experience beyond side projects: Spring common exception/validation policy, Elasticsearch fallback, Redis authentication, CI/CD standardization, admin APIs, and recovery workflows
 - Uses fallback paths, automation, and state modeling to prevent repeat incidents
 - Separates fast paths from source-of-truth storage and uses transaction boundaries, locks, unique constraint rules, and outbox patterns for consistency
 - Explains trade-offs clearly and ties changes to measurable operational outcomes
@@ -43,10 +44,12 @@ Public profile:
 
 If a role values hands-on engineering depth, point to:
 - VoiceLink live service for distributed state, real-time matching, Redis Lua Script Atomic Claim, Presence TTL + ZSET waiting queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub + TTL result key delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, CallSession.ended_at as session source of truth, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, and infrastructure debugging across Docker, Nginx, SSL, DNS, and port forwarding
-- DataForge for Elasticsearch fallback, Redis TTL based refresh-token lifecycle management, requester/start/status indexes, and unique constraints that protect duplicate overtime requests and duplicate approvals
+- DataForge for Elasticsearch fallback, Redis TTL based refresh-token lifecycle management, requester/start/status indexes, unique constraints that protect duplicate overtime requests and duplicate approvals, admin APIs, standardized error responses, notification mail, reindex, and optional sheet CSV sync
 - Prism for Airflow-based FTP batch migration, input-date plus previous-day scans, upload/database commit before source deletion, and RUPI source_file unique plus upsert handling
+- SMIP for common exception handling, validation policy, standardized error responses, JUnit5/Mockito regression tests, and MVVM/store-based UI state separation
 - SmartQ for retrieval quality improvement and practical LLM integration
-- KMS for CI/CD automation and deployment reliability
+- KMS for GitLab CI/CD, Docker, Nginx, Staging standardization, and deployment reliability
+- SafeCash for scheduled batch automation, execution/result logging, Admin UI/API, and reprocessing workflows
 
 ## Your Comp Targets
 
