@@ -59,7 +59,7 @@
 - [x] #050 | https://cafe.naver.com/f-e/cafes/31258781/articles/33682 | 샬레코리아 | java 백앤드 개발자 | 4.5/5 | PDF ✅
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33666 | Naver Cafe Workhub | ~상시 / 에이블리｜백엔드 엔지니어 | 보류: 에이블리 백엔드는 기대 레벨이 높을 가능성이 있어 상세 JD 확인 필요
 
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/33878 | Naver Cafe Workhub | [경력] ~26.05.08 / 그로잉세일즈 - 백엔드 엔지니어 (Infra & Database Specialist)
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33878 | Naver Cafe Workhub | [경력] ~26.05.08 / 그로잉세일즈 - 백엔드 엔지니어 (Infra & Database Specialist) | 제외: 2026-05-11 기준 지원 마감일(2026-05-08) 경과
 - [ ] https://www.wanted.co.kr/wd/349485 | 딥세일즈 | 백엔드 엔지니어(3년 이상)
 - [ ] https://groupby.kr/positions/8798 | 라이터스컴퍼니 | [Kooky] 백엔드 개발자
 - [ ] https://demoday.co.kr/recruits/10160 | 에스티엘 | 스타트투데이 백엔드 개발자
@@ -78,3 +78,36 @@
 - [ ] https://www.wanted.co.kr/wd/338476 | 엣지크로스 | AIoT 서비스 백앤드 개발자 (3년 이상)
 - [ ] https://www.wanted.co.kr/wd/331006 | 스팬딧(Spendit) | Back-end Engineer
 - [ ] https://www.wanted.co.kr/wd/356331 | 카닥 | 백엔드 개발자 (3-6년)
+
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33940 | Naver Cafe Workhub | [경력] ~채용시마감 / 비바리퍼블리카 - [토스] Server Developer(Platform) | 보류: 동일 포지션 #036 평가 완료, 신규 카페 재게시로 판단
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/33933 | Naver Cafe Workhub | [경력] ~상시 / 더게임 - GOlang 특화 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/329715 | 스포츠투아이 | 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/300171 | 빅스데이터 | 백엔드 Java/SpringBoot 개발자 (3년 이상)
+- [ ] https://www.wanted.co.kr/wd/310826 | 기발자들 | 백엔드 개발자 (Node.js, Java 3년이상)
+- [ ] https://www.wanted.co.kr/wd/209614 | 프리윌린 | 풀리팀 백엔드 개발자 (3년 이상)
+- [ ] https://www.wanted.co.kr/wd/328380 | 똑똑 | VC ERP 백엔드 개발자(Java/Spring Boot)(3년 이상)
+
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34042 | Naver Cafe Workhub | [경력] ~26.05.22 / 오픈갤러리 - Django 풀 스택 개발자 (병역특례) | 제외: Django 풀스택 + 병역특례 중심으로 Java/Spring 운영형 백엔드 정합 낮음
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34041 | Naver Cafe Workhub | [경력] ~채용시마감 / 비바리퍼블리카 - [토스] Server Developer(Platform) | 보류: 동일 포지션 #036 평가 완료, 신규 카페 재게시로 판단
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34037 | Naver Cafe Workhub | [경력] ~상시 / 피닉스랩유한회사 서울지점 - Backend Engineer, Applied Agents (Seoul) | 보류: AI Agent/영어 포지션, Java/Spring 운영형 백엔드 정합 확인 필요
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34036 | Naver Cafe Workhub | [경력] ~26.07.06 / 아토머스(마인드카페) - 백엔드 개발자 | 보류: 기존 아토머스 보류 사유와 동일, Python/연차 조건 확인 필요
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34028 | Naver Cafe Workhub | ~상시 / 카카오페이｜서버 개발자 – 결제 서비스
+- [ ] https://www.wanted.co.kr/wd/267885 | 에코트로닉스 | 백엔드 개발자 3년 이상(JAVA)
+- [ ] https://www.wanted.co.kr/wd/267268 | 미니게이트 | 백엔드 개발자 (3년 이상)
+- [ ] https://www.wanted.co.kr/wd/264169 | KAYPLE | Spring Boot 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/230892 | 앵커스 | 백엔드 개발자 (3년이상)
+
+- [ ] https://www.wanted.co.kr/wd/291402 | 아콘소프트 | 백엔드/서버 개발자 (5~20년)
+- [ ] https://www.wanted.co.kr/wd/182607 | 퍼스트정보 | 공공분야 java 개발자
+- [ ] https://www.wanted.co.kr/wd/34434 | 윙크스톤파트너스 | 통합금융시스템 백엔드 엔지니어
+- [ ] https://www.wanted.co.kr/wd/126733 | 브레스커뮤니케이션즈 | 백엔드 개발자 (Backend Developer)
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34061 | Naver Cafe Workhub | [경력] ~상시 / 넵튠 - 솔루션개발실 백엔드개발자 | 보류: 동일 제목 카페 재게시 34099와 중복, 최신 글 우선
+- [ ] https://www.wanted.co.kr/wd/232090 | 바티에이아이 | 자동화 노코드 툴 JAVA 백엔드 개발자 (3년 이상)
+- [ ] https://www.wanted.co.kr/wd/342738 | 도이치모터스 | 백엔드 엔지니어
+- [ ] https://www.wanted.co.kr/wd/284570 | 셀렉트스타 | 백엔드 개발자 (3년 이상)
+- [ ] https://www.wanted.co.kr/wd/318507 | 웰로 | 백엔드 개발 (3년 이상)
+
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34099 | Naver Cafe Workhub | [경력] ~상시 / 넵튠 - 솔루션개발실 백엔드개발자
+- [x] #051 | https://zighang.com/recruitment/10fb5665-e601-491e-81a3-12e0ccf20af8 | 아스토나파트너스 | 백엔드 개발자 (Java / Kotlin / Spring Boot) | 4.4/5 | PDF ✅
+- [x] #052 | https://zighang.com/recruitment/46bb587a-98ab-4fac-9e95-32f34360b773 | 트리플오스 | 백엔드 개발자 | 4.3/5 | PDF ✅
+- [x] #053 | https://zighang.com/recruitment/3ca2a6bd-3d03-4689-a3a6-64d47a719f93 | 비욘드메디슨 | Kotlin/Spring 백엔드 개발자 | 4.5/5 | PDF ✅

@@ -2,6 +2,9 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 52 | 2026-05-13 | 트리플오스 | 백엔드 개발자 | 4.3/5 | Evaluated | ✅ | [052](/Users/parkjunho/idea/Projects/career-ops/reports/052-tripleauth-backend-2026-05-13.md) | 직행 소스: Kotlin/Spring Boot/Redis/운영 모니터링 정합, MSA/Kotlin 실무는 보완 필요 |
+| 53 | 2026-05-13 | 비욘드메디슨 | Kotlin/Spring 백엔드 개발자 | 4.5/5 | Evaluated | ✅ | [053](/Users/parkjunho/idea/Projects/career-ops/reports/053-beyondmedicine-kotlin-spring-backend-2026-05-13.md) | 직행 소스: Spring Security/JPA/테스트/상용 운영/문서화 정합 높음, Kotlin 2년 요구는 리스크 |
+| 51 | 2026-05-13 | 아스토나파트너스 | 백엔드 개발자 (Java / Kotlin / Spring Boot) | 4.4/5 | Evaluated | ✅ | [051](/Users/parkjunho/idea/Projects/career-ops/reports/051-astona-backend-java-kotlin-spring-2026-05-13.md) | 직행 소스: Java/Spring Boot/JPA/QueryDSL/RDBMS 정합 높음, Kotlin은 보완 필요 |
 | 46 | 2026-05-02 | 키트웍스 | 백엔드 웹프로그래머 (Spring, MSA) (2~4년) | 4.8/5 | Evaluated | ✅ | [046](/Users/parkjunho/idea/Projects/career-ops/reports/046-kitworks-backend-spring-msa-2026-05-02.md) | 엄격 선별 통과: Spring/MSA/2~4년으로 연차·스택 정합 높음 |
 | 47 | 2026-05-02 | 파인즈 | 백엔드 개발자 (3년 이상) | 4.4/5 | Evaluated | ✅ | [047](/Users/parkjunho/idea/Projects/career-ops/reports/047-fines-backend-developer-2026-05-02.md) | 조건부 통과: 3년 이상 백엔드, 상세 JD 추가 확인 필요 |
 | 48 | 2026-05-02 | 엠서클 | [웰다] Backend Engineer 3년 이상 | 4.5/5 | Evaluated | ✅ | [048](/Users/parkjunho/idea/Projects/career-ops/reports/048-mcircle-welldoc-backend-engineer-2026-05-02.md) | 엄격 선별 통과: 3년 이상 Backend, 데이터 정합성/인증/운영 안정화 정합 |

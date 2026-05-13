@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
-> Spring Boot 기반 업무 시스템에서 검색 fallback, Redis 인증, RDB 제약조건, 공통 예외 처리, 배치 재실행 안정성을 개선해온 백엔드 개발자
-회사 업무에서는 Elasticsearch 예외 시 DB fallback, Refresh Token Redis TTL 관리, RDB index/unique constraint, GlobalExceptionHandler/validation, GitLab CI/CD, Airflow FTP batch를 다뤘습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성을 구현했습니다.
+> Java/Spring Boot 기반 백엔드 시스템에서 인증, 검색, 운영 API, RDB 정합성, Redis 상태 관리, CI/CD, 배치 재실행 안정성을 개선해온 백엔드 개발자
+회사 업무에서는 Elasticsearch 예외 시 DB fallback, Refresh Token Redis TTL 관리, RDB index/unique constraint, GlobalExceptionHandler/validation, GitLab CI/CD, Airflow FTP batch를 다뤘습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성을 구현했습니다. 게임 런처 백엔드처럼 계정·인증·상태 관리·공지/운영성 API의 안정성이 중요한 서비스에서, 장애 시 복구 가능한 구조와 데이터 기준점을 먼저 세우는 개발을 지향합니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -12,16 +12,25 @@
 
 ## 한눈에 보기
 
-| 3년+ | 운영 시스템 | 60% | 30% |
+| 3년+ | Java/Spring | Redis/RDB | CI/CD·운영 |
 | --- | --- | --- | --- |
-| 백엔드 개발 경력 | Spring 업무 API 개발 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
+| 백엔드 개발 경력 | 인증·검색·관리 API | TTL·락·제약조건 기반 정합성 | Docker/GitLab CI/CD·배치 운영 |
 - 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, Airflow 배치를 구현
-- 야근 신청/승인, 직원 관리, 검색 인덱스, 알림, 재처리 기능을 API, transaction, index, unique constraint 기준으로 설계
+- 게임 런처 서비스와 맞닿는 계정/인증, 공지·알림, 운영자 관리, 검색/조회, 재처리 기능을 API, transaction, index, unique constraint 기준으로 설계
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
 - 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 정합성을 보장한 경험 보유
+- OpenAI API/LangChain 기반 RAG 검색 API를 구현하며 AI 기반 개발·검색 도구의 서비스 적용 가능성을 검증
 - 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 책임지고 수행
 - 문제·원인·해결·성과를 코드 변경, 테스트, 배포 자동화, 데이터 제약조건 단위로 정리
+
+## 컴투스 백엔드(Kotlin) 엔지니어 포지션 적합도
+
+- **Java/Kotlin 기반 서버 개발 역량**: 실무에서는 Java/Spring Boot 중심으로 인증, 검색, 관리자 API, 배치, 운영 기능을 개발했으며, Kotlin 기반 서버에서도 동일하게 중요한 트랜잭션 경계, 예외 처리, 데이터 정합성, 테스트 가능성을 기준으로 설계할 수 있습니다.
+- **게임 런처 백엔드와 연결되는 서비스 경험**: VoiceLink에서 실시간 매칭, 세션 상태, 사용자 연결/종료 흐름을 직접 설계했고, 회사 업무에서는 계정 인증, 알림, 검색, 재처리, 운영자 관리 API를 구현해 런처 서비스의 계정·인증·공지·패치 정보성 백엔드와 맞닿는 경험을 보유하고 있습니다.
+- **RDBMS와 Redis 기반 정합성 관리**: PostgreSQL/MySQL 계열 RDB에서 index, unique constraint, transaction을 기준으로 중복 신청·중복 승인·조회 성능을 관리했고, Redis TTL, Lua Script, Pub/Sub, Outbox 패턴으로 상태 불일치와 유실 가능성을 줄였습니다.
+- **운영과 장애 대응 경험**: Elasticsearch 장애 시 DB fallback, Refresh Token Redis TTL 관리, 배치 재실행 정합성, Docker/Nginx/SSL 운영을 경험하며 장애가 나도 서비스 흐름이 완전히 끊기지 않도록 완충 구조를 설계했습니다.
+- **협업과 생산성 개선**: 공통 예외 응답, validation 정책, 회귀 테스트, GitLab CI/CD 표준화를 통해 프론트엔드·운영자·개발자가 같은 기준으로 오류와 배포 상태를 확인할 수 있도록 개선했습니다.
 
 ---
 
