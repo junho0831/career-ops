@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
-> Java/Spring Boot 기반 백엔드 시스템에서 인증, 검색, 운영 API, RDB 정합성, Redis 상태 관리, CI/CD, 배치 재실행 안정성을 개선해온 백엔드 개발자
-회사 업무에서는 Elasticsearch 예외 시 DB fallback, Refresh Token Redis TTL 관리, RDB index/unique constraint, GlobalExceptionHandler/validation, GitLab CI/CD, Airflow FTP batch를 다뤘습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성을 구현했습니다. 게임 런처 백엔드처럼 계정·인증·상태 관리·공지/운영성 API의 안정성이 중요한 서비스에서, 장애 시 복구 가능한 구조와 데이터 기준점을 먼저 세우는 개발을 지향합니다.
+> Java/Spring Boot 기반 백엔드 시스템에서 인증, 검색, 운영 API, RDB 정합성, Redis 상태 관리, CI/CD, 데이터 처리 자동화와 배치 재실행 안정성을 개선해온 백엔드 개발자
+회사 업무에서는 Elasticsearch 예외 시 DB fallback, Refresh Token Redis TTL 관리, RDB index/unique constraint, GlobalExceptionHandler/validation, GitLab CI/CD, Airflow 기반 FTP 데이터 처리 자동화 파이프라인을 다뤘습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성을 구현했습니다. 게임 런처 백엔드처럼 계정·인증·상태 관리·공지/운영성 API의 안정성이 중요한 서비스에서, 장애 시 복구 가능한 구조와 데이터 기준점을 먼저 세우는 개발을 지향합니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -14,8 +14,8 @@
 
 | 3년+ | Java/Spring | Redis/RDB | CI/CD·운영 |
 | --- | --- | --- | --- |
-| 백엔드 개발 경력 | 인증·검색·관리 API | TTL·락·제약조건 기반 정합성 | Docker/GitLab CI/CD·배치 운영 |
-- 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, Airflow 배치를 구현
+| 백엔드 개발 경력 | 인증·검색·관리 API | TTL·락·제약조건 기반 정합성 | Docker/GitLab CI/CD·데이터 자동화 |
+- 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, Airflow 데이터 처리 자동화를 구현
 - 게임 런처 서비스와 맞닿는 계정/인증, 공지·알림, 운영자 관리, 검색/조회, 재처리 기능을 API, transaction, index, unique constraint 기준으로 설계
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
@@ -80,7 +80,7 @@
 
 ---
 
-## 엔셀 - Prism Airflow FTP Batch Migration
+## 엔셀 - Prism Airflow 데이터 처리 자동화
 
 📅 `2026.02 ~ 현재`
 
@@ -90,29 +90,32 @@
 
 - 타팀의 자바 기반 FTP 파일 처리 배치를 우리 팀 Python/Airflow 운영 구조로 마이그레이션해야 했으며,
 
-    반복 실행 환경에서 중복 처리·누락·재실행 정합성 문제를 함께 해결해야 했음
+    단순 파일 파싱을 넘어 반복 실행 환경에서 중복 처리, 누락, 재실행 정합성 문제를 함께 해결해야 했음
 - 배치 실패 시 어느 단계까지 성공했는지 추적하기 어렵고, FTP 원본 삭제 시점이 빨라지면 재실행으로 복구하기 어려운 구조가 될 수 있었음
+- 외부 FTP 파일 수집, 입력 검증, 파싱, DB 반영, 업로드, 원본 정리까지 수동 확인 없이 반복 가능한 자동화 흐름으로 관리할 필요가 있었음
 
 
 ---
 
 ### **🔵 해결**
 
-- Rubi(txt) / Rupi(tif) 도메인으로 분리해 텍스트 파싱, 이미지 변환, 매칭·업로드 책임을 명확화
-- Airflow DAG 기반 주기 실행 구조와 `max_active_runs=1`, `catchup=False` 설정으로 중복 실행을 제한
+- Rubi(txt) / Rupi(tif) 도메인으로 분리해 파일 수집, 입력 검증, 텍스트 파싱, 이미지 변환, 매칭·업로드 책임을 명확화
+- Airflow DAG 기반 주기 실행 구조와 `max_active_runs=1`, `catchup=False` 설정으로 중복 실행을 제한하고 운영자가 실행 단위를 추적할 수 있게 구성
 - 입력일과 전날 폴더를 함께 스캔해 날짜 경계에서 들어온 FTP 파일을 처리
 - 업로드 성공과 DB commit 이후 FTP 원본을 삭제하도록 성공 확정 순서를 고정
 - Rupi `source_file` unique 제약과 upsert 구조로 동일 이미지 파일의 중복 적재를 방지
 - FTP 다운로드/업로드 크기 검증과 로컬 scratch 파일 정리를 넣어 실패 지점을 파일 처리 단계별로 추적할 수 있게 함
+- 파일 처리 단계를 수집 -> 검증 -> 변환 -> 저장 -> 업로드 -> 원본 정리 순서로 분리해 실패 지점과 재처리 기준을 명확화
 
 ---
 
 ### **🟢 성과**
 
-- 자바 기반 배치를 Python/Airflow DAG로 이관
+- 자바 기반 파일 처리 배치를 Python/Airflow 데이터 자동화 파이프라인으로 이관
 - 업로드, DB commit, FTP 원본 삭제 순서를 코드로 고정해 실패 후 재실행 시 원본 손실 가능성을 줄임
 - FTP 다운로드/업로드 크기 검증과 로컬 scratch 파일 정리로 파일 처리 실패 시 추적과 복구가 쉬운 구조 마련
-- 반복 실행 배치에서 “중복 적재 방지”, “날짜 경계 처리”, “commit 이후 원본 삭제” 규칙을 코드 구조에 반영
+- 반복 실행 배치에서 “입력 검증”, “중복 적재 방지”, “날짜 경계 처리”, “commit 이후 원본 삭제”, “실패 지점 추적” 규칙을 코드 구조에 반영
+- 단순 파싱 업무를 운영자가 신뢰할 수 있는 반복 실행형 데이터 처리 자동화 시스템으로 확장
 
 ---
 

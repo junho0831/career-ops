@@ -32,12 +32,12 @@ target_roles:
       fit: "adjacent"
 
 narrative:
-  headline: "Backend engineer improving Spring search fallback, Redis authentication, RDB consistency, batch safety, and real-time service reliability"
-  exit_story: "Owns backend systems from design to deployment and operations across company projects and a live personal service. Company work includes Spring Boot admin APIs, Elasticsearch-to-DB fallback, Redis TTL refresh-token lifecycle, RDB indexes and unique constraints, GlobalExceptionHandler/validation responses, GitLab CI/CD, Airflow FTP batch ordering, and reprocessing APIs. VoiceLink adds hands-on distributed state, Redis Lua Script atomic matching, DB Outbox, FOR UPDATE SKIP LOCKED, PESSIMISTIC_WRITE session termination, WebRTC, Docker, Nginx, SSL, DNS, and network troubleshooting experience at voice-link.co.kr."
+  headline: "Backend engineer improving Spring search fallback, Redis authentication, RDB consistency, data workflow automation, and real-time service reliability"
+  exit_story: "Owns backend systems from design to deployment and operations across company projects and a live personal service. Company work includes Spring Boot admin APIs, Elasticsearch-to-DB fallback, Redis TTL refresh-token lifecycle, RDB indexes and unique constraints, GlobalExceptionHandler/validation responses, GitLab CI/CD, Airflow-based FTP data workflow automation, and reprocessing APIs. VoiceLink adds hands-on distributed state, Redis Lua Script atomic matching, DB Outbox, FOR UPDATE SKIP LOCKED, PESSIMISTIC_WRITE session termination, WebRTC, Docker, Nginx, SSL, DNS, and network troubleshooting experience at voice-link.co.kr."
   superpowers:
     - "End-to-end backend ownership across design, implementation, deployment, and operations"
     - "Reliability improvement through fallback design, Redis state management, RDB constraints, and recovery-safe file processing"
-    - "Company project experience in Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, CI/CD standardization, Airflow batch ordering, and reprocessing APIs"
+    - "Company project experience in Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, CI/CD standardization, Airflow data workflow automation, and reprocessing APIs"
     - "Backend ownership across overtime approval, employee management, search indexing, notifications, reprocessing, batch execution, and deployment verification flows"
     - "Metric-driven debugging, refactoring, and reliability improvement"
     - "Auth and session consistency design with Redis, JWT, and OAuth2"
@@ -69,9 +69,9 @@ narrative:
     - name: "Shared exception handling and tests at NCELL SMIP"
       url: ""
       hero_metric: "Standardized common exception handling, validation policy, error responses, and JUnit5/Mockito regression tests; reduced incident analysis lead time from 40 minutes to 12 minutes and lowered recurring errors by 30%"
-    - name: "Airflow batch migration at NCELL Prism"
+    - name: "Airflow data workflow automation at NCELL Prism"
       url: ""
-      hero_metric: "Migrated a recurring FTP batch into an Airflow flow with input-date plus previous-day scans, upload/database commit before source deletion, FTP transfer-size validation, scratch-file cleanup, and RUPI source_file unique plus upsert handling to reduce rerun risk"
+      hero_metric: "Turned recurring FTP file parsing into an Airflow data workflow with input-date plus previous-day scans, file transfer validation, parsing/conversion/storage/upload/source-cleanup stages, upload/database commit before source deletion, scratch-file cleanup, and RUPI source_file unique plus upsert handling to reduce rerun risk"
     - name: "RAG search at Hecto SmartQ"
       url: ""
       hero_metric: "Improved answer accuracy from 60% to 80%, reduced wait time from 5 minutes to 1 minute, and saved 12 hours per week"

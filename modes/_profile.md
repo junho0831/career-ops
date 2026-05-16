@@ -6,7 +6,7 @@
 |-----------|---------------|---------------|
 | **Backend Engineer** | API design, domain logic, auth, data integrity | Someone who ships reliable backend features end-to-end |
 | **Platform / Reliability Engineer** | CI/CD, incident reduction, fallback design, operations | Someone who lowers operational risk and improves delivery speed |
-| **Data / Batch Backend Engineer** | Airflow, FTP, relational constraints, recurring jobs | Someone who can run data workflows safely with clear success/failure boundaries |
+| **Data / Batch Backend Engineer** | Airflow, FTP, parsing/validation, relational constraints, recurring jobs | Someone who can turn repetitive file work into reliable data workflows with clear success/failure boundaries |
 | **Search / Integration Backend Engineer** | Elasticsearch, Redis, JWT/OAuth2, system integration | Someone who keeps critical flows stable across multiple systems |
 
 ## Your Adaptive Framing
@@ -15,7 +15,7 @@
 |-------------------|------------------------|---------------------|
 | Backend Engineer | End-to-end ownership from design to deployment, standardized exception handling, practical debugging, maintainable APIs | cv.md |
 | Platform / Reliability | CI/CD automation, zero-failure deployments, graceful degradation, faster incident analysis | cv.md |
-| Data / Batch Backend | Airflow migration, FTP processing order, durable-success-before-source-delete flow, unique+upsert safeguards | cv.md |
+| Data / Batch Backend | Airflow workflow automation, FTP ingestion/parsing/validation, durable-success-before-source-delete flow, unique+upsert safeguards | cv.md |
 | Search / Integration | Elasticsearch fallback, RAG search, RDB indexes/unique constraints, auth/session consistency, internal tooling | cv.md |
 
 ## Your Exit Narrative
@@ -32,7 +32,7 @@ Frame profile as **"backend engineer who makes backend flows reliable with concr
 
 What stands out:
 - Builds systems end-to-end instead of stopping at feature delivery
-- Has company project experience beyond side projects: Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, RDB indexes/unique constraints, CI/CD standardization, Airflow batch ordering, and reprocessing APIs
+- Has company project experience beyond side projects: Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, RDB indexes/unique constraints, CI/CD standardization, Airflow data workflow automation, and reprocessing APIs
 - Has operated backend flows that recruiters recognize as real company work: overtime request/approval/rejection, employee management, search indexing, notification mail, reprocessing, batch execution, deployment verification, and admin update paths
 - Uses fallback paths, automation, and state modeling to prevent repeat incidents
 - Separates fast paths from source-of-truth storage and uses transaction boundaries, locks, unique constraint rules, and outbox patterns for consistency
@@ -66,7 +66,7 @@ Public profile:
 If a role values hands-on engineering depth, point to:
 - VoiceLink live service for distributed state, real-time matching, Redis Lua Script Atomic Claim, Presence TTL + ZSET waiting queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub + TTL result key delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, CallSession.ended_at as session source of truth, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, and infrastructure debugging across Docker, Nginx, SSL, DNS, and port forwarding
 - DataForge for Elasticsearch fallback, Redis TTL based refresh-token lifecycle management, requester/start/status indexes, unique constraints that protect duplicate overtime requests and duplicate approvals, operational recovery APIs, standardized error responses, notification mail, reindex, optional sheet CSV sync, and end-to-end overtime request/approval/rejection/search/operator-update flows
-- Prism for Airflow-based FTP batch migration, input-date plus previous-day scans, upload/database commit before source deletion, FTP transfer-size validation, scratch-file cleanup, and RUPI source_file unique plus upsert handling
+- Prism for Airflow-based FTP data workflow automation, input-date plus previous-day scans, file ingestion/parsing/validation/conversion/storage/upload/source-cleanup stages, upload/database commit before source deletion, FTP transfer-size validation, scratch-file cleanup, and RUPI source_file unique plus upsert handling
 - SMIP for common exception handling, validation policy, standardized error responses, JUnit5/Mockito regression tests, and MVVM/store-based UI state separation
 - SmartQ for retrieval quality improvement and practical LLM integration
 - KMS for GitLab CI/CD, Docker, Nginx, Staging standardization, and deployment reliability

@@ -73,7 +73,7 @@
 - [ ] https://www.wanted.co.kr/wd/340229 | 먼치팩토리 | [hourplace] Back-end Engineer
 - [ ] https://www.wanted.co.kr/wd/359319 | 샵라이브 | Software Engineer (Back-end) - 3년 이상
 - [ ] https://www.wanted.co.kr/wd/287859 | 비마이프렌즈 | Commerce Back-end Developer
-- [ ] https://www.wanted.co.kr/wd/358724 | 네이버페이비상장 | [개발팀] 백엔드 개발자
+- [!] https://www.wanted.co.kr/wd/358724 | 네이버페이비상장 | [개발팀] 백엔드 개발자 | 제외: 2026-05-16 원티드 API 기준 status=close, due=2026-05-14
 - [ ] https://www.wanted.co.kr/wd/355636 | 라포랩스 | Server Engineer
 - [ ] https://www.wanted.co.kr/wd/338476 | 엣지크로스 | AIoT 서비스 백앤드 개발자 (3년 이상)
 - [ ] https://www.wanted.co.kr/wd/331006 | 스팬딧(Spendit) | Back-end Engineer
@@ -81,33 +81,44 @@
 
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33940 | Naver Cafe Workhub | [경력] ~채용시마감 / 비바리퍼블리카 - [토스] Server Developer(Platform) | 보류: 동일 포지션 #036 평가 완료, 신규 카페 재게시로 판단
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/33933 | Naver Cafe Workhub | [경력] ~상시 / 더게임 - GOlang 특화 백엔드 개발자
-- [ ] https://www.wanted.co.kr/wd/329715 | 스포츠투아이 | 백엔드 개발자
-- [ ] https://www.wanted.co.kr/wd/300171 | 빅스데이터 | 백엔드 Java/SpringBoot 개발자 (3년 이상)
-- [ ] https://www.wanted.co.kr/wd/310826 | 기발자들 | 백엔드 개발자 (Node.js, Java 3년이상)
-- [ ] https://www.wanted.co.kr/wd/209614 | 프리윌린 | 풀리팀 백엔드 개발자 (3년 이상)
-- [ ] https://www.wanted.co.kr/wd/328380 | 똑똑 | VC ERP 백엔드 개발자(Java/Spring Boot)(3년 이상)
+- [!] https://www.wanted.co.kr/wd/329715 | 스포츠투아이 | 백엔드 개발자 | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/300171 | 빅스데이터 | 백엔드 Java/SpringBoot 개발자 (3년 이상) | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/310826 | 기발자들 | 백엔드 개발자 (Node.js, Java 3년이상) | 보류: 2026-05-16 원티드 API 기준 status=draft, 공개 지원 가능 여부 불명확
+- [!] https://www.wanted.co.kr/wd/209614 | 프리윌린 | 풀리팀 백엔드 개발자 (3년 이상) | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/328380 | 똑똑 | VC ERP 백엔드 개발자(Java/Spring Boot)(3년 이상) | 제외: 2026-05-16 원티드 API 기준 status=close
 
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34042 | Naver Cafe Workhub | [경력] ~26.05.22 / 오픈갤러리 - Django 풀 스택 개발자 (병역특례) | 제외: Django 풀스택 + 병역특례 중심으로 Java/Spring 운영형 백엔드 정합 낮음
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34041 | Naver Cafe Workhub | [경력] ~채용시마감 / 비바리퍼블리카 - [토스] Server Developer(Platform) | 보류: 동일 포지션 #036 평가 완료, 신규 카페 재게시로 판단
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34037 | Naver Cafe Workhub | [경력] ~상시 / 피닉스랩유한회사 서울지점 - Backend Engineer, Applied Agents (Seoul) | 보류: AI Agent/영어 포지션, Java/Spring 운영형 백엔드 정합 확인 필요
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34036 | Naver Cafe Workhub | [경력] ~26.07.06 / 아토머스(마인드카페) - 백엔드 개발자 | 보류: 기존 아토머스 보류 사유와 동일, Python/연차 조건 확인 필요
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34028 | Naver Cafe Workhub | ~상시 / 카카오페이｜서버 개발자 – 결제 서비스
-- [ ] https://www.wanted.co.kr/wd/267885 | 에코트로닉스 | 백엔드 개발자 3년 이상(JAVA)
-- [ ] https://www.wanted.co.kr/wd/267268 | 미니게이트 | 백엔드 개발자 (3년 이상)
-- [ ] https://www.wanted.co.kr/wd/264169 | KAYPLE | Spring Boot 백엔드 개발자
-- [ ] https://www.wanted.co.kr/wd/230892 | 앵커스 | 백엔드 개발자 (3년이상)
+- [!] https://www.wanted.co.kr/wd/267885 | 에코트로닉스 | 백엔드 개발자 3년 이상(JAVA) | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/267268 | 미니게이트 | 백엔드 개발자 (3년 이상) | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/264169 | KAYPLE | Spring Boot 백엔드 개발자 | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/230892 | 앵커스 | 백엔드 개발자 (3년이상) | 제외: 2026-05-16 원티드 API 기준 status=close
 
-- [ ] https://www.wanted.co.kr/wd/291402 | 아콘소프트 | 백엔드/서버 개발자 (5~20년)
-- [ ] https://www.wanted.co.kr/wd/182607 | 퍼스트정보 | 공공분야 java 개발자
-- [ ] https://www.wanted.co.kr/wd/34434 | 윙크스톤파트너스 | 통합금융시스템 백엔드 엔지니어
-- [ ] https://www.wanted.co.kr/wd/126733 | 브레스커뮤니케이션즈 | 백엔드 개발자 (Backend Developer)
+- [!] https://www.wanted.co.kr/wd/291402 | 아콘소프트 | 백엔드/서버 개발자 (5~20년) | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/182607 | 퍼스트정보 | 공공분야 java 개발자 | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/34434 | 윙크스톤파트너스 | 통합금융시스템 백엔드 엔지니어 | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/126733 | 브레스커뮤니케이션즈 | 백엔드 개발자 (Backend Developer) | 제외: 2026-05-16 원티드 API 기준 status=close
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34061 | Naver Cafe Workhub | [경력] ~상시 / 넵튠 - 솔루션개발실 백엔드개발자 | 보류: 동일 제목 카페 재게시 34099와 중복, 최신 글 우선
-- [ ] https://www.wanted.co.kr/wd/232090 | 바티에이아이 | 자동화 노코드 툴 JAVA 백엔드 개발자 (3년 이상)
-- [ ] https://www.wanted.co.kr/wd/342738 | 도이치모터스 | 백엔드 엔지니어
-- [ ] https://www.wanted.co.kr/wd/284570 | 셀렉트스타 | 백엔드 개발자 (3년 이상)
-- [ ] https://www.wanted.co.kr/wd/318507 | 웰로 | 백엔드 개발 (3년 이상)
+- [!] https://www.wanted.co.kr/wd/232090 | 바티에이아이 | 자동화 노코드 툴 JAVA 백엔드 개발자 (3년 이상) | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/342738 | 도이치모터스 | 백엔드 엔지니어 | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/284570 | 셀렉트스타 | 백엔드 개발자 (3년 이상) | 제외: 2026-05-16 원티드 API 기준 status=close
+- [!] https://www.wanted.co.kr/wd/318507 | 웰로 | 백엔드 개발 (3년 이상) | 제외: 2026-05-16 원티드 API 기준 status=close
 
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34099 | Naver Cafe Workhub | [경력] ~상시 / 넵튠 - 솔루션개발실 백엔드개발자
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34181 | Naver Cafe Workhub | ~상시 / 카카오스타일｜백엔드 개발자 (물류 시스템)
+- [ ] https://www.wanted.co.kr/wd/362063 | 벳칭 | [개발] 백엔드 서비스 개발 매니저
+- [ ] https://www.wanted.co.kr/wd/361662 | 딥오토 | Backend Engineer (AI Platform) 3~5년
+- [ ] https://www.wanted.co.kr/wd/361643 | 오케이포스 | ASP개발팀 백엔드 개발자
+- [ ] https://zighang.com/recruitment/e1167024-6218-4701-bfb1-7d2b93fd20a5 | 코드잇 | 백엔드 엔지니어
+- [!] https://www.wanted.co.kr/wd/361886 | 클래스어라운드 | 백엔드 개발자 (Nest.js) | 제외: Nest.js/TypeScript 중심으로 Java/Spring 운영형 백엔드 정합 낮음
+- [!] https://www.wanted.co.kr/wd/361532 | 퍼플아카데미 | 백엔드 개발자 | 제외: Node.js/NestJS 중심, 기존 기준과 동일하게 낮은 우선순위
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34179 | Naver Cafe Workhub | [경력] ~상시 / 오렌지스퀘어 - 시니어 백엔드 엔지니어 | 제외: 시니어 포지션으로 현재 3~4년차 타깃과 연차 불일치
+- [!] https://zighang.com/recruitment/8db51b1d-4d97-43bb-8ff2-da7ba51f2651 | 바이옴에이츠 | 백엔드 엔지니어 | 보류: 5년 이상 요구, Java/Spring 정합은 있으나 연차 리스크 큼
+- [!] https://zighang.com/recruitment/743260d9-0bba-470a-aa8d-7c9aa5d570e8 | 한국딥러닝 | 백엔드 엔지니어 | 보류: 5년 이상 + Python/MSA 중심으로 현재 이력서 직접 정합 낮음
+- [!] https://zighang.com/recruitment/2fb71b5a-537d-499d-9ab1-e44b0f997d9c | 카카오픽코마 | 백엔드 엔지니어 | 보류: 5년 이상 요구, Kotlin/Spring 정합은 있으나 연차 리스크 확인 필요
 - [x] #051 | https://zighang.com/recruitment/10fb5665-e601-491e-81a3-12e0ccf20af8 | 아스토나파트너스 | 백엔드 개발자 (Java / Kotlin / Spring Boot) | 4.4/5 | PDF ✅
 - [x] #052 | https://zighang.com/recruitment/46bb587a-98ab-4fac-9e95-32f34360b773 | 트리플오스 | 백엔드 개발자 | 4.3/5 | PDF ✅
 - [x] #053 | https://zighang.com/recruitment/3ca2a6bd-3d03-4689-a3a6-64d47a719f93 | 비욘드메디슨 | Kotlin/Spring 백엔드 개발자 | 4.5/5 | PDF ✅
