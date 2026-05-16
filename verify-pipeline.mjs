@@ -14,8 +14,8 @@
  * Run: node career-ops/verify-pipeline.mjs
  */
 
-import { readFileSync, readdirSync, existsSync } from 'fs';
-import { join, dirname, isAbsolute } from 'path';
+import { readFileSync, readdirSync, existsSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const CAREER_OPS = dirname(fileURLToPath(import.meta.url));
@@ -28,6 +28,10 @@ const REPORTS_DIR = join(CAREER_OPS, 'reports');
 const STATES_FILE = existsSync(join(CAREER_OPS, 'templates/states.yml'))
   ? join(CAREER_OPS, 'templates/states.yml')
   : join(CAREER_OPS, 'states.yml');
+
+// Ensure required directories exist (fresh setup)
+mkdirSync(join(CAREER_OPS, 'data'), { recursive: true });
+mkdirSync(REPORTS_DIR, { recursive: true });
 
 const CANONICAL_STATUSES = [
   'evaluated', 'applied', 'responded', 'interview',
@@ -125,7 +129,7 @@ let brokenReports = 0;
 for (const e of entries) {
   const match = e.report.match(/\]\(([^)]+)\)/);
   if (!match) continue;
-  const reportPath = isAbsolute(match[1]) ? match[1] : join(CAREER_OPS, match[1]);
+  const reportPath = join(CAREER_OPS, match[1]);
   if (!existsSync(reportPath)) {
     error(`#${e.num}: Report not found: ${match[1]}`);
     brokenReports++;
