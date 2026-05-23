@@ -1,0 +1,315 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "직행" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "직행" [ref=e5]
+      - navigation [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "탐색" [ref=e9] [cursor=pointer]:
+              - /url: /
+              - img [ref=e11]
+              - generic [ref=e14]: 탐색
+          - listitem [ref=e15]:
+            - link "공고" [ref=e16] [cursor=pointer]:
+              - /url: /recruitment
+              - img [ref=e18]
+              - generic [ref=e20]: 공고
+          - listitem [ref=e21]:
+            - link "기업" [ref=e22] [cursor=pointer]:
+              - /url: /company
+              - img [ref=e24]
+              - generic [ref=e30]: 기업
+          - listitem [ref=e31]:
+            - link "커리어AI" [ref=e32] [cursor=pointer]:
+              - /url: /ai-chat
+              - img [ref=e34]
+              - generic [ref=e39]: 커리어AI
+        - link "북마크" [ref=e43] [cursor=pointer]:
+          - /url: /bookmark
+          - img [ref=e45]
+          - generic [ref=e47]: 북마크
+      - generic [ref=e48]:
+        - button "도움말" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "다크모드 전환" [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+    - main [ref=e56]:
+      - generic [ref=e59]:
+        - link "직행" [ref=e60] [cursor=pointer]:
+          - /url: /
+          - img "직행" [ref=e61]
+        - generic [ref=e63] [cursor=pointer]:
+          - img [ref=e64]
+          - paragraph [ref=e66]: 공고, 기업 검색
+        - generic [ref=e67]:
+          - link "로그인" [ref=e68] [cursor=pointer]:
+            - /url: /join?redirect=%2Frecruitment%2Fe1167024-6218-4701-bfb1-7d2b93fd20a5
+          - link "기업 서비스" [ref=e69] [cursor=pointer]:
+            - /url: https://company.zighang.com
+      - generic [ref=e71]:
+        - link "이 공고 합격 확률 독설 받기" [ref=e73] [cursor=pointer]:
+          - /url: /ai-chat/resume-roast?recruitmentId=e1167024-6218-4701-bfb1-7d2b93fd20a5&from=recruitment_detail
+          - img [ref=e75]
+          - generic [ref=e78]: 이 공고 합격 확률 독설 받기
+        - generic [ref=e80]:
+          - img "Recruitment background" [ref=e82]
+          - generic [ref=e84]:
+            - heading "백엔드 엔지니어" [level=1] [ref=e86]
+            - generic [ref=e88]:
+              - link "코드잇" [ref=e89] [cursor=pointer]:
+                - /url: /company/e0250b34-04b0-4779-bdf3-0d3422d876c0
+              - generic [ref=e90]: "|"
+              - generic [ref=e91]: 2026. 4. 28. 게시
+              - generic [ref=e92]: "|"
+              - generic [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e97]: "440"
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e103]:
+                - tab "공고 원문" [selected] [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+                  - text: 공고 원문
+                - tab "기업 정보" [ref=e107] [cursor=pointer]:
+                  - img [ref=e108]
+                  - text: 기업 정보
+              - generic [ref=e115]:
+                - generic [ref=e116]:
+                  - generic [ref=e117]:
+                    - generic [ref=e118]:
+                      - heading "공고 원문" [level=2] [ref=e119]
+                      - img [ref=e120] [cursor=pointer]
+                    - button "오류 제보" [ref=e124] [cursor=pointer]:
+                      - img [ref=e125]
+                      - text: 오류 제보
+                  - generic [ref=e132]:
+                    - generic [ref=e133]:
+                      - generic [ref=e134]: 경력
+                      - generic [ref=e135]: 경력무관
+                    - generic [ref=e136]:
+                      - generic [ref=e137]: 채용 유형
+                      - generic [ref=e138]: 정규직
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: 학력
+                      - generic [ref=e141]: 무관
+                    - generic [ref=e142]:
+                      - generic [ref=e143]: 지역
+                      - generic [ref=e144]: 서울
+                    - generic [ref=e145]:
+                      - generic [ref=e146]: 마감일
+                      - generic [ref=e147]: 상시채용
+                    - generic [ref=e148]:
+                      - generic [ref=e149]: 출처
+                      - generic [ref=e150]: 랠릿
+                  - textbox [ref=e153]:
+                    - heading "담당업무" [level=3] [ref=e154]
+                    - paragraph [ref=e155]: 【 이런 일을 해요 】 1. 코드잇 메인 서비스 개발 및 운영 내부에서 만들어진 콘텐츠를 유저에게 제공하는 코드잇 메인 서비스의 API를 개발하고 운영합니다. 메인 서비스는 Spring Webflux, Kotlin을 사용하고, DB로는 MongoDB를 사용하고 있습니다. 프론트엔드와는 GraphQL을 사용하여 통신합니다. 유저의 가입, 결제, 강의 수강, 커뮤니티 등 코드잇 프로덕트의 모든 부분을 조금 더 나은 방향으로 계속해서 개선하고 있습니다. 2. 실행기 개발 및 운영 코드잇은 유저들이 별도의 실행 환경 없이 브라우저에서 코드를 입력하고 결과를 확인할 수 있는 실행기 서비스를 제공합니다. Python, JavaScript, Java, MySQL 등 다양한 언어와 실행 환경에 더해 브라우저에서 터미널을 사용하는 것도 지원하고 있습니다. 실행기가 빠르고 정확하면서, 동시에 효율적으로 동작하도록 개선합니다. 3. 인프라 관리 코드잇 메인 서비스와 실행기는 AWS 관리형 Kubernetes인 EKS에서 서비스되고 있습니다. 유저의 사용 패턴에 맞게 인프라를 효율적으로 사용하는 방식을 고민하고 개선합니다. 4. 데이터 분석 코드잇은 사용자의 데이터 분석을 통해 프로덕트의 개선 방향을 결정합니다. Amplitude, Google Analytics, 내부 DB를 활용하여 데이터를 모으고 가공하여 내부에 공유합니다. 【 이런 팀에서 일해요 】 코드잇 프로덕트 팀은 사용자에게 최고의 학습 경험을 제공하고, 회사의 지속적인 성장을 만들어 가는 팀입니다. 우리가 만드는 제품은 학습자가 몰입해 배우고 성장할 수 있는 기반이자, 회사가 더 큰 도약을 할 수 있게 하는 힘이라고 믿습니다. 팀은 스쿼드 단위로 운영됩니다. 각 스쿼드는 스스로 문제를 정의하고 해결책을 실행하며, 프로덕트 매니저·디자이너·엔지니어가 긴밀하게 협력해 목표를 달성합니다. 각자의 전문성이 존중받는 동시에, 모두가 한 방향을 바라보며 함께 고민하고 결정합니다. 우리의 협업 문화는 자유롭고 활발합니다. 누구나 의견을 자유롭게 제안할 수 있고, 중요한 순간에는 빠르게 결정해 실행으로 옮깁니다. 사용자 경험과 비즈니스 성장을 균형 있게 추구하며, 함께 배우고 성장하는 문화를 만들어가고 있습니다. 【 이런 기술 스택을 사용해요 】 Kotlin Spring Framework (WebFlux) GraphQL MongoDB Infrastructure Docker/Kubernetes CircleCI Terraform AWS (EKS, ECS, ECR, S3, SES…) *현재 스택에 맞지 않아도 괜찮아요 🙂 빠르게 배우고 열정 있는 백엔드 엔지니어라면 지원해 보세요! (GitHub 계정 제출 권장)
+                    - paragraph [ref=e156]
+                    - heading "자격요건" [level=3] [ref=e157]
+                    - paragraph [ref=e158]: 【 이런 분을 찾고 있어요 】 알고리즘과 자료구조에 대한 이해를 갖추신 분 빠르게 학습하는 역량을 갖추신 분 코드잇의 비전에 공감하며, 원활한 커뮤니케이션 능력을 갖추신 분
+                    - paragraph [ref=e159]
+                    - heading "우대사항" [level=3] [ref=e160]
+                    - paragraph [ref=e161]: 【 이런 분이면 더 좋아요 】 컴퓨터 과학과 또는 컴퓨터 공학과 출신이신 분 코드잇의 개발 스택(주요 업무에 기술됨)에 대한 전문성이 있으신 분 영어를 잘 하시는 분 (Bilingual일 경우 추가 우대) IT 스타트업에서 근무해보신 분
+                    - paragraph [ref=e162]
+                    - heading "혜택 및 복지" [level=3] [ref=e163]
+                    - paragraph [ref=e164]: 1. 최고의 팀원에게 최고의 보상을 제공해요. 최고의 동료들이 모인 팀 최고 수준의 보상 지향 2. 몰입을 위한 최적의 환경을 지원해요. 주 40시간 유연근무제 및 자유로운 재택근무 직군별 최고 사양의 맥북과 모니터 제공, 장비지원금 별도 지원 도서, 교육 등 자기계발을 위한 비용 지원 동료 및 리더와의 상시 피드백 문화 3. 건강과 행복을 위한 복지를 제공해요. 점심, 저녁 식대 지원 (각 최대 12,000원) 무제한 간식 제공, 매년 명절 및 생일 축하 선물 연 100만원 상당의 종합 건강검진 지원 50만원 상당의 경조사비 지원 주차비 지원 4. 친밀한 문화를 함께 만들어가요. 신뢰를 바탕으로 한 반말 문화 랜덤점심, TGIM, 컬쳐나잇, 비어토크 사내 동아리 활동 지원 【 언론 속의 코드잇 】 코드잇 공동 대표가 1시간짜리 강의를 절대 안 만드는 이유 https://bit.ly/3oo5Cpy 코드잇 시리즈 B 투자유치, 누적 140억원 투자 https://bit.ly/3csFfvP 국내 코딩 교육 기업 최초로 멤버십 1만명 돌파 https://bit.ly/3BdkjmO 【 이렇게 합류하게 돼요 】 💡 서류 전형(AI 인터뷰 포함) → 1차 인터뷰 → 2차 인터뷰 → 합류 서류 전형 서류 검토 후 합격자에 한해 AI 인터뷰를 진행합니다. AI 인터뷰는 코드잇 케이드 서비스(비대면)를 통해 진행되며, 직무 이해도 및 적합성 검증을 위한 질문을 드려요. 1차 인터뷰 코드잇 사무실에서 진행되며, 테크 리드와 백엔드 엔지니어가 참여하여 대면 라이브 코딩 및 질의응답을 진행합니다. 2차 인터뷰 코드잇 사무실에서 진행되며, 직무와 컬쳐핏 인터뷰를 나눠서 진행합니다. 직무 인터뷰는 실무진이 참여하며, 컬쳐핏 인터뷰는 경영진이 참여합니다. 2차 인터뷰는 100분 내외로 진행될 예정입니다. 2차 인터뷰 이후 레퍼런스 체크를 진행할 수 있어요. 레퍼런스 체크는 지원자 분의 동의를 구하고, 진행 방식, 기한 등에 대해 사전에 상세히 안내드린 후에 진행합니다. 지원자에 따라 해당 절차를 생략할 수 있습니다. 【 참고해 주세요 】 수습 기간은 3개월이며, 수습 기간 평가 결과에 따라 수습 기간이 연장될 수 있습니다. 수습 기간에도 급여는 동일하게 100% 지급됩니다. 【 이렇게 지원해 주세요 】 📤 지원하기 버튼을 눌러 다음 서류를 제출해 주세요. (필수) 이력서 (필수) 코드잇에 지원하시게 된 동기를 알려주세요. (선택) GitHub, 블로그 등 포트폴리오
+                    - paragraph [ref=e165]
+                    - heading "기술스택" [level=3] [ref=e166]
+                    - paragraph [ref=e167]: Kotlin, GraphQL, MongoDB, Docker, AWS
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img "코드잇"
+                        - generic:
+                          - generic:
+                            - heading "코드잇" [level=3]
+                            - button "즐겨찾기 추가":
+                              - img
+                          - generic:
+                            - generic:
+                              - generic: 스타트업
+                            - generic:
+                              - generic: 서울
+                      - generic:
+                        - paragraph: "AI로 인재 성장과 채용 방식을 혁신하는 글로벌 인재 인프라 기업, 코드잇 코드잇은 자체 제작한 교육 콘텐츠와 최적화된 학습 플랫폼을 기반으로, 국내 대표 에듀테크 브랜드로 성장해 왔습니다. 그간 쌓아온 교육 데이터 자산과 AI 기술을 통해 개인에게는 맞춤형 학습 경험을, 기업에게는 효율적인 채용·인사 솔루션을 제공하며 교육부터 채용까지의 흐름을 하나로 연결합니다. 이제 코드잇은 AI로 인재 성장과 채용 방식을 혁신하는 글로벌 인재 인프라 기업으로 도약하고 있습니다. 이 여정을 함께 만들어갈 동료를 찾습니다. *코드잇 회사 소개: https://careers.codeit.com"
+                        - button "코드잇 회사 소개 전체보기":
+                          - generic: 더보기
+                      - generic:
+                        - link "홈페이지":
+                          - /url: https://www.codeit.kr
+                        - button "오류제보":
+                          - img
+                          - text: 오류제보
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 이런 공고 어때요?
+                      - generic:
+                        - generic:
+                          - link "디하이소프트 디하이소프트 Java 백엔드/웹 개발자 (신입) 1년 이하, 정규직, 서울":
+                            - /url: /recruitment/2ec9b245-c5ca-4e48-aa99-e4d2dc280e32
+                            - generic:
+                              - img "디하이소프트"
+                            - generic:
+                              - generic: 디하이소프트
+                              - generic: Java 백엔드/웹 개발자 (신입)
+                              - generic: 1년 이하, 정규직, 서울
+                        - generic:
+                          - link "토기 토기 백엔드 엔지니어 1년 이하, 정규직, 서울":
+                            - /url: /recruitment/dafa877c-0380-46ce-b7dd-3dcc6aab8704
+                            - generic:
+                              - img "토기"
+                            - generic:
+                              - generic: 토기
+                              - generic: 백엔드 엔지니어
+                              - generic: 1년 이하, 정규직, 서울
+                        - generic:
+                          - link "마키나락스 마키나락스 AI Agent Application Engineer 1년 이상, 정규직, 서울":
+                            - /url: /recruitment/5ceae58f-5c85-40a1-9783-73a47f5d73f8
+                            - generic:
+                              - img "마키나락스"
+                            - generic:
+                              - generic: 마키나락스
+                              - generic: AI Agent Application Engineer
+                              - generic: 1년 이상, 정규직, 서울
+                        - generic:
+                          - link "주식회사멘큐 주식회사멘큐 개발관리 사무원 모집 경력무관, 계약직, 서울":
+                            - /url: /recruitment/8b58037f-766c-4c98-b803-52ffffd1006e
+                            - generic:
+                              - generic:
+                                - generic: 주식회사멘큐
+                            - generic:
+                              - generic: 주식회사멘큐
+                              - generic: 개발관리 사무원 모집
+                              - generic: 경력무관, 계약직, 서울
+                    - generic:
+                      - generic: 지금 많이 보는 공고
+                      - generic:
+                        - generic:
+                          - link "오픈에이아이(OpenAI) 오픈에이아이(OpenAI) Developer Experience Engineer 경력무관, 정규직, 서울":
+                            - /url: /recruitment/07829bc7-d38c-4d98-a751-97066c8064d3
+                            - generic:
+                              - img "오픈에이아이(OpenAI)"
+                            - generic:
+                              - generic: 오픈에이아이(OpenAI)
+                              - generic: Developer Experience Engineer
+                              - generic: 경력무관, 정규직, 서울
+                        - generic:
+                          - link "제너러티브랩 제너러티브랩 제너러티브랩 공개채용 [학력, 경력, 스펙 무관] 경력무관, 전환형인턴, 서울":
+                            - /url: /recruitment/d10f1865-76af-438f-8b2c-1a29aa7a6df9
+                            - generic:
+                              - img "제너러티브랩"
+                            - generic:
+                              - generic: 제너러티브랩
+                              - generic: 제너러티브랩 공개채용 [학력, 경력, 스펙 무관]
+                              - generic: 경력무관, 전환형인턴, 서울
+                        - generic:
+                          - link "케이타운포유 케이타운포유 주니어 풀스택 개발자 3년 이하, 정규직, 서울":
+                            - /url: /recruitment/3fb13ae3-abcf-465b-a88f-8ed5579ec5ce
+                            - generic:
+                              - img "케이타운포유"
+                            - generic:
+                              - generic: 케이타운포유
+                              - generic: 주니어 풀스택 개발자
+                              - generic: 3년 이하, 정규직, 서울
+                        - generic:
+                          - link "오픈에이아이(OpenAI) 오픈에이아이(OpenAI) Developer Experience Engineer 경력무관, 정규직, 서울":
+                            - /url: /recruitment/8178f596-dfdc-454d-a7dc-c18475d840d2
+                            - generic:
+                              - img "오픈에이아이(OpenAI)"
+                            - generic:
+                              - generic: 오픈에이아이(OpenAI)
+                              - generic: Developer Experience Engineer
+                              - generic: 경력무관, 정규직, 서울
+                        - generic:
+                          - link "대한항공 대한항공 대한항공 채용연계형 하계인턴 모집 신입, 전환형인턴, 부산 외 1개":
+                            - /url: /recruitment/07b0c3c1-c3a9-4f38-a23f-ec8ebea0877f
+                            - generic:
+                              - img "대한항공"
+                            - generic:
+                              - generic: 대한항공
+                              - generic: 대한항공 채용연계형 하계인턴 모집
+                              - generic: 신입, 전환형인턴, 부산 외 1개
+            - generic [ref=e172]:
+              - generic [ref=e174]:
+                - generic [ref=e175]: 공고 맞춤 전략
+                - generic [ref=e177]: AI 코칭
+              - generic [ref=e178]:
+                - button [ref=e181] [cursor=pointer]:
+                  - img [ref=e182]
+                - generic [ref=e186]:
+                  - generic [ref=e187]: 이 공고의 합격전략 알려드려요
+                  - generic [ref=e188]:
+                    - button "01 기업 핵심 이슈와 최신 소식 알아보기 기업 로고" [ref=e189] [cursor=pointer]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: "01"
+                        - generic [ref=e192]: 기업 핵심 이슈와 최신 소식 알아보기
+                      - img "기업 로고" [ref=e195]
+                    - button "02 이 공고 합격 포인트 분석하기" [ref=e196] [cursor=pointer]:
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "02"
+                        - generic [ref=e199]: 이 공고 합격 포인트 분석하기
+                      - img [ref=e202]
+                    - button "03 내 경험을 공고 키워드로 재구성" [ref=e211] [cursor=pointer]:
+                      - generic [ref=e212]:
+                        - generic [ref=e213]: "03"
+                        - generic [ref=e214]: 내 경험을 공고 키워드로 재구성
+                      - img [ref=e217]
+                - generic [ref=e221]:
+                  - generic [ref=e223]:
+                    - img
+                    - generic [ref=e224]:
+                      - img "백엔드 서류 전문가" [ref=e226]
+                      - generic [ref=e227]: 백엔드 서류 전문가가 답변해요
+                  - generic [ref=e229]:
+                    - button [ref=e230] [cursor=pointer]:
+                      - img [ref=e231]
+                    - textbox "지원 전략을 물어보세요" [ref=e233]
+                    - button [disabled] [ref=e234]:
+                      - img [ref=e235]
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - button "공유하기" [ref=e240] [cursor=pointer]:
+                - img [ref=e241]
+              - button "북마크 추가" [ref=e243] [cursor=pointer]:
+                - img [ref=e244]
+              - button "지원하기" [ref=e246] [cursor=pointer]
+            - generic [ref=e247]:
+              - generic [ref=e248]: 이런 공고 어때요?
+              - link "디하이소프트 디하이소프트 Java 백엔드/웹 개발자 (신입) 1년 이하, 정규직, 서울" [ref=e250] [cursor=pointer]:
+                - /url: /recruitment/2ec9b245-c5ca-4e48-aa99-e4d2dc280e32
+                - img "디하이소프트" [ref=e252]
+                - generic [ref=e253]:
+                  - generic [ref=e254]: 디하이소프트
+                  - generic [ref=e255]: Java 백엔드/웹 개발자 (신입)
+                  - generic [ref=e256]: 1년 이하, 정규직, 서울
+              - link "토기 토기 백엔드 엔지니어 1년 이하, 정규직, 서울" [ref=e259] [cursor=pointer]:
+                - /url: /recruitment/dafa877c-0380-46ce-b7dd-3dcc6aab8704
+                - img "토기" [ref=e261]
+                - generic [ref=e262]:
+                  - generic [ref=e263]: 토기
+                  - generic [ref=e264]: 백엔드 엔지니어
+                  - generic [ref=e265]: 1년 이하, 정규직, 서울
+              - link "마키나락스 마키나락스 AI Agent Application Engineer 1년 이상, 정규직, 서울" [ref=e268] [cursor=pointer]:
+                - /url: /recruitment/5ceae58f-5c85-40a1-9783-73a47f5d73f8
+                - img "마키나락스" [ref=e270]
+                - generic [ref=e271]:
+                  - generic [ref=e272]: 마키나락스
+                  - generic [ref=e273]: AI Agent Application Engineer
+                  - generic [ref=e274]: 1년 이상, 정규직, 서울
+              - button "이 공고, 나랑 잘 맞나? 궁합보기" [ref=e276] [cursor=pointer]:
+                - generic [ref=e278]:
+                  - paragraph [ref=e279]: 이 공고, 나랑 잘 맞나?
+                  - generic [ref=e281]: 궁합보기
+              - button "이 공고로 음성 면접 공고 내용에 맞춰 AI가 질문해요" [ref=e283] [cursor=pointer]:
+                - generic [ref=e284]:
+                  - img [ref=e286]
+                  - generic [ref=e290]:
+                    - paragraph [ref=e291]: 이 공고로 음성 면접
+                    - paragraph [ref=e292]: 공고 내용에 맞춰 AI가 질문해요
+  - alert [ref=e293]

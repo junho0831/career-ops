@@ -1,0 +1,1640 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fjunho0831%2Fcareer-ops
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=junho0831%2Fcareer-ops
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - link "junho0831" [ref=e70] [cursor=pointer]:
+              - /url: /junho0831
+            - generic [ref=e71]: /
+            - strong [ref=e72]:
+              - link "career-ops" [ref=e73] [cursor=pointer]:
+                - /url: /junho0831/career-ops
+            - generic [ref=e74]: Public
+          - generic [ref=e75]:
+            - text: forked from
+            - link "santifer/career-ops" [ref=e76] [cursor=pointer]:
+              - /url: /santifer/career-ops
+        - generic [ref=e77]:
+          - list:
+            - listitem [ref=e78]:
+              - link "You must be signed in to change notification settings" [ref=e79] [cursor=pointer]:
+                - /url: /login?return_to=%2Fjunho0831%2Fcareer-ops
+                - img [ref=e80]
+                - text: Notifications
+            - listitem [ref=e82]:
+              - link "Fork 0" [ref=e83] [cursor=pointer]:
+                - /url: /login?return_to=%2Fjunho0831%2Fcareer-ops
+                - img [ref=e84]
+                - text: Fork
+                - generic "0" [ref=e86]
+            - listitem [ref=e87]:
+              - link "You must be signed in to star a repository" [ref=e89] [cursor=pointer]:
+                - /url: /login?return_to=%2Fjunho0831%2Fcareer-ops
+                - img [ref=e90]
+                - text: Star
+                - generic "0 users starred this repository" [ref=e92]: "0"
+      - navigation "Repository" [ref=e93]:
+        - list [ref=e94]:
+          - listitem [ref=e95]:
+            - link "Code" [ref=e96] [cursor=pointer]:
+              - /url: /junho0831/career-ops
+              - img [ref=e97]
+              - generic [ref=e99]: Code
+          - listitem [ref=e100]:
+            - link "Pull requests" [ref=e101] [cursor=pointer]:
+              - /url: /junho0831/career-ops/pulls
+              - img [ref=e102]
+              - generic [ref=e104]: Pull requests
+          - listitem [ref=e105]:
+            - link "Actions" [ref=e106] [cursor=pointer]:
+              - /url: /junho0831/career-ops/actions
+              - img [ref=e107]
+              - generic [ref=e109]: Actions
+          - listitem [ref=e110]:
+            - link "Projects" [ref=e111] [cursor=pointer]:
+              - /url: /junho0831/career-ops/projects
+              - img [ref=e112]
+              - generic [ref=e114]: Projects
+          - listitem [ref=e115]:
+            - link "Security and quality" [ref=e116] [cursor=pointer]:
+              - /url: /junho0831/career-ops/security
+              - img [ref=e117]
+              - generic [ref=e119]: Security and quality
+          - listitem [ref=e120]:
+            - link "Insights" [ref=e121] [cursor=pointer]:
+              - /url: /junho0831/career-ops/pulse
+              - img [ref=e122]
+              - generic [ref=e124]: Insights
+    - generic [ref=e137]:
+      - heading "junho0831/career-ops" [level=1] [ref=e139]
+      - generic [ref=e140]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - button "main branch" [ref=e147] [cursor=pointer]:
+                - generic [ref=e148]:
+                  - generic [ref=e150]:
+                    - img [ref=e152]
+                    - generic [ref=e155]: main
+                  - generic:
+                    - img
+              - generic [ref=e156]:
+                - link "1 Branch" [ref=e157] [cursor=pointer]:
+                  - /url: /junho0831/career-ops/branches
+                  - generic [ref=e158]:
+                    - generic:
+                      - img
+                    - generic [ref=e160]:
+                      - strong [ref=e161]: "1"
+                      - text: Branch
+                - link "0 Tags" [ref=e162] [cursor=pointer]:
+                  - /url: /junho0831/career-ops/tags
+                  - generic [ref=e163]:
+                    - generic:
+                      - img
+                    - generic [ref=e165]:
+                      - strong [ref=e166]: "0"
+                      - text: Tags
+            - generic [ref=e167]:
+              - generic [ref=e171]:
+                - img [ref=e173]
+                - combobox "Go to file" [ref=e175]
+              - button "Code" [ref=e176] [cursor=pointer]:
+                - generic [ref=e177]:
+                  - generic:
+                    - img
+                  - generic [ref=e178]: Code
+                  - generic:
+                    - img
+          - generic [ref=e180]:
+            - text: This branch is
+            - link "21 commits ahead of" [ref=e181] [cursor=pointer]:
+              - /url: /junho0831/career-ops/compare/santifer%3Acareer-ops%3Amain...main
+            - text: and
+            - link "90 commits behind" [ref=e182] [cursor=pointer]:
+              - /url: /junho0831/career-ops/compare/main...santifer%3Acareer-ops%3Amain
+            - generic [ref=e183]: santifer/career-ops:main
+            - text: .
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - heading "Folders and files" [level=2] [ref=e186]
+              - table "Folders and files" [ref=e187]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e188]:
+                  - row "Latest commit junho0831 commits by junho0831 Update pipeline to remove expired job postings, refine Airflow automa… Open commit details failure Commit 26bd0b6 · May 16, 20263 days ago History 129 Commits" [ref=e189]:
+                    - cell "Latest commit junho0831 commits by junho0831 Update pipeline to remove expired job postings, refine Airflow automa… Open commit details failure Commit 26bd0b6 · May 16, 20263 days ago History 129 Commits" [ref=e190]:
+                      - generic [ref=e191]:
+                        - heading "Latest commit" [level=2] [ref=e192]
+                        - generic [ref=e193]:
+                          - generic [ref=e195]:
+                            - link "junho0831" [ref=e196] [cursor=pointer]:
+                              - /url: /junho0831
+                              - img "junho0831" [ref=e197]
+                            - link "commits by junho0831" [ref=e198] [cursor=pointer]:
+                              - /url: /junho0831/career-ops/commits?author=junho0831
+                              - text: junho0831
+                          - generic [ref=e199]:
+                            - link "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e202] [cursor=pointer]:
+                              - /url: /junho0831/career-ops/commit/26bd0b60b6d5c4c3d7f3fc59aeacdc4cab75699e
+                            - button "Open commit details" [ref=e203] [cursor=pointer]:
+                              - img [ref=e204]
+                            - button "failure" [ref=e206] [cursor=pointer]:
+                              - img [ref=e207]
+                        - generic [ref=e209]:
+                          - generic [ref=e211]:
+                            - link "Commit 26bd0b6" [ref=e212] [cursor=pointer]:
+                              - /url: /junho0831/career-ops/commit/26bd0b60b6d5c4c3d7f3fc59aeacdc4cab75699e
+                              - text: 26bd0b6
+                            - text: ·
+                            - generic "May 16, 2026, 2:51 PM GMT+9" [ref=e213]: May 16, 20263 days ago
+                          - generic [ref=e214]:
+                            - heading "History" [level=2] [ref=e215]
+                            - link "129 Commits" [ref=e216] [cursor=pointer]:
+                              - /url: /junho0831/career-ops/commits/main/
+                              - generic [ref=e217]:
+                                - generic:
+                                  - img
+                                - generic [ref=e218]: 129 Commits
+                  - row ".agents/skills/career-ops, (Directory) Removed profile.example.yml configuration template and added detail… Apr 13, 2026last month" [ref=e219]:
+                    - cell ".agents/skills/career-ops, (Directory)" [ref=e220]:
+                      - generic [ref=e221]:
+                        - img [ref=e222]
+                        - link ".agents/skills/career-ops, (Directory)" [ref=e227] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/.agents/skills/career-ops
+                          - text: .agents/skills/career-ops
+                    - cell "Removed profile.example.yml configuration template and added detail…" [ref=e228]:
+                      - link "Removed profile.example.yml configuration template and added detail…" [ref=e231] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/d733d77d937544b82fccf271c3aa5144a90056e5
+                        - text: Removed
+                        - code [ref=e232]: profile.example.yml
+                        - text: configuration template and added detail…
+                    - cell "Apr 13, 2026last month" [ref=e233]:
+                      - generic [ref=e234]: Apr 13, 2026last month
+                  - 'row ".claude/skills/career-ops, (Directory) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e235]':
+                    - cell ".claude/skills/career-ops, (Directory)" [ref=e236]:
+                      - generic [ref=e237]:
+                        - img [ref=e238]
+                        - link ".claude/skills/career-ops, (Directory)" [ref=e243] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/.claude/skills/career-ops
+                          - text: .claude/skills/career-ops
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e244]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e247] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e248]:
+                      - generic [ref=e249]: May 16, 20263 days ago
+                  - 'row ".github, (Directory) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e250]':
+                    - cell ".github, (Directory)" [ref=e251]:
+                      - generic [ref=e252]:
+                        - img [ref=e253]
+                        - link ".github, (Directory)" [ref=e258] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/.github
+                          - text: .github
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e259]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e262] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e263]:
+                      - generic [ref=e264]: May 16, 20263 days ago
+                  - row ".idea, (Directory) Added evaluation reports and documentation for Astona Partners, Tripl… May 13, 20265 days ago" [ref=e265]:
+                    - cell ".idea, (Directory)" [ref=e266]:
+                      - generic [ref=e267]:
+                        - img [ref=e268]
+                        - link ".idea, (Directory)" [ref=e273] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/.idea
+                          - text: .idea
+                    - cell "Added evaluation reports and documentation for Astona Partners, Tripl…" [ref=e274]:
+                      - link "Added evaluation reports and documentation for Astona Partners, Tripl…" [ref=e277] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/8258a2dd363f4b1616b8d0e45e3c692a75b7468f
+                    - cell "May 13, 20265 days ago" [ref=e278]:
+                      - generic [ref=e279]: May 13, 20265 days ago
+                  - 'row ".opencode/commands, (Directory) feat: add OpenCode slash commands for career-ops (santifer#67) Apr 8, 2026last month" [ref=e280]':
+                    - cell ".opencode/commands, (Directory)" [ref=e281]:
+                      - generic [ref=e282]:
+                        - img [ref=e283]
+                        - link ".opencode/commands, (Directory)" [ref=e288] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/.opencode/commands
+                          - text: .opencode/commands
+                    - 'cell "feat: add OpenCode slash commands for career-ops (santifer#67)" [ref=e289]':
+                      - generic [ref=e291]:
+                        - 'link "feat: add OpenCode slash commands for career-ops (" [ref=e292] [cursor=pointer]':
+                          - /url: /junho0831/career-ops/commit/93caaed49cbc9f3214f9beb66fb2281c3f2370e6
+                        - link "santifer#67" [ref=e293] [cursor=pointer]:
+                          - /url: https://github.com/santifer/career-ops/pull/67
+                        - link ")" [ref=e294] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/commit/93caaed49cbc9f3214f9beb66fb2281c3f2370e6
+                    - cell "Apr 8, 2026last month" [ref=e295]:
+                      - generic [ref=e296]: Apr 8, 2026last month
+                  - 'row "batch, (Directory) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e297]':
+                    - cell "batch, (Directory)" [ref=e298]:
+                      - generic [ref=e299]:
+                        - img [ref=e300]
+                        - link "batch, (Directory)" [ref=e305] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/batch
+                          - text: batch
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e306]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e309] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e310]:
+                      - generic [ref=e311]: May 16, 20263 days ago
+                  - row "config, (Directory) Update pipeline to remove expired job postings, refine Airflow automa… May 16, 20263 days ago" [ref=e312]:
+                    - cell "config, (Directory)" [ref=e313]:
+                      - generic [ref=e314]:
+                        - img [ref=e315]
+                        - link "config, (Directory)" [ref=e320] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/config
+                          - text: config
+                    - cell "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e321]:
+                      - link "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e324] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/26bd0b60b6d5c4c3d7f3fc59aeacdc4cab75699e
+                    - cell "May 16, 20263 days ago" [ref=e325]:
+                      - generic [ref=e326]: May 16, 20263 days ago
+                  - 'row "dashboard, (Directory) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e327]':
+                    - cell "dashboard, (Directory)" [ref=e328]:
+                      - generic [ref=e329]:
+                        - img [ref=e330]
+                        - link "dashboard, (Directory)" [ref=e335] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/dashboard
+                          - text: dashboard
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e336]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e339] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e340]:
+                      - generic [ref=e341]: May 16, 20263 days ago
+                  - row "data, (Directory) Update pipeline to remove expired job postings, refine Airflow automa… May 16, 20263 days ago" [ref=e342]:
+                    - cell "data, (Directory)" [ref=e343]:
+                      - generic [ref=e344]:
+                        - img [ref=e345]
+                        - link "data, (Directory)" [ref=e350] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/data
+                          - text: data
+                    - cell "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e351]:
+                      - link "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e354] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/26bd0b60b6d5c4c3d7f3fc59aeacdc4cab75699e
+                    - cell "May 16, 20263 days ago" [ref=e355]:
+                      - generic [ref=e356]: May 16, 20263 days ago
+                  - 'row "docs, (Directory) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e357]':
+                    - cell "docs, (Directory)" [ref=e358]:
+                      - generic [ref=e359]:
+                        - img [ref=e360]
+                        - link "docs, (Directory)" [ref=e365] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/docs
+                          - text: docs
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e366]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e369] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e370]:
+                      - generic [ref=e371]: May 16, 20263 days ago
+                  - row "examples, (Directory) Removed profile.example.yml configuration template and added detail… Apr 13, 2026last month" [ref=e372]:
+                    - cell "examples, (Directory)" [ref=e373]:
+                      - generic [ref=e374]:
+                        - img [ref=e375]
+                        - link "examples, (Directory)" [ref=e380] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/examples
+                          - text: examples
+                    - cell "Removed profile.example.yml configuration template and added detail…" [ref=e381]:
+                      - link "Removed profile.example.yml configuration template and added detail…" [ref=e384] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/d733d77d937544b82fccf271c3aa5144a90056e5
+                        - text: Removed
+                        - code [ref=e385]: profile.example.yml
+                        - text: configuration template and added detail…
+                    - cell "Apr 13, 2026last month" [ref=e386]:
+                      - generic [ref=e387]: Apr 13, 2026last month
+                  - 'row "fonts, (Directory) Initial release: AI-powered job search pipeline for Claude Code Apr 5, 2026last month" [ref=e388]':
+                    - cell "fonts, (Directory)" [ref=e389]:
+                      - generic [ref=e390]:
+                        - img [ref=e391]
+                        - link "fonts, (Directory)" [ref=e396] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/fonts
+                          - text: fonts
+                    - 'cell "Initial release: AI-powered job search pipeline for Claude Code" [ref=e397]':
+                      - 'link "Initial release: AI-powered job search pipeline for Claude Code" [ref=e400] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/19222206c60240a35533b886c032f1acff36da4d
+                    - cell "Apr 5, 2026last month" [ref=e401]:
+                      - generic [ref=e402]: Apr 5, 2026last month
+                  - row "interview-prep, (Directory) Add STAR+Reflection framework and Story Bank (inspired by Tech Interv… Apr 5, 2026last month" [ref=e403]:
+                    - cell "interview-prep, (Directory)" [ref=e404]:
+                      - generic [ref=e405]:
+                        - img [ref=e406]
+                        - link "interview-prep, (Directory)" [ref=e411] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/interview-prep
+                          - text: interview-prep
+                    - cell "Add STAR+Reflection framework and Story Bank (inspired by Tech Interv…" [ref=e412]:
+                      - link "Add STAR+Reflection framework and Story Bank (inspired by Tech Interv…" [ref=e415] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/dec67d30d5ba0add5af82af5cbeba6b427a8b1ea
+                    - cell "Apr 5, 2026last month" [ref=e416]:
+                      - generic [ref=e417]: Apr 5, 2026last month
+                  - 'row "jds, (Directory) Fix QA bugs: script paths, gitignore, broken refs Apr 5, 2026last month" [ref=e418]':
+                    - cell "jds, (Directory)" [ref=e419]:
+                      - generic [ref=e420]:
+                        - img [ref=e421]
+                        - link "jds, (Directory)" [ref=e426] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/jds
+                          - text: jds
+                    - 'cell "Fix QA bugs: script paths, gitignore, broken refs" [ref=e427]':
+                      - 'link "Fix QA bugs: script paths, gitignore, broken refs" [ref=e430] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/7ce285ff6643e385c1b184345252349a052fac51
+                    - cell "Apr 5, 2026last month" [ref=e431]:
+                      - generic [ref=e432]: Apr 5, 2026last month
+                  - row "modes, (Directory) Update pipeline to remove expired job postings, refine Airflow automa… May 16, 20263 days ago" [ref=e433]:
+                    - cell "modes, (Directory)" [ref=e434]:
+                      - generic [ref=e435]:
+                        - img [ref=e436]
+                        - link "modes, (Directory)" [ref=e441] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/modes
+                          - text: modes
+                    - cell "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e442]:
+                      - link "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e445] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/26bd0b60b6d5c4c3d7f3fc59aeacdc4cab75699e
+                    - cell "May 16, 20263 days ago" [ref=e446]:
+                      - generic [ref=e447]: May 16, 20263 days ago
+                  - row "output, (Directory) Added evaluation reports and documentation for Astona Partners, Tripl… May 13, 20265 days ago" [ref=e448]:
+                    - cell "output, (Directory)" [ref=e449]:
+                      - generic [ref=e450]:
+                        - img [ref=e451]
+                        - link "output, (Directory)" [ref=e456] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/output
+                          - text: output
+                    - cell "Added evaluation reports and documentation for Astona Partners, Tripl…" [ref=e457]:
+                      - link "Added evaluation reports and documentation for Astona Partners, Tripl…" [ref=e460] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/8258a2dd363f4b1616b8d0e45e3c692a75b7468f
+                    - cell "May 13, 20265 days ago" [ref=e461]:
+                      - generic [ref=e462]: May 13, 20265 days ago
+                  - row "reports, (Directory) Added evaluation reports and documentation for Astona Partners, Tripl… May 13, 20265 days ago" [ref=e463]:
+                    - cell "reports, (Directory)" [ref=e464]:
+                      - generic [ref=e465]:
+                        - img [ref=e466]
+                        - link "reports, (Directory)" [ref=e471] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/reports
+                          - text: reports
+                    - cell "Added evaluation reports and documentation for Astona Partners, Tripl…" [ref=e472]:
+                      - link "Added evaluation reports and documentation for Astona Partners, Tripl…" [ref=e475] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/8258a2dd363f4b1616b8d0e45e3c692a75b7468f
+                    - cell "May 13, 20265 days ago" [ref=e476]:
+                      - generic [ref=e477]: May 13, 20265 days ago
+                  - 'row "templates, (Directory) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e478]':
+                    - cell "templates, (Directory)" [ref=e479]:
+                      - generic [ref=e480]:
+                        - img [ref=e481]
+                        - link "templates, (Directory)" [ref=e486] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/tree/main/templates
+                          - text: templates
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e487]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e490] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e491]:
+                      - generic [ref=e492]: May 16, 20263 days ago
+                  - 'row ".envrc, (File) feat: add Nix flake devshell with Playwright support Apr 11, 2026last month" [ref=e493]':
+                    - cell ".envrc, (File)" [ref=e494]:
+                      - generic [ref=e495]:
+                        - img [ref=e496]
+                        - link ".envrc, (File)" [ref=e501] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/.envrc
+                          - text: .envrc
+                    - 'cell "feat: add Nix flake devshell with Playwright support" [ref=e502]':
+                      - 'link "feat: add Nix flake devshell with Playwright support" [ref=e505] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/c579fcddebf793f00cfad8534fd74085c09017fb
+                    - cell "Apr 11, 2026last month" [ref=e506]:
+                      - generic [ref=e507]: Apr 11, 2026last month
+                  - row ".gitignore, (File) Removed profile.example.yml configuration template and added detail… Apr 13, 2026last month" [ref=e508]:
+                    - cell ".gitignore, (File)" [ref=e509]:
+                      - generic [ref=e510]:
+                        - img [ref=e511]
+                        - link ".gitignore, (File)" [ref=e516] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/.gitignore
+                          - text: .gitignore
+                    - cell "Removed profile.example.yml configuration template and added detail…" [ref=e517]:
+                      - link "Removed profile.example.yml configuration template and added detail…" [ref=e520] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/d733d77d937544b82fccf271c3aa5144a90056e5
+                        - text: Removed
+                        - code [ref=e521]: profile.example.yml
+                        - text: configuration template and added detail…
+                    - cell "Apr 13, 2026last month" [ref=e522]:
+                      - generic [ref=e523]: Apr 13, 2026last month
+                  - 'row "AGENTS.md, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e524]':
+                    - cell "AGENTS.md, (File)" [ref=e525]:
+                      - generic [ref=e526]:
+                        - img [ref=e527]
+                        - link "AGENTS.md, (File)" [ref=e532] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/AGENTS.md
+                          - text: AGENTS.md
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e533]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e536] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e537]:
+                      - generic [ref=e538]: May 16, 20263 days ago
+                  - 'row "CITATION.cff, (File) Add branding: CITATION.cff, FUNDING.yml, issue templates, TUI footer Apr 5, 2026last month" [ref=e539]':
+                    - cell "CITATION.cff, (File)" [ref=e540]:
+                      - generic [ref=e541]:
+                        - img [ref=e542]
+                        - link "CITATION.cff, (File)" [ref=e547] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/CITATION.cff
+                          - text: CITATION.cff
+                    - 'cell "Add branding: CITATION.cff, FUNDING.yml, issue templates, TUI footer" [ref=e548]':
+                      - 'link "Add branding: CITATION.cff, FUNDING.yml, issue templates, TUI footer" [ref=e551] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/e0f98484d2f0489583da0f67d2bd2154bcac3778
+                    - cell "Apr 5, 2026last month" [ref=e552]:
+                      - generic [ref=e553]: Apr 5, 2026last month
+                  - 'row "CLAUDE.md, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e554]':
+                    - cell "CLAUDE.md, (File)" [ref=e555]:
+                      - generic [ref=e556]:
+                        - img [ref=e557]
+                        - link "CLAUDE.md, (File)" [ref=e562] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/CLAUDE.md
+                          - text: CLAUDE.md
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e563]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e566] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e567]:
+                      - generic [ref=e568]: May 16, 20263 days ago
+                  - 'row "CODE_OF_CONDUCT.md, (File) community: add Code of Conduct, Security, Support, Governance + impro… Apr 10, 2026last month" [ref=e569]':
+                    - cell "CODE_OF_CONDUCT.md, (File)" [ref=e570]:
+                      - generic [ref=e571]:
+                        - img [ref=e572]
+                        - link "CODE_OF_CONDUCT.md, (File)" [ref=e577] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/CODE_OF_CONDUCT.md
+                          - text: CODE_OF_CONDUCT.md
+                    - 'cell "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e578]':
+                      - 'link "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e581] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/a8abeba3d711fe7dcec51db02f7b79d0d86c8140
+                    - cell "Apr 10, 2026last month" [ref=e582]:
+                      - generic [ref=e583]: Apr 10, 2026last month
+                  - 'row "CONTRIBUTING.md, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e584]':
+                    - cell "CONTRIBUTING.md, (File)" [ref=e585]:
+                      - generic [ref=e586]:
+                        - img [ref=e587]
+                        - link "CONTRIBUTING.md, (File)" [ref=e592] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/CONTRIBUTING.md
+                          - text: CONTRIBUTING.md
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e593]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e596] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e597]:
+                      - generic [ref=e598]: May 16, 20263 days ago
+                  - 'row "DATA_CONTRACT.md, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e599]':
+                    - cell "DATA_CONTRACT.md, (File)" [ref=e600]:
+                      - generic [ref=e601]:
+                        - img [ref=e602]
+                        - link "DATA_CONTRACT.md, (File)" [ref=e607] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/DATA_CONTRACT.md
+                          - text: DATA_CONTRACT.md
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e608]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e611] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e612]:
+                      - generic [ref=e613]: May 16, 20263 days ago
+                  - 'row "GOVERNANCE.md, (File) community: add Code of Conduct, Security, Support, Governance + impro… Apr 10, 2026last month" [ref=e614]':
+                    - cell "GOVERNANCE.md, (File)" [ref=e615]:
+                      - generic [ref=e616]:
+                        - img [ref=e617]
+                        - link "GOVERNANCE.md, (File)" [ref=e622] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/GOVERNANCE.md
+                          - text: GOVERNANCE.md
+                    - 'cell "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e623]':
+                      - 'link "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e626] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/a8abeba3d711fe7dcec51db02f7b79d0d86c8140
+                    - cell "Apr 10, 2026last month" [ref=e627]:
+                      - generic [ref=e628]: Apr 10, 2026last month
+                  - row "LEGAL_DISCLAIMER.md, (File) Add legal disclaimer, indemnification clause, and acceptable use policy Apr 8, 2026last month" [ref=e629]:
+                    - cell "LEGAL_DISCLAIMER.md, (File)" [ref=e630]:
+                      - generic [ref=e631]:
+                        - img [ref=e632]
+                        - link "LEGAL_DISCLAIMER.md, (File)" [ref=e637] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/LEGAL_DISCLAIMER.md
+                          - text: LEGAL_DISCLAIMER.md
+                    - cell "Add legal disclaimer, indemnification clause, and acceptable use policy" [ref=e638]:
+                      - link "Add legal disclaimer, indemnification clause, and acceptable use policy" [ref=e641] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/933864deaeb4a5c2fb323bd91e53bc7bf7e0d80c
+                    - cell "Apr 8, 2026last month" [ref=e642]:
+                      - generic [ref=e643]: Apr 8, 2026last month
+                  - 'row "LICENSE, (File) Initial release: AI-powered job search pipeline for Claude Code Apr 5, 2026last month" [ref=e644]':
+                    - cell "LICENSE, (File)" [ref=e645]:
+                      - generic [ref=e646]:
+                        - img [ref=e647]
+                        - link "LICENSE, (File)" [ref=e652] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/LICENSE
+                          - text: LICENSE
+                    - 'cell "Initial release: AI-powered job search pipeline for Claude Code" [ref=e653]':
+                      - 'link "Initial release: AI-powered job search pipeline for Claude Code" [ref=e656] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/19222206c60240a35533b886c032f1acff36da4d
+                    - cell "Apr 5, 2026last month" [ref=e657]:
+                      - generic [ref=e658]: Apr 5, 2026last month
+                  - 'row "README.es.md, (File) docs(i18n): sync language selector across all 6 READMEs (add Russian) Apr 11, 2026last month" [ref=e659]':
+                    - cell "README.es.md, (File)" [ref=e660]:
+                      - generic [ref=e661]:
+                        - img [ref=e662]
+                        - link "README.es.md, (File)" [ref=e667] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/README.es.md
+                          - text: README.es.md
+                    - 'cell "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e668]':
+                      - 'link "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e671] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/7b01a8e1f2d1b12a4ff79a8ff95f4a5131a3ef37
+                    - cell "Apr 11, 2026last month" [ref=e672]:
+                      - generic [ref=e673]: Apr 11, 2026last month
+                  - 'row "README.ja.md, (File) docs(i18n): sync language selector across all 6 READMEs (add Russian) Apr 11, 2026last month" [ref=e674]':
+                    - cell "README.ja.md, (File)" [ref=e675]:
+                      - generic [ref=e676]:
+                        - img [ref=e677]
+                        - link "README.ja.md, (File)" [ref=e682] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/README.ja.md
+                          - text: README.ja.md
+                    - 'cell "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e683]':
+                      - 'link "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e686] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/7b01a8e1f2d1b12a4ff79a8ff95f4a5131a3ef37
+                    - cell "Apr 11, 2026last month" [ref=e687]:
+                      - generic [ref=e688]: Apr 11, 2026last month
+                  - 'row "README.ko-KR.md, (File) docs(i18n): sync language selector across all 6 READMEs (add Russian) Apr 11, 2026last month" [ref=e689]':
+                    - cell "README.ko-KR.md, (File)" [ref=e690]:
+                      - generic [ref=e691]:
+                        - img [ref=e692]
+                        - link "README.ko-KR.md, (File)" [ref=e697] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/README.ko-KR.md
+                          - text: README.ko-KR.md
+                    - 'cell "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e698]':
+                      - 'link "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e701] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/7b01a8e1f2d1b12a4ff79a8ff95f4a5131a3ef37
+                    - cell "Apr 11, 2026last month" [ref=e702]:
+                      - generic [ref=e703]: Apr 11, 2026last month
+                  - 'row "README.md, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e704]':
+                    - cell "README.md, (File)" [ref=e705]:
+                      - generic [ref=e706]:
+                        - img [ref=e707]
+                        - link "README.md, (File)" [ref=e712] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/README.md
+                          - text: README.md
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e713]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e716] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e717]:
+                      - generic [ref=e718]: May 16, 20263 days ago
+                  - 'row "README.pt-BR.md, (File) docs(i18n): sync language selector across all 6 READMEs (add Russian) Apr 11, 2026last month" [ref=e719]':
+                    - cell "README.pt-BR.md, (File)" [ref=e720]:
+                      - generic [ref=e721]:
+                        - img [ref=e722]
+                        - link "README.pt-BR.md, (File)" [ref=e727] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/README.pt-BR.md
+                          - text: README.pt-BR.md
+                    - 'cell "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e728]':
+                      - 'link "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e731] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/7b01a8e1f2d1b12a4ff79a8ff95f4a5131a3ef37
+                    - cell "Apr 11, 2026last month" [ref=e732]:
+                      - generic [ref=e733]: Apr 11, 2026last month
+                  - 'row "README.ru.md, (File) docs(i18n): sync language selector across all 6 READMEs (add Russian) Apr 11, 2026last month" [ref=e734]':
+                    - cell "README.ru.md, (File)" [ref=e735]:
+                      - generic [ref=e736]:
+                        - img [ref=e737]
+                        - link "README.ru.md, (File)" [ref=e742] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/README.ru.md
+                          - text: README.ru.md
+                    - 'cell "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e743]':
+                      - 'link "docs(i18n): sync language selector across all 6 READMEs (add Russian)" [ref=e746] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/7b01a8e1f2d1b12a4ff79a8ff95f4a5131a3ef37
+                    - cell "Apr 11, 2026last month" [ref=e747]:
+                      - generic [ref=e748]: Apr 11, 2026last month
+                  - 'row "SECURITY.md, (File) community: add Code of Conduct, Security, Support, Governance + impro… Apr 10, 2026last month" [ref=e749]':
+                    - cell "SECURITY.md, (File)" [ref=e750]:
+                      - generic [ref=e751]:
+                        - img [ref=e752]
+                        - link "SECURITY.md, (File)" [ref=e757] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/SECURITY.md
+                          - text: SECURITY.md
+                    - 'cell "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e758]':
+                      - 'link "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e761] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/a8abeba3d711fe7dcec51db02f7b79d0d86c8140
+                    - cell "Apr 10, 2026last month" [ref=e762]:
+                      - generic [ref=e763]: Apr 10, 2026last month
+                  - 'row "SUPPORT.md, (File) community: add Code of Conduct, Security, Support, Governance + impro… Apr 10, 2026last month" [ref=e764]':
+                    - cell "SUPPORT.md, (File)" [ref=e765]:
+                      - generic [ref=e766]:
+                        - img [ref=e767]
+                        - link "SUPPORT.md, (File)" [ref=e772] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/SUPPORT.md
+                          - text: SUPPORT.md
+                    - 'cell "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e773]':
+                      - 'link "community: add Code of Conduct, Security, Support, Governance + impro…" [ref=e776] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/a8abeba3d711fe7dcec51db02f7b79d0d86c8140
+                    - cell "Apr 10, 2026last month" [ref=e777]:
+                      - generic [ref=e778]: Apr 10, 2026last month
+                  - 'row "VERSION, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e779]':
+                    - cell "VERSION, (File)" [ref=e780]:
+                      - generic [ref=e781]:
+                        - img [ref=e782]
+                        - link "VERSION, (File)" [ref=e787] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/VERSION
+                          - text: VERSION
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e788]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e791] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e792]:
+                      - generic [ref=e793]: May 16, 20263 days ago
+                  - 'row "analyze-patterns.mjs, (File) fix: 10 bug fixes — resource leaks, command injection, Unicode, navig… Apr 11, 2026last month" [ref=e794]':
+                    - cell "analyze-patterns.mjs, (File)" [ref=e795]:
+                      - generic [ref=e796]:
+                        - img [ref=e797]
+                        - link "analyze-patterns.mjs, (File)" [ref=e802] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/analyze-patterns.mjs
+                          - text: analyze-patterns.mjs
+                    - 'cell "fix: 10 bug fixes — resource leaks, command injection, Unicode, navig…" [ref=e803]':
+                      - 'link "fix: 10 bug fixes — resource leaks, command injection, Unicode, navig…" [ref=e806] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/cb01a2c2e3b7fc334b1c4594749ea40b0da8fc62
+                    - cell "Apr 11, 2026last month" [ref=e807]:
+                      - generic [ref=e808]: Apr 11, 2026last month
+                  - 'row "check-liveness.mjs, (File) fix: liveness checks ignore nav/footer Apply text, expired signals win Apr 11, 2026last month" [ref=e809]':
+                    - cell "check-liveness.mjs, (File)" [ref=e810]:
+                      - generic [ref=e811]:
+                        - img [ref=e812]
+                        - link "check-liveness.mjs, (File)" [ref=e817] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/check-liveness.mjs
+                          - text: check-liveness.mjs
+                    - 'cell "fix: liveness checks ignore nav/footer Apply text, expired signals win" [ref=e818]':
+                      - 'link "fix: liveness checks ignore nav/footer Apply text, expired signals win" [ref=e821] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/3a3cb95bdf09235509df72e30b3077623f571ea1
+                    - cell "Apr 11, 2026last month" [ref=e822]:
+                      - generic [ref=e823]: Apr 11, 2026last month
+                  - row "cv-engineer.md, (File) Refine backend positioning for operations roles May 5, 20262 weeks ago" [ref=e824]:
+                    - cell "cv-engineer.md, (File)" [ref=e825]:
+                      - generic [ref=e826]:
+                        - img [ref=e827]
+                        - link "cv-engineer.md, (File)" [ref=e832] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/cv-engineer.md
+                          - text: cv-engineer.md
+                    - cell "Refine backend positioning for operations roles" [ref=e833]:
+                      - link "Refine backend positioning for operations roles" [ref=e836] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/68c86a2313416173e39065feacde654bdfd74a55
+                    - cell "May 5, 20262 weeks ago" [ref=e837]:
+                      - generic [ref=e838]: May 5, 20262 weeks ago
+                  - row "cv-hr.md, (File) Refine backend positioning for operations roles May 5, 20262 weeks ago" [ref=e839]:
+                    - cell "cv-hr.md, (File)" [ref=e840]:
+                      - generic [ref=e841]:
+                        - img [ref=e842]
+                        - link "cv-hr.md, (File)" [ref=e847] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/cv-hr.md
+                          - text: cv-hr.md
+                    - cell "Refine backend positioning for operations roles" [ref=e848]:
+                      - link "Refine backend positioning for operations roles" [ref=e851] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/68c86a2313416173e39065feacde654bdfd74a55
+                    - cell "May 5, 20262 weeks ago" [ref=e852]:
+                      - generic [ref=e853]: May 5, 20262 weeks ago
+                  - 'row "cv-sync-check.mjs, (File) Initial release: AI-powered job search pipeline for Claude Code Apr 5, 2026last month" [ref=e854]':
+                    - cell "cv-sync-check.mjs, (File)" [ref=e855]:
+                      - generic [ref=e856]:
+                        - img [ref=e857]
+                        - link "cv-sync-check.mjs, (File)" [ref=e862] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/cv-sync-check.mjs
+                          - text: cv-sync-check.mjs
+                    - 'cell "Initial release: AI-powered job search pipeline for Claude Code" [ref=e863]':
+                      - 'link "Initial release: AI-powered job search pipeline for Claude Code" [ref=e866] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/19222206c60240a35533b886c032f1acff36da4d
+                    - cell "Apr 5, 2026last month" [ref=e867]:
+                      - generic [ref=e868]: Apr 5, 2026last month
+                  - row "cv.md, (File) Update pipeline to remove expired job postings, refine Airflow automa… May 16, 20263 days ago" [ref=e869]:
+                    - cell "cv.md, (File)" [ref=e870]:
+                      - generic [ref=e871]:
+                        - img [ref=e872]
+                        - link "cv.md, (File)" [ref=e877] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/cv.md
+                          - text: cv.md
+                    - cell "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e878]:
+                      - link "Update pipeline to remove expired job postings, refine Airflow automa…" [ref=e881] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/26bd0b60b6d5c4c3d7f3fc59aeacdc4cab75699e
+                    - cell "May 16, 20263 days ago" [ref=e882]:
+                      - generic [ref=e883]: May 16, 20263 days ago
+                  - 'row "dedup-tracker.mjs, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e884]':
+                    - cell "dedup-tracker.mjs, (File)" [ref=e885]:
+                      - generic [ref=e886]:
+                        - img [ref=e887]
+                        - link "dedup-tracker.mjs, (File)" [ref=e892] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/dedup-tracker.mjs
+                          - text: dedup-tracker.mjs
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e893]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e896] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e897]:
+                      - generic [ref=e898]: May 16, 20263 days ago
+                  - 'row "doctor.mjs, (File) community: add Discord links across all touchpoints Apr 11, 2026last month" [ref=e899]':
+                    - cell "doctor.mjs, (File)" [ref=e900]:
+                      - generic [ref=e901]:
+                        - img [ref=e902]
+                        - link "doctor.mjs, (File)" [ref=e907] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/doctor.mjs
+                          - text: doctor.mjs
+                    - 'cell "community: add Discord links across all touchpoints" [ref=e908]':
+                      - 'link "community: add Discord links across all touchpoints" [ref=e911] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/c7aed64c01b9dc3ad0ab708125b2eafac4165620
+                    - cell "Apr 11, 2026last month" [ref=e912]:
+                      - generic [ref=e913]: Apr 11, 2026last month
+                  - 'row "flake.lock, (File) feat: add Nix flake devshell with Playwright support Apr 11, 2026last month" [ref=e914]':
+                    - cell "flake.lock, (File)" [ref=e915]:
+                      - generic [ref=e916]:
+                        - img [ref=e917]
+                        - link "flake.lock, (File)" [ref=e922] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/flake.lock
+                          - text: flake.lock
+                    - 'cell "feat: add Nix flake devshell with Playwright support" [ref=e923]':
+                      - 'link "feat: add Nix flake devshell with Playwright support" [ref=e926] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/c579fcddebf793f00cfad8534fd74085c09017fb
+                    - cell "Apr 11, 2026last month" [ref=e927]:
+                      - generic [ref=e928]: Apr 11, 2026last month
+                  - 'row "flake.nix, (File) feat: add Nix flake devshell with Playwright support Apr 11, 2026last month" [ref=e929]':
+                    - cell "flake.nix, (File)" [ref=e930]:
+                      - generic [ref=e931]:
+                        - img [ref=e932]
+                        - link "flake.nix, (File)" [ref=e937] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/flake.nix
+                          - text: flake.nix
+                    - 'cell "feat: add Nix flake devshell with Playwright support" [ref=e938]':
+                      - 'link "feat: add Nix flake devshell with Playwright support" [ref=e941] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/c579fcddebf793f00cfad8534fd74085c09017fb
+                    - cell "Apr 11, 2026last month" [ref=e942]:
+                      - generic [ref=e943]: Apr 11, 2026last month
+                  - 'row "followup-cadence.mjs, (File) feat: add follow-up cadence tracker mode Apr 11, 2026last month" [ref=e944]':
+                    - cell "followup-cadence.mjs, (File)" [ref=e945]:
+                      - generic [ref=e946]:
+                        - img [ref=e947]
+                        - link "followup-cadence.mjs, (File)" [ref=e952] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/followup-cadence.mjs
+                          - text: followup-cadence.mjs
+                    - 'cell "feat: add follow-up cadence tracker mode" [ref=e953]':
+                      - 'link "feat: add follow-up cadence tracker mode" [ref=e956] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/4308c375033c6df430308235f4324658a8353b81
+                    - cell "Apr 11, 2026last month" [ref=e957]:
+                      - generic [ref=e958]: Apr 11, 2026last month
+                  - 'row "generate-pdf.mjs, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e959]':
+                    - cell "generate-pdf.mjs, (File)" [ref=e960]:
+                      - generic [ref=e961]:
+                        - img [ref=e962]
+                        - link "generate-pdf.mjs, (File)" [ref=e967] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/generate-pdf.mjs
+                          - text: generate-pdf.mjs
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e968]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e971] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e972]:
+                      - generic [ref=e973]: May 16, 20263 days ago
+                  - 'row "liveness-core.mjs, (File) fix: liveness checks ignore nav/footer Apply text, expired signals win Apr 11, 2026last month" [ref=e974]':
+                    - cell "liveness-core.mjs, (File)" [ref=e975]:
+                      - generic [ref=e976]:
+                        - img [ref=e977]
+                        - link "liveness-core.mjs, (File)" [ref=e982] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/liveness-core.mjs
+                          - text: liveness-core.mjs
+                    - 'cell "fix: liveness checks ignore nav/footer Apply text, expired signals win" [ref=e983]':
+                      - 'link "fix: liveness checks ignore nav/footer Apply text, expired signals win" [ref=e986] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/3a3cb95bdf09235509df72e30b3077623f571ea1
+                    - cell "Apr 11, 2026last month" [ref=e987]:
+                      - generic [ref=e988]: Apr 11, 2026last month
+                  - 'row "merge-tracker.mjs, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e989]':
+                    - cell "merge-tracker.mjs, (File)" [ref=e990]:
+                      - generic [ref=e991]:
+                        - img [ref=e992]
+                        - link "merge-tracker.mjs, (File)" [ref=e997] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/merge-tracker.mjs
+                          - text: merge-tracker.mjs
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e998]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e1001] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e1002]:
+                      - generic [ref=e1003]: May 16, 20263 days ago
+                  - 'row "normalize-statuses.mjs, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e1004]':
+                    - cell "normalize-statuses.mjs, (File)" [ref=e1005]:
+                      - generic [ref=e1006]:
+                        - img [ref=e1007]
+                        - link "normalize-statuses.mjs, (File)" [ref=e1012] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/normalize-statuses.mjs
+                          - text: normalize-statuses.mjs
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e1013]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e1016] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e1017]:
+                      - generic [ref=e1018]: May 16, 20263 days ago
+                  - 'row "package.json, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e1019]':
+                    - cell "package.json, (File)" [ref=e1020]:
+                      - generic [ref=e1021]:
+                        - img [ref=e1022]
+                        - link "package.json, (File)" [ref=e1027] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/package.json
+                          - text: package.json
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e1028]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e1031] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e1032]:
+                      - generic [ref=e1033]: May 16, 20263 days ago
+                  - row "portals.yml, (File) Update backend job pipeline and profile May 5, 20262 weeks ago" [ref=e1034]:
+                    - cell "portals.yml, (File)" [ref=e1035]:
+                      - generic [ref=e1036]:
+                        - img [ref=e1037]
+                        - link "portals.yml, (File)" [ref=e1042] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/portals.yml
+                          - text: portals.yml
+                    - cell "Update backend job pipeline and profile" [ref=e1043]:
+                      - link "Update backend job pipeline and profile" [ref=e1046] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/813a2461e1da2b8977a937cb98036acfe5a43e62
+                    - cell "May 5, 20262 weeks ago" [ref=e1047]:
+                      - generic [ref=e1048]: May 5, 20262 weeks ago
+                  - row "project-voicelink.md, (File) Expanded VoiceLink documentation to include SSE heartbeat/reconnect, … May 3, 20262 weeks ago" [ref=e1049]:
+                    - cell "project-voicelink.md, (File)" [ref=e1050]:
+                      - generic [ref=e1051]:
+                        - img [ref=e1052]
+                        - link "project-voicelink.md, (File)" [ref=e1057] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/project-voicelink.md
+                          - text: project-voicelink.md
+                    - cell "Expanded VoiceLink documentation to include SSE heartbeat/reconnect, …" [ref=e1058]:
+                      - link "Expanded VoiceLink documentation to include SSE heartbeat/reconnect, …" [ref=e1061] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/9a7cc2e8e54424c0bddcde3df003274a82fb5b0a
+                    - cell "May 3, 20262 weeks ago" [ref=e1062]:
+                      - generic [ref=e1063]: May 3, 20262 weeks ago
+                  - row "scan.mjs, (File) Added evaluation reports for SentBe, Finnq, and QMIT backend engineer… Apr 23, 2026last month" [ref=e1064]:
+                    - cell "scan.mjs, (File)" [ref=e1065]:
+                      - generic [ref=e1066]:
+                        - img [ref=e1067]
+                        - link "scan.mjs, (File)" [ref=e1072] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/scan.mjs
+                          - text: scan.mjs
+                    - cell "Added evaluation reports for SentBe, Finnq, and QMIT backend engineer…" [ref=e1073]:
+                      - link "Added evaluation reports for SentBe, Finnq, and QMIT backend engineer…" [ref=e1076] [cursor=pointer]:
+                        - /url: /junho0831/career-ops/commit/b188f51c2aca66b53956476ff03e696fc89841dc
+                    - cell "Apr 23, 2026last month" [ref=e1077]:
+                      - generic [ref=e1078]: Apr 23, 2026last month
+                  - 'row "test-all.mjs, (File) fix: test-all.mjs scans only git-tracked files, avoids false positives Apr 12, 2026last month" [ref=e1079]':
+                    - cell "test-all.mjs, (File)" [ref=e1080]:
+                      - generic [ref=e1081]:
+                        - img [ref=e1082]
+                        - link "test-all.mjs, (File)" [ref=e1087] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/test-all.mjs
+                          - text: test-all.mjs
+                    - 'cell "fix: test-all.mjs scans only git-tracked files, avoids false positives" [ref=e1088]':
+                      - 'link "fix: test-all.mjs scans only git-tracked files, avoids false positives" [ref=e1091] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/47c9f984d8ddc70974f15c99b081667b73f1bb9a
+                    - cell "Apr 12, 2026last month" [ref=e1092]:
+                      - generic [ref=e1093]: Apr 12, 2026last month
+                  - 'row "update-system.mjs, (File) chore: auto-update system files to v1.8.0 May 16, 20263 days ago" [ref=e1094]':
+                    - cell "update-system.mjs, (File)" [ref=e1095]:
+                      - generic [ref=e1096]:
+                        - img [ref=e1097]
+                        - link "update-system.mjs, (File)" [ref=e1102] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/update-system.mjs
+                          - text: update-system.mjs
+                    - 'cell "chore: auto-update system files to v1.8.0" [ref=e1103]':
+                      - 'link "chore: auto-update system files to v1.8.0" [ref=e1106] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/d2be31c75b5671d941527de80ee5d1ea8e07d6df
+                    - cell "May 16, 20263 days ago" [ref=e1107]:
+                      - generic [ref=e1108]: May 16, 20263 days ago
+                  - 'row "verify-pipeline.mjs, (File) fix: support absolute report links in verifier May 16, 20263 days ago" [ref=e1109]':
+                    - cell "verify-pipeline.mjs, (File)" [ref=e1110]:
+                      - generic [ref=e1111]:
+                        - img [ref=e1112]
+                        - link "verify-pipeline.mjs, (File)" [ref=e1117] [cursor=pointer]:
+                          - /url: /junho0831/career-ops/blob/main/verify-pipeline.mjs
+                          - text: verify-pipeline.mjs
+                    - 'cell "fix: support absolute report links in verifier" [ref=e1118]':
+                      - 'link "fix: support absolute report links in verifier" [ref=e1121] [cursor=pointer]':
+                        - /url: /junho0831/career-ops/commit/6358cba7cd81279ca23e9ca8aa9458131af4806f
+                    - cell "May 16, 20263 days ago" [ref=e1122]:
+                      - generic [ref=e1123]: May 16, 20263 days ago
+            - generic [ref=e1125]:
+              - generic [ref=e1126]:
+                - heading "Repository files navigation" [level=2] [ref=e1127]
+                - navigation "Repository files" [ref=e1128]:
+                  - list [ref=e1129]:
+                    - listitem [ref=e1130]:
+                      - link "README" [ref=e1131] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e1133]
+                        - generic [ref=e1135]: README
+                    - listitem [ref=e1136]:
+                      - link "Code of conduct" [ref=e1137] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e1139]
+                        - generic [ref=e1141]: Code of conduct
+                    - listitem [ref=e1142]:
+                      - link "Contributing" [ref=e1143] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e1145]
+                        - generic [ref=e1147]: Contributing
+                    - listitem [ref=e1148]:
+                      - link "License" [ref=e1149] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e1151]
+                        - generic [ref=e1153]: License
+                    - listitem [ref=e1154]:
+                      - link "Security" [ref=e1155] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e1157]
+                        - generic [ref=e1159]: Security
+                - button "Outline" [ref=e1160] [cursor=pointer]:
+                  - img [ref=e1161]
+              - article [ref=e1164]:
+                - generic [ref=e1165]:
+                  - heading "Career-Ops" [level=1] [ref=e1166]
+                  - 'link "Permalink: Career-Ops" [ref=e1167] [cursor=pointer]':
+                    - /url: "#career-ops"
+                    - img [ref=e1168]
+                - paragraph [ref=e1170]:
+                  - link "English" [ref=e1171] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.md
+                  - text: "|"
+                  - link "Español" [ref=e1172] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.es.md
+                  - text: "|"
+                  - link "Português (Brasil)" [ref=e1173] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.pt-BR.md
+                  - text: "|"
+                  - link "한국어" [ref=e1174] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.ko-KR.md
+                  - text: "|"
+                  - link "日本語" [ref=e1175] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.ja.md
+                  - text: "|"
+                  - link "Русский" [ref=e1176] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.ru.md
+                  - text: "|"
+                  - link "简体中文" [ref=e1177] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.cn.md
+                  - text: "|"
+                  - link "繁體中文" [ref=e1178] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/README.zh-TW.md
+                - paragraph [ref=e1179]:
+                  - link "Career-Ops — Multi-Agent Job Search System" [ref=e1180] [cursor=pointer]:
+                    - /url: https://x.com/santifer
+                    - img "Career-Ops — Multi-Agent Job Search System" [ref=e1181]
+                - paragraph [ref=e1182]:
+                  - emphasis [ref=e1183]: I spent months applying to jobs the hard way. So I engineered the system I wish I had.
+                  - text: Companies use AI to filter candidates.
+                  - strong [ref=e1184]:
+                    - text: I just gave candidates AI to
+                    - emphasis [ref=e1185]: choose
+                    - text: companies.
+                  - emphasis [ref=e1186]: Now it's open source.
+                - paragraph [ref=e1187]:
+                  - link "Claude Code" [ref=e1188] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/fc48044a2ef7f0ae677451b95488b71a60189ae02c10a039e8fd9badc4711e75/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436c617564655f436f64652d3030303f7374796c653d666c6174266c6f676f3d616e7468726f706963266c6f676f436f6c6f723d7768697465
+                    - img "Claude Code" [ref=e1189]
+                  - link "OpenCode" [ref=e1190] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/a7ccbc0efab984d19d9c55c08af124e6305f250feeb7847729045d19944351e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f70656e436f64652d3131313832373f7374796c653d666c6174266c6f676f3d7465726d696e616c266c6f676f436f6c6f723d7768697465
+                    - img "OpenCode" [ref=e1191]
+                  - link "Gemini CLI" [ref=e1192] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/6c21b363cafe5904986afd66ad78e3fc97582a4d8df7aa06b175b441510cdf5c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f47656d696e695f434c492d3432383546343f7374796c653d666c6174266c6f676f3d676f6f676c65266c6f676f436f6c6f723d7768697465
+                    - img "Gemini CLI" [ref=e1193]
+                  - link "Codex" [ref=e1194] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/f6ed91af2d287336828e063bd7a84ceeae43d463741a53997610c2dbcc7f99cc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f6465785f28736f6f6e292d3642373238303f7374796c653d666c6174266c6f676f3d6f70656e6169266c6f676f436f6c6f723d7768697465
+                    - img "Codex" [ref=e1195]
+                  - link "Node.js" [ref=e1196] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/5800b7f3ab010b92827a301febb492f7d897a7dbb7dbe97a7ab51d106b878a8b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4e6f64652e6a732d3333393933333f7374796c653d666c6174266c6f676f3d6e6f64652e6a73266c6f676f436f6c6f723d7768697465
+                    - img "Node.js" [ref=e1197]
+                  - link "Go" [ref=e1198] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/2c54290f2057e36a55a985ab1cd61b80b4a5a732160a50fcd707b7b6b0086460/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476f2d3030414444383f7374796c653d666c6174266c6f676f3d676f266c6f676f436f6c6f723d7768697465
+                    - img "Go" [ref=e1199]
+                  - link "Playwright" [ref=e1200] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/5bbc938035e073ee7d497039166e8004dc95170352ee9a15b08aa2aae92f54e8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506c61797772696768742d3245414433333f7374796c653d666c6174266c6f676f3d706c6179777269676874266c6f676f436f6c6f723d7768697465
+                    - img "Playwright" [ref=e1201]
+                  - link "MIT" [ref=e1202] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/08cef40a9105b6526ca22088bc514fbfdbc9aac1ddbf8d4e6c750e3a88a44dca/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c75652e737667
+                    - img "MIT" [ref=e1203]
+                  - link "Trademark Policy" [ref=e1204] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/TRADEMARK.md
+                    - img "Trademark Policy" [ref=e1205]
+                  - link "Discord" [ref=e1206] [cursor=pointer]:
+                    - /url: https://discord.gg/8pRpHETxa4
+                    - img "Discord" [ref=e1207]
+                  - link "EN" [ref=e1208] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/aee68740ec5fa157a7fb2b4d392765d75ec83c053f4e48d2998dba211dbf4b60/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f454e2d626c75653f7374796c653d666c6174
+                    - img "EN" [ref=e1209]
+                  - link "ES" [ref=e1210] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/e8bbf3ac51cbb139c52e0ac0b2a28f1a77c41e8a27f416344e7e6cfd44b00c14/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f45532d7265643f7374796c653d666c6174
+                    - img "ES" [ref=e1211]
+                  - link "DE" [ref=e1212] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/89cfbce1d1bcfbd0c74b013faeb1231ac22f4effe675d49c0f78b2f6e47e9b30/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f44452d677265793f7374796c653d666c6174
+                    - img "DE" [ref=e1213]
+                  - link "FR" [ref=e1214] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/0a4101d8fbe3010bb0087be51549d4dfc023a6d1740c82a95d91023a5c4bf67f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46522d626c75653f7374796c653d666c6174
+                    - img "FR" [ref=e1215]
+                  - link "PT-BR" [ref=e1216] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/1c1a919347ddfa5b03b6ae16ef782025d87fcd34733980a9c2b46bc42d7bc275/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50542d2d42522d677265656e3f7374796c653d666c6174
+                    - img "PT-BR" [ref=e1217]
+                  - link "KO" [ref=e1218] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/318b5978427b53c16a1f712333a5adf055019fe79ad7d19f0f9af7cc97c5e243/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b4f2d77686974653f7374796c653d666c6174
+                    - img "KO" [ref=e1219]
+                  - link "JA" [ref=e1220] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/8bfb16537ca20f482ab226acff95f64d362e6f44355a787434cd5769a802bfa8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a412d7265643f7374796c653d666c6174
+                    - img "JA" [ref=e1221]
+                  - link "ZH-CN" [ref=e1222] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/6ba6ac73b94114b34d0a9bc92a3484f7a21649516a9dcc4a0f0e23bedf611117/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5a482d2d434e2d7265643f7374796c653d666c6174
+                    - img "ZH-CN" [ref=e1223]
+                  - link "ZH-TW" [ref=e1224] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/320e925e45b7b6a0db74ed3e04a48dbda5146ea95a8725a5641504ad6e915084/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5a482d2d54572d626c75653f7374796c653d666c6174
+                    - img "ZH-TW" [ref=e1225]
+                - separator [ref=e1226]
+                - paragraph [ref=e1227]:
+                  - link "Career-Ops Demo" [ref=e1229] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/docs/demo.gif
+                    - img "Career-Ops Demo" [ref=e1230]
+                - paragraph [ref=e1231]:
+                  - strong [ref=e1232]: 740+ job listings evaluated · 100+ personalized CVs · 1 dream role landed
+                - paragraph [ref=e1233]:
+                  - link "Discord" [ref=e1234] [cursor=pointer]:
+                    - /url: https://discord.gg/8pRpHETxa4
+                    - img "Discord" [ref=e1235]
+                - generic [ref=e1236]:
+                  - heading "What Is This" [level=2] [ref=e1237]
+                  - 'link "Permalink: What Is This" [ref=e1238] [cursor=pointer]':
+                    - /url: "#what-is-this"
+                    - img [ref=e1239]
+                - paragraph [ref=e1241]: "Career-Ops turns any AI coding CLI into a full job search command center. Instead of manually tracking applications in a spreadsheet, you get an AI-powered pipeline that:"
+                - list [ref=e1242]:
+                  - listitem [ref=e1243]:
+                    - strong [ref=e1244]: Evaluates offers
+                    - text: with a structured A-F scoring system (10 weighted dimensions)
+                  - listitem [ref=e1245]:
+                    - strong [ref=e1246]: Generates tailored PDFs
+                    - text: "-- ATS-optimized CVs customized per job description"
+                  - listitem [ref=e1247]:
+                    - strong [ref=e1248]: Scans portals
+                    - text: automatically (Greenhouse, Ashby, Lever, company pages)
+                  - listitem [ref=e1249]:
+                    - strong [ref=e1250]: Processes in batch
+                    - text: "-- evaluate 10+ offers in parallel with sub-agents"
+                  - listitem [ref=e1251]:
+                    - strong [ref=e1252]: Tracks everything
+                    - text: in a single source of truth with integrity checks
+                - blockquote [ref=e1253]:
+                  - paragraph [ref=e1254]:
+                    - strong [ref=e1255]: "Important: This is NOT a spray-and-pray tool."
+                    - text: Career-ops is a filter -- it helps you find the few offers worth your time out of hundreds. The system strongly recommends against applying to anything scoring below 4.0/5. Your time is valuable, and so is the recruiter's. Always review before submitting.
+                - paragraph [ref=e1256]: "Career-ops is agentic: Claude Code navigates career pages with Playwright, evaluates fit by reasoning about your CV vs the job description (not keyword matching), and adapts your resume per listing."
+                - blockquote [ref=e1257]:
+                  - paragraph [ref=e1258]:
+                    - strong [ref=e1259]: "Heads up: the first evaluations won't be great."
+                    - text: "The system doesn't know you yet. Feed it context -- your CV, your career story, your proof points, your preferences, what you're good at, what you want to avoid. The more you nurture it, the better it gets. Think of it as onboarding a new recruiter: the first week they need to learn about you, then they become invaluable."
+                - paragraph [ref=e1260]:
+                  - text: Built by someone who used it to evaluate 740+ job offers, generate 100+ tailored CVs, and land a Head of Applied AI role.
+                  - link "Read the full case study" [ref=e1261] [cursor=pointer]:
+                    - /url: https://santifer.io/career-ops-system
+                  - text: .
+                - generic [ref=e1262]:
+                  - heading "Features" [level=2] [ref=e1263]
+                  - 'link "Permalink: Features" [ref=e1264] [cursor=pointer]':
+                    - /url: "#features"
+                    - img [ref=e1265]
+                - table [ref=e1268]:
+                  - rowgroup [ref=e1269]:
+                    - row "Feature Description" [ref=e1270]:
+                      - columnheader "Feature" [ref=e1271]
+                      - columnheader "Description" [ref=e1272]
+                  - rowgroup [ref=e1273]:
+                    - row "Auto-Pipeline Paste a URL, get a full evaluation + PDF + tracker entry" [ref=e1274]:
+                      - cell "Auto-Pipeline" [ref=e1275]:
+                        - strong [ref=e1276]: Auto-Pipeline
+                      - cell "Paste a URL, get a full evaluation + PDF + tracker entry" [ref=e1277]
+                    - row "6-Block Evaluation Role summary, CV match, level strategy, comp research, personalization, interview prep (STAR+R)" [ref=e1278]:
+                      - cell "6-Block Evaluation" [ref=e1279]:
+                        - strong [ref=e1280]: 6-Block Evaluation
+                      - cell "Role summary, CV match, level strategy, comp research, personalization, interview prep (STAR+R)" [ref=e1281]
+                    - row "Interview Story Bank Accumulates STAR+Reflection stories across evaluations -- 5-10 master stories that answer any behavioral question" [ref=e1282]:
+                      - cell "Interview Story Bank" [ref=e1283]:
+                        - strong [ref=e1284]: Interview Story Bank
+                      - cell "Accumulates STAR+Reflection stories across evaluations -- 5-10 master stories that answer any behavioral question" [ref=e1285]
+                    - row "Negotiation Scripts Salary negotiation frameworks, geographic discount pushback, competing offer leverage" [ref=e1286]:
+                      - cell "Negotiation Scripts" [ref=e1287]:
+                        - strong [ref=e1288]: Negotiation Scripts
+                      - cell "Salary negotiation frameworks, geographic discount pushback, competing offer leverage" [ref=e1289]
+                    - row "ATS PDF Generation Keyword-injected CVs with Space Grotesk + DM Sans design" [ref=e1290]:
+                      - cell "ATS PDF Generation" [ref=e1291]:
+                        - strong [ref=e1292]: ATS PDF Generation
+                      - cell "Keyword-injected CVs with Space Grotesk + DM Sans design" [ref=e1293]
+                    - row "Portal Scanner 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + custom queries across Ashby, Greenhouse, Lever, Wellfound" [ref=e1294]:
+                      - cell "Portal Scanner" [ref=e1295]:
+                        - strong [ref=e1296]: Portal Scanner
+                      - cell "45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + custom queries across Ashby, Greenhouse, Lever, Wellfound" [ref=e1297]
+                    - row "Batch Processing Parallel evaluation with claude -p workers" [ref=e1298]:
+                      - cell "Batch Processing" [ref=e1299]:
+                        - strong [ref=e1300]: Batch Processing
+                      - cell "Parallel evaluation with claude -p workers" [ref=e1301]:
+                        - text: Parallel evaluation with
+                        - code [ref=e1302]: claude -p
+                        - text: workers
+                    - row "Dashboard TUI Terminal UI to browse, filter, and sort your pipeline" [ref=e1303]:
+                      - cell "Dashboard TUI" [ref=e1304]:
+                        - strong [ref=e1305]: Dashboard TUI
+                      - cell "Terminal UI to browse, filter, and sort your pipeline" [ref=e1306]
+                    - row "Human-in-the-Loop AI evaluates and recommends, you decide and act. The system never submits an application -- you always have the final call" [ref=e1307]:
+                      - cell "Human-in-the-Loop" [ref=e1308]:
+                        - strong [ref=e1309]: Human-in-the-Loop
+                      - cell "AI evaluates and recommends, you decide and act. The system never submits an application -- you always have the final call" [ref=e1310]
+                    - row "Pipeline Integrity Automated merge, dedup, status normalization, health checks" [ref=e1311]:
+                      - cell "Pipeline Integrity" [ref=e1312]:
+                        - strong [ref=e1313]: Pipeline Integrity
+                      - cell "Automated merge, dedup, status normalization, health checks" [ref=e1314]
+                - generic [ref=e1315]:
+                  - heading "Quick Start" [level=2] [ref=e1316]
+                  - 'link "Permalink: Quick Start" [ref=e1317] [cursor=pointer]':
+                    - /url: "#quick-start"
+                    - img [ref=e1318]
+                - generic [ref=e1320]:
+                  - generic [ref=e1321]:
+                    - generic [ref=e1322]: "# 1. Clone and install"
+                    - text: git clone https://github.com/santifer/career-ops.git cd career-ops && npm install npx playwright install chromium
+                    - generic [ref=e1323]: "# Required for PDF generation"
+                    - generic [ref=e1324]: "# 2. Check setup"
+                    - text: npm run doctor
+                    - generic [ref=e1325]: "# Validates all prerequisites"
+                    - generic [ref=e1326]: "# 3. Configure"
+                    - text: cp config/profile.example.yml config/profile.yml
+                    - generic [ref=e1327]: "# Edit with your details"
+                    - text: cp templates/portals.example.yml portals.yml
+                    - generic [ref=e1328]: "# Customize companies"
+                    - generic [ref=e1329]: "# 4. Add your CV"
+                    - generic [ref=e1330]: "# Create cv.md in the project root with your CV in markdown"
+                    - generic [ref=e1331]: "# 5. Personalize with Claude"
+                    - text: claude
+                    - generic [ref=e1332]: "# Open Claude Code in this directory"
+                    - generic [ref=e1333]: "# Then ask Claude to adapt the system to you:"
+                    - generic [ref=e1334]: "# \"Change the archetypes to backend engineering roles\""
+                    - generic [ref=e1335]: "# \"Translate the modes to English\""
+                    - generic [ref=e1336]: "# \"Add these 5 companies to portals.yml\""
+                    - generic [ref=e1337]: "# \"Update my profile with this CV I'm pasting\""
+                    - generic [ref=e1338]: "# 6. Start using"
+                    - generic [ref=e1339]: "# Paste a job URL or run /career-ops"
+                  - button "Copy code to clipboard" [ref=e1341] [cursor=pointer]:
+                    - img [ref=e1342]
+                - blockquote [ref=e1345]:
+                  - paragraph [ref=e1346]:
+                    - strong [ref=e1347]: The system is designed to be customized by Claude itself.
+                    - text: Modes, archetypes, scoring weights, negotiation scripts -- just ask Claude to change them. It reads the same files it uses, so it knows exactly what to edit.
+                - paragraph [ref=e1348]:
+                  - text: See
+                  - link "docs/SETUP.md" [ref=e1349] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/docs/SETUP.md
+                  - text: for the full setup guide.
+                - generic [ref=e1350]:
+                  - heading "Gemini CLI Integration" [level=2] [ref=e1351]
+                  - 'link "Permalink: Gemini CLI Integration" [ref=e1352] [cursor=pointer]':
+                    - /url: "#gemini-cli-integration"
+                    - img [ref=e1353]
+                - paragraph [ref=e1355]:
+                  - text: Career-ops supports
+                  - link "Gemini CLI" [ref=e1356] [cursor=pointer]:
+                    - /url: https://github.com/google-gemini/gemini-cli
+                  - text: natively — the same way it supports Claude Code and OpenCode. All 15 slash commands are available, using the same
+                  - code [ref=e1357]: modes/*.md
+                  - text: evaluation logic.
+                - generic [ref=e1358]:
+                  - heading "Option A — Native Gemini CLI (Recommended)" [level=3] [ref=e1359]
+                  - 'link "Permalink: Option A — Native Gemini CLI (Recommended)" [ref=e1360] [cursor=pointer]':
+                    - /url: "#option-a--native-gemini-cli-recommended"
+                    - img [ref=e1361]
+                - generic [ref=e1363]:
+                  - generic [ref=e1364]:
+                    - generic [ref=e1365]: "# 1. Install Gemini CLI"
+                    - text: npm install -g @google/gemini-cli
+                    - generic [ref=e1366]: "# or: npx @google/gemini-cli --version"
+                    - generic [ref=e1367]: "# 2. Authenticate (free — uses your Google account)"
+                    - text: gemini auth
+                    - generic [ref=e1368]: "# 3. Run in the career-ops directory"
+                    - text: cd career-ops gemini
+                    - generic [ref=e1369]: "# 4. Use slash commands just like Claude Code"
+                    - text: /career-ops
+                    - generic [ref=e1370]: "\"Senior AI Engineer at Anthropic...\""
+                    - text: /career-ops-evaluate --file ./jds/openai.txt /career-ops-scan /career-ops-pdf /career-ops-tracker
+                  - button "Copy code to clipboard" [ref=e1372] [cursor=pointer]:
+                    - img [ref=e1373]
+                - paragraph [ref=e1376]:
+                  - text: The
+                  - code [ref=e1377]: GEMINI.md
+                  - text: file is auto-loaded as context. All 15 commands are defined in
+                  - code [ref=e1378]: .gemini/commands/*.toml
+                  - text: .
+                - generic [ref=e1379]:
+                  - heading "Option B — Standalone API Script (No CLI install needed)" [level=3] [ref=e1380]
+                  - 'link "Permalink: Option B — Standalone API Script (No CLI install needed)" [ref=e1381] [cursor=pointer]':
+                    - /url: "#option-b--standalone-api-script-no-cli-install-needed"
+                    - img [ref=e1382]
+                - generic [ref=e1384]:
+                  - generic [ref=e1385]:
+                    - generic [ref=e1386]: "# 1. Get a free API key at https://aistudio.google.com/apikey"
+                    - text: cp .env.example .env
+                    - generic [ref=e1387]: "# Edit .env → set GEMINI_API_KEY=your_key_here"
+                    - generic [ref=e1388]: "# 2. Install dependencies"
+                    - text: npm install
+                    - generic [ref=e1389]: "# 3. Evaluate a job description"
+                    - text: node gemini-eval.mjs
+                    - generic [ref=e1390]: "\"We are looking for a Senior AI Engineer...\""
+                    - text: node gemini-eval.mjs --file ./jds/my-job.txt npm run gemini:eval --
+                    - generic [ref=e1391]: "\"JD text here\""
+                  - button "Copy code to clipboard" [ref=e1393] [cursor=pointer]:
+                    - img [ref=e1394]
+                - blockquote [ref=e1397]:
+                  - paragraph [ref=e1398]:
+                    - strong [ref=e1399]: "Free tier:"
+                    - text: Both options work without billing. Native CLI uses Google OAuth; the API script uses
+                    - code [ref=e1400]: gemini-2.5-flash
+                    - text: (15 RPM, 1M tokens/day free).
+                - generic [ref=e1401]:
+                  - heading "Usage" [level=2] [ref=e1402]
+                  - 'link "Permalink: Usage" [ref=e1403] [cursor=pointer]':
+                    - /url: "#usage"
+                    - img [ref=e1404]
+                - paragraph [ref=e1406]: "Career-ops is a single slash command with multiple modes:"
+                - generic [ref=e1407]:
+                  - code [ref=e1409]: "/career-ops → Show all available commands /career-ops {paste a JD} → Full auto-pipeline (evaluate + PDF + tracker) /career-ops scan → Scan portals for new offers /career-ops pdf → Generate ATS-optimized CV /career-ops batch → Batch evaluate multiple offers /career-ops tracker → View application status /career-ops apply → Fill application forms with AI /career-ops pipeline → Process pending URLs /career-ops contacto → LinkedIn outreach message /career-ops deep → Deep company research /career-ops training → Evaluate a course/cert /career-ops project → Evaluate a portfolio project"
+                  - button "Copy code to clipboard" [ref=e1411] [cursor=pointer]:
+                    - img [ref=e1412]
+                - paragraph [ref=e1415]: Or just paste a job URL or description directly -- career-ops auto-detects it and runs the full pipeline.
+                - generic [ref=e1416]:
+                  - heading "How It Works" [level=2] [ref=e1417]
+                  - 'link "Permalink: How It Works" [ref=e1418] [cursor=pointer]':
+                    - /url: "#how-it-works"
+                    - img [ref=e1419]
+                - generic [ref=e1421]:
+                  - code [ref=e1423]: "You paste a job URL or description │ ▼ ┌──────────────────┐ │ Archetype │ Classifies: LLMOps / Agentic / PM / SA / FDE / Transformation │ Detection │ └────────┬─────────┘ │ ┌────────▼─────────┐ │ A-F Evaluation │ Match, gaps, comp research, STAR stories │ (reads cv.md) │ └────────┬─────────┘ │ ┌────┼────┐ ▼ ▼ ▼ Report PDF Tracker .md .pdf .tsv"
+                  - button "Copy code to clipboard" [ref=e1425] [cursor=pointer]:
+                    - img [ref=e1426]
+                - generic [ref=e1429]:
+                  - heading "Pre-configured Portals" [level=2] [ref=e1430]
+                  - 'link "Permalink: Pre-configured Portals" [ref=e1431] [cursor=pointer]':
+                    - /url: "#pre-configured-portals"
+                    - img [ref=e1432]
+                - paragraph [ref=e1434]:
+                  - text: The scanner comes with
+                  - strong [ref=e1435]: 45+ companies
+                  - text: ready to scan and
+                  - strong [ref=e1436]: 19 search queries
+                  - text: across major job boards. Copy
+                  - code [ref=e1437]: templates/portals.example.yml
+                  - text: to
+                  - code [ref=e1438]: portals.yml
+                  - text: "and add your own:"
+                - paragraph [ref=e1439]:
+                  - strong [ref=e1440]: "AI Labs:"
+                  - text: Anthropic, OpenAI, Mistral, Cohere, LangChain, Pinecone
+                  - strong [ref=e1441]: "Voice AI:"
+                  - text: ElevenLabs, PolyAI, Parloa, Hume AI, Deepgram, Vapi, Bland AI
+                  - strong [ref=e1442]: "AI Platforms:"
+                  - text: Retool, Airtable, Vercel, Temporal, Glean, Arize AI
+                  - strong [ref=e1443]: "Contact Center:"
+                  - text: Ada, LivePerson, Sierra, Decagon, Talkdesk, Genesys
+                  - strong [ref=e1444]: "Enterprise:"
+                  - text: Salesforce, Twilio, Gong, Dialpad
+                  - strong [ref=e1445]: "LLMOps:"
+                  - text: Langfuse, Weights & Biases, Lindy, Cognigy, Speechmatics
+                  - strong [ref=e1446]: "Automation:"
+                  - text: n8n, Zapier, Make.com
+                  - strong [ref=e1447]: "European:"
+                  - text: Factorial, Attio, Tinybird, Clarity AI, Travelperk
+                - paragraph [ref=e1448]:
+                  - strong [ref=e1449]: "Job boards searched:"
+                  - text: Ashby, Greenhouse, Lever, Wellfound, Workable, RemoteFront
+                - generic [ref=e1450]:
+                  - heading "Dashboard TUI" [level=2] [ref=e1451]
+                  - 'link "Permalink: Dashboard TUI" [ref=e1452] [cursor=pointer]':
+                    - /url: "#dashboard-tui"
+                    - img [ref=e1453]
+                - paragraph [ref=e1455]: "The built-in terminal dashboard lets you browse your pipeline visually:"
+                - generic [ref=e1456]:
+                  - generic [ref=e1457]: cd dashboard go build -o career-dashboard . ./career-dashboard --path ..
+                  - button "Copy code to clipboard" [ref=e1459] [cursor=pointer]:
+                    - img [ref=e1460]
+                - paragraph [ref=e1463]: "Features: 6 filter tabs, 4 sort modes, grouped/flat view, lazy-loaded previews, inline status changes."
+                - generic [ref=e1464]:
+                  - heading "Project Structure" [level=2] [ref=e1465]
+                  - 'link "Permalink: Project Structure" [ref=e1466] [cursor=pointer]':
+                    - /url: "#project-structure"
+                    - img [ref=e1467]
+                - generic [ref=e1469]:
+                  - code [ref=e1471]: "career-ops/ ├── AGENTS.md # Canonical agent instructions (all CLIs) ├── CLAUDE.md # Claude Code wrapper (imports AGENTS.md) ├── cv.md # Your CV (create this) ├── article-digest.md # Your proof points (optional) ├── config/ │ └── profile.example.yml # Template for your profile ├── modes/ # 14 skill modes │ ├── _shared.md # Shared context (customize this) │ ├── oferta.md # Single evaluation │ ├── pdf.md # PDF generation │ ├── scan.md # Portal scanner │ ├── batch.md # Batch processing │ └── ... ├── templates/ │ ├── cv-template.html # ATS-optimized CV template │ ├── portals.example.yml # Scanner config template │ └── states.yml # Canonical statuses ├── batch/ │ ├── batch-prompt.md # Self-contained worker prompt │ └── batch-runner.sh # Orchestrator script ├── dashboard/ # Go TUI pipeline viewer ├── data/ # Your tracking data (gitignored) ├── reports/ # Evaluation reports (gitignored) ├── output/ # Generated PDFs (gitignored) ├── fonts/ # Space Grotesk + DM Sans ├── docs/ # Setup, customization, architecture └── examples/ # Sample CV, report, proof points"
+                  - button "Copy code to clipboard" [ref=e1473] [cursor=pointer]:
+                    - img [ref=e1474]
+                - generic [ref=e1477]:
+                  - heading "Tech Stack" [level=2] [ref=e1478]
+                  - 'link "Permalink: Tech Stack" [ref=e1479] [cursor=pointer]':
+                    - /url: "#tech-stack"
+                    - img [ref=e1480]
+                - paragraph [ref=e1482]:
+                  - link "Claude Code" [ref=e1483] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/fc48044a2ef7f0ae677451b95488b71a60189ae02c10a039e8fd9badc4711e75/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436c617564655f436f64652d3030303f7374796c653d666c6174266c6f676f3d616e7468726f706963266c6f676f436f6c6f723d7768697465
+                    - img "Claude Code" [ref=e1484]
+                  - link "Node.js" [ref=e1485] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/5800b7f3ab010b92827a301febb492f7d897a7dbb7dbe97a7ab51d106b878a8b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4e6f64652e6a732d3333393933333f7374796c653d666c6174266c6f676f3d6e6f64652e6a73266c6f676f436f6c6f723d7768697465
+                    - img "Node.js" [ref=e1486]
+                  - link "Playwright" [ref=e1487] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/5bbc938035e073ee7d497039166e8004dc95170352ee9a15b08aa2aae92f54e8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506c61797772696768742d3245414433333f7374796c653d666c6174266c6f676f3d706c6179777269676874266c6f676f436f6c6f723d7768697465
+                    - img "Playwright" [ref=e1488]
+                  - link "Go" [ref=e1489] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/2c54290f2057e36a55a985ab1cd61b80b4a5a732160a50fcd707b7b6b0086460/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476f2d3030414444383f7374796c653d666c6174266c6f676f3d676f266c6f676f436f6c6f723d7768697465
+                    - img "Go" [ref=e1490]
+                  - link "Bubble Tea" [ref=e1491] [cursor=pointer]:
+                    - /url: https://camo.githubusercontent.com/795840c8e79680b58e489c02244621fa33cdf92cf31e431468f51424b2f2f21b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f427562626c655f5465612d4646373542353f7374796c653d666c6174266c6f676f3d676f266c6f676f436f6c6f723d7768697465
+                    - img "Bubble Tea" [ref=e1492]
+                - list [ref=e1493]:
+                  - listitem [ref=e1494]:
+                    - strong [ref=e1495]: Agent
+                    - text: ": Claude Code with custom skills and modes"
+                  - listitem [ref=e1496]:
+                    - strong [ref=e1497]: PDF
+                    - text: ": Playwright/Puppeteer + HTML template"
+                  - listitem [ref=e1498]:
+                    - strong [ref=e1499]: Scanner
+                    - text: ": Playwright + Greenhouse API + WebSearch"
+                  - listitem [ref=e1500]:
+                    - strong [ref=e1501]: Dashboard
+                    - text: ": Go + Bubble Tea + Lipgloss (Catppuccin Mocha theme)"
+                  - listitem [ref=e1502]:
+                    - strong [ref=e1503]: Data
+                    - text: ": Markdown tables + YAML config + TSV batch files"
+                - generic [ref=e1504]:
+                  - heading "Also Open Source" [level=2] [ref=e1505]
+                  - 'link "Permalink: Also Open Source" [ref=e1506] [cursor=pointer]':
+                    - /url: "#also-open-source"
+                    - img [ref=e1507]
+                - list [ref=e1509]:
+                  - listitem [ref=e1510]:
+                    - strong [ref=e1511]:
+                      - link "cv-santiago" [ref=e1512] [cursor=pointer]:
+                        - /url: https://github.com/santifer/cv-santiago
+                    - text: "-- The portfolio website (santifer.io) with AI chatbot, LLMOps dashboard, and case studies. If you need a portfolio to showcase alongside your job search, fork it and make it yours."
+                - generic [ref=e1513]:
+                  - heading "About the Author" [level=2] [ref=e1514]
+                  - 'link "Permalink: About the Author" [ref=e1515] [cursor=pointer]':
+                    - /url: "#about-the-author"
+                    - img [ref=e1516]
+                - paragraph [ref=e1518]: "I'm Santiago -- Head of Applied AI, former founder (built and sold a business that still runs with my name on it). I built career-ops to manage my own job search. It worked: I used it to land my current role."
+                - paragraph [ref=e1519]:
+                  - text: My portfolio and other open source projects →
+                  - link "santifer.io" [ref=e1520] [cursor=pointer]:
+                    - /url: https://santifer.io
+                - generic [ref=e1521]:
+                  - heading "Star History" [level=2] [ref=e1522]
+                  - 'link "Permalink: Star History" [ref=e1523] [cursor=pointer]':
+                    - /url: "#star-history"
+                    - img [ref=e1524]
+                - link "Star History Chart" [ref=e1526] [cursor=pointer]:
+                  - /url: https://www.star-history.com/?repos=santifer%2Fcareer-ops&type=timeline&legend=top-left
+                  - img "Star History Chart" [ref=e1529]
+                - generic [ref=e1530]:
+                  - heading "Disclaimer" [level=2] [ref=e1531]
+                  - 'link "Permalink: Disclaimer" [ref=e1532] [cursor=pointer]':
+                    - /url: "#disclaimer"
+                    - img [ref=e1533]
+                - paragraph [ref=e1535]:
+                  - strong [ref=e1536]: career-ops is a local, open-source tool — NOT a hosted service.
+                  - text: "By using this software, you acknowledge:"
+                - list [ref=e1537]:
+                  - listitem [ref=e1538]:
+                    - strong [ref=e1539]: You control your data.
+                    - text: Your CV, contact info, and personal data stay on your machine and are sent directly to the AI provider you choose (Anthropic, OpenAI, etc.). We do not collect, store, or have access to any of your data.
+                  - listitem [ref=e1540]:
+                    - strong [ref=e1541]: You control the AI.
+                    - text: The default prompts instruct the AI not to auto-submit applications, but AI models can behave unpredictably. If you modify the prompts or use different models, you do so at your own risk.
+                    - strong [ref=e1542]: Always review AI-generated content for accuracy before submitting.
+                  - listitem [ref=e1543]:
+                    - strong [ref=e1544]: You comply with third-party ToS.
+                    - text: You must use this tool in accordance with the Terms of Service of the career portals you interact with (Greenhouse, Lever, Workday, LinkedIn, etc.). Do not use this tool to spam employers or overwhelm ATS systems.
+                  - listitem [ref=e1545]:
+                    - strong [ref=e1546]: No guarantees.
+                    - text: Evaluations are recommendations, not truth. AI models may hallucinate skills or experience. The authors are not liable for employment outcomes, rejected applications, account restrictions, or any other consequences.
+                - paragraph [ref=e1547]:
+                  - text: See
+                  - link "LEGAL_DISCLAIMER.md" [ref=e1548] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/LEGAL_DISCLAIMER.md
+                  - text: for full details. This software is provided under the
+                  - link "MIT License" [ref=e1549] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/LICENSE
+                  - text: "\"as is\", without warranty of any kind."
+                - generic [ref=e1550]:
+                  - heading "Contributors" [level=2] [ref=e1551]
+                  - 'link "Permalink: Contributors" [ref=e1552] [cursor=pointer]':
+                    - /url: "#contributors"
+                    - img [ref=e1553]
+                - link [ref=e1555] [cursor=pointer]:
+                  - /url: https://github.com/santifer/career-ops/graphs/contributors
+                  - img [ref=e1556]
+                - paragraph [ref=e1557]:
+                  - text: Got hired using career-ops?
+                  - link "Share your story!" [ref=e1558] [cursor=pointer]:
+                    - /url: https://github.com/santifer/career-ops/issues/new?template=i-got-hired.yml
+                - generic [ref=e1559]:
+                  - heading "License & Trademark" [level=2] [ref=e1560]
+                  - 'link "Permalink: License & Trademark" [ref=e1561] [cursor=pointer]':
+                    - /url: "#license--trademark"
+                    - img [ref=e1562]
+                - paragraph [ref=e1564]:
+                  - text: The code is licensed under
+                  - link "MIT" [ref=e1565] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/LICENSE
+                  - text: . The "career-ops" name and brand are governed by the
+                  - link "Trademark Policy" [ref=e1566] [cursor=pointer]:
+                    - /url: /junho0831/career-ops/blob/main/TRADEMARK.md
+                  - text: — permissive for community use, reserved for commercial product naming and endorsement.
+                - generic [ref=e1567]:
+                  - heading "Let's Connect" [level=2] [ref=e1568]
+                  - 'link "Permalink: Let''s Connect" [ref=e1569] [cursor=pointer]':
+                    - /url: "#lets-connect"
+                    - img [ref=e1570]
+                - paragraph [ref=e1572]:
+                  - link "Website" [ref=e1573] [cursor=pointer]:
+                    - /url: https://santifer.io
+                    - img "Website" [ref=e1574]
+                  - link "LinkedIn" [ref=e1575] [cursor=pointer]:
+                    - /url: https://linkedin.com/in/santifer
+                    - img "LinkedIn" [ref=e1576]
+                  - link "X" [ref=e1577] [cursor=pointer]:
+                    - /url: https://x.com/santifer
+                    - img "X" [ref=e1578]
+                  - link "Discord" [ref=e1579] [cursor=pointer]:
+                    - /url: https://discord.gg/8pRpHETxa4
+                    - img "Discord" [ref=e1580]
+                  - link "Email" [ref=e1581] [cursor=pointer]:
+                    - /url: mailto:hi@santifer.io
+                    - img "Email" [ref=e1582]
+        - generic [ref=e1586]:
+          - generic [ref=e1589]:
+            - heading "About" [level=2] [ref=e1590]
+            - paragraph [ref=e1591]: AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.
+            - heading "Resources" [level=3] [ref=e1592]
+            - link "Readme" [ref=e1594] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e1595]
+              - text: Readme
+            - heading "License" [level=3] [ref=e1597]
+            - link "MIT license" [ref=e1599] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e1600]
+              - text: MIT license
+            - heading "Code of conduct" [level=3] [ref=e1602]
+            - link "Code of conduct" [ref=e1604] [cursor=pointer]:
+              - /url: "#coc-ov-file"
+              - img [ref=e1605]
+              - text: Code of conduct
+            - heading "Contributing" [level=3] [ref=e1607]
+            - link "Contributing" [ref=e1609] [cursor=pointer]:
+              - /url: "#contributing-ov-file"
+              - img [ref=e1610]
+              - text: Contributing
+            - heading "Security policy" [level=3] [ref=e1612]
+            - link "Security policy" [ref=e1614] [cursor=pointer]:
+              - /url: "#security-ov-file"
+              - img [ref=e1615]
+              - text: Security policy
+            - heading "Citation" [level=3] [ref=e1617]
+            - button "Cite this repository" [ref=e1619] [cursor=pointer]:
+              - generic [ref=e1621]:
+                - img [ref=e1622]
+                - text: Cite this repository
+            - link "Activity" [ref=e1626] [cursor=pointer]:
+              - /url: /junho0831/career-ops/activity
+              - img [ref=e1627]
+              - text: Activity
+            - heading "Stars" [level=3] [ref=e1629]
+            - link "0 stars" [ref=e1631] [cursor=pointer]:
+              - /url: /junho0831/career-ops/stargazers
+              - img [ref=e1632]
+              - strong [ref=e1634]: "0"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e1635]
+            - link "0 watching" [ref=e1637] [cursor=pointer]:
+              - /url: /junho0831/career-ops/watchers
+              - img [ref=e1638]
+              - strong [ref=e1640]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e1641]
+            - link "0 forks" [ref=e1643] [cursor=pointer]:
+              - /url: /junho0831/career-ops/forks
+              - img [ref=e1644]
+              - strong [ref=e1646]: "0"
+              - text: forks
+            - link "Report repository" [ref=e1648] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fjunho0831%2Fcareer-ops&report=junho0831+%28user%29
+          - generic [ref=e1650]:
+            - heading "Releases" [level=2] [ref=e1651]:
+              - link "Releases" [ref=e1652] [cursor=pointer]:
+                - /url: /junho0831/career-ops/releases
+            - generic [ref=e1653]: No releases published
+          - generic [ref=e1655]:
+            - heading "Packages" [level=2] [ref=e1656]:
+              - link "Packages" [ref=e1657] [cursor=pointer]:
+                - /url: /users/junho0831/packages?repo_name=career-ops
+            - generic [ref=e1658]: No packages published
+          - generic [ref=e1660]:
+            - heading "Contributors" [level=2] [ref=e1661]:
+              - link "Contributors" [ref=e1662] [cursor=pointer]:
+                - /url: /junho0831/career-ops/graphs/contributors
+            - generic [ref=e1663]: No contributors
+          - generic [ref=e1665]:
+            - heading "Languages" [level=2] [ref=e1666]
+            - list [ref=e1675]:
+              - listitem [ref=e1676]:
+                - generic [ref=e1677]:
+                  - img [ref=e1678]
+                  - generic [ref=e1680]: JavaScript
+                  - generic [ref=e1681]: 48.0%
+              - listitem [ref=e1682]:
+                - generic [ref=e1683]:
+                  - img [ref=e1684]
+                  - generic [ref=e1686]: Go
+                  - generic [ref=e1687]: 40.3%
+              - listitem [ref=e1688]:
+                - generic [ref=e1689]:
+                  - img [ref=e1690]
+                  - generic [ref=e1692]: Shell
+                  - generic [ref=e1693]: 6.7%
+              - listitem [ref=e1694]:
+                - generic [ref=e1695]:
+                  - img [ref=e1696]
+                  - generic [ref=e1698]: HTML
+                  - generic [ref=e1699]: 3.2%
+              - listitem [ref=e1700]:
+                - generic [ref=e1701]:
+                  - img [ref=e1702]
+                  - generic [ref=e1704]: TeX
+                  - generic [ref=e1705]: 1.4%
+              - listitem [ref=e1706]:
+                - generic [ref=e1707]:
+                  - img [ref=e1708]
+                  - generic [ref=e1710]: Nix
+                  - generic [ref=e1711]: 0.4%
+  - contentinfo [ref=e1713]:
+    - heading "Footer" [level=2] [ref=e1714]
+    - generic [ref=e1715]:
+      - generic [ref=e1716]:
+        - link "GitHub Homepage" [ref=e1717] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1718]
+        - generic [ref=e1720]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1721]:
+        - heading "Footer navigation" [level=3] [ref=e1722]
+        - list "Footer navigation" [ref=e1723]:
+          - listitem [ref=e1724]:
+            - link "Terms" [ref=e1725] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1726]:
+            - link "Privacy" [ref=e1727] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1728]:
+            - link "Security" [ref=e1729] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1730]:
+            - link "Status" [ref=e1731] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1732]:
+            - link "Community" [ref=e1733] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1734]:
+            - link "Docs" [ref=e1735] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1736]:
+            - link "Contact" [ref=e1737] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1738]:
+            - button "Manage cookies" [ref=e1740] [cursor=pointer]
+          - listitem [ref=e1741]:
+            - button "Do not share my personal information" [ref=e1743] [cursor=pointer]

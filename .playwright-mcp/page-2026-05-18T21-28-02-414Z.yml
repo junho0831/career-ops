@@ -1,0 +1,327 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "직행" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "직행" [ref=e5]
+      - navigation [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "탐색" [ref=e9] [cursor=pointer]:
+              - /url: /
+              - img [ref=e11]
+              - generic [ref=e14]: 탐색
+          - listitem [ref=e15]:
+            - link "공고" [ref=e16] [cursor=pointer]:
+              - /url: /recruitment
+              - img [ref=e18]
+              - generic [ref=e20]: 공고
+          - listitem [ref=e21]:
+            - link "기업" [ref=e22] [cursor=pointer]:
+              - /url: /company
+              - img [ref=e24]
+              - generic [ref=e30]: 기업
+          - listitem [ref=e31]:
+            - link "커리어AI" [ref=e32] [cursor=pointer]:
+              - /url: /ai-chat
+              - img [ref=e34]
+              - generic [ref=e39]: 커리어AI
+        - link "북마크" [ref=e43] [cursor=pointer]:
+          - /url: /bookmark
+          - img [ref=e45]
+          - generic [ref=e47]: 북마크
+      - generic [ref=e48]:
+        - button "도움말" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "다크모드 전환" [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+    - main [ref=e56]:
+      - generic [ref=e59]:
+        - link "직행" [ref=e60] [cursor=pointer]:
+          - /url: /
+          - img "직행" [ref=e61]
+        - generic [ref=e63] [cursor=pointer]:
+          - img [ref=e64]
+          - paragraph [ref=e66]: 공고, 기업 검색
+        - generic [ref=e67]:
+          - link "로그인" [ref=e68] [cursor=pointer]:
+            - /url: /join?redirect=%2Frecruitment%2F3ca2a6bd-3d03-4689-a3a6-64d47a719f93
+          - link "기업 서비스" [ref=e69] [cursor=pointer]:
+            - /url: https://company.zighang.com
+      - generic [ref=e71]:
+        - link "이 공고 합격 확률 독설 받기" [ref=e73] [cursor=pointer]:
+          - /url: /ai-chat/resume-roast?recruitmentId=3ca2a6bd-3d03-4689-a3a6-64d47a719f93&from=recruitment_detail
+          - img [ref=e75]
+          - generic [ref=e78]: 이 공고 합격 확률 독설 받기
+        - generic [ref=e80]:
+          - img "Recruitment background" [ref=e82]
+          - generic [ref=e84]:
+            - heading "[디지털헬스케어] 코틀린/스프링(Kotlin/Spring) 백엔드 개발자 채용" [level=1] [ref=e86]
+            - generic [ref=e88]:
+              - link "비욘드메디슨" [ref=e89] [cursor=pointer]:
+                - /url: /company/091a354f-a977-448f-a871-d8dda1778766
+              - generic [ref=e90]: "|"
+              - generic [ref=e91]: 2025. 7. 22. 게시
+              - generic [ref=e92]: "|"
+              - generic [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e97]: "641"
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e103]:
+                - tab "공고 원문" [selected] [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+                  - text: 공고 원문
+                - tab "기업 정보" [ref=e107] [cursor=pointer]:
+                  - img [ref=e108]
+                  - text: 기업 정보
+              - generic [ref=e115]:
+                - generic [ref=e116]:
+                  - generic [ref=e117]:
+                    - generic [ref=e118]:
+                      - heading "공고 원문" [level=2] [ref=e119]
+                      - img [ref=e120] [cursor=pointer]
+                    - button "오류 제보" [ref=e124] [cursor=pointer]:
+                      - img [ref=e125]
+                      - text: 오류 제보
+                  - generic [ref=e132]:
+                    - generic [ref=e133]:
+                      - generic [ref=e134]: 경력
+                      - generic [ref=e135]: 1년~10년
+                    - generic [ref=e136]:
+                      - generic [ref=e137]: 채용 유형
+                      - generic [ref=e138]: 정규직
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: 학력
+                      - generic [ref=e141]: 무관
+                    - generic [ref=e142]:
+                      - generic [ref=e143]: 지역
+                      - generic [ref=e144]: 서울
+                    - generic [ref=e145]:
+                      - generic [ref=e146]: 마감일
+                      - generic [ref=e147]: 상시채용
+                    - generic [ref=e148]:
+                      - generic [ref=e149]: 출처
+                      - generic [ref=e150]: 랠릿
+                  - textbox [ref=e153]:
+                    - heading "소개" [level=3] [ref=e154]
+                    - paragraph [ref=e155]: ㈜비욘드메디슨은 인지 행동 치료(Cognitive Behavioral Therapy, CBT)를 기반으로 한 턱관절 장애 관리 디지털 치료제(DTx)를 개발하는 헬스케어 스타트업입니다. 전 세계적으로 매년 2억 명 이상의 턱관절 장애 환자가 발생하는 가운데, 비욘드메디슨은 장치 치료에 앞서 환자들이 효과적으로 증상을 관리할 수 있는 디지털 관리 프로그램을 제공합니다. 턱관절 장애를 시작으로 얼굴 영역에서의 다양한 질환을 치료하는 솔루션과 치과 분야의 다양한 헬스케어 솔루션으로 확장하고 있습니다.
+                    - paragraph [ref=e156]
+                    - heading "담당업무" [level=3] [ref=e157]
+                    - paragraph [ref=e158]: • Restful API 설계 및 개발 • MSA 기반 gRPC API 설계 및 개발 • CI/CD 파이프라인 설계 및 AWS 인프라 구축 • 의료기기 품질경영시스템에 따른 체계적인 문서화 작업 • 제품 출시 후 데이터 기반 분석 및 개선 방안 기획 • 프로젝트 문제 진단 및 해결 방안 정의
+                    - paragraph [ref=e159]
+                    - heading "자격요건" [level=3] [ref=e160]
+                    - paragraph [ref=e161]: • Kotlin 2년 이상 경험 또는 그에 준하는 실력을 갖추신 분 • Spring Security, JPA 등 Spring Framework(Spring Boot)에 대한 깊은 이해가 있으신 분 • Restful API 설계 및 개발 경험이 있으신 분 • 데이터베이스(MySQL) 설계 및 관리 경험이 있으신 분 • Git을 활용한 형상관리 경험이 있으신 분 • 테스트 코드의 중요성을 이해하고 주도적으로 작성하시는 분 • 사이버보안과 식약처 인허가 요구사항 등에 따른 문서화 작업에 열린 마음을 가지신 분 • 상용 서비스를 운영하며 지속적으로 유지보수한 경험이 있으신 분 • 특정 언어나 기술에 국한되지 않는 마인드를 가지신 분 • 새로운 기술과 도구에 열린 마음을 가지고, 이를 학습하여 실무에 적용할 수 있는 능력을 가지신 분 • 협업과 존중을 바탕으로 한 명확하고 적극적인 의사소통 능력을 가지신 분 • 자신이 맡은 개발 업무에 대한 책임감이 있으신 분 • 자신의 삶에 대해 능동적이고 적극적인 태도를 가지신 분
+                    - paragraph [ref=e162]
+                    - heading "우대사항" [level=3] [ref=e163]
+                    - paragraph [ref=e164]: • MSA 기반 gRPC API 설계 및 개발 경험이 있으신 분 • CI/CD 파이프라인 설계 및 AWS 인프라 구축 경험이 있으신 분 • TDD 방식으로 프로젝트를 진행한 경험이 있으신 분 • Rust 언어를 활용한 개발 경험이 있으신 분 • 글로벌 서비스 런칭 및 유지보수 경험이 있으신 분 • 예약 및 결제 시스템 개발 경험이 있으신 분 • 문서화 자동화 도구(Jira, Confluence, Swagger 등) 경험이 있으신 분 • 팀 내 새로운 기술 도입과 기술 공유 문화를 주도적으로 이끌어 보신 분 • 코드 리뷰 및 페어 프로그래밍을 통한 팀 내 성장 문화를 이끌어 보신 분 • 시큐어 코딩 경험이 있으신 분
+                    - paragraph [ref=e165]
+                    - heading "혜택 및 복지" [level=3] [ref=e166]
+                    - paragraph [ref=e167]: "채용 형태: 정규직 (수습 3개월 후 정규직 전환) 유연 근무 제도: 오전 8-11시 사이 자율 출근 (주 40시간) 주 1회 재택근무 점심 및 저녁 식대 제공 스낵바 제공 (각종 과자, 커피, 견과류 등) 듀얼 모니터, 최신 개발 장비 지급 (Mac) 업무에 필요한 소프트웨어 구입비 지원 자유로운 연차(반차, 반반차) 사용 및 미사용 연차에 대해 수당 지급 자기 계발을 위한 도서 구입, 교육 관련 적극적 지원 자율 복장으로 편안하게 일할 수 있는 환경 수평적인 호칭(-님) 사용 월 1-2회 점심 회식 강남역 3분거리 초역세권 4대 보험 가입 중소기업 취업자 90% 소득세 감면 제도 활용"
+                    - paragraph [ref=e168]
+                    - heading "기술스택" [level=3] [ref=e169]
+                    - paragraph [ref=e170]: Kotlin, Spring, AWS
+                    - paragraph [ref=e171]
+                    - heading "기타" [level=3] [ref=e172]
+                    - paragraph [ref=e173]: 빠르게 성장하고 있는 소프트웨어 의료기기 인허가 및 글로벌 진출 경험! 시리즈A - IPO까지 빠르게 성장하는 초기 멤버로 몸담아볼 수 있는 기회! 함께하실 분을 모십니다.
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img "비욘드메디슨"
+                        - generic:
+                          - generic:
+                            - heading "비욘드메디슨" [level=3]
+                            - button "즐겨찾기 추가":
+                              - img
+                          - generic:
+                            - generic:
+                              - generic: 스타트업
+                            - generic:
+                              - generic: 서울
+                      - generic:
+                        - paragraph: (주)비욘드메디슨은 2022년에 설립된 중소기업으로, 전자의료기기의연구개발업을 중심으로 사업을 영위하고 있습니다. 현재 대표자는 김대현이며, 본사는 서울특별시 강남구 논현로 418에 위치해 있습니다.
+                      - generic:
+                        - link "홈페이지":
+                          - /url: https://beyondmedicine.kr
+                        - button "오류제보":
+                          - img
+                          - text: 오류제보
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 이런 공고 어때요?
+                      - generic:
+                        - generic:
+                          - link "비욘드메디슨 비욘드메디슨 코틀린/스프링 백엔드 및 인프라 개발 2년~10년, 정규직, 서울":
+                            - /url: /recruitment/c60f4761-7e58-4741-8ebc-579c096439fb
+                            - generic:
+                              - img "비욘드메디슨"
+                            - generic:
+                              - generic: 비욘드메디슨
+                              - generic: 코틀린/스프링 백엔드 및 인프라 개발
+                              - generic: 2년~10년, 정규직, 서울
+                        - generic:
+                          - link "(주)팜존에스엔씨 (주)팜존에스엔씨 [팜존에스엔씨] JAVA 주니어(1~3년) 경력 개발부문 채용 1년~3년, 정규직, 경기":
+                            - /url: /recruitment/533b3882-cfe1-4211-b0a0-4f6527ff845f
+                            - generic:
+                              - img "(주)팜존에스엔씨"
+                            - generic:
+                              - generic: (주)팜존에스엔씨
+                              - generic: "[팜존에스엔씨] JAVA 주니어(1~3년) 경력 개발부문 채용"
+                              - generic: 1년~3년, 정규직, 경기
+                        - generic:
+                          - link "아타드(ATAD) 아타드(ATAD) 백엔드 개발자 1년~5년, 정규직, 서울":
+                            - /url: /recruitment/d681d8e6-59ea-414b-8d6a-d80b6ca595b5
+                            - generic:
+                              - img "아타드(ATAD)"
+                            - generic:
+                              - generic: 아타드(ATAD)
+                              - generic: 백엔드 개발자
+                              - generic: 1년~5년, 정규직, 서울
+                        - generic:
+                          - link "씨앤에이아이 씨앤에이아이 Back-end Engineer (신입 / 경력) 10년 이하, 정규직, 서울":
+                            - /url: /recruitment/aa43c5d9-8cc7-4f95-adee-a742ef86f5ed
+                            - generic:
+                              - img "씨앤에이아이"
+                            - generic:
+                              - generic: 씨앤에이아이
+                              - generic: Back-end Engineer (신입 / 경력)
+                              - generic: 10년 이하, 정규직, 서울
+                        - generic:
+                          - link "도비스튜디오 도비스튜디오 Software Engineer (Data & Crawling) 1년 이하, 정규직, 서울":
+                            - /url: /recruitment/8a2e4da2-0a2d-49a7-b6dd-bf01b09df3ce
+                            - generic:
+                              - img "도비스튜디오"
+                            - generic:
+                              - generic: 도비스튜디오
+                              - generic: Software Engineer (Data & Crawling)
+                              - generic: 1년 이하, 정규직, 서울
+                    - generic:
+                      - generic: 지금 많이 보는 공고
+                      - generic:
+                        - generic:
+                          - link "오픈에이아이(OpenAI) 오픈에이아이(OpenAI) Developer Experience Engineer 경력무관, 정규직, 서울":
+                            - /url: /recruitment/07829bc7-d38c-4d98-a751-97066c8064d3
+                            - generic:
+                              - img "오픈에이아이(OpenAI)"
+                            - generic:
+                              - generic: 오픈에이아이(OpenAI)
+                              - generic: Developer Experience Engineer
+                              - generic: 경력무관, 정규직, 서울
+                        - generic:
+                          - link "제너러티브랩 제너러티브랩 제너러티브랩 공개채용 [학력, 경력, 스펙 무관] 경력무관, 전환형인턴, 서울":
+                            - /url: /recruitment/d10f1865-76af-438f-8b2c-1a29aa7a6df9
+                            - generic:
+                              - img "제너러티브랩"
+                            - generic:
+                              - generic: 제너러티브랩
+                              - generic: 제너러티브랩 공개채용 [학력, 경력, 스펙 무관]
+                              - generic: 경력무관, 전환형인턴, 서울
+                        - generic:
+                          - link "케이타운포유 케이타운포유 주니어 풀스택 개발자 3년 이하, 정규직, 서울":
+                            - /url: /recruitment/3fb13ae3-abcf-465b-a88f-8ed5579ec5ce
+                            - generic:
+                              - img "케이타운포유"
+                            - generic:
+                              - generic: 케이타운포유
+                              - generic: 주니어 풀스택 개발자
+                              - generic: 3년 이하, 정규직, 서울
+                        - generic:
+                          - link "오픈에이아이(OpenAI) 오픈에이아이(OpenAI) Developer Experience Engineer 경력무관, 정규직, 서울":
+                            - /url: /recruitment/8178f596-dfdc-454d-a7dc-c18475d840d2
+                            - generic:
+                              - img "오픈에이아이(OpenAI)"
+                            - generic:
+                              - generic: 오픈에이아이(OpenAI)
+                              - generic: Developer Experience Engineer
+                              - generic: 경력무관, 정규직, 서울
+                        - generic:
+                          - link "대한항공 대한항공 대한항공 채용연계형 하계인턴 모집 신입, 전환형인턴, 부산 외 1개":
+                            - /url: /recruitment/07b0c3c1-c3a9-4f38-a23f-ec8ebea0877f
+                            - generic:
+                              - img "대한항공"
+                            - generic:
+                              - generic: 대한항공
+                              - generic: 대한항공 채용연계형 하계인턴 모집
+                              - generic: 신입, 전환형인턴, 부산 외 1개
+            - generic [ref=e178]:
+              - generic [ref=e180]:
+                - generic [ref=e181]: 공고 맞춤 전략
+                - generic [ref=e183]: AI 코칭
+              - generic [ref=e184]:
+                - button [ref=e187] [cursor=pointer]:
+                  - img [ref=e188]
+                - generic [ref=e192]:
+                  - generic [ref=e193]: 이 공고의 합격전략 알려드려요
+                  - generic [ref=e194]:
+                    - button "01 기업 핵심 이슈와 최신 소식 알아보기 기업 로고" [ref=e195] [cursor=pointer]:
+                      - generic [ref=e196]:
+                        - generic [ref=e197]: "01"
+                        - generic [ref=e198]: 기업 핵심 이슈와 최신 소식 알아보기
+                      - img "기업 로고" [ref=e201]
+                    - button "02 이 공고 합격 포인트 분석하기" [ref=e202] [cursor=pointer]:
+                      - generic [ref=e203]:
+                        - generic [ref=e204]: "02"
+                        - generic [ref=e205]: 이 공고 합격 포인트 분석하기
+                      - img [ref=e208]
+                    - button "03 내 경험을 공고 키워드로 재구성" [ref=e217] [cursor=pointer]:
+                      - generic [ref=e218]:
+                        - generic [ref=e219]: "03"
+                        - generic [ref=e220]: 내 경험을 공고 키워드로 재구성
+                      - img [ref=e223]
+                - generic [ref=e227]:
+                  - generic [ref=e229]:
+                    - img
+                    - generic [ref=e230]:
+                      - img "백엔드 서류 전문가" [ref=e232]
+                      - generic [ref=e233]: 백엔드 서류 전문가가 답변해요
+                  - generic [ref=e235]:
+                    - button [ref=e236] [cursor=pointer]:
+                      - img [ref=e237]
+                    - textbox "지원 전략을 물어보세요" [ref=e239]
+                    - button [disabled] [ref=e240]:
+                      - img [ref=e241]
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - button "공유하기" [ref=e246] [cursor=pointer]:
+                - img [ref=e247]
+              - button "북마크 추가" [ref=e249] [cursor=pointer]:
+                - img [ref=e250]
+              - button "지원하기" [ref=e252] [cursor=pointer]
+            - generic [ref=e253]:
+              - generic [ref=e254]: 이런 공고 어때요?
+              - link "비욘드메디슨 비욘드메디슨 코틀린/스프링 백엔드 및 인프라 개발 2년~10년, 정규직, 서울" [ref=e256] [cursor=pointer]:
+                - /url: /recruitment/c60f4761-7e58-4741-8ebc-579c096439fb
+                - img "비욘드메디슨" [ref=e258]
+                - generic [ref=e259]:
+                  - generic [ref=e260]: 비욘드메디슨
+                  - generic [ref=e261]: 코틀린/스프링 백엔드 및 인프라 개발
+                  - generic [ref=e262]: 2년~10년, 정규직, 서울
+              - link "(주)팜존에스엔씨 (주)팜존에스엔씨 [팜존에스엔씨] JAVA 주니어(1~3년) 경력 개발부문 채용 1년~3년, 정규직, 경기" [ref=e265] [cursor=pointer]:
+                - /url: /recruitment/533b3882-cfe1-4211-b0a0-4f6527ff845f
+                - img "(주)팜존에스엔씨" [ref=e267]
+                - generic [ref=e268]:
+                  - generic [ref=e269]: (주)팜존에스엔씨
+                  - generic [ref=e270]: "[팜존에스엔씨] JAVA 주니어(1~3년) 경력 개발부문 채용"
+                  - generic [ref=e271]: 1년~3년, 정규직, 경기
+              - link "아타드(ATAD) 아타드(ATAD) 백엔드 개발자 1년~5년, 정규직, 서울" [ref=e274] [cursor=pointer]:
+                - /url: /recruitment/d681d8e6-59ea-414b-8d6a-d80b6ca595b5
+                - img "아타드(ATAD)" [ref=e276]
+                - generic [ref=e277]:
+                  - generic [ref=e278]: 아타드(ATAD)
+                  - generic [ref=e279]: 백엔드 개발자
+                  - generic [ref=e280]: 1년~5년, 정규직, 서울
+              - button "이 공고, 나랑 잘 맞나? 궁합보기" [ref=e282] [cursor=pointer]:
+                - generic [ref=e284]:
+                  - paragraph [ref=e285]: 이 공고, 나랑 잘 맞나?
+                  - generic [ref=e287]: 궁합보기
+              - button "이 공고로 음성 면접 공고 내용에 맞춰 AI가 질문해요" [ref=e289] [cursor=pointer]:
+                - generic [ref=e290]:
+                  - img [ref=e292]
+                  - generic [ref=e296]:
+                    - paragraph [ref=e297]: 이 공고로 음성 면접
+                    - paragraph [ref=e298]: 공고 내용에 맞춰 AI가 질문해요
+  - alert [ref=e299]
