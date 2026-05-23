@@ -32,10 +32,11 @@ target_roles:
       fit: "adjacent"
 
 narrative:
-  headline: "Backend engineer improving Spring search fallback, Redis authentication, RDB consistency, data workflow automation, and real-time service reliability"
-  exit_story: "Owns backend systems from design to deployment and operations across company projects and a live personal service. Company work includes Spring Boot admin APIs, Elasticsearch-to-DB fallback, Redis TTL refresh-token lifecycle, RDB indexes and unique constraints, GlobalExceptionHandler/validation responses, GitLab CI/CD, Airflow-based FTP data workflow automation, and reprocessing APIs. VoiceLink adds hands-on distributed state, Redis Lua Script atomic matching, DB Outbox, FOR UPDATE SKIP LOCKED, PESSIMISTIC_WRITE session termination, WebRTC, Docker, Nginx, SSL, DNS, and network troubleshooting experience at voice-link.co.kr."
+  headline: "Backend engineer using AI to extend solo-build throughput across Spring reliability, Redis state consistency, data workflow automation, and live service operations"
+  exit_story: "Owns backend systems from design to deployment and operations across company projects and a live personal service. Company work includes Spring Boot admin APIs, Elasticsearch-to-DB fallback, Redis TTL refresh-token lifecycle, RDB indexes and unique constraints, GlobalExceptionHandler/validation responses, GitLab CI/CD, Airflow-based FTP data workflow automation, and reprocessing APIs. VoiceLink adds AI-assisted solo development and hands-on distributed state, Redis Lua Script atomic matching, DB Outbox, FOR UPDATE SKIP LOCKED, PESSIMISTIC_WRITE session termination, WebRTC, Docker, Nginx, SSL, DNS, and network troubleshooting experience at voice-link.co.kr."
   superpowers:
     - "End-to-end backend ownership across design, implementation, deployment, and operations"
+    - "AI-assisted solo development that increases implementation, debugging, documentation, and iteration speed while keeping architecture and operational decisions owned directly"
     - "Reliability improvement through fallback design, Redis state management, RDB constraints, and recovery-safe file processing"
     - "Company project experience in Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, CI/CD standardization, Airflow data workflow automation, and reprocessing APIs"
     - "Backend ownership across overtime approval, employee management, search indexing, notifications, reprocessing, batch execution, and deployment verification flows"
@@ -45,12 +46,13 @@ narrative:
     - "RDB consistency design with transaction boundaries, locks, unique constraints, and outbox patterns"
     - "Distributed state design for real-time matching, including Redis Lua Script based atomic opponent claiming, Presence TTL + ZSET queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub result delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, and CallSession.ended_at as session source of truth"
   positioning:
-    primary: "Operations-oriented backend engineer focused on reliability, state consistency, authentication, search fallback, batch safety, admin APIs, CI/CD, and incident/debugging workflows"
+    primary: "Operations-oriented backend engineer focused on reliability, state consistency, authentication, search fallback, batch safety, admin APIs, CI/CD, incident/debugging workflows, and AI-assisted solo execution"
     strong_signals:
       - "Backend operations, maintenance, and productized internal tooling"
       - "Incident cause analysis, recurring error prevention, and regression tests"
       - "Batch, authentication, search, admin API, Redis, and RDB consistency work"
       - "Redis-based real-time matching, personal service completion, and infrastructure troubleshooting"
+      - "AI/LLM used as a productivity multiplier in solo service design, implementation, debugging, and iteration"
     weak_or_deemphasized_signals:
       - "Large-scale traffic ownership"
       - "Big-tech scale platform experience"
@@ -59,7 +61,7 @@ narrative:
   proof_points:
     - name: "VoiceLink real-time matching and voice-call service"
       url: "https://voice-link.co.kr"
-      hero_metric: "Built and operates a live 1-person service covering Spring Boot APIs, Redis Lua Script based atomic matching queue operations, DB Outbox + Redis Pub/Sub result delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, CallSession.ended_at based session consistency, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
+      hero_metric: "Built and operates a live AI-assisted 1-person service covering Spring Boot APIs, Redis Lua Script based atomic matching queue operations, DB Outbox + Redis Pub/Sub result delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, CallSession.ended_at based session consistency, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, Docker deployment, Nginx/SSL, DNS, and network troubleshooting"
     - name: "DataForge overtime management platform"
       url: ""
       hero_metric: "Separated Elasticsearch search from database fallback, unified Redis TTL based refresh-token save/verify/rotate/delete flows, used requester/start/status indexes plus unique constraints to balance query performance and business-data consistency, and connected overtime request/approval/rejection/search/notification/operational-recovery flows into an operations-ready backend system"

@@ -13,8 +13,8 @@
 
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
-| Backend Engineer | End-to-end ownership from design to deployment, standardized exception handling, practical debugging, maintainable APIs | cv.md |
-| Platform / Reliability | CI/CD automation, zero-failure deployments, graceful degradation, faster incident analysis | cv.md |
+| Backend Engineer | End-to-end ownership from design to deployment, standardized exception handling, practical debugging, maintainable APIs, AI-assisted solo execution on live service | cv.md |
+| Platform / Reliability | CI/CD automation, zero-failure deployments, graceful degradation, faster incident analysis, AI-assisted solo ops iteration | cv.md |
 | Data / Batch Backend | Airflow workflow automation, FTP ingestion/parsing/validation, durable-success-before-source-delete flow, unique+upsert safeguards | cv.md |
 | Search / Integration | Elasticsearch fallback, RAG search, RDB indexes/unique constraints, auth/session consistency, internal tooling | cv.md |
 
@@ -28,12 +28,13 @@ Use the candidate's exit story from `config/profile.yml` to frame all content:
 
 ## Your Cross-cutting Advantage
 
-Frame profile as **"backend engineer who makes backend flows reliable with concrete mechanisms: fallback, Redis state, RDB constraints, transaction boundaries, tests, and deployment automation"**.
+Frame profile as **"backend engineer who makes backend flows reliable with concrete mechanisms: fallback, Redis state, RDB constraints, transaction boundaries, tests, deployment automation, and AI-assisted solo execution"**.
 
 What stands out:
 - Builds systems end-to-end instead of stopping at feature delivery
 - Has company project experience beyond side projects: Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, RDB indexes/unique constraints, CI/CD standardization, Airflow data workflow automation, and reprocessing APIs
 - Has operated backend flows that recruiters recognize as real company work: overtime request/approval/rejection, employee management, search indexing, notification mail, reprocessing, batch execution, deployment verification, and admin update paths
+- Can credibly answer JD lines about AI/LLM productivity and small-service ownership through VoiceLink: AI-assisted solo development, direct service operation, and architecture/consistency decisions owned personally
 - Uses fallback paths, automation, and state modeling to prevent repeat incidents
 - Separates fast paths from source-of-truth storage and uses transaction boundaries, locks, unique constraint rules, and outbox patterns for consistency
 - Explains trade-offs clearly and ties changes to measurable operational outcomes
@@ -47,6 +48,7 @@ Prioritize:
 - Backend operations, maintenance, internal platforms, admin APIs, reliability improvement, and production support
 - Redis, authentication/session consistency, Elasticsearch/search fallback, batch/data workflows, RDB constraints, CI/CD, and incident prevention
 - Small-to-mid teams where one backend engineer is expected to own design, implementation, deployment, debugging, and operations
+- Roles asking for AI/LLM productivity usage plus direct ownership of a small service or side project
 
 Deprioritize unless the JD has a strong Java/Spring operations fit:
 - Large-scale traffic ownership as a core requirement
@@ -56,7 +58,8 @@ Deprioritize unless the JD has a strong Java/Spring operations fit:
 
 Do not overclaim:
 - Do not present the candidate as having led large-scale traffic, big-tech systems, large MSA architecture, or company-wide platform architecture.
-- When those keywords appear in a JD, answer through adjacent evidence: Redis real-time state consistency, DB source-of-truth design, fallback/recovery paths, CI/CD, batch safety, and incident/debugging experience.
+- Do not imply AI wrote the product independently; frame AI as productivity multiplier while architecture, consistency, and operational decisions stayed with the candidate.
+- When those keywords appear in a JD, answer through adjacent evidence: Redis real-time state consistency, DB source-of-truth design, fallback/recovery paths, CI/CD, batch safety, incident/debugging experience, and AI-assisted solo delivery.
 
 ## Your Portfolio / Demo
 
@@ -64,7 +67,7 @@ Public profile:
 - GitHub: `https://github.com/junho0831`
 
 If a role values hands-on engineering depth, point to:
-- VoiceLink live service for distributed state, real-time matching, Redis Lua Script Atomic Claim, Presence TTL + ZSET waiting queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub + TTL result key delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, CallSession.ended_at as session source of truth, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, and infrastructure debugging across Docker, Nginx, SSL, DNS, and port forwarding
+- VoiceLink live service for AI-assisted solo development, distributed state, real-time matching, Redis Lua Script Atomic Claim, Presence TTL + ZSET waiting queues, Cancel Marker race defense, DB Outbox + Redis Pub/Sub + TTL result key delivery, FOR UPDATE SKIP LOCKED outbox claiming, PESSIMISTIC_WRITE session termination, scoped DeferredResult cleanup, CallSession.ended_at as session source of truth, call-events SSE heartbeat/reconnect, LiveKit/WebRTC calls, TURN/TLS, and infrastructure debugging across Docker, Nginx, SSL, DNS, and port forwarding
 - DataForge for Elasticsearch fallback, Redis TTL based refresh-token lifecycle management, requester/start/status indexes, unique constraints that protect duplicate overtime requests and duplicate approvals, operational recovery APIs, standardized error responses, notification mail, reindex, optional sheet CSV sync, and end-to-end overtime request/approval/rejection/search/operator-update flows
 - Prism for Airflow-based FTP data workflow automation, input-date plus previous-day scans, file ingestion/parsing/validation/conversion/storage/upload/source-cleanup stages, upload/database commit before source deletion, FTP transfer-size validation, scratch-file cleanup, and RUPI source_file unique plus upsert handling
 - SMIP for common exception handling, validation policy, standardized error responses, JUnit5/Mockito regression tests, and MVVM/store-based UI state separation
