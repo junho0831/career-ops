@@ -1,11 +1,5 @@
 # Pipeline
 ## Pendientes
-- [x] https://www.wanted.co.kr/wd/288813 | 다니엘프로젝트 | 백엔드 개발자 (3년 ~ 7년)
-- [x] https://www.wanted.co.kr/wd/259193 | 알피 | 백엔드 개발자 (3년 이상)
-- [x] https://www.wanted.co.kr/wd/241121 | 마켓트리 | 백엔드 개발자 (3~10년)
-- [x] https://www.wanted.co.kr/wd/152643 | 이에스이 | 기술연구소 백엔드 개발자 (3년 이상)
-- [x] https://www.wanted.co.kr/wd/262220 | 텍스트웨이 | 백엔드 개발자 (3~5년)
-
 - [x] https://job-boards.greenhouse.io/krafton/jobs/8360142002 | Krafton | [NineB/Project PX] Server Programmer (5년 이상)
 - [x] https://job-boards.greenhouse.io/krafton/jobs/8460159002 | Krafton | [Publishing Platform Div.] Web Backend Developer (7년 이상 / 계약직)
 
@@ -59,16 +53,12 @@
 - [x] #050 | https://cafe.naver.com/f-e/cafes/31258781/articles/33682 | 샬레코리아 | java 백앤드 개발자 | 4.5/5 | PDF ✅
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33666 | Naver Cafe Workhub | ~상시 / 에이블리｜백엔드 엔지니어 | 보류: 에이블리 백엔드는 기대 레벨이 높을 가능성이 있어 상세 JD 확인 필요
 
-- [ ] https://www.wanted.co.kr/wd/349485 | 딥세일즈 | 백엔드 엔지니어(3년 이상)
 - [ ] https://demoday.co.kr/recruits/10160 | 에스티엘 | 스타트투데이 백엔드 개발자
 - [ ] https://demoday.co.kr/recruits/12353 | 브이에이트코프 | 백엔드 개발자
 - [ ] https://demoday.co.kr/recruits/5662 | 헤리트 | JAVA TCP 백엔드
 - [ ] https://www.wanted.co.kr/wd/337958 | 미리디 | [미리캔버스] 백엔드 개발자
-- [ ] https://www.wanted.co.kr/wd/286140 | 소크라에이아이 | 산타 BE Engineer (Kotlin, Spring) (3년 이상)
-- [ ] https://www.wanted.co.kr/wd/264022 | 씨디알아이(CDRI) | 백엔드 개발자
 - [ ] https://www.wanted.co.kr/wd/340229 | 먼치팩토리 | [hourplace] Back-end Engineer
 - [ ] https://www.wanted.co.kr/wd/359319 | 샵라이브 | Software Engineer (Back-end) - 3년 이상
-- [ ] https://www.wanted.co.kr/wd/287859 | 비마이프렌즈 | Commerce Back-end Developer
 - [ ] https://www.wanted.co.kr/wd/355636 | 라포랩스 | Server Engineer
 - [ ] https://www.wanted.co.kr/wd/338476 | 엣지크로스 | AIoT 서비스 백앤드 개발자 (3년 이상)
 - [ ] https://www.wanted.co.kr/wd/331006 | 스팬딧(Spendit) | Back-end Engineer
@@ -76,9 +66,6 @@
 
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/33940 | Naver Cafe Workhub | [경력] ~채용시마감 / 비바리퍼블리카 - [토스] Server Developer(Platform) | 보류: 동일 포지션 #036 평가 완료, 신규 카페 재게시로 판단
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/33933 | Naver Cafe Workhub | [경력] ~상시 / 더게임 - GOlang 특화 백엔드 개발자
-- [!] https://www.wanted.co.kr/wd/310826 | 기발자들 | 백엔드 개발자 (Node.js, Java 3년이상) | 보류: 2026-05-16 원티드 API 기준 status=draft, 공개 지원 가능 여부 불명확
-
-- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34042 | Naver Cafe Workhub | [경력] ~26.05.22 / 오픈갤러리 - Django 풀 스택 개발자 (병역특례) | 제외: Django 풀스택 + 병역특례 중심으로 Java/Spring 운영형 백엔드 정합 낮음
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34041 | Naver Cafe Workhub | [경력] ~채용시마감 / 비바리퍼블리카 - [토스] Server Developer(Platform) | 보류: 동일 포지션 #036 평가 완료, 신규 카페 재게시로 판단
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34037 | Naver Cafe Workhub | [경력] ~상시 / 피닉스랩유한회사 서울지점 - Backend Engineer, Applied Agents (Seoul) | 보류: AI Agent/영어 포지션, Java/Spring 운영형 백엔드 정합 확인 필요
 - [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34036 | Naver Cafe Workhub | [경력] ~26.07.06 / 아토머스(마인드카페) - 백엔드 개발자 | 보류: 기존 아토머스 보류 사유와 동일, Python/연차 조건 확인 필요
@@ -106,3 +93,26 @@
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34374 | Naver Cafe Workhub | [경력] ~상시 / 플레이스앤 - [네이버 계열사] 백엔드 엔지니어(시니어)
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34345 | Naver Cafe Workhub | [경력] ~상시 / 키노라이츠 - 백엔드 개발자(Nest.js)
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34338 | Naver Cafe Workhub | [경력] ~상시 / 아토머스(마인드카페) - [아토머스] 백엔드 개발자
+
+- [ ] https://www.wanted.co.kr/wd/364507 | 포스타입 | 백엔드 엔지니어 3년 이상
+- [ ] https://www.wanted.co.kr/wd/364421 | 씨디알아이(CDRI) | 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/364377 | 데이터라이즈 | Backend Engineer
+- [ ] https://www.wanted.co.kr/wd/364125 | 티머니 | [티머니모빌리티] 서버 및 SPA 개발
+- [ ] https://www.wanted.co.kr/wd/364110 | 드림어스컴퍼니 | 음악 서비스 백엔드 서버 개발자
+- [ ] https://www.wanted.co.kr/wd/363967 | 청림인베스트 | 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/363940 | 폴라리스쓰리디 | 자율주행로봇 관제 시스템 백엔드 (서울)
+- [ ] https://www.wanted.co.kr/wd/363679 | 드림어스컴퍼니 | 콘텐츠 플랫폼 백엔드 개발자
+- [ ] https://www.wanted.co.kr/wd/364629 | 모다플 | 풀스택 엔지니어(백엔드/3년이상)
+- [ ] https://www.wanted.co.kr/wd/363738 | 페이퍼리 | Backend Engineer 3년 이상
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34493 | Naver Cafe Workhub | [경력] ~상시 / 알고케어 - (150억 투자) 백엔드 엔지니어 (Backend Engineer)
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34490 | Naver Cafe Workhub | [경력] ~상시 / 악어에듀 - (주)악어에듀 백엔드 엔지니어 채용
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34489 | Naver Cafe Workhub | [경력] ~상시 / 요양의정석 - Backend Engineer [경력] - 요양의정석
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34469 | Naver Cafe Workhub | [경력] ~상시 / 리빌더에이아이 - [리빌더AI] 백엔드 개발자 (DevOps)
+- [!] https://www.wanted.co.kr/wd/364630 | 넵튠 | 엔플라이유닛(무한의 계단) 백엔드개발자 | 보류: Go 중심 게임 백엔드, 운영 정합은 있으나 Java/Spring 직접 정합 낮음
+- [!] https://www.wanted.co.kr/wd/364584 | 에어스메디컬 | [SwiftMR] Backend Engineer | 보류: Go/Python 의료 파이프라인 중심, Java/Spring 직접 정합 낮음
+- [!] https://www.wanted.co.kr/wd/364551 | 이공이공 | [비즈니스플랫폼팀] 백엔드 개발자 | 보류: Python/Node.js/Go 물류 플랫폼 중심, Java/Spring 직접 정합 낮음
+- [!] https://www.wanted.co.kr/wd/364460 | 제틱에이아이 | Backend Engineer (AI Infrastructure SaaS) | 보류: Python/AI infra 중심, 현재 운영형 Java/Spring 백엔드 타깃과 다소 거리 있음
+- [!] https://www.wanted.co.kr/wd/363962 | 콕스웨이브 | [AX Workflow Builder] 백엔드 엔지니어 | 보류: 5년 이상 + Python/Go/AI workflow engine 중심
+- [!] https://www.wanted.co.kr/wd/363941 | 폴라리스쓰리디 | 자율주행로봇 관제 시스템 백엔드 (포항) | 보류: 동일 JD 서울 공고 #363940 우선
+- [!] https://www.wanted.co.kr/wd/363772 | 다온더케어 | Node.js 백엔드 개발자 | 제외: Node.js 중심으로 Java/Spring 정합 낮음
+- [!] https://cafe.naver.com/f-e/cafes/31258781/articles/34491 | Naver Cafe Workhub | [경력] ~상시 / 아스타 - 백엔드 / AI Product Builder (5년 이상) | 보류: 5년 이상 + AI Product Builder 성격
