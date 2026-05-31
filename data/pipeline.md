@@ -75,7 +75,6 @@
 
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34099 | Naver Cafe Workhub | [경력] ~상시 / 넵튠 - 솔루션개발실 백엔드개발자
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34181 | Naver Cafe Workhub | ~상시 / 카카오스타일｜백엔드 개발자 (물류 시스템)
-- [ ] https://www.wanted.co.kr/wd/362063 | 벳칭 | [개발] 백엔드 서비스 개발 매니저
 - [ ] https://www.wanted.co.kr/wd/361662 | 딥오토 | Backend Engineer (AI Platform) 3~5년
 - [ ] https://www.wanted.co.kr/wd/361643 | 오케이포스 | ASP개발팀 백엔드 개발자
 - [ ] https://zighang.com/recruitment/e1167024-6218-4701-bfb1-7d2b93fd20a5 | 코드잇 | 백엔드 엔지니어
@@ -108,7 +107,15 @@
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34490 | Naver Cafe Workhub | [경력] ~상시 / 악어에듀 - (주)악어에듀 백엔드 엔지니어 채용
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34489 | Naver Cafe Workhub | [경력] ~상시 / 요양의정석 - Backend Engineer [경력] - 요양의정석
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34469 | Naver Cafe Workhub | [경력] ~상시 / 리빌더에이아이 - [리빌더AI] 백엔드 개발자 (DevOps)
+- [ ] https://www.wanted.co.kr/wd/365016 | 넵튠 | 신사업실 백엔드개발자
+- [ ] https://www.wanted.co.kr/wd/364879 | 와이즈버즈 | 백엔드 개발자 (3년 이상)
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34507 | Naver Cafe Workhub | [경력] ~26.06.11 / 한화 - [한화생명] IT개발팀 'Backend Developer' 경력채용(사원~대리)
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34513 | Naver Cafe Workhub | [경력] ~상시 / 유모스원 - Backend Engineer (TMS)
 - [!] https://www.wanted.co.kr/wd/364630 | 넵튠 | 엔플라이유닛(무한의 계단) 백엔드개발자 | 보류: Go 중심 게임 백엔드, 운영 정합은 있으나 Java/Spring 직접 정합 낮음
+- [!] https://www.wanted.co.kr/wd/365079 | 넵튠 | 미프팀 백엔드개발자 | 보류: Go 중심 + 3개월 계약직 후 전환 조건, 기존 카페 공고와 중복 가능성 높음
+- [!] https://www.wanted.co.kr/wd/364991 | 럭스로보 | 백엔드개발(3년이상) | 보류: Golang 실무 3년 이상 필수, Java/Spring 직접 정합 낮음
+- [!] https://www.wanted.co.kr/wd/364872 | 고래사 | 백엔드 중심 풀스택 개발자 (3년 이상) | 보류: 데이터 자동화 정합은 있으나 Python/Node.js 중심
+- [!] https://www.wanted.co.kr/wd/364108 | 오케이포스 | 전략사업단 백엔드개발 | 보류: 결제/운영 정합은 있으나 Python/Django 중심
 - [!] https://www.wanted.co.kr/wd/364584 | 에어스메디컬 | [SwiftMR] Backend Engineer | 보류: Go/Python 의료 파이프라인 중심, Java/Spring 직접 정합 낮음
 - [!] https://www.wanted.co.kr/wd/364551 | 이공이공 | [비즈니스플랫폼팀] 백엔드 개발자 | 보류: Python/Node.js/Go 물류 플랫폼 중심, Java/Spring 직접 정합 낮음
 - [!] https://www.wanted.co.kr/wd/364460 | 제틱에이아이 | Backend Engineer (AI Infrastructure SaaS) | 보류: Python/AI infra 중심, 현재 운영형 Java/Spring 백엔드 타깃과 다소 거리 있음
