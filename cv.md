@@ -33,14 +33,14 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 `2025.01 ~ 현재`
 
 #### Prism - Airflow 데이터 처리 자동화
-`Python` `Airflow` `SQLite` `FTP`
-
-- Java 기반 FTP 파일 처리 배치를 Python/Airflow 파이프라인으로 이관
-- 입력일과 전일 폴더를 함께 스캔해 날짜 경계에 들어온 파일 누락 방지
-- 다운로드/업로드 검증, 변환, 저장, 업로드, 원본 정리 단계를 분리해 실패 지점을 추적하기 쉽게 재설계
-- 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정해 재실행 시 복구 가능하도록 개선
-- `source_file` unique 제약과 upsert 구조로 동일 파일 중복 적재 방지
-- scratch 파일 정리와 실행 제어(`max_active_runs=1`, `catchup=false`)로 반복 실행 안정성 개선
+`Python` `Airflow` `Postgres` `FTP`
+- 레거시 시스템 마이그레이션 및 파이프라인 재설계: Java 기반의 FTP 파일 처리 배치를 Python/Airflow 기반 파이프라인으로 완전히 이관했습니다. 특히 다운로드, 검증, 변환, 저장, 업로드, 원본 정리 단계를
+  논리적으로 세분화하여, 배치 실패 시 어느 지점에서 오류가 발생했는지 즉각적인 추적이 가능하도록 워크플로우를 재설계했습니다.
+- 데이터 무결성 및 원자적 처리 구현: '업로드 성공 및 DB Commit이 완료된 이후에만 FTP 원본을 삭제한다'는 원자적 로직을 고정하여, 시스템 장애 시에도 데이터 유실 없이 안전하게 재실행 및 복구가 가능한 구조를
+  확보했습니다.
+- 중복 적재 방지 및 정합성 보장: source_file에 Unique 제약을 설정하고 Upsert(Insert or Update) 기반의 적재 로직을 구현하여, 동일 파일이 중복으로 적재되는 문제를 기술적으로 원천 차단했습니다.
+- 배치 운영 안정성 극대화: 입력일과 전일 폴더를 병행 스캔하여 날짜 경계에서 발생하는 파일 누락을 방지했습니다. 또한 max_active_runs=1, catchup=false 등의 실행 제어와 Scratch 파일의 자동 정리 정책을
+  적용하여, 반복적인 배치 운영 환경에서의 시스템 안정성을 크게 높였습니다.
 
 #### DataForge - Spring 검색/인증/관리 API
 `Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
