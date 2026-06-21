@@ -104,6 +104,44 @@ tracked_companies:
     api: https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/31258781/menus/8/articles?perPage=100&page=1
     enabled: true
 
+  - name: Naver Cafe Workhub p2
+    careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L
+    api: https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/31258781/menus/8/articles?perPage=100&page=2
+    enabled: true
+
+  - name: Naver Cafe Workhub p3
+    careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L
+    api: https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/31258781/menus/8/articles?perPage=100&page=3
+    enabled: true
+
+  - name: Naver Cafe Workhub p4
+    careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L
+    api: https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/31258781/menus/8/articles?perPage=100&page=4
+    enabled: true
+
+  - name: Naver Cafe Workhub p5
+    careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L
+    api: https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/31258781/menus/8/articles?perPage=100&page=5
+    enabled: true
+
+  - name: Zighang Recruitment
+    careers_url: https://zighang.com/recruitment
+    parser:
+      command: node
+      script: scripts/parsers/zighang-recruitment-jobs.mjs
+      format: jobs-json-v1
+      timeout_ms: 120000
+    enabled: true
+
+  - name: Saramin Backend Search
+    careers_url: https://www.saramin.co.kr/zf_user/search/recruit
+    parser:
+      command: node
+      script: scripts/parsers/saramin-backend-search.mjs
+      format: jobs-json-v1
+      timeout_ms: 120000
+    enabled: true
+
   - name: Riiid
     careers_url: https://boards.greenhouse.io/riiid
     api: https://boards-api.greenhouse.io/v1/boards/riiid/jobs
