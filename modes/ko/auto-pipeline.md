@@ -30,19 +30,19 @@ Do not continue to Step 1 until this gate is resolved.
 
 ## Step 1 — A-G Evaluation
 
-Execute the same as the `oferta` mode (read `modes/oferta.md` for all A-F blocks + Block G Posting Legitimacy).
+Execute the same as the `oferta` mode (read `modes/ko/oferta.md` for all A-F blocks + Block G Posting Legitimacy).
 
 ## Step 2 — Save Report .md
 
-Save the full evaluation in `reports/{###}-{company-slug}-{YYYY-MM-DD}.md` (see format in `modes/oferta.md`).
+Save the full evaluation in `reports/{###}-{company-slug}-{YYYY-MM-DD}.md` (see format in `modes/ko/oferta.md`).
 Include Block G in the saved report. Add **URL:** {url} and **Legitimacy:** {tier} to the report header.
 
 ## Step 3 — Generate PDF
 
 Read `config/profile.yml`. Check `cv.output_format`:
 
-- If `"latex"`, execute the full pipeline from `modes/latex.md`
-- Otherwise (default), execute the full pipeline from `modes/pdf.md`
+- If `"latex"`, execute the full pipeline from `modes/ko/latex.md`
+- Otherwise (default), execute the full pipeline from `modes/ko/pdf.md`
 
 ## Step 4 — Draft Application Answers (only if score >= 4.5)
 

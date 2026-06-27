@@ -33,36 +33,40 @@ const RELEASES_API = 'https://api.github.com/repos/santifer/career-ops/releases/
 // which Release Please always prefixes with the component name.
 export const SEMVER_RE = /(?:^|-)v?(\d+\.\d+\.\d+)$/i;
 
+function detectModesDir() {
+  const profilePath = join(ROOT, 'config', 'profile.yml');
+  if (!existsSync(profilePath)) return 'modes';
+  const raw = readFileSync(profilePath, 'utf-8');
+  const match = raw.match(/^\s*modes_dir:\s*["']?([^"'\n]+)["']?\s*$/m);
+  return match?.[1]?.trim() || 'modes';
+}
+
+const MODES_DIR = detectModesDir();
+
 // System layer paths — ONLY these files get updated
 const SYSTEM_PATHS = [
-  'modes/_shared.md',
+  `${MODES_DIR}/_shared.md`,
   'modes/_profile.template.md',
-  'modes/oferta.md',
-  'modes/pdf.md',
-  'modes/cover.md',
-  'modes/scan.md',
-  'modes/batch.md',
-  'modes/apply.md',
-  'modes/auto-pipeline.md',
-  'modes/contacto.md',
-  'modes/deep.md',
-  'modes/ofertas.md',
-  'modes/pipeline.md',
-  'modes/project.md',
-  'modes/tracker.md',
-  'modes/training.md',
-  'modes/latex.md',
-  'modes/followup.md',
-  'modes/interview-prep.md',
-  'modes/patterns.md',
-  'modes/update.md',
-  'modes/de/',
-  'modes/fr/',
-  'modes/ja/',
-  'modes/pt/',
-  'modes/ru/',
-  'modes/tr/',
-  'modes/ua/',
+  `${MODES_DIR}/oferta.md`,
+  `${MODES_DIR}/pdf.md`,
+  `${MODES_DIR}/cover.md`,
+  `${MODES_DIR}/scan.md`,
+  `${MODES_DIR}/batch.md`,
+  `${MODES_DIR}/apply.md`,
+  `${MODES_DIR}/auto-pipeline.md`,
+  `${MODES_DIR}/contacto.md`,
+  `${MODES_DIR}/deep.md`,
+  `${MODES_DIR}/ofertas.md`,
+  `${MODES_DIR}/pipeline.md`,
+  `${MODES_DIR}/project.md`,
+  `${MODES_DIR}/tracker.md`,
+  `${MODES_DIR}/training.md`,
+  `${MODES_DIR}/latex.md`,
+  `${MODES_DIR}/followup.md`,
+  `${MODES_DIR}/interview-prep.md`,
+  `${MODES_DIR}/patterns.md`,
+  `${MODES_DIR}/update.md`,
+  `${MODES_DIR}/`,
   'CLAUDE.md',
   'OPENCODE.md',
   'AGENTS.md',

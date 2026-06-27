@@ -186,7 +186,7 @@ Want a cover letter for this role too?
 - Or run `/career-ops cover {slug}` later
 ```
 
-If the user says yes, run the full cover letter flow from `modes/cover.md` in slug mode:
+If the user says yes, run the full cover letter flow from `modes/ko/cover.md` in slug mode:
 1. Load the existing `## Cover Letter Draft` from the evaluation report as a starting point
 2. Run company research (Step 3 of cover.md)
 3. Present keyword list for confirmation (Step 4)

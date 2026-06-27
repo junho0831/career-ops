@@ -131,7 +131,7 @@ Write a JSON file with this structure. `build-cv-latex.mjs` handles template mer
 
 ## Keyword Injection Strategy
 
-Same ethical rules as `modes/pdf.md`:
+Same ethical rules as `modes/ko/pdf.md`:
 - NEVER add skills the candidate doesn't have
 - Only reformulate existing experience using JD vocabulary
 - Examples:

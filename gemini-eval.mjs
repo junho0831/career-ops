@@ -50,14 +50,26 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 // ---------------------------------------------------------------------------
 const ROOT = dirname(fileURLToPath(import.meta.url));
 
+function detectModesDir() {
+  const profilePath = join(ROOT, 'config', 'profile.yml');
+  if (!existsSync(profilePath)) return 'modes';
+  const raw = readFileSync(profilePath, 'utf-8');
+  const match = raw.match(/^\s*modes_dir:\s*["']?([^"'\n]+)["']?\s*$/m);
+  return match?.[1]?.trim() || 'modes';
+}
+
+const MODES_DIR = detectModesDir();
+
 const PATHS = {
   // Primary evaluation logic lives in these two mode files
-  shared:      join(ROOT, 'modes', '_shared.md'),
-  oferta:      join(ROOT, 'modes', 'oferta.md'),
+  shared:      join(ROOT, MODES_DIR, '_shared.md'),
+  oferta:      join(ROOT, MODES_DIR, 'oferta.md'),
   // Canonical skill path referenced in Issue #344
   evaluate:    join(ROOT, '.claude', 'skills', 'career-ops', 'SKILL.md'),
   cv:          join(ROOT, 'cv.md'),
-  profile:     join(ROOT, 'modes', '_profile.md'),
+  profile:     existsSync(join(ROOT, MODES_DIR, '_profile.md'))
+    ? join(ROOT, MODES_DIR, '_profile.md')
+    : join(ROOT, 'modes', '_profile.md'),
   profileYml:  join(ROOT, 'config', 'profile.yml'),
   reports:     join(ROOT, 'reports'),
   tracker:     join(ROOT, 'data', 'applications.md'),
@@ -195,10 +207,10 @@ if (!readdirSync) {
 // ---------------------------------------------------------------------------
 console.log('\n📂  Loading context files...');
 
-const sharedContext  = readFile(PATHS.shared,      'modes/_shared.md');
-const ofertaLogic    = readFile(PATHS.oferta,      'modes/oferta.md');
+const sharedContext  = readFile(PATHS.shared,      `${MODES_DIR}/_shared.md`);
+const ofertaLogic    = readFile(PATHS.oferta,      `${MODES_DIR}/oferta.md`);
 const cvContent      = readFile(PATHS.cv,          'cv.md');
-const profileContent = readFile(PATHS.profile,     'modes/_profile.md');
+const profileContent = readFile(PATHS.profile,     PATHS.profile.includes(`${MODES_DIR}/`) ? `${MODES_DIR}/_profile.md` : 'modes/_profile.md');
 const profileYml     = readFile(PATHS.profileYml,  'config/profile.yml');
 
 // ---------------------------------------------------------------------------

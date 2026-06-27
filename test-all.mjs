@@ -98,6 +98,17 @@ function fileExists(path) { return existsSync(join(ROOT, path)); }
  */
 function readFile(path) { return readFileSync(join(ROOT, path), 'utf-8'); }
 
+function detectModesDir() {
+  const profilePath = join(ROOT, 'config', 'profile.yml');
+  if (!existsSync(profilePath)) return 'modes';
+  const raw = readFileSync(profilePath, 'utf-8');
+  const match = raw.match(/^\s*modes_dir:\s*["']?([^"'\n]+)["']?\s*$/m);
+  return match?.[1]?.trim() || 'modes';
+}
+
+const MODES_DIR = detectModesDir();
+const activeMode = (file) => `${MODES_DIR}/${file}`;
+
 console.log('\n🧪 career-ops test suite\n');
 
 // ── 1. SYNTAX CHECKS ────────────────────────────────────────────
@@ -404,8 +415,8 @@ console.log('\n5. Data contract validation');
 // Check system files exist
 const systemFiles = [
   'CLAUDE.md', 'OPENCODE.md', 'VERSION', 'DATA_CONTRACT.md',
-  'modes/_shared.md', 'modes/_profile.template.md',
-  'modes/oferta.md', 'modes/pdf.md', 'modes/scan.md',
+  activeMode('_shared.md'), 'modes/_profile.template.md',
+  activeMode('oferta.md'), activeMode('pdf.md'), activeMode('scan.md'),
   'templates/states.yml', 'templates/cv-template.html',
   '.claude/skills/career-ops/SKILL.md',
   '.opencode/skills/career-ops/SKILL.md',
@@ -574,11 +585,12 @@ const expectedModes = [
   '_shared.md', '_profile.template.md', 'oferta.md', 'pdf.md', 'scan.md',
   'batch.md', 'apply.md', 'auto-pipeline.md', 'contacto.md', 'deep.md',
   'ofertas.md', 'pipeline.md', 'project.md', 'tracker.md', 'training.md',
-  'interview.md', 'latex.md',
+  'interview-prep.md', 'latex.md', 'followup.md', 'patterns.md', 'update.md',
 ];
 
 for (const mode of expectedModes) {
-  if (fileExists(`modes/${mode}`)) {
+  const modePath = mode === '_profile.template.md' ? `modes/${mode}` : activeMode(mode);
+  if (fileExists(modePath)) {
     pass(`Mode exists: ${mode}`);
   } else {
     fail(`Missing mode: ${mode}`);
@@ -586,7 +598,7 @@ for (const mode of expectedModes) {
 }
 
 // Check _shared.md references _profile.md
-const shared = readFile('modes/_shared.md');
+const shared = readFile(activeMode('_shared.md'));
 if (shared.includes('_profile.md')) {
   pass('_shared.md references _profile.md');
 } else {
@@ -606,7 +618,7 @@ for (const skillPath of ['.claude/skills/career-ops/SKILL.md', '.agents/skills/c
   }
 }
 
-const applyMode = readFile('modes/apply.md');
+const applyMode = readFile(activeMode('apply.md'));
 if (
   applyMode.includes('## Step 5 — Preflight gate') &&
   applyMode.includes('verify liveness with Playwright') &&
@@ -619,8 +631,8 @@ if (
   fail('apply mode missing liveness/role-match preflight gate');
 }
 
-const ofertaMode = readFile('modes/oferta.md');
-const autoPipelineMode = readFile('modes/auto-pipeline.md');
+const ofertaMode = readFile(activeMode('oferta.md'));
+const autoPipelineMode = readFile(activeMode('auto-pipeline.md'));
 if (
   ofertaMode.includes('## Liveness gate (URL inputs)') &&
   ofertaMode.includes('closed posting evidence') &&
@@ -665,7 +677,7 @@ if (fileExists('providers/local-parser.mjs')) {
   fail('local-parser provider module is missing');
 }
 
-const scanMode = fileExists('modes/scan.md') ? readFile('modes/scan.md') : '';
+const scanMode = fileExists(activeMode('scan.md')) ? readFile(activeMode('scan.md')) : '';
 if (
   scanMode.includes('local_parser_ok') &&
   (scanMode.includes('No Expensive Scraping Repetition') || scanMode.includes('no repetir scraping caro')) &&
