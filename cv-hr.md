@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
 > Spring Boot 기반 업무 시스템에서 검색 fallback, Redis 인증, RDB 제약조건, 공통 예외 처리, 배치 재실행 안정성을 개선해온 백엔드 개발자
-회사 업무에서는 Elasticsearch 예외 시 DB fallback, Redis 기반 Refresh Token 관리, RDB index/unique constraint, 공통 예외/검증 정책, CI/CD, Airflow FTP batch를 다뤘습니다. 개인 서비스 VoiceLink에서는 실시간 매칭·통화 서비스를 1인 개발·운영하며 동시성 정합성과 운영 인프라 문제를 직접 해결했습니다.
+회사 업무에서는 Elasticsearch 예외 시 DB fallback, Redis 기반 Refresh Token 관리, RDB index/unique constraint, 공통 예외/검증 정책, CI/CD, Airflow FTP batch, ER Dose 로그 파싱 자동화를 다뤘습니다. 개인 서비스 VoiceLink에서는 실시간 매칭·통화 서비스를 1인 개발·운영하며 동시성 정합성과 운영 인프라 문제를 직접 해결했습니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -16,7 +16,7 @@
 | --- | --- | --- | --- |
 | 백엔드 개발 경력 | 장애·정합성·배치 개선 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 
-- 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, 검색 장애 fallback, Redis 인증, 배포 자동화, Airflow 배치를 구현
+- 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, 검색 장애 fallback, Redis 인증, 배포 자동화, Airflow 배치, 운영 로그 파싱 구조화를 구현
 - 야근 신청/승인, 직원 관리, 검색 인덱스, 알림, 재처리 기능을 API, transaction, index, unique constraint 기준으로 설계
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 서비스 설계·구현·운영
 - 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 데이터 정합성을 지킨 경험
@@ -51,8 +51,11 @@
 `Python` `Airflow` `SQLite` `FTP`
 
 - Java 기반 FTP 파일 처리 배치를 Python/Airflow DAG로 마이그레이션
+- ER Dose RAW warning 파싱과 EUV root cause 파싱을 분리해, 서로 다른 입력 테이블과 적재 대상에 맞는 배치 경로로 재구성
+- 실제 운영 로그의 라벨 변형과 줄바꿈 문자열, 숫자/단위 표현 차이를 흡수하는 파서를 넣어 사람이 손보지 않아도 구조화 적재가 되도록 개선
 - `max_active_runs=1`, `catchup=False`, 입력일+전날 FTP 폴더 스캔으로 반복 실행과 날짜 경계 파일을 처리
 - 업로드/DB commit 이후 FTP 원본 삭제, Rupi `source_file` unique + upsert, 파일 다운로드/업로드 검증, scratch cleanup을 적용
+- 전체 적재를 한 번에 처리하지 않고 `chunk 조회 -> 파싱 -> COPY 적재`로 반복해 대용량 로그도 안정적으로 처리할 수 있게 구성
 
 ## 엔셀 - DataForge Spring 검색/인증/관리 API
 

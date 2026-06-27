@@ -1,6 +1,6 @@
 # 박준호 | 백엔드 개발자
 
-Java/Spring Boot 기반 백엔드에서 인증, 검색, 운영 API, Redis 상태 관리, RDB 정합성, CI/CD, 데이터 처리 자동화를 맡아왔습니다. 실무에서는 Elasticsearch 장애 시 DB fallback 검색, Refresh Token Redis TTL 관리, 공통 예외·검증 정책, Airflow 기반 FTP 데이터 처리 자동화, 배치 재처리, 관리자 API를 구현했습니다. 개인 서비스 VoiceLink는 AI를 구현·디버깅 보조 도구로 활용해 1인 개발 범위를 넓혔고, Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 매칭과 세션 정합성 설계부터 배포·운영까지 직접 맡았습니다.
+Java/Spring Boot 기반 백엔드에서 인증, 검색, 운영 API, Redis 상태 관리, RDB 정합성, CI/CD, 데이터 처리 자동화를 맡아왔습니다. 실무에서는 Elasticsearch 장애 시 DB fallback 검색, Refresh Token Redis TTL 관리, 공통 예외·검증 정책, Airflow 기반 FTP 데이터 처리 자동화, ER Dose RAW/EUV 로그 파싱 배치 분리, 배치 재처리, 관리자 API를 구현했습니다. 개인 서비스 VoiceLink는 AI를 구현·디버깅 보조 도구로 활용해 1인 개발 범위를 넓혔고, Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 매칭과 세션 정합성 설계부터 배포·운영까지 직접 맡았습니다.
 
 Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831
 
@@ -21,7 +21,7 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 - **Backend:** Java, Spring Boot, JPA, REST API
 - **Data / Infra:** PostgreSQL, MySQL, Redis, Elasticsearch, SQLite
 - **Realtime / Ops:** LiveKit, WebRTC, Docker, Nginx, SSL, DNS
-- **Automation / Batch:** GitLab CI/CD, Airflow, Crontab, FTP
+- **Automation / Batch:** GitLab CI/CD, Airflow, Crontab, FTP, Log Parsing
 - **Testing / Auth:** JUnit5, Mockito, JWT, OAuth2, Spring Security
 - **AI / Search:** OpenAI API, LangChain, RAG
 
@@ -36,11 +36,14 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 `Python` `Airflow` `Postgres` `FTP`
 - 레거시 시스템 마이그레이션 및 파이프라인 재설계: Java 기반의 FTP 파일 처리 배치를 Python/Airflow 기반 파이프라인으로 완전히 이관했습니다. 특히 다운로드, 검증, 변환, 저장, 업로드, 원본 정리 단계를
   논리적으로 세분화하여, 배치 실패 시 어느 지점에서 오류가 발생했는지 즉각적인 추적이 가능하도록 워크플로우를 재설계했습니다.
+- ER Dose RAW/EUV 파싱 경로 분리: `mbeat.er_data_raw`와 `mbeat.er_data_raw_euv`를 입력으로 받는 배치를 역할별로 분리하고, RAW warning 파싱과 EUV root cause 구조화 적재를 별도 processor/repository 경로로 관리했습니다.
+- 운영 로그 변형 대응 파서 구현: `Root clause`, `Exposesue I D` 같은 실제 운영 라벨 변형, 문자열 `\\n` 정규화, 단위 제거, 정수 컬럼의 `3.0 -> 3` 변환, 개별 필드 실패 시 `NULL` 처리 규칙을 반영해 전체 행 유실 없이 root cause 파싱이 계속되도록 구성했습니다.
 - 데이터 무결성 및 원자적 처리 구현: '업로드 성공 및 DB Commit이 완료된 이후에만 FTP 원본을 삭제한다'는 원자적 로직을 고정하여, 시스템 장애 시에도 데이터 유실 없이 안전하게 재실행 및 복구가 가능한 구조를
   확보했습니다.
 - 중복 적재 방지 및 정합성 보장: source_file에 Unique 제약을 설정하고 Upsert(Insert or Update) 기반의 적재 로직을 구현하여, 동일 파일이 중복으로 적재되는 문제를 기술적으로 원천 차단했습니다.
 - 배치 운영 안정성 극대화: 입력일과 전일 폴더를 병행 스캔하여 날짜 경계에서 발생하는 파일 누락을 방지했습니다. 또한 max_active_runs=1, catchup=false 등의 실행 제어와 Scratch 파일의 자동 정리 정책을
   적용하여, 반복적인 배치 운영 환경에서의 시스템 안정성을 크게 높였습니다.
+- 대용량 적재 구조 단순화: 전체 데이터를 메모리에 올리지 않고 `chunk 조회 -> 파싱 -> 파티션 COPY 적재`를 반복하고, `code_occur_time` 기준 range partition 적재와 chunk별 처리량 로그를 남겨 운영 중 병목과 실패 구간을 빠르게 확인할 수 있게 했습니다.
 
 #### DataForge - Spring 검색/인증/관리 API
 `Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`

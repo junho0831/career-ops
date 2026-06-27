@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
 > Spring Boot 기반 업무 시스템에서 검색 fallback, Redis 인증, RDB 제약조건, 공통 예외 처리, 배치 재실행 안정성을 개선해온 백엔드 개발자
-회사 업무에서는 Elasticsearch 예외 시 DB fallback, Refresh Token Redis TTL 관리, RDB index/unique constraint, GlobalExceptionHandler/validation, GitLab CI/CD, Airflow FTP batch를 다뤘습니다. VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성을 구현했습니다.
+회사 업무에서는 Elasticsearch 예외 시 DB fallback, Refresh Token Redis TTL 관리, RDB index/unique constraint, GlobalExceptionHandler/validation, GitLab CI/CD, Airflow FTP batch, ER Dose RAW/EUV 로그 파싱 배치를 다뤘습니다. VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성을 구현했습니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -16,7 +16,7 @@
 | --- | --- | --- | --- |
 | 백엔드 개발 경력 | 장애·정합성·배치 개선 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 
-- 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, Airflow 배치를 구현
+- 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, Airflow 배치, 운영 로그 파싱 구조화를 구현
 - 야근 신청/승인, 직원 관리, 검색 인덱스, 알림, 재처리 기능을 API, transaction, index, unique constraint 기준으로 설계
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
@@ -71,9 +71,12 @@
 `Python` `Airflow` `SQLite` `FTP`
 
 - Java 기반 FTP 파일 처리 배치를 Python/Airflow DAG로 마이그레이션
+- `mbeat.er_data_raw` RAW warning 파싱과 `mbeat.er_data_raw_euv` root cause 파싱을 별도 실행 경로로 분리하고, EUV `contents`를 구조화 컬럼으로 적재하는 배치를 구현
+- `Root clause`, `Exposesue I D`, 문자열 `\\n`, 단위 제거, `3.0 -> 3` 정수 변환 같은 운영 데이터 변형을 파서에 반영하고, 개별 필드 실패 시 `NULL` 처리로 전체 row 유실을 방지
 - `max_active_runs=1`, `catchup=False`로 중복 실행을 제한하고, 입력일+전날 FTP 폴더를 함께 스캔해 날짜 경계 파일을 처리
 - 업로드 성공과 DB commit 이후 FTP 원본을 삭제하도록 순서를 고정하고, Rupi `source_file` unique + upsert로 동일 파일 중복 적재를 방지
 - FTP 다운로드/업로드 크기 검증과 scratch 파일 cleanup을 넣어 실패 지점을 파일 처리 단계별로 추적
+- `chunk 조회 -> 파싱 -> 파티션 COPY 적재` 반복 구조와 chunk별 처리량 로그로 대용량 로그 파싱 배치의 메모리 사용량과 운영 관측성을 정리
 
 ## 엔셀 - DataForge Spring 검색/인증/관리 API
 
