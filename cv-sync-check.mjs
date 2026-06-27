@@ -20,16 +20,6 @@ const projectRoot = __dirname;
 const warnings = [];
 const errors = [];
 
-function detectModesDir() {
-  const profilePath = join(projectRoot, 'config', 'profile.yml');
-  if (!existsSync(profilePath)) return 'modes';
-  const raw = readFileSync(profilePath, 'utf-8');
-  const match = raw.match(/^\s*modes_dir:\s*["']?([^"'\n]+)["']?\s*$/m);
-  return match?.[1]?.trim() || 'modes';
-}
-
-const modesDir = detectModesDir();
-
 // 1. Check cv.md exists
 const cvPath = join(projectRoot, 'cv.md');
 if (!existsSync(cvPath)) {
@@ -58,7 +48,7 @@ if (!existsSync(profilePath)) {
 
 // 3. Check for hardcoded metrics in prompt files
 const filesToCheck = [
-  { path: join(projectRoot, modesDir, '_shared.md'), name: `${modesDir}/_shared.md` },
+  { path: join(projectRoot, 'modes', '_shared.md'), name: '_shared.md' },
   { path: join(projectRoot, 'batch', 'batch-prompt.md'), name: 'batch-prompt.md' },
 ];
 
