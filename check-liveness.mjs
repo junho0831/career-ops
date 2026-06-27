@@ -16,6 +16,8 @@
 
 import { chromium } from 'playwright';
 import { readFile } from 'fs/promises';
+import { existsSync, readdirSync } from 'fs';
+import os from 'os';
 import {
   checkUrlLivenessWithFallback,
   createHeadedPageProvider,
@@ -23,6 +25,24 @@ import {
   jitteredDelayMs,
   sleep,
 } from './liveness-browser.mjs';
+
+function findInstalledChromiumExecutable() {
+  const directPath = chromium.executablePath?.();
+  if (directPath && existsSync(directPath)) return directPath;
+
+  const baseDir = `${os.homedir()}/Library/Caches/ms-playwright`;
+  if (!existsSync(baseDir)) return null;
+
+  const candidates = readdirSync(baseDir)
+    .filter((name) => /^chromium-\d+$/.test(name))
+    .sort((a, b) => Number(b.split('-')[1]) - Number(a.split('-')[1]));
+
+  for (const dir of candidates) {
+    const executable = `${baseDir}/${dir}/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing`;
+    if (existsSync(executable)) return executable;
+  }
+  return null;
+}
 
 async function main() {
   const args = process.argv.slice(2);
@@ -58,7 +78,22 @@ async function main() {
   ].filter(Boolean);
   console.log(`Checking ${urls.length} URL(s)...${notes.length ? ` (${notes.join(', ')})` : ''}\n`);
 
-  const browser = await chromium.launch({ headless: true });
+  const executablePath = findInstalledChromiumExecutable();
+  let browser;
+  try {
+    browser = executablePath
+      ? await chromium.launch({ headless: true, executablePath })
+      : await chromium.launch({ headless: true });
+  } catch (err) {
+    // Some local environments only have the regular Chromium bundle installed,
+    // not chrome-headless-shell. Fall back to headed Chromium so liveness checks
+    // can still run instead of failing before the first URL.
+    if (!String(err?.message || '').includes('Executable doesn\'t exist')) throw err;
+    console.warn('Headless shell missing; retrying with headed Chromium.');
+    browser = executablePath
+      ? await chromium.launch({ headless: false, executablePath })
+      : await chromium.launch({ headless: false });
+  }
   const page = await newLivenessPage(browser);
   const headed = noFallback ? null : createHeadedPageProvider(chromium);
   const getHeadedPage = headed ? () => headed.get() : undefined;
