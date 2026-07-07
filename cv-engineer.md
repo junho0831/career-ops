@@ -1,7 +1,7 @@
 # 박준호 | 백엔드 개발자
 
-> Spring Boot 기반 업무 시스템에서 검색 fallback, Redis 인증, RDB 제약조건, 공통 예외 처리, 배치 재실행 안정성을 개선해온 백엔드 개발자
-회사 업무에서는 Elasticsearch 예외 시 DB fallback, Refresh Token Redis TTL 관리, RDB index/unique constraint, GlobalExceptionHandler/validation, GitLab CI/CD, Airflow FTP batch, ER Dose RAW/EUV 로그 파싱 배치를 다뤘습니다. VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성을 구현했습니다.
+> 운영 안정성과 데이터 정합성을 개선하는 Java/Spring Boot 백엔드 개발자
+회사 업무에서는 검색 장애 대응, 인증 상태 관리, 배치 재실행 안정화, ER Dose RAW/EUV 로그 파싱 경로 분리, 공통 오류 응답, 운영자 재처리 API처럼 실제 운영 중 문제가 되는 흐름을 줄이는 작업을 맡았습니다. VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성 문제를 해결했습니다.
 >
 
 📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
@@ -16,8 +16,10 @@
 | --- | --- | --- | --- |
 | 백엔드 개발 경력 | 장애·정합성·배치 개선 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
 
-- 회사 업무에서 Spring 기반 관리자 API, 공통 예외/검증 정책, Elasticsearch fallback, Redis 인증, CI/CD 배포 표준화, Airflow 배치, 운영 로그 파싱 구조화를 구현
-- 야근 신청/승인, 직원 관리, 검색 인덱스, 알림, 재처리 기능을 API, transaction, index, unique constraint 기준으로 설계
+- 운영 중단, 중복 처리, 데이터 유실, 재처리 실패 가능성을 줄이는 백엔드 개선 경험
+- Elasticsearch fallback, Redis TTL 인증 상태, RDB index/unique constraint, transaction/lock 기반 정합성 관리 경험
+- Python/Airflow 배치 이관, Admin 재처리 API, GitLab CI/CD, Docker/Nginx 기반 운영 자동화 경험
+- ER Dose RAW/EUV 로그 파싱 경로 분리, 구조화 적재, 대용량 chunk 처리 경험
 - Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
 - Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
 - 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 정합성을 보장한 경험 보유
@@ -55,7 +57,7 @@
 
 ### 성과
 
-- 단순 CRUD가 아닌 동시성, 실시간성, WebRTC 네트워크, 운영 인프라 이슈가 포함된 실서비스를 직접 구축·운영
+- 단순 CRUD가 아닌 동시성, 실시간성, WebRTC 네트워크, 운영 인프라 이슈를 직접 해결한 실서비스 운영 경험 확보
 - Redis Lua Script 기반 Atomic Claim, Cancel Marker, DB Outbox + Redis Pub/Sub, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`, `CallSession.ended_at` source of truth를 결합해 stale match, 중복 매칭, 유령 세션, 종료 후 재매칭 충돌을 구조적으로 해결
 - `https://voice-link.co.kr` 도메인으로 실제 접속 가능한 서비스를 상시 운영한 경험 확보
 - 장애 발생 시 API, Redis 상태, LiveKit 연결, 네트워크, Nginx, SSL, DNS, 포트포워딩까지 이어지는 운영 디버깅 경험 축적
@@ -68,15 +70,16 @@
 
 📅 `2026.02 ~ 현재`
 
-`Python` `Airflow` `SQLite` `FTP`
+`Python` `Airflow` `PostgreSQL` `FTP`
 
-- Java 기반 FTP 파일 처리 배치를 Python/Airflow DAG로 마이그레이션
-- `mbeat.er_data_raw` RAW warning 파싱과 `mbeat.er_data_raw_euv` root cause 파싱을 별도 실행 경로로 분리하고, EUV `contents`를 구조화 컬럼으로 적재하는 배치를 구현
-- `Root clause`, `Exposesue I D`, 문자열 `\\n`, 단위 제거, `3.0 -> 3` 정수 변환 같은 운영 데이터 변형을 파서에 반영하고, 개별 필드 실패 시 `NULL` 처리로 전체 row 유실을 방지
-- `max_active_runs=1`, `catchup=False`로 중복 실행을 제한하고, 입력일+전날 FTP 폴더를 함께 스캔해 날짜 경계 파일을 처리
-- 업로드 성공과 DB commit 이후 FTP 원본을 삭제하도록 순서를 고정하고, Rupi `source_file` unique + upsert로 동일 파일 중복 적재를 방지
-- FTP 다운로드/업로드 크기 검증과 scratch 파일 cleanup을 넣어 실패 지점을 파일 처리 단계별로 추적
-- `chunk 조회 -> 파싱 -> 파티션 COPY 적재` 반복 구조와 chunk별 처리량 로그로 대용량 로그 파싱 배치의 메모리 사용량과 운영 관측성을 정리
+- FTP 파일 처리 배치에서 실패 지점 추적이 어렵고 재실행 시 중복 적재·원본 삭제 순서 문제가 생길 수 있어 Java 배치를 Python/Airflow DAG로 이관하며 처리 단계를 재설계
+- 다운로드, 검증, 변환, 저장, 업로드, 원본 정리 단계를 task로 분리해 어느 단계에서 실패했는지 확인하고 해당 지점부터 재처리할 수 있도록 개선
+- `mbeat.er_data_raw` RAW warning 파싱과 `mbeat.er_data_raw_euv` root cause 파싱을 별도 실행 경로로 분리하고, EUV `contents`를 구조화 컬럼으로 적재하는 배치 구성
+- `Root clause`, `Exposesue I D`, 문자열 `\\n`, 단위 제거, `3.0 -> 3` 정수 변환 같은 운영 데이터 변형을 파서에 반영하고, 개별 필드 실패 시 `NULL` 처리로 전체 row 유실 방지
+- 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정해 데이터 유실 없이 재실행 가능하도록 설계
+- `source_file` unique constraint와 upsert 적재 로직을 적용해 동일 파일이 반복 실행에서 중복 적재되는 문제 방지
+- `max_active_runs=1`, `catchup=False`, 입력일+전일 FTP 폴더 스캔, scratch cleanup으로 날짜 경계 누락과 반복 실행 리스크 축소
+- `chunk 조회 -> 파싱 -> 파티션 COPY 적재` 반복 구조와 chunk별 처리량 로그로 대용량 로그 파싱 배치의 메모리 사용량과 운영 관측성 정리
 
 ## 엔셀 - DataForge Spring 검색/인증/관리 API
 
@@ -84,11 +87,11 @@
 
 `Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
 
-- Elasticsearch 비활성/검색 예외 발생 시 DB fallback 검색으로 전환하고, ES/DB 응답 스키마를 맞춰 권한 스코프와 정렬 정책을 유지
-- `requester_id`, `start_at`, `status` 인덱스와 `(requester_id, start_at, end_at)`, `overtime_approvals.request_id` unique constraint로 조회 성능과 중복 데이터 방지 정합성을 함께 고려
-- Refresh Token 저장/검증/회전/삭제를 Redis TTL 기반으로 일원화해 로그인/갱신/로그아웃 상태 기준을 단순화
-- 직원 부서/직책/비밀번호 변경 API를 `@Transactional` 경계 안에서 처리하고, 알림 메일/전체 재색인/선택적 CSV 동기화 기능을 연결
-- `GlobalExceptionHandler`와 validation 실패 응답을 표준화해 프론트엔드가 동일한 오류 포맷으로 처리하도록 정리
+- 검색 엔진 비활성 또는 예외 상황에서 야근 신청 조회가 중단될 수 있어 Elasticsearch 실패 조건을 분리하고 DB fallback 검색 경로를 설계
+- ES/DB 응답 포맷과 정렬 정책을 맞춰 fallback 전환 후에도 사용자와 운영자가 동일한 조회 결과를 해석할 수 있도록 개선
+- `requester_id`, `start_at`, `status` 인덱스와 unique constraint로 조회 성능과 중복 신청·승인 방지 정합성을 함께 개선
+- Refresh Token 저장, 검증, 회전, 삭제를 Redis TTL 기준으로 일원화해 로그인·갱신·로그아웃 상태 관리 단순화
+- 직원 정보 변경, 알림 메일, 재색인, 시트 동기화, `GlobalExceptionHandler`와 validation 실패 응답을 연결해 운영 대응 흐름 정리
 
 ## 엔셀 - SMIP Spring 공통 예외 처리 및 회귀 테스트
 
@@ -96,10 +99,10 @@
 
 `Java` `Spring Boot` `Vue.js` `JUnit5` `Mockito`
 
-- API별로 흩어진 예외 처리를 공통 예외 처리 계층과 표준 오류 응답으로 통합
-- validation 메시지와 오류 코드를 맞추고, 반복 장애 케이스를 JUnit5/Mockito 회귀 테스트로 고정
-- Vue 화면 상태를 MVVM + Store 구조로 분리해 UI 상태 변경 영향 범위를 줄이고 인수인계 문서에 반영
-- 동일 오류를 담당자 기억이 아니라 테스트와 문서로 재현·분석·수정할 수 있게 정리
+- API마다 오류 응답과 validation 메시지 해석 방식이 달라 장애 분석 기준이 흔들리는 문제가 있어 공통 예외 처리 계층과 표준 오류 응답으로 통합
+- 프론트엔드, 운영자, 개발자가 같은 오류 포맷을 기준으로 원인을 파악하도록 validation 정책과 메시지 구조 정리
+- 반복 장애 케이스를 JUnit5/Mockito 회귀 테스트로 고정해 담당자 기억이 아니라 테스트로 재발 여부를 확인하도록 개선
+- Vue 화면 상태를 MVVM + Store 구조로 분리해 UI 상태 변경 영향 범위와 인수인계 비용 축소
 
 ## 헥토 - KMS CI/CD 표준화 및 SmartQ RAG 검색 API
 
@@ -107,10 +110,10 @@
 
 `Java` `Spring Boot` `GitLab CI/CD` `Docker` `Nginx` `LangChain`
 
-- LangChain/RAG 기반 사내 문서 검색 API를 구현해 키워드 검색의 맥락 검색 한계를 보완
+- 키워드 검색만으로는 사내 문서의 맥락을 찾기 어려운 문제가 있어 LangChain 기반 RAG 검색 API로 의미 기반 질의응답 흐름을 보완
 - GitLab CI/CD + Docker로 빌드·테스트·배포 단계를 자동화
-- Nginx + Staging 환경을 구성해 배포 전 API 검증 경로를 분리
-- 빌드 산출물, 실행 환경, 배포 경로를 Docker와 GitLab CI/CD 기준으로 고정
+- Nginx + Staging 환경을 구성해 배포 전 API 검증 경로 분리
+- 빌드 산출물, 실행 환경, 배포 경로를 표준화해 수동 배포 누락과 환경 차이 리스크 축소
 
 ## 헥토 - 세이프캐시 정기 배치 및 Admin 재처리 API
 
@@ -118,9 +121,9 @@
 
 `Java` `Spring Boot` `Crontab`
 
-- Crontab 기반 정기 데이터 동기화 배치를 자동화하고 실행 이력/결과 로그를 남김
-- Admin UI/API에 조회·수정·재처리 기능을 연결해 단순 데이터 이상을 화면에서 처리할 수 있게 개선
-- 수동 배치 실행과 개발자 DB 확인에 의존하던 작업을 자동 실행, 결과 로깅, 재처리 API 구조로 전환
+- 수동 실행과 개발자 DB 확인에 의존하던 정기 데이터 동기화 작업을 Crontab 기반 배치로 자동화
+- 실행 이력과 결과 로깅 구조를 추가해 이상 징후를 운영자가 빠르게 확인하도록 개선
+- Admin UI/API에 조회·수정·재처리 기능을 연결해 개발자 개입 없이 운영자가 직접 복구할 수 있는 흐름 구축
 
 ---
 

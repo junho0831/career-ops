@@ -1,6 +1,6 @@
 # 박준호 | 백엔드 개발자
 
-Java/Spring Boot 기반 백엔드에서 인증, 검색, 운영 API, Redis 상태 관리, RDB 정합성, CI/CD, 데이터 처리 자동화를 맡아왔습니다. 실무에서는 Elasticsearch 장애 시 DB fallback 검색, Refresh Token Redis TTL 관리, 공통 예외·검증 정책, Airflow 기반 FTP 데이터 처리 자동화, ER Dose RAW/EUV 로그 파싱 배치 분리, 배치 재처리, 관리자 API를 구현했습니다. 개인 서비스 VoiceLink는 AI를 구현·디버깅 보조 도구로 활용해 1인 개발 범위를 넓혔고, Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 매칭과 세션 정합성 설계부터 배포·운영까지 직접 맡았습니다.
+운영 안정성과 데이터 정합성을 개선하는 Java/Spring Boot 백엔드 개발자입니다. 회사 업무에서는 검색 장애 대응, 인증 상태 관리, 배치 재실행 안정화, ER Dose RAW/EUV 로그 파싱 경로 분리, 공통 오류 응답, 운영자 재처리 API처럼 실제 운영 중 문제가 되는 흐름을 줄이는 작업을 맡았습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반으로 실시간 매칭·통화 세션의 동시성 문제를 해결하고 배포·운영까지 직접 수행했습니다.
 
 Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831
 
@@ -11,15 +11,16 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 ## Summary
 
 - Java/Spring Boot 기반 백엔드 개발 경력 3년+
-- 인증, 검색, 관리자 API, 배치/재처리, 운영 자동화 경험
-- Redis TTL, Lua Script, RDB index/unique constraint, transaction/lock을 활용한 정합성 관리 경험
-- GitLab CI/CD, Docker, Nginx, SSL, DNS, Airflow 기반 배포·운영 경험
-- AI를 구현·디버깅·문서화 보조 도구로 활용해 1인 서비스를 개발·운영한 경험
+- 운영 중단, 중복 처리, 데이터 유실, 재처리 실패 가능성을 줄이는 백엔드 개선 경험
+- Elasticsearch fallback, Redis TTL 인증 상태, RDB index/unique constraint, transaction/lock 기반 정합성 관리 경험
+- Python/Airflow 배치 이관, Admin 재처리 API, GitLab CI/CD, Docker/Nginx 기반 운영 자동화 경험
+- Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 상태 정합성 구현 경험
+- AI를 구현·디버깅·문서화 보조 도구로 활용해 1인 서비스를 설계·개발·배포·운영한 경험
 
 ## Core Skills
 
 - **Backend:** Java, Spring Boot, JPA, REST API
-- **Data / Infra:** PostgreSQL, MySQL, Redis, Elasticsearch, SQLite
+- **Data / Infra:** PostgreSQL, MySQL, Redis, Elasticsearch
 - **Realtime / Ops:** LiveKit, WebRTC, Docker, Nginx, SSL, DNS
 - **Automation / Batch:** GitLab CI/CD, Airflow, Crontab, FTP, Log Parsing
 - **Testing / Auth:** JUnit5, Mockito, JWT, OAuth2, Spring Security
@@ -33,34 +34,31 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 `2025.01 ~ 현재`
 
 #### Prism - Airflow 데이터 처리 자동화
-`Python` `Airflow` `Postgres` `FTP`
-- 레거시 시스템 마이그레이션 및 파이프라인 재설계: Java 기반의 FTP 파일 처리 배치를 Python/Airflow 기반 파이프라인으로 완전히 이관했습니다. 특히 다운로드, 검증, 변환, 저장, 업로드, 원본 정리 단계를
-  논리적으로 세분화하여, 배치 실패 시 어느 지점에서 오류가 발생했는지 즉각적인 추적이 가능하도록 워크플로우를 재설계했습니다.
-- ER Dose RAW/EUV 파싱 경로 분리: `mbeat.er_data_raw`와 `mbeat.er_data_raw_euv`를 입력으로 받는 배치를 역할별로 분리하고, RAW warning 파싱과 EUV root cause 구조화 적재를 별도 processor/repository 경로로 관리했습니다.
-- 운영 로그 변형 대응 파서 구현: `Root clause`, `Exposesue I D` 같은 실제 운영 라벨 변형, 문자열 `\\n` 정규화, 단위 제거, 정수 컬럼의 `3.0 -> 3` 변환, 개별 필드 실패 시 `NULL` 처리 규칙을 반영해 전체 행 유실 없이 root cause 파싱이 계속되도록 구성했습니다.
-- 데이터 무결성 및 원자적 처리 구현: '업로드 성공 및 DB Commit이 완료된 이후에만 FTP 원본을 삭제한다'는 원자적 로직을 고정하여, 시스템 장애 시에도 데이터 유실 없이 안전하게 재실행 및 복구가 가능한 구조를
-  확보했습니다.
-- 중복 적재 방지 및 정합성 보장: source_file에 Unique 제약을 설정하고 Upsert(Insert or Update) 기반의 적재 로직을 구현하여, 동일 파일이 중복으로 적재되는 문제를 기술적으로 원천 차단했습니다.
-- 배치 운영 안정성 극대화: 입력일과 전일 폴더를 병행 스캔하여 날짜 경계에서 발생하는 파일 누락을 방지했습니다. 또한 max_active_runs=1, catchup=false 등의 실행 제어와 Scratch 파일의 자동 정리 정책을
-  적용하여, 반복적인 배치 운영 환경에서의 시스템 안정성을 크게 높였습니다.
-- 대용량 적재 구조 단순화: 전체 데이터를 메모리에 올리지 않고 `chunk 조회 -> 파싱 -> 파티션 COPY 적재`를 반복하고, `code_occur_time` 기준 range partition 적재와 chunk별 처리량 로그를 남겨 운영 중 병목과 실패 구간을 빠르게 확인할 수 있게 했습니다.
+`Python` `Airflow` `PostgreSQL` `FTP`
+- FTP 파일 처리 배치에서 실패 지점 추적이 어렵고 재실행 시 중복 적재·원본 삭제 순서 문제가 생길 수 있어, Java 배치를 Python/Airflow DAG로 이관하며 처리 단계를 재설계
+- 다운로드, 검증, 변환, 저장, 업로드, 원본 정리 단계를 task로 분리해 어느 단계에서 실패했는지 확인하고 해당 지점부터 재처리할 수 있도록 개선
+- ER Dose RAW warning 파싱과 EUV root cause 파싱을 별도 실행 경로로 분리하고, `mbeat.er_data_raw_euv.contents`를 구조화 컬럼으로 적재하는 processor/repository 경로 구성
+- `Root clause`, `Exposesue I D`, 문자열 `\\n`, 단위 제거, `3.0 -> 3` 정수 변환 같은 운영 로그 변형을 파서에 반영하고, 개별 필드 실패 시 `NULL` 처리로 전체 row 유실 방지
+- 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정해 장애 발생 시 데이터 유실 없이 재실행 가능하도록 설계
+- `source_file` unique constraint와 upsert 적재 로직을 적용해 동일 파일이 반복 실행에서 중복 적재되는 문제 방지
+- 입력일+전일 FTP 폴더 병행 스캔, `max_active_runs=1`, `catchup=false`, scratch 파일 정리로 날짜 경계 누락과 반복 실행 리스크 축소
+- 전체 데이터를 메모리에 올리지 않고 `chunk 조회 -> 파싱 -> 파티션 COPY 적재`를 반복하고, `code_occur_time` 기준 range partition 적재와 chunk별 처리량 로그로 운영 중 병목과 실패 구간을 확인할 수 있게 개선
 
 #### DataForge - Spring 검색/인증/관리 API
 `Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
 
-- 야근 신청, 승인, 반려, 조회, 알림, 관리자 수정 흐름을 Spring 기반 백엔드로 구현
-- Elasticsearch 비활성 또는 검색 예외 시 DB fallback 검색으로 전환해 검색 중단 방지
-- ES/DB 결과 포맷과 정렬 정책을 맞춰 fallback 전환 후에도 일관된 응답 유지
-- `requester_id`, `start_at`, `status` 인덱스와 unique constraint로 조회 성능을 개선하고 중복 신청/중복 승인을 방지
-- Refresh Token 저장·검증·회전·삭제를 Redis TTL 기준으로 일원화해 로그인, 갱신, 로그아웃 상태 관리 개선
-- 관리자 API, 공통 예외 응답, validation 실패 응답, 재색인·시트 동기화 기능을 연결해 운영 대응 흐름 정리
+- 검색 엔진 비활성 또는 예외 상황에서 야근 신청 조회가 중단될 수 있어, Elasticsearch 실패 조건을 분리하고 DB fallback 검색 경로를 설계
+- ES/DB 응답 포맷과 정렬 정책을 맞춰 fallback 전환 후에도 사용자와 운영자가 동일한 조회 결과를 해석할 수 있도록 개선
+- `requester_id`, `start_at`, `status` 인덱스와 unique constraint를 함께 적용해 조회 성능과 중복 신청·승인 방지 정합성을 동시에 관리
+- Refresh Token 저장, 검증, 회전, 삭제를 Redis TTL 기준으로 일원화해 로그인·갱신·로그아웃 상태 판단 기준을 단순화
+- 야근 신청, 승인/반려, 알림, 관리자 수정, 재색인, 시트 동기화, 공통 예외·validation 응답을 연결해 운영자가 복구·확인할 수 있는 API 흐름 구축
 
 #### SMIP - 공통 예외 처리 및 회귀 테스트
 `Java` `Spring Boot` `Vue.js` `JUnit5` `Mockito`
 
-- API별로 흩어져 있던 예외 처리 로직을 공통 예외 처리 계층과 표준 오류 응답으로 통합
-- validation 정책과 오류 메시지 포맷을 정리해 프론트엔드, 운영자, 개발자가 같은 기준으로 장애를 해석하도록 개선
-- JUnit5/Mockito 기반 회귀 테스트를 추가해 반복 장애를 배포 전에 검증
+- API마다 오류 응답과 validation 메시지 해석 방식이 달라 장애 분석 기준이 흔들리는 문제가 있어, 공통 예외 처리 계층과 표준 오류 응답으로 통합
+- 프론트엔드, 운영자, 개발자가 같은 오류 포맷을 기준으로 원인을 파악하도록 validation 정책과 메시지 구조 정리
+- 반복 장애 케이스를 JUnit5/Mockito 회귀 테스트로 고정해 담당자 기억이 아니라 테스트로 재발 여부를 확인하도록 개선
 - Vue.js 화면 상태를 MVVM + 공통 스토어 구조로 재정리해 변경 영향 범위와 인수인계 비용 축소
 - 장애 분석 리드타임 `40분 → 12분`, 동일 오류 재발률 `30% 감소`
 
@@ -70,24 +68,24 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 #### KMS - CI/CD 표준화
 `Java` `Spring Boot` `GitLab CI/CD` `Docker` `Nginx`
 
-- GitLab CI/CD, Docker, Nginx, Staging 환경을 기준으로 빌드·테스트·배포 절차 표준화
-- 실행 환경과 배포 경로를 고정해 수동 배포 과정의 누락과 환경 차이 리스크 축소
+- 수동 배포 과정에서 실행 환경과 배포 경로가 흔들릴 수 있어, GitLab CI/CD, Docker, Nginx, Staging 환경을 기준으로 빌드·테스트·배포 절차 표준화
+- 빌드 산출물, 실행 환경, 배포 경로를 고정해 수동 누락과 환경 차이로 인한 배포 실패 리스크 축소
 - 배포 전 검증 경로를 분리해 릴리스 확인 절차를 팀 공통 흐름으로 정리
 - 릴리스 리드타임 `1시간 → 25분`, 배포 실패 비율 `5% → 0%`
 
 #### SmartQ - RAG 검색 API
 `Java` `Spring Boot` `OpenAI API` `LangChain`
 
-- LangChain 기반 RAG 검색 API를 구현해 키워드 중심 검색을 의미 기반 검색으로 보완
-- 질의응답 API를 모듈화하고 큐 기반 응답 흐름을 설계해 기존 환경 변경을 줄인 상태로 적용
+- 키워드 검색만으로는 사내 문서의 맥락을 찾기 어려운 문제가 있어, LangChain 기반 RAG 검색 API로 의미 기반 질의응답 흐름을 보완
+- 질의응답 API를 모듈화하고 큐 기반 응답 흐름을 설계해 기존 시스템 변경 범위를 줄인 상태로 적용
 - 질의 응답 정확도 `60% → 80%`, 답변 대기 시간 `5분 → 1분`, 상담팀 주당 `12시간` 절감
 
 #### SafeCash - 정기 배치 및 Admin 재처리 API
 `Java` `Spring Boot` `Crontab`
 
-- 정기 데이터 동기화 작업을 Crontab 기반 배치로 자동화해 수동 개입 제거
-- 실행 이력과 결과 로깅 구조를 추가해 이상 징후를 더 빨리 확인할 수 있도록 개선
-- Admin UI/API에 조회·수정·재처리 기능을 연결해 운영자가 직접 복구할 수 있는 흐름 구축
+- 수동 실행과 개발자 DB 확인에 의존하던 정기 데이터 동기화 작업을 Crontab 기반 배치로 자동화
+- 실행 이력과 결과 로깅 구조를 추가해 이상 징후를 운영자가 빠르게 확인하도록 개선
+- Admin UI/API에 조회·수정·재처리 기능을 연결해 개발자 개입 없이 운영자가 직접 복구할 수 있는 흐름 구축
 - 데이터 정합성 이슈 `월 3건 → 0건`
 
 ---
@@ -100,13 +98,12 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 서비스: https://voice-link.co.kr
 
 - AI를 구현·디버깅·문서화·실험 보조 도구로 활용해 실시간 음성 매칭 서비스를 1인으로 설계·개발·배포·운영
-- Redis ZSET 대기열 + Presence TTL + Lua Script 기반 Atomic Claim으로 동일 후보를 중복 선점하는 race condition 차단
-- Cancel Marker 재검증과 stale 결과 즉시 폐기 구조로 재매칭 직후 stale match가 반환되는 문제 해결
-- DB Outbox + Redis Pub/Sub + TTL result key 구조와 `FOR UPDATE SKIP LOCKED` 기반 발행으로 재시작·유실 상황에서도 매칭 결과를 회수할 수 있도록 설계
-- `DeferredResult` 정리 범위를 현재 연결 인스턴스로 제한해 이전 SSE 종료 콜백이 새 대기열을 삭제하는 race condition 방지
-- LiveKit webhook과 `/match/end` 흐름을 DB `CallSession.ended_at` 기준으로 통합하고 `PESSIMISTIC_WRITE`로 종료 처리를 직렬화해 유령 세션과 종료 후 재매칭 충돌 해결
+- 실시간 매칭에서 취소 직후 stale 결과가 반환되거나 동일 후보가 중복 선점되는 문제가 있어, Redis ZSET 대기열, Presence TTL, Lua Script 기반 Atomic Claim으로 후보 조회·선점 흐름을 원자화
+- 재매칭 직후 이전 결과가 반환되는 문제를 막기 위해 Cancel Marker를 매칭 확정 전후로 재검증하고 stale 결과를 즉시 폐기하는 구조 적용
+- Pub/Sub 유실 또는 노드 재시작 시 결과 전달이 끊길 수 있어, DB Outbox + Redis Pub/Sub + TTL result key와 `FOR UPDATE SKIP LOCKED` 기반 발행 구조로 매칭 결과 회수 가능성 확보
+- 이전 SSE 종료 콜백이 새 대기열을 삭제하는 race condition을 막기 위해 `DeferredResult` 정리 범위를 현재 연결 인스턴스로 제한
+- LiveKit webhook과 `/match/end`를 DB `CallSession.ended_at` 기준으로 통합하고 `PESSIMISTIC_WRITE`로 세션 종료 처리를 직렬화해 유령 세션과 종료 후 재매칭 충돌 해결
 - Docker, Nginx reverse proxy/stream SNI, Let's Encrypt SSL, TURN 포트포워딩, DNS 연결까지 직접 구성해 실서비스 운영
-- 실시간 상태 모델링, 세션 정합성, 배포·운영 판단을 직접 수행
 
 ---
 

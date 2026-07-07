@@ -1,36 +1,36 @@
 import { getDefaultContext } from './_cdp.mjs';
 
-const intro = `Java/Spring Boot 기반 백엔드 개발자로, 운영 중인 업무 시스템에서 인증, 검색 fallback, 배치, 관리자 API, 공통 예외 처리, 데이터 정합성 개선을 중심으로 일해왔습니다.
+const intro = `Java/Spring Boot 기반 백엔드 개발자로, 운영 중인 업무 시스템에서 중단 가능성, 중복 처리, 데이터 유실, 재처리 실패처럼 실제 운영에서 문제가 되는 흐름을 줄이는 작업을 해왔습니다.
 
-엔셀에서는 Elasticsearch 장애 시 DB fallback 검색 구조, Redis TTL 기반 Refresh Token 관리, 관리자 API, 공통 예외/validation 응답 표준화, Airflow 기반 FTP 데이터 처리 자동화 파이프라인을 구현했습니다. 헥토에서는 GitLab CI/CD, Docker, Nginx 기반 배포 표준화와 RAG 검색 API, 운영 재처리 API를 개발했습니다.
+엔셀에서는 검색 엔진 장애 시 조회가 중단될 수 있는 문제를 DB fallback 경로와 ES/DB 응답 정렬 정책 통일로 해결했고, Redis TTL 기반 Refresh Token 관리, 관리자 API, 공통 예외/validation 응답 표준화, Python/Airflow 기반 FTP 배치 이관과 재실행 안정화를 담당했습니다. 헥토에서는 수동 배포와 운영 복구 의존도를 줄이기 위해 GitLab CI/CD, Docker, Nginx 기반 배포 표준화와 RAG 검색 API, 운영 재처리 API를 개발했습니다.
 
-개인 서비스 VoiceLink에서는 Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub, FOR UPDATE SKIP LOCKED, PESSIMISTIC_WRITE를 활용해 실시간 매칭과 세션 정합성 문제를 해결했고, LiveKit/WebRTC, Docker, Nginx, SSL, DNS까지 직접 운영했습니다.`;
+개인 서비스 VoiceLink에서는 취소 직후 stale match, 중복 선점, 유령 세션, 종료 후 재매칭 충돌 문제를 Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub, FOR UPDATE SKIP LOCKED, PESSIMISTIC_WRITE로 해결했고, LiveKit/WebRTC, Docker, Nginx, SSL, DNS까지 직접 운영했습니다.`;
 
 const achievements = [
   {
     title: 'Airflow FTP 배치 마이그레이션 및 재실행 안정화',
-    body: `Java 기반 FTP 파일 처리 배치를 Python/Airflow 데이터 자동화 파이프라인으로 이관했습니다. 입력일+전일 폴더를 함께 스캔해 날짜 경계 파일 누락을 줄였고, 다운로드·업로드 검증, 변환, 저장, 업로드, 원본 정리 단계를 분리해 실패 지점 추적이 가능하도록 재설계했습니다. 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정하고 source_file unique 제약과 upsert를 적용해 동일 파일 중복 적재를 방지했습니다.`,
+    body: `FTP 파일 처리 배치에서 실패 지점 추적이 어렵고 재실행 시 중복 적재·원본 삭제 순서 문제가 생길 수 있어 Java 배치를 Python/Airflow DAG로 이관하며 처리 단계를 재설계했습니다. 다운로드, 검증, 변환, 저장, 업로드, 원본 정리 단계를 task로 분리해 어느 단계에서 실패했는지 확인하고 해당 지점부터 재처리할 수 있도록 개선했습니다. 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정하고, source_file unique constraint와 upsert 적재 로직으로 동일 파일 반복 실행 중복 적재를 방지했습니다. 입력일+전일 폴더 병행 스캔, max_active_runs=1, catchup=false, scratch cleanup으로 날짜 경계 누락과 반복 실행 리스크를 줄였습니다.`,
   },
   {
     title: '검색 fallback·인증·운영 API 안정화',
-    body: `야근 신청/승인/반려/조회 흐름을 운영 가능한 Spring 기반 백엔드로 구현했습니다. Elasticsearch 비활성 또는 검색 예외 시 DB fallback 검색으로 전환해 검색 중단 없이 서비스를 유지했고, ES/DB 결과 포맷과 정렬 정책을 통일해 fallback 전환 시 응답 정합성을 유지했습니다. Redis TTL 기반 Refresh Token 저장·검증·회전·삭제와 관리자 API, 공통 오류 응답, 재색인/시트 동기화 기능까지 연결해 운영 대응 효율을 높였습니다.`,
+    body: `검색 엔진 비활성 또는 예외 상황에서 야근 신청 조회가 중단될 수 있어 Elasticsearch 실패 조건을 분리하고 DB fallback 검색 경로를 설계했습니다. ES/DB 응답 포맷과 정렬 정책을 맞춰 fallback 전환 후에도 사용자와 운영자가 동일한 조회 결과를 해석할 수 있도록 개선했습니다. Redis TTL 기반 Refresh Token 저장·검증·회전·삭제와 관리자 API, 공통 오류 응답, 재색인/시트 동기화 기능까지 연결해 운영 대응 흐름을 정리했습니다.`,
   },
   {
     title: '공통 예외 처리·회귀 테스트 표준화',
-    body: `API별로 흩어져 있던 예외 처리 로직을 공통 예외 처리 계층과 표준 오류 응답으로 통합했습니다. validation 정책과 오류 메시지 포맷을 정리하고 JUnit5/Mockito 기반 회귀 테스트를 추가해 반복 장애를 배포 전 검증 흐름으로 이동시켰습니다. Vue.js 화면 상태도 MVVM + 공통 스토어 구조로 재정리해 장애 분석 리드타임을 40분에서 12분으로 줄이고 동일 오류 재발률을 30% 감소시켰습니다.`,
+    body: `API마다 오류 응답과 validation 메시지 해석 방식이 달라 장애 분석 기준이 흔들리는 문제가 있어 공통 예외 처리 계층과 표준 오류 응답으로 통합했습니다. 프론트엔드, 운영자, 개발자가 같은 오류 포맷을 기준으로 원인을 파악하도록 validation 정책과 메시지 구조를 정리하고, 반복 장애 케이스를 JUnit5/Mockito 회귀 테스트로 고정했습니다. Vue.js 화면 상태도 MVVM + 공통 스토어 구조로 재정리해 장애 분석 리드타임을 40분에서 12분으로 줄이고 동일 오류 재발률을 30% 감소시켰습니다.`,
   },
   {
     title: 'RAG 검색 API 및 CI/CD 표준화',
-    body: `LangChain 기반 RAG 검색 API를 구현해 키워드 중심 검색의 한계를 의미 기반 검색으로 보완했습니다. 질의응답 API를 모듈화하고 큐 기반 응답 흐름을 설계해 기존 환경 변경 없이 적용했으며, 질의 응답 정확도를 60%에서 80%로 높이고 답변 대기 시간을 5분에서 1분으로 줄였습니다. 동시에 GitLab CI/CD, Docker, Nginx, Staging 환경 기반으로 빌드·테스트·배포 절차를 표준화해 릴리스 리드타임을 1시간에서 25분으로 단축했습니다.`,
+    body: `키워드 검색만으로는 사내 문서의 맥락을 찾기 어려운 문제가 있어 LangChain 기반 RAG 검색 API로 의미 기반 질의응답 흐름을 보완했습니다. 질의응답 API를 모듈화하고 큐 기반 응답 흐름을 설계해 기존 시스템 변경 범위를 줄인 상태로 적용했으며, 질의 응답 정확도를 60%에서 80%로 높이고 답변 대기 시간을 5분에서 1분으로 줄였습니다. 동시에 수동 배포 누락과 환경 차이 리스크를 줄이기 위해 GitLab CI/CD, Docker, Nginx, Staging 환경 기반으로 빌드·테스트·배포 절차를 표준화해 릴리스 리드타임을 1시간에서 25분으로 단축했습니다.`,
   },
   {
     title: '정기 배치 및 Admin 재처리 API 구축',
-    body: `정기 데이터 동기화 작업을 Crontab 기반 배치로 자동화하고 실행 이력과 결과 로깅 구조를 추가했습니다. Admin UI/API에 조회·수정·재처리 기능을 연결해 운영자가 직접 복구 가능한 흐름을 구축했고, 데이터 정합성 이슈를 월 3건에서 0건으로 낮췄습니다.`,
+    body: `수동 실행과 개발자 DB 확인에 의존하던 정기 데이터 동기화 작업을 Crontab 기반 배치로 자동화했습니다. 실행 이력과 결과 로깅 구조를 추가해 이상 징후를 운영자가 빠르게 확인하도록 개선하고, Admin UI/API에 조회·수정·재처리 기능을 연결해 개발자 개입 없이 운영자가 직접 복구 가능한 흐름을 구축했습니다. 데이터 정합성 이슈를 월 3건에서 0건으로 낮췄습니다.`,
   },
 ];
 
 const details = [
-  `AI를 구현·디버깅·문서화·실험 가속 도구로 활용해 실시간 음성 매칭 서비스를 1인으로 설계·개발·배포·운영했습니다. Redis ZSET 대기열 + Presence TTL + Lua Script 기반 Atomic Claim으로 동일 후보 중복 선점 race condition을 차단했고, DB Outbox + Redis Pub/Sub + FOR UPDATE SKIP LOCKED 기반 발행 구조로 재시작/유실 상황에서도 매칭 결과를 회수 가능하게 설계했습니다. LiveKit webhook과 /match/end 흐름을 CallSession.ended_at 기준으로 통합하고 PESSIMISTIC_WRITE로 종료 처리를 직렬화해 유령 세션과 종료 후 재매칭 충돌을 해결했습니다.`,
+  `AI를 구현·디버깅·문서화·실험 가속 도구로 활용해 실시간 음성 매칭 서비스를 1인으로 설계·개발·배포·운영했습니다. 취소 직후 stale 결과가 반환되거나 동일 후보가 중복 선점되는 문제를 Redis ZSET 대기열, Presence TTL, Lua Script 기반 Atomic Claim, Cancel Marker 재검증으로 해결했습니다. Pub/Sub 유실 또는 노드 재시작 상황에서도 결과를 회수할 수 있도록 DB Outbox + Redis Pub/Sub + FOR UPDATE SKIP LOCKED 기반 발행 구조를 설계했고, LiveKit webhook과 /match/end 흐름을 CallSession.ended_at 기준으로 통합하고 PESSIMISTIC_WRITE로 종료 처리를 직렬화해 유령 세션과 종료 후 재매칭 충돌을 해결했습니다.`,
   `Spring Boot 기반 이커머스 플랫폼 설계·구현 과정을 수료했습니다. 도메인 모델링, API 설계, 계층 분리, 상황별 기술 선택을 중심으로 백엔드 설계 판단 기준을 정리했습니다.`,
   `Spring Security 기반 인증·권한 관리와 카카오·네이버·구글 OAuth2 소셜 로그인, JWT 발급·세션 관리 흐름을 구현했습니다.`,
 ];
