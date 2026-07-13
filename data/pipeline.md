@@ -2,7 +2,6 @@
 ## Pendientes
 
 ### 긴급 검토
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/35261 | Naver Cafe Workhub p3 | [경력] ~26.06.30 / 워트인텔리전스 - AX Backend Engineer (3년 이상)
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/34028 | Naver Cafe Workhub | ~상시 / 카카오페이｜서버 개발자 – 결제 서비스
 
 ### 우선 검토
@@ -79,3 +78,42 @@
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54246280&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=b66102be-72c9-4fb8-a0ac-de0358d3ff5d | (주)드림어스컴퍼니 | 콘텐츠 플랫폼 백엔드 개발자 채용 | 서울 강남구
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54246057&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=b66102be-72c9-4fb8-a0ac-de0358d3ff5d | (주)드림어스컴퍼니 | 음악 서비스 백엔드 서버 개발자 채용 | 서울 강남구
 - [ ] https://zighang.com/recruitment/4ed25765-7cdc-4e91-b4a5-1e65e6c83d6d | 브이엠에스홀딩스 | Product Server Engineer를 찾고 있습니다 채용 | 서울
+
+- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/35612 | Naver Cafe Workhub | ~상시 / 뤼튼테크놀로지스｜Backend Engineer | 경력
+
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54451577&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | (주)모든세븐 | AI 활용(클로드 코드 CLI 사용) Java Spring Boot / PHP개발자 | 서울 금천구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54449860&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | (주)엑셈 | \[개발\] Java, Golang | 서울 강서구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54449012&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | 미스터마인드(주) | \[성남\] 백엔드 개발자 채용 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54446690&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | 넥스트증권(주) | Backend Engineer (Service Platform) | 서울 영등포구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54445154&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | 텔코웨어(주) | \[텔코웨어\] Java 백엔드 개발 경력사원 채용공고 | 서울 서초구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54442895&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | (주)디윅스 | (주)디윅스 백엔드 개발자 경력 채용(5년이상) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54441603&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | ㈜폴리큐브 | 웹/앱 프런트 및 백엔드 프로그래머를 모십니다. | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54441400&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | (주)에이치알비즈코리아 | 사내 시스템 개발 및 운영(Back-End)/AI도구/세계적인 게임사 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54438787&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | 주식회사카플 | back-end 모십니다. | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54434547&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=4ef1668e-b429-4629-9a4f-c80370995f0b | 주식회사 워크포트 | \[E-7/F-2 비자 지원\] 백엔드 개발자 (Java / Spring) | 경기 성남시 수정구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54430186&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)디써클 | \[Kotlin/Python\] 백엔드 엔지니어 | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54429671&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)마이베네핏 | Back-End 개발 채용 | 서울 서초구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54419247&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)카카오페이 | 서버 개발자 - 스테이블코인 발행/유통 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54419210&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)카카오페이 | 서버 개발자 - 결제 서비스 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54418452&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | 코리아티피 주식회사 | 응용프로그램 개발자(JAVA, Nuxt, API ) | 서울 구로구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54415605&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)케이티밀리의서재 | 백엔드 엔지니어 (콘텐츠 플랫폼 개발) | 서울 마포구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54415396&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)케이티밀리의서재 | 백엔드 엔지니어 (결제 및 제휴연동 개발) | 서울 마포구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54414763&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)브이엠에스홀딩스 | Product Engineer(Server, Backend)를 찾고 있습니다 | 서울 강서구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54409768&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)셀러허브 | \[셀러허브\] 식스샵 기술지원팀 백엔드개발자 채용(1~3년) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54407873&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)키다리스튜디오 | \[다우키움 계열사\] 사내 정산 시스템 백엔드 개발자 (7년 이상) | 서울 성동구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54405704&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)엔엠에스컨설팅 | 병원 솔루션(B2B SaaS) 백엔드 개발자(유명 의료플랫폼) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54404315&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | 설로인(주) | \[설로인\] 백엔드 개발자 | 경기 군포시
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54402500&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | 넥스트증권(주) | Backend Engineer (Trading Core) | 서울 영등포구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54399741&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)이노스트 | \[양재,강남\]H사 java 백엔드 개발자 모집(8월투입/5개월이상근무 | 서울 서초구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54395525&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)브레인벤쳐스 | 백엔드 개발자 채용 공고 | 경기 성남시 수정구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54390032&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)뉴부싼카 | Spring 백앤드 개발자를 모집합니다 | 부산 사상구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54383715&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)헤리트 | \[헤리트\] 백엔드개발자 채용 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54381582&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=cad8b146-c15b-4b23-b865-9449d93e66ea | (주)콜로세움코퍼레이션 | Backend Engineer(5년 이상) | 서울 강남구
+
+### 대기업/플랫폼사 직접 확인
+
+- [ ] https://careers.kakao.com/jobs/S-4718 | 카카오모빌리티 | 자율주행 관제 플랫폼 백엔드 엔지니어
+- [ ] https://recruit.webtoonscorp.com/rcrt/view.do?annoId=30005124 | 네이버웹툰 | 백엔드 서버 개발 (경력) | ~2026.07.26
+- [ ] https://recruit.webtoonscorp.com/rcrt/view.do?annoId=30005103 | 네이버웹툰 | Disney 디지털 코믹스 플랫폼 서버 개발 (경력) | ~2026.07.19
+- [ ] https://careers.linecorp.com/ko/jobs/1008 | LINE | Commerce 플랫폼 Backend 개발
+- [ ] https://careers.linecorp.com/ko/jobs/2993/ | LINE | AI/Data Platform Engineer
