@@ -2,6 +2,7 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 54 | 2026-07-20 | 오늘의집페이 | Backend Engineer | 4.4/5 | Evaluated | ✅ | [54](../reports/054-todayhousepay-backend-engineer-2026-07-20.md) | Java/Spring·RDB/Redis·정합성·재처리·회귀 테스트·AI 활용 정합 높음, 결제/Kotlin/AWS 실무는 보완 필요 |
 | 52 | 2026-05-13 | 트리플오스 | 백엔드 개발자 | 4.3/5 | Evaluated | ✅ | [052](/Users/parkjunho/idea/Projects/career-ops/reports/052-tripleauth-backend-2026-05-13.md) | 직행 소스: Kotlin/Spring Boot/Redis/운영 모니터링 정합, MSA/Kotlin 실무는 보완 필요 |
 | 53 | 2026-05-13 | 비욘드메디슨 | Kotlin/Spring 백엔드 개발자 | 4.5/5 | Evaluated | ✅ | [053](/Users/parkjunho/idea/Projects/career-ops/reports/053-beyondmedicine-kotlin-spring-backend-2026-05-13.md) | 직행 소스: Spring Security/JPA/테스트/상용 운영/문서화 정합 높음, Kotlin 2년 요구는 리스크 |
 | 51 | 2026-05-13 | 아스토나파트너스 | 백엔드 개발자 (Java / Kotlin / Spring Boot) | 4.4/5 | Evaluated | ✅ | [051](/Users/parkjunho/idea/Projects/career-ops/reports/051-astona-backend-java-kotlin-spring-2026-05-13.md) | 직행 소스: Java/Spring Boot/JPA/QueryDSL/RDBMS 정합 높음, Kotlin은 보완 필요 |
