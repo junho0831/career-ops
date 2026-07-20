@@ -1,0 +1,46 @@
+{
+  "candidate": {
+    "name": "Park Junho",
+    "location": "Seoul, South Korea",
+    "email": "junho6667@gmail.com",
+    "phone": "010-3525-6275",
+    "github": "https://github.com/junho0831",
+    "credentials": [
+      "Java/Spring Boot Backend Engineer",
+      "Redis",
+      "Oracle/RDBMS",
+      "REST API",
+      "Batch/Airflow"
+    ]
+  },
+  "letter": {
+    "company": "KG Inicis",
+    "city": "Seoul",
+    "date": "2026-07-20",
+    "role_title": "[KG이니시스] 백엔드 개발자 정규직 채용",
+    "opening": "KG이니시스 백엔드 개발자 포지션에 지원합니다. 결제와 인증, 데이터 정산처럼 작은 불일치가 운영 리스크로 이어지는 영역에서 Java/Spring 기반 API, RDBMS, Redis, 배치 워크플로우를 다뤄 왔고, 이번 공고의 대사/API 및 전자계약/AML 운영 요구사항과 맞닿아 있다고 판단했습니다.",
+    "profile_intro": "저는 운영 안정성과 데이터 정합성을 개선하는 백엔드 개발자입니다. Spring Boot 기반 서비스에서 예외 처리, 검증, Redis 인증, RDB 인덱스와 유니크 제약, 배포 검증, 장애 대응 흐름을 정리했고, Airflow와 배치 재처리 API를 통해 반복 운영 업무를 복구 가능한 흐름으로 바꾼 경험이 있습니다.",
+    "achievements": [
+      {
+        "lead": "결제/본인인증 서비스 운영 관점",
+        "impact": "SafeCash, Hecto, KMS 등 결제 및 인증 성격의 서비스 경험을 통해 거래 흐름에서 상태 관리, 예외 대응, 로그 기반 원인 파악이 왜 중요한지 이해하고 있습니다."
+      },
+      {
+        "lead": "대사/API와 데이터 정합성",
+        "impact": "ER Dose 파싱과 DataForge, SMIP 프로젝트에서 파일/DB/API 기반 데이터 흐름을 다루며 누락, 중복, 재처리, 검증 기준을 코드와 운영 절차에 반영했습니다."
+      },
+      {
+        "lead": "Java/Spring 기반 백엔드 구현",
+        "impact": "Spring Boot, JPA/MyBatis 성격의 데이터 접근, REST API, Redis, RDBMS를 사용해 관리자 API와 서비스 API를 구현하고 운영 이슈를 추적 가능한 방식으로 개선했습니다."
+      },
+      {
+        "lead": "운영 자동화와 품질 개선",
+        "impact": "수동 확인에 의존하던 배치와 데이터 처리 흐름을 Airflow, 재처리 API, 배포 검증 절차로 정리해 장애 발생 시 원인 파악과 복구가 가능한 구조를 지향했습니다."
+      }
+    ],
+    "problems_section": "KG이니시스의 대사/API 업무는 거래 데이터 비교, 오류 거래 확인, 안정적인 정산 서비스 제공이 핵심이라고 이해했습니다. 입사 후에는 기존 시스템과 운영 로그를 먼저 정확히 읽고, 오류가 반복되는 지점을 API 계약, 데이터 검증, 재처리 기준, 모니터링 관점에서 줄이는 데 기여하겠습니다.",
+    "closing": "감사합니다. 박준호 드림",
+    "language_closing": "첨부 자료는 공고의 Java/Spring, Oracle, REST API, 운영 자동화 요구사항에 맞춰 작성했습니다."
+  },
+  "output_path": "cover-letter-park-junho-kg-inicis-2026-07-20.pdf"
+}
