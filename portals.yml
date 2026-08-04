@@ -99,6 +99,16 @@ search_queries:
 
 tracked_companies:
 
+  - name: a16z speedrun talent network
+    provider: a16z-speedrun-talent
+    max_pages: 3
+    q: backend
+    enabled: true
+
+  - name: Agentic AI Jobs
+    provider: agentic-jobs
+    enabled: true
+
   - name: Naver Cafe Workhub
     careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L
     api: https://apis.naver.com/cafe-web/cafe-boardlist-api/v1/cafes/31258781/menus/8/articles?perPage=100&page=1
