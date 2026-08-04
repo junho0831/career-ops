@@ -4,7 +4,6 @@
 기준일: 2026-07-31
 
 ### 오늘 기준 우선 지원
-- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54500605 | 아이알큐더스 | 글로벌 금융/IPO 데이터 파이프라인 및 백엔드 개발자 (3~8년) | 서울 영등포구 · 마감 2026-08-18
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54610692 | 카카오페이 | 서버 개발자 - 결제 서비스 | 경기 성남시 분당구 · 채용시 마감 · 결제 서비스
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54573839 | 비바리퍼블리카 | [토스인슈어런스] Server Developer(Finance) | 서울 구로구 · 금융/정산 인접
 
@@ -125,29 +124,6 @@
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54535145&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=f768cd2a-cccf-4b80-b6e6-1ff26565b534 | 주식회사 스타랩스 | \[스타랩스\] JAVA 웹 개발자 채용 | 충남 아산시
 
 - [ ] https://jobs.ashbyhq.com/industrious/346aa877-e40a-4941-82e6-a4f9bb40138a | industrious | Member Experience Associate (Part-Time) - Reston | Reston - 12110 Sunset Hills Rd (Indy Reston Town Center)
-- [ ] https://job-boards.greenhouse.io/seafireresortltd/jobs/5202379007 | seafireresortltd | Server Assistant | Seafire Resort & Spa
 - [ ] https://jobs.ashbyhq.com/tensec/4e0124e0-b7d9-4710-afe0-8addb62a0865 | tensec | Go-to-Market Engineer | Palo Alto · Miami · United States
 - [ ] https://jobs.ashbyhq.com/dandelion/d39860e9-af68-4460-9e61-15fa67fb8119 | dandelion | General Interest Application | Washington, DC · Boston, MA · Somerville · United States
-- [ ] https://job-boards.greenhouse.io/seafireresortltd/jobs/5202359007 | seafireresortltd | Server | Seafire Resort & Spa
-- [ ] https://job-boards.greenhouse.io/horacemannagents/jobs/6133801004 | horacemannagents | Insurance Agent - Colorado Springs, CO | Colorado Springs, CO
-- [ ] https://job-boards.greenhouse.io/horacemannagents/jobs/6133742004 | horacemannagents | Insurance Agent - Rock Springs, WY | Rock Springs, WY
-- [ ] https://job-boards.greenhouse.io/digrestaurants/jobs/8103951 | digrestaurants | NoHo Restaurant Team | New York City, New York
-- [ ] https://job-boards.greenhouse.io/digrestaurants/jobs/8103880 | digrestaurants | 52nd & Lex Restaurant Team | New York, New York
-- [ ] https://job-boards.greenhouse.io/digrestaurants/jobs/8103863 | digrestaurants | Pine Street Restaurant Team | New York City, New York
-- [ ] https://job-boards.greenhouse.io/horacemannagents/jobs/6133605004 | horacemannagents | Insurance Producer - Springfield, CO | Springfield, CO
-- [ ] https://job-boards.greenhouse.io/horacemannagents/jobs/6133575004 | horacemannagents | Insurance Producer - Pagosa Springs, CO | Pagosa Springs, CO
-- [ ] https://www.proofserve.com/careers/4720830005?gh_jid=4720830005 | proof | Server Acquisition Specialist (Southfield, MI) | Southfield, MI
-- [ ] https://jobs.lever.co/bfsaulhotels/5e6e24dc-a1b3-4a19-86c2-cf553058373f | bfsaulhotels | Breakfast Attendant - SpringHill Suites Boca Raton | Boca Raton, Florida
-- [ ] https://jobs.lever.co/bfsaulhotels/367cc48d-df2e-4e67-9f59-1f76c3328d65 | bfsaulhotels | Front Desk Agent (Mixed Shifts) - SpringHill Suites Boca Raton! Weekly Pay!!! | Boca Raton, Florida
-- [ ] https://jobs.ashbyhq.com/skelar/f09d6e14-22dd-4004-bf89-37ac84071ea7 | skelar | Backend Engineer - Duomo | Kyiv, Lviv, Warsaw
-- [ ] https://jobs.ashbyhq.com/reonic/e7871924-5f83-4793-91f8-6a32ad07646c | reonic | Go-to-Market AI & Data (AI x Greentech) (m/f/d) | Berlin · Augsburg · Germany
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8644569002 | gitlab | Intermediate Backend Engineer, Platform Readiness | Remote, Canada; Remote, United States
-- [ ] https://jobs.lever.co/impossiblecloud/9935d16b-0c21-4052-9cf2-8698ba1b0084 | impossiblecloud | Go to Market Engineer / RevOps Engineer | Hamburg
 - [ ] https://jobs.ashbyhq.com/jobs-page-4dc2685b-eb82-46d1-a3f9-1f0764dba814/44e59c3d-29ce-426b-b904-c0975c4bbcad | jobs-page-4dc2685b-eb82-46d1-a3f9-1f0764dba814 | Corporate Counsel @ Human Interest | Remote
-- [ ] https://job-boards.greenhouse.io/conga/jobs/5136099007 | conga | VP, Go to Market APAC | Australia
-- [ ] https://jobs.ashbyhq.com/pennylane/11f6fe4a-63f3-4e56-bc78-0a31a246d713 | pennylane | Backend Engineer - Ruby on Rails 🇪🇺 | All France (remote) · Europe
-- [ ] https://job-boards.greenhouse.io/bitgo/jobs/8644530002 | bitgo | Backend Engineer E2 - Ecosystem | India
-- [ ] https://jobs.lever.co/dijital-team-pty-ltd/0990f008-085f-46a7-a60a-018b1cbb4086 | dijital-team-pty-ltd | Windows Server Engineer | Colombo
-- [ ] https://jobs.ashbyhq.com/mirage/d5b5193e-90e8-4d10-8e01-e8fdd7dad6e1 | mirage | Software Engineer, Backend | Union Square, New York City
-- [ ] https://jobs.ashbyhq.com/myriad-ai/f6ee6c6b-337b-4d6b-8f0c-145fdf01a32b | myriad-ai | Backend Engineer (CZ) | Prague
-- [ ] https://jobs.ashbyhq.com/openai/a6ab3111-7092-4da2-a7a6-71e01351bfda | openai | Software Engineer, API Agents | San Francisco
