@@ -49,8 +49,10 @@ Prioritize:
 - Redis, authentication/session consistency, Elasticsearch/search fallback, batch/data workflows, RDB constraints, CI/CD, and incident prevention
 - Small-to-mid teams where one backend engineer is expected to own design, implementation, deployment, debugging, and operations
 - Roles asking for AI/LLM productivity usage plus direct ownership of a small service or side project
+- Active, deadline-driven postings with clear hiring timelines
 
-Deprioritize unless the JD has a strong Java/Spring operations fit:
+Deprioritize / Exclude:
+- "상시 채용" / "수시 채용" (always-open/ongoing) postings without active hiring deadlines
 - Large-scale traffic ownership as a core requirement
 - Big-tech scale distributed systems or platform infrastructure expectations
 - Mandatory Kafka/MSA/Kubernetes production ownership
