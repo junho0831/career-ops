@@ -172,6 +172,24 @@ tracked_companies:
       timeout_ms: 120000
     enabled: true
 
+  - name: Wanted Backend Search
+    careers_url: https://www.wanted.co.kr/wd
+    parser:
+      command: node
+      script: scripts/parsers/wanted-backend-search.mjs
+      format: jobs-json-v1
+      timeout_ms: 120000
+    enabled: true
+
+  - name: Jumpit Backend Search
+    careers_url: https://www.jumpit.co.kr/positions
+    parser:
+      command: node
+      script: scripts/parsers/jumpit-backend-search.mjs
+      format: jobs-json-v1
+      timeout_ms: 120000
+    enabled: true
+
   - name: Riiid
     careers_url: https://boards.greenhouse.io/riiid
     api: https://boards-api.greenhouse.io/v1/boards/riiid/jobs
