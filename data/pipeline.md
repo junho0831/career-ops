@@ -7,7 +7,6 @@
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54500605 | 아이알큐더스 | 글로벌 금융/IPO 데이터 파이프라인 및 백엔드 개발자 (3~8년) | 서울 영등포구 · 마감 2026-08-18
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54610692 | 카카오페이 | 서버 개발자 - 결제 서비스 | 경기 성남시 분당구 · 채용시 마감 · 결제 서비스
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54573839 | 비바리퍼블리카 | [토스인슈어런스] Server Developer(Finance) | 서울 구로구 · 금융/정산 인접
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36207 | 페이히어 | 서버 엔지니어 (Kotlin/Spring) | 상시 · 결제/매장 운영 인접
 
 ### 오늘 기준 우선 검토
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36082 | CJ올리브영 | Core Platform Engineer (Back-End) | 마감 2026-08-09 · 플랫폼 백엔드
@@ -17,21 +16,9 @@
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36205 | F&F | 디지털본부 Java/Spring 백엔드 개발(ERP/AI시스템) | 마감 2026-08-31 · Java/Spring·ERP/AI
 
 
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36324 | Naver Cafe Workhub p2 | ~상시 / 주식회사 지로｜\[경력\] 백엔드 개발자 | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36383 | Naver Cafe Workhub | \[경력\] ~상시 / 인포뱅크 - \[코스닥 상장사\] Backend Engineer(3년 이상)
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36359 | Naver Cafe Workhub | \[경력\] ~상시 / 페이히어 - 서버 엔지니어 (Kotlin/Spring)
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36357 | Naver Cafe Workhub | \[경력\] ~상시 / 하이퍼스타(Hyperstar) - 백엔드 / 풀스택 개발자 Backend / Full-Stack Engineer
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36351 | Naver Cafe Workhub | \[경력\] ~26.08.31 / 에이치아이티 - 풀스택 Nest.js 서버 개발, React 및 Flutter web 개발
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36292 | Naver Cafe Workhub p4 | ~상시 / 주식회사 일레븐｜백엔드 엔지니어 (Growth Backend Engineer) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36289 | Naver Cafe Workhub p4 | ~상시 / 드림어스컴퍼니｜콘텐츠 플랫폼 백엔드 개발(3년 이상) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36288 | Naver Cafe Workhub p4 | ~상시 / 세탁특공대｜\[Tech\] Backend Engineer | 경력
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36279 | Naver Cafe Workhub p4 | \[경력\] ~26.08.13 / KB국민은행 - 「Back-end 개발」 전문직무직원 채용
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36312 | Naver Cafe Workhub p3 | ~상시 / 사이오닉에이아이｜Backend Developer – Kotlin+Spring (3년 이상) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36309 | Naver Cafe Workhub p3 | ~상시 / 엑셈｜Java 백엔드 개발자 채용 (2년 이상) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36308 | Naver Cafe Workhub p3 | ~상시 / 엑셈｜Golang 개발자 채용 (경력직, 경력 무관) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36307 | Naver Cafe Workhub p3 | ~상시 / 엑셈｜Java 백엔드 개발자 채용 (경력직, 경력 무관) | 경력
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36278 | Naver Cafe Workhub p5 | \[경력\] ~26.08.31 / 에버온 - 플랫폼 백엔드 개발자 (API/Gateway/BFF담당)
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36267 | Naver Cafe Workhub p5 | \[경력\] ~상시 / 스마트푸드네트웍스 - 백엔드 개발자
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36249 | Naver Cafe Workhub p5 | \[경력\] ~26.09.30 / 비비티에이아이 - Backend Developper
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54642393&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=a900c638-36d4-4c4e-b08d-a39df1fc01bf | 주식회사 셈웨어 | \[셈웨어\] 백엔드 개발자 채용 | 서울 금천구
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54639380&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=a900c638-36d4-4c4e-b08d-a39df1fc01bf | 인포뱅크(주) | Backend Engineer(3년 이상) | 경기 성남시 분당구
@@ -67,20 +54,8 @@
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54535145&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=464f56b3-d54e-4b4a-982e-ff6ee58aefda | 주식회사 스타랩스 | \[스타랩스\] JAVA 웹 개발자 채용 | 충남 아산시
 
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36278 | Naver Cafe Workhub p5 | \[경력\] ~26.08.31 / 에버온 - 플랫폼 백엔드 개발자 (API/Gateway/BFF담당)
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36267 | Naver Cafe Workhub p5 | \[경력\] ~상시 / 스마트푸드네트웍스 - 백엔드 개발자
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36249 | Naver Cafe Workhub p5 | \[경력\] ~26.09.30 / 비비티에이아이 - Backend Developper
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36312 | Naver Cafe Workhub p3 | ~상시 / 사이오닉에이아이｜Backend Developer – Kotlin+Spring (3년 이상) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36309 | Naver Cafe Workhub p3 | ~상시 / 엑셈｜Java 백엔드 개발자 채용 (2년 이상) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36308 | Naver Cafe Workhub p3 | ~상시 / 엑셈｜Golang 개발자 채용 (경력직, 경력 무관) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36307 | Naver Cafe Workhub p3 | ~상시 / 엑셈｜Java 백엔드 개발자 채용 (경력직, 경력 무관) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36324 | Naver Cafe Workhub p2 | ~상시 / 주식회사 지로｜\[경력\] 백엔드 개발자 | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36383 | Naver Cafe Workhub | \[경력\] ~상시 / 인포뱅크 - \[코스닥 상장사\] Backend Engineer(3년 이상)
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36359 | Naver Cafe Workhub | \[경력\] ~상시 / 페이히어 - 서버 엔지니어 (Kotlin/Spring)
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36357 | Naver Cafe Workhub | \[경력\] ~상시 / 하이퍼스타(Hyperstar) - 백엔드 / 풀스택 개발자 Backend / Full-Stack Engineer
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36351 | Naver Cafe Workhub | \[경력\] ~26.08.31 / 에이치아이티 - 풀스택 Nest.js 서버 개발, React 및 Flutter web 개발
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36292 | Naver Cafe Workhub p4 | ~상시 / 주식회사 일레븐｜백엔드 엔지니어 (Growth Backend Engineer) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36289 | Naver Cafe Workhub p4 | ~상시 / 드림어스컴퍼니｜콘텐츠 플랫폼 백엔드 개발(3년 이상) | 경력
-- [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36288 | Naver Cafe Workhub p4 | ~상시 / 세탁특공대｜\[Tech\] Backend Engineer | 경력
 - [ ] https://cafe.naver.com/f-e/cafes/31258781/articles/36279 | Naver Cafe Workhub p4 | \[경력\] ~26.08.13 / KB국민은행 - 「Back-end 개발」 전문직무직원 채용
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54642393&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=b46230ab-be6c-4eeb-97db-12d85196e3ee | 주식회사 셈웨어 | \[셈웨어\] 백엔드 개발자 채용 | 서울 금천구
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54639380&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=b46230ab-be6c-4eeb-97db-12d85196e3ee | 인포뱅크(주) | Backend Engineer(3년 이상) | 경기 성남시 분당구
