@@ -1,6 +1,26 @@
 # Portal Scanner Configuration
 # Focused on Korean Backend Engineering roles (practical matching, not overly strict)
 
+location_filter:
+  allow:
+    - "korea"
+    - "south korea"
+    - "seoul"
+    - "한국"
+    - "서울"
+    - "성남"
+    - "분당"
+    - "판교"
+    - "pangyo"
+    - "gyeonggi"
+    - "경기"
+    - "인천"
+    - "부산"
+    - "대구"
+    - "대전"
+    - "광주"
+    - "n/a"
+
 title_filter:
   positive:
     - "Backend"
@@ -103,11 +123,11 @@ tracked_companies:
     provider: a16z-speedrun-talent
     max_pages: 3
     q: backend
-    enabled: true
+    enabled: false
 
   - name: Agentic AI Jobs
     provider: agentic-jobs
-    enabled: true
+    enabled: false
 
   - name: Naver Cafe Workhub
     careers_url: https://cafe.naver.com/f-e/cafes/31258781/menus/8?viewType=L
