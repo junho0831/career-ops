@@ -50,6 +50,7 @@ Prioritize:
 - Small-to-mid teams where one backend engineer is expected to own design, implementation, deployment, debugging, and operations
 - Roles asking for AI/LLM productivity usage plus direct ownership of a small service or side project
 - Active, deadline-driven postings with clear hiring timelines
+- Pipeline grouping & titling: ALWAYS group and title pipeline entries strictly by Deadline Date periods (e.g. ⏳ D-7 이내 마감 임박, 📅 N월 마감 예정), NEVER use '오늘 기준'.
 
 Deprioritize / Exclude:
 - "상시 채용" / "수시 채용" (always-open/ongoing) postings without active hiring deadlines
