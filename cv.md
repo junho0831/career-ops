@@ -1,6 +1,6 @@
-# 박준호 | 백엔드 개발자
+# 박준호 | Data/Batch Backend Engineer
 
-운영 안정성과 데이터 정합성을 개선하는 Java/Spring Boot 백엔드 개발자입니다. 회사 업무에서는 검색 장애 대응, 인증 상태 관리, 배치 재실행 안정화, ER Dose RAW/EUV 로그 파싱 경로 분리, 공통 오류 응답, 운영자 재처리 API처럼 실제 운영 중 문제가 되는 흐름을 줄이는 작업을 맡았습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반으로 실시간 매칭·통화 세션의 동시성 문제를 해결하고 배포·운영까지 직접 수행했습니다.
+데이터 정합성과 배치 안정성을 개선하는 Java/Spring Boot 백엔드 개발자입니다. 회사 업무에서는 Python/Airflow 기반 FTP 데이터 처리 자동화, ER Dose RAW/EUV 로그 파싱 경로 분리, 구조화 적재, 중복 적재 방지, 재실행 가능한 배치 흐름, 검색 장애 대응, 인증 상태 관리, 운영자 재처리 API처럼 실제 운영 중 문제가 되는 데이터·백엔드 흐름을 줄이는 작업을 맡았습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반으로 실시간 매칭·통화 세션의 동시성 문제를 해결하고 배포·운영까지 직접 수행했습니다.
 
 Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831
 
@@ -11,9 +11,10 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 ## Summary
 
 - Java/Spring Boot 기반 백엔드 개발 경력 3년+
-- 운영 중단, 중복 처리, 데이터 유실, 재처리 실패 가능성을 줄이는 백엔드 개선 경험
+- Python/Airflow 기반 FTP 데이터 처리 자동화, 로그 파싱, 구조화 적재, 배치 재실행 안정화 경험
+- 운영 중단, 중복 처리, 데이터 유실, 재처리 실패 가능성을 줄이는 데이터/백엔드 흐름 개선 경험
 - Elasticsearch fallback, Redis TTL 인증 상태, RDB index/unique constraint, transaction/lock 기반 정합성 관리 경험
-- Python/Airflow 배치 이관, Admin 재처리 API, GitLab CI/CD, Docker/Nginx 기반 운영 자동화 경험
+- Admin 재처리 API, GitLab CI/CD, Docker/Nginx 기반 운영 자동화 경험
 - Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 상태 정합성 구현 경험
 - AI를 구현·디버깅·문서화 보조 도구로 활용해 1인 서비스를 설계·개발·배포·운영한 경험
 
@@ -107,12 +108,51 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 
 ---
 
-## Education / Training
+## Education
+
+### 동명대학교 (4년제)
+`2015.03 ~ 2019.03` · 졸업
+- **전공**: 로봇시스템공학과 (이과계열)
+- **학점**: 3.72 / 4.5
+- **졸업 작품/논문**: 도립진자 제어 시스템 설계 및 구현
+
+---
+
+## Education & Training
 
 ### Loopers 백엔드 코스
 `2025.07 ~ 2025.10`
+- Spring Boot 기반 대용량 이커머스 플랫폼 설계·구현 과정 수료 (도메인 모델링, API 설계, 계층 분리, 기술 선택 기준 정립)
 
-- Spring Boot 기반 이커머스 플랫폼 설계·구현 과정 수료
+### 비트컴퓨터 | 헥토그룹 Java Full-Stack 채용교육 (헥스퍼트IT아카데미)
+`2022.04 ~ 2022.07` (640시간)
+- Java/Spring 기반 풀스택 인텐시브 개발 교육 수료
+
+### 더조은컴퓨터학원 | 응용소프트웨어 JAVA개발자 양성과정
+`2019.10 ~ 2020.03` (840시간)
+- Java/RDBMS 애플리케이션 개발 전문과정 수료
+
+### 포스텍 (포항공과대학교) | 포스코 AI / Big Data 교육
+`2019.04 ~ 2019.06` (480시간)
+- AI 및 데이터 분석 파이프라인 교육 수료 및 최우수조 선정
+
+### 공공빅데이터 교육
+`2020.08 ~ 2020.09`
+- 빅데이터 활용 과정 수료 및 우수상 수상
+
+---
+
+## Certifications & Awards
+
+- **공공빅데이터 우수상** | `2020.09`
+- **포스코 Big Data 최우수조 수상** | `2020.05`
+
+---
+
+## Activities & Volunteer
+
+- **동명대학교 로봇시스템공학과 학생회장** | `2016.03 ~ 2016.12`
+- **대한적십자 헌혈은장 (120회 이상)** | `2010.07 ~ 2019.09`
 
 ---
 
@@ -126,4 +166,4 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 
 ---
 
-**GitHub** https://github.com/junho0831
+**GitHub** https://github.com/junho0831 | **포트폴리오** https://voice-link.co.kr

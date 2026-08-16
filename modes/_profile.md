@@ -4,18 +4,18 @@
 
 | Archetype | Thematic axes | What they buy |
 |-----------|---------------|---------------|
+| **Data / Batch Backend Engineer** | Airflow, FTP ingestion, parsing/validation, structured loading, relational constraints, recurring jobs | Someone who turns fragile file/log workflows into reliable data pipelines with clear success/failure boundaries |
 | **Backend Engineer** | API design, domain logic, auth, data integrity | Someone who ships reliable backend features end-to-end |
 | **Platform / Reliability Engineer** | CI/CD, incident reduction, fallback design, operations | Someone who lowers operational risk and improves delivery speed |
-| **Data / Batch Backend Engineer** | Airflow, FTP, parsing/validation, relational constraints, recurring jobs | Someone who can turn repetitive file work into reliable data workflows with clear success/failure boundaries |
 | **Search / Integration Backend Engineer** | Elasticsearch, Redis, JWT/OAuth2, system integration | Someone who keeps critical flows stable across multiple systems |
 
 ## Your Adaptive Framing
 
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
+| Data / Batch Backend | Airflow workflow automation, FTP ingestion/parsing/validation, ER Dose RAW/EUV parsing separation, structured loading, durable-success-before-source-delete flow, unique+upsert safeguards, chunk/partition loading | cv.md |
 | Backend Engineer | End-to-end ownership from design to deployment, standardized exception handling, practical debugging, maintainable APIs, AI-assisted solo execution on live service | cv.md |
 | Platform / Reliability | CI/CD automation, zero-failure deployments, graceful degradation, faster incident analysis, AI-assisted solo ops iteration | cv.md |
-| Data / Batch Backend | Airflow workflow automation, FTP ingestion/parsing/validation, durable-success-before-source-delete flow, unique+upsert safeguards | cv.md |
 | Search / Integration | Elasticsearch fallback, RAG search, RDB indexes/unique constraints, auth/session consistency, internal tooling | cv.md |
 
 ## Your Exit Narrative
@@ -28,10 +28,11 @@ Use the candidate's exit story from `config/profile.yml` to frame all content:
 
 ## Your Cross-cutting Advantage
 
-Frame profile as **"backend engineer who makes backend flows reliable with concrete mechanisms: fallback, Redis state, RDB constraints, transaction boundaries, tests, deployment automation, and AI-assisted solo execution"**.
+Frame profile as **"data/batch-oriented backend engineer who makes data and backend flows reliable with concrete mechanisms: Airflow DAG boundaries, FTP ingestion safeguards, parser null-tolerance, unique+upsert constraints, fallback, Redis state, transaction boundaries, tests, deployment automation, and AI-assisted solo execution"**.
 
 What stands out:
 - Builds systems end-to-end instead of stopping at feature delivery
+- Has current company work that maps directly to data engineering adjacent roles: Airflow DAG migration, FTP ingestion, log parsing, structured loading, source-file deduplication, upsert safeguards, partition COPY loading, and reprocessing-oriented operations
 - Has company project experience beyond side projects: Spring admin APIs, common exception/validation policy, Elasticsearch fallback, Redis authentication, RDB indexes/unique constraints, CI/CD standardization, Airflow data workflow automation, and reprocessing APIs
 - Has operated backend flows that recruiters recognize as real company work: overtime request/approval/rejection, employee management, search indexing, notification mail, reprocessing, batch execution, deployment verification, and admin update paths
 - Can credibly answer JD lines about AI/LLM productivity and small-service ownership through VoiceLink: AI-assisted solo development, direct service operation, and architecture/consistency decisions owned personally
@@ -41,9 +42,11 @@ What stands out:
 
 ## Job Screening Bias
 
-Push toward roles where the buyer wants an **operations-oriented backend engineer** rather than a large-scale platform lead.
+Push toward roles where the buyer wants a **data/batch-oriented backend engineer** rather than a pure data platform engineer or large-scale platform lead.
 
 Prioritize:
+- Data / Batch Backend, Backend Data Platform, Batch Platform, ETL/ELT-adjacent backend, data ingestion, log pipeline, settlement/reconciliation, and internal operations workflow roles
+- Roles mentioning Airflow, Python batch, FTP/SFTP ingestion, parsing/validation, data quality, reprocessing, relational constraints, idempotency, partitioned loading, or operational data pipelines
 - Java/Spring backend roles around 3-5 years or "3+ years"
 - Backend operations, maintenance, internal platforms, admin APIs, reliability improvement, and production support
 - Redis, authentication/session consistency, Elasticsearch/search fallback, batch/data workflows, RDB constraints, CI/CD, and incident prevention
@@ -54,6 +57,7 @@ Prioritize:
 
 Deprioritize / Exclude:
 - "상시 채용" / "수시 채용" (always-open/ongoing) postings without active hiring deadlines
+- Pure data engineer roles centered on Spark, Hadoop, Kafka streaming platform ownership, data warehouse modeling, BI dashboards, ML feature platforms, or company-wide data platform architecture unless the posting also values backend/API/batch ownership
 - Large-scale traffic ownership as a core requirement
 - Big-tech scale distributed systems or platform infrastructure expectations
 - Mandatory Kafka/MSA/Kubernetes production ownership

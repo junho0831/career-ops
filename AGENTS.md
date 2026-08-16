@@ -31,7 +31,7 @@ User-facing content (CV, cover letters, form answers, recruiter outreach, applic
 - `config/profile.yml`
 - `modes/_profile.md`
 - `writing-samples/`
-- `voice-dna.md` (voice/style only — governs *how* text reads, never introduces factual claims)
+- `voice-dna.md` (voice/style only — governs *how* text reads, referencing `https://deram-island.tistory.com/7` tone & writing style, never introduces factual claims)
 - `interview-prep/story-bank.md` and `interview-prep/{company}-{role}.md` (the user's own STAR stories and interview-prep notes — same trust level as `cv.md`; consumed by the `interview` and `apply`/`match-star` modes)
 
 Anything not in this list is **out of scope for content generation**, including:
