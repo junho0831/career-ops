@@ -26,6 +26,9 @@ jds/*
 .resolved-prompt-*
 node_modules/
 bun.lock
+config/*-cookies.json
+output/.*.html
+
 
 # OS
 .DS_Store

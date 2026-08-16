@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>박준호 — CV</title>
+<style>
+  /* ATS-safe typography (#font-extraction fix):
+     The bundled variable woff2 fonts (Space Grotesk / DM Sans) render with
+     glyph advances that make PDF text extractors inject spurious spaces inside
+     words (e.g. "SUM M ARY", "Germ any") — which corrupts ATS keyword parsing.
+     This template's job is clean machine-readable parsing, so we use a standard
+     static system sans stack instead. Verified clean via pypdf text extraction.
+     The lang="ja" rules reuse this Latin base stack (with a CJK fallback added);
+     the lang="ar" rules below intentionally define their own Arabic stack. */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Disable fi/fl/ffi ligatures. Headless Chromium substitutes these letter
+       pairs with the Unicode glyphs U+FB01/FB02/FB03 at PDF layout time, and PDF
+       text extractors (what ATS systems read) decode them back to those
+       codepoints, so "verification" becomes "veriﬁcation" and a literal keyword
+       search misses it. Setting this on every element covers headings and
+       competency tags too. Required ligatures (rlig) stay on, so Arabic shaping
+       is unaffected. */
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    /* Disable ligatures here as well; see the * rule above. */
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  /* === OPTIONAL PROFILE PHOTO (opt-in, DACH/European markets — #264) ===
+     Off by default: with no candidate.photo the  slot is empty, no
+     <img> is emitted, and the layout is byte-identical to a photoless CV.
+     When opted in (candidate.photo in config/profile.yml) the photo floats into
+     the top corner and the header/summary text wraps beside it. Photos are
+     penalized by US/UK/many-market ATS, so this is never on by default. */
+  .cv-photo {
+    float: right;
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 0 8px 14px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  /* === PROFESSIONAL SUMMARY === */
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  /* Links must never break across lines */
+  a {
+    white-space: nowrap;
+  }
+
+  /* === CORE COMPETENCIES === */
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  /* === PROJECTS === */
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  /* === EDUCATION === */
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  /* === CERTIFICATIONS === */
+  .cert-table {
+    display: table;
+    width: 100%;
+  }
+
+  .cert-item {
+    display: table-row;
+  }
+
+  .cert-item > * {
+    display: table-cell;
+    vertical-align: baseline;
+    padding-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+    white-space: nowrap;
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+    text-align: right;
+    width: 44px;
+  }
+
+  /* === SKILLS === */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  /* === PRINT === */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 0;
+    }
+  }
+
+  /* === PAGE BREAK CONTROL === */
+  /* Only avoid breaking small atomic units (a cert row, an education line, the
+     header, a single competency or skill).  Sections and multi-bullet roles are
+     allowed to flow across a page boundary so content packs tight instead of
+     jumping wholesale and leaving large bottom gaps. */
+  .header,
+  .edu-item,
+  .cert-item,
+  .competency-tag,
+  .skill-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep a heading attached to the content that follows it, so headings are not
+     orphaned at the bottom of a page. */
+  .section-title,
+  .job-company,
+  .project-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* === RTL (Arabic) Support === */
+  html[lang="ar"] body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  }
+
+  html[lang="ar"] .header h1,
+  html[lang="ar"] .section-title,
+  html[lang="ar"] .job-company,
+  html[lang="ar"] .project-title,
+  html[lang="ar"] .competency-tag,
+  html[lang="ar"] .skill-category {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  }
+
+  html[lang="ar"] .header-gradient {
+    background: linear-gradient(to left, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+  }
+
+  html[lang="ar"] .job ul {
+    padding-right: 18px;
+    padding-left: 0;
+  }
+
+  html[lang="ar"] .project-badge {
+    margin-right: 6px;
+    margin-left: 0;
+  }
+
+  html[lang="ar"] .cert-year {
+    text-align: left;
+  }
+
+  html[lang="ar"] .cert-table {
+    direction: rtl;
+  }
+
+  html[lang="ar"] .cv-photo {
+    float: left;
+    margin: 0 14px 8px 0;
+  }
+
+  /* === CJK (Japanese) font fallback === */
+  /* The bundled webfonts are Latin-only (see #951). Without a CJK fallback,
+     Japanese text renders as tofu (□) in headless Chromium on any system
+     without a CJK system font (Linux/CI, minimal containers). The Latin brand
+     fonts are kept first so ASCII still uses Space Grotesk / DM Sans, then the
+     browser's per-glyph fallback picks the first installed CJK face for kana
+     and kanji. Mirrors the lang="ar" precedent above. */
+  html[lang="ja"] body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+      'Yu Gothic', 'YuGothic', 'Noto Sans CJK JP', 'Noto Sans JP',
+      Meiryo, 'MS PGothic', sans-serif;
+  }
+
+  html[lang="ja"] .header h1,
+  html[lang="ja"] .section-title,
+  html[lang="ja"] .job-company,
+  html[lang="ja"] .project-title,
+  html[lang="ja"] .competency-tag,
+  html[lang="ja"] .skill-category {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+      'Yu Gothic', 'YuGothic', 'Noto Sans CJK JP', 'Noto Sans JP',
+      Meiryo, 'MS PGothic', sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  
+  <!-- HEADER -->
+  <div class="header">
+    <h1>박준호</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <a href="tel:010-3525-6275">010-3525-6275</a>
+      <span class="separator">|</span>
+      <a href="mailto:junho6667@gmail.com">junho6667@gmail.com</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/junho0831">github.com/junho0831</a>
+      <span class="separator">|</span>
+      <a href="https://voice-link.co.kr">voice-link.co.kr</a>
+      <span class="separator">|</span>
+      <span>대한민국 서울특별시</span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">고신뢰성 웹서버 API 설계, Redis 기반 인증 세션 관리 및 네트워크/SSL 암호화 통신에 강점을 가진 3년+ 경력의 Java/Spring Boot 개발자입니다. Redis TTL 기반 토큰 수명주기 통제, Spring Security OAuth2/JWT 구축, Nginx Reverse Proxy SNI &amp; Let&#39;s Encrypt SSL/DNS 보안 연결 경험을 보유하고 있습니다. 글로벌 통합 보안 리더 슈프리마의 웹서버 백엔드를 안정적으로 주도하겠습니다.</div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Java &amp; Spring Boot 웹서버 API 개발</span>
+      <span class="competency-tag">Spring Security, JWT &amp; OAuth2 소셜 인증</span>
+      <span class="competency-tag">Redis TTL 기반 인증 토큰 수명주기 통합</span>
+      <span class="competency-tag">Nginx SSL/TLS, SNI &amp; TURN 통신 보안</span>
+      <span class="competency-tag">RDB 트랜잭션 &amp; 인덱스 데이터 무결성</span>
+      <span class="competency-tag">Elasticsearch &amp; DB Fallback 고가용성 설계</span>
+      <span class="competency-tag">GitLab CI/CD &amp; Docker 배포 자동화</span>
+      <span class="competency-tag">GlobalExceptionHandler &amp; 공통 예외 규격화</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+    <div class="job">
+  <div class="job-header">
+    <span class="job-company">엔셀</span>
+    <span class="job-period">2025.01 ~ 현재</span>
+  </div>
+  <div class="job-role">백엔드 개발자</div>
+  
+  <ul>
+    <li>DataForge: Refresh Token 저장/검증/회전/삭제를 Redis TTL 기준으로 일원화하여 웹서버 인증 상태 판단 기준을 단순화하고 보안성을 강화했습니다.</li>
+    <li>DataForge: 복합 인덱스 및 Unique 제약 조건을 통해 대용량 조회 성능을 개선하고 사원/신청 데이터 무결성을 보장했습니다.</li>
+    <li>SMIP: GlobalExceptionHandler 및 예외 처리 계층을 도입하여 오류 응답 규격을 통합하고 JUnit5/Mockito 회귀 테스트로 장애 분석 리드타임을 감축했습니다.</li>
+    <li>Prism: Java/FTP 배치를 Python/Airflow DAG로 이관하고 DB commit 이후 원본 삭제 로직을 적용하여 유실 없는 재처리 파이프라인을 구축했습니다.</li>
+  </ul>
+</div>
+  <div class="job">
+  <div class="job-header">
+    <span class="job-company">헥토</span>
+    <span class="job-period">2022.08 ~ 2024.07</span>
+  </div>
+  <div class="job-role">백엔드 개발자</div>
+  
+  <ul>
+    <li>KMS: GitLab CI/CD 및 Docker/Nginx 기반으로 파이프라인을 표준화하여 릴리스 리드타임을 1시간에서 25분으로 단축하고 배포 실패율 0%를 달성했습니다.</li>
+    <li>SmartQ: LangChain 기반 RAG 의미 검색 API를 구축하여 사내 질의 응답 정확도를 60%에서 80%로 향상시켰습니다.</li>
+    <li>SafeCash: Crontab 기반 정기 동기화 배치 및 Admin 조회/재처리 API를 개발하여 데이터 정합성 이슈 월 0건을 달성했습니다.</li>
+  </ul>
+</div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+    <div class="project">
+  <div class="project-title">VoiceLink (실시간 매칭·통화 서비스)<span class="project-badge">개인 프로덕션 서비스</span></div>
+  <div class="project-desc">실시간 음성 서비스를 1인으로 설계·개발·배포·운영 중. Nginx reverse proxy/stream SNI, Let&#39;s Encrypt SSL, TURN 포트포워딩, DNS 구축 및 Spring Security/Redis 인증 수명주기를 완벽하게 다루었습니다.</div>
+  <div class="project-tech">Java, Spring Boot, Spring Security, JWT, Redis, LiveKit, WebRTC, Docker, Nginx, SSL</div>
+</div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+  <div class="edu-header">
+    <div class="edu-title">Loopers 백엔드 코스 <span class="edu-org">루퍼스</span></div>
+    <div class="edu-year">2025.07 ~ 2025.10</div>
+  </div>
+  <div class="edu-desc">Spring Boot 기반 이커머스 플랫폼 설계 및 대용량 데이터 처리 과정 수료</div>
+</div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skill-item"><span class="skill-category">Web Server &amp; Auth: </span>Java, Spring Boot, JPA, Spring Security, JWT, OAuth2, REST API</div>
+<div class="skill-item"><span class="skill-category">Database &amp; Security: </span>PostgreSQL, MySQL, Redis, Elasticsearch, Nginx, SSL/TLS, Linux</div>
+<div class="skill-item"><span class="skill-category">DevOps &amp; Tools: </span>Docker, GitLab CI/CD, Airflow, Crontab, LiveKit (WebRTC), Git</div>
+  </div>
+
+</div>
+</body>
+</html>
