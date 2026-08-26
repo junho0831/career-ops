@@ -44,10 +44,10 @@
 - [x] #092 | https://www.wanted.co.kr/wd/375853 | (주)링크알파 (LinqAlpha) | Data Engineer (Data Platform & AI) | 4.9/5 | 지원완료 ✅ (`Wanted 전용 복제 이력서 접수`) · 마감 상시
 - [x] #093 | https://www.wanted.co.kr/wd/376984 | 에프앤에프(F&F) | 디지털본부 Java/Spring 백엔드 개발(ERP/AI시스템) | 5.0/5 | 지원완료 ✅ (`Wanted 전용 복제 이력서 접수 2026.08.20`) · 마감 상시
 - [x] #094 | https://www.wanted.co.kr/wd/348894 | (주)크림페이 (KREAM Pay) | Backend 개발자 (결제/트랜잭션) | 5.0/5 | 지원완료 ✅ (`Wanted 전용 복제 이력서 접수 2026.08.20`) · 마감 상시
-- [x] #095 | https://www.wanted.co.kr/wd/376495 | (주)카카오헬스케어 | FHIR/의료데이터 플랫폼 개발자 | 5.0/5 | 이력서 작성완료 📝 (`[카카오헬스케어] 박준호 이력서`) · 마감 상시
-- [x] #096 | https://www.wanted.co.kr/wd/353354 | (주)위버스컴퍼니 (HYBE) | Back-end 개발자 (글로벌 플랫폼) | 5.0/5 | 이력서 작성완료 📝 (`[위버스컴퍼니] 박준호 이력서`) · 마감 상시
-- [x] #097 | https://www.wanted.co.kr/wd/378490 | (주)빗썸 | Backend Engineer (빗썸페이) | 5.0/5 | 이력서 작성완료 📝 (`[빗썸] 박준호 이력서`) · 마감 상시
-- [x] #098 | https://www.wanted.co.kr/wd/330977 | (주)에이비일팔공 (AB180) | Backend Engineer - Data Pipeline | 4.9/5 | 이력서 작성완료 📝 (`[AB180] 박준호 이력서`) · 마감 상시
+- [x] #095 | https://www.wanted.co.kr/wd/376495 | (주)카카오헬스케어 | FHIR/의료데이터 플랫폼 개발자 | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.26`) · 마감 상시
+- [x] #096 | https://www.wanted.co.kr/wd/353354 | (주)위버스컴퍼니 (HYBE) | Back-end 개발자 (글로벌 플랫폼) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.26`) · 마감 상시
+- [x] #097 | https://www.wanted.co.kr/wd/378490 | (주)빗썸 | Backend Engineer (빗썸페이) | 5.0/5 | 이력서 작성완료 📝 (`[빗썸] 자체 채용 사이트 연동`) · 마감 상시
+- [x] #098 | https://www.wanted.co.kr/wd/330977 | (주)에이비일팔공 (AB180) | Backend Engineer - Data Pipeline | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.26`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
