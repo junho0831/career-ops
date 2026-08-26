@@ -1,15 +1,19 @@
 # Pipeline
 ## Pendientes
 
-### ⏳ D-7 이내 마감 임박 (2026-08-11 ~ 2026-08-18)
-- [x] #057 | https://cafe.naver.com/f-e/cafes/31258781/articles/36279 | KB국민은행 | 「Back-end 개발」 전문직무직원 | 4.5/5 | 지원완료 ✅ · 마감 2026-08-13
-- [x] #044 | https://tving.ninehire.site/job_posting/G6cq38oa | (주)티빙 | Backend Engineer (Java/Kotlin/Spring) | 4.7/5 | 지원완료 ✅ (`output/cv-park-junho-tving-2026-08-16.pdf`) · 마감 2026-08-17
-
-### 📅 8월 마감 예정 (2026-08-19 ~ 2026-08-31)
+### 📅 8월 진행 중 공고 (2026-08-27 ~ 2026-08-31)
 - [x] #058 | https://cafe.naver.com/f-e/cafes/31258781/articles/36205 | F&F | 디지털본부 Java/Spring 백엔드 개발(ERP/AI시스템) | 4.6/5 | PDF ✅ (`output/cv-park-junho-fnf-2026-08-11.pdf`) · 마감 2026-08-31
 - [x] #059 | https://cafe.naver.com/f-e/cafes/31258781/articles/36351 | 에이치아이티 | 풀스택 Nest.js 서버 개발 | 3.8/5 | PDF ❌ · 마감 2026-08-31
 - [x] #060 | https://cafe.naver.com/f-e/cafes/31258781/articles/36278 | (주)에버온 | 플랫폼 백엔드 개발자 (API/Gateway/BFF담당) | 4.6/5 | 지원완료 ✅ (`output/에버온_박준호.pdf`) · 마감 2026-08-31
 - [x] #061 | https://cafe.naver.com/f-e/cafes/31258781/articles/36391 | (주)같다 | Backend/Platform Engineer (DB/Infra) | 4.5/5 | PDF ✅ (`output/같다_박준호.pdf`) · 마감 2026-08-31
+
+### 🏁 마감 완료 공고 (Archived)
+- [x] #044 | https://tving.ninehire.site/job_posting/G6cq38oa | (주)티빙 | Backend Engineer (Java/Kotlin/Spring) | 4.7/5 | 지원완료 ✅ (`output/cv-park-junho-tving-2026-08-16.pdf`) · 마감 2026-08-17
+- [x] #057 | https://cafe.naver.com/f-e/cafes/31258781/articles/36279 | KB국민은행 | 「Back-end 개발」 전문직무직원 | 4.5/5 | 지원완료 ✅ · 마감 2026-08-13
+- [x] #083 | https://zighang.com/recruitment/a247019c-28f3-47ec-9462-e132e8568dbc | 한화투자증권 (한화그룹) | Trading기획팀 IT개발 파트 | 5.0/5 | PDF ✅ (`output/cv-park-junho-hanwha-2026-08-17.pdf`) · 마감 2026-08-26
+- [x] #099 | https://www.skcareers.com/Recruit/Detail/R261762 | SK하이닉스 (SK hynix) | ['26년 하반기] Talent hy-way 기술사무직 신입 | 5.0/5 | 지원완료 및 접수마감 ✅ · 마감 2026-08-26 17:00
+
+### 🏢 상시 채용 및 수시 채용 진행 공고
 - [x] #064 | https://zighang.com/recruitment/086cca40-9197-4bc9-9190-fd23c1c37b98 | 하이브(HYBE) | 백엔드개발 (커머스) | 4.8/5 | 임시저장 📝 (Draft) · 마감 채용시마감
 - [x] #065 | https://zighang.com/ | CJ올리브영 | 대규모 개발 채용 (Java/Spring 백엔드) | 4.7/5 | 임시저장 📝 (Draft) · 마감 상시
 - [x] #066 | https://www.wanted.co.kr/wd/379898 | 다음 (Daum/카카오) | 검색 플랫폼 서버 개발자 | 5.0/5 | 지원완료 ✅ (`Wanted 전용 복제 이력서 접수`) · 마감 상시
@@ -29,7 +33,6 @@
 - [x] #080 | https://www.wanted.co.kr/wd/340139 | (주)컨워스 (CONWORTH) | Full Stack / 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 전용 복제 이력서 접수`) · 마감 상시
 - [x] #081 | https://www.wanted.co.kr/wd/380620 | (주)아타드 (ATAD) | AI LLM 개발자 / 백엔드 엔지니어 | 4.9/5 | 지원완료 ✅ (`Wanted 전용 복제 이력서 접수`) · 마감 상시
 - [x] #082 | https://www.wanted.co.kr/wd/341042 | (주)메디콜 (덴탈콜) | [덴탈콜] Software Engineer (AI Voice) | 4.9/5 | 지원완료 ✅ (`Wanted 전용 복제 이력서 접수`) · 마감 상시
-- [x] #083 | https://zighang.com/recruitment/a247019c-28f3-47ec-9462-e132e8568dbc | 한화투자증권 (한화그룹) | Trading기획팀 IT개발 파트 | 5.0/5 | PDF ✅ (`output/cv-park-junho-hanwha-2026-08-17.pdf`) · 마감 2026-08-26
 - [x] #084 | https://careers.kakao.com/jobs/P-14469 | (주)카카오 | AI Platform & Server 개발자 | 5.0/5 | PDF ✅ (`output/cv-park-junho-kakao-2026-08-17.pdf`) · 마감 상시
 - [x] #085 | https://www.wanted.co.kr/wd/255060 | (주)쿠팡 (Coupang) | Senior Back-end Engineer (Eats Merchant) | 5.0/5 | PDF ✅ (`output/cv-park-junho-coupang-2026-08-17.pdf`) · 마감 상시
 - [x] #086 | https://zighang.com/recruitment/6ede8a36-ccac-48e4-a21a-0420a9b57737 | SK에코플랜트 (SK그룹) | IT/DT 백엔드 & 데이터 엔지니어 | 4.9/5 | PDF ✅ (`output/cv-park-junho-sk-2026-08-17.pdf`) · 마감 상시
@@ -45,7 +48,6 @@
 - [x] #096 | https://www.wanted.co.kr/wd/353354 | (주)위버스컴퍼니 (HYBE) | Back-end 개발자 (글로벌 플랫폼) | 5.0/5 | 이력서 작성완료 📝 (`[위버스컴퍼니] 박준호 이력서`) · 마감 상시
 - [x] #097 | https://www.wanted.co.kr/wd/378490 | (주)빗썸 | Backend Engineer (빗썸페이) | 5.0/5 | 이력서 작성완료 📝 (`[빗썸] 박준호 이력서`) · 마감 상시
 - [x] #098 | https://www.wanted.co.kr/wd/330977 | (주)에이비일팔공 (AB180) | Backend Engineer - Data Pipeline | 4.9/5 | 이력서 작성완료 📝 (`[AB180] 박준호 이력서`) · 마감 상시
-- [x] #099 | https://www.skcareers.com/Recruit/Detail/R261762 | SK하이닉스 (SK hynix) | ['26년 하반기] Talent hy-way 기술사무직 신입 | 5.0/5 | 임시저장 📝 (`output/sk_hynix_application_draft_2026_08_21.md`) · 마감 2026-08-26 17:00
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
