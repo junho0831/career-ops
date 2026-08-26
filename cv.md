@@ -4,7 +4,7 @@
 
 Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831
 
-서비스: https://voice-link.co.kr
+포트폴리오 & 기술 블로그: https://so-dak.com/ | GitHub: https://github.com/junho0831
 
 ---
 
@@ -44,6 +44,8 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 - `source_file` unique constraint와 upsert 적재 로직을 적용해 동일 파일이 반복 실행에서 중복 적재되는 문제 방지
 - 입력일+전일 FTP 폴더 병행 스캔, `max_active_runs=1`, `catchup=false`, scratch 파일 정리로 날짜 경계 누락과 반복 실행 리스크 축소
 - 전체 데이터를 메모리에 올리지 않고 `chunk 조회 -> 파싱 -> 파티션 COPY 적재`를 반복하고, `code_occur_time` 기준 range partition 적재와 chunk별 처리량 로그로 운영 중 병목과 실패 구간을 확인할 수 있게 개선
+- 서버사이드 커서와 `chunk_size=30000` 기반 스트리밍 조회를 적용해 대용량 RAW 로그를 청크 단위로 처리하도록 개선하고, 약 1,973만 건 처리 기준 실행 시간을 `4,175초 -> 2,896초`로 단축
+- 원천 로그 중복 때문에 불필요한 전체 재적재가 반복되던 문제를 고유 이벤트 기준 검증 로직으로 개선해, 실제 누락이 있는 경우에만 파티션을 재처리하도록 변경
 
 #### DataForge - Spring 검색/인증/관리 API
 `Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
@@ -63,8 +65,8 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 - Vue.js 화면 상태를 MVVM + 공통 스토어 구조로 재정리해 변경 영향 범위와 인수인계 비용 축소
 - 장애 분석 리드타임 `40분 → 12분`, 동일 오류 재발률 `30% 감소`
 
-### 헥토 | 백엔드 개발자
-`2022.08 ~ 2024.07`
+### (주) 헥토 | AI개발팀 백엔드 개발자
+`2023.10 ~ 2024.07` (10개월)
 
 #### KMS - CI/CD 표준화
 `Java` `Spring Boot` `GitLab CI/CD` `Docker` `Nginx`
@@ -75,14 +77,17 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 - 릴리스 리드타임 `1시간 → 25분`, 배포 실패 비율 `5% → 0%`
 
 #### SmartQ - RAG 검색 API
-`Java` `Spring Boot` `OpenAI API` `LangChain`
+`Java` `Spring Boot` `OpenAI API` `LangChain` `FastAPI`
 
 - 사내 문서 검색이 키워드 일치에 의존해 원하는 답을 찾기 어렵고, 상담·운영 담당자가 문서를 직접 찾아야 하는 병목이 있어 LangChain 기반 RAG 검색 API 구축
 - 문서 맥락 기반 질의응답 API를 분리된 모듈로 적용해 기존 시스템 변경 범위를 줄인 상태로 적용
 - 질의 응답 정확도 `60% → 80%`, 답변 대기 시간 `5분 → 1분`, 상담팀 주당 `12시간` 절감
 
+### (주) 헥토이노베이션 | 마이데이터팀 사원
+`2022.08 ~ 2023.10` (1년 3개월)
+
 #### SafeCash - 정기 배치 및 Admin 재처리 API
-`Java` `Spring Boot` `Crontab`
+`Java` `Spring Boot` `MyBatis` `MySQL` `Crontab`
 
 - 정기 데이터 동기화가 수동 실행과 개발자 DB 확인에 의존해 누락, 중복, 복구 지연이 발생할 수 있는 구조를 개선
 - Crontab 기반 정기 배치로 동기화 작업을 자동화하고, 실행 이력과 결과 로그를 남겨 운영자가 이상 징후를 직접 확인할 수 있도록 개선
