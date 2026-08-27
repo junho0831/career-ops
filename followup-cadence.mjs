@@ -136,9 +136,8 @@ export function addDays(date, days) {
 }
 
 // --- Parse applications.md ---
-function parseTracker() {
-  if (!existsSync(APPS_FILE)) return [];
-  const content = readFileSync(APPS_FILE, 'utf-8');
+export function parseTrackerFromContent(content) {
+  if (!content) return [];
   const entries = [];
   for (const line of content.split('\n')) {
     if (!line.startsWith('|')) continue;
@@ -155,10 +154,14 @@ function parseTracker() {
   return entries;
 }
 
+function parseTracker() {
+  if (!existsSync(APPS_FILE)) return [];
+  return parseTrackerFromContent(readFileSync(APPS_FILE, 'utf-8'));
+}
+
 // --- Parse follow-ups.md ---
-function parseFollowups() {
-  if (!existsSync(FOLLOWUPS_FILE)) return [];
-  const content = readFileSync(FOLLOWUPS_FILE, 'utf-8');
+export function parseFollowupsFromContent(content) {
+  if (!content) return [];
   const entries = [];
   for (const line of content.split('\n')) {
     if (!line.startsWith('|')) continue;
@@ -178,6 +181,11 @@ function parseFollowups() {
     });
   }
   return entries;
+}
+
+function parseFollowups() {
+  if (!existsSync(FOLLOWUPS_FILE)) return [];
+  return parseFollowupsFromContent(readFileSync(FOLLOWUPS_FILE, 'utf-8'));
 }
 
 // --- Extract contacts from notes ---
@@ -250,13 +258,13 @@ export function computeNextFollowupDate(status, appDate, lastFollowupDate, follo
 }
 
 // --- Main analysis ---
-function analyze() {
-  const apps = parseTracker();
+export function analyzeFromContent(trackerContent, followupsContent = '', opts = {}) {
+  const apps = parseTrackerFromContent(trackerContent);
   if (apps.length === 0) {
-    return { error: 'No applications found in tracker.' };
+    return { error: 'No applications found in tracker.', entries: [], metadata: { totalTracked: 0, actionable: 0, overdue: 0, urgent: 0, cold: 0, waiting: 0 } };
   }
 
-  const followups = parseFollowups();
+  const followups = parseFollowupsFromContent(followupsContent);
 
   // Group follow-ups by app number
   const followupsByApp = new Map();
@@ -323,7 +331,7 @@ function analyze() {
   const urgencyOrder = { urgent: 0, overdue: 1, waiting: 2, cold: 3 };
   entries.sort((a, b) => (urgencyOrder[a.urgency] ?? 9) - (urgencyOrder[b.urgency] ?? 9));
 
-  const filtered = overdueOnly
+  const filtered = opts.overdueOnly || overdueOnly
     ? entries.filter(e => e.urgency === 'overdue' || e.urgency === 'urgent')
     : entries;
 
@@ -340,6 +348,12 @@ function analyze() {
     entries: filtered,
     cadenceConfig: CADENCE,
   };
+}
+
+export function analyze(opts = {}) {
+  const trackerContent = existsSync(APPS_FILE) ? readFileSync(APPS_FILE, 'utf-8') : '';
+  const followupsContent = existsSync(FOLLOWUPS_FILE) ? readFileSync(FOLLOWUPS_FILE, 'utf-8') : '';
+  return analyzeFromContent(trackerContent, followupsContent, opts);
 }
 
 // --- Summary mode ---

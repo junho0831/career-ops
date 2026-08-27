@@ -355,6 +355,10 @@ export function extractTrackerReportNumbers(reportCell) {
  * @param {string} name - Raw Via cell or via= tag value.
  * @returns {string} Case-folded, punctuation-free, script-preserving key.
  */
+export function normalizeTextKey(str) {
+  return String(str ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
 export function normalizeVia(name) {
   return String(name).normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 }

@@ -347,7 +347,47 @@ export function computeFollowupStats(followupsContent, trackerByNum) {
     totalFollowups,
     appsWithFollowups: byApp.size,
     appliedWithoutFollowup,
-    avgPerApp: byApp.size > 0 ? round1(totalFollowups / byApp.size) : 0,
+    avgPerApp: byApp.size > 0 ? (totalFollowups / byApp.size) : 0,
+  };
+}
+
+export function checkFollowupsSchema(content) {
+  const lines = String(content ?? '').replace(/\r/g, '').split('\n');
+  let pipeLines = 0;
+  let sawSeparator = false;
+  let dataRows = 0;
+  let parsed = 0;
+  const unparsedLines = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line.startsWith('|')) continue;
+    pipeLines++;
+    if (/^\|[-:\s|]+$/.test(line)) {
+      sawSeparator = true;
+      continue;
+    }
+    const parts = line.split('|').map((s) => s.trim());
+    if (parts.length < 8) continue;
+    const num = parseInt(parts[1], 10);
+    const appNum = parseInt(parts[2], 10);
+    if (Number.isNaN(num) || Number.isNaN(appNum)) {
+      continue; // header
+    }
+    dataRows++;
+    if (parts.length >= 8 && !Number.isNaN(num) && !Number.isNaN(appNum)) {
+      parsed++;
+    } else {
+      unparsedLines.push(i + 1);
+    }
+  }
+
+  return {
+    pipeLines,
+    sawSeparator,
+    dataRows,
+    parsed,
+    unparsedLines,
   };
 }
 

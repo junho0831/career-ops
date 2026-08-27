@@ -57,7 +57,8 @@
 - 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정해 데이터 유실 없이 재실행 가능하도록 설계
 - `source_file` unique constraint와 upsert 적재 로직을 적용해 동일 파일이 반복 실행에서 중복 적재되는 문제 방지
 - `max_active_runs=1`, `catchup=False`, 입력일+전일 FTP 폴더 스캔, scratch cleanup으로 날짜 경계 누락과 반복 실행 리스크 축소
-- `chunk 조회 -> 파싱 -> COPY 적재` 반복 구조와 chunk별 처리량 로그로 대용량 로그 파싱 배치의 메모리 사용량과 운영 관측성 개선
+- 서버사이드 커서 기반 청크 조회와 대기 적재를 1건으로 제한한 파이프라인을 구성해 이전 청크의 PostgreSQL COPY 적재와 다음 청크의 조회·파싱을 겹쳐 실행하고, 약 1,973만 건 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축
+- Lot 시작·종료 이벤트와 DW 오류 로그를 처리 구간별로 결합해 DIE 수율·불량 유형을 집계하고, EUV Root Cause 빈도와 함께 일별 요약 테이블에 UPSERT하여 재실행 시 결과 정합성 확보
 
 ## 엔셀 - DataForge Spring 검색/인증/관리 API
 

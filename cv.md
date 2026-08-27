@@ -44,8 +44,8 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 - `source_file` unique constraint와 upsert 적재 로직을 적용해 동일 파일이 반복 실행에서 중복 적재되는 문제 방지
 - 입력일+전일 FTP 폴더 병행 스캔, `max_active_runs=1`, `catchup=false`, scratch 파일 정리로 날짜 경계 누락과 반복 실행 리스크 축소
 - 전체 데이터를 메모리에 올리지 않고 `chunk 조회 -> 파싱 -> 파티션 COPY 적재`를 반복하고, `code_occur_time` 기준 range partition 적재와 chunk별 처리량 로그로 운영 중 병목과 실패 구간을 확인할 수 있게 개선
-- 서버사이드 커서와 `chunk_size=30000` 기반 스트리밍 조회를 적용해 대용량 RAW 로그를 청크 단위로 처리하도록 개선하고, 약 1,973만 건 처리 기준 실행 시간을 `4,175초 -> 2,896초`로 단축
-- 원천 로그 중복 때문에 불필요한 전체 재적재가 반복되던 문제를 고유 이벤트 기준 검증 로직으로 개선해, 실제 누락이 있는 경우에만 파티션을 재처리하도록 변경
+- 서버사이드 커서 기반 청크 조회와 대기 적재를 1건으로 제한한 파이프라인을 구성해 이전 청크의 PostgreSQL COPY 적재와 다음 청크의 조회·파싱을 겹쳐 실행하고, 약 1,973만 건 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축
+- Lot 시작·종료 이벤트와 DW 오류 로그를 처리 구간별로 결합해 DIE 수율·불량 유형을 집계하고, EUV Root Cause 빈도와 함께 일별 요약 테이블에 UPSERT하여 재실행 시 결과 정합성 확보
 
 #### DataForge - Spring 검색/인증/관리 API
 `Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
