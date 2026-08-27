@@ -1,7 +1,7 @@
-# ⏰ [마스터 매뉴얼] 매일 07:00 정기 포스팅 및 운영 프로세스 지침서
+# ⏰ [마스터 매뉴얼] 평일 07:00 근거 기반 포스팅 운영 지침서
 
 > **문서 상태**: 100% 최종 확정 및 지속 업데이트 문서 (Persistent Operating Protocol)  
-> **최신 최신화 날짜**: 2026-08-02  
+> **최종 개정일**: 2026-08-27
 > **적용 대상 시스템**: WordPress (`wp-local`), Antigravity Agent Workflow, `career-ops` Pipeline  
 
 ---
@@ -9,11 +9,11 @@
 ## 1. ⏰ 루틴 실행 시각 및 인프라 환경 세팅
 
 * **정확한 실행 시각**: 매일 오전 07:00:00 KST (한국 표준시 정각)
-* **실행 대상 웹 서버**: 로컬 워드프레스 Docker 컨테이너 (`wp-local` / `http://localhost:8080`)
+* **실행 대상 웹 서버**: 로컬 워드프레스 Docker 컨테이너 (`wp-local` / `http://localhost:8088` / `https://so-dak.com`)
 * **웹 루트 및 설정 파일 경로**: `/var/www/html/wp-content/mu-plugins/`
 * **적용 UI/UX 테마 설정**: 
   - GeneratePress 테마 (`1100px` 컨테이너 폭, 좌측 사이드바 카테고리 메뉴)
-  - Pretendard & Noto Sans KR 웹 폰트 (`word-break: keep-all`)
+  - 외부 폰트 다운로드 없는 운영체제 한글 폰트 스택 (`word-break: keep-all`)
   - 모든 요소 **좌측 정렬** (`left-align-content.php`)
   - Dracula 테마 Syntax Highlighting (`auto-highlight.php`)
   - 슬림 코드 패딩 (`1em 1.2em`) & 카테고리 배지 패딩 (`3px 10px`)
@@ -53,8 +53,10 @@ flowchart TD
     ScanGit -- "❌ 커밋/작업 내역 없음" --> SkipPython["🚫 오늘 자 PythonStudy 포스팅 미진행 (종료)"]
     ScanGit -- "✅ 커밋/작업 내역 존재" --> BuildPython["📝 커밋 내역 기반 5단계 업무일지 작성 및 07:00 발행"]
     
-    Track1 -- "🎙️ VoiceLink & 백엔드 실무 기술" --> CheckTechScope["🚫 Kafka / MSA 관련 주제 100% 제외 확인"]
-    CheckTechScope --> BuildTech["📝 실전 경험 기반 5단계 롱폼(Long-Form) 대형 아티클 작성 및 07:00 발행"]
+    Track1 -- "🎙️ VoiceLink & 백엔드 실무 기술" --> ScanVoiceGit["🐙 최근 24시간 Git 커밋 스캔"]
+    ScanVoiceGit -- "❌ 커밋 없음" --> SkipVoice["🚫 근거가 없어 발행하지 않음"]
+    ScanVoiceGit -- "✅ 커밋 존재" --> CheckTechScope["🚫 Kafka / MSA 제외 및 근거 범위 확인"]
+    CheckTechScope --> BuildTech["📝 검증 게이트를 통과한 아티클만 발행"]
 ```
 
 ### 3-1. 🐍 트랙 A: `PythonStudy` 프로젝트 (Git 커밋 기반)
@@ -71,7 +73,8 @@ flowchart TD
   1. **VoiceLink 실시간 음성 기술**: WebRTC ICE Candidate, STUN/TURN (Coturn) 릴레이 서버, LiveKit 메디아 서버, WebSocket 시그널링, 5초 단위 Redis Timeline 통화 품질 측정
   2. **대용량 로그 ETL & DB 최적화**: PostgreSQL MVCC/WAL 원리, ER Dose 복합 키(`eq_name`, `lot_seq`) 데이터 보정, `ANALYZE` 통계 최적화, Apache Airflow 백필 멱등성
   3. **Spring Boot & 동시성 아키텍처**: Spring Boot, JPA/QueryDSL, Redis (Pub/Sub, Redisson 분산 락, TTL), JWT Access + Opaque Refresh Token
-* **실행 방식**: Git 커밋 유무와 상관없이 평일 오전 7시에 깊이 있는 기술 아티클을 정기 포스팅합니다.
+* **실행 방식**: 최근 24시간의 VoiceLink 또는 PythonStudy 커밋이 있을 때만 글을 생성합니다. 근거가 없으면 `[SKIP]` 로그를 남기고 정상 종료합니다.
+* **근거 경계**: 커밋 메시지로 확인할 수 없는 장애, 성능 수치, 사용자 규모, 운영 성과를 만들지 않습니다. 일반 기술 원리는 공식 문서와 재현 방법으로 분리해 설명합니다.
 
 ---
 
@@ -106,8 +109,8 @@ flowchart TD
 * 모든 본문, 제목, 코드 블록을 CSS **좌측 정렬 (`left-align-content.php`)**로 출력하여 깔끔한 레이아웃 유지
 
 ### 🔗 [4단계] 본문 직접 언급 & 상호 태그 (Cross-Tagging & Direct Internal Linking)
-* 본문 내용 중에서 이전에 게재되었던 관련 포스트를 **직접 텍스트로 언급하고 클릭 가능한 마크다운 링크(`http://localhost:8080/?p=ID`)**를 삽입합니다.
-  * *(예시: "...이전에 다루었던 **[Voice-Link의 TURN/STUN 및 LiveKit 기반 최적화 전략](http://localhost:8080/?p=926)** 포스트에서 언급했듯이...")*
+* 본문 내용 중에서 이전에 게재된 관련 포스트를 직접 언급하고, 독자가 접근 가능한 공개 canonical URL(`https://so-dak.com/{slug}/`)을 HTML 링크로 삽입합니다.
+  * 로컬 주소, 숫자형 임시 URL, 존재하지 않는 예시 링크는 발행 본문에 넣지 않습니다.
 * 포스트 최하단에 `📌 함께 읽으면 좋은 연관 아티클` 섹션을 구성하여 직접 링크 카드를 연결합니다.
 * 주제별 공통 태그 (`#WebRTC`, `#LiveKit`, `#PostgreSQL`, `#Redis`, `#Airflow` 등)를 십자 연결합니다.
 
@@ -116,6 +119,23 @@ flowchart TD
   * **공식 문서**: PostgreSQL Official Docs, WebRTC Org, Redis Official Guide
   * **표준 규격**: IETF RFC 규격 문서 (RFC 5389 STUN 등)
   * **오픈소스**: GitHub 저장소 및 개발자 블로그 링크
+
+### ✅ 자동 발행 품질 게이트
+
+다음 조건을 모두 통과한 글만 draft에서 publish로 전환합니다. 하나라도 실패하면 공개하지 않고 오류 원인을 로그에 남깁니다.
+
+1. 가시 텍스트 5,000자 이상, H2 다섯 개 이상, 코드와 Mermaid 다이어그램 포함
+2. 기존 글과 제목 유사도 기준 통과 및 동일 slug 부재
+3. 관련 내부 링크 두 개 이상, 공식 문서·표준 원문 링크 두 개 이상
+4. Mermaid의 문자형 `\\n` 오류, 제외 기술, 근거 없는 절대 표현 미포함
+5. 글별 1200×630 대표 이미지 생성 및 미디어 등록 성공
+6. 모든 단계 성공 후에만 `publish`; 중간 오류가 나면 `draft`로 보존
+
+실제 스케줄 등록은 다음 한 줄을 기준으로 합니다.
+
+```cron
+0 7 * * 1-5 /usr/bin/python3 /home/junho/.hermes/scripts/daily-tech-blog.py >> /home/junho/.hermes/cron/daily-tech-blog.log 2>&1
+```
 
 ---
 
