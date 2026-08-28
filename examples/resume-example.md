@@ -1,7 +1,7 @@
 # Resume — Alex Chen
 
-<!--
-  This is the resume variant of cv-example.md.
+<!-- 
+  This is the resume variant of cv-example.md. 
   In the US tech industry, "resume" (1–2 pages, targeted) is the standard term,
   while "CV" typically refers to the longer academic variant.
   career-ops supports both — use whichever fits your target market.

@@ -11,17 +11,19 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import { isIP } from 'net';
 import { dirname, join } from 'path';
-import { fileURLToPath, pathToFileURL } from 'url';
+import { fileURLToPath } from 'url';
 
 import { decodeEntities } from './providers/_html-entities.mjs';
+import { BROWSER_LIKE_USER_AGENT } from './user-agent.mjs';
+import { isMainModule } from './lib/is-main-module.mjs';
+import { getCareerOpsRoot } from './path-resolver.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
+const DATA_ROOT = getCareerOpsRoot();
 const DEFAULT_LIMIT = 20;
 const DEFAULT_MONTHS = 3;
 const DEFAULT_SORT = 'date';
 const DEFAULT_SOURCES = ['techcrunch', 'prnewswire', 'guardian', 'hn'];
-const BROWSER_UA =
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 
 const RSS_SOURCES = {
   techcrunch: [
@@ -431,7 +433,7 @@ async function fetchTextMeta(url, { timeoutMs = 12_000, source = '' } = {}) {
     let currentUrl = startUrl;
     for (let hops = 0; hops <= 5; hops++) {
       const res = await fetch(currentUrl, {
-        headers: { 'user-agent': BROWSER_UA, accept: 'application/rss+xml,application/xml,text/xml,text/plain,*/*' },
+        headers: { 'user-agent': BROWSER_LIKE_USER_AGENT, accept: 'application/rss+xml,application/xml,text/xml,text/plain,*/*' },
         redirect: 'manual',
         signal: controller.signal,
       });
@@ -584,7 +586,25 @@ function isExcludedFundingItem(item) {
     // funding leads. Same symbol-edge class as the fix in #2227. For every
     // other alternative (all of which end in a word character) \b and the
     // lookarounds are equivalent, so their behaviour is unchanged.
-    /(?<!\w)(acquires?|acquired|acquisition|merger|spac|ipo|bankruptcy|layoffs?|cuts?\s+\d+%|earnings|quarterly results)(?!\w)/i,
+    /(?<!\w)(acquires?|acquired|acquisition|merger|spac|ipo|bankruptcy|layoffs?|earnings|quarterly results)(?!\w)/i,
+    // A layoff announced in the same headline as a raise is the case #2404
+    // fixed, but it only covered one spelling — "cuts N%". These reach the
+    // same reader with the same harm, the tool recommending a company that
+    // just announced job losses:
+    //   "raises $40M …, then cuts 30 % of staff"    (a space before the percent)
+    //   "raises $40M …, then cuts 1,200 jobs"       (a count, no percent)
+    //   "raises $40M … and lays off 300 employees"  (a different verb)
+    //
+    // EVERY form requires a workforce noun, percent included. The percent
+    // alternative used to sit in the group above with no such requirement, so
+    // "cuts 30% of cloud costs" — a cost story at a company that may well
+    // still be hiring — was excluded as if it were a layoff. Scoping it here
+    // fixes that and makes the two numeric forms consistent, which splitting
+    // them did not (CodeRabbit review). The optional "of its/the/their"
+    // carries the spellings the corpus uses ("cuts 15% of its workforce").
+    /(?<!\w)(cuts?|axes|slashes|eliminates|sheds)\s+\d[\d,.]*\s*(?:%\s*)?(?:of\s+)?(?:its\s+|the\s+|their\s+)?(jobs|roles|positions|staff|employees|workers|workforce|headcount)(?!\w)/i,
+    // Plural too: "amid workforce reductions" bypassed the singular-only form.
+    /\b(lays?\s+off|laying\s+off|laid\s+off|job\s+cuts|workforce\s+reductions?|headcount\s+reductions?|staff\s+reductions?)\b/i,
     /\b(public offering|registered direct offering|private placement|atm offering|offering of common stock)\b/i,
     /\braises?\s+\$[\d,.]+(?:\.\d+)?\s*(?:billion|million|bn|m|b|k)?\s+fund\b/i,
     /\b(venture fund|vc fund|investment fund|private equity fund|capital fund|fund ii|fund iii|fund iv|new fund)\b/i,
@@ -866,8 +886,8 @@ export function renderReport(result) {
 }
 
 function writeArtifacts(result) {
-  const outDir = join(ROOT, 'output');
-  const reportDir = join(ROOT, 'reports');
+  const outDir = join(DATA_ROOT, 'output');
+  const reportDir = join(DATA_ROOT, 'reports');
   mkdirSync(outDir, { recursive: true });
   mkdirSync(reportDir, { recursive: true });
   const jsonPath = join(outDir, `funded-companies-${result.generated_at}.json`);
@@ -998,7 +1018,7 @@ async function main() {
   else printHuman(result);
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
+if (isMainModule(import.meta.url)) {
   main().catch((err) => {
     console.error(`company-funded: ${err.message}`);
     process.exit(1);
