@@ -1,27 +1,24 @@
 # 박준호 | Data/Batch Backend Engineer
 
-데이터 정합성과 배치 안정성을 개선하는 Java/Spring Boot 백엔드 개발자입니다. 회사 업무에서는 Python/Airflow 기반 FTP 데이터 처리 자동화, ER Dose RAW/EUV 로그 파싱 경로 분리, 구조화 적재, 중복 적재 방지, 재실행 가능한 배치 흐름, 검색 장애 대응, 인증 상태 관리, 운영자 재처리 API처럼 실제 운영 중 문제가 되는 데이터·백엔드 흐름을 줄이는 작업을 맡았습니다. 개인 서비스 VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반으로 실시간 매칭·통화 세션의 동시성 문제를 해결하고 배포·운영까지 직접 수행했습니다.
+데이터 정합성과 배치 안정성을 개선하는 Data/Batch Backend Engineer입니다. Java/Spring Boot 백엔드 경력을 바탕으로 Python/Airflow 기반 FTP 배치, ER Dose RAW/EUV 로그 파싱, PostgreSQL 대용량 적재를 운영하고 있습니다. 약 1,973만 건 처리에서 청크 조회·파싱과 COPY 적재를 겹치는 파이프라인으로 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축했으며, DIE 수율·불량 유형과 EUV Root Cause를 일별 집계해 재실행 가능한 형태로 적재했습니다. 검색 장애 fallback, Redis 인증 상태, RDB 제약 조건, 운영자 재처리 API처럼 데이터 생성부터 복구까지 이어지는 운영 흐름도 개선해 왔습니다.
 
-Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831
-
-포트폴리오 & 기술 블로그: https://so-dak.com/ | GitHub: https://github.com/junho0831
+Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831 | Portfolio: https://so-dak.com/
 
 ---
 
 ## Summary
 
 - Java/Spring Boot 기반 백엔드 개발 경력 3년+
-- Python/Airflow 기반 FTP 데이터 처리 자동화, 로그 파싱, 구조화 적재, 배치 재실행 안정화 경험
-- 운영 중단, 중복 처리, 데이터 유실, 재처리 실패 가능성을 줄이는 데이터/백엔드 흐름 개선 경험
-- Elasticsearch fallback, Redis TTL 인증 상태, RDB index/unique constraint, transaction/lock 기반 정합성 관리 경험
-- Admin 재처리 API, GitLab CI/CD, Docker/Nginx 기반 운영 자동화 경험
+- Python/Airflow 기반 FTP 배치 이관, RAW/EUV 로그 파싱, 구조화 적재, 재처리 흐름 운영 경험
+- 약 1,973만 건 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축한 PostgreSQL 청크/COPY 파이프라인 개선 경험
+- DIE 수율·불량 유형과 EUV Root Cause를 일별 집계하고 UPSERT해 재실행 결과의 정합성을 확보한 경험
+- Elasticsearch fallback, Redis TTL 인증 상태, RDB 제약 조건, Admin 재처리 API 기반 운영 복구 경험
 - Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 상태 정합성 구현 경험
-- AI를 구현·디버깅·문서화 보조 도구로 활용해 1인 서비스를 설계·개발·배포·운영한 경험
 
 ## Core Skills
 
 - **Backend:** Java, Spring Boot, JPA, REST API
-- **Data / Infra:** PostgreSQL, MySQL, Redis, Elasticsearch
+- **Data / Infra:** PostgreSQL, MySQL, Redis, Elasticsearch, Server-side Cursor, COPY, Range Partition
 - **Realtime / Ops:** LiveKit, WebRTC, Docker, Nginx, SSL, DNS
 - **Automation / Batch:** GitLab CI/CD, Airflow, Crontab, FTP, Log Parsing
 - **Testing / Auth:** JUnit5, Mockito, JWT, OAuth2, Spring Security
@@ -43,8 +40,7 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 - 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정해 장애 발생 시 데이터 유실 없이 재실행 가능하도록 설계
 - `source_file` unique constraint와 upsert 적재 로직을 적용해 동일 파일이 반복 실행에서 중복 적재되는 문제 방지
 - 입력일+전일 FTP 폴더 병행 스캔, `max_active_runs=1`, `catchup=false`, scratch 파일 정리로 날짜 경계 누락과 반복 실행 리스크 축소
-- 전체 데이터를 메모리에 올리지 않고 `chunk 조회 -> 파싱 -> 파티션 COPY 적재`를 반복하고, `code_occur_time` 기준 range partition 적재와 chunk별 처리량 로그로 운영 중 병목과 실패 구간을 확인할 수 있게 개선
-- 서버사이드 커서 기반 청크 조회와 대기 적재를 1건으로 제한한 파이프라인을 구성해 이전 청크의 PostgreSQL COPY 적재와 다음 청크의 조회·파싱을 겹쳐 실행하고, 약 1,973만 건 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축
+- `code_occur_time` 기준 range partition에 청크별 COPY 적재하고, 서버사이드 커서 기반 조회와 대기 적재를 1건으로 제한해 이전 청크의 적재와 다음 청크의 조회·파싱을 겹쳐 실행함으로써 약 1,973만 건 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축
 - Lot 시작·종료 이벤트와 DW 오류 로그를 처리 구간별로 결합해 DIE 수율·불량 유형을 집계하고, EUV Root Cause 빈도와 함께 일별 요약 테이블에 UPSERT하여 재실행 시 결과 정합성 확보
 
 #### DataForge - Spring 검색/인증/관리 API

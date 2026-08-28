@@ -1,10 +1,10 @@
-# 박준호 | 백엔드 개발자
+# 박준호 | Data/Batch Backend Engineer
 
-> 운영 안정성과 데이터 정합성을 개선하는 Java/Spring Boot 백엔드 개발자
-회사 업무에서는 검색 장애 대응, 인증 상태 관리, 배치 재실행 안정화, ER Dose RAW/EUV 로그 파싱 경로 분리, 공통 오류 응답, 운영자 재처리 API처럼 실제 운영 중 문제가 되는 흐름을 줄이는 작업을 맡았습니다. VoiceLink에서는 Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE`로 실시간 매칭/세션 정합성 문제를 해결했습니다.
+> 데이터 정합성과 배치 안정성을 개선하는 Java/Spring Boot 기반 Data/Batch Backend Engineer
+Python/Airflow 기반 FTP 배치와 ER Dose RAW/EUV 로그 파싱·적재를 운영하고 있습니다. 약 1,973만 건 처리에서 청크 조회·파싱과 PostgreSQL COPY 적재를 겹치는 파이프라인으로 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축했으며, 일별 DIE 수율·불량 유형과 EUV Root Cause 집계를 UPSERT해 재실행 결과의 정합성을 확보했습니다.
 >
 
-📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831
+📧 junho6667@gmail.com　　📱 010-3525-6275　　🔗 github.com/junho0831　　🌐 so-dak.com
 
 서비스: https://voice-link.co.kr
 
@@ -12,18 +12,16 @@
 
 ## 한눈에 보기
 
-| 3년+ | 운영형 백엔드 | 60% | 30% |
+| 3년+ | 약 1,973만 건 | 30.6% | 데이터/배치 |
 | --- | --- | --- | --- |
-| 백엔드 개발 경력 | 장애·정합성·배치 개선 | CI/CD 자동화로 배포 시간 단축 | 테스트 코드 도입으로 장애 재발률 감소 |
+| 백엔드 개발 경력 | 단일 배치 처리 규모 | 처리 시간 단축 | 로그 파싱·적재·재처리 |
 
-- 운영 중단, 중복 처리, 데이터 유실, 재처리 실패 가능성을 줄이는 백엔드 개선 경험
-- Elasticsearch fallback, Redis TTL 인증 상태, RDB index/unique constraint, transaction/lock 기반 정합성 관리 경험
-- Python/Airflow 배치 이관, Admin 재처리 API, GitLab CI/CD, Docker/Nginx 기반 운영 자동화 경험
-- ER Dose RAW/EUV 로그 파싱 경로 분리, 구조화 적재, 대용량 chunk 처리 경험
-- Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 매칭·통화 서비스를 설계부터 배포·운영까지 1인으로 구축
-- Redis Lua Script 기반 Atomic Claim, DB Outbox + Redis Pub/Sub 결과 전파, `CallSession.ended_at` 기준 세션 정합성으로 stale match·유령 세션·재매칭 먹통 문제를 해결
-- 동시성 상황에서 트랜잭션, 락, unique constraint, DB Outbox 패턴으로 정합성을 보장한 경험 보유
-- 설계 -> 구현 -> 배포 -> 운영까지 전 과정을 책임지고 수행
+- Python/Airflow 기반 FTP 배치 이관과 ER Dose RAW/EUV 로그 파싱·구조화 적재 경험
+- 서버사이드 커서, PostgreSQL COPY, range partition을 활용한 대용량 배치 처리 경험
+- 일별 DIE 수율·불량 유형과 EUV Root Cause 집계 및 UPSERT 기반 재실행 정합성 확보
+- Elasticsearch fallback, Redis TTL 인증 상태, RDB 제약 조건, Admin 재처리 API 기반 운영 복구 경험
+- Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 상태 정합성 구현 경험
+- Spring Boot, Redis, LiveKit, Docker, Nginx 기반 실시간 서비스를 설계부터 배포·운영까지 1인으로 구축
 
 ---
 
@@ -117,9 +115,9 @@
 - 사내 문서 검색이 키워드 일치에 의존해 원하는 답을 찾기 어렵고 상담·운영 담당자가 문서를 직접 찾아야 하는 병목이 있어 LangChain 기반 RAG 검색 API 구축
 - 문서 맥락 기반 질의응답 API를 분리된 모듈로 적용해 검색 정확도를 `60% → 80%`, 답변 대기 시간을 `5분 → 1분`으로 개선하고 상담팀 반복 검색 업무를 주당 `12시간` 절감
 
-## 헥토 - 세이프캐시 정기 배치 및 Admin 재처리 API
+## 헥토이노베이션 - SafeCash 정기 배치 및 Admin 재처리 API
 
-📅 `2022.08 ~ 2023.09`
+📅 `2022.08 ~ 2023.10`
 
 `Java` `Spring Boot` `Crontab`
 

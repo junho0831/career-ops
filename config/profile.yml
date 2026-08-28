@@ -12,6 +12,9 @@ candidate:
   # The ID starts with "D" and is 11 characters long.
   # canva_resume_design_id: "DAxxxxxxxxx"
 
+style:
+  font_size: "10.5px"
+
 writing_style:
   reference_url: "https://deram-island.tistory.com/7"
   note: "자기소개서, 지원문항, 커버레터 및 워드프레스 기술 블로그 포스팅 작성 시 deram-island.tistory.com/7 의 말투 및 톤앤매너 참조"
