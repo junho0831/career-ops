@@ -48,6 +48,38 @@
 - [x] #096 | https://www.wanted.co.kr/wd/353354 | (주)위버스컴퍼니 (HYBE) | Back-end 개발자 (글로벌 플랫폼) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.26`) · 마감 상시
 - [x] #097 | https://www.wanted.co.kr/wd/378490 | (주)빗썸 | Backend Engineer (빗썸페이) | 5.0/5 | 이력서 작성완료 📝 (`[빗썸] 자체 채용 사이트 연동`) · 마감 상시
 - [x] #098 | https://www.wanted.co.kr/wd/330977 | (주)에이비일팔공 (AB180) | Backend Engineer - Data Pipeline | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.26`) · 마감 상시
+- [x] #100 | https://www.wanted.co.kr/wd/337445 | 씨제이올리브영(CJ올리브영) | 엔터프라이즈플랫폼유닛 Back-end | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #101 | https://www.wanted.co.kr/wd/337437 | 씨제이올리브영(CJ올리브영) | 커머스플랫폼유닛 Back-end | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #102 | https://www.wanted.co.kr/wd/366990 | 씨제이올리브영(CJ올리브영) | 검색 플랫폼 개발자 (Back-end) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #103 | https://www.wanted.co.kr/wd/323996 | 토스플레이스 | Server Developer (Product) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #104 | https://www.wanted.co.kr/wd/347509 | 토스플레이스 | Server Developer (Platform) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #105 | https://www.wanted.co.kr/wd/361570 | 토스플레이스 | Server Developer (AI Platform) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #106 | https://www.wanted.co.kr/wd/370479 | 토스인슈어런스 | Server Developer (Platform/Product) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #107 | https://www.wanted.co.kr/wd/352089 | 포티투닷(42dot - 현대자동차) | Backend Engineer (Open Platform) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #108 | https://www.wanted.co.kr/wd/377076 | 카카오페이증권 | 대용량 데이터 플랫폼 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #109 | https://www.wanted.co.kr/wd/366910 | 카카오헬스케어 | 케어챗 B/E 개발자 | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #110 | https://www.wanted.co.kr/wd/255060 | 쿠팡(Coupang) | Senior Back-end Engineer (Eats Merchant) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #111 | https://www.wanted.co.kr/wd/338214 | 컬리(Kurly) | 커머스 백엔드 개발자 (상품/주문/회원) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #112 | https://www.wanted.co.kr/wd/299355 | 컬리(Kurly) | 풀필먼트 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #113 | https://www.wanted.co.kr/wd/359638 | 에이블리코퍼레이션 | 백엔드 엔지니어 | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #114 | https://www.wanted.co.kr/wd/373899 | 백패커(아이디어스) | 백엔드 개발자 (Java) | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #115 | https://www.wanted.co.kr/wd/380102 | 핀다(FINDA) | 백엔드 개발자 (핀테크) | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #116 | https://www.wanted.co.kr/wd/73386 | 해빗팩토리 | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #117 | https://www.wanted.co.kr/wd/378894 | 마카롱팩토리(마이클) | 백엔드 서비스 개발 (3년 이상) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #118 | https://www.wanted.co.kr/wd/377019 | 노머스(원더월) | 백엔드(Backend) 엔지니어 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #119 | https://www.wanted.co.kr/wd/375603 | 굿닥(goodoc) | 백엔드 엔지니어 (Java) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #120 | https://www.wanted.co.kr/wd/340584 | 와이즐리컴퍼니 | Full Stack / Backend Engineer | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #121 | https://www.wanted.co.kr/wd/370856 | 샵라이브(Shoplive) | Software Engineer (Back-end) | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #122 | https://www.wanted.co.kr/wd/380226 | 빅크(BIGC) | 백엔드 엔지니어 (미들급, 3년차 이상) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #123 | https://www.wanted.co.kr/wd/381269 | 로지브라더스(코드모스) | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #124 | https://www.wanted.co.kr/wd/376698 | 미소(miso) | Back-end Engineer (Core) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #125 | https://www.wanted.co.kr/wd/381213 | 케이존(Kzone) | Backend Engineer (신입~3년차) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #126 | https://www.wanted.co.kr/wd/375861 | 탈잉 | 프로덕트 엔지니어 (풀스택/백엔드) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #127 | https://www.wanted.co.kr/wd/377426 | 이너버즈 | AI-Native Full-stack Product Engineer | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #128 | https://www.wanted.co.kr/wd/375001 | 석세스모드 | [핀테크 스타트업] 서버 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #129 | https://www.wanted.co.kr/wd/362373 | 인플루엔셜(윌라) | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #130 | https://www.wanted.co.kr/wd/380323 | 웨이커 | 백엔드 엔지니어 (1~3년) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #131 | https://www.wanted.co.kr/wd/381326 | 짐싸(ZIMSSA) | 백엔드 개발자 (2년~6년) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
