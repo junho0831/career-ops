@@ -104,17 +104,31 @@
 - [x] #153 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54852950 | (주)아이브릭스 | 웹 프론트엔드/백엔드 경력개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
 - [x] #154 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54852445 | (주)씨어스 | 백엔드 개발자 경력 채용 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
 - [x] #155 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54876292 | (주)유니유니 | JAVA 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
-- [x] #156 | https://www.jobkorea.co.kr/Recruit/GI_Read/49857893 | 엠아이큐브솔루션㈜ | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
-- [x] #157 | https://www.jobkorea.co.kr/Recruit/GI_Read/49716061 | ㈜에이피알(APR) | 백엔드 개발자 경력사원 | 5.0/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
-- [x] #158 | https://www.jobkorea.co.kr/Recruit/GI_Read/49636454 | ㈜누리미디어(DBpia) | AI 서비스 백엔드 개발자 | 4.9/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
-- [x] #159 | https://www.jobkorea.co.kr/Recruit/GI_Read/49848302 | ㈜네스트 | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
-
+- [x] #156 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54870839 | (주)서진시스템 | Web Backend (Java/Springboot) 개발 경력직 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #157 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54626054 | 펄포즌(PURPOZEN) | Java/Spring 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #158 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54546814 | (주)테크레디 | Java/Spring AI 고도화 백엔드 개발 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #159 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54883959 | (주)핀샷 | [글로벌핀테크] 백엔드 웹 개발자 (Java/Spring) | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #160 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54824609 | (주)비즈비 | [Java/Spring] 모바일 앱 쇼핑몰 백엔드 개발 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #161 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54846025 | (주)씨앤유글로벌 | 백엔드 개발자 (5년 이상) | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #162 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54634800 | (주)캐니캐티케어 | Java Spring Boot 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #163 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54778848 | (주)그린트레이더 | 벡엔드/데이터 엔지니어 (Java/Spring · AI) | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #164 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54875362 | (주)와이디엔에스 | [웹개발] 백엔드 경력자 모집 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #165 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54867718 | 마이데이터(주) | 백엔드 엔지니어 모집 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #166 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54736293 | (주)파이오링크 | 어플리케이션 및 클라우드 개발 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #167 | https://www.wanted.co.kr/wd/383488 | 크몽(kmong) | Data Engineer (3년 이상) | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #168 | https://www.wanted.co.kr/wd/383356 | 콕스웨이브(Coxwave) | [AX AgentX] 데이터 엔지니어 (RAG/LLM Pipeline) | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #169 | https://www.wanted.co.kr/wd/372028 | (주)미리디 | [미리디] Data Engineer | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #170 | https://www.wanted.co.kr/wd/382283 | 와이케이기획 | 개발자 (Software Engineer) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #171 | https://www.wanted.co.kr/wd/359276 | 렌트리 | AI 오퍼레이션 엔지니어 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #172 | https://www.wanted.co.kr/wd/364756 | 스트라드비젼(STRADVISION) | Data AI Engineer | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #173 | https://www.jobkorea.co.kr/Recruit/GI_Read/49869890 | ㈜코그콤 | 백엔드 / LLM 엔지니어 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 2026-09-20
+- [x] #174 | https://www.jobkorea.co.kr/Recruit/GI_Read/49847774 | (주)미래아이엔씨 | 마케팅 개발 기획자 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 2026-10-26
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
 
 ### 🚀 대량 배치 지원 현황 (Saramin)
-- [x] **사람인 (Saramin) Java/Spring Boot 백엔드 169개 공고 지원 완결 ✅** (`[복사] 운영 안정성과 데이터 정합성을 개선하는 Java/Spring Boot 백엔드 개발자 박준호` 맞춤 이력서 제출, `apply-status-list` 169건 검증 완료)
+- [x] **사람인 (Saramin) Java/Spring Boot 백엔드 176개 공고 지원 완결 ✅** (`데이터 정합성과 배치 성능을 개선하는 Data/Batch Backend Engineer 박준호` 마스터 이력서 제출, `apply-status-list` 176건 검증 완료)
 
 ### 🏢 대기업 & 중견기업 맞춤 지원서 임시저장 현황 (14개사 보관 중 📝)
 - [x] **(주)카카오페이**: [스테이블코인] 서버 개발자 ➔ **임시저장 📝 (Draft)**
