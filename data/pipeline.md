@@ -123,7 +123,6 @@
 - [x] #172 | https://www.wanted.co.kr/wd/364756 | 스트라드비젼(STRADVISION) | Data AI Engineer | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
 - [x] #173 | https://www.jobkorea.co.kr/Recruit/GI_Read/49869890 | ㈜코그콤 | 백엔드 / LLM 엔지니어 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 2026-09-20
 - [x] #174 | https://www.jobkorea.co.kr/Recruit/GI_Read/49847774 | (주)미래아이엔씨 | 마케팅 개발 기획자 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 2026-10-26
-- [x] #175 | https://www.wanted.co.kr/wd/363475 | 비바리퍼블리카(토스) | [토스] Node.js Developer (자동화) | 5.0/5 | 지원완료 ✅ (`[토스] 1:1 맞춤 이력서 접수 2026.08.31 - 필수 기술난제 2선 및 코드철학 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
