@@ -123,6 +123,11 @@
 - [x] #172 | https://www.wanted.co.kr/wd/364756 | 스트라드비젼(STRADVISION) | Data AI Engineer | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
 - [x] #173 | https://www.jobkorea.co.kr/Recruit/GI_Read/49869890 | ㈜코그콤 | 백엔드 / LLM 엔지니어 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 2026-09-20
 - [x] #174 | https://www.jobkorea.co.kr/Recruit/GI_Read/49847774 | (주)미래아이엔씨 | 마케팅 개발 기획자 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 2026-10-26
+- [x] #175 | https://www.wanted.co.kr/wd/383588 | 위베어소프트 | SSL 인증서 관리 솔루션 백엔드 개발(3~10년) | 4.9/5 | 지원완료 ✅ (`[위베어소프트] 1:1 맞춤 이력서 접수 2026.08.31 - Spring/JPA 및 외부 연동/배치 팩트 서사 반영`) · 마감 상시
+- [x] #176 | https://www.wanted.co.kr/wd/383523 | 모두싸인 | 백엔드 엔지니어 (Platform Squad) | 5.0/5 | 지원완료 ✅ (`[모두싸인] 1:1 맞춤 이력서 접수 2026.08.31 - 인증/인가 Shared System 및 MySQL 쿼리/트랜잭션 정합성 반영`) · 마감 상시
+- [x] #177 | https://www.wanted.co.kr/wd/338476 | 엣지크로스 | AIoT 서비스 백앤드 개발자 (Cloud Team) | 4.9/5 | 지원완료 ✅ (`[엣지크로스] 1:1 맞춤 이력서 접수 2026.08.31 - Java/Spring Boot & 1,973만 건 대용량 파이프라인 최적화 반영`) · 마감 상시
+- [x] #178 | https://www.wanted.co.kr/wd/317126 | 데일리펀딩 | 핀테크 플랫폼 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`[데일리펀딩] 1:1 맞춤 이력서 접수 2026.08.31 - 금융 트랜잭션 무결성 & Redis Lua 분산 락 반영`) · 마감 상시
+- [x] #179 | https://www.wanted.co.kr/wd/383001 | 팀리부뜨 | AI-Native Engineer (Backend) | 4.9/5 | 지원완료 ✅ (`[팀리부뜨] 1:1 맞춤 이력서 접수 2026.08.31 - Python/Spring Boot 비동기 큐 & SmartQ RAG/VoiceLink 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
