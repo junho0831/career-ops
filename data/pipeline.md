@@ -80,6 +80,34 @@
 - [x] #129 | https://www.wanted.co.kr/wd/362373 | 인플루엔셜(윌라) | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
 - [x] #130 | https://www.wanted.co.kr/wd/380323 | 웨이커 | 백엔드 엔지니어 (1~3년) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
 - [x] #131 | https://www.wanted.co.kr/wd/381326 | 짐싸(ZIMSSA) | 백엔드 개발자 (2년~6년) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.30`) · 마감 상시
+- [x] #132 | https://www.wanted.co.kr/wd/382611 | 와드(캐치테이블) | 백엔드 소프트웨어 엔지니어 (B2C) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #133 | https://www.wanted.co.kr/wd/382722 | 쿠팡(Coupang) | 백엔드 개발자 (Global Mobility & Business Travel) | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #134 | https://www.wanted.co.kr/wd/381751 | 브레이브모바일(숨고,Soomgo) | Backend Engineer | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #135 | https://www.wanted.co.kr/wd/383046 | 여기어때컴퍼니 | Backend Engineer [채널연동] | 5.0/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #136 | https://www.wanted.co.kr/wd/206658 | 화이트큐브(챌린저스) | [챌린저스] 백엔드 개발자 | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #137 | https://www.wanted.co.kr/wd/382907 | 마드라스체크(플로우) | [AI Work Agent 플로우] 엔터프라이즈 개발자 | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #138 | https://www.wanted.co.kr/wd/284183 | 코드잇(codeit) | 백엔드 엔지니어 | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #139 | https://www.wanted.co.kr/wd/382576 | 데일리샷(Dailyshot) | 프로덕트 엔지니어 (Backend) | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #140 | https://www.wanted.co.kr/wd/300693 | 트립비토즈(tripbtoz) | B2C 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #141 | https://www.wanted.co.kr/wd/383167 | 보난자팩토리 | Senior Backend Engineer | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #142 | https://www.wanted.co.kr/wd/383346 | 콕스웨이브(Coxwave) | [AX krewa] 소프트웨어 엔지니어 | 4.9/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #143 | https://www.wanted.co.kr/wd/383298 | 이공이공 | [비즈니스플랫폼팀] 소프트웨어 엔지니어 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #144 | https://www.wanted.co.kr/wd/383410 | 에이베러(참새마트) | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #145 | https://www.wanted.co.kr/wd/383452 | 주밍코리아 | 반도체 장비 제어 3~5년차 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`Wanted 접수 2026.08.31`) · 마감 상시
+- [x] #146 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54880373 | (주)한컴이노스트림 | 솔루션 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #147 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54798089 | (주)리걸케어 | JAVA 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #148 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54704692 | (주)이파피루스 | 백엔드 개발자 (Java/팀원) | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #149 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54608041 | 스냅태그(주) | 백앤드 / 풀스택 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #150 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54698506 | (주)하이브랩 | Java / Spring 백엔드 개발자 (6년 이상) | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #151 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54657876 | (주)와이즈에이아이 | Backend 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #152 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54666951 | 미스터마인드(주) | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #153 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54852950 | (주)아이브릭스 | 웹 프론트엔드/백엔드 경력개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #154 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54852445 | (주)씨어스 | 백엔드 개발자 경력 채용 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #155 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54876292 | (주)유니유니 | JAVA 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.08.31`) · 마감 상시
+- [x] #156 | https://www.jobkorea.co.kr/Recruit/GI_Read/49857893 | 엠아이큐브솔루션㈜ | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
+- [x] #157 | https://www.jobkorea.co.kr/Recruit/GI_Read/49716061 | ㈜에이피알(APR) | 백엔드 개발자 경력사원 | 5.0/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
+- [x] #158 | https://www.jobkorea.co.kr/Recruit/GI_Read/49636454 | ㈜누리미디어(DBpia) | AI 서비스 백엔드 개발자 | 4.9/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
+- [x] #159 | https://www.jobkorea.co.kr/Recruit/GI_Read/49848302 | ㈜네스트 | 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`잡코리아 접수 2026.08.31`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
