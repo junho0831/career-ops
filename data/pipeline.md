@@ -157,6 +157,8 @@
 - [x] #206 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54898894 | 주식회사 스타랩스 | [스타랩스] Web개발 경력자 채용 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.09.01`) · 마감 2026-09-30
 - [x] #207 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54773863 | (주)플레이웍스 | 반려동물 플랫폼 백엔드 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.09.01`) · 마감 2026-09-30
 - [x] #208 | https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54729263 | 토글랩스(주) | 이커머스 SaaS 소프트웨어 개발 Java 개발자 | 4.8/5 | 지원완료 ✅ (`사람인 접수 2026.09.01`) · 마감 2026-09-30
+- [x] #209 | https://www.wanted.co.kr/wd/321958 | 씨제이이엔엠(CJ ENM) | [Mnet Plus] Backend Engineer | 5.0/5 | 지원완료 ✅ (`[CJ ENM] 1:1 맞춤 이력서 접수 2026.09.01 - Java/Spring 글로벌 K-POP 팬덤 트랜잭션 & VoiceLink 10,000 TPS 동시성 반영`) · 마감 상시
+- [x] #210 | https://www.wanted.co.kr/wd/380102 | 핀다(FINDA) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[핀다] 1:1 맞춤 이력서 접수 2026.09.01 - Spring Boot 금융 데이터 파이프라인 & 1,973만 건 배치 8.4배 튜닝 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
