@@ -166,6 +166,8 @@
 - [x] #215 | https://www.wanted.co.kr/wd/364377 | 데이터라이즈(Datarize) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[데이터라이즈] 1:1 맞춤 이력서 접수 2026.09.02 - 일 수백만 건 고객 행동 데이터 분석 파이프라인 & SafeCash 금융 정산 동기화 반영`) · 마감 상시
 - [x] #216 | https://www.wanted.co.kr/wd/344678 | 한국초저온 | 물류시스템 및 경영관리 시스템 개발/운영 | 4.8/5 | 지원완료 ✅ (`[한국초저온] 1:1 맞춤 이력서 접수 2026.09.02 - 스마트 WMS 물류시스템 Java/Spring 및 대용량 입출고 SQL 튜닝 반영`) · 마감 상시
 - [x] #217 | https://www.wanted.co.kr/wd/383994 | 인핸스(Enhans) | AI Backend Engineer (Commerce AI) | 5.0/5 | 지원완료 ✅ (`[인핸스] 1:1 맞춤 이력서 접수 2026.09.02 - SmartQ RAG 지식 검색 API & 1,973만 건 데이터 파이프라인 8.4배 튜닝 반영`) · 마감 상시
+- [x] #218 | https://www.wanted.co.kr/wd/365505 | 쿠팡(Coupang) | [쿠팡이츠] 백엔드 엔지니어 (Eats Customer Engineering) | 5.0/5 | 지원완료 ✅ (`[쿠팡이츠] 1:1 맞춤 이력서 접수 2026.09.03 - 피크 타임 대규모 실시간 주문 트래픽 동시성 제어 & 10,000 TPS 분산 락 반영`) · 마감 상시
+- [x] #219 | https://www.wanted.co.kr/wd/370479 | 비바리퍼블리카(토스) | [토스인슈어런스] Server Developer (Platform/Product) | 5.0/5 | 지원완료 ✅ (`[토스] 1:1 맞춤 이력서 접수 2026.09.03 - 보험/금융 통합 플랫폼 고가용성 서버 & Search Failure DB Fallback 무장애 아키텍처 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
