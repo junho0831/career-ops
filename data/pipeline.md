@@ -166,6 +166,9 @@
 - [x] #227 | https://www.wanted.co.kr/wd/384330 | 컨포트랩(ComfortLab) | [신입~4년차] Software Engineer | 5.0/5 | 지원완료 ✅ (`[컨포트랩] 1:1 맞춤 이력서 접수 2026.09.03 - Manufacturing AX 제조 데이터 플랫폼 & 1,973만 건 센서 배치 8.4배 튜닝 반영`) · 마감 상시
 - [x] #228 | https://www.wanted.co.kr/wd/57878 | 엘리스(Elice) | 백엔드 엔지니어 (Python) | 5.0/5 | 지원완료 ✅ (`[엘리스] 1:1 맞춤 이력서 접수 2026.09.03 - 국가대표 AI 에듀테크 플랫폼 & SmartQ RAG 검색 API & 1,973만 건 대용량 파이프라인 튜닝 반영`) · 마감 상시
 - [x] #229 | https://www.wanted.co.kr/wd/378204 | 콴텍(Quantec) | 로보어드바이저 IRP 시스템 개발 및 운영 | 5.0/5 | 지원완료 ✅ (`[콴텍] 1:1 맞춤 이력서 접수 2026.09.03 - AI 로보어드바이저 IRP 백엔드 & SafeCash 정산 동기화 & 1,973만 건 배치 튜닝 반영`) · 마감 상시
+- [x] #230 | https://www.wanted.co.kr/wd/347509 | 토스플레이스(Toss Place) | Server Developer (Platform) | 5.0/5 | 지원완료 ✅ (`[토스플레이스] 1:1 맞춤 이력서 접수 2026.09.03 - 오프라인 결제 생태계 서버 플랫폼 & VoiceLink 10,000 TPS 분산 락 공통 모듈 & Search Fallback 반영`) · 마감 상시
+- [x] #231 | https://www.wanted.co.kr/wd/360360 | 마켓보로(Marketboro) | BE Developer (주문, 결제) | 5.0/5 | 지원완료 ✅ (`[마켓보로] 1:1 맞춤 이력서 접수 2026.09.03 - B2B 식봄/마켓봄 대규모 주문·결제 백엔드 & SafeCash 정산 동기화 & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
+- [x] #232 | https://www.wanted.co.kr/wd/364716 | 티오더(t'order) | 광고플랫폼 Back-End 개발자 | 5.0/5 | 지원완료 ✅ (`[티오더] 1:1 맞춤 이력서 접수 2026.09.03 - 13만 대 태블릿 인프라 광고 플랫폼 & VoiceLink 10,000 TPS 분산 락 & 1,973만 건 배치 튜닝 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
