@@ -161,6 +161,10 @@
 - [x] #222 | https://www.wanted.co.kr/wd/384436 | 샵라이브(Shoplive) | Software Engineer (Back-end) - 3년 이상 | 5.0/5 | 지원완료 ✅ (`[샵라이브] 1:1 맞춤 이력서 접수 2026.09.03 - 글로벌 비디오커머스 SaaS 백엔드 & VoiceLink 10,000 TPS 동시성 분산 락 반영`) · 마감 상시
 - [x] #223 | https://www.wanted.co.kr/wd/369598 | 페이민트(Paymint) | 백엔드 개발자(Java/Kotlin) | 5.0/5 | 지원완료 ✅ (`[페이민트] 1:1 맞춤 이력서 접수 2026.09.03 - 카카오페이 자회사 간편결제·청구과금 백엔드 & SafeCash 정산 동기화 & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
 - [x] #224 | https://www.wanted.co.kr/wd/284183 | 코드잇(codeit) | 백엔드 엔지니어 | 5.0/5 | 지원완료 ✅ (`[코드잇] 1:1 맞춤 이력서 접수 2026.09.03 - 에듀테크 메인 서비스 백엔드 & VoiceLink 10,000 TPS 동시성 분산 락 & Search Failure DB Fallback 반영`) · 마감 상시
+- [x] #225 | https://www.wanted.co.kr/wd/384503 | 뉴빌리티(Neubility) | [Platform] Backend Engineer | 5.0/5 | 지원완료 ✅ (`[뉴빌리티] 1:1 맞춤 이력서 접수 2026.09.03 - Physical AI 로봇 플랫폼 백엔드 & RabbitMQ 비동기 큐 & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
+- [x] #226 | https://www.wanted.co.kr/wd/384493 | 빅케어(BigCare) | 백엔드 (Backend) 개발자 | 5.0/5 | 지원완료 ✅ (`[빅케어] 1:1 맞춤 이력서 접수 2026.09.03 - 디지털 헬스케어 데이터 플랫폼 & SafeCash 정기 동기화 배치 & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
+- [x] #227 | https://www.wanted.co.kr/wd/384330 | 컨포트랩(ComfortLab) | [신입~4년차] Software Engineer | 5.0/5 | 지원완료 ✅ (`[컨포트랩] 1:1 맞춤 이력서 접수 2026.09.03 - Manufacturing AX 제조 데이터 플랫폼 & 1,973만 건 센서 배치 8.4배 튜닝 반영`) · 마감 상시
+- [x] #228 | https://www.wanted.co.kr/wd/57878 | 엘리스(Elice) | 백엔드 엔지니어 (Python) | 5.0/5 | 지원완료 ✅ (`[엘리스] 1:1 맞춤 이력서 접수 2026.09.03 - 국가대표 AI 에듀테크 플랫폼 & SmartQ RAG 검색 API & 1,973만 건 대용량 파이프라인 튜닝 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
