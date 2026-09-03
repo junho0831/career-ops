@@ -1,18 +1,6 @@
 # Pipeline
 ## Pendientes
 
-### 📅 8월 진행 중 공고 (2026-08-27 ~ 2026-08-31)
-- [x] #058 | https://cafe.naver.com/f-e/cafes/31258781/articles/36205 | F&F | 디지털본부 Java/Spring 백엔드 개발(ERP/AI시스템) | 4.6/5 | PDF ✅ (`output/cv-park-junho-fnf-2026-08-11.pdf`) · 마감 2026-08-31
-- [x] #059 | https://cafe.naver.com/f-e/cafes/31258781/articles/36351 | 에이치아이티 | 풀스택 Nest.js 서버 개발 | 3.8/5 | PDF ❌ · 마감 2026-08-31
-- [x] #060 | https://cafe.naver.com/f-e/cafes/31258781/articles/36278 | (주)에버온 | 플랫폼 백엔드 개발자 (API/Gateway/BFF담당) | 4.6/5 | 지원완료 ✅ (`output/에버온_박준호.pdf`) · 마감 2026-08-31
-- [x] #061 | https://cafe.naver.com/f-e/cafes/31258781/articles/36391 | (주)같다 | Backend/Platform Engineer (DB/Infra) | 4.5/5 | PDF ✅ (`output/같다_박준호.pdf`) · 마감 2026-08-31
-
-### 🏁 마감 완료 공고 (Archived)
-- [x] #044 | https://tving.ninehire.site/job_posting/G6cq38oa | (주)티빙 | Backend Engineer (Java/Kotlin/Spring) | 4.7/5 | 지원완료 ✅ (`output/cv-park-junho-tving-2026-08-16.pdf`) · 마감 2026-08-17
-- [x] #057 | https://cafe.naver.com/f-e/cafes/31258781/articles/36279 | KB국민은행 | 「Back-end 개발」 전문직무직원 | 4.5/5 | 지원완료 ✅ · 마감 2026-08-13
-- [x] #083 | https://zighang.com/recruitment/a247019c-28f3-47ec-9462-e132e8568dbc | 한화투자증권 (한화그룹) | Trading기획팀 IT개발 파트 | 5.0/5 | PDF ✅ (`output/cv-park-junho-hanwha-2026-08-17.pdf`) · 마감 2026-08-26
-- [x] #099 | https://www.skcareers.com/Recruit/Detail/R261762 | SK하이닉스 (SK hynix) | ['26년 하반기] Talent hy-way 기술사무직 신입 | 5.0/5 | 지원완료 및 접수마감 ✅ · 마감 2026-08-26 17:00
-
 ### 🏢 상시 채용 및 수시 채용 진행 공고
 - [x] #064 | https://zighang.com/recruitment/086cca40-9197-4bc9-9190-fd23c1c37b98 | 하이브(HYBE) | 백엔드개발 (커머스) | 4.8/5 | 임시저장 📝 (Draft) · 마감 채용시마감
 - [x] #065 | https://zighang.com/ | CJ올리브영 | 대규모 개발 채용 (Java/Spring 백엔드) | 4.7/5 | 임시저장 📝 (Draft) · 마감 상시
@@ -171,6 +159,8 @@
 - [x] #220 | https://www.wanted.co.kr/wd/281357 | 힐링페이퍼(강남언니) | [병원 운영 솔루션] 백엔드 개발자 (B2B SaaS) | 5.0/5 | 지원완료 ✅ (`[힐링페이퍼] 1:1 맞춤 이력서 접수 2026.09.03 - 병원운영 SaaS 백엔드 및 VoiceLink 10,000 TPS 동시성 분산 락 & Search Failure DB Fallback 반영`) · 마감 상시
 - [x] #221 | https://www.wanted.co.kr/wd/384286 | 올거나이즈코리아(Allganize Korea) | AI Native Back-end Engineer (3년 이상) | 5.0/5 | 지원완료 ✅ (`[올거나이즈코리아] 1:1 맞춤 이력서 접수 2026.09.03 - 글로벌 Agent RAG 파이프라인 & SmartQ RAG 지식 검색 API & 1,973만 건 배치 튜닝 반영`) · 마감 상시
 - [x] #222 | https://www.wanted.co.kr/wd/384436 | 샵라이브(Shoplive) | Software Engineer (Back-end) - 3년 이상 | 5.0/5 | 지원완료 ✅ (`[샵라이브] 1:1 맞춤 이력서 접수 2026.09.03 - 글로벌 비디오커머스 SaaS 백엔드 & VoiceLink 10,000 TPS 동시성 분산 락 반영`) · 마감 상시
+- [x] #223 | https://www.wanted.co.kr/wd/369598 | 페이민트(Paymint) | 백엔드 개발자(Java/Kotlin) | 5.0/5 | 지원완료 ✅ (`[페이민트] 1:1 맞춤 이력서 접수 2026.09.03 - 카카오페이 자회사 간편결제·청구과금 백엔드 & SafeCash 정산 동기화 & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
+- [x] #224 | https://www.wanted.co.kr/wd/284183 | 코드잇(codeit) | 백엔드 엔지니어 | 5.0/5 | 지원완료 ✅ (`[코드잇] 1:1 맞춤 이력서 접수 2026.09.03 - 에듀테크 메인 서비스 백엔드 & VoiceLink 10,000 TPS 동시성 분산 락 & Search Failure DB Fallback 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
@@ -193,3 +183,63 @@
 - [x] **(주)아이지넷 (보닥)**: JAVA Backend Engineer ➔ **임시저장 📝 (Draft)**
 - [x] **(주)베스핀글로벌**: 백엔드 / AI 개발 PL ➔ **임시저장 📝 (Draft)**
 - [x] **(주)아이티아이즈**: 금융 SI/SM 백엔드 개발자 ➔ **임시저장 📝 (Draft)**
+
+- [ ] https://www.jumpit.co.kr/position/54924502 | 뷰리드 강남오피스 | 백엔드 개발자 채용 | 서울
+- [ ] https://www.jumpit.co.kr/position/54908188 | 제네시스네스트 | Java 백엔드 개발자 \[경력 1~8년\] | 서울
+- [ ] https://www.wanted.co.kr/wd/384493 | 빅케어 | 백엔드 (Backend) 개발자 | 서울
+- [ ] https://www.wanted.co.kr/wd/384247 | 스터닝 | 백엔드 개발자(3년 이하) | 서울
+- [ ] https://www.wanted.co.kr/wd/384151 | 디라티오 | 암호화폐 거래소 백엔드 개발자 (7년 이상) | 서울
+- [ ] https://www.wanted.co.kr/wd/384120 | 엠서클 | \[웰다\] Product Engineer_BackEnd 파트 3년 이상 | 서울
+- [ ] https://www.wanted.co.kr/wd/384093 | 위밋모빌리티 | Airflow / Python 개발자 | 서울
+- [ ] https://www.wanted.co.kr/wd/384071 | 모멘티 | 백엔드 개발자 (1~3년) \[역삼역\] | 서울
+- [ ] https://www.wanted.co.kr/wd/384070 | 모멘티 | 백엔드 개발자 (4~10년) \[역삼역\] | 서울
+- [ ] https://www.wanted.co.kr/wd/383989 | 인핸스(Enhans) | AI Backend Engineer (Document AI) | 서울
+- [ ] https://www.wanted.co.kr/wd/383861 | 쿠팡 | \[쿠팡\] 백엔드 개발자 (Orchestration Platform) | 서울
+- [ ] https://www.wanted.co.kr/wd/383855 | 닥터프레소 | 백엔드 개발자 | 서울
+- [ ] https://www.wanted.co.kr/wd/383780 | 제네시스네스트 | Java 백엔드 개발자 (1년~8년) | 경기
+- [ ] https://www.wanted.co.kr/wd/383634 | 카테노이드 | 백엔드 엔지니어(B2B 연동/플랫폼) 10년 이상 | 서울
+- [ ] https://www.wanted.co.kr/wd/383518 | 헤리트 | 백엔드 개발자 (Java/Kotlin) | 경기
+- [ ] https://www.wanted.co.kr/wd/384500 | 사줘 | 백엔드_Ops Engineering (5년이하) | 경기
+- [ ] https://www.wanted.co.kr/wd/384490 | 샵라이브 | Data Engineer - 2년 이상 | 서울
+- [ ] https://www.wanted.co.kr/wd/384432 | 아이지넷(보닥) | \[보닥\] JAVA Backend Engineer (10~12년) | 서울
+- [ ] https://www.wanted.co.kr/wd/384339 | 이그레브 | \[대형통신사\] Data Platform Engineer 8년 이상 | 서울
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932973&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | 주식회사라피플코리아리미티드 | 국내 대기업 계열사 - 백엔드 개발 경력자(과장-부장) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932924&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)블룸에이아이 | \[블룸에이아이\] 백엔드 개발자 경력직 채용 (5년이상) | 서울 중구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932839&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)밀리언웨어 | \[이천,긴급\] 초급 개발자 모집 ( Spring Boot) | 경기 이천시
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932275&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)카카오페이 | 서버 개발자 - 대출 중개/신용관리 서비스 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54931544&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)더블엠소셜컴퍼니 | \[대구\] 더블엠소셜컴퍼니 백엔드 개발자 경력 채용 | 대구 동구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54931478&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)넥사코드 | \[백엔드\] 백엔드 개발자 채용 | 서울 금천구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54928451&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | 인스피언(주) | \[청년디지털일자리\]2026년 상반기 Java 기반 EAI 개발자 | 서울 금천구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54926019&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | 석세스모드 | \[핀테크 스타트업\] 서버 개발자(Backend) 채용 | 서울 서초구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54925440&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)에이치알비즈코리아 | 사내 시스템 개발 및 운영(Back-End)/AI도구/세계적인 게임사 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54920813&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)토트 | \[토트\] Backend Developer 채용 | 경기 하남시
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54920653&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | 위킵 주식회사 | \[구로\] Java 개발자 (AI프레임워크 기반) 채용 | 서울 구로구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54931305&location=ts&searchword=Java+Backend+Engineer&searchType=search&paid_fl=n&search_uuid=311e1332-da05-4dbb-a6eb-c287ced83039 | (주)아크론 | \[서울/상주\]Elastic Search/Java 개발자 경력 채용 공고 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54919922&location=ts&searchword=Java+Backend+Engineer&searchType=search&paid_fl=n&search_uuid=311e1332-da05-4dbb-a6eb-c287ced83039 | ㈜프랭클린테크놀로지 | Backend 개발자 채용 (AWS Backend Develope) | 서울 금천구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54918815&location=ts&searchword=Java+Backend+Engineer&searchType=search&paid_fl=n&search_uuid=311e1332-da05-4dbb-a6eb-c287ced83039 | 비즈톡(주) | \[비즈톡(주)\] 웹,서버 개발 부문 채용 | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54899271&location=ts&searchword=Java+Backend+Engineer&searchType=search&paid_fl=n&search_uuid=311e1332-da05-4dbb-a6eb-c287ced83039 | (주)이즈파크 | JAVA 개발자 채용(유지보수 · 기능개선) | 서울 금천구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54895471&location=ts&searchword=Java+Backend+Engineer&searchType=search&paid_fl=n&search_uuid=311e1332-da05-4dbb-a6eb-c287ced83039 | (주)헤리트 | 백엔드 개발자 (Java/Kotlin) 채용 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54902096&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=0630b424-ad52-42cc-af85-a566cc753e0d | (주)홀빅 | PG 백엔드 개발자 채용 | 서울 송파구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54881407&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=0630b424-ad52-42cc-af85-a566cc753e0d | (주)오상헬스케어 | \[오상헬스케어\] 의료기기 SW 개발 경력 채용 (APP, Backend) | 경기 안양시 동안구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54858629&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=0630b424-ad52-42cc-af85-a566cc753e0d | (주)그린아이티코리아 | 백엔드 개발자 채용 | 서울 송파구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54856268&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=0630b424-ad52-42cc-af85-a566cc753e0d | (주)인터엑스 | 백엔드 (Backend) ​개발자 | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54854980&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=0630b424-ad52-42cc-af85-a566cc753e0d | (주)스포카 | 백엔드 프로그래머(3~10년) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54846791&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=0630b424-ad52-42cc-af85-a566cc753e0d | (주)비바리퍼블리카 | \[토스인슈어런스\] Server Developer(Platform/Product) | 서울 구로구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54832906&location=ts&searchword=Kotlin+Spring+%EB%B0%B1%EC%97%94%EB%93%9C&searchType=search&paid_fl=n&search_uuid=0630b424-ad52-42cc-af85-a566cc753e0d | 토스모바일(주) | \[토스모바일\] Data&Database Backend Engineer 채용 | 서울 금천구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54929066&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | 안진회계법인 | \[딜로이트 안진회계법인\] 26년 하반기 데이터 엔지니어 경력직 | 서울 영등포구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54925042&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | (주)키스템프그룹 | \[정규직/중식제공\] 유명 대기업 데이터 엔지니어 다수 채용 | 서울 구로구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54917873&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | (주)위밋모빌리티 | \[위밋모빌리티\] Airflow / Python 개발자 채용 | 서울 관악구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54917751&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | 주식회사 빅밸류 | \[빅밸류\] Data Engineer(6년 이하) | 서울 성동구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54911592&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | (주)기어세컨드 | \[기어세컨드\] 데이터 엔지니어(DE) 채용 | 서울 성동구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54895452&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | 한국평가정보(주) | \[신용평가팀\] Data Engineer(5년이상) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54875371&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | 토스페이먼츠(주) | 토스페이먼츠 데이터 엔지니어 공개채용 (7년 이하) (~9/10) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54871719&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | (주)에이치알비즈코리아 | 게임 데이터 엔지니어 담당 (플랫폼개발)/세계적인 게임사/판교 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54845411&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | (주)비투윈 | AIEM AI/데이터 엔지니어 채용 | 서울 마포구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54844393&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | 엔에이치엔케이씨피 | \[NHN KCP\] 데이터 엔지니어 담당(4년 이상) | 서울 구로구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54833698&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | (주)코너스톤앤컴퍼니 | \[CORNERSTONE\] 데이터 엔지니어(4년이상) | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54829336&location=ts&searchword=Data+Engineer+Airflow&searchType=search&paid_fl=n&search_uuid=6f595e3c-8bb8-4b93-8b2c-258f2e856707 | 주식회사 투네이션 | \[투네이션\] 데이터 엔지니어를 모집합니다.(3년 이상) | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54925582&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4+Airflow&searchType=search&paid_fl=n&search_uuid=3add8c37-8de6-470d-b63e-45e3aa4aa7e2 | (주)에이치알비즈코리아 | 데이터 엔지니어(Redis, MongoDB, Kafka)/세계적 게임사 | 경기 성남시 분당구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54918206&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4+Airflow&searchType=search&paid_fl=n&search_uuid=3add8c37-8de6-470d-b63e-45e3aa4aa7e2 | 그레이스앤파트너스(주) | 테크바이오기업 백엔드 개발자(2~5년) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54880461&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4+Airflow&searchType=search&paid_fl=n&search_uuid=3add8c37-8de6-470d-b63e-45e3aa4aa7e2 | 그레이스앤파트너스(주) | 테크바이오기업 백엔드 개발자 (미들급) | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54704563&location=ts&searchword=Python+Airflow+Batch&searchType=search&paid_fl=n&search_uuid=d3e86493-a937-4def-8657-d8ab2eb5c4d3 | 식신(주) | AI/데이터 엔지니어 | 서울 강남구
+- [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54323051&location=ts&searchword=Python+Airflow+Batch&searchType=search&paid_fl=n&search_uuid=d3e86493-a937-4def-8657-d8ab2eb5c4d3 | (주)아정네트웍스 | \[아정당\] 데이터 엔지니어 (서울) | 서울 강남구
