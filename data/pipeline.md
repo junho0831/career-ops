@@ -169,6 +169,8 @@
 - [x] #218 | https://www.wanted.co.kr/wd/365505 | 쿠팡(Coupang) | [쿠팡이츠] 백엔드 엔지니어 (Eats Customer Engineering) | 5.0/5 | 지원완료 ✅ (`[쿠팡이츠] 1:1 맞춤 이력서 접수 2026.09.03 - 피크 타임 대규모 실시간 주문 트래픽 동시성 제어 & 10,000 TPS 분산 락 반영`) · 마감 상시
 - [x] #219 | https://www.wanted.co.kr/wd/370479 | 비바리퍼블리카(토스) | [토스인슈어런스] Server Developer (Platform/Product) | 5.0/5 | 지원완료 ✅ (`[토스] 1:1 맞춤 이력서 접수 2026.09.03 - 보험/금융 통합 플랫폼 고가용성 서버 & Search Failure DB Fallback 무장애 아키텍처 반영`) · 마감 상시
 - [x] #220 | https://www.wanted.co.kr/wd/281357 | 힐링페이퍼(강남언니) | [병원 운영 솔루션] 백엔드 개발자 (B2B SaaS) | 5.0/5 | 지원완료 ✅ (`[힐링페이퍼] 1:1 맞춤 이력서 접수 2026.09.03 - 병원운영 SaaS 백엔드 및 VoiceLink 10,000 TPS 동시성 분산 락 & Search Failure DB Fallback 반영`) · 마감 상시
+- [x] #221 | https://www.wanted.co.kr/wd/384286 | 올거나이즈코리아(Allganize Korea) | AI Native Back-end Engineer (3년 이상) | 5.0/5 | 지원완료 ✅ (`[올거나이즈코리아] 1:1 맞춤 이력서 접수 2026.09.03 - 글로벌 Agent RAG 파이프라인 & SmartQ RAG 지식 검색 API & 1,973만 건 배치 튜닝 반영`) · 마감 상시
+- [x] #222 | https://www.wanted.co.kr/wd/384436 | 샵라이브(Shoplive) | Software Engineer (Back-end) - 3년 이상 | 5.0/5 | 지원완료 ✅ (`[샵라이브] 1:1 맞춤 이력서 접수 2026.09.03 - 글로벌 비디오커머스 SaaS 백엔드 & VoiceLink 10,000 TPS 동시성 분산 락 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
