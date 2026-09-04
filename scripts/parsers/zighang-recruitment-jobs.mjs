@@ -18,6 +18,18 @@ const POSITIVE_KEYWORDS = [
   'spring boot',
   'api',
   'platform',
+  'data engineer',
+  'data platform',
+  'data pipeline',
+  'etl',
+  'elt',
+  'batch',
+  'airflow',
+  'ingestion',
+  '데이터 엔지니어',
+  '데이터 플랫폼',
+  '데이터 파이프라인',
+  '배치',
 ];
 
 function withTimeout(promise, ms) {

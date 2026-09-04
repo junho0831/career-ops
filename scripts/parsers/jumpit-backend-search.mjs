@@ -2,17 +2,25 @@
 
 const JUMPIT_API_URLS = [
   'https://api.jumpit.co.kr/api/positions?jobCategory=1&sort=reg_dt&page=1',
-  'https://api.jumpit.co.kr/api/positions?jobCategory=1&sort=reg_dt&page=2'
+  'https://api.jumpit.co.kr/api/positions?jobCategory=1&sort=reg_dt&page=2',
+  'https://api.jumpit.co.kr/api/positions?sort=reg_dt&page=1',
+  'https://api.jumpit.co.kr/api/positions?sort=reg_dt&page=2',
+  'https://api.jumpit.co.kr/api/positions?sort=reg_dt&page=3'
 ];
 
 const MAX_MATCHES = 50;
 
 const POSITIVE_KEYWORDS = [
-  'backend', 'back-end', 'server', 'api', 'platform', 'java', 'kotlin', 'spring', '백엔드', '서버'
+  'backend', 'back-end', 'server', 'api', 'platform', 'java', 'kotlin', 'spring',
+  'data engineer', 'data platform', 'data pipeline', 'etl', 'elt', 'batch', 'airflow', 'ingestion',
+  '백엔드', '서버', '데이터 엔지니어', '데이터 플랫폼', '데이터 파이프라인', '배치'
 ];
 
 const NEGATIVE_KEYWORDS = [
-  'frontend', 'front-end', 'ios', 'android', 'flutter', 'lead', '리드', '팀장', '인턴', 'intern'
+  'frontend', 'front-end', 'ios', 'android', 'flutter', 'lead', '리드', '팀장', '인턴', 'intern',
+  'data scientist', 'data analyst', 'analytics', 'analyst', 'business intelligence', 'bi analyst',
+  'bi engineer', 'bi data engineer', 'machine learning', 'ml engineer', 'mlops', 'sre', 'site reliability',
+  'architect', 'databricks', 'junior', '신입', '주니어', '시니어', '아키텍트', '분석가', '데이터 분석', '리서치'
 ];
 
 function isBackendLike(title) {

@@ -1,5 +1,5 @@
 # Portal Scanner Configuration
-# Focused on Korean Backend Engineering roles (practical matching, not overly strict)
+# Focused on Korean Data/Batch Backend and pragmatic Data Engineering roles
 
 location_filter:
   allow:
@@ -41,6 +41,19 @@ title_filter:
     - "JPA"
     - "MySQL"
     - "Redis"
+    - "Data Engineer"
+    - "Data Platform"
+    - "Data Pipeline"
+    - "ETL"
+    - "ELT"
+    - "Batch"
+    - "Airflow"
+    - "Ingestion"
+    - "데이터 엔지니어"
+    - "데이터 플랫폼"
+    - "데이터 파이프라인"
+    - "배치"
+    - "파이프라인"
   negative:
     # Filter out non-backend roles
     - "Frontend"
@@ -48,12 +61,21 @@ title_filter:
     - "iOS"
     - "Android"
     - "QA"
-    - "Data Engineer"
     - "Machine Learning"
     - "ML"
     - "Data Scientist"
+    - "Data Analyst"
+    - "Analytics Engineer"
+    - "Analyst"
+    - "Business Intelligence"
+    - "BI Analyst"
+    - "BI Engineer"
+    - "BI Data Engineer"
     - "Security Engineer"
-    - "Software Engineer, Data"
+    - "SRE"
+    - "Site Reliability"
+    - "Architect"
+    - "Databricks"
     - "Sales"
     - "HR"
     - "Marketing"
@@ -64,6 +86,14 @@ title_filter:
     - "Blockchain"
     - "Web3"
     - "Crypto"
+    - "분석가"
+    - "데이터 분석"
+    - "데이터 사이언티스트"
+    - "리서치"
+    - "시니어"
+    - "신입"
+    - "주니어"
+    - "아키텍트"
     
     # Filter out wrong seniority (Junior/Intern)
     - "Junior"
@@ -71,6 +101,7 @@ title_filter:
     - "인턴"
     - "Senior"
     - "Sr"
+    - "Junior"
     - "Staff"
     - "Principal"
     - "Lead"
@@ -89,32 +120,36 @@ title_filter:
     - "미들"
 
 search_queries:
-  - name: Wanted — Java Spring Backend 3+
-    query: 'site:www.wanted.co.kr/wd "백엔드" "Java" "Spring" "3년" -지원마감 -프론트엔드 -Senior -Staff -Lead'
+  - name: Wanted — Data/Batch Backend 3+
+    query: 'site:www.wanted.co.kr/wd ("백엔드" OR "서버" OR "Backend Engineer" OR "Data Engineer") ("Java" OR "Spring" OR "Python" OR "Airflow" OR "ETL" OR "Batch") ("3년" OR "3년 이상") -지원마감 -프론트엔드 -Senior -Staff -Lead -Analyst -Data Scientist'
+    enabled: true
+
+  - name: Wanted — Data Engineer Airflow Korea
+    query: 'site:www.wanted.co.kr/wd ("Data Engineer" OR "데이터 엔지니어") ("Airflow" OR "ETL" OR "ELT" OR "Pipeline" OR "배치") -지원마감 -Senior -Staff -Lead -Analyst -Data Scientist'
     enabled: true
 
   - name: Wanted — Backend Engineer Korea
-    query: 'site:www.wanted.co.kr/wd "Backend Engineer" "Java" OR "Kotlin" OR "Spring" "3년 이상" -지원마감 -Senior -Staff -Lead'
+    query: 'site:www.wanted.co.kr/wd ("Backend Engineer" OR "백엔드") ("Java" OR "Kotlin" OR "Spring") ("3년 이상" OR "3년") -지원마감 -Senior -Staff -Lead'
     enabled: true
 
-  - name: Lever — Korea Backend
-    query: 'site:jobs.lever.co "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+  - name: Lever — Korea Data/Batch Backend
+    query: 'site:jobs.lever.co ("Seoul" OR "Korea" OR "한국" OR "서울") ("Backend" OR "백엔드" OR "Server" OR "서버" OR "Data Engineer" OR "데이터 엔지니어" OR "Airflow" OR "ETL") -Senior -Staff -Lead -Analyst -Data Scientist'
     enabled: true
     
-  - name: Greenhouse — Korea Backend
-    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+  - name: Greenhouse — Korea Data/Batch Backend
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io ("Seoul" OR "Korea" OR "한국" OR "서울") ("Backend" OR "백엔드" OR "Server" OR "서버" OR "Data Engineer" OR "데이터 엔지니어" OR "Airflow" OR "ETL") -Senior -Staff -Lead -Analyst -Data Scientist'
     enabled: true
 
-  - name: Ashby — Korea Backend
-    query: 'site:jobs.ashbyhq.com "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+  - name: Ashby — Korea Data/Batch Backend
+    query: 'site:jobs.ashbyhq.com ("Seoul" OR "Korea" OR "한국" OR "서울") ("Backend" OR "백엔드" OR "Server" OR "서버" OR "Data Engineer" OR "데이터 엔지니어" OR "Airflow" OR "ETL") -Senior -Staff -Lead -Analyst -Data Scientist'
     enabled: true
 
-  - name: Workable — Korea Backend
-    query: 'site:apply.workable.com "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+  - name: Workable — Korea Data/Batch Backend
+    query: 'site:apply.workable.com ("Seoul" OR "Korea" OR "한국" OR "서울") ("Backend" OR "백엔드" OR "Server" OR "서버" OR "Data Engineer" OR "데이터 엔지니어" OR "Airflow" OR "ETL") -Senior -Staff -Lead -Analyst -Data Scientist'
     enabled: true
 
-  - name: Wellfound — Korea Backend
-    query: 'site:wellfound.com "Seoul" OR "Korea" OR "한국" OR "서울" "Backend" OR "백엔드" OR "Server" OR "서버" -Senior -Staff -Lead'
+  - name: Wellfound — Korea Data/Batch Backend
+    query: 'site:wellfound.com ("Seoul" OR "Korea" OR "한국" OR "서울") ("Backend" OR "백엔드" OR "Server" OR "서버" OR "Data Engineer" OR "데이터 엔지니어" OR "Airflow" OR "ETL") -Senior -Staff -Lead -Analyst -Data Scientist'
     enabled: true
 
 tracked_companies:
