@@ -174,6 +174,16 @@
 - [x] #235 | https://www.wanted.co.kr/wd/378208 | 다겸(Dagyeom) | MES 개발자 (Java / javascript) | 5.0/5 | 지원완료 ✅ (`[다겸] 1:1 맞춤 이력서 접수 2026.09.04 - SK하이닉스/롯데 파트너 스마트팩토리 MES & 설비 센서 연동 & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
 - [x] #236 | https://www.wanted.co.kr/wd/371149 | 모플(mofl) | AI 수요예측 서비스 Software Engineer | 5.0/5 | 지원완료 ✅ (`[모플] 1:1 맞춤 이력서 접수 2026.09.04 - KAIST AI 수요예측 스마트 제조/공급망 플랫폼 & 1,973만 건 배치 8.4배 최적화 반영`) · 마감 상시
 - [x] #237 | https://www.wanted.co.kr/wd/353727 | 비전스페이스(Visionspace) | 서비스 플랫폼 풀스택 개발자 2년 이상 | 5.0/5 | 지원완료 ✅ (`[비전스페이스] 1:1 맞춤 이력서 접수 2026.09.04 - 로봇시스템공학 전공 & 피지컬 AI 로봇 스마트팩토리 관제 & WebSocket 세션 제어 반영`) · 마감 상시
+- [x] #238 | https://www.wanted.co.kr/wd/343902 | (주)미켈로로보틱스 | 백엔드 개발자 (Michelo AI 로봇 지능화 플랫폼) | 5.0/5 | 지원완료 ✅ (`[미켈로로보틱스] 1:1 맞춤 이력서 접수 2026.09.04 - 로봇시스템공학 전공 & 멀티 제조사 로봇 제어 파이프라인 & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
+- [x] #239 | https://www.wanted.co.kr/wd/366778 | 와트(watt) | 로봇 소프트웨어 엔지니어 | 5.0/5 | 지원완료 ✅ (`[와트] 1:1 맞춤 이력서 접수 2026.09.04 - 로봇시스템공학 전공 & 실내 물류 로봇 이동 자동화 & 상태 제어 반영`) · 마감 상시
+- [x] #240 | https://www.wanted.co.kr/wd/356895 | 메타파머스 | 로봇 SW 엔지니어 | 5.0/5 | 지원완료 ✅ (`[메타파머스] 1:1 맞춤 이력서 접수 2026.09.04 - 로봇시스템공학 전공 & 스마트 자동화 & Python/C++ 시스템 제어 반영`) · 마감 상시
+- [x] #241 | https://www.wanted.co.kr/wd/380589 | 주밍코리아 | 반도체 자동화 시스템 서버/백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[주밍코리아] 1:1 맞춤 이력서 접수 2026.09.04 - 반도체 AMHS 자동 반송시스템 & 엔셀 1,973만 건 제조/공정 로그 8.4배 튜닝 & RDB 장애 대응 반영`) · 마감 상시
+- [x] #242 | https://www.wanted.co.kr/wd/349770 | 마스오토 | Platform Engineer (자율주행 대형트럭 플랫폼) | 5.0/5 | 지원완료 ✅ (`[마스오토] 1:1 맞춤 이력서 접수 2026.09.04 - 로봇시스템공학 전공 & 대규모 주행 데이터 수집·저장 파이프라인 & PostgreSQL 튜닝 반영`) · 마감 상시
+- [x] #243 | https://www.wanted.co.kr/wd/307785 | 씨이랩 | Platform Engineer (Vision AI / 스마트팩토리 인프라) | 5.0/5 | 지원완료 ✅ (`[씨이랩] 1:1 맞춤 이력서 접수 2026.09.04 - 산업용 AI 플랫폼 & Java/Spring Boot & Docker/Kubernetes & 대용량 데이터 처리 반영`) · 마감 상시
+- [x] #244 | https://www.wanted.co.kr/wd/380594 | 아타드(ATAD) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[아타드] 1:1 맞춤 이력서 접수 2026.09.04 - Java/Spring Boot & Docker & MySQL/PostgreSQL & VoiceLink 10,000 TPS 분산 락 반영`) · 마감 상시
+- [x] #245 | https://www.wanted.co.kr/wd/313335 | 마인드허브 | 백엔드 개발자 (Java/Spring Boot) | 5.0/5 | 지원완료 ✅ (`[마인드허브] 1:1 맞춤 이력서 접수 2026.09.04 - Java 17, Spring Boot, JPA, PostgreSQL/MySQL, AWS 인프라 반영`) · 마감 상시
+- [x] #246 | https://www.wanted.co.kr/wd/378391 | 싸이버로지텍 | 해운선사용 IT솔루션 Allegro 개발 및 운영 | 5.0/5 | 지원완료 ✅ (`[싸이버로지텍] 1:1 맞춤 이력서 접수 2026.09.04 - 해운/물류 IT 솔루션 & Java 17, Spring Boot, Oracle/PostgreSQL 데이터 파이프라인 반영`) · 마감 상시
+- [x] #247 | https://www.wanted.co.kr/wd/378851 | 어크로스비 | Full Stack Developer (크로스보더 물류 플랫폼) | 5.0/5 | 지원완료 ✅ (`[어크로스비] 1:1 맞춤 이력서 접수 2026.09.04 - 물류 플랫폼 대규모 데이터 연동 & PostgreSQL, Redis, Spring 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
