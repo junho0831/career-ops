@@ -187,6 +187,11 @@
 - [x] #248 | https://www.wanted.co.kr/wd/345804 | 트립비토즈(tripbtoz) | 호텔(B2B) 시스템 Back-end 개발 | 5.0/5 | 지원완료 ✅ (`[트립비토즈] MCP 자동 접수 2026.09.07 - Java/Spring Framework & 대규모 예약 트래픽 동시성 제어 & LLM/RAG 연동 백엔드 반영`) · 마감 상시
 - [x] #249 | https://www.wanted.co.kr/wd/384703 | 코너스톤앤컴퍼니 | Software Engineer (4년 이상) | 5.0/5 | 지원완료 ✅ (`[코너스톤앤컴퍼니] MCP 자동 접수 2026.09.07 - Java/Spring Boot & 대용량 Batch 처리 & PostgreSQL 쿼리 최적화 & RAG 연계 백엔드 반영`) · 마감 상시
 - [x] #250 | https://www.wanted.co.kr/wd/384634 | 브레인벤쳐스 | 플랫폼 개발자 | 5.0/5 | 지원완료 ✅ (`[브레인벤쳐스] MCP 자동 접수 2026.09.07 - Spring Boot REST API & MySQL 스키마/인덱스 튜닝 & LLM 연동 백엔드 반영`) · 마감 2026.11.04
+- [x] #251 | https://www.wanted.co.kr/wd/376799 | (주)왓섭(Whatsub) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[왓섭] 직행 발굴 & MCP 자동 접수 2026.09.07 - 금융·구독·정산 코어 로직 & 비동기/배치 & PostgreSQL/MySQL 쿼리 튜닝 & AI 에이전트 도구 활용 반영`) · 마감 상시
+- [x] #252 | https://www.wanted.co.kr/wd/375402 | 코리아포트원(PortOne) | FDE (Forward Deployed Engineer, 3년이상) | 5.0/5 | 지원완료 ✅ (`[코리아포트원] 직행 발굴 & MCP 자동 접수 2026.09.07 - B2B 핀테크/PG 연동 백엔드 & Kotlin/Java & PostgreSQL/BigQuery & AI 에이전트 파이프라인 반영`) · 마감 상시
+- [x] #253 | https://www.wanted.co.kr/wd/287859 | 비마이프렌즈(bmyfriends) | Commerce Back-end Developer | 5.0/5 | 지원완료 ✅ (`[비마이프렌즈] 직행 발굴 & MCP 자동 접수 2026.09.07 - 글로벌 크리에이터 이코노미 SaaS 커머스 백엔드 & Kotlin/Java & AWS EKS & RDB/NoSQL 반영`) · 마감 상시
+- [x] #254 | https://www.wanted.co.kr/wd/283093 | 비마이프렌즈(bmyfriends) | 팬덤서비스 Back-end Developer (Junior) | 5.0/5 | 지원완료 ✅ (`[비마이프렌즈] 직행 발굴 & MCP 자동 접수 2026.09.07 - 팬덤 플랫폼 커뮤니티 백엔드 & Kotlin/Java & AWS EKS & RDB/NoSQL 반영`) · 마감 상시
+- [x] #255 | https://www.wanted.co.kr/wd/376431 | (주)인투씨엔에스(IntoCNS) | 백엔드 개발자 (Java/Spring Boot, 3-5년) | 5.0/5 | 지원완료 ✅ (`[인투씨엔에스] 원티드 접수 확인 2026.09.07 - Java/Spring Boot & Spring Batch & MariaDB 쿼리 튜닝 & EMR 클라우드 백엔드`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
