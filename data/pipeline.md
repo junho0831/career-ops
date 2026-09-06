@@ -192,6 +192,27 @@
 - [x] #253 | https://www.wanted.co.kr/wd/287859 | 비마이프렌즈(bmyfriends) | Commerce Back-end Developer | 5.0/5 | 지원완료 ✅ (`[비마이프렌즈] 직행 발굴 & MCP 자동 접수 2026.09.07 - 글로벌 크리에이터 이코노미 SaaS 커머스 백엔드 & Kotlin/Java & AWS EKS & RDB/NoSQL 반영`) · 마감 상시
 - [x] #254 | https://www.wanted.co.kr/wd/283093 | 비마이프렌즈(bmyfriends) | 팬덤서비스 Back-end Developer (Junior) | 5.0/5 | 지원완료 ✅ (`[비마이프렌즈] 직행 발굴 & MCP 자동 접수 2026.09.07 - 팬덤 플랫폼 커뮤니티 백엔드 & Kotlin/Java & AWS EKS & RDB/NoSQL 반영`) · 마감 상시
 - [x] #255 | https://www.wanted.co.kr/wd/376431 | (주)인투씨엔에스(IntoCNS) | 백엔드 개발자 (Java/Spring Boot, 3-5년) | 5.0/5 | 지원완료 ✅ (`[인투씨엔에스] 원티드 접수 확인 2026.09.07 - Java/Spring Boot & Spring Batch & MariaDB 쿼리 튜닝 & EMR 클라우드 백엔드`) · 마감 상시
+- [x] #256 | https://www.wanted.co.kr/wd/384704 | (주)코너스톤앤컴퍼니 | [CORNERSTONE] 데이터 엔지니어(4년이상) | 5.0/5 | 지원완료 ✅ (`[코너스톤앤컴퍼니] MCP 자동 접수 2026.09.07 - ETL/ELT 파이프라인 & 대용량 Batch 처리 & PostgreSQL 쿼리/인덱스 최적화 반영`) · 마감 상시
+- [x] #257 | https://www.wanted.co.kr/wd/370786 | (주)기어세컨드(GEAR2) | 데이터 엔지니어 | 5.0/5 | 지원완료 ✅ (`[기어세컨드] MCP 자동 접수 2026.09.07 - Airflow & Kafka & PostgreSQL 파이프라인 & Spring Boot 백엔드 연계 반영`) · 마감 상시
+- [x] #258 | https://www.wanted.co.kr/wd/383912 | 나이스지니데이타(NICE) | 인프라운영실 데이터 엔지니어 | 5.0/5 | 지원완료 ✅ (`[나이스지니데이타] MCP 자동 접수 2026.09.07 - NiFi/Airflow 대용량 데이터 파이프라인 & 금융/빅데이터 ETL & SQL 튜닝 반영`) · 마감 상시
+- [x] #259 | https://www.wanted.co.kr/wd/378879 | (주)딥세일즈(DeepSales) | 데이터 엔지니어 (3년+) | 5.0/5 | 지원완료 ✅ (`[딥세일즈] MCP 자동 접수 2026.09.07 - 글로벌 B2B 세일즈 데이터 파이프라인 & PostgreSQL/ES 최적화 & Airflow 반영`) · 마감 상시
+- [x] #260 | https://www.wanted.co.kr/wd/382307 | (주)위시드(Wicid) | 데이터 엔지니어 | 5.0/5 | 지원완료 ✅ (`[위시드] MCP 자동 접수 2026.09.07 - 대규모 데이터 수집·정제 파이프라인 & RDB 스키마 모델링 & 배치 최적화 반영`) · 마감 상시
+- [x] #261 | https://www.wanted.co.kr/wd/281356 | 힐링페이퍼(강남언니) | [강남언니] 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[강남언니] MCP 자동 접수 2026.09.07 - Java/Kotlin & Spring Boot & 대규모 트래픽 동시성 제어 & CQRS/RDB 최적화 반영`) · 마감 상시
+- [x] #262 | https://www.wanted.co.kr/wd/384071 | 모멘티(Momenti) | 백엔드 개발자 (1~3년) [역삼역] | 5.0/5 | 지원완료 ✅ (`[모멘티] MCP 자동 접수 2026.09.07 - Java & Spring Boot 웹서비스 전반 개발 & REST API & 클라우드 인프라 연계 반영`) · 마감 상시
+- [x] #263 | https://www.wanted.co.kr/wd/383518 | (주)헤리트(Herit) | 백엔드 개발자 (Java/Kotlin) | 5.0/5 | 지원완료 ✅ (`[헤리트] MCP 자동 접수 2026.09.07 - Java 21/Kotlin & Spring Boot 3.x & PostgreSQL/Redis & 동시성 제어 및 데이터 정합성 반영`) · 마감 상시
+- [x] #264 | https://www.wanted.co.kr/wd/384490 | 샵라이브(Shoplive) | Data Engineer - 2년 이상 | 5.0/5 | 지원완료 ✅ (`[샵라이브] MCP 자동 접수 2026.09.07 - 대용량 실시간 비디오 커머스 데이터 파이프라인 & Airflow/PostgreSQL/BigQuery ETL 최적화 반영`) · 마감 상시
+- [x] #265 | https://www.wanted.co.kr/wd/73386 | 해빗팩토리(HabitFactory) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[해빗팩토리] MCP 자동 접수 2026.09.07 - 시그널플래너 마이데이터/금융 코어 백엔드 & Spring Boot & MySQL 인덱스 튜닝 & RabbitMQ 비동기 반영`) · 마감 상시
+- [x] #266 | https://www.wanted.co.kr/wd/359557 | (주)에비드넷(Evidnet) | 데이터 엔지니어 | 5.0/5 | 지원완료 ✅ (`[에비드넷] MCP 자동 접수 2026.09.07 - 헬스케어 RWD 데이터 파이프라인 & Airflow 오케스트레이션 & 데이터 정합성/멱등성 보장 & SQL 튜닝 반영`) · 마감 상시
+- [x] #267 | https://www.wanted.co.kr/wd/373417 | 캐롯아이(Carrot-i) | 데이터 엔지니어 (사원급) | 5.0/5 | 지원완료 ✅ (`[캐롯아이] MCP 자동 접수 2026.09.07 - 대규모 DB 적재/파이프라인 구축 & SQL 최적화 & AI Agent 데이터 인터페이스 연계 반영`) · 마감 상시
+- [x] #268 | https://www.wanted.co.kr/wd/299607 | 뤼튼테크놀로지스(Wrtn) | Backend Engineer | 5.0/5 | 지원완료 ✅ (`[뤼튼테크놀로지스] MCP 자동 접수 2026.09.07 - 대규모 트래픽 AI 에이전트 백엔드 & Redis 분산 락/캐싱 & 비동기 메시지 큐 & APM 성능 튜닝 반영`) · 마감 상시
+- [x] #269 | https://www.wanted.co.kr/wd/378203 | (주)에이아이콴텍 | 로보어드바이저 IRP 시스템 개발 및 운영 | 5.0/5 | 지원완료 ✅ (`[에이아이콴텍] MCP 자동 접수 2026.09.07 - Java & Spring Boot & Spring Batch & MariaDB 퇴직연금 핀테크 코어 백엔드 반영`) · 마감 2026.09.12
+- [x] #270 | https://www.wanted.co.kr/wd/379696 | (주)에이지엘(AGL) | 백엔드 개발자 (Back-end) | 5.0/5 | 지원완료 ✅ (`[에이지엘] MCP 자동 접수 2026.09.07 - 글로벌 골프 GDS/예약 코어 백엔드 & Java/JPA & RDBMS 모델링 및 쿼리 최적화 반영`) · 마감 상시
+- [x] #271 | https://www.wanted.co.kr/wd/384691 | (주)오토메타(Automata) | AI Agent Engineer (AI 에이전트 엔지니어) | 5.0/5 | 지원완료 ✅ (`[오토메타] MCP 자동 접수 2026.09.07 - AI Agent 턴 루프 & Tool-use/RAG 백엔드 & 분산 락 및 상태 기계 동시성 제어/멱등성 설계 반영`) · 마감 상시
+- [x] #272 | https://www.wanted.co.kr/wd/255060 | (주)쿠팡(Coupang) | Senior Back-end Engineer(Eats Merchant) | 5.0/5 | 지원완료 ✅ (`[쿠팡] MCP 자동 접수 2026.09.07 - 쿠팡이츠 머천트 코어 시스템 & 대규모 분산 아키텍처 & Java 백엔드 & 높은 동시성/가용성 반영`) · 마감 상시
+- [x] #273 | https://www.wanted.co.kr/wd/374992 | (주)포스트매스(PostMath) | [수학비서] 백엔드 개발 3~10년 (대전) | 5.0/5 | 지원완료 ✅ (`[포스트매스] MCP 자동 접수 2026.09.07 - 에듀테크 플랫폼 코어 백엔드 & 대용량 콘텐츠 DB 모델링/최적화 & AI 코딩 도구 파이프라인 반영`) · 마감 상시
+- [x] #274 | https://www.wanted.co.kr/wd/375001 | (주)석세스모드(SuccessMode) | [핀테크 스타트업] 서버 개발자(Backend) | 5.0/5 | 지원완료 ✅ (`[석세스모드] MCP 자동 접수 2026.09.07 - 외국인 택스리펀 핀테크 & Java 17/Spring Boot & JPA/QueryDSL & MariaDB/Redis 반영`) · 마감 상시
+- [x] #275 | https://www.wanted.co.kr/wd/315866 | (주)몰리턴(Moliturn) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[몰리턴] MCP 자동 접수 2026.09.07 - 중소형 금융 컴플라이언스 SaaS 론프라 코어 백엔드 & Spring/MySQL & 비즈니스 로직 안정성 반영`) · 마감 상시
+- [x] #276 | https://www.wanted.co.kr/wd/382000 | (주)취팡(Chupang) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[취팡] MCP 자동 접수 2026.09.07 - 커리어 AI 플랫폼 백엔드 & Java/Kotlin REST API & RDBMS 구조 설계 및 외부 시스템 연계 반영`) · 마감 상시
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
@@ -217,21 +238,16 @@
 
 - [ ] https://www.jumpit.co.kr/position/54924502 | 뷰리드 강남오피스 | 백엔드 개발자 채용 | 서울
 - [ ] https://www.jumpit.co.kr/position/54908188 | 제네시스네스트 | Java 백엔드 개발자 \[경력 1~8년\] | 서울
-- [ ] https://www.wanted.co.kr/wd/384493 | 빅케어 | 백엔드 (Backend) 개발자 | 서울
 - [ ] https://www.wanted.co.kr/wd/384247 | 스터닝 | 백엔드 개발자(3년 이하) | 서울
 - [ ] https://www.wanted.co.kr/wd/384151 | 디라티오 | 암호화폐 거래소 백엔드 개발자 (7년 이상) | 서울
 - [ ] https://www.wanted.co.kr/wd/384120 | 엠서클 | \[웰다\] Product Engineer_BackEnd 파트 3년 이상 | 서울
 - [ ] https://www.wanted.co.kr/wd/384093 | 위밋모빌리티 | Airflow / Python 개발자 | 서울
-- [ ] https://www.wanted.co.kr/wd/384071 | 모멘티 | 백엔드 개발자 (1~3년) \[역삼역\] | 서울
 - [ ] https://www.wanted.co.kr/wd/384070 | 모멘티 | 백엔드 개발자 (4~10년) \[역삼역\] | 서울
 - [ ] https://www.wanted.co.kr/wd/383989 | 인핸스(Enhans) | AI Backend Engineer (Document AI) | 서울
 - [ ] https://www.wanted.co.kr/wd/383861 | 쿠팡 | \[쿠팡\] 백엔드 개발자 (Orchestration Platform) | 서울
 - [ ] https://www.wanted.co.kr/wd/383855 | 닥터프레소 | 백엔드 개발자 | 서울
-- [ ] https://www.wanted.co.kr/wd/383780 | 제네시스네스트 | Java 백엔드 개발자 (1년~8년) | 경기
 - [ ] https://www.wanted.co.kr/wd/383634 | 카테노이드 | 백엔드 엔지니어(B2B 연동/플랫폼) 10년 이상 | 서울
-- [ ] https://www.wanted.co.kr/wd/383518 | 헤리트 | 백엔드 개발자 (Java/Kotlin) | 경기
 - [ ] https://www.wanted.co.kr/wd/384500 | 사줘 | 백엔드_Ops Engineering (5년이하) | 경기
-- [ ] https://www.wanted.co.kr/wd/384490 | 샵라이브 | Data Engineer - 2년 이상 | 서울
 - [ ] https://www.wanted.co.kr/wd/384432 | 아이지넷(보닥) | \[보닥\] JAVA Backend Engineer (10~12년) | 서울
 - [ ] https://www.wanted.co.kr/wd/384339 | 이그레브 | \[대형통신사\] Data Platform Engineer 8년 이상 | 서울
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932973&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | 주식회사라피플코리아리미티드 | 국내 대기업 계열사 - 백엔드 개발 경력자(과장-부장) | 서울 강남구
