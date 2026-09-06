@@ -184,6 +184,9 @@
 - [x] #245 | https://www.wanted.co.kr/wd/313335 | 마인드허브 | 백엔드 개발자 (Java/Spring Boot) | 5.0/5 | 지원완료 ✅ (`[마인드허브] 1:1 맞춤 이력서 접수 2026.09.04 - Java 17, Spring Boot, JPA, PostgreSQL/MySQL, AWS 인프라 반영`) · 마감 상시
 - [x] #246 | https://www.wanted.co.kr/wd/378391 | 싸이버로지텍 | 해운선사용 IT솔루션 Allegro 개발 및 운영 | 5.0/5 | 지원완료 ✅ (`[싸이버로지텍] 1:1 맞춤 이력서 접수 2026.09.04 - 해운/물류 IT 솔루션 & Java 17, Spring Boot, Oracle/PostgreSQL 데이터 파이프라인 반영`) · 마감 상시
 - [x] #247 | https://www.wanted.co.kr/wd/378851 | 어크로스비 | Full Stack Developer (크로스보더 물류 플랫폼) | 5.0/5 | 지원완료 ✅ (`[어크로스비] 1:1 맞춤 이력서 접수 2026.09.04 - 물류 플랫폼 대규모 데이터 연동 & PostgreSQL, Redis, Spring 반영`) · 마감 상시
+- [x] #248 | https://www.wanted.co.kr/wd/345804 | 트립비토즈(tripbtoz) | 호텔(B2B) 시스템 Back-end 개발 | 5.0/5 | 지원완료 ✅ (`[트립비토즈] MCP 자동 접수 2026.09.07 - Java/Spring Framework & 대규모 예약 트래픽 동시성 제어 & LLM/RAG 연동 백엔드 반영`) · 마감 상시
+- [x] #249 | https://www.wanted.co.kr/wd/384703 | 코너스톤앤컴퍼니 | Software Engineer (4년 이상) | 5.0/5 | 지원완료 ✅ (`[코너스톤앤컴퍼니] MCP 자동 접수 2026.09.07 - Java/Spring Boot & 대용량 Batch 처리 & PostgreSQL 쿼리 최적화 & RAG 연계 백엔드 반영`) · 마감 상시
+- [x] #250 | https://www.wanted.co.kr/wd/384634 | 브레인벤쳐스 | 플랫폼 개발자 | 5.0/5 | 지원완료 ✅ (`[브레인벤쳐스] MCP 자동 접수 2026.09.07 - Spring Boot REST API & MySQL 스키마/인덱스 튜닝 & LLM 연동 백엔드 반영`) · 마감 2026.11.04
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
