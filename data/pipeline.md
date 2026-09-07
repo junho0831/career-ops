@@ -213,6 +213,7 @@
 - [x] #274 | https://www.wanted.co.kr/wd/375001 | (주)석세스모드(SuccessMode) | [핀테크 스타트업] 서버 개발자(Backend) | 5.0/5 | 지원완료 ✅ (`[석세스모드] MCP 자동 접수 2026.09.07 - 외국인 택스리펀 핀테크 & Java 17/Spring Boot & JPA/QueryDSL & MariaDB/Redis 반영`) · 마감 상시
 - [x] #275 | https://www.wanted.co.kr/wd/315866 | (주)몰리턴(Moliturn) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[몰리턴] MCP 자동 접수 2026.09.07 - 중소형 금융 컴플라이언스 SaaS 론프라 코어 백엔드 & Spring/MySQL & 비즈니스 로직 안정성 반영`) · 마감 상시
 - [x] #276 | https://www.wanted.co.kr/wd/382000 | (주)취팡(Chupang) | 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[취팡] MCP 자동 접수 2026.09.07 - 커리어 AI 플랫폼 백엔드 & Java/Kotlin REST API & RDBMS 구조 설계 및 외부 시스템 연계 반영`) · 마감 상시
+- [x] #277 | https://toss.im/career/job-detail?job_id=7924405003 | 토스플레이스(Toss Place) | Server Developer 3~6년차 집중채용 (~9/10) | 5.0/5 | 지원완료 ✅ (`[토스 공식 채용관 직지원] 2026.09.07 접수 완결 - Java/Kotlin Spring 백엔드 & 엔셀 재직 경력 & cv-park-junho.pdf`) · 마감 2026.09.10
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
 - [x] #012 | https://cafe.naver.com/f-e/cafes/31258781/articles/36458 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | 지원완료 ✅ · 마감 2026-09-30
