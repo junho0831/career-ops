@@ -223,6 +223,7 @@
 - [x] #284 | https://www.wanted.co.kr/wd/110433 | 샘표식품 (Sempio) | 플랫폼개발 (경영혁신본부) | 5.0/5 | 지원완료 ✅ (`[샘표식품] Wanted 전용 복제 이력서 접수 2026.09.08 - 중견 F&B 전사 시스템 구축 & Java/Spring/AI 코딩 에이전트/ERP 연계 반영`) · 마감 상시
 - [x] #285 | https://www.wanted.co.kr/wd/377225 | 비바리퍼블리카(토스) | [토스인슈어런스] Server Developer(Finance) | 5.0/5 | 지원완료 ✅ (`[토스] Wanted 전용 복제 이력서 접수 2026.09.08 - 빅테크/핀테크 금융 결제·정산 고가용성 서버 & Java/Kotlin Spring & 데이터 정합성 최적화 반영`) · 마감 상시
 - [x] #286 | https://www.wanted.co.kr/wd/383523 | (주)모두싸인(Modusign) | 백엔드 엔지니어 (Platform Squad) | 5.0/5 | 지원완료 ✅ (`[모두싸인] Wanted 전용 복제 이력서 접수 2026.09.08 - 시리즈A+ 전자계약 B2B SaaS Shared System & Authz ReBAC / 멀티테넌트 Core+Adapter / Java·Kotlin·Spring 백엔드 반영`) · 마감 상시
+- [x] #287 | https://www.wanted.co.kr/wd/385292 | (주)래블업(Lablup) | Fullstack Software Engineer (MLOps 플랫폼) | 5.0/5 | 지원완료 ✅ (`[래블업] Wanted 전용 복제 이력서 접수 2026.09.09 - 누적투자 100억+ MLOps 플랫폼 Backend.AI FastTrack 파이프라인 & Python/Airflow 대용량 배치 최적화 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
