@@ -227,6 +227,7 @@
 - [x] #288 | https://www.wanted.co.kr/wd/381668 | (주)파수에이아이(Fasoo AI) | 네트워크 보안 데이터 분석 시스템 개발 (5년 이상) | 5.0/5 | 지원완료 ✅ (`[파수에이아이] Wanted 전용 복제 이력서 접수 2026.09.09 - 코스닥 상장 보안 선도기업(파수 자회사) 네트워크 보안 데이터 분석·대용량 트래픽 수집/가시화 & Java/Spring/대용량 DB 최적화 반영`) · 마감 상시
 - [x] #289 | https://www.wanted.co.kr/wd/366486 | (주)인포시즈(Infosys) | Sr. Software Engineer (Backend) | 5.0/5 | 지원완료 ✅ (`[인포시즈] Wanted 전용 복제 이력서 접수 2026.09.09 - Enterprise AI 인프라 코어 엔진 & 대규모 산업 데이터 파이프라인/Java·Go 확장성 아키텍처 반영`) · 마감 상시
 - [x] #290 | https://www.wanted.co.kr/wd/378218 | (주)로워드(Loward) | Back-End Engineer | 5.0/5 | 지원완료 ✅ (`[로워드] Wanted 전용 복제 이력서 접수 2026.09.09 - 교육 DX LMS 멀티테넌트 플랫폼 & 주문·결제·정산 데이터 모델링 및 PostgreSQL/MySQL 튜닝/정합성 반영`) · 마감 2026.09.30
+- [x] #291 | https://www.wanted.co.kr/wd/384757 | (주)어베어(Windly) | [퍼비스] AI 프로덕트 엔지니어 | 5.0/5 | 지원완료 ✅ (`[어베어/윈들리] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈A B2B 이커머스 자동화 SaaS & AI Agent 워크플로우/Kotlin·Spring/API·비동기 처리 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
