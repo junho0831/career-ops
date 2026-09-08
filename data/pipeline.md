@@ -225,6 +225,7 @@
 - [x] #286 | https://www.wanted.co.kr/wd/383523 | (주)모두싸인(Modusign) | 백엔드 엔지니어 (Platform Squad) | 5.0/5 | 지원완료 ✅ (`[모두싸인] Wanted 전용 복제 이력서 접수 2026.09.08 - 시리즈A+ 전자계약 B2B SaaS Shared System & Authz ReBAC / 멀티테넌트 Core+Adapter / Java·Kotlin·Spring 백엔드 반영`) · 마감 상시
 - [x] #287 | https://www.wanted.co.kr/wd/385292 | (주)래블업(Lablup) | Fullstack Software Engineer (MLOps 플랫폼) | 5.0/5 | 지원완료 ✅ (`[래블업] Wanted 전용 복제 이력서 접수 2026.09.09 - 누적투자 100억+ MLOps 플랫폼 Backend.AI FastTrack 파이프라인 & Python/Airflow 대용량 배치 최적화 반영`) · 마감 상시
 - [x] #288 | https://www.wanted.co.kr/wd/381668 | (주)파수에이아이(Fasoo AI) | 네트워크 보안 데이터 분석 시스템 개발 (5년 이상) | 5.0/5 | 지원완료 ✅ (`[파수에이아이] Wanted 전용 복제 이력서 접수 2026.09.09 - 코스닥 상장 보안 선도기업(파수 자회사) 네트워크 보안 데이터 분석·대용량 트래픽 수집/가시화 & Java/Spring/대용량 DB 최적화 반영`) · 마감 상시
+- [x] #289 | https://www.wanted.co.kr/wd/366486 | (주)인포시즈(Infosys) | Sr. Software Engineer (Backend) | 5.0/5 | 지원완료 ✅ (`[인포시즈] Wanted 전용 복제 이력서 접수 2026.09.09 - Enterprise AI 인프라 코어 엔진 & 대규모 산업 데이터 파이프라인/Java·Go 확장성 아키텍처 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
