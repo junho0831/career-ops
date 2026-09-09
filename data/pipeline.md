@@ -238,6 +238,8 @@
 - [x] #299 | https://www.wanted.co.kr/wd/384907 | (주)비댁스(BDACS) | Backend Engineer | 5.0/5 | 지원완료 ✅ (`[비댁스] Wanted 전용 복제 이력서 접수 2026.09.09 - 수탁고 800억+ 디지털 자산 커스터디 & 입출금·정산 금융 도메인 로직 및 Java/Kotlin/Spring/Redis/Message Queue 정합성 반영`) · 마감 2026.09.20
 - [x] #300 | https://www.wanted.co.kr/wd/384668 | 모드하우스(Modhaus) | Product Engineer | 5.0/5 | 지원완료 ✅ (`[모드하우스] Wanted 전용 복제 이력서 접수 2026.09.09 - 누적 450억+(시리즈A·B) K-POP 엔터테크 스타트업 tripleS/COSMO & 대규모 트래픽 분산 백엔드·NestJS/MySQL/Redis/AWS/AI 도구 활용 반영`) · 마감 상시
 - [x] #301 | https://www.wanted.co.kr/wd/384746 | (주)몬드리안에이아이(Mondrian AI) | AI 플랫폼 엔지니어 | 5.0/5 | 지원완료 ✅ (`[몬드리안에이아이] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈A Enterprise AI 플랫폼 Yennefer & RunyourAgent LLM/Agent 아키텍처/RAG/Python·FastAPI/API 서빙 반영`) · 마감 상시
+- [x] #302 | https://www.wanted.co.kr/wd/381364 | (주)스퀘어스(Squares) | AI 바이브코딩 웹사이트 빌더 - 풀스택 개발자 | 5.0/5 | 지원완료 ✅ (`[스퀘어스] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈A 15만 사이트 큐샵(QShop) & AI 웹빌더 코어/NestJS/Next.js/AWS/결제·주문·대용량 트래픽 반영`) · 마감 상시
+- [x] #303 | https://www.wanted.co.kr/wd/384384 | 올거나이즈코리아(Allganize Korea) | FDE(Infra) - Kubernetes Field Engineer | 5.0/5 | 지원완료 ✅ (`[올거나이즈코리아] Wanted 전용 복제 이력서 접수 2026.09.09 - 누적 468억(시리즈B) 글로벌 AI 올인원 솔루션 & K8s/Helm Chart/On-premise/Air-gapped 인프라·LLM Agent 배포 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
