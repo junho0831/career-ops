@@ -240,6 +240,9 @@
 - [x] #301 | https://www.wanted.co.kr/wd/384746 | (주)몬드리안에이아이(Mondrian AI) | AI 플랫폼 엔지니어 | 5.0/5 | 지원완료 ✅ (`[몬드리안에이아이] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈A Enterprise AI 플랫폼 Yennefer & RunyourAgent LLM/Agent 아키텍처/RAG/Python·FastAPI/API 서빙 반영`) · 마감 상시
 - [x] #302 | https://www.wanted.co.kr/wd/381364 | (주)스퀘어스(Squares) | AI 바이브코딩 웹사이트 빌더 - 풀스택 개발자 | 5.0/5 | 지원완료 ✅ (`[스퀘어스] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈A 15만 사이트 큐샵(QShop) & AI 웹빌더 코어/NestJS/Next.js/AWS/결제·주문·대용량 트래픽 반영`) · 마감 상시
 - [x] #303 | https://www.wanted.co.kr/wd/384384 | 올거나이즈코리아(Allganize Korea) | FDE(Infra) - Kubernetes Field Engineer | 5.0/5 | 지원완료 ✅ (`[올거나이즈코리아] Wanted 전용 복제 이력서 접수 2026.09.09 - 누적 468억(시리즈B) 글로벌 AI 올인원 솔루션 & K8s/Helm Chart/On-premise/Air-gapped 인프라·LLM Agent 배포 반영`) · 마감 상시
+- [x] #304 | https://www.wanted.co.kr/wd/383011 | (주)렌트리(Rentree) | DevOps 엔지니어 (DevOps Engineer) | 5.0/5 | 지원완료 ✅ (`[렌트리] Wanted 전용 복제 이력서 접수 2026.09.09 - 누적 100억+(시리즈A) 라이프스타일 렌탈 1위 플랫폼 & AWS/EKS/IaC/CI·CD/Observability/Claude Code 활용 반영`) · 마감 상시
+- [x] #305 | https://www.wanted.co.kr/wd/365172 | (주)랩씨드(Labxiid) | Python Backend 및 AI 개발 | 5.0/5 | 지원완료 ✅ (`[랩씨드] Wanted 전용 복제 이력서 접수 2026.09.09 - AI 데이터 관리 플랫폼 & LangGraph 에이전트 워크플로우/RAG/NL2SQL/FastAPI/Vector DB/MCP 연동 반영`) · 마감 상시
+- [x] #306 | https://www.wanted.co.kr/wd/378200 | (주)로워드(Loward) | Back-End Engineer | 5.0/5 | 지원완료 ✅ (`[로워드] Wanted 전용 복제 이력서 접수 2026.09.09 - 교육 DX LMS 멀티테넌트 B2B SaaS & Kotlin/Spring Boot/MySQL/Redis/대용량 트래픽 백엔드 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
