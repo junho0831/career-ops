@@ -237,6 +237,7 @@
 - [x] #298 | https://www.wanted.co.kr/wd/385189 | (주)조인트(JointInc.) | Product Engineer | 5.0/5 | 지원완료 ✅ (`[조인트] Wanted 전용 복제 이력서 접수 2026.09.09 - B2B 사외 협업 AI 플랫폼 Joint & Kotlin/Spring Boot/Redis/AWS/RESTful API 백엔드 풀사이클 반영`) · 마감 상시
 - [x] #299 | https://www.wanted.co.kr/wd/384907 | (주)비댁스(BDACS) | Backend Engineer | 5.0/5 | 지원완료 ✅ (`[비댁스] Wanted 전용 복제 이력서 접수 2026.09.09 - 수탁고 800억+ 디지털 자산 커스터디 & 입출금·정산 금융 도메인 로직 및 Java/Kotlin/Spring/Redis/Message Queue 정합성 반영`) · 마감 2026.09.20
 - [x] #300 | https://www.wanted.co.kr/wd/384668 | 모드하우스(Modhaus) | Product Engineer | 5.0/5 | 지원완료 ✅ (`[모드하우스] Wanted 전용 복제 이력서 접수 2026.09.09 - 누적 450억+(시리즈A·B) K-POP 엔터테크 스타트업 tripleS/COSMO & 대규모 트래픽 분산 백엔드·NestJS/MySQL/Redis/AWS/AI 도구 활용 반영`) · 마감 상시
+- [x] #301 | https://www.wanted.co.kr/wd/384746 | (주)몬드리안에이아이(Mondrian AI) | AI 플랫폼 엔지니어 | 5.0/5 | 지원완료 ✅ (`[몬드리안에이아이] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈A Enterprise AI 플랫폼 Yennefer & RunyourAgent LLM/Agent 아키텍처/RAG/Python·FastAPI/API 서빙 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
