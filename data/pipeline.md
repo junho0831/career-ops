@@ -229,6 +229,7 @@
 - [x] #290 | https://www.wanted.co.kr/wd/378218 | (주)로워드(Loward) | Back-End Engineer | 5.0/5 | 지원완료 ✅ (`[로워드] Wanted 전용 복제 이력서 접수 2026.09.09 - 교육 DX LMS 멀티테넌트 플랫폼 & 주문·결제·정산 데이터 모델링 및 PostgreSQL/MySQL 튜닝/정합성 반영`) · 마감 2026.09.30
 - [x] #291 | https://www.wanted.co.kr/wd/384757 | (주)어베어(Windly) | [퍼비스] AI 프로덕트 엔지니어 | 5.0/5 | 지원완료 ✅ (`[어베어/윈들리] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈A B2B 이커머스 자동화 SaaS & AI Agent 워크플로우/Kotlin·Spring/API·비동기 처리 반영`) · 마감 상시
 - [x] #292 | https://www.wanted.co.kr/wd/373719 | (주)위밋모빌리티(Wemeet Mobility) | AI FM 모델 개발 · MLOps 백엔드/플랫폼 엔지니어 | 5.0/5 | 지원완료 ✅ (`[위밋모빌리티] Wanted 전용 복제 이력서 접수 2026.09.09 - 시리즈C 누적100억+ AI 물류 지능화 LIO/ROOUTY & 수요예측 데이터 파이프라인/MLOps/Python·배치 연동 반영`) · 마감 2026.09.20
+- [x] #293 | https://www.wanted.co.kr/wd/383217 | (주)스퀘어스(Squares) | AI Product Engineer / AI Head | 5.0/5 | 지원완료 ✅ (`[스퀘어스] Wanted 전용 복제 이력서 접수 2026.09.09 - 15만 사이트 노코드/AI 웹빌더 큐샵(QShop) & LLM Foundation/RAG/Context Engineering/백엔드 API·DB 연동 반영`) · 마감 2026.09.27
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
