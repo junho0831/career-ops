@@ -232,6 +232,7 @@
 - [x] #293 | https://www.wanted.co.kr/wd/383217 | (주)스퀘어스(Squares) | AI Product Engineer / AI Head | 5.0/5 | 지원완료 ✅ (`[스퀘어스] Wanted 전용 복제 이력서 접수 2026.09.09 - 15만 사이트 노코드/AI 웹빌더 큐샵(QShop) & LLM Foundation/RAG/Context Engineering/백엔드 API·DB 연동 반영`) · 마감 2026.09.27
 - [x] #294 | https://www.wanted.co.kr/wd/368779 | (주)에이든랩(Aiden Lab) | Wasabi10 백엔드 개발자 | 5.0/5 | 지원완료 ✅ (`[에이든랩] Wanted 전용 복제 이력서 접수 2026.09.09 - 글로벌 이커머스·마케팅 솔루션(Wasabi10/incode8) & PostgreSQL 모델링/마이그레이션 및 Redis 비동기 워커/배치 스케줄러 반영`) · 마감 2026.09.16
 - [x] #295 | https://www.wanted.co.kr/wd/385017 | (주)데이터드리븐(DataDriven) | 풀스택 제품 개발자(3년 이상) | 5.0/5 | 지원완료 ✅ (`[데이터드리븐] Wanted 전용 복제 이력서 접수 2026.09.09 - 5,400개교 보급 AI 교육 SaaS 클리포(CLIPO) & Python/Django/PostgreSQL/Redis/K8s/데이터 정합성 반영`) · 마감 2026.10.11
+- [x] #296 | https://www.wanted.co.kr/wd/290198 | (주)이터랩(IterLab/세니아클리닉) | 백엔드 개발 (4년이상) | 5.0/5 | 지원완료 ✅ (`[이터랩] Wanted 전용 복제 이력서 접수 2026.09.09 - 월매출 50억+ 글로벌 헬스케어 DX 플랫폼 & Node.js/PostgreSQL/Redis/Kafka/대용량 데이터 파이프라인 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
