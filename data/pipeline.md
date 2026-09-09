@@ -234,6 +234,7 @@
 - [x] #295 | https://www.wanted.co.kr/wd/385017 | (주)데이터드리븐(DataDriven) | 풀스택 제품 개발자(3년 이상) | 5.0/5 | 지원완료 ✅ (`[데이터드리븐] Wanted 전용 복제 이력서 접수 2026.09.09 - 5,400개교 보급 AI 교육 SaaS 클리포(CLIPO) & Python/Django/PostgreSQL/Redis/K8s/데이터 정합성 반영`) · 마감 2026.10.11
 - [x] #296 | https://www.wanted.co.kr/wd/290198 | (주)이터랩(IterLab/세니아클리닉) | 백엔드 개발 (4년이상) | 5.0/5 | 지원완료 ✅ (`[이터랩] Wanted 전용 복제 이력서 접수 2026.09.09 - 월매출 50억+ 글로벌 헬스케어 DX 플랫폼 & Node.js/PostgreSQL/Redis/Kafka/대용량 데이터 파이프라인 반영`) · 마감 상시
 - [x] #297 | https://www.wanted.co.kr/wd/385255 | (주)아일리스프런티어(ailysfrontier) | 인공지능 시스템 백엔드 서버 개발자 | 5.0/5 | 지원완료 ✅ (`[아일리스프런티어] Wanted 전용 복제 이력서 접수 2026.09.09 - 13년차 NLP/AI 솔루션 전문기업 음성봇·챗봇 & Java/Spring Boot/MySQL/ES/Message Queue 백엔드 반영`) · 마감 상시
+- [x] #298 | https://www.wanted.co.kr/wd/385189 | (주)조인트(JointInc.) | Product Engineer | 5.0/5 | 지원완료 ✅ (`[조인트] Wanted 전용 복제 이력서 접수 2026.09.09 - B2B 사외 협업 AI 플랫폼 Joint & Kotlin/Spring Boot/Redis/AWS/RESTful API 백엔드 풀사이클 반영`) · 마감 상시
 
 
 ### 🗓️ 9월 이후 마감 예정 (2026-09-01 ~ )
