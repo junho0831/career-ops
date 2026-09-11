@@ -2,6 +2,12 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 69 | 2026-09-11 | 콕스웨이브 | [AX AgentX] 데이터 엔지니어 (RAG/LLM Pipeline) | 5.0/5 | Applied | ✅ | [069](../reports/069-coxwave-rag-data-engineer-2026-09-11.md) | 원티드 접수 완료 (RAG 검색 API/대용량 파이프라인 맞춤 이력서) |
+| 68 | 2026-09-11 | 왓챠 | 백엔드 개발자 - 미디어 플랫폼 | 5.0/5 | Applied | ✅ | [068](../reports/068-watcha-media-backend-2026-09-11.md) | 원티드 접수 완료 (실시간 세션/미디어 스트리밍 맞춤 이력서) |
+| 67 | 2026-09-11 | 다음(카카오) | 커머스 BackEnd 개발 | 5.0/5 | Applied | ✅ | [067](../reports/067-daum-commerce-backend-2026-09-11.md) | 원티드 접수 완료 (이커머스 결제·트랜잭션 무결성 맞춤 이력서) |
+| 66 | 2026-09-11 | 버즈빌 | 백엔드 개발자 (3년 이상) | 4.9/5 | Applied | ✅ | [066](../reports/066-buzzvil-backend-developer-2026-09-11.md) | 원티드 접수 완료 (대규모 트래픽/Redis Lua 동시성 제어 맞춤 이력서) |
+| 65 | 2026-09-11 | 에어스메디컬 | [SwiftMR] Backend Engineer | 4.9/5 | Applied | ✅ | [065](../reports/065-airsmedical-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (의료 AI SaaS/대용량 파이프라인 맞춤 이력서) |
+| 64 | 2026-09-11 | 테크타카(ARGO) | Software Engineer (Backend) | 5.0/5 | Applied | ✅ | [064](../reports/064-techtaka-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (풀필먼트 데이터 파이프라인/무중단 Uptime 맞춤 이력서) |
 | 62 | 2026-08-11 | 비비티에이아이 | Backend Developer | 4.6/5 | Applied | ✅ | [062](../reports/062-bbtai-2026-08-11.md) | 원티드 서류 제출 완료 (2026-08-12) |
 | 61 | 2026-08-11 | (주)같다 | Backend/Platform Engineer (DB/Infra) | 4.5/5 | Evaluated | ✅ | [061](../reports/061-gatda-2026-08-11.md) | DB 쿼리/인덱스 최적화, Docker/Infra 백엔드 100% 매칭 |
 | 60 | 2026-08-11 | (주)에버온 | 플랫폼 백엔드 개발자 (API/Gateway/BFF담당) | 4.6/5 | Applied | ✅ | [060](../reports/060-everon-2026-08-11.md) | 원티드 서류 제출 완료 (2026-08-12). 에버온_박준호.pdf 첨부 |
