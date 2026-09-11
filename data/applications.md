@@ -2,6 +2,12 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 75 | 2026-09-11 | (주)콜로세움코퍼레이션 | Backend Engineer (스마트 풀필먼트 물류) | 4.9/5 | Applied | ✅ | [075](../reports/075-colosseum-fulfillment-backend-2026-09-11.md) | 사람인 접수 완료 (물류 데이터 파이프라인/배치 정합성 맞춤 이력서) |
+| 74 | 2026-09-11 | (주)더스윙 | 백엔드 개발자 (모빌리티 플랫폼) | 4.9/5 | Applied | ✅ | [074](../reports/074-theswing-mobility-backend-2026-09-11.md) | 사람인 접수 완료 (실시간 위치/10,000 TPS 분산 락 맞춤 이력서) |
+| 73 | 2026-09-11 | 안진회계법인(Deloitte) | 26년 하반기 데이터 엔지니어 경력직 | 5.0/5 | Applied | ✅ | [073](../reports/073-deloitte-data-engineer-2026-09-11.md) | 사람인 접수 완료 (Airflow 1,973만 건 대용량 파이프라인 맞춤 이력서) |
+| 72 | 2026-09-11 | 카카오페이 | [스테이블코인] 서버 개발자 - 스테이블코인 발행 & 유통 | 5.0/5 | Applied | ✅ | [072](../reports/072-kakaopay-stablecoin-server-2026-09-11.md) | 사람인 접수 완료 (분산 상태 설계/Outbox 패턴 맞춤 이력서) |
+| 71 | 2026-09-11 | 카카오페이 | 서버 개발자 - 대출 중개/신용관리 서비스 | 5.0/5 | Applied | ✅ | [071](../reports/071-kakaopay-loan-server-2026-09-11.md) | 사람인 접수 완료 (금융 코어 트랜잭션 무결성/SafeCash 정합성 맞춤 이력서) |
+| 70 | 2026-09-11 | 네이버웹툰(유) | [네이버웹툰] Disney 디지털 코믹스 플랫폼 서버 개발 (경력) | 5.0/5 | Applied | ✅ | [070](../reports/070-naverwebtoon-disney-server-2026-09-11.md) | 사람인 접수 완료 (글로벌 대규모 트래픽/실시간 세션 맞춤 이력서) |
 | 69 | 2026-09-11 | 콕스웨이브 | [AX AgentX] 데이터 엔지니어 (RAG/LLM Pipeline) | 5.0/5 | Applied | ✅ | [069](../reports/069-coxwave-rag-data-engineer-2026-09-11.md) | 원티드 접수 완료 (RAG 검색 API/대용량 파이프라인 맞춤 이력서) |
 | 68 | 2026-09-11 | 왓챠 | 백엔드 개발자 - 미디어 플랫폼 | 5.0/5 | Applied | ✅ | [068](../reports/068-watcha-media-backend-2026-09-11.md) | 원티드 접수 완료 (실시간 세션/미디어 스트리밍 맞춤 이력서) |
 | 67 | 2026-09-11 | 다음(카카오) | 커머스 BackEnd 개발 | 5.0/5 | Applied | ✅ | [067](../reports/067-daum-commerce-backend-2026-09-11.md) | 원티드 접수 완료 (이커머스 결제·트랜잭션 무결성 맞춤 이력서) |
