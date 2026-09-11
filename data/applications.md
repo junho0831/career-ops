@@ -1,6 +1,7 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 93 | 2026-09-11 | 위시켓(#158419) | 모바일 통신 서비스 리뉴얼 Spring Boot 백엔드 외주 | 5.0/5 | Applied | 📄 | [093](../reports/093-wishket-telecom-renewal-spring-backend-freelance-2026-09-11.md) | 위시켓 #158419 통신/eSIM/결제 코어 트랜잭션 백엔드 외주 제안 완료 |
 | 92 | 2026-09-11 | 쿠팡(Coupang) | Senior Back-end Engineer(Eats Merchant) | 5.0/5 | Applied | ✅ | [092](../reports/092-coupang-eats-merchant-senior-backend-2026-09-11.md) | 원티드 접수 완료 (빅테크 가맹점 정산/주문 트랜잭션 무결성 맞춤 이력서) |
 | 91 | 2026-09-11 | CJ올리브영 | Java/Spring 백엔드 개발자 (옴니채널 커머스) | 5.0/5 | Applied | ✅ | [091](../reports/091-cj-oliveyoung-java-backend-developer-2026-09-11.md) | CJ 채용관 접수 완료 (대기업 옴니채널 주문/정산 정합성 맞춤 이력서) |
 | 90 | 2026-09-11 | 하이브(HYBE) | 백엔드 개발자 (Weverse 커머스 대용량 트래픽) | 5.0/5 | Applied | ✅ | [090](../reports/090-hybe-commerce-backend-developer-2026-09-11.md) | 공식 채용관 접수 완료 (글로벌 팬덤 커머스 순간 트래픽 및 재고 선점 맞춤 이력서) |
