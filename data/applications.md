@@ -2,6 +2,12 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 81 | 2026-09-11 | 에스엠하이플러스 | Data Engineer (하이패스/교통결제) | 4.9/5 | Applied | ✅ | [081](../reports/081-smhiplus-data-engineer-2026-09-11.md) | 원티드 접수 완료 (대규모 교통/결제 데이터 파이프라인 맞춤 이력서) |
+| 80 | 2026-09-11 | 아일리스프런티어 | 인공지능 시스템 백엔드 서버 개발자 | 4.9/5 | Applied | ✅ | [080](../reports/080-ailysfrontier-ai-server-2026-09-11.md) | 원티드 접수 완료 (금융 AI/RAG 의사결정 백엔드 맞춤 이력서) |
+| 79 | 2026-09-11 | (주)트립비토즈 | [트립비토즈] 호텔(B2B) 시스템 Back-end 개발 | 4.9/5 | Applied | ✅ | [079](../reports/079-tripbtoz-b2b-backend-2026-09-11.md) | 사람인 접수 완료 (호텔 B2B 예약/정산 백엔드 맞춤 이력서) |
+| 78 | 2026-09-11 | 오디케이미디어 | Backend Developer (Data Platform) | 5.0/5 | Applied | ✅ | [078](../reports/078-ondemandkorea-data-backend-2026-09-11.md) | 원티드 접수 완료 (글로벌 OTT 스트리밍 데이터 파이프라인 맞춤 이력서) |
+| 77 | 2026-09-11 | 바로팜 | 백엔드 개발자 (B2B 이커머스) | 5.0/5 | Applied | ✅ | [077](../reports/077-baropharm-ecommerce-backend-2026-09-11.md) | 점핏 접수 완료 (B2B 의약품 이커머스/주문 정산 맞춤 이력서) |
+| 76 | 2026-09-11 | 글로벌머니익스프레스 | [Remittance] 서버개발자 (해외송금/핀테크) | 5.0/5 | Applied | ✅ | [076](../reports/076-gme-remittance-server-2026-09-11.md) | 원티드 접수 완료 (해외송금 금융 코어 트랜잭션 무결성 맞춤 이력서) |
 | 75 | 2026-09-11 | (주)콜로세움코퍼레이션 | Backend Engineer (스마트 풀필먼트 물류) | 4.9/5 | Applied | ✅ | [075](../reports/075-colosseum-fulfillment-backend-2026-09-11.md) | 사람인 접수 완료 (물류 데이터 파이프라인/배치 정합성 맞춤 이력서) |
 | 74 | 2026-09-11 | (주)더스윙 | 백엔드 개발자 (모빌리티 플랫폼) | 4.9/5 | Applied | ✅ | [074](../reports/074-theswing-mobility-backend-2026-09-11.md) | 사람인 접수 완료 (실시간 위치/10,000 TPS 분산 락 맞춤 이력서) |
 | 73 | 2026-09-11 | 안진회계법인(Deloitte) | 26년 하반기 데이터 엔지니어 경력직 | 5.0/5 | Applied | ✅ | [073](../reports/073-deloitte-data-engineer-2026-09-11.md) | 사람인 접수 완료 (Airflow 1,973만 건 대용량 파이프라인 맞춤 이력서) |
