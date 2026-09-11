@@ -1,6 +1,8 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 89 | 2026-09-11 | 지바이크(gbike) | 비즈니스로직 백엔드 개발자 (모빌리티/배터리) | 5.0/5 | Applied | ✅ | [089](../reports/089-gbike-business-logic-backend-developer-2026-09-11.md) | 원티드 접수 완료 (Java/Spring 코어 로직 및 위치/상태 동시성 제어 맞춤 이력서) |
+| 88 | 2026-09-11 | 에이비일팔공(AB180) | Backend Engineer - Attribution (데이터 파이프라인) | 5.0/5 | Applied | ✅ | [088](../reports/088-ab180-attribution-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (실시간 이벤트 파이프라인 및 복구/재처리 API 맞춤 이력서) |
 | 87 | 2026-09-11 | 위시켓(#158420) | AI Agent Python/LangChain/LangGraph 백엔드 외주 | 5.0/5 | Applied | 📄 | [087](../reports/087-wishket-ai-agent-langgraph-backend-freelance-2026-09-11.md) | 위시켓 #158420 AI Agent 및 백엔드 실행엔진 외주 제안 완료 |
 | 86 | 2026-09-11 | 콕스웨이브 | [AX krewa] 소프트웨어 엔지니어 | 5.0/5 | Applied | ✅ | [086](../reports/086-coxwave-krewa-software-engineer-2026-09-11.md) | 원티드 접수 완료 (AI Agent 워크플로우 실행 엔진 & 백엔드 맞춤 이력서) |
 | 85 | 2026-09-11 | 말빛(렛플) | Backend/AI 엔지니어 (AI 말투 변환 웹 외주) | 5.0/5 | Applied | 📄 | [085](../reports/085-letspl-malbit-ai-language-backend-2026-09-11.md) | 렛플 #2255 프로젝트 제안서 작성 및 지원 완료 |
