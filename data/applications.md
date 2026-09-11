@@ -1,6 +1,8 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 107 | 2026-09-11 | 빗썸(Bithumb) | Backend Engineer (컴플라이언스 백오피스 & 대용량 배치) | 5.0/5 | Applied | ✅ | [107](../reports/107-bithumb-compliance-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (대기업 가상자산 규제대응/FDS 배치 및 백오피스 맞춤 이력서) |
+| 106 | 2026-09-11 | 토스플레이스(Toss) | Server Developer (Platform 결제 서버 플랫폼) | 5.0/5 | Applied | ✅ | [106](../reports/106-tossplace-server-developer-platform-2026-09-11.md) | 원티드 접수 완료 (토스 결제 플랫폼 분산 락/공통 모듈화 및 장애회복 맞춤 이력서) |
 | 105 | 2026-09-11 | 에이블리코퍼레이션 | 백엔드 엔지니어 (3조 유니콘 커머스 코어) | 5.0/5 | Applied | ✅ | [105](../reports/105-ably-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (기업가치 3조 중견 유니콘 커머스 주문/정산 및 백오피스 맞춤 이력서) |
 | 104 | 2026-09-11 | 해빗팩토리(시그널플래너) | 백엔드 개발자 (마이데이터/금융 코어) | 5.0/5 | Applied | ✅ | [104](../reports/104-habitfactory-backend-developer-2026-09-11.md) | 원티드 접수 완료 (마이데이터 금융 파이프라인 및 AI 도구 생산성 맞춤 이력서) |
 | 103 | 2026-09-11 | 데이터라이즈(Datarize) | 백엔드 개발자 (AI CRM 데이터 파이프라인 & 결제정산) | 5.0/5 | Applied | ✅ | [103](../reports/103-datarize-backend-developer-2026-09-11.md) | 원티드 접수 완료 (일 수백만 건 파이프라인 및 결제/정산 Admin 맞춤 이력서) |
