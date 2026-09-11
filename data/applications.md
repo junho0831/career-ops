@@ -1,6 +1,8 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 111 | 2026-09-11 | 티오더(t-order) | Back-End 시니어 개발자 (테이블오더 POS/주문 Java전환) | 5.0/5 | Applied | ✅ | [111](../reports/111-torder-backend-developer-2026-09-11.md) | 원티드 접수 완료 (예비 유니콘 13만대 태블릿 주문 정합성 및 Java/Spring 전환 맞춤 이력서) |
+| 110 | 2026-09-11 | 컬리(마켓컬리) | 풀필먼트 백엔드 개발자 (샛별배송 물류/재고 코어) | 5.0/5 | Applied | ✅ | [110](../reports/110-kurly-fulfillment-backend-developer-2026-09-11.md) | 원티드 접수 완료 (새벽배송 1위 풀필먼트 실시간 주문/재고 트랜잭션 무결성 맞춤 이력서) |
 | 109 | 2026-09-11 | 카카오페이증권 | 대용량 데이터 플랫폼 백엔드 개발자 (고객자산/거래원장) | 5.0/5 | Applied | ✅ | [109](../reports/109-kakaopay-sec-data-platform-backend-2026-09-11.md) | 원티드 접수 완료 (대기업 금융투자 원장 무결성 및 대용량 데이터 플랫폼 맞춤 이력서) |
 | 108 | 2026-09-11 | 씨제이올리브영(CJ올리브영) | 검색 플랫폼 개발자 (Back-end / Elasticsearch) | 5.0/5 | Applied | ✅ | [108](../reports/108-cj-oliveyoung-search-platform-backend-2026-09-11.md) | 원티드 접수 완료 (대기업 분산 검색 클러스터 및 대규모 색인 파이프라인 맞춤 이력서) |
 | 107 | 2026-09-11 | 빗썸(Bithumb) | Backend Engineer (컴플라이언스 백오피스 & 대용량 배치) | 5.0/5 | Applied | ✅ | [107](../reports/107-bithumb-compliance-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (대기업 가상자산 규제대응/FDS 배치 및 백오피스 맞춤 이력서) |
