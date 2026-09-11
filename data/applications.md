@@ -1,6 +1,7 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 85 | 2026-09-11 | 말빛(렛플) | Backend/AI 엔지니어 (AI 말투 변환 웹 외주) | 5.0/5 | Applied | 📄 | [085](../reports/085-letspl-malbit-ai-language-backend-2026-09-11.md) | 렛플 #2255 프로젝트 제안서 작성 및 지원 완료 |
 | 84 | 2026-09-11 | 국내 헤어케어 브랜드(위시켓) | Backend/AI 엔지니어 (AI 두피진단 외주) | 4.9/5 | Applied | 📄 | [084](../reports/084-wishket-scalp-ai-platform-backend-freelance-2026-09-11.md) | 위시켓 #158343 프로젝트 제안서 작성 및 외주 지원 완료 |
 | 83 | 2026-09-11 | 제이드하우스(프리모아) | Backend 개발자 (제주 오름 탐방 웹 외주) | 5.0/5 | Applied | 📄 | [083](../reports/083-freemoa-jeju-oreum-backend-freelance-2026-09-11.md) | 프리모아 #48425 도급 프로젝트 제안서 작성 및 외주 지원 완료 |
 | 82 | 2026-09-11 | (주)펫캠퍼스(똑독) | Backend 개발자 (반려견 플랫폼 사이드프로젝트) | 5.0/5 | Applied | 📄 | [082](../reports/082-knockdog-backend-sideproject-2026-09-11.md) | 커리어 페이지(home.knockdog.net/careers/) 지원서 작성 및 제출 완료 (2026-09-11) |
