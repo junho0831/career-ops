@@ -1,6 +1,9 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 92 | 2026-09-11 | 쿠팡(Coupang) | Senior Back-end Engineer(Eats Merchant) | 5.0/5 | Applied | ✅ | [092](../reports/092-coupang-eats-merchant-senior-backend-2026-09-11.md) | 원티드 접수 완료 (빅테크 가맹점 정산/주문 트랜잭션 무결성 맞춤 이력서) |
+| 91 | 2026-09-11 | CJ올리브영 | Java/Spring 백엔드 개발자 (옴니채널 커머스) | 5.0/5 | Applied | ✅ | [091](../reports/091-cj-oliveyoung-java-backend-developer-2026-09-11.md) | CJ 채용관 접수 완료 (대기업 옴니채널 주문/정산 정합성 맞춤 이력서) |
+| 90 | 2026-09-11 | 하이브(HYBE) | 백엔드 개발자 (Weverse 커머스 대용량 트래픽) | 5.0/5 | Applied | ✅ | [090](../reports/090-hybe-commerce-backend-developer-2026-09-11.md) | 공식 채용관 접수 완료 (글로벌 팬덤 커머스 순간 트래픽 및 재고 선점 맞춤 이력서) |
 | 89 | 2026-09-11 | 지바이크(gbike) | 비즈니스로직 백엔드 개발자 (모빌리티/배터리) | 5.0/5 | Applied | ✅ | [089](../reports/089-gbike-business-logic-backend-developer-2026-09-11.md) | 원티드 접수 완료 (Java/Spring 코어 로직 및 위치/상태 동시성 제어 맞춤 이력서) |
 | 88 | 2026-09-11 | 에이비일팔공(AB180) | Backend Engineer - Attribution (데이터 파이프라인) | 5.0/5 | Applied | ✅ | [088](../reports/088-ab180-attribution-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (실시간 이벤트 파이프라인 및 복구/재처리 API 맞춤 이력서) |
 | 87 | 2026-09-11 | 위시켓(#158420) | AI Agent Python/LangChain/LangGraph 백엔드 외주 | 5.0/5 | Applied | 📄 | [087](../reports/087-wishket-ai-agent-langgraph-backend-freelance-2026-09-11.md) | 위시켓 #158420 AI Agent 및 백엔드 실행엔진 외주 제안 완료 |
@@ -37,5 +40,3 @@
 | 44 | 2026-08-11 | (주)티빙 | Backend Engineer (Java/Kotlin/Spring) | 4.7/5 | Applied | ✅ | [056](../reports/056-tving-2026-08-11.md) | 나인하이어 공식 채용관 지원서 작성 및 최종 제출 완료 (2026-08-16) |
 | 12 | 2026-08-11 | (주)슈프리마 | 웹서버 개발자 (Java/Spring) | 4.6/5 | Applied | ✅ | [063](../reports/063-suprema-2026-08-11.md) | 원티드 서류 제출 완료 (2026-08-12) |
 | SRM-150 | 2026-08-16 | 사람인 (Saramin) | Java/Spring Boot 백엔드 개발자 타깃 150개 공고 | 4.5/5 | Applied | 📄 | N/A | 사람인 OAuth 연동, 맞춤 복사 이력서(`[복사] 운영 안정성과 데이터 정합성을 개선하는 Java/Spring Boot 백엔드 개발자 박준호`) 기반 **총 150개 채용공고 지원 완결** (`apply-status-list` 150건 실시간 검증 완료) |
-| ENT-01 | 2026-08-14 | 하이브 (HYBE) | 백엔드개발 (커머스 - 대용량 트래픽) | 4.8/5 | Drafted | 📄 | N/A | 직행(Zighang) 탐색 기반 대기업 지원서 및 자기소개서 작성, 사용자 최종 검토를 위해 **[임시저장 (Draft)]** 보관 완료 |
-| ENT-02 | 2026-08-14 | CJ올리브영 | 2025-2026 대규모 개발 채용 (Java/Spring 백엔드) | 4.7/5 | Drafted | 📄 | N/A | 직행(Zighang) 탐색 기반 CJ 계열사 백엔드 지원서 작성, 사용자 최종 검토를 위해 **[임시저장 (Draft)]** 보관 완료 |
