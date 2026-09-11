@@ -1,6 +1,8 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 109 | 2026-09-11 | 카카오페이증권 | 대용량 데이터 플랫폼 백엔드 개발자 (고객자산/거래원장) | 5.0/5 | Applied | ✅ | [109](../reports/109-kakaopay-sec-data-platform-backend-2026-09-11.md) | 원티드 접수 완료 (대기업 금융투자 원장 무결성 및 대용량 데이터 플랫폼 맞춤 이력서) |
+| 108 | 2026-09-11 | 씨제이올리브영(CJ올리브영) | 검색 플랫폼 개발자 (Back-end / Elasticsearch) | 5.0/5 | Applied | ✅ | [108](../reports/108-cj-oliveyoung-search-platform-backend-2026-09-11.md) | 원티드 접수 완료 (대기업 분산 검색 클러스터 및 대규모 색인 파이프라인 맞춤 이력서) |
 | 107 | 2026-09-11 | 빗썸(Bithumb) | Backend Engineer (컴플라이언스 백오피스 & 대용량 배치) | 5.0/5 | Applied | ✅ | [107](../reports/107-bithumb-compliance-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (대기업 가상자산 규제대응/FDS 배치 및 백오피스 맞춤 이력서) |
 | 106 | 2026-09-11 | 토스플레이스(Toss) | Server Developer (Platform 결제 서버 플랫폼) | 5.0/5 | Applied | ✅ | [106](../reports/106-tossplace-server-developer-platform-2026-09-11.md) | 원티드 접수 완료 (토스 결제 플랫폼 분산 락/공통 모듈화 및 장애회복 맞춤 이력서) |
 | 105 | 2026-09-11 | 에이블리코퍼레이션 | 백엔드 엔지니어 (3조 유니콘 커머스 코어) | 5.0/5 | Applied | ✅ | [105](../reports/105-ably-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (기업가치 3조 중견 유니콘 커머스 주문/정산 및 백오피스 맞춤 이력서) |
