@@ -1,10 +1,11 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 87 | 2026-09-11 | 위시켓(#158420) | AI Agent Python/LangChain/LangGraph 백엔드 외주 | 5.0/5 | Applied | 📄 | [087](../reports/087-wishket-ai-agent-langgraph-backend-freelance-2026-09-11.md) | 위시켓 #158420 AI Agent 및 백엔드 실행엔진 외주 제안 완료 |
+| 86 | 2026-09-11 | 콕스웨이브 | [AX krewa] 소프트웨어 엔지니어 | 5.0/5 | Applied | ✅ | [086](../reports/086-coxwave-krewa-software-engineer-2026-09-11.md) | 원티드 접수 완료 (AI Agent 워크플로우 실행 엔진 & 백엔드 맞춤 이력서) |
 | 85 | 2026-09-11 | 말빛(렛플) | Backend/AI 엔지니어 (AI 말투 변환 웹 외주) | 5.0/5 | Applied | 📄 | [085](../reports/085-letspl-malbit-ai-language-backend-2026-09-11.md) | 렛플 #2255 프로젝트 제안서 작성 및 지원 완료 |
 | 84 | 2026-09-11 | 국내 헤어케어 브랜드(위시켓) | Backend/AI 엔지니어 (AI 두피진단 외주) | 4.9/5 | Applied | 📄 | [084](../reports/084-wishket-scalp-ai-platform-backend-freelance-2026-09-11.md) | 위시켓 #158343 프로젝트 제안서 작성 및 외주 지원 완료 |
 | 83 | 2026-09-11 | 제이드하우스(프리모아) | Backend 개발자 (제주 오름 탐방 웹 외주) | 5.0/5 | Applied | 📄 | [083](../reports/083-freemoa-jeju-oreum-backend-freelance-2026-09-11.md) | 프리모아 #48425 도급 프로젝트 제안서 작성 및 외주 지원 완료 |
-| 82 | 2026-09-11 | (주)펫캠퍼스(똑독) | Backend 개발자 (반려견 플랫폼 사이드프로젝트) | 5.0/5 | Applied | 📄 | [082](../reports/082-knockdog-backend-sideproject-2026-09-11.md) | 커리어 페이지(home.knockdog.net/careers/) 지원서 작성 및 제출 완료 (2026-09-11) |
 | 81 | 2026-09-11 | 에스엠하이플러스 | Data Engineer (하이패스/교통결제) | 4.9/5 | Applied | ✅ | [081](../reports/081-smhiplus-data-engineer-2026-09-11.md) | 원티드 접수 완료 (대규모 교통/결제 데이터 파이프라인 맞춤 이력서) |
 | 80 | 2026-09-11 | 아일리스프런티어 | 인공지능 시스템 백엔드 서버 개발자 | 4.9/5 | Applied | ✅ | [080](../reports/080-ailysfrontier-ai-server-2026-09-11.md) | 원티드 접수 완료 (금융 AI/RAG 의사결정 백엔드 맞춤 이력서) |
 | 79 | 2026-09-11 | (주)트립비토즈 | [트립비토즈] 호텔(B2B) 시스템 Back-end 개발 | 4.9/5 | Applied | ✅ | [079](../reports/079-tripbtoz-b2b-backend-2026-09-11.md) | 사람인 접수 완료 (호텔 B2B 예약/정산 백엔드 맞춤 이력서) |
