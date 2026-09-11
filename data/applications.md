@@ -1,6 +1,8 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 103 | 2026-09-11 | 데이터라이즈(Datarize) | 백엔드 개발자 (AI CRM 데이터 파이프라인 & 결제정산) | 5.0/5 | Applied | ✅ | [103](../reports/103-datarize-backend-developer-2026-09-11.md) | 원티드 접수 완료 (일 수백만 건 파이프라인 및 결제/정산 Admin 맞춤 이력서) |
+| 102 | 2026-09-11 | 크림페이(KREAM) | Backend 개발자 (결제·정산 코어 & 대사 배치) | 5.0/5 | Applied | ✅ | [102](../reports/102-kreampay-backend-developer-2026-09-11.md) | 원티드 접수 완료 (네이버 계열 한정판 결제 정합성 및 정산 대사 배치 맞춤 이력서) |
 | 101 | 2026-09-11 | 페이민트(카카오페이) | 백엔드 개발자 (결제선생 간편결제/전자금융) | 5.0/5 | Applied | ✅ | [101](../reports/101-paymint-payment-backend-developer-2026-09-11.md) | 원티드 접수 완료 (카카오페이 자회사 간편결제 코어 트랜잭션 무결성 맞춤 이력서) |
 | 100 | 2026-09-11 | 자리컴퍼니(자리톡) | [자리톡] Java 백엔드 개발자 (임대관리/정산배치) | 5.0/5 | Applied | ✅ | [100](../reports/100-zaritalk-java-backend-developer-2026-09-11.md) | 원티드 접수 완료 (2,000억 거래액 플랫폼 Java/Spring 정산배치 및 알림톡 맞춤 이력서) |
 | 99 | 2026-09-11 | 위버스컴퍼니 | Back-end 개발자 (글로벌 팬덤 커뮤니티/커머스) | 5.0/5 | Applied | ✅ | [099](../reports/099-weverse-company-backend-developer-2026-09-11.md) | 원티드 접수 완료 (대기업 글로벌 플랫폼 Java/Spring 및 멤버십/구독 맞춤 이력서) |
