@@ -1,6 +1,8 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 99 | 2026-09-11 | 위버스컴퍼니 | Back-end 개발자 (글로벌 팬덤 커뮤니티/커머스) | 5.0/5 | Applied | ✅ | [099](../reports/099-weverse-company-backend-developer-2026-09-11.md) | 원티드 접수 완료 (대기업 글로벌 플랫폼 Java/Spring 및 멤버십/구독 맞춤 이력서) |
+| 98 | 2026-09-11 | 레브잇(올웨이즈) | Product Engineer (Data / AI 커머스 데이터 파이프라인) | 5.0/5 | Applied | ✅ | [098](../reports/098-levvit-alwayz-product-engineer-data-2026-09-11.md) | 원티드 접수 완료 (대규모 수천만 건 수집/적재 파이프라인 및 정합성 맞춤 이력서) |
 | 97 | 2026-09-11 | 핀다(FINDA) | 백엔드 개발자 (대출비교/금융 데이터 파이프라인) | 5.0/5 | Applied | ✅ | [097](../reports/097-finda-backend-developer-2026-09-11.md) | 원티드 접수 완료 (대규모 핀테크 금융 데이터 배치 및 Spring Boot 코어 맞춤 이력서) |
 | 96 | 2026-09-11 | 백패커(아이디어스) | [아이디어스] 백엔드 개발자 (Java/Spring 커머스) | 5.0/5 | Applied | ✅ | [096](../reports/096-backpackr-idus-java-backend-developer-2026-09-11.md) | 원티드 접수 완료 (대규모 이커머스 트랜잭션 무결성 및 주문/결제 맞춤 이력서) |
 | 95 | 2026-09-11 | 씨제이이엔엠(CJ ENM) | [Mnet Plus] Backend Engineer (글로벌 K-POP) | 5.0/5 | Applied | ✅ | [095](../reports/095-cjenm-mnetplus-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (대기업 글로벌 OTT/팬덤 실시간 투표 및 트래픽 맞춤 이력서) |
