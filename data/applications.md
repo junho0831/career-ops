@@ -1,6 +1,8 @@
 # Applications Tracker
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+| 97 | 2026-09-11 | 핀다(FINDA) | 백엔드 개발자 (대출비교/금융 데이터 파이프라인) | 5.0/5 | Applied | ✅ | [097](../reports/097-finda-backend-developer-2026-09-11.md) | 원티드 접수 완료 (대규모 핀테크 금융 데이터 배치 및 Spring Boot 코어 맞춤 이력서) |
+| 96 | 2026-09-11 | 백패커(아이디어스) | [아이디어스] 백엔드 개발자 (Java/Spring 커머스) | 5.0/5 | Applied | ✅ | [096](../reports/096-backpackr-idus-java-backend-developer-2026-09-11.md) | 원티드 접수 완료 (대규모 이커머스 트랜잭션 무결성 및 주문/결제 맞춤 이력서) |
 | 95 | 2026-09-11 | 씨제이이엔엠(CJ ENM) | [Mnet Plus] Backend Engineer (글로벌 K-POP) | 5.0/5 | Applied | ✅ | [095](../reports/095-cjenm-mnetplus-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (대기업 글로벌 OTT/팬덤 실시간 투표 및 트래픽 맞춤 이력서) |
 | 94 | 2026-09-11 | 빗썸(Bithumb) | Backend Engineer (빗썸페이 결제/정산) | 5.0/5 | Applied | ✅ | [094](../reports/094-bithumb-pay-backend-engineer-2026-09-11.md) | 원티드 접수 완료 (대기업 가상자산/페이먼트 원장 무결성 맞춤 이력서) |
 | 93 | 2026-09-11 | 위시켓(#158419) | 모바일 통신 서비스 리뉴얼 Spring Boot 백엔드 외주 | 5.0/5 | Applied | 📄 | [093](../reports/093-wishket-telecom-renewal-spring-backend-freelance-2026-09-11.md) | 위시켓 #158419 통신/eSIM/결제 코어 트랜잭션 백엔드 외주 제안 완료 |
