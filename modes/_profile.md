@@ -42,16 +42,15 @@ What stands out:
 
 ## Job Screening Bias
 
-Push toward roles where the buyer wants a **data/batch-oriented backend engineer** rather than a pure data platform engineer or large-scale platform lead.
+Push toward roles where the buyer wants a **data/batch-oriented backend engineer or manufacturing/smart factory data engineer** in **mid-sized to large enterprises (중견·대기업·제조업·빅테크)**.
 
 Prioritize:
-- Data / Batch Backend, Backend Data Platform, Batch Platform, ETL/ELT-adjacent backend, data ingestion, log pipeline, settlement/reconciliation, and internal operations workflow roles
+- **중견·대기업 제조업 및 스마트팩토리/산업 AI 도메인**: 반도체, 디스플레이, 배터리, 로봇, 자동화 설비, MES, 공급망/물류 등 제조 현장 데이터와 연동되는 백엔드 및 데이터 엔지니어 포지션
+- Data / Batch Backend, Smart Factory Platform, MES Backend, Backend Data Platform, Batch Platform, ETL/ELT-adjacent backend, data ingestion, log pipeline, settlement/reconciliation, and internal operations workflow roles
 - Roles mentioning Airflow, Python batch, FTP/SFTP ingestion, parsing/validation, data quality, reprocessing, relational constraints, idempotency, partitioned loading, or operational data pipelines
 - Java/Spring backend roles around 3-5 years or "3+ years"
 - Backend operations, maintenance, internal platforms, admin APIs, reliability improvement, and production support
 - Redis, authentication/session consistency, Elasticsearch/search fallback, batch/data workflows, RDB constraints, CI/CD, and incident prevention
-- Small-to-mid teams where one backend engineer is expected to own design, implementation, deployment, debugging, and operations
-- Roles asking for AI/LLM productivity usage plus direct ownership of a small service or side project
 - Active, deadline-driven postings with clear hiring timelines
 - Pipeline grouping & titling: ALWAYS group and title pipeline entries strictly by Deadline Date periods (e.g. ⏳ D-7 이내 마감 임박, 📅 N월 마감 예정), NEVER use '오늘 기준'.
 

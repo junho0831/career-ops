@@ -3,8 +3,8 @@ candidate:
   email: "junho6667@gmail.com"
   phone: "010-3525-6275"
   location: "South Korea"
-  portfolio_url: "https://so-dak.com/"
-  blog_url: "https://so-dak.com/"
+  portfolio_url: "https://github.com/junho0831"
+  blog_url: "https://github.com/junho0831"
   github: "https://github.com/junho0831"
   twitter: ""
   # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
@@ -22,9 +22,13 @@ writing_style:
 target_roles:
   primary:
     - "Data / Batch Backend Engineer"
+    - "Smart Factory / MES Backend Engineer"
     - "Backend Engineer"
     - "Platform Engineer"
   archetypes:
+    - name: "Smart Factory / Manufacturing Data Backend Engineer"
+      level: "Mid"
+      fit: "primary"
     - name: "Data / Batch Backend Engineer"
       level: "Mid"
       fit: "primary"
@@ -39,8 +43,8 @@ target_roles:
       fit: "adjacent"
 
 narrative:
-  headline: "Python/Airflow 데이터 처리 자동화와 Java/Spring Boot 백엔드를 함께 다루며 데이터 정합성, 배치 안정성, 운영 복구 흐름을 개선하는 Data/Batch Backend Engineer"
-  exit_story: "회사 프로젝트와 개인 실시간 서비스를 통해 설계부터 배포, 운영까지 전 과정을 주도적으로 수행했습니다. 실무에서는 검색 장애 대응 DB fallback, Redis TTL 기반 Refresh Token 수명 주기 관리, RDB 인덱싱 및 Unique 제약 조건을 활용한 정합성 관리, GlobalExceptionHandler/validation 응답 표준화, GitLab CI/CD, Python/Airflow 기반 FTP 배치 이관, ER Dose RAW/EUV 로그 파싱 경로 분리, 운영 로그 구조화 적재, 복구 가능한 재처리 흐름, 관리자 API를 다뤘습니다. VoiceLink(voice-link.co.kr)에서는 AI 보조 개발을 통해 1인 개발 범위를 넓히며 Redis Lua Script 원자적 매칭, DB Outbox, FOR UPDATE SKIP LOCKED, PESSIMISTIC_WRITE 세션 종료, WebRTC, Docker, Nginx, SSL, DNS, 네트워크 트러블슈팅까지 직접 수행했습니다."
+  headline: "로봇시스템공학 전공 및 반도체 공정 1,973만 건 로그 파이프라인 최적화 경험을 갖추고, 중견·대기업 제조업 및 스마트팩토리의 데이터 정합성과 안정성을 개선하는 Data/Batch Backend Engineer"
+  exit_story: "로봇시스템공학과를 졸업하고 회사 실무에서 반도체 공정(ER Dose RAW/EUV) 1,973만 건 로그 파이프라인을 구축해 처리 속도를 30.6% 개선했으며, DIE 수율·불량 집계 및 재실행 정합성을 확보했습니다. 중견·대기업 제조 및 스마트팩토리 환경에서 요구되는 설비 데이터 수집·적재 안정성, 검색 장애 대응 DB fallback, Redis 인증 상태 관리, RDB 제약 조건 기반 정합성 보장, 관리자 재처리 API 구축까지 전 과정을 책임 있게 수행해 왔습니다. 개인 서비스 VoiceLink에서는 분산 락, DB Outbox, WebRTC 및 Docker/인프라 운영을 통해 실시간 상태 정합성까지 해결했습니다."
   superpowers:
     - "설계부터 구현, 배포, 운영까지 백엔드 시스템 전체 라이프사이클에 대한 높은 오너십"
     - "AI를 적극 활용한 1인 개발로 아키텍처 및 운영 주도권을 유지하면서도 빠른 구현, 디버깅, 문서화 및 이터레이션 달성"

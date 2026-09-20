@@ -54,6 +54,13 @@ title_filter:
     - "데이터 파이프라인"
     - "배치"
     - "파이프라인"
+    - "MES"
+    - "스마트팩토리"
+    - "스마트제조"
+    - "제조"
+    - "공정"
+    - "설비"
+    - "로봇"
   negative:
     # Filter out non-backend roles
     - "Frontend"
@@ -120,6 +127,10 @@ title_filter:
     - "미들"
 
 search_queries:
+  - name: Wanted — Manufacturing / MES / Smart Factory Backend
+    query: 'site:www.wanted.co.kr/wd ("MES" OR "스마트팩토리" OR "제조" OR "반도체" OR "로봇" OR "공정") ("백엔드" OR "Backend" OR "서버" OR "Data Engineer") ("Java" OR "Spring" OR "Python") -지원마감 -Senior -Staff -Lead'
+    enabled: true
+
   - name: Wanted — Data/Batch Backend 3+
     query: 'site:www.wanted.co.kr/wd ("백엔드" OR "서버" OR "Backend Engineer" OR "Data Engineer") ("Java" OR "Spring" OR "Python" OR "Airflow" OR "ETL" OR "Batch") ("3년" OR "3년 이상") -지원마감 -프론트엔드 -Senior -Staff -Lead -Analyst -Data Scientist'
     enabled: true
@@ -193,9 +204,9 @@ tracked_companies:
     careers_url: https://zighang.com/recruitment
     parser:
       command: node
-      script: scripts/parsers/zighang-recruitment-jobs.mjs
+      script: scripts/parsers/zighang-direct-search.mjs
       format: jobs-json-v1
-      timeout_ms: 120000
+      timeout_ms: 60000
     enabled: true
 
   - name: Saramin Backend Search

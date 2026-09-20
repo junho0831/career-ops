@@ -9,27 +9,56 @@ const POSITIVE_KEYWORDS = [
   'backend',
   'back-end',
   'back end',
-  'server',
   '백엔드',
-  '서버',
+  'server',
+  '서버 개발',
   'java',
-  'kotlin',
   'spring',
   'spring boot',
-  'api',
-  'platform',
+  'kotlin',
+  'python',
   'data engineer',
   'data platform',
   'data pipeline',
-  'etl',
-  'elt',
-  'batch',
-  'airflow',
-  'ingestion',
   '데이터 엔지니어',
   '데이터 플랫폼',
   '데이터 파이프라인',
-  '배치',
+  'etl',
+  'elt',
+  'airflow',
+  'mes 개발',
+  '스마트팩토리 개발',
+  '스마트제조 개발',
+  '공정 데이터',
+  '설비 데이터',
+  '로봇 sw',
+  '로봇 제어',
+];
+
+const NEGATIVE_KEYWORDS = [
+  '디자이너',
+  '퍼블리싱',
+  '유지보전',
+  '사무원',
+  '물류사무',
+  '생산직',
+  '조작원',
+  '보온재',
+  '우레탄',
+  '공무',
+  '전기공사',
+  '현장직',
+  '홀 서버',
+  '레스토랑',
+  '웨딩홀',
+  '홀서빙',
+  '조리',
+  '주방',
+  '간호',
+  '의사',
+  '단순노무',
+  '프론트엔드',
+  'frontend',
 ];
 
 function withTimeout(promise, ms) {
@@ -77,7 +106,7 @@ function extractAll(regex, text) {
 function parseSitemapIndex(xml) {
   return extractAll(/<sitemap>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>\s*<\/sitemap>/g, xml)
     .map(([, loc, lastmod]) => ({ loc, lastmod }))
-    .filter((item) => item.loc.includes('sitemap-recruitment-'))
+    .filter((item) => item.loc.includes('sitemap-recruitment-') && item.lastmod.startsWith('2026-'))
     .sort((a, b) => String(b.lastmod).localeCompare(String(a.lastmod)))
     .slice(0, MAX_SITEMAPS);
 }
@@ -111,6 +140,7 @@ function parseRecruitmentPage(html, url) {
 
 function isBackendLike(title) {
   const normalized = String(title).toLowerCase();
+  if (NEGATIVE_KEYWORDS.some((neg) => normalized.includes(neg))) return false;
   return POSITIVE_KEYWORDS.some((keyword) => normalized.includes(keyword));
 }
 
@@ -126,17 +156,23 @@ async function main() {
 
   const uniqueUrls = [...new Set(allEntries.map((entry) => entry.loc))].slice(0, MAX_URLS);
   const jobs = [];
+  const CONCURRENCY = 15;
 
-  for (const url of uniqueUrls) {
-    try {
-      const html = await fetchText(url);
-      const job = parseRecruitmentPage(html, url);
-      if (job?.title && isBackendLike(job.title)) {
-        jobs.push(job);
+  for (let i = 0; i < uniqueUrls.length; i += CONCURRENCY) {
+    if (jobs.length >= MAX_MATCHES) break;
+    const batch = uniqueUrls.slice(i, i + CONCURRENCY);
+    const results = await Promise.allSettled(
+      batch.map(async (url) => {
+        const html = await fetchText(url);
+        return parseRecruitmentPage(html, url);
+      })
+    );
+
+    for (const res of results) {
+      if (res.status === 'fulfilled' && res.value?.title && isBackendLike(res.value.title)) {
+        jobs.push(res.value);
         if (jobs.length >= MAX_MATCHES) break;
       }
-    } catch (err) {
-      console.error(`zighang parser warning: ${url} — ${err.message}`);
     }
   }
 

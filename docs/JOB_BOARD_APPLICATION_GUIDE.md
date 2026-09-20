@@ -24,14 +24,16 @@
 ---
 
 ## 2. 현재 설치된 `browsermcp` 연동 제어 원칙
-
+ 
 > [!WARNING]
-> **파이썬 스크립트(x11/매크로) 및 DevTools 콘솔 조작 일체 금지**
-> - 포커스 이탈 및 화면 가림을 방지하기 위해 오직 사용자 환경에 연동된 **`browsermcp`** 도구만을 사용합니다.
+> **우회 러너 스크립트, 파이썬 매크로 및 DevTools 콘솔 조작 일체 금지**
+> - 포커스 이탈 및 예기치 못한 에러를 방지하기 위해 오직 시스템 기본 MCP 도구인 **`browsermcp`**(`call_mcp_tool` -> `ServerName: "browsermcp"`)만을 직접 호출하여 사용합니다.
+> - `run_command`를 통한 Node 래퍼(`node browsermcp-runner.cjs`), 셸 스크립트, 파이썬 매크로, DevTools 콘솔 주입은 전면 금지됩니다.
 > 1. `browser_navigate`: 공고 URL 직접 이동 (추천 포지션, 직무 상세 링크)
 > 2. `browser_snapshot`: 공고 텍스트, `지원하기` vs `지원완료` 버튼 상태 식별, 모달 내부 이력서 목록 확인
 > 3. `browser_click`: 타깃 맞춤 이력서 선택 및 최종 제출 버튼 클릭
 > 4. `browser_wait`: 모달 렌더링 및 제출 완료 대기
+> 5. `browser_screenshot`: 화면 상태 시각적 최종 검증
 
 ---
 

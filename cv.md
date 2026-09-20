@@ -2,7 +2,7 @@
 
 데이터 정합성과 배치 안정성을 개선하는 Data/Batch Backend Engineer입니다. Java/Spring Boot 백엔드 경력을 바탕으로 Python/Airflow 기반 FTP 배치, ER Dose RAW/EUV 로그 파싱, PostgreSQL 대용량 적재를 운영하고 있습니다. 약 1,973만 건 처리에서 청크 조회·파싱과 COPY 적재를 겹치는 파이프라인으로 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축했으며, DIE 수율·불량 유형과 EUV Root Cause를 일별 집계해 재실행 가능한 형태로 적재했습니다. 검색 장애 fallback, Redis 인증 상태, RDB 제약 조건, 운영자 재처리 API처럼 데이터 생성부터 복구까지 이어지는 운영 흐름도 개선해 왔습니다.
 
-Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831 | Portfolio: https://so-dak.com/
+Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831 | Portfolio: https://github.com/junho0831
 
 ---
 
@@ -167,4 +167,4 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 
 ---
 
-**GitHub** https://github.com/junho0831 | **포트폴리오** https://voice-link.co.kr
+**GitHub** https://github.com/junho0831 | **포트폴리오** https://github.com/junho0831
