@@ -1,5 +1,6 @@
 candidate:
   full_name: "박준호"
+  birth_date: "1992.08.31"
   email: "junho6667@gmail.com"
   phone: "010-3525-6275"
   location: "South Korea"
@@ -7,6 +8,41 @@ candidate:
   blog_url: "https://github.com/junho0831"
   github: "https://github.com/junho0831"
   twitter: ""
+  hobby: "야구"
+  specialty: "강속구"
+  disability_status: "비대상"
+  military:
+    status: "군필"
+    branch: "육군"
+    specialty: "수송"
+    rank: "병장"
+    discharge_type: "만기제대"
+    start_date: "2011.10.24"
+    end_date: "2013.07.23"
+  education:
+    high_school:
+      name: "부산고등학교"
+      start_date: "2008.03"
+      end_date: "2011.02"
+      graduation_status: "졸업"
+      attendance_type: "주간"
+  employment:
+    - company: "엔셀"
+      employment_type: "정규직"
+      position: "프로"
+      salary: "4650만원"
+    - company: "(주)헥토"
+      employment_type: "정규직"
+      department: "AI개발팀"
+      position: "선임"
+      salary: "3800만원"
+      exit_reason: "개인사정"
+    - company: "(주)헥토이노베이션"
+      employment_type: "정규직"
+      department: "마이데이터팀"
+      position: "선임"
+      salary: "3500만원"
+      exit_reason: "개인사정"
   # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
   # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
   # The ID starts with "D" and is 11 characters long.
@@ -92,14 +128,17 @@ narrative:
       hero_metric: "LangChain을 활용한 의미 기반 RAG 검색 API를 구축하여 답변 정확도를 60%에서 80%로 향상, 질의 대기 시간을 5분에서 1분으로 축소하며 상담팀의 주당 업무 시간을 12시간가량 효율화"
 
 compensation:
-  target_range: ""
-  currency: ""
-  minimum: ""
+  target_range: "5000-5500만원"
+  currency: "KRW"
+  minimum: "4800만원"
+  current_salary: "4650만원"
   location_flexibility: ""
 
 location:
   country: "South Korea"
-  city: "Seongnam, Gyeonggi-do (경기도 성남시)"
+  city: "경기도 성남시 중원구"
+  address: "경기도 성남시 중원구 둔촌대로 101번길 28-11 201호"
+  postal_code: "13328"
   timezone: "Asia/Seoul"
   visa_status: ""
 
