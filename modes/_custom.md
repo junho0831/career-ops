@@ -53,17 +53,22 @@
 4. **100% 진실 기반 작성 (Ground Truth)**:
    - 모든 지원서 및 문항 답변은 오직 [`cv.md`](cv.md)에 입증된 사실 데이터만을 기반으로 작성한다 (허위 기재 엄금).
 
-5. **지원 내역 피드백 및 합격/탈락 필터링 기준 (Feedback Loop)**:
-   - **강점 및 합격권 최우선 타깃 (Top Priority Apply)**:
-     - **중견·대기업 제조업 및 스마트팩토리/반도체/로봇 공정 데이터 백엔드**: 로봇시스템공학 학사 전공 및 반도체 공정(ER Dose RAW/EUV) 1,973만 건 로그 처리, 수율/불량 집계, MES/설비 제어 및 배치 파이프라인 최적화 역량 집중 배치.
-     - **Java/Spring Boot 기반 제조·금융·정합성 코어 백엔드**: 원장/재고/주문 무결성, Outbox 패턴, Redis Lua 원자적 선점, 분산 락, SafeCash/VoiceLink 수치 증명.
-     - **Python/Airflow 대용량 배치 & 데이터 파이프라인**: 1,973만 건 로그 파싱, COPY 스트리밍, 30.6% 처리 단축, 멱등성 및 재실행 안정화.
-     - **AI 워크플로우 / 에이전트 실행 백엔드**: FastAPI/LangGraph 서빙, Tool Calling 트랜잭션 연동, 상태 감사 추적.
-   - **필터링 탈락 및 배제 대상 (Auto-Reject / Off-Limits)**:
-     - **Node.js/Nest.js + 프론트엔드(React/Vue/Flutter) 풀스택 공고:** 후보자 주력(Java/Python 백엔드 인프라) 불일치로 탈락 확률 높으므로 지원 전면 배제.
-     - **필수 언어/자격 미보유 공고:** Kotlin/Go 코어 또는 공인 PG/전자금융 라이선스 필수를 요구하는 포지션은 보류/후순위 처리.
-     - **출근/상주 필수 외주 및 SI 파견:** 100% 재택 원칙 위배 및 원격 협업 불가 공고 즉시 배제.
-     - **사이드 프로젝트:** 단순 팀빌딩/사이드 형태는 파이프라인에서 완전 배제 (정규직 채용 및 유료 외주/도급에 집중).
+5. **지원 내역 피드백 및 정밀 검색·스코어링 전략 (3개 축 + 보조 탐색)**:
+   - **1단계: 3개 축 + 보조 교차 수집 (Broad Gathering)**:
+     - **1축 (Data/Batch Backend)**: 데이터 백엔드, 데이터 플랫폼, 데이터 파이프라인, 배치 개발, ETL 개발, Backend Data Engineer
+     - **2축 (Data Engineer)**: 데이터 엔지니어, Data Engineer, Airflow, ETL, 데이터 수집, 데이터 적재, Python SQL
+     - **3축 (Java Backend)**: Java 백엔드, Spring Boot 백엔드, 서버 개발자, Backend Engineer
+     - **보조 교차 (제조/반도체 데이터)**: 반도체 데이터, 제조 데이터, MES 개발, 스마트팩토리, 공정 데이터 (백엔드+제조, 데이터엔지니어+제조 교차)
+     - **보조 탐색 (AI Backend)**: AI Backend, RAG Backend, LLM Backend, LangChain Python
+   - **2단계: 공고 본문 가중치 스코어링 (Scoring & Fit)**:
+     - **+3점 (코어 역량)**: Java, Spring Boot, Python, Airflow, PostgreSQL, Batch, ETL
+     - **+2점 (강점 역량)**: Redis, Elasticsearch, Docker, 대용량, 데이터 파이프라인, SQL, 정합성, 로그 처리, 재처리
+     - **+1점 (우대/인접 기술)**: Kafka, Spark, AWS, Kubernetes (미경험 우대사항이라도 즉시 제외하지 않고 우수 공고로 포용)
+     - **차별화 요소 (JD 발견 후 매칭도 극대화)**: COPY, Server-side Cursor, Partition, Upsert, Outbox, Lua Script, 분산 락/동시성, RAG/LangChain
+   - **3단계: Hard Negative 필수 제외만 적용 (Minimal Title Exclusions)**:
+     - **제외 대상 (공고 제목/주요 직무 기준)**: 프론트엔드 개발자, 퍼블리셔, iOS/Android 개발자, UI/UX 디자이너, PM/PO 전담, QA 전담, 펌웨어/임베디드 전담, 데이터 사이언티스트/BI 분석가, 영업/마케터.
+     - **완화 규칙**: 공고 본문에 React, Vue, QA, PM 단어가 단순히 언급되어 있더라도, 백엔드/데이터가 주 업무라면 절대 제외하지 않고 적극 지원 대상에 포함한다.
+   - **출근/상주 필수 외주 및 SI 파견 배제**: 100% 재택 원칙 위배 공고 배제.
 
 ## Custom Workflows
 

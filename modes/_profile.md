@@ -83,11 +83,9 @@ If a role values hands-on engineering depth, point to:
 
 ## Your Comp Targets
 
-Use `config/profile.yml` as the source of truth once compensation fields are filled in.
-Until then:
-- Do not invent salary expectations
-- Ask for the posted range first when needed
-- Anchor on role scope, operational ownership, and measurable delivery impact
+- **직전 연봉**: 4,650만 원 (KRW)
+- **목표/희망 연봉**: 5,000만 ~ 5,500만 원 (최소 기준 4,800만 원)
+- 보상 협상 시 대용량 정합성/배치 파이프라인 엔드투엔드 오너십 및 장애/리드타임 절감 성과를 근거로 앵커링합니다.
 
 ## Your Negotiation Scripts
 
