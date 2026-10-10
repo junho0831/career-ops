@@ -1,80 +1,113 @@
 ---
 post_id: 1246
 title: 파일을 올린 뒤 실패한 배치를 다시 실행해도 될까
-description: 업로드와 DB 저장 뒤 원본 하나만 삭제된 상황을 통해 재시도, 업무 키, 정리 단계의 차이를 설명한다.
+description: PythonStudy의 실제 배치에 삭제 실패를 주입해 DB 커밋, 정상 반환, 같은 작업 재실행 시 중복 행을 확인한다.
 date: '2026-08-14'
-revised: '2026-10-08'
+revised: '2026-10-10'
 url: https://so-dak.com/airflow-%eb%b0%b1%ed%95%84backfill-%eb%a9%b1%eb%93%b1%ec%84%b1-%ed%9a%8c%ea%b3%a0-%ec%97%90%eb%9f%ac-%eb%82%98%eb%a9%b4-clear-%eb%88%84%eb%a5%b4%ea%b3%a0-%ec%9e%ac%ec%8b%a4%ed%96%89%ed%95%98/
 ---
 
-파일 업로드와 DB 저장을 끝내고 마지막 원본 삭제에서 실패했다고 하자. 재실행 버튼은 하나인데 되돌려야 할 작업은 하나가 아니다.
+로그에는 `errors=1`이 찍혔다. 그런데 배치 함수는 예외 없이 돌아왔다. Airflow에 `retries=1`이 있어도 이 실패를 자동으로 다시 실행해줄 수 있을까?
 
-PythonStudy의 시간 단위 FTP DAG와 배치 호출부를 보면, 같은 “실패”라도 이미 남아 있는 결과가 다르다. Airflow 서버에서 장애를 재현한 기록이 아니라 현재 코드의 중단 지점을 검토한 글이다.
+2026년 10월 10일 PythonStudy `9a324fe`의 실제 처리 메서드에 삭제 실패를 주입해 확인했다. FTP는 대역으로 바꾸고 임시 SQLite 3.45.1에 저장했다. 앞서 다룬 `79be1f8`과 이 배치의 처리·저장 코드는 동일하다. Airflow 서버나 외부 FTP의 장애 기록은 아니다.
 
-## 원본 둘 중 하나만 지워졌다면
+## DB에는 남았지만 성공 개수는 0이었다
 
-설명용으로 원본 A·B를 결합해 결과 C를 만들었다고 하자. C 업로드와 DB 커밋 뒤 A만 삭제되고, B 삭제에서 실패했다.
+결합 작업은 텍스트 원본과 이미지 원본을 묶어 PNG를 만든다. `BatchRunner._flush_combined_upload_queue`의 처리 순서는 다음 발췌에 드러난다. 출력 로그와 반복문은 줄였다.
 
-다음 실행이 A가 없다는 이유로 처음부터 실패하면 이미 완성된 C를 두고 계속 멈춘다. 반대로 다시 업로드하면 C가 중복될 수 있다. 성실하게 두 번 일했더니 결과도 두 개가 되는 건 반갑지 않다. **결과를 만드는 단계와 원본을 정리하는 단계를 구분해야 한다.**
+```python
+self.server_scanner.upload_file(item.output_path, item.remote_output_path)
+with self.rubi_processor.db.transaction() as connection:
+    self.rubi_processor.store_df(item.rubi_df, connection=connection)
+    self.rupi_processor.upsert_image_match(
+        source_file=item.image_remote_path,
+        prefix=item.prefix,
+        image_ts=item.image_ts,
+        matched_text_file=item.text_remote_path,
+        matched_text_ts=item.matched_text_ts,
+        matched_diff_seconds=item.matched_diff_seconds,
+        output_remote_file=item.remote_output_path,
+        connection=connection,
+    )
+self._delete_matched_sources(item.text_remote_path, item.image_remote_path)
+stats.processed += 1
+```
 
-| 멈춘 위치 | 남아 있을 수 있는 결과 | 다시 시작할 때의 질문 |
-| --- | --- | --- |
-| 업로드 전 | 원본과 임시 파일 | 입력과 임시 산출물을 다시 쓸 수 있는가 |
-| 업로드 후, DB 저장 전 | 외부 결과 파일 | 같은 결과를 다시 올리거나 재사용할 기준은 무엇인가 |
-| DB 커밋 후, 원본 삭제 전 | 결과 파일과 DB 기록, 원본 | 적재 대신 정리만 이어갈 수 있는가 |
-| 첫 원본만 삭제한 뒤 | 확정 결과와 나머지 원본 | 빠진 원본을 새 처리 실패로 오해하지 않는가 |
+실제 `_delete_matched_sources`는 텍스트를 먼저 지우고 이미지를 지운다. `processed`가 올라가는 시점은 둘을 다 지운 뒤다. 그래서 마지막 이미지 삭제에서 실패하면 업로드와 DB 커밋은 끝났어도 성공 개수는 0이 된다.
 
-실제 호출도 업로드, DB 트랜잭션, 원본 두 개 삭제로 나뉜다. DB 롤백은 FTP에 올라간 파일까지 취소해 주지 않는다. 개선한다면 `결과 저장됨`을 기록하고 그 이후 실패는 정리만 재시도하도록 나누는 쪽을 검토하겠다. 표는 그 설계에서 답해야 할 질문이다.
+이를 확인하려고 합성 텍스트 `value=10` 한 줄과 이미지 매칭 정보 하나를 넣었다. 업로드 대역은 성공하도록, 이미지 삭제 대역은 `OSError`를 던지도록 설정했다. DB 초기화·DataFrame 저장·이미지 정보 upsert·트랜잭션은 프로젝트 코드를 그대로 썼다.
 
-## retries가 있는데 왜 다시 실행되지 않을까
+| 실제 관찰 | 결과 |
+| --- | --- |
+| 업로드 메서드 호출 | 완료 |
+| 텍스트 DB 행 | 1개 커밋 |
+| 이미지 매칭 DB 행 | 1개 커밋 |
+| 텍스트 원본 삭제 대역 | 호출 완료 |
+| 이미지 원본 삭제 대역 | 예외 발생 |
+| 마지막 요약 | `processed=0, skipped=0, errors=1` |
+| `BatchRunner.run()` | 예외 없이 `None` 반환 |
 
-확인한 DAG에는 다음 설정이 있다.
+**오류 한 개라는 로그와 아무 결과도 남기지 못했다는 뜻은 다르다.** DB 롤백은 이미 올라간 FTP 파일을 취소하지 않고, DB 커밋 뒤 발생한 삭제 실패도 앞선 커밋을 되돌리지 않는다.
+
+## 재시도 설정까지 오류가 올라가지 않았다
+
+시간 단위 DAG는 `run_combined`를 PythonOperator로 호출한다. 설정은 재시도 한 번, 대기 5분, 동시 DAG 실행 한 개다.
 
 ```python
 default_args={
-    'retries': 1,
-    'retry_delay': timedelta(minutes=5),
+    "retries": 1,
+    "retry_delay": timedelta(minutes=5),
 }
 ```
 
-그런데 하위 배치는 파일별 예외를 잡고 오류 수를 늘린 뒤 다음 파일로 진행할 수 있다. 최상위 호출이 정상 반환하면, 로그에 오류가 있어도 그 사실만으로 태스크 재시도가 일어나지는 않는다.
+하지만 파일별 처리에는 예외를 오류 수로 바꾸는 코드가 있다. 이번 삭제 실패도 여기서 잡혔다.
 
-예를 들어 파일 열 개 중 하나가 실패했는데 함수가 오류 건수만 출력하고 끝났다면 어떨까. Airflow는 로그의 업무 의미까지 읽어 실패를 판단하지 않는다. 복구 대상 오류가 남았을 때 호출부가 어떤 결과를 반환할지 정해야 한다.
-
-전체 태스크를 실패시키면 Airflow 재시도를 활용하기 쉽지만 성공한 아홉 개도 다시 만난다. 실패 파일만 모으면 반복 작업은 줄고, 대신 그 목록을 저장하고 다시 꺼내는 처리가 필요해진다. 어느 쪽이든 **이미 성공한 입력을 알아보는 기준**부터 필요하다.
-
-## 날짜가 같아도 같은 입력은 아니다
-
-시간 단위 DAG는 같은 날짜를 여러 번 처리할 수 있다. 그날 늦게 도착한 새 파일도 있고, 같은 파일의 재시도도 있다. 날짜만 완료 키로 쓰면 둘을 구분하지 못한다.
-
-실행 ID는 DAG 실행을, 시도 번호는 같은 태스크의 재시도를 구분한다. 업무 키는 어떤 입력을 처리하는지 식별하는 데 쓴다. 파일 교체나 정정 입력을 허용한다면 이름 외에 버전·내용을 어떤 기준으로 구별할지도 정해야 한다.
-
-검토 대상에는 PostgreSQL 9.4 환경이 있어 `ON CONFLICT`를 그대로 사용한 예제를 해결책으로 제시하지 않았다. 고유 제약과 재시도 정책도 실제 DB 버전에 맞춰야 한다.
-
-## 같은 DB 안의 교체라면 묶을 수 있다
-
-외부 업로드와 달리, 하루 집계를 같은 DB에서 지우고 다시 넣는 일은 다음처럼 한 트랜잭션으로 묶는 방안을 검토할 수 있다. 설명용 테이블이며 매개변수 바인딩과 오류 시 롤백은 드라이버에서 처리한다.
-
-```sql
-BEGIN;
-DELETE FROM daily_summary WHERE stat_date = :target_date;
-INSERT INTO daily_summary (stat_date, account_key, amount)
-SELECT :target_date, account_key, SUM(amount)
-FROM raw_events
-WHERE event_time >= :range_start AND event_time < :range_end
-GROUP BY account_key;
-COMMIT;
+```python
+except Exception as exc:
+    stats.errors += 1
+    print(f"[ERROR] {item.text_remote_path} / {exc}")
 ```
 
-다만 같은 날짜를 두 작업이 동시에 교체하는 문제는 별도다. [실제 RAW 재적재 경로](https://so-dak.com/pythonstudy-%eb%8c%80%ec%9a%a9%eb%9f%89-raw-%eb%a1%9c%ea%b7%b8-1973%eb%a7%8c-%ea%b1%b4-%ed%8c%8c%ec%9d%b4%ed%94%84%eb%9d%bc%ec%9d%b8-%ec%b5%9c%ec%a0%81%ed%99%94-%eb%93%80%ec%96%bc-%ec%8a%a4/)도 대상 정리 후 청크별 적재가 이어져, 하루 전체가 이 예제처럼 원자적으로 교체된다고 설명할 수 없다.
+`run()`은 마지막에 요약을 출력하고 끝난다. Airflow의 래퍼 `run_batch()` 역시 `runner.run()`만 호출한다. 오류 개수를 확인해 다시 예외를 던지는 처리는 없다.
 
-이 배치를 고친다면 재시도 횟수부터 올리지는 않겠다. **결과 C가 확정됐다는 기록을 찾고 남은 B 삭제만 이어갈 수 있는지**부터 확인하겠다. 성공한 작업을 알아보지 못하면 재시도는 같은 일을 더 성실하게 반복할 뿐이다.
+이 경우 Python 함수가 정상 반환했다는 사실만으로는 업무가 전부 완료됐는지 알 수 없다. [Airflow의 태스크 상태 설명](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html)에서 다루는 실패·재시도는 업무 로그의 숫자를 자동 해석하는 기능이 아니다. 이번에 실행한 것은 Airflow 서버가 아니라 배치 메서드다. 그 범위에서 **삭제 오류는 요약에 남고, 호출부에는 예외로 전달되지 않았다.**
+
+그럼 마지막에 오류가 있으면 모두 실패시키면 될까. 성공한 작업까지 다시 만나므로 다음 질문이 남는다. 같은 입력을 알아보고 이미 끝난 단계는 넘어갈 수 있는가?
+
+## 이미지 정보는 한 줄, 텍스트 정보는 두 줄이 됐다
+
+같은 합성 작업을 `_flush_combined_upload_queue`에 한 번 더 넣어 실행했다. 이는 메서드에 동일 입력을 재전달한 실험이며, 이미 지워진 원본을 FTP에서 다시 찾는 전체 DAG 재실행은 아니다.
+
+```text
+첫 실행: rubi_ingest=1, rupi_ingest=1
+같은 작업 재전달: rubi_ingest=2, rupi_ingest=1
+```
+
+결과가 갈린 이유는 스키마와 저장 코드에 있었다. `init_db.py`의 이미지 테이블 `rupi_ingest.source_file`에는 고유 제약이 있고, `RupiProcessor.upsert_image_match`가 그 키로 갱신한다. 텍스트 테이블 `rubi_ingest`에는 `source_file`·`line_number`의 고유 제약이 없으며 `RubiProcessor.store_df`는 일반 INSERT를 호출한다.
+
+**이미지 쪽 upsert 하나로 결합 작업 전체가 멱등적이 되지는 않았다.** 같은 입력을 다시 넣었는데 텍스트 한 줄만 두 행이 됐다. 재시도를 붙이기 전에 각 저장소가 무엇을 같은 작업으로 보는지 맞춰야 하는 이유다.
+
+여기서 FTP 결합 배치의 DB는 SQLite다. 같은 저장소의 [RAW 로그 적재](https://so-dak.com/pythonstudy-%eb%8c%80%ec%9a%a9%eb%9f%89-raw-%eb%a1%9c%ea%b7%b8-1973%eb%a7%8c-%ea%b1%b4-%ed%8c%8c%ec%9d%b4%ed%94%84%eb%9d%bc%ec%9d%b8-%ec%b5%9c%ec%a0%81%ed%99%94-%eb%93%80%ec%96%bc-%ec%8a%a4/)가 사용하는 PostgreSQL 계열 DB와 다른 경로다. 이 글의 오류와 해결책을 DB 버전 하나로 묶으면 안 된다.
+
+## 다시 만들기 전에 남은 원본부터 본다
+
+개선한다면 두 가지를 나눠 검토하겠다. 첫째는 같은 입력의 재저장을 막을 업무 키, 둘째는 결과가 확정된 뒤 원본 삭제만 다시 시도할 기록이다. 둘 다 아직 이 실험에서 고친 구현은 아니다.
+
+파일 이름과 행 번호를 키로 삼을 때도 같은 이름의 정정 파일을 허용하는지부터 정해야 한다. 입력 버전이 바뀌면 기존 결과를 갱신할지 새 결과로 보관할지에 따라 제약이 달라진다. 날짜나 DAG 실행 ID만으로는 그 구별을 대신하기 어렵다.
+
+| 멈춘 위치 | 다시 실행할 때 먼저 찾을 것 |
+| --- | --- |
+| 업로드 전 | 입력과 임시 PNG |
+| 업로드 후, DB 커밋 전 | 올라간 결과와 대응되는 DB 기록 |
+| DB 커밋 후, 원본 삭제 전 | 확정된 결과, 삭제할 원본 목록 |
+| 텍스트만 지워진 뒤 | 남은 이미지 원본과 정리 실패 기록 |
+
+README도 DB 커밋 후 FTP 삭제 실패의 재시도 큐가 아직 없다고 적고 있다. 이번에 먼저 채워야 할 것은 재시도 횟수가 아니다. **텍스트가 사라지고 이미지가 남은 작업을 찾아, 결과를 다시 만들지 않고 정리를 끝낼 수 있는 기록**이다.
 
 ## 참고 자료
 
-- [Airflow: Best Practices](https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html)
-- [Airflow: DAG Runs와 데이터 구간](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html)
-- [PostgreSQL 9.5 INSERT](https://www.postgresql.org/docs/9.5/sql-insert.html)
-- [PostgreSQL 9.4 트랜잭션 격리](https://www.postgresql.org/docs/9.4/transaction-iso.html)
+- [Airflow 태스크 상태와 재시도](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html)
+- [Airflow Best Practices](https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html)
+- [SQLite UPSERT](https://www.sqlite.org/lang_upsert.html)
 
-검토한 소스: PythonStudy의 시간 단위 DAG, 배치 호출부, 결합 파일 업로드·저장·삭제 경로, RAW 재적재 코드와 관련 테스트. Airflow 서버 실행 결과와 장애 재현 결과는 포함하지 않았다.
+근거: PythonStudy `9a324fe`의 DAG·호출부·`BatchRunner`·DB 계층·스키마와 README, `79be1f8`과의 관련 파일 대조. 2026-10-10 Python 3.12.3·SQLite 3.45.1에서 합성 입력으로 실행했으며 업로드·삭제는 대역이었다. 임시 DB는 확인 후 제거했다.

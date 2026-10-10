@@ -3,7 +3,7 @@ post_id: 713
 title: 차단은 한쪽이 했는데 매칭은 양쪽을 막아야 했다
 description: 차단한 A와 먼저 매칭을 요청한 B의 예시로 양방향 검사, 참가자 권한, 중복 저장의 규칙을 설명한다.
 date: '2026-06-14'
-revised: '2026-10-08'
+revised: '2026-10-10'
 url: https://so-dak.com/%eb%9e%9c%eb%8d%a4-%eb%a7%a4%ec%b9%ad-%ec%84%9c%eb%b9%84%ec%8a%a4-%ec%95%85%ec%84%b1-%ec%9c%a0%ec%a0%80-%ec%b0%a8%eb%8b%a8-redis-%ea%b8%b0%eb%b0%98-%eb%b9%a0%eb%a5%b8-%eb%a7%a4%ec%b9%ad-%ed%95%84/
 ---
 
@@ -22,7 +22,9 @@ return !userBlockRepository.existsByBlockerIdAndBlockedId(
             userB.getId(), userA.getId());
 ```
 
-두 조건이 모두 참이어야 통과한다. B의 목록이 비어 있어도 A가 B를 차단했다면 연결하지 않는다. 양방향 차단을 조회하는 서비스 테스트도 이 규칙을 다룬다.
+B의 목록이 비어 있어도 A가 B를 차단했다면 연결하지 않는다. `canMatchRejectsEitherDirectionBlock` 테스트도 요청자 방향은 `false`, 역방향은 `true`로 주고 거절되는지 검사한다.
+
+해제도 방향을 지켜야 한다. A가 차단을 풀어도 B → A 관계가 남아 있다면 아직 매칭할 수 없다. **내 차단을 해제하는 것이 상대의 거부까지 없애는 것은 아니다.**
 
 여기서 후보를 그냥 버리면 또 다른 문제가 생긴다. B는 A를 못 만날 뿐, 다른 사람과 통화할 기회까지 잃은 것은 아니다. 제외된 후보와 요청자는 다시 기다리는 경로로 이어진다. [후보를 꺼내는](https://so-dak.com/voicelink-distributed-matching-concurrency-redis-lua/) 데 성공했다는 것과 만남을 허용한다는 것은 별개의 판단이다.
 
@@ -53,11 +55,13 @@ A와 B의 기록 번호를 C가 알아냈다는 설명용 상황을 넣어보면
 | 신고 | 신고자와 통화 기록 | 이미 신고한 통화로 거절 |
 | 매칭 가능 여부 | 두 사용자 사이 양방향 차단 | 한쪽이라도 있으면 제외 |
 
-같은 사람을 두 번 차단한다고 관계 두 개가 필요하지는 않다. 반면 서로 다른 통화에서 발생한 신고를 상대가 같다는 이유로 합치면 사건 하나가 사라진다. 그래서 차단은 두 사용자, 신고는 신고자와 통화 기록을 기준으로 삼는다. 접수된 신고는 운영자 검토용이며 자동 제재로 이어지지는 않는다.
+같은 사람을 두 번 차단한다고 관계 두 개가 필요하지는 않다. `blockByCallHistoryIsIdempotent` 테스트도 이미 차단한 관계라면 저장소의 `save`를 호출하지 않는지 확인한다. 반면 서로 다른 통화의 신고를 상대가 같다는 이유로 합치면 사건 하나가 사라진다. 접수된 신고는 운영자 검토용이며 자동 제재로 이어지지는 않는다.
 
 ## 조회 순간과 저장 순간 사이
 
-“이미 차단했으면 종료”라는 검사만으로 동시 요청까지 정리되지는 않는다. 둘 다 관계가 없다고 읽고 저장할 수 있어 DB 고유 제약이 필요하다. 서비스의 중복 예외 처리도 JPA의 flush·커밋 시점까지 실제 DB에서 확인할 대상이다.
+두 요청이 동시에 “아직 차단하지 않았다”고 읽을 수 있다. 엔티티와 수동 DDL은 이를 막도록 `user_blocks`에 `(blocker_user_id, blocked_user_id)` 고유 제약을 정의한다. 신고 쪽은 `(reporter_user_id, call_history_id)`다. **서비스의 중복 기준을 실제 DB 스키마에도 적용해야 한다.**
+
+서비스는 저장 중 `DataIntegrityViolationException`을 잡아 중복 차단을 성공으로 취급한다. 다만 Mockito 테스트는 실제 트랜잭션을 열지 않는다. 중복 저장이 flush나 커밋에서 실패할 때도 응답이 성공하는지는 이 테스트만으로 증명되지 않는다.
 
 매칭과 차단이 동시에 진행되면 더 까다롭다. **차단 없음 조회 → 차단 저장 → 통화 확정** 순서라면 양방향 조회는 맞게 했어도 차단 뒤에 만남이 확정될 수 있다.
 
@@ -68,4 +72,4 @@ A와 B의 기록 번호를 C가 알아냈다는 설명용 상황을 넣어보면
 - [PostgreSQL 고유 제약](https://www.postgresql.org/docs/16/ddl-constraints.html)
 - [Spring 선언적 트랜잭션](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
 
-검토 범위: VoiceLink `1704b46`의 사용자 안전 서비스·테스트·엔티티·설정과 신고/차단 문서. 동시 저장·매칭 경쟁의 실제 DB 시험 결과는 포함하지 않았다.
+검토 범위: VoiceLink `b159c1d`의 `UserSafetyService`, `UserBlock`·`UserReport`, 매칭 후보 복구 코드와 `docs/user-safety.md`. 기능 추가 이력 `e539246`도 대조했다. 2026-10-10 로컬 `1704b46`에서 관련 소스가 동일함을 대조하고, 안전 서비스 9개·컨트롤러 4개 테스트의 통과를 다시 확인했다. 동시 저장·매칭 경쟁의 실제 DB 시험 결과는 포함하지 않았다.

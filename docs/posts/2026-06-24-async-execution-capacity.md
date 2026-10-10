@@ -3,7 +3,7 @@ post_id: 921
 title: 열세 번째 작업을 거절한 스레드 풀
 description: 끝나지 않는 작업을 열세 개 제출한 Java 실험으로 작업자 수, 큐, 접수 거절과 업무 완료를 구분한다.
 date: '2026-06-24'
-revised: '2026-10-08'
+revised: '2026-10-10'
 url: https://so-dak.com/%eb%b0%b1%ec%97%94%eb%93%9c-%ec%95%84%ed%82%a4%ed%85%8d%ec%b2%98-spring-boot-async%ec%99%80-threadpool%ec%9d%84-%ed%99%9c%ec%9a%a9%ed%95%9c-%eb%8c%80%ea%b7%9c%eb%aa%a8-%ed%8a%b8%eb%9e%98%ed%94%bd/
 ---
 
@@ -80,9 +80,31 @@ public class AsyncCapacityDemo {
 
 따라서 접수 실패를 호출자에게 알리거나 다시 처리할 수 있게 저장해야 한다. 메모리 큐에 접수된 작업도 프로세스가 종료되면 사라질 수 있다. 꼭 남아야 하는 작업이라면 영속 기록과 복구가 별도로 필요하다.
 
-[VoiceLink의 Outbox](https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/)는 고정 작업자 풀에 배치를 제출하고, DB에는 선점 상태와 임대를 남긴다. 이 실험의 제한 큐와 동일한 구조가 아니다. 풀 크기만 보고 대기열도 제한돼 있다고 설명할 수는 없다.
+## VoiceLink의 풀은 열세 번째를 거절하는 풀일까
 
-접수된 작업을 다시 시도할 때는 첫 실행이 늦게 완료될 수도 있다. **기다리기를 끝냈다는 이유로 작업까지 취소됐다고 보면 안 된다.**
+[VoiceLink의 Outbox](https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/) 발행 코드를 읽으면 풀을 만드는 부분부터 다르다. `MatchOutboxPublisher`의 실제 발췌다.
+
+```java
+this.publisherExecutor = Executors.newFixedThreadPool(
+        Math.max(1, publisherThreads),
+        publisherThreadFactory()
+);
+```
+
+`application.yml`의 작업자 수는 8, 한 번 선점할 배치 크기는 50이다. `newFixedThreadPool`은 무제한 큐를 사용하므로, 작업자 수가 8이라는 사실은 아홉 번째 작업을 거절한다는 뜻이 아니다. [Java 17 API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int))에서도 그 큐 조건을 확인할 수 있다.
+
+앞의 독립 실험에서 풀 생성만 `Executors.newFixedThreadPool(2)`로 바꾸고, 똑같이 작업 열세 개의 완료를 막아 제출했다.
+
+```text
+제한 큐(core=2, max=4, queue=8): accepted=12, rejected=1
+고정 풀(작업자 2, 무제한 큐):   accepted=13, rejected=0
+```
+
+2026-10-10 Linux·Java 17.0.20.1에서 두 예제를 다시 실행해도 같은 값이 나왔다. 두 작업자로 바꿨는데 오히려 더 많이 접수했다. 더 빨라진 게 아니라 기다릴 자리에 제한을 두지 않은 것이다. 뒤의 열한 작업은 두 작업자가 앞 일을 끝낼 때까지 기다린다.
+
+실제 `publishPending()`은 선점한 배치를 제출하고 `Future.get()`으로 각 작업을 기다린 뒤 끝난다. 다음 예약 실행도 `fixedDelay`를 사용하므로, 평소 한 배치를 기다리는 흐름을 빼고 “매초 50개가 무조건 계속 쌓인다”고 설명해서도 안 된다. 다만 **배치 크기 50이라는 값과 실행기 큐 용량을 50으로 제한한 것은 다른 설정**이다.
+
+DB에는 선점 상태와 임대가 남는다. 메모리 큐가 사라졌을 때도 임대 만료 후 다른 발행자가 다시 읽을 근거가 되지만, 발행이 늦어지는 동안의 대기 시간이나 메모리 사용량은 이번 접수 실험으로 측정하지 않았다.
 
 이 실험에서 먼저 정할 것은 작업자 수보다 거절 이후의 처리다. 즉시 실패를 알릴지, 기록을 남겨 다시 처리할지 결정하지 않으면 풀 크기를 늘려도 같은 질문이 뒤로 밀릴 뿐이다.
 
@@ -90,6 +112,7 @@ public class AsyncCapacityDemo {
 
 - [Java 17 ThreadPoolExecutor](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html)
 - [Java 17 Future](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Future.html)
+- [Java 17 Executors.newFixedThreadPool](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int))
 - [Spring 작업 실행과 스케줄링](https://docs.spring.io/spring-framework/reference/integration/scheduling.html)
 
-근거: 위 Java 17 예제를 2026-10-08 다시 실행해 `accepted=12, rejected=1`을 확인했다. VoiceLink `1704b46`의 Outbox 작업자·임대 서비스·관련 테스트도 대조했다. 운영 부하 측정은 아니다.
+근거: 위 제한 큐 예제와 고정 풀 변형을 독립 실행했다. 대조한 프로젝트 파일은 VoiceLink `1704b46`의 `MatchOutboxPublisher`·임대 서비스·`application.yml`·관련 테스트와 `docs/db-performance-indexes.md`이며, 해당 백엔드 파일은 `b159c1d`와 동일하다. 이 실험은 작업 접수의 차이를 보여줄 뿐, VoiceLink의 서비스 처리량이나 운영 부하를 측정한 것은 아니다.

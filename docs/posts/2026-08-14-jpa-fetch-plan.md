@@ -1,92 +1,105 @@
 ---
 post_id: 1247
 title: 게시글 목록의 댓글 개수를 가져오는 세 가지 방법
-description: 댓글 여덟 개와 두 개가 달린 게시글을 예로 들어 추가 조회, 조인 행 수, 댓글 개수 집계를 비교한다.
+description: Hibernate와 H2에서 댓글 8·2·0개를 조회해 배치 로딩, fetch join, 집계의 SQL 수와 엔티티 적재 수를 비교한다.
 date: '2026-08-14'
-revised: '2026-10-08'
+revised: '2026-10-10'
 url: https://so-dak.com/jpa-n1-%eb%ac%b8%ec%a0%9c%ec%99%80-fetch-join-%ec%8b%a4%eb%ac%b4-%ea%b3%a0%ec%b0%b0-lazy-loading%ec%9d%b4%eb%a9%b4-%eb%8b%a4-%ed%95%b4%ea%b2%b0%eb%90%98%eb%82%98/
 ---
 
-게시글 목록에 필요한 것은 제목과 댓글 개수다. 그런데 댓글 개수를 만드는 코드가 `post.getComments().size()`라면 어떨까. 화면에는 숫자 하나만 보이는데 DB에서는 그 숫자보다 많은 것을 가져올 수 있다.
+게시글 세 개에 댓글이 각각 여덟 개, 두 개, 0개 달려 있다. 목록에 필요한 것은 제목과 댓글 개수뿐이다. `post.getComments().size()`로 만들면 댓글 본문까지 읽을까?
 
-아래 게시글·댓글은 학습용 모델이다. VoiceLink의 공통 JPA 설정과 조회 코드를 검토했지만, 이 예제의 SQL 횟수나 성능을 실행해 측정한 것은 아니다.
+2026년 10월 10일 Java 17.0.20.1·Hibernate 6.4.4.Final·H2 2.2.224에서 작은 모델을 별도로 만들어 비교했다. 배치 조회를 켜니 SQL은 네 번에서 두 번으로 줄었다. 그런데 읽어 들인 엔티티는 여전히 열세 개였다. **조회 횟수가 줄어도 필요 없는 데이터가 사라지는 것은 아니었다.**
 
-## 목록을 읽은 뒤에 쿼리가 더 나갈 수 있다
+## 같은 세 게시글로 네 번 조회했다
+
+모델은 `DemoPost`와 `DemoComment`다. 게시글의 댓글은 `@OneToMany(mappedBy = "post")`, 댓글의 게시글은 `@ManyToOne(fetch = LAZY)`로 연결했다. 댓글 본문에는 `text`를 넣었다. 이는 서비스 데이터가 아닌 실험용 입력이다.
+
+| 게시글 | 댓글 수 |
+| --- | ---: |
+| A | 8 |
+| B | 2 |
+| C | 0 |
+
+각 비교에 같은 입력을 저장하고 **새 Hibernate 세션**에서 조회했다. 2차 캐시와 쿼리 캐시는 끄고, 저장 단계 뒤 통계를 초기화했다. `hibernate.generate_statistics=true`로 조회 때의 SQL 준비 횟수와 엔티티 적재 수를 읽었다. `default_batch_fetch_size`는 기본 비교에서 0, 배치 비교에서 100이다.
+
+먼저 게시글 세 개를 읽고 댓글 개수를 만들었다. 실험 코드에서 조회한 부분이다.
 
 ```java
-List<Post> posts = repository.findAll(pageable).getContent();
-for (Post post : posts) {
-    int commentCount = post.getComments().size(); // 이 접근에서 추가 조회 가능
-}
+var posts = session.createQuery(
+        "select p from DemoPost p order by p.id", Post.class)
+    .setMaxResults(3)
+    .list();
+var counts = posts.stream()
+    .map(p -> p.comments.size())
+    .toList();
 ```
 
-댓글 컬렉션을 초기화하면 개수를 세려고 댓글 엔티티까지 읽게 된다. 개수만 물었는데 댓글 전원이 출석하는 셈이다. 설명용 SQL로 펼치면 차이가 보인다.
+배치 조회를 끄면 목록 한 번과 댓글 컬렉션 세 번, 총 네 번이었다. 켜면 댓글을 묶어서 읽어 두 번이 됐다. 두 경우 모두 결과는 `[8, 2, 0]`, 엔티티는 게시글 3개와 댓글 10개다. 개수만 물었는데 댓글 전원이 출석했다.
 
-```sql
--- 목록 조회
-SELECT id, title FROM post ORDER BY id LIMIT 10;
--- 응답 변환 중 각 게시글의 댓글 접근
-SELECT id, post_id, body FROM comment WHERE post_id = :post_id;
+## 한 번 조회했지만 두 글만 읽지는 않았다
+
+컬렉션 fetch join을 쓰고 결과를 두 게시글로 제한해봤다.
+
+```java
+var posts = session.createQuery(
+        "select p from DemoPost p "
+            + "left join fetch p.comments order by p.id",
+        Post.class)
+    .setMaxResults(2)
+    .list();
 ```
 
-한 페이지에 글이 열 개라도 SQL이 반드시 열한 번인 것은 아니다. 배치 조회로 묶일 수도 있다. 다만 **조회 횟수를 줄여도 댓글 본문을 읽는 비용은 남는다.** 이제 한 번에 가져오는 방법도 따져볼 차례다.
+반환된 게시글은 두 개였다. SQL도 한 번이었다. 하지만 통계의 엔티티 적재 수는 열세 개였고, 다음 경고가 나왔다.
 
-## 댓글을 조인하면 한 행이 게시글 하나가 아니다
-
-게시글 A에 댓글 여덟 개, B에 두 개가 있다고 하자.
-
-| 게시글 | 댓글 수 | 조인 결과에서 차지하는 행 |
-| --- | ---: | ---: |
-| A | 8 | 8 |
-| B | 2 | 2 |
-| 합계 | 10 | 게시글 2개에 해당하는 10행 |
-
-이 상태에서 SQL 결과에 `LIMIT 10`을 걸면 게시글 열 개를 고르는 것과 다르다. 다음은 행 수를 설명하기 위한 SQL이며 Hibernate가 출력한 실행 로그가 아니다.
-
-```sql
--- 결과 행의 단위를 설명하는 SQL: JPA fetch join 실행 로그가 아님
-SELECT p.id, p.title, c.id AS comment_id
-FROM post p
-LEFT JOIN comment c ON c.post_id = p.id
-ORDER BY p.id, c.id
-LIMIT 10;
+```text
+HHH90003004: firstResult/maxResults specified
+with collection fetch; applying in memory
 ```
 
-**조인 결과 열 행이 게시글 두 개일 수 있다.** ORM이 객체를 합쳐 보여줘도 DB에서 읽은 행 수가 없어지는 것은 아니다. 컬렉션 fetch join과 페이징을 섞을 때는 생성 SQL과 메모리 쪽 제한 여부를 확인해야 한다.
+이 실험에서는 게시글 세 개와 댓글 열 개를 읽은 뒤 메모리에서 게시글 두 개로 제한했다. **응답에 두 개가 보인다고 DB에서도 두 개만 읽었다고 할 수 없었다.**
 
-## 인원 파악에 전원 출석이 필요할까
+왜 SQL 행에 바로 제한을 걸기 어려울까. A의 댓글 여덟 개를 조인하면 A만 여덟 행이 된다. DB의 `LIMIT 2`는 게시글 두 개가 아니라 이 중 두 행을 자를 수 있다. 게시글 단위의 페이지와 조인 결과의 행 단위가 다르기 때문이다. [Hibernate의 fetch join 설명](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#association-fetching)도 컬렉션 fetch join과 페이지 제한을 함께 쓰는 경우를 주의하라고 설명한다.
 
-이 목록의 요구를 다시 적으면 `게시글 ID, 제목, 댓글 수`다. 댓글 본문 전체는 필요하지 않다. 먼저 부모 페이지를 제한하고 개수를 집계하는 설명용 SQL이다.
+## 숫자를 구하는 쿼리로 바꿨다
 
-```sql
-WITH page AS (
-    SELECT id, title FROM post ORDER BY id LIMIT 10
-)
-SELECT p.id, p.title, COUNT(c.id) AS comment_count
-FROM page p
-LEFT JOIN comment c ON c.post_id = p.id
-GROUP BY p.id, p.title
-ORDER BY p.id;
+댓글 내용을 응답에 쓰지 않는다면, 엔티티를 읽고 세는 대신 DB에 개수를 요청할 수 있다. 같은 입력으로 실행한 집계다.
+
+```java
+var rows = session.createQuery("""
+    select p.id, p.title, count(c.id)
+    from DemoPost p
+    left join p.comments c
+    group by p.id, p.title
+    order by p.id
+    """, Object[].class)
+    .setMaxResults(3)
+    .list();
 ```
 
-외부 조인과 `COUNT(c.id)`를 써 댓글이 없는 글도 0으로 남긴다. 엔티티를 전부 읽은 뒤 DTO로 포장하는 것과, 처음부터 집계 결과만 읽는 것은 다르다.
+`LEFT JOIN`과 `count(c.id)`를 사용해 댓글이 없는 C도 0으로 남겼다. 반환한 개수는 `[8, 2, 0]`으로 같았고, SQL 한 번에 엔티티 적재는 0개였다. 숫자를 세기 위해 댓글 객체를 만들지 않은 것이다.
 
-| 방법 | 가져오는 것 | 이 화면에서 따질 비용 |
-| --- | --- | --- |
-| 지연 로딩 | 접근한 게시글의 댓글 엔티티 | 추가 SQL과 전체 댓글 적재 |
-| fetch join | 게시글과 댓글을 펼친 행 | 행 증가와 부모 페이징 |
-| 집계 DTO | 제목과 댓글 개수 | 집계 조건과 댓글 0개 처리 |
+| 실제 실행한 조회 | 반환한 부모 수 | SQL 수 | 적재한 엔티티 수 |
+| --- | ---: | ---: | ---: |
+| 지연 로딩 후 개수 접근 | 3 | 4 | 13 |
+| 배치 크기 100으로 개수 접근 | 3 | 2 | 13 |
+| 컬렉션 fetch join + 제한 2 | 2 | 1 | 13 |
+| ID·제목·댓글 수 집계 | 3 | 1 | 0 |
 
-집계 DTO는 이 화면에서 읽지 않을 댓글 본문을 빼는 선택이다. 대신 집계 쿼리를 따로 관리해야 하고, 댓글 내용이 필요한 상세 화면에는 그대로 쓸 수 없다. 조회 횟수만 보고 fetch join을 고르는 대신 화면에서 쓸 값부터 정하는 이유다.
+이 수치는 해당 데이터 조회만 센 결과다. 페이지 전체 개수를 구하는 별도 쿼리나 운영 DB의 실행 시간은 포함하지 않았다. 집계도 댓글 수가 많으면 DB에서 세는 비용이 들고, 댓글 내용이 필요한 상세 화면에는 이 결과만으로 부족하다.
 
-VoiceLink에는 배치 조회 크기와 `open-in-view=false` 설정이 있다. 하지만 설정이 있다는 사실만으로 모든 목록의 추가 조회가 사라졌다고 볼 수는 없다.
+## 목록에 무엇을 보여줄 것인가
 
-비교할 때는 같은 게시글·정렬·댓글 0개 사례를 놓고 쿼리 수, 반환 행 수, 최종 응답을 함께 본다. **한 번의 무거운 조회보다 두 번의 작은 조회가 나을 수도 있으니**, SQL 횟수만으로 승자를 정하지 않는 편이 낫다.
+VoiceLink의 배치 크기 100과 `open-in-view=false` 설정도 대조했다. 배치 설정은 여러 추가 조회를 묶지만, 이 실험처럼 숫자만 필요한 화면에서 댓글 본문까지 빼주지는 않는다. **설정을 바꾸는 일과 필요한 데이터만 고르는 일은 별개였다.**
+
+제목과 개수만 보여준다면 집계 결과부터 비교하겠다. 댓글 본문까지 보여주는 화면이라면 엔티티 조회가 필요할 수 있고, 그때는 페이지를 어디서 제한하는지 다시 봐야 한다. 집계 쿼리를 따로 관리하는 비용도 있으니 화면의 요구에 맞춰 고를 일이다.
+
+SQL 한 번이라는 숫자 옆에 ‘게시글 3개와 댓글 10개를 읽음’을 적고 나니 판단이 달라졌다. 이번 목록에서 줄일 대상은 왕복 횟수뿐 아니라 **화면에서 쓰지도 않을 댓글 객체**였다.
 
 ## 참고 자료
 
-- [Hibernate 6.4 fetching](https://docs.hibernate.org/orm/6.4/userguide/html_single/#fetching)
+- [Hibernate 6.4 배치 fetching](https://docs.hibernate.org/orm/6.4/userguide/html_single/#fetching-batch)
 - [Hibernate 6.4 HQL: association fetching](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#association-fetching)
 - [Spring Data JPA projections](https://docs.spring.io/spring-data/jpa/reference/repositories/projections.html)
 
-검토한 소스: VoiceLink의 공통 JPA 설정, 사용자 저장소와 빌드 의존성. 본문의 게시글·댓글 쿼리는 실행 결과가 없는 설명용 예제다.
+근거: 2026-10-10 독립 Java 실험의 실제 SQL·Hibernate 통계·반환값. VoiceLink `1704b46`와 `b159c1d`의 관련 설정과 의존성은 동일했다. 이 글의 수치는 작은 모델의 적재량 비교이며 운영 성능 측정은 아니다.
