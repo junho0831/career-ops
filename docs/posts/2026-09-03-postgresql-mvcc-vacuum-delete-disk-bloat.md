@@ -3,7 +3,7 @@ post_id: 1397
 title: DELETE가 행을 지워도 파일 크기는 남는 이유
 description: PostgreSQL 14.20에서 10만 행 중 9만 행을 삭제하고 옛 스냅샷, VACUUM, 실제 파일 크기의 차이를 확인한다.
 date: '2026-09-03'
-revised: '2026-10-10'
+revised: '2026-10-11'
 url: https://so-dak.com/postgresql-mvcc-vacuum-delete-disk-bloat/
 ---
 
@@ -49,17 +49,39 @@ SELECT count(*) FROM mvcc_example; -- 100000
 
 ## 파일 크기는 같아도 안쪽 상태는 바뀌었다
 
-이번에는 A를 열어 둔 상태와 끝낸 상태를 나누어 `VACUUM`을 실행했다. `VACUUM`은 트랜잭션 블록 밖의 별도 연결에서 실행했다.
+이번에는 A를 열어 둔 상태와 끝낸 상태를 나누어 `VACUUM`을 실행했다. 앞의 두 연결을 그대로 사용한다. **A를 먼저 끝내지 않는 것**이 비교의 핵심이다.
 
 파일 크기는 `pg_relation_size`로 테이블 본체만 쟀다. 죽은 행과 빈 공간은 실험 DB에 설치한 `pgstattuple`로 확인했다. `pg_stat_user_tables.n_dead_tup`의 추정값을 실제 행 수처럼 쓰지 않기 위해서다.
 
 ```sql
-CREATE EXTENSION pgstattuple;
+-- 연결 B: 앞의 DELETE가 커밋된 상태에서 순서대로 실행한다.
+-- psql의 기본 autocommit을 사용하고 BEGIN으로 묶지 않는다.
+CREATE EXTENSION IF NOT EXISTS pgstattuple;
 
-SELECT pg_relation_size('mvcc_example');
-SELECT dead_tuple_count, free_percent
+-- 1. A의 옛 스냅샷을 유지한 채 정리하고 측정한다.
+VACUUM mvcc_example;
+SELECT pg_relation_size('mvcc_example') AS heap_bytes,
+       dead_tuple_count, free_percent
+FROM pgstattuple('mvcc_example');
+
+-- 연결 A: 위 측정을 마친 뒤 실행한다.
+COMMIT;
+
+-- 연결 B: A가 끝난 것을 확인한 뒤 실행한다.
+-- 2. 더 이상 A가 필요로 하지 않는 옛 행을 정리한다.
+VACUUM mvcc_example;
+SELECT pg_relation_size('mvcc_example') AS heap_bytes,
+       dead_tuple_count, free_percent
+FROM pgstattuple('mvcc_example');
+
+-- 3. 같은 실험 테이블을 새 파일에 쓰고 다시 측정한다.
+VACUUM FULL mvcc_example;
+SELECT pg_relation_size('mvcc_example') AS heap_bytes,
+       dead_tuple_count, free_percent
 FROM pgstattuple('mvcc_example');
 ```
+
+`VACUUM`과 `VACUUM FULL`은 트랜잭션 블록 안에서 실행할 수 없다. SQL 도구가 여러 문장을 한 트랜잭션으로 묶는다면 B의 각 명령을 따로 실행한다. 위 순서는 이 글의 별도 실험 DB용이다. 행 수가 같더라도 데이터와 환경이 다르면 파일 크기까지 아래 표와 같아지지는 않는다.
 
 아래는 이번 독립 실행에서 얻은 값이다. 앞쪽 9만 행을 지우고 뒤쪽 1만 행을 남겼다. 파일 끝만 잘라내면 되는 조건을 피하고, **파일 중간이 비었을 때** 무엇이 달라지는지 보려는 입력이다.
 
