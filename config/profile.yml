@@ -1,6 +1,8 @@
 candidate:
   full_name: "박준호"
   birth_date: "1992.08.31"
+  # source: 기존 사용자 PDF의 '남', 사용자 직접 확인 2026-10-11
+  gender: "남성"
   email: "junho6667@gmail.com"
   phone: "010-3525-6275"
   location: "South Korea"
