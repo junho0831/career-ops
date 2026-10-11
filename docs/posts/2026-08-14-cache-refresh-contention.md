@@ -87,6 +87,25 @@ assertThat(elapsed).isLessThan(Duration.ofMillis(250));
 
 캐시 테스트에는 오래된 세션 정리, 참가자 부족 시 정리, 정상 세션 유지도 들어 있다. 하지만 정상 반환값만 넣은 대역으로는 조회 자체가 실패했을 때의 의미까지 알 수 없다. 여기서 반환값을 만드는 쪽으로 한 단계 더 들어가 봤다.
 
+이전 검증 기록: 2026년 10월 9일 Java 17.0.9·Spring Boot 3.2.5·Gradle 8.14.2 환경에서 캐시 테스트와 매칭 확정 테스트를 함께 재실행했다.
+
+```bash
+./gradlew test \
+  --tests kr.co.voicelink.match.service.ActiveSessionResolverTest \
+  --tests kr.co.voicelink.match.service.MatchFinalizerTest \
+  --rerun-tasks
+```
+
+JUnit 결과 파일에서 확인한 10월 9일 실행 결과다.
+
+```text
+ActiveSessionResolverTest: 4 tests, 0 failures, 0 errors, 0 skipped
+MatchFinalizerTest:        8 tests, 0 failures, 0 errors, 0 skipped
+BUILD SUCCESSFUL
+```
+
+캐시 테스트 네 개에는 오래된 세션 정리, 참가자 부족 시 정리, 정상 세션 유지, 위 동시 요청 검사가 들어 있다. 여기까지는 한 프로세스 안의 동작이다. 실제 LiveKit 서버나 여러 애플리케이션 서버를 연결한 부하 테스트는 아니다.
+
 ## 1초를 늘리기 전에 반환값의 의미를 봐야 한다
 
 캐시를 오래 두면 외부 호출은 줄어들 수 있다. 반면 참가자가 나간 뒤에도 잠시 전 값을 재사용한다. 이 값은 세션을 유지할지 결정하는 데 쓰인다. 기본 1초가 모든 서비스에 맞는 정답은 아니다.
