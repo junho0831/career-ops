@@ -3,7 +3,7 @@ post_id: 710
 title: 세 개의 401이 같은 리프레시 토큰을 사용한다면
 description: API 세 개가 동시에 401을 받는 예시로 공유 갱신 Future, 토큰 소비, 응답 유실 뒤 남는 상태를 읽는다.
 date: '2026-06-14'
-revised: '2026-10-10'
+revised: '2026-10-12'
 url: https://so-dak.com/spring-boot-redis-jwt-access-token%ea%b3%bc-opaque-refresh-token-%ec%95%88%ec%a0%84%ed%95%98%ea%b2%8c-%ea%b4%80%eb%a6%ac%ed%95%98%ea%b8%b0/
 ---
 
@@ -71,11 +71,11 @@ if (!StringUtils.hasText(userId)) {
 
 서버가 새 토큰을 만든 직후 응답이 끊겼다고 해보자. 앱에는 옛 토큰만 남고 서버에서는 이미 소비됐다. **같은 요청을 다시 보낸다고 처음 상태로 돌아가지는 않는다.**
 
-앱의 `_performRefresh`는 요청·저장 중 예외를 잡으면 `null`을 돌려준다. 원래 401 처리에서는 세션 만료 신호를 올린다. 이전 토큰의 유예 재사용이나 갱신 결과 재조회는 여기서 제공하지 않는다. 서버가 새 토큰을 발급했다고 앱의 인증이 이어지는 것은 아니다.
+앱은 갱신 요청이나 새 토큰 저장에 실패하면 `null`을 반환하고, 원래 401 처리에서 세션 만료 신호를 올린다. 소비한 토큰을 잠시 다시 쓰거나 발급 결과를 재조회하는 경로는 없다.
 
-응답을 받으면 앱은 액세스 토큰부터 쓰고, 리프레시 토큰과 사용자 정보를 차례로 저장한다. 두 번째 쓰기에서 실패하면 새 액세스 토큰과 옛 리프레시 토큰이 섞일 수 있다. `_performRefresh`는 이 저장 예외도 잡아 실패를 반환한다.
+응답을 받은 뒤에도 저장은 액세스 토큰 → 리프레시 토큰 → 사용자 정보 순이다. 두 번째 쓰기가 실패하면 새 액세스 토큰과 옛 리프레시 토큰이 섞일 수 있다. 이 부분 저장 상황은 아직 실행해 확인한 결과가 아니다.
 
-다음 시험은 그 두 번째 쓰기에 실패를 주입하는 것이다. 남은 인증 정보가 정리되고 다시 로그인할 수 있는지까지 봐야 “갱신 실패”가 사용자에게 어떤 상태로 끝나는지 알 수 있다.
+세 개의 401을 한 번의 갱신으로 묶는 것은 겹친 요청의 문제를 푼다. **한 번 소비한 토큰으로 실패한 갱신 전체를 되감지는 못한다.**
 
 ## 참고 자료
 
@@ -83,4 +83,4 @@ if (!StringUtils.hasText(userId)) {
 - [Redis GETDEL](https://redis.io/docs/latest/commands/getdel/)
 - [JSON Web Token 표준](https://www.rfc-editor.org/rfc/rfc7519.html)
 
-검토 범위: VoiceLink `b159c1d`의 `RefreshTokenService`·만료 설정, `docs/handover-server.md`, Flutter의 `dio_provider.dart`·`token_storage.dart`와 기능 추가 이력 `2ba1bf7`. 같은 관련 소스를 가진 로컬 `1704b46`에서 2026-10-10 리프레시 서비스 4개·JWT 제공자 3개 테스트의 통과를 재확인했다. Redis는 모의 객체를 사용했으며 응답 유실·부분 저장과 Flutter의 동시 401은 실행하지 않은 시험 시나리오다.
+검토 범위: 2026-10-12 VoiceLink `37109d5`의 토큰 서비스·만료 설정, Flutter 갱신·저장 코드와 `docs/environment.md`·`docs/core-business-flows.md`를 대조했다. 10월 10일 `1704b46`에서 리프레시 서비스 4개·JWT 제공자 3개 테스트가 통과했다. Redis는 모의 객체를 썼으며 응답 유실·부분 저장·Flutter 동시 401은 실행하지 않은 시나리오다.

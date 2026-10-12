@@ -3,7 +3,7 @@ post_id: 719
 title: Docker가 있는데도 PostgreSQL 테스트는 건너뛰었다
 description: Docker API 버전 때문에 빠진 PostgreSQL 16 테스트를 실행하고, 두 트랜잭션의 잠금 경쟁을 어떤 순서로 검증했는지 따라간다.
 date: '2026-06-14'
-revised: '2026-10-10'
+revised: '2026-10-12'
 url: https://so-dak.com/testcontainers%eb%a5%bc-%ed%99%9c%ec%9a%a9%ed%95%9c-spring-boot-%ec%8b%a4%ec%8b%9c%ea%b0%84-%eb%a7%a4%ec%b9%ad-%eb%a1%9c%ec%a7%81-e2eend-to-end-%ed%86%b5%ed%95%a9-%ed%85%8c%ec%8a%a4%ed%8a%b8/
 ---
 
@@ -77,22 +77,7 @@ assertThat(List.of(firstClaimedId, secondClaimedId))
 
 `secondClaim.get`이 `releaseFirst.countDown`보다 앞에 있다. A를 풀기 전에 B의 결과를 받는 순서다. 단지 두 작업이 끝난 뒤 서로 다른 ID만 비교하는 것보다 확인 범위가 분명하다.
 
-이번 재실행은 이 순서와 ID 검증을 모두 통과했다. 실패할 때도 첫 작업의 대기를 풀고 실행기를 닫도록 정리해야 다음 테스트에 남은 작업이 섞이지 않는다.
-
-## 통과 숫자 대신 남은 질문을 본다
-
-이 테스트가 빠진 것은 처음이 아니다. 이전 기록과 이번 결과의 차이는 통과 개수보다 실행한 대상에 있다.
-
-| 실행 기록 | 확인한 범위 |
-| --- | --- |
-| 9월 28일 선택 실행: 152개 통과·1개 건너뜀 | PostgreSQL 컨테이너 테스트 제외 |
-| 10월 9일 선택 실행: 90개 통과·1개 건너뜀 | 위 테스트 제외, 별도 PostgreSQL 14.20 SQL 실험에서 A=1·B=2 선점 확인 |
-| 10월 10일 기본 실행: 195개 통과·1개 건너뜀 | 이번 Docker API 호환 문제로 저장소 테스트 제외 |
-| 같은 날 API 버전을 지정해 한 개 재실행 | 프로젝트 매핑·트랜잭션을 거친 PostgreSQL 16 선점 검증 통과 |
-
-실행 대상이 다르므로 숫자가 늘어난 것을 품질의 전후 비교로 쓰지는 않는다. 별도 SQL 실험은 SQL의 동작을 보여줬고, 이번 프로젝트 테스트는 JPA 매핑과 트랜잭션 설정까지 거친 결과를 더했다.
-
-차단한 상대를 후보에서 빼는 규칙은 서비스 테스트로 확인할 수 있다. 반면 두 작업의 DB 잠금이나 실제 기기의 음성 수신은 각각 그 경로를 실행해야 한다. 같은 기능 주변에 있다고 전부 하나의 거대한 E2E 테스트로 묶을 이유는 없다.
+재실행은 이 순서와 ID 검증을 모두 통과했다. 테스트가 실패해도 첫 작업의 대기를 풀고 실행기를 닫도록 정리 코드를 둔다.
 
 이번에는 실패가 아니라 건너뜀 한 줄에 원인이 숨어 있었다. 초록색 결과를 읽을 때도, **확인하려던 질문이 실행 대상에 들어갔는지**부터 봐야 했다.
 
@@ -102,4 +87,4 @@ assertThat(List.of(firstClaimedId, secondClaimedId))
 - [Spring Boot 테스트](https://docs.spring.io/spring-boot/reference/testing/index.html)
 - [PostgreSQL 16 SELECT와 행 잠금](https://www.postgresql.org/docs/16/sql-select.html)
 
-근거: VoiceLink `1704b46`의 전체 백엔드 실행 로그와 `MatchOutboxRepositoryPostgresTest` 재실행, 저장소 SQL·테스트 설정. 관련 백엔드 파일은 `b159c1d`와 동일하다. 조건부 재실행 환경은 Java 17.0.20.1·Spring Boot 3.2.5·Testcontainers 1.19.7이며 테스트 JVM의 Docker API 버전은 1.40이다. 브라우저·실기기 E2E 결과는 아니다.
+근거: VoiceLink `1704b46`의 백엔드 실행 로그와 `MatchOutboxRepositoryPostgresTest` 재실행, 저장소 SQL·테스트 설정. 2026-10-12 기준 `37109d5`에서도 관련 저장소·테스트·빌드 설정은 동일하다. 조건부 재실행 환경은 Java 17.0.20.1·Spring Boot 3.2.5·Testcontainers 1.19.7이며 테스트 JVM의 Docker API 버전은 1.40이다. 브라우저·실기기 E2E 결과는 아니다.

@@ -3,13 +3,13 @@ post_id: 1245
 title: 취소한 통화의 마이크가 뒤늦게 허용되면
 description: VoiceLink 연결 테스트에서 늦은 마이크 허용과 15초 타임아웃을 따라가며, 취소한 방과 새 방을 구분하는 코드를 읽는다.
 date: '2026-08-14'
-revised: '2026-10-10'
+revised: '2026-10-12'
 url: https://so-dak.com/webrtc-livekit-%ec%97%b0%eb%8f%99-%ed%9a%8c%ea%b3%a0-%ea%b7%b8%eb%83%a5-%ec%98%a4%ed%94%88%ec%86%8c%ec%8a%a4-%ec%84%9c%eb%b2%84-%eb%9d%84%ec%9a%b0%eb%a9%b4-%eb%90%98%eb%8a%94-%ea%b1%b0-%ec%95%84/
 ---
 
-`livekit_connection_test.dart`에는 조금 긴 이름의 테스트가 있다. `late permission cannot revive cancelled call or disconnect newer room`. 취소한 통화의 마이크 권한을 늦게 허용해도, 그 통화가 살아나거나 다음 통화가 끊겨서는 안 된다는 테스트다.
+통화를 취소하고 새 통화를 시작했는데, 이전 통화의 마이크 권한 응답이 이제야 돌아온다면? 화면을 닫아도 이미 시작한 권한 요청은 응답을 기다릴 수 있다.
 
-화면을 닫으면 끝났을 것 같지만 권한 요청은 아직 응답을 기다릴 수 있다. **결과를 버리는 것과 뒤늦게 얻은 마이크를 닫는 것은 다른 일이다.** VoiceLink의 Flutter 연결 코드는 이 둘을 어떻게 나누는지 따라가 봤다. 기준은 `b159c1d`, Flutter 3.38.3과 `livekit_client` 2.5.4다.
+**결과를 무시하는 것과 뒤늦게 얻은 마이크를 닫는 것은 다른 일이다.** VoiceLink의 연결 코드와 테스트에서 이 상황을 따라가 봤다. Flutter 3.38.3·`livekit_client` 2.5.4 환경이다.
 
 ## 테스트는 이전 권한을 일부러 나중에 허용한다
 
@@ -31,7 +31,7 @@ expect(next.disconnects, 0);
 
 첫 트랙은 발행되지 않고 중지된다. 서비스가 들고 있는 방은 여전히 두 번째 방이고, 그 방의 연결 해제 횟수는 0이어야 한다. **옛 마이크 정리와 새 방 보존을 함께** 확인한다. 2026-10-10 Linux에서 연결 테스트 네 개를 재실행했고, 이 순서를 강제로 만든 검증도 통과했다.
 
-`1704b46`의 변경 전후도 이 테스트와 맞물린다. 이전에는 `setMicrophoneEnabled(true)`를 기다린 뒤 방이 같은지만 확인했다. 변경 뒤에는 `LocalAudioTrack`을 직접 받아 보관하고, 취소됐으면 그 트랙을 `stop()`·`dispose()`한다. 현재 코드를 보고 당시 생각을 추측할 필요 없이, 자원을 잡고 정리하는 방식이 바뀐 것은 변경 내역에서 확인할 수 있다.
+`1704b46`의 변경 전후도 이 테스트와 맞물린다. 이전에는 `setMicrophoneEnabled(true)`를 기다린 뒤 방이 같은지만 확인했다. 변경 뒤에는 `LocalAudioTrack`을 직접 받아 보관하고, 취소됐으면 그 트랙을 `stop()`·`dispose()`한다.
 
 ## 옛 실패가 공용 disconnect를 부르면
 
@@ -68,15 +68,10 @@ await connection.timeout(timeout);
 
 타임아웃 테스트는 15초 뒤 서비스의 방이 비었는지 확인한다. 이후 원래 연결을 일부러 완료시키고 방 정리가 한 번 더 호출되는지도 본다. **기다리기를 끝냈다는 사실만으로 작업 자체가 사라지지는 않는다.**
 
-마지막으로 `ready`도 음성이 실제로 들린다는 측정값은 아니다. `_tryStartAudio()`는 재생 시작에 실패하면 `false`를 반환하지만, 연결 코드는 그 뒤에도 `ready`를 알린다. 통화 화면은 `audioStarted`를 따로 읽고 필요하면 재생을 다시 시도한다. 권한을 얻고 방에 붙은 상태와 브라우저가 오디오 재생을 허용한 상태를 하나로 묶지 않은 것이다.
-
-여기까지는 응답 순서를 통제한 테스트다. 실제 기기에서 마이크가 해제되거나 양쪽 음성이 들렸다는 검증은 아니다. 다음 기기 시험에서도 조건을 그대로 가져가면 된다. 이전 마이크는 꺼지고, 새 통화는 남아 있는가.
+늦게 끝난 작업은 자기가 얻은 마이크와 방만 정리해야 한다. 그래야 **취소한 통화는 닫히고, 새 통화는 남는다.**
 
 ## 참고 자료
 
 - [LiveKit 연결과 재연결](https://docs.livekit.io/intro/basics/connect/)
-- [LiveKit 토큰과 권한](https://docs.livekit.io/frontends/reference/tokens-grants/)
-- [ICE 표준](https://www.rfc-editor.org/rfc/rfc8445.html)
-- [TURN 표준](https://www.rfc-editor.org/rfc/rfc8656.html)
 
-프로젝트 근거: `frontend/lib/src/livekit/service/livekit_service.dart`, `frontend/test/livekit/service/livekit_connection_test.dart`, `frontend/lib/src/features/match/presentation/screens/call_screen.dart`, `docs/matching-call-lifecycle.md`. 실행한 VoiceLink `1704b46`의 해당 파일은 `b159c1d`와 동일하다. 테스트는 Flutter 3.38.3에서 방과 마이크 트랙을 대역으로 교체해 실행했다.
+프로젝트 근거: `frontend/lib/src/livekit/service/livekit_service.dart`, `frontend/test/livekit/service/livekit_connection_test.dart`, `docs/matching-call-lifecycle.md`. 2026-10-10 `1704b46`에서 실행한 테스트 네 개는 방과 마이크 트랙을 대역으로 바꾼 결과다. 10월 12일의 `37109d5`에서도 해당 서비스와 테스트는 동일하다. 실제 기기의 마이크 해제나 양방향 음성 수신을 검증한 결과는 아니다.

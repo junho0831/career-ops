@@ -1,9 +1,9 @@
 ---
 post_id: 716
 title: sent_at이 있다고 발송 성공은 아니었다
-description: 보낸 시각과 오류가 함께 남은 행을 예로 들어 Outbox 상태 변환, 제약 설정, 부분 적용을 설명한다.
+description: 발송을 포기해도 sent_at을 채우던 Outbox에서 과거 실패가 SENT로 바뀌는 조건과 상태 변환 전에 확인할 기록을 살펴본다.
 date: '2026-06-14'
-revised: '2026-10-10'
+revised: '2026-10-12'
 url: https://so-dak.com/jpa-ddl-autoupdate%ec%9d%98-%ec%9c%84%ed%97%98%ec%84%b1%ea%b3%bc-flyway%eb%a5%bc-%ed%99%9c%ec%9a%a9%ed%95%9c-%ec%95%88%ec%a0%84%ed%95%9c-db-%eb%a7%88%ec%9d%b4%ea%b7%b8%eb%a0%88%ec%9d%b4%ec%85%98/
 ---
 
@@ -37,43 +37,17 @@ WHERE status IS NULL;
 
 여기서 변환 규칙을 한 번 더 의심할 이유가 생긴다. 이전 `markFailed`는 예외 메시지가 `null`이면 `last_error`도 비워 두었다. 그 상태로 재시도를 포기해 시각을 채우면 표의 두 번째 줄, `SENT`로 간다. **오류 기록이 없다는 사실만으로 성공을 증명할 수는 없다.** 이 조합은 당시 로그나 별도 발송 기록을 대조해야 분류할 수 있다.
 
-## 빈 컬럼을 만든 다음에는 누가 쓰고 있나
+## 컬럼을 채워도 과거의 의미까지 채워지지는 않는다
 
-변환 파일은 새 컬럼을 nullable로 추가하고 기존 행을 채운 뒤 기본값과 `NOT NULL`을 설정한다. 아래는 파일에서 마지막 제약 설정을 발췌한 부분이다.
+변환 파일은 새 컬럼을 nullable로 추가하고 기존 행을 채운 뒤 기본값과 `NOT NULL`을 설정한다. 하지만 빈칸을 없앴다는 사실이 분류까지 맞았다는 뜻은 아니다. 앞의 실패 행도 `SENT`라는 값이 있으니 빈칸 검사에는 걸리지 않는다.
 
-```sql
-ALTER TABLE match_outbox
-    ALTER COLUMN status SET DEFAULT 'PENDING',
-    ALTER COLUMN status SET NOT NULL;
-```
+앱 시작 때 사용하는 Hibernate `validate`도 같은 한계가 있다. 컬럼과 엔티티의 구조는 검사하지만, 과거에 포기한 발송을 성공으로 옮겼는지는 알 수 없다. 새 스키마를 만드는 `create-drop` 테스트와 과거 행을 변환하는 테스트를 나눠야 하는 이유다.
 
-여기서 변환 도중 구버전 앱이 빈 값을 새로 넣는다면 어떨까. 기존 행을 한 번 채워도 뒤에 빈 행이 생길 수 있다. 기본값·호환 쓰기·추가 변환 중 어떤 방식으로 이 틈을 닫을지 정해야 한다.
+변환 중 들어오는 행도 빠뜨리면 안 된다. 구버전 앱이 계속 쓰는 동안 한 번만 상태를 채우면, 그 뒤에 생긴 행은 놓칠 수 있다. 쓰기를 잠깐 멈출지, 호환되는 쓰기와 추가 변환을 준비할지 결정해야 한다.
 
-배포 중 쓰기를 멈추면 변환 대상은 단순해지지만 중단 시간을 감수해야 한다. 계속 받으려면 구버전이 넣는 행까지 새 규칙으로 처리해야 한다. 이 파일의 순서만으로 무중단 호환성을 보장할 수는 없다.
+이 SQL은 앱에서 자동 실행되지 않으며, 뒤의 `CREATE INDEX CONCURRENTLY` 때문에 파일 전체를 한 트랜잭션으로 묶을 수도 없다. 중간 실패 시 어디까지 적용됐는지 확인해야 한다.
 
-## 파일 전체가 한 번에 되돌아가지는 않는다
-
-뒤의 부분 인덱스는 `CREATE INDEX CONCURRENTLY`로 만든다. 일반 인덱스 생성처럼 쓰기를 막지 않는 대신, 트랜잭션 블록 안에서는 실행할 수 없다. 파일 전체를 `BEGIN`으로 묶어 한꺼번에 되돌리는 방식과는 함께 쓸 수 없는 선택이다.
-
-예를 들어 상태 변환은 끝났는데 인덱스 생성에서 실패했다면 앞부분은 남아 있을 수 있다. 파일 끝의 `pg_indexes` 조회는 인덱스 정의를 보여 주지만, 유효성까지 확인하려면 아래처럼 `pg_index`를 볼 수 있다. 실제 적용 결과가 아니라 읽기 전용 점검 예제다.
-
-```sql
-SELECT c.relname, i.indisvalid, pg_get_indexdef(i.indexrelid)
-FROM pg_index i
-JOIN pg_class c ON c.oid = i.indexrelid
-WHERE i.indrelid = 'match_outbox'::regclass
-  AND c.relname = 'ix_match_outbox_claimable_due_id';
-```
-
-[`indisvalid=false`](https://www.postgresql.org/docs/16/catalog-pg-index.html)는 쿼리에 안전하게 쓸 수 없다는 뜻이다. 같은 이름이 있다는 이유로 완료 처리하면 안 된다. `IF NOT EXISTS`는 이름의 존재를 확인할 뿐, 원하는 정의와 유효한 상태까지 대신 검증하지 않는다.
-
-## 앱이 켜졌다고 데이터까지 맞는 건 아니다
-
-VoiceLink는 이 SQL을 앱 시작 때 자동 실행하지 않는다. 빌드에도 Flyway 의존성은 없고, 공통 Hibernate 설정은 `validate`, 테스트는 `create-drop`이다. 새 스키마를 만들어 테스트한 결과와 과거 데이터의 변환 결과는 다른 근거다.
-
-`validate`가 컬럼 불일치를 찾더라도, 과거 실패 행이 성공 상태로 잘못 들어간 것까지 판단하지는 않는다. **구조 검사와 변환 규칙 검사를 나눠야 한다.**
-
-다음 변환 테스트에는 오류 메시지가 있는 실패뿐 아니라 **메시지 없이 포기한 실패 행**도 넣겠다. 새 상태의 실패 처리가 맞아도 옛 데이터가 그 상태로 들어오는 과정은 따로 틀릴 수 있다. 이번 SQL에서는 바로 그 한 행이 남은 질문이다.
+이 SQL에서 가장 먼저 대조할 대상은 **시각은 있지만 오류 메시지는 없는 행**이다. 정상 발송과 메시지 없이 포기한 실패가 같은 모양으로 남을 수 있다. 둘을 나눌 기록이 없다면 컬럼 이름이나 `NOT NULL`만으로 성공을 확정할 수 없다.
 
 ## 참고 자료
 
@@ -81,4 +55,4 @@ VoiceLink는 이 SQL을 앱 시작 때 자동 실행하지 않는다. 빌드에�
 - [PostgreSQL ALTER TABLE](https://www.postgresql.org/docs/16/sql-altertable.html)
 - [PostgreSQL CREATE INDEX](https://www.postgresql.org/docs/16/sql-createindex.html)
 
-검토한 소스: 관련 코드가 동일한 VoiceLink `1704b46`·`b159c1d`의 JPA 설정·빌드·전환 SQL·Outbox 엔티티와 `5091eba` 전후 이력. 2026-10-10 백엔드 테스트에서 임대 서비스의 최종 실패 검사도 통과했다. PostgreSQL 16 저장소 선점 검사도 별도 통과했지만, 과거 행을 옮기는 변환 SQL은 실행하지 않았다.
+근거: VoiceLink `37109d5`의 전환 SQL·Outbox 엔티티·임대 서비스 테스트·JPA 설정·빌드·인덱스 적용 문서와 `5091eba` 이전 코드를 대조했다. 2026-10-10에 확인한 최종 실패 테스트 결과는 새 상태의 동작에 대한 근거다. 이번 개정에서 테스트나 과거 행의 변환 SQL을 새로 실행하지는 않았다.

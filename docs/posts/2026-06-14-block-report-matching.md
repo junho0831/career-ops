@@ -3,7 +3,7 @@ post_id: 713
 title: 차단은 한쪽이 했는데 매칭은 양쪽을 막아야 했다
 description: 차단한 A와 먼저 매칭을 요청한 B의 예시로 양방향 검사, 참가자 권한, 중복 저장의 규칙을 설명한다.
 date: '2026-06-14'
-revised: '2026-10-10'
+revised: '2026-10-12'
 url: https://so-dak.com/%eb%9e%9c%eb%8d%a4-%eb%a7%a4%ec%b9%ad-%ec%84%9c%eb%b9%84%ec%8a%a4-%ec%95%85%ec%84%b1-%ec%9c%a0%ec%a0%80-%ec%b0%a8%eb%8b%a8-redis-%ea%b8%b0%eb%b0%98-%eb%b9%a0%eb%a5%b8-%eb%a7%a4%ec%b9%ad-%ed%95%84/
 ---
 
@@ -32,19 +32,7 @@ B의 목록이 비어 있어도 A가 B를 차단했다면 연결하지 않는다
 
 그렇다면 API에 상대 ID만 보내면 될까? 이 기능은 통화 기록에서 상대를 차단하거나 신고하는 기능이다. 요청자가 아무 사용자를 지정하게 두기보다, 실제로 참여한 통화에서 상대를 찾아야 규칙이 맞는다.
 
-`requireParticipantTarget`은 기록 번호로 세션을 찾은 뒤 두 사람을 확인한다.
-
-```java
-CallSession session = history.getCallSession();
-User viewer = session.participantOf(requesterId)
-        .orElseThrow(() -> new IllegalArgumentException(
-                "통화에 참여한 사용자만 요청할 수 있습니다."));
-User peer = session.peerOf(requesterId)
-        .orElseThrow(() -> new IllegalArgumentException(
-                "통화에 참여한 사용자만 요청할 수 있습니다."));
-```
-
-A와 B의 기록 번호를 C가 알아냈다는 설명용 상황을 넣어보면 차이가 분명하다. C는 참가자 검사에서 거절된다. **기록 번호를 아는 것과 그 통화의 당사자인 것은 다르다.**
+서버는 통화 기록에서 요청자가 참가자인지 확인한 뒤 상대를 찾는다. A와 B의 기록 번호를 C가 알아냈다는 설명용 상황에서도 C는 이 검사에서 거절된다. **기록 번호를 아는 것과 그 통화의 당사자인 것은 다르다.**
 
 차단과 신고의 중복 기준도 같은 방식으로 정해진다.
 
@@ -65,11 +53,11 @@ A와 B의 기록 번호를 C가 알아냈다는 설명용 상황을 넣어보면
 
 매칭과 차단이 동시에 진행되면 더 까다롭다. **차단 없음 조회 → 차단 저장 → 통화 확정** 순서라면 양방향 조회는 맞게 했어도 차단 뒤에 만남이 확정될 수 있다.
 
-“한쪽이 차단하면 제외”와 “차단 저장 이후에는 진행 중인 매칭도 확정하지 않기”는 서로 다른 요구다. 다음 검증은 조회 횟수보다 이 겹치는 순서를 통제하는 데서 시작해야 한다.
+“한쪽이 차단하면 제외”와 “차단 저장 이후에는 진행 중인 매칭도 확정하지 않기”는 서로 다른 요구다. **양방향 조회는 누구의 차단을 볼지 해결하지만, 동시에 확정되는 매칭까지 막는 답은 아니다.**
 
 ## 참고 자료
 
 - [PostgreSQL 고유 제약](https://www.postgresql.org/docs/16/ddl-constraints.html)
 - [Spring 선언적 트랜잭션](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
 
-검토 범위: VoiceLink `b159c1d`의 `UserSafetyService`, `UserBlock`·`UserReport`, 매칭 후보 복구 코드와 `docs/user-safety.md`. 기능 추가 이력 `e539246`도 대조했다. 2026-10-10 로컬 `1704b46`에서 관련 소스가 동일함을 대조하고, 안전 서비스 9개·컨트롤러 4개 테스트의 통과를 다시 확인했다. 동시 저장·매칭 경쟁의 실제 DB 시험 결과는 포함하지 않았다.
+근거: 2026-10-12 VoiceLink `37109d5`의 차단·신고 서비스와 엔티티, 후보 복구 코드, `docs/user-safety.md`를 대조했다. 10월 10일 `1704b46`에서 안전 서비스 9개·컨트롤러 4개 테스트가 통과했다. 동시 저장·매칭 경쟁의 실제 DB 시험은 포함하지 않았다.

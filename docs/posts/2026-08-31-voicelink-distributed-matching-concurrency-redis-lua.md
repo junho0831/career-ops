@@ -3,7 +3,7 @@ post_id: 1430
 title: Redis Lua가 끝난 뒤에도 매칭은 끝나지 않았다
 description: 실제 Lua에 두 요청을 100회 보내 후보 선점과 제한 탐색을 확인하고, 선점 뒤 취소를 처리하는 VoiceLink 코드를 연결한다.
 date: '2026-08-31'
-revised: '2026-10-10'
+revised: '2026-10-12'
 url: https://so-dak.com/voicelink-distributed-matching-concurrency-redis-lua/
 ---
 
@@ -86,23 +86,11 @@ if (requeueOnCancelSignal(clientA, clientB)) {
 }
 ```
 
-`requeueOnCancelSignal` 안에서 취소한 요청을 완료하고 나머지를 재등록한 뒤, 열린 세션을 닫는다. 그림은 이 호출 순서이며 Redis 재등록과 DB 종료가 한 번에 커밋된다는 뜻은 아니다.
+`requeueOnCancelSignal`은 취소한 A의 요청을 완료하고 기다리던 B를 재등록한다. 그 뒤 열린 세션을 닫는다. 그림은 이 호출 순서이며 Redis 재등록과 DB 종료가 한 번에 커밋된다는 뜻은 아니다.
 
-여기서 복구는 둘 다 대기열로 넣는 일이 아니다. A는 그만 기다리겠다고 했으니 종료하고 B만 다시 등록해야 한다. 두 사람을 함께 되돌리면 복구 코드가 취소 의사를 취소해 버린다.
+`MatchFinalizerTest`는 저장 전후와 응답 생성 뒤의 취소를 나눠 검사한다. 저장 후 취소에서는 위 처리와 함께 Outbox 적재를 건너뛰는지 확인한다. 실제 Redis·DB 복구 시험이 아니라 대역의 호출을 검사한 결과다.
 
-`MatchFinalizerTest`는 저장 전 취소, 저장 후 취소, 응답 생성 뒤 취소를 나눠 다룬다. 저장 후 취소 테스트에서는 A에게 `WAITING`을 반환하고, B를 대기열에 등록하며, 세션을 닫고 Outbox 적재는 호출하지 않는지 검사한다.
-
-2026년 10월 10일 같은 관련 소스의 로컬 `1704b46`에서 이 클래스의 테스트 8개와 `RedisMatchingStoreTest` 7개가 다시 통과했다. 대역을 쓰는 Java 시험으로, 앞의 10월 9일 실제 Redis 실험과 구분한다. 여기서 확인한 것은 **취소 시점에 따라 어떤 요청을 완료하고 누구를 재등록하는가**다.
-
-## 반환값보다 남은 사람의 상태
-
-선점 직후 DB 쓰기가 실패했다면 후보 ID보다 남은 상태가 중요하다. 세션은 없는지, B는 다시 기다리는지, 취소한 A가 대기열에 돌아오지는 않았는지를 함께 봐야 한다.
-
-Java 분기 테스트의 재등록 호출이 성공했다고 실제 Redis 복구까지 끝난 것은 아니다. 다음에는 실제 Redis·DB를 함께 쓰고 세션 저장 직후에 취소를 넣어, B의 재등록과 닫힌 세션을 같이 확인할 차례다. 재등록 중 Redis 장애나 프로세스 종료는 아직 검증하지 않았다.
-
-배포 구성이 Redis Cluster라면 한 가지 전제도 다시 봐야 한다. 이 스크립트는 접두사와 후보 ID로 presence 키를 만들기 때문에 키 전달·슬롯 배치 제약을 따로 검토해야 한다.
-
-Lua의 성공은 이번 선점의 끝이다. 매칭의 끝은 그 사람이 **세션에 들어갔는지, 다시 기다리는지, 취소로 나갔는지**까지 정해졌을 때다.
+**복구한다고 두 사람을 모두 줄에 세울 수는 없다.** A는 그만 기다리겠다고 했고, B는 계속 기다리는 중이다. 되돌릴 상태도 그 차이를 따라야 한다.
 
 ## 참고 자료
 
@@ -111,4 +99,6 @@ Lua의 성공은 이번 선점의 끝이다. 매칭의 끝은 그 사람이 **�
 - [Redis ZREM](https://redis.io/docs/latest/commands/zrem/)
 - [Spring Data Redis 스크립팅](https://docs.spring.io/spring-data/redis/reference/redis/scripting.html)
 
-근거: VoiceLink `b159c1d`의 `find_opponent.lua`, `RedisMatchingStore`, `MatchFinalizer`, `application.yml`, 관련 테스트와 `docs/redis-matching-flow.md`·`docs/matching-call-lifecycle.md`. 2026-10-09 Redis 8.2.0 독립 실험에서 두 요청의 선점 100회와 제한 탐색을 실행했다. 관련 Java 단위 테스트 15개는 2026-10-10 재실행에서도 통과했다. Redis·DB·클라이언트를 묶은 전체 장애 실험은 아니다.
+근거: 2026-10-12 VoiceLink `37109d5`의 Lua·Redis 저장소·매칭 확정 코드와 설정, 매칭 흐름·수명주기 문서를 대조했다. 본문의 10월 9일 Redis 8.2.0 실험은 단일 인스턴스에서 선점 100회와 제한 탐색을 확인한 결과다. 10월 10일 `1704b46`에서는 `MatchFinalizerTest` 8개·`RedisMatchingStoreTest` 7개가 통과했다.
+
+Java 시험은 대역 호출 검증이다. Redis·DB·클라이언트를 묶은 복구와 재등록 중 Redis 장애·프로세스 종료는 검증하지 않았다. Redis Cluster의 presence 키 전달·슬롯 배치 제약도 별도 검토 대상이다.
