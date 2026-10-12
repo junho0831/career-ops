@@ -1,15 +1,15 @@
 ---
 post_id: 704
 title: SSE는 서버를 건너도 연결 객체는 건너가지 않는다
-description: VoiceLink의 브로커 발행 확인·로컬 대기·Flutter 이벤트 파서를 따라가며, 결과 전달과 새 연결 보호가 서로 다른 문제임을 설명한다.
+description: 서버 B에서 만든 매칭 결과가 브로커와 서버 A의 로컬 대기를 거쳐 앱에 도착하는 과정, 전달을 놓쳤을 때의 조회 경로를 설명한다.
 date: '2026-06-14'
-revised: '2026-10-10'
+revised: '2026-10-12'
 url: https://so-dak.com/spring-boot-sseserver-sent-events%eb%a1%9c-%ec%8b%a4%ec%8b%9c%ea%b0%84-%eb%a7%a4%ec%b9%ad-%ec%83%81%ed%83%9c-%ed%91%b8%ec%8b%9c-%ea%b5%ac%ed%98%84%ed%95%98%ea%b8%b0/
 ---
 
 사용자는 서버 A에 연결돼 있는데 매칭은 서버 B에서 끝났다고 하자. B가 “상대 찾았어요”를 만들어도 A의 연결 객체에 바로 쓸 수는 없다. 그 객체는 A의 메모리에 있다.
 
-VoiceLink는 **결과를 연결이 있는 서버로 보낸다.** 아래 두 서버는 전달 단계를 설명하기 위한 예시다. `b159c1d`와 로컬 `1704b46`에서 이 경로의 코드·설정이 동일함을 대조했다.
+**서버 사이로 보내야 할 것은 연결이 아니라 매칭 결과다.** VoiceLink의 Java 17·Spring Boot 3.2.5와 Flutter 코드를 따라, B의 결과가 A에 연결된 사용자에게 도착하는 과정을 읽어 봤다. 두 서버는 흐름을 설명하기 위한 예시다.
 
 ```mermaid
 sequenceDiagram
@@ -24,13 +24,21 @@ sequenceDiagram
  Note over B,A: 발행 확인과 브라우저 수신은 다른 시점
 ```
 
-`RabbitMqConfig`는 fanout exchange에 인스턴스별 큐를 연결한다. 이름 설정이 없으면 임시 큐를 만들고, 이름을 지정해도 현재 설정은 비영속·자동 삭제 큐다. exchange가 영속이라는 이유만으로 연결 서버가 내려간 동안의 모든 알림이 보관된다고 읽을 수는 없다.
+그림은 전달 단계의 설명이다. 브로커의 발행 확인과 A의 수신 중 어느 쪽이 먼저 완료되는지까지 정한 순서도는 아니다.
 
-수신한 `RabbitMqMatchResultListener`는 `MatchingQueue.handleMatchResultPayload()`를 호출한다. 이 메서드가 로컬 사용자의 `DeferredResult`를 완료하면 `MatchStreamSession`이 `event: match`를 보낸다. 브로커 메시지가 HTTP 연결 자체가 되는 것이 아니라, 연결이 있는 서버에서 한 번 더 응답으로 바뀌는 것이다.
+## 결과는 여러 서버에, 응답은 연결이 있는 서버에서
 
-## ack인데도 발행 실패인 경우
+B는 사용자 ID와 매칭 결과를 RabbitMQ에 발행한다. `RabbitMqConfig`는 메시지를 연결된 큐 모두에 보내는 fanout exchange에 인스턴스별 큐를 붙인다. B가 사용자의 연결 위치를 알아내서 A만 골라 보내는 구조는 아니다.
 
-`RabbitMqMatchResultPublisherTest`에는 `publishRejectsReturnedMessageEvenWhenAcknowledged`가 있다. 브로커가 ack를 줬어도 메시지가 반환됐다면 성공으로 처리하지 않는 테스트다. 실제 발행 코드는 confirm을 기다린 다음 두 조건을 따로 검사한다.
+각 서버의 수신기가 같은 결과를 받아도, 해당 사용자의 대기 요청을 가진 서버만 그 요청을 완료할 수 있다. A에서는 `MatchingQueue.handleMatchResultPayload()`가 사용자 ID로 로컬 대기를 찾고 `DeferredResult`에 결과를 넣는다. 여기까지도 아직 앱에 보낸 것은 아니다.
+
+그 결과를 받은 `MatchStreamSession`이 HTTP 연결에 `event: match`를 쓴다. 상태가 `MATCHED`이면 스트림을 끝내고, `WAITING`이면 다음 대기를 예약한다. **브로커 메시지를 사용자의 응답으로 바꾸는 마지막 서버는 A다.**
+
+앱은 Dio로 받은 스트림을 UTF-8과 줄 단위로 풀어 `MatchSseParser`에 넘긴다. 파서는 `event: match`의 JSON을 매칭 결과로 바꾸고 `: ping` 같은 주석은 건너뛴다. 연결이 열렸다는 사실만으로는 부족하고, 이 해석까지 이어져야 앱이 결과를 사용할 수 있다.
+
+## 브로커가 받았다는 답만으로는 부족하다
+
+B가 발행 확인인 ack를 받았으면 끝일까? 받을 큐가 없어 메시지가 반환되는 경우를 따로 봐야 한다. 실제 발행 코드의 검사 부분이다.
 
 ```java
 if (confirm == null || !confirm.isAck()) {
@@ -45,61 +53,28 @@ if (correlationData.getReturned() != null) {
 }
 ```
 
-검사 부분만 발췌했다. 기본 confirm 대기는 5,000ms다. 받을 큐가 없어 반환됐다면 브로커가 메시지를 받았어도 다음 서버로 갈 수 없다. 이 검사까지 통과한 뒤에도 A가 로컬 대기를 찾고 HTTP 연결에 보내는 단계는 남는다.
+`RabbitMqMatchResultPublisher`는 기본 5초 동안 confirm을 기다린 뒤, ack 여부와 반환 메시지 유무를 확인한다. ack라도 반환됐다면 실패다. `publishRejectsReturnedMessageEvenWhenAcknowledged` 테스트도 이 조합을 넣어 거절되는지 검사한다.
 
-발행 예외가 생기면 `MatchResultRealtimePublisher`가 Redis Pub/Sub를 시도한다. RabbitMQ가 성공하면 Redis로 다시 보내지 않고, 두 경로가 모두 실패하면 예외를 위로 올린다. 각각 별도 테스트가 있다. 다만 confirm만 유실돼 Redis를 시도한 상황이라면 같은 결과가 두 경로로 도착할 여지는 남는다. 전송 경로를 하나 더 붙인 것과 정확히 한 번 도착하게 만든 것은 다르다.
+발행이 실패하면 `MatchResultRealtimePublisher`가 Redis Pub/Sub로 한 번 더 시도한다. RabbitMQ 발행이 성공하면 Redis로 다시 보내지 않고, 둘 다 실패하면 예외를 올린다. 받을 곳까지 결과를 보내려는 대체 경로다.
 
-## 새 연결을 지우는 오래된 뒷정리
+다만 메시지는 전달됐는데 confirm만 유실됐다면, Redis로 보낸 결과까지 두 번 도착할 수 있다. **대체 경로가 있다는 말은 정확히 한 번 도착한다는 뜻이 아니다.** 이 발행 검사가 확인한 것은 브로커 발행까지다. A의 로컬 대기 완료와 HTTP 전송 여부까지 알려 주지는 않는다.
 
-서버 사이의 전달을 붙였어도 연결 교체는 별도로 다뤄야 한다. 한 서버에서도 다음 순서가 가능하다.
+## A에 받을 연결이 없다면
 
-1. 사용자가 처음 연결한다.
-2. 나갔다가 돌아와 새 연결을 등록한다.
-3. 첫 연결의 종료 콜백이 뒤늦게 실행된다.
+사용자가 잠깐 나간 사이 결과가 도착할 수도 있다. 현재 RabbitMQ 큐는 비영속·자동 삭제 설정이고 Redis Pub/Sub도 놓친 메시지를 보관해 재생하지 않는다. 실시간 알림만으로 재접속까지 해결할 수는 없다.
 
-사용자 ID로만 지우면 옛 연결이 새 연결까지 치워 버린다. 뒷정리가 너무 성실한 셈이다. `LocalWaitingRegistry`는 먼저 종료 중인 요청이 현재 요청과 같은지 비교한다.
+그래서 [Outbox 워커](https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/)는 발행 전에 사용자별 결과를 Redis 캐시에 남긴다. 이후 매칭 조회에서는 활성 세션을 확인하고, 필요한 경우 결과 캐시도 조회한다. 알림을 받는 길과 이미 만들어진 결과를 다시 찾는 길을 함께 둔 것이다.
 
-```java
-MatchingQueue.WaitingClient client = localWaiters.get(userId);
-if (client == null || client.deferredResult() != deferredResult) {
-    return false;
-}
-boolean removed = localWaiters.remove(userId, client);
-if (removed) {
-    completeDeferredAsWaiting(client);
-}
-return removed;
-```
+대기 중 알림을 놓친 경우에도 조회 기회가 있다. 현재 서버는 기본 25초가 지나면 해당 대기 회차를 `WAITING`으로 완료하고 5초 뒤 다시 조회하도록 예약한다. 이는 코드의 예약 간격이며 실제 화면의 복구 시간을 측정한 값은 아니다.
 
-첫 비교를 통과한 뒤에도 새 연결이 등록될 수 있다. 그래서 마지막 삭제도 `remove(userId, client)`로 **방금 읽은 객체가 그대로 있을 때만** 실행한다. 사용자 일치와 요청 일치를 함께 보는 이유다.
+캐시는 기본 55초 뒤 만료된다. `claimMatchResult()`의 읽기와 삭제도 별도 Redis 호출이므로 한 번만 가져간다는 보장은 없다. 실시간 수신으로 로컬 대기를 완료했을 때도 캐시를 지우는데, **이 삭제는 앱의 화면 반영을 확인한 뒤 하는 처리가 아니다.** 결과를 다시 찾을 자리는 있지만, 모든 끊김을 복구한다고 말할 수는 없다.
 
-`removeAndCompleteAsWaitingIfCurrentDoesNotRemoveNewerWaiter` 테스트는 동일 사용자로 이전·새 요청을 차례로 등록한다. 이전 요청을 넘겨 삭제를 시도한 뒤 반환값이 `false`이고, 저장된 요청은 여전히 새 요청인지 확인한다.
-
-`MatchingQueue.removeAndCompleteIfCurrent()`는 이 삭제가 성공했을 때만 Redis 대기도 정리한다. 이미 새 요청으로 바뀌어 로컬 삭제가 거절되면 Redis 정리도 건너뛴다. 단, 로컬 삭제와 Redis 제거 사이까지 하나의 원자적 작업으로 묶은 코드는 아니다.
-
-SSE 안의 대기는 한 번으로 끝나지 않는다. `WAITING`이면 다음 대기를 예약하고, `MATCHED`이면 결과를 보내고 스트림을 끝낸다. 대기 제한 25초의 기본 설정에서 재대기 지연과 heartbeat 간격은 각각 5초다. 이는 예약 설정이지 사용자 화면에 정확히 5초마다 도착한다는 측정값은 아니다.
-
-## 연결이 없을 때 남겨 둘 것
-
-실시간 전달만으로는 접속이 끊긴 동안을 메울 수 없다. Redis Pub/Sub도 놓친 메시지를 보관해 재생하는 방식은 아니다. [Outbox 워커](https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/)가 발행 전에 결과 캐시에 저장하는 것은 다시 찾을 자리를 남기기 위해서다.
-
-결과 캐시의 기본 만료는 대기 제한 25초에 30초를 더한 55초다. `RedisMatchingStore.claimMatchResult()`는 값을 읽고 삭제한 뒤 JSON을 해석한다. 무기한 보관도 아니고 읽기·삭제가 하나의 원자적 호출도 아니다. 서버가 대기를 완료하고 캐시를 지웠다는 사실 역시 브라우저 화면 반영의 확인은 아니다.
-
-Flutter 쪽은 Dio의 스트림 응답을 UTF-8과 줄 단위로 해석한 뒤 `MatchSseParser`에 넘긴다. 파서 테스트는 `event: match`를 매칭 결과로 바꾸고, `: ping` 같은 주석과 다른 이벤트는 무시하며, 마지막 빈 줄 없이 스트림이 끝난 payload도 처리하는지 확인한다. **HTTP 연결이 열려 있는 것과 앱이 매칭 결과를 해석한 것은 여기서도 나뉜다.** 2026-10-09 매칭·통화 이벤트 파서 테스트 다섯 개를 다시 실행해 통과했다.
-
-2026-10-10 서버의 `LocalWaitingRegistryTest` 네 개, `MatchResultRealtimePublisherTest` 세 개, `MatchStreamingServiceTest` 다섯 개도 다시 통과했다. 대기 교체·대체 발행·재대기 등록을 검사한 결과이며, RabbitMQ·Redis를 실제로 끊은 다중 서버 시험은 아니다.
-
-통화 종료·연장 이벤트는 `CallEventStreamingService`와 별도의 `event: call` 파서를 사용한다. 매칭 브로커 설정을 읽었다고 이 경로까지 같은 전달 보장을 얻었다고 해석하면 안 된다.
-
-다음 검증은 A에 연결한 채 B에서 결과를 만들고, 전달 직전에 끊었다가 다시 붙이는 순서다. 캐시에서 복구하는지, 두 번 온 결과가 화면을 중복 전환시키는지 본다.
-
-서버의 전송까지 확인했는데 화면만 늦다면 프록시 버퍼링도 살펴본다. “분명 보냈는데”에서 멈추지 않으려면 **어느 단계까지 도착했는지**를 남겨야 한다.
+B가 가진 것은 매칭 결과이고 A가 가진 것은 사용자의 연결이다. 둘을 이어 주는 것은 결과 전달과 A의 로컬 대기 처리다. SSE 객체를 다른 서버로 옮기는 대신, **연결이 있는 자리에서 결과를 응답으로 바꾼다.**
 
 ## 참고 자료
 
 - [SSE 표준](https://html.spec.whatwg.org/multipage/server-sent-events.html)
 - [RabbitMQ 발행 확인과 소비 확인](https://www.rabbitmq.com/docs/confirms)
 - [Redis Pub/Sub 전달 특성](https://redis.io/docs/latest/develop/pubsub/)
-- [Nginx proxy buffering](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering)
 
-검토한 근거: VoiceLink `b159c1d`의 `RabbitMqConfig`, `RabbitMqMatchResultPublisher`와 테스트, `MatchResultRealtimePublisher`와 테스트, `MatchingQueue`, `LocalWaitingRegistry`와 테스트, `MatchStreamSession`, `RedisMatchingStore`, `frontend/lib/src/features/match/data/match_api.dart`, `docs/redis-matching-flow.md`. `5091eba` 변경 내역에서 RabbitMQ 전달과 Redis 대체 발행의 추가도 확인했다.
+2026-10-12 VoiceLink `37109d5`의 브로커 설정·발행기·수신기, `MatchingQueue`, `MatchStreamSession`, 결과 캐시·Outbox 코드, Flutter 파서와 `docs/redis-matching-flow.md`를 대조했다. Linux·Java 17에서 발행·수신·재조회·캐시 관련 테스트 31개가 통과했다. 대역과 가상 시간을 사용하는 검증이며, 브로커를 실제로 끊는 다중 서버 시험이나 앱 화면의 중복 전환 확인은 포함하지 않았다.
