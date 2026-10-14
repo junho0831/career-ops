@@ -2,7 +2,7 @@
 title: TURN을 껐는데 coturn은 왜 남아 있을까
 description: LiveKit의 turn.enabled와 rtc.turn_servers를 나란히 읽으며, 내장 TURN 비활성화와 외부 coturn 사용이 함께 성립하는 이유를 설명한다.
 date: '2026-10-14'
-revised: '2026-10-14'
+revised: '2026-10-15'
 post_id: 1738
 url: https://so-dak.com/livekit-external-turn/
 ---
@@ -46,10 +46,14 @@ flowchart TD
 
 두 경로를 구분한 설명용 그림이다. 매 통화가 두 경로를 동시에 쓰거나 반드시 coturn을 지난다는 뜻은 아니다. [LiveKit 배포 문서](https://docs.livekit.io/transport/self-hosting/deployment/)도 제한된 네트워크의 연결성을 보완하는 방법으로 TURN을 설명한다.
 
-설정이 있다고 이번 통화가 그 길을 탔다고 말할 수도 없다. 프로젝트 문서에는 coturn 프로세스와 리스너를 확인한 기록이 있지만, 제한된 네트워크에서 실제 `relay` 경로를 선택했는지는 재검증하지 않았다고 명시돼 있다. 설정과 실제 선택의 차이는 [별도로 진행한 TURN 경로 실험](https://so-dak.com/turn-relay-verification/)에서 확인했다.
+## 설정을 고칠 곳도 나뉜다
 
-지금 확인한 답은 “TURN을 안 쓴다”가 아니다. **LiveKit이 직접 TURN 서버를 띄우지는 않고, 별도 coturn을 클라이언트의 연결 선택지로 둔다**는 것이다. `false` 한 줄을 읽을 때도 무엇을 끈 것인지부터 봐야 한다.
+이 구조에서는 LiveKit을 재시작하는 것과 호스트의 coturn을 재시작하는 것이 별개다. `rtc.turn_servers`를 바꾸는 일은 클라이언트에 알려 줄 접속 정보를 바꾸는 것이지, coturn의 리스너를 새로 여는 작업이 아니다.
+
+프로젝트 문서의 TLS 경로가 좋은 예다. 클라이언트는 외부 **443**으로 접속하지만 coturn은 **5349**에서 받도록 설명돼 있다. 그 사이에서 Nginx가 TLS 요청의 서버 이름을 보고 coturn으로 보낸다. 숫자가 다르다고 곧바로 오타는 아니다. 대신 클라이언트에 알린 포트, Nginx 전달 대상, coturn 리스너가 한 경로로 이어지는지 봐야 한다.
+
+내장 TURN의 스위치 하나로 이 세 곳을 바꿀 수는 없다. 설정을 읽을 때도 **접속 정보를 알려 주는 쪽과 실제 중계 서버를 실행하는 쪽**을 나누면, 어디를 수정해야 하는지가 보인다. 후보가 있다는 사실과 실제 경로 선택의 차이는 [별도 로컬 실험](https://so-dak.com/turn-relay-verification/)에서 확인했다.
 
 ## 확인한 근거
 
-2026-10-13 VoiceLink `37109d5`의 `livekit.yaml`, `docker-compose.yml`, `infra/coturn/turnserver.conf`, `docs/coturn-setup.md`와 `docs/server-architecture.md`를 대조했다. Compose의 LiveKit 이미지 태그는 `latest`라 이 저장소 설정만으로 실행 중인 서버 버전을 특정하지 않았다. 이번 글은 설정 분석이며 프로젝트 운영 환경의 호스트 상태, TURN 강제 중계와 실제 음성 통화는 재검증하지 않았다.
+2026-10-15 VoiceLink `37109d5`의 `livekit.yaml`, `docker-compose.yml`, `infra/coturn/turnserver.conf`, coturn 구축·서버 아키텍처 문서를 대조했다. 현재 구성을 해석한 글이며, 외부 coturn을 선택한 당시의 대안 비교를 재구성한 회고는 아니다. 문서의 TLS 경로를 호스트에서 다시 시험하지는 않았다. LiveKit 이미지 태그는 `latest`라 실행 서버 버전도 이 설정만으로 특정하지 않았다.

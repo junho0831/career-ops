@@ -3,7 +3,7 @@ post_id: 1430
 title: Redis Lua가 끝난 뒤에도 매칭은 끝나지 않았다
 description: 실제 Lua에 두 요청을 100회 보내 후보 선점과 제한 탐색을 확인하고, 선점 뒤 취소를 처리하는 VoiceLink 코드를 연결한다.
 date: '2026-08-31'
-revised: '2026-10-12'
+revised: '2026-10-15'
 url: https://so-dak.com/voicelink-distributed-matching-concurrency-redis-lua/
 ---
 
@@ -77,7 +77,7 @@ flowchart TD
  O --> D["로컬 응답<br/>별도 발행 경로"]
 ```
 
-`MatchFinalizer`는 세션 생성 전후와 응답 생성 뒤에 취소 신호를 확인한다. 세션을 연 다음 취소를 확인한 부분은 다음과 같다.
+`MatchFinalizer`는 세션 생성 전후와 응답 생성 뒤에 취소 신호를 확인한다. 처음 확인할 때 A가 기다리고 있었어도, DB에 세션을 저장하는 사이 취소할 수 있기 때문이다. 한 번 확인한 값을 끝까지 믿을 수 없다. 세션을 연 다음의 처리는 이렇다.
 
 ```java
 if (requeueOnCancelSignal(clientA, clientB)) {
@@ -88,7 +88,7 @@ if (requeueOnCancelSignal(clientA, clientB)) {
 
 `requeueOnCancelSignal`은 취소한 A의 요청을 완료하고 기다리던 B를 재등록한다. 그 뒤 열린 세션을 닫는다. 그림은 이 호출 순서이며 Redis 재등록과 DB 종료가 한 번에 커밋된다는 뜻은 아니다.
 
-`MatchFinalizerTest`는 저장 전후와 응답 생성 뒤의 취소를 나눠 검사한다. 저장 후 취소에서는 위 처리와 함께 Outbox 적재를 건너뛰는지 확인한다. 실제 Redis·DB 복구 시험이 아니라 대역의 호출을 검사한 결과다.
+`MatchFinalizerTest`의 저장 후 취소 사례는 A의 취소 조회가 처음에는 `false`, 다음에는 `true`를 반환하게 만든다. 그때 B를 재등록하고 열린 세션을 닫으며, Outbox에 매칭 결과를 넣지 않는지 검사한다. 저장 전후와 응답 생성 뒤를 나눈 대역 테스트이며, 모든 시점의 취소나 실제 Redis·DB 복구를 증명하는 시험은 아니다.
 
 **복구한다고 두 사람을 모두 줄에 세울 수는 없다.** A는 그만 기다리겠다고 했고, B는 계속 기다리는 중이다. 되돌릴 상태도 그 차이를 따라야 한다.
 
@@ -99,6 +99,4 @@ if (requeueOnCancelSignal(clientA, clientB)) {
 - [Redis ZREM](https://redis.io/docs/latest/commands/zrem/)
 - [Spring Data Redis 스크립팅](https://docs.spring.io/spring-data/redis/reference/redis/scripting.html)
 
-근거: 2026-10-12 VoiceLink `37109d5`의 Lua·Redis 저장소·매칭 확정 코드와 설정, 매칭 흐름·수명주기 문서를 대조했다. 본문의 10월 9일 Redis 8.2.0 실험은 단일 인스턴스에서 선점 100회와 제한 탐색을 확인한 결과다. 10월 10일 `1704b46`에서는 `MatchFinalizerTest` 8개·`RedisMatchingStoreTest` 7개가 통과했다.
-
-Java 시험은 대역 호출 검증이다. Redis·DB·클라이언트를 묶은 복구와 재등록 중 Redis 장애·프로세스 종료는 검증하지 않았다. Redis Cluster의 presence 키 전달·슬롯 배치 제약도 별도 검토 대상이다.
+근거: 2026-10-15 VoiceLink `37109d5`의 Lua·Redis 저장소·매칭 확정 코드·테스트와 매칭 흐름 문서를 재확인했다. 수치는 10월 9일 단일 Redis 인스턴스의 실험 기록이다. 재등록 도중 Redis 장애·프로세스 종료가 발생하는 경우와 Redis Cluster는 이 글의 검증 범위에 포함하지 않았다.

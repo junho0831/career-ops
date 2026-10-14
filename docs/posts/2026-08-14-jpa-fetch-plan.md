@@ -3,7 +3,7 @@ post_id: 1247
 title: 게시글 목록의 댓글 개수를 가져오는 세 가지 방법
 description: Hibernate와 H2에서 댓글 8·2·0개를 조회해 배치 로딩, fetch join, 집계의 SQL 수와 엔티티 적재 수를 비교한다.
 date: '2026-08-14'
-revised: '2026-10-10'
+revised: '2026-10-15'
 url: https://so-dak.com/jpa-n1-%eb%ac%b8%ec%a0%9c%ec%99%80-fetch-join-%ec%8b%a4%eb%ac%b4-%ea%b3%a0%ec%b0%b0-lazy-loading%ec%9d%b4%eb%a9%b4-%eb%8b%a4-%ed%95%b4%ea%b2%b0%eb%90%98%eb%82%98/
 ---
 
@@ -77,7 +77,9 @@ var rows = session.createQuery("""
     .list();
 ```
 
-`LEFT JOIN`과 `count(c.id)`를 사용해 댓글이 없는 C도 0으로 남겼다. 반환한 개수는 `[8, 2, 0]`으로 같았고, SQL 한 번에 엔티티 적재는 0개였다. 숫자를 세기 위해 댓글 객체를 만들지 않은 것이다.
+`LEFT JOIN`으로 댓글이 없는 C도 결과에 남겼다. 여기서 세는 대상은 행 전체가 아니라 `c.id`다. C의 조인 결과에는 댓글 ID가 `NULL`로 채워지므로, `NULL`을 제외하는 `count(c.id)`가 0을 돌려준다. 댓글 없는 글까지 한 개로 세면 곤란하니까.
+
+실제 반환한 개수는 `[8, 2, 0]`으로 같았고, SQL 한 번에 엔티티 적재는 0개였다. **같은 화면을 만들면서 댓글 객체 열 개를 아예 읽지 않을 수 있었다.**
 
 | 실제 실행한 조회 | 반환한 부모 수 | SQL 수 | 적재한 엔티티 수 |
 | --- | ---: | ---: | ---: |
@@ -88,18 +90,13 @@ var rows = session.createQuery("""
 
 이 수치는 해당 데이터 조회만 센 결과다. 페이지 전체 개수를 구하는 별도 쿼리나 운영 DB의 실행 시간은 포함하지 않았다. 집계도 댓글 수가 많으면 DB에서 세는 비용이 들고, 댓글 내용이 필요한 상세 화면에는 이 결과만으로 부족하다.
 
-## 목록에 무엇을 보여줄 것인가
-
-VoiceLink의 배치 크기 100과 `open-in-view=false` 설정도 대조했다. 배치 설정은 여러 추가 조회를 묶지만, 이 실험처럼 숫자만 필요한 화면에서 댓글 본문까지 빼주지는 않는다. **설정을 바꾸는 일과 필요한 데이터만 고르는 일은 별개였다.**
-
-제목과 개수만 보여준다면 집계 결과부터 비교하겠다. 댓글 본문까지 보여주는 화면이라면 엔티티 조회가 필요할 수 있고, 그때는 페이지를 어디서 제한하는지 다시 봐야 한다. 집계 쿼리를 따로 관리하는 비용도 있으니 화면의 요구에 맞춰 고를 일이다.
-
-SQL 한 번이라는 숫자 옆에 ‘게시글 3개와 댓글 10개를 읽음’을 적고 나니 판단이 달라졌다. 이번 목록에서 줄일 대상은 왕복 횟수뿐 아니라 **화면에서 쓰지도 않을 댓글 객체**였다.
+SQL 한 번이라는 숫자만 봤다면 fetch join과 집계를 비슷하게 평가했을 것이다. 옆에 적재한 객체 수를 적자 차이가 드러났다. 이 목록의 조회를 고를 때는 **쿼리를 몇 번 보냈는지와 무엇을 가져왔는지**를 같이 보게 됐다.
 
 ## 참고 자료
 
 - [Hibernate 6.4 배치 fetching](https://docs.hibernate.org/orm/6.4/userguide/html_single/#fetching-batch)
 - [Hibernate 6.4 HQL: association fetching](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#association-fetching)
+- [Hibernate 6.4 HQL: 집계 함수와 NULL](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#aggregate-functions)
 - [Spring Data JPA projections](https://docs.spring.io/spring-data/jpa/reference/repositories/projections.html)
 
 근거: 2026-10-10 독립 Java 실험의 실제 SQL·Hibernate 통계·반환값. VoiceLink `1704b46`와 `b159c1d`의 관련 설정과 의존성은 동일했다. 이 글의 수치는 작은 모델의 적재량 비교이며 운영 성능 측정은 아니다.
