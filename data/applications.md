@@ -73,7 +73,7 @@
 | 123 | 2026-09-14 | (주)휴머스온 | 솔루션 개발자(Backend Engineer) | 4.7/5 | Applied | ✅ | [123](../reports/123-humuson-backend-engineer-2026-09-14.md) | 사람인 접수 완료 (마케팅 자동화 솔루션 코어 백엔드 & 대용량 메시징); 사람인 브라우저 접수 완료 (saramin-humuson-applied.png) |
 | 124 | 2026-09-14 | (주)이지서티 | [이지서티] 클라우드 솔루션 백엔드 개발자 (경력) | 4.8/5 | Applied | ✅ | [124](../reports/124-easycerti-cloud-backend-developer-2026-09-14.md) | 사람인 접수 완료 (클라우드 보안 SaaS 솔루션 코어 백엔드 API & 대용량 로그); 사람인 브라우저 접수 완료 (saramin-easycerti-applied.png) |
 | 125 | 2026-09-14 | (주)휴먼컨설팅그룹 | HR 솔루션 제품 연구개발 (경력) | 4.7/5 | Applied | ✅ | [125](../reports/125-humanconsulting-hr-backend-2026-09-14.md) | 사람인 접수 완료 (HR SaaS 및 e-HR 코어 백엔드 연구개발); 사람인 브라우저 접수 완료 (saramin-humanconsulting-applied.png) |
-| 126 | 2026-09-14 | 텔코웨어(주) | [텔코웨어] Java 백엔드 개발 경력사원 채용공고 | 4.8/5 | Applied | ✅ | [126](../reports/126-telcoware-java-backend-developer-2026-09-14.md) | 사람인 접수 완료 (통신 코어망 솔루션 Java 백엔드 개발); 사람인 브라우저 접수 완료 (saramin-telcoware-applied.png) |
+| 126 | 2026-09-14 | 텔코웨어(주) | [텔코웨어] Java 백엔드 개발 경력사원 채용공고 | 4.8/5 | Applied | ✅ | [126](../reports/126-telcoware-java-backend-developer-2026-09-14.md) | 사람인 접수 완료 (통신 코어망 솔루션 Java 백엔드 개발); 사람인 브라우저 접수 완료 (saramin-telcoware-applied.png); 2026-10-11 잡코리아 공고 49971585도 접수번호 445574412로 지원완료 확인. 기존 사람인 지원과 중복 가능성이 뒤늦게 확인됨. 신규 회사 실적으로 계산하지 않으며 임의 취소하지 않음. 근거 output/application-verification-2026-10-11.md. |
 | 127 | 2026-09-14 | (주)이즈파크 | [이즈파크] JAVA 개발자 채용(Saas운영 · AI · 모바일 서비스) | 4.7/5 | Applied | ✅ | [127](../reports/127-ispark-java-backend-developer-2026-09-14.md) | 사람인 접수 완료 (클라우드 SaaS 솔루션 Java 백엔드 운영 및 기능개선); 사람인 브라우저 접수 완료 (saramin-ispark-applied.png) |
 | 128 | 2026-09-14 | (주)큐라코 | 개발 PL / 백엔드 개발자(경력5년 이상, 책임연구원) | 4.7/5 | Applied | ✅ | [128](../reports/128-curaco-backend-pl-2026-09-14.md) | 사람인 접수 완료 (스마트 헬스케어 배뇨케어 로봇 코어 백엔드 & 대용량 센서 데이터 파이프라인); 사람인 지원내역 확인 (2026.09.14 19:34) |
 | 129 | 2026-09-15 | (주)누리어시스템 | [금융SI] Java, React 정규직 경력 개발자 채용 | 4.7/5 | Applied | ✅ | [129](../reports/129-nurier-java-react-backend-2026-09-15.md) | 사람인 접수 완료 (금융 SI/SM 코어 Java 백엔드 및 대용량 트랜잭션 무결성); 사람인 브라우저 접수 완료 (saramin-nurier-applied.png) |
@@ -375,7 +375,7 @@
 | 425 | 2026-09-26 | 콴텍 | 로보어드바이저 IRP 시스템 개발/운영 | - | Applied | - | N/A | 사람인 2026.09.26 15:14 지원완료 확인. 공고 54901444; Java/Spring 이력서 39058482 선택; 첨부 신규 없음. 지원 전 회사 검색 0건, 제출 후 1건 확인. 증거: output/application-verification-2026-09-26.md. |
 | 426 | 2026-09-26 | 민팃 | 백엔드/웹서버 개발 | - | Applied | - | N/A | 사람인 2026.09.26 15:26 지원완료/미열람 확인. 공고 55001934; Java/Spring 이력서 39058482; 신규 첨부 없음. 지원 전 검색 0건에서 제출 후 1건 확인. 증거 output/application-verification-2026-09-26.md. |
 | 427 | 2026-09-26 | 프라임에셋 | 백엔드 개발자 | - | Applied | - | N/A | 사람인 2026.09.26 15:29 지원완료/미열람 확인. 공고 54919790; Java/Spring 이력서 39058482; 신규 첨부 없음. 지원 전 회사 검색 0건, 제출 후 1건. 증거 output/application-verification-2026-09-26.md. |
-| 428 | 2026-09-26 | 버넥트 | 백엔드 개발자 주니어 | - | Applied | - | N/A | 사람인 2026.09.26 15:31 지원완료/미열람 확인. 공고 54912436; Java/Spring 이력서 39058482 및 GitHub URL을 포트폴리오로 첨부. 지원현황 이력서+포트폴리오 버튼 확인. 증거 output/application-verification-2026-09-26.md. |
+| 428 | 2026-09-26 | 버넥트 | 백엔드 개발자 주니어 | - | Applied | - | N/A | 사람인 2026.09.26 15:31 지원완료/미열람 확인. 공고 54912436; Java/Spring 이력서 39058482 및 GitHub URL을 포트폴리오로 첨부. 지원현황 이력서+포트폴리오 버튼 확인. 증거 output/application-verification-2026-09-26.md.; 2026-10-11 잡코리아 공고 49900390도 접수번호 445574595로 지원완료 확인. VoiceLink PDF 첨부. 기존 사람인 지원과 중복 가능성이 뒤늦게 확인됨. 신규 회사 실적으로 계산하지 않으며 임의 취소하지 않음. 근거 output/application-verification-2026-10-11.md. |
 | 429 | 2026-09-26 | 스토어링크(StoreLink) | 백엔드 개발자(3년 이상) | 5.0/5 | Applied | ✅ | [429](../reports/429-storelink-backend-developer-2026-09-26.md) | 원티드 실시간 지원 완결 (공고 #388962, 시리즈C 330억 이커머스 빅데이터 '퍼그샵' 코어 백엔드 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
 | 430 | 2026-09-26 | 사운독(SoundDog) | 소프트웨어 엔지니어 (백엔드·데이터 중심) (3~5년) | 5.0/5 | Applied | ✅ | [430](../reports/430-sounddog-software-engineer-backend-data-2026-09-26.md) | 원티드 실시간 지원 완결 (공고 #378293, 음향 AI 및 대규모 데이터 파이프라인 백엔드 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
 | 431 | 2026-09-26 | 피클플러스(PicklePlus) | 미들/시니어 백엔드 엔지니어 | 5.0/5 | Applied | ✅ | [431](../reports/431-pickleplus-middle-senior-backend-engineer-2026-09-26.md) | 원티드 실시간 지원 완결 (공고 #388742, 국내 1위 OTT 구독/결제·정산 무결성 플랫폼 백엔드 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
@@ -408,7 +408,7 @@
 | 458 | 2026-09-27 | 데이원컴퍼니 | Forward Deployed Engineer (FDE) | 5.0/5 | Applied | ✅ | [458](../reports/458-day1company-fde-forward-deployed-engineer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #383391, Day1 AI Deployment Company 엔터프라이즈 AI/RAG/데이터 파이프라인 FDE 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
 | 459 | 2026-09-27 | 인티그레이션(메디스트림) | [AX] 백엔드 개발자 | 5.0/5 | Applied | ✅ | [459](../reports/459-integration-ax-backend-developer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #363071, Series C2 의료 AI/AX 플랫폼 AI Agent/RAG/PostgreSQL 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
 | 460 | 2026-09-27 | 코딧(CODITCorp.) | 백엔드 개발자 (2년 이상) | 5.0/5 | Applied | ✅ | [460](../reports/460-codit-backend-developer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #199386, 글로벌 GovTech AI 플랫폼 법령/규제 데이터 Elasticsearch/MySQL/API 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
-| 461 | 2026-09-27 | 인터엑스(INTERX) | 백엔드 (Backend) 개발자 | 5.0/5 | Applied | ✅ | [461](../reports/461-interx-backend-developer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #328449, Series B 180억 유치 자율제조/산업AX 플랫폼 Java SpringBoot/동시성/PostgreSQL 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
+| 461 | 2026-09-27 | 인터엑스(INTERX) | 백엔드 (Backend) 개발자 | 5.0/5 | Applied | ✅ | [461](../reports/461-interx-backend-developer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #328449, Series B 180억 유치 자율제조/산업AX 플랫폼 Java SpringBoot/동시성/PostgreSQL 맞춤 이력서 브라우저 접수 및 지원완료 확인); 2026-10-11 사용자가 별도 지원 완료를 알리며 인터엑스 추가 지원 제외 지시. 이번 잡코리아 공고 50063431 지원서는 제출하지 않음. |
 | 462 | 2026-09-27 | 디써클(R&D Circle) | Backend Engineer - Applied AI | 5.0/5 | Applied | ✅ | [462](../reports/462-dcircle-applied-ai-backend-engineer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #367980, TIPS R&D 플랫폼 수십TB 대용량 배치/AI Agent/Spring Boot/Elasticsearch 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
 | 463 | 2026-09-27 | 플래티어 | [AI CX사업부문] AI 엔지니어 | 5.0/5 | Applied | ✅ | [463](../reports/463-plateer-ai-engineer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #374497, 코스닥 상장 AI 마테크 커머스 하이브리드 벡터검색/인덱싱 파이프라인 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
 | 464 | 2026-09-27 | 다음(Daum) | 검색 서비스 개발자 | 5.0/5 | Applied | ✅ | [464](../reports/464-daum-search-service-developer-2026-09-27.md) | 원티드 실시간 지원 완결 (공고 #373814, 대한민국 대표 포털 Daum 통합검색 대용량/초저지연 Elasticsearch/RAG/MCP/Java 맞춤 이력서 브라우저 접수 및 지원완료 확인) |
@@ -439,4 +439,896 @@
 | 489 | 2026-10-11 | 크레버스 | AX Planning Team 백엔드엔지니어 정규직 | N/A | Applied | N/A | N/A | 사람인 추천공고(중견기업)에서 실시간 동시지원 완료. 동시지원 완료 화면에서 대상 기업 확인. 2026-10-11 사람인 입사지원 현황 재검증: 접수 16:09(KST), 지원완료·미열람. |
 | 490 | 2026-10-11 | 대웅 | AX Engineer | N/A | Applied | N/A | N/A | 사용자 최종 승인 후 원티드 #390449에 대웅 맞춤 원티드 이력서 사본만 제출. https://www.wanted.co.kr/wd/390449/applied 에서 '지원이 완료되었습니다!' 및 공고의 '지원완료' 확인. 기본 이력서·PDF 미제출. 사본 https://www.wanted.co.kr/cv/f1xYUk8HBAkBBgcGT0I= . RAG/Python 배치/인증·운영 안정성 중심 맞춤 작성, 미확인 AWS와 프로젝트 월 제거. 각 플랫폼 30건 신규 배치: 원티드 1/30. |
 | 491 | 2026-10-11 | 당근페이 | Software Engineer, Backend | N/A | Applied | [PDF](../output/pdf/cv-park-junho-daangnpay-2026-10-11.pdf) | N/A | 사용자 회사별 최종 승인 후 공식 채용 사이트 job id 4511184003에 맞춤 PDF 제출. https://careers.daangn.com/jobs/completed/ 및 '당근에 지원해 주셔서 감사합니다. 현장에서 만나요.' 접수 완료 문구와 화면 확인. 보훈 비대상·장애 해당 없음, 필수 동의 3개 반영. 연락처는 조회 시 마스킹되어 최종 대조 미확인. 일반 채용 공식 사이트 신규 제출 1건이며 원티드/사람인/잡코리아/위시켓 30건 카운트에는 포함하지 않음.; 2026-10-11 사용자 원본 재제출 승인(ㄱㄱ) 후 박준호_이력서.pdf 원본 1개만 공식 job id 4511184003에 다시 제출. https://careers.daangn.com/jobs/completed/ 및 접수 감사 문구 확인. 최초 생성본 접수의 취소·삭제·교체는 미확인. 동일 회사·공고 재제출이므로 신규 회사 지원 건수에는 추가하지 않음. |
+| 492 | 2026-10-11 | 티지360테크놀로지스 | 데이터 플랫폼 및 광고 데이터 연동 개발자 | - | Applied | ✅ | N/A | 잡코리아 지원완료 화면 확인. 공고 49916703, 접수번호 445576198. Data/Batch 이력서 29491309 및 VoiceLink 모바일 화면 안내 PDF 첨부. 근거 output/application-verification-2026-10-11.md. |
+| 493 | 2026-10-11 | 와이즈스톤 | 서버 개발자 | - | Applied | ❌ | N/A | 잡코리아 지원완료 화면 및 지원현황 확인. 공고 50019841, 접수번호 445574424. Data/Batch 이력서 29491309. 근거 output/application-verification-2026-10-11.md. |
+| 494 | 2026-10-11 | 에비드넷 | 데이터 엔지니어 | - | Applied | ❌ | N/A | 사람인 2026.10.11 15:07 지원완료/미열람 확인. 공고 55028260. 갱신된 Data/Batch 이력서 35100532 및 GitHub 포트폴리오 URL 첨부. 제출 전 지난 1년 회사 검색 0건, 제출 후 회사 지원내역 확인. 근거 output/application-verification-2026-10-11.md. |
+| 495 | 2026-10-11 | 솔로몬텍 | DBA & 데이터 엔지니어 | - | Applied | ❌ | N/A | 사람인 2026.10.11 15:10 지원완료/미열람 확인. 공고 55037964. 갱신된 Data/Batch 이력서 35100532와 GitHub 포트폴리오 URL 첨부. 지난 1년 회사 검색 0건 확인 후 제출. 정규직 중견기업, 고객사 근무 예정 문구 확인. 근거 output/application-verification-2026-10-11.md. |
+| 496 | 2026-10-11 | 효성아이티엑스(주) | AI MLOps 엔지니어 | - | Applied | ❌ | N/A | 사람인 54799639. 2026.10.11 15:19 지원현황에서 지원완료/미열람 확인. Data/Batch 이력서 35100532 및 GitHub URL 포트폴리오 제출. 지난 1년 효성 검색 0건 확인. RAGAS 경험은 원본에서 확인되지 않아 추가 기재하지 않음. |
+| 497 | 2026-09-01 | 드림어스컴퍼니 | 음악 서비스 백엔드 서버 개발자 | - | Applied | ❌ | N/A | 2026-10-11 사람인 지난 1년 지원현황 조회에서 2026.09.01 10:06 지원완료 확인. 기존 제출 내역 사후 기록이며 이번 신규 제출이 아님. 재공고 55090653에는 지원하지 않음. 첨부 PDF 여부 미확인. |
+| 498 | 2026-10-11 | 도우인시스 | 시스템지원그룹 MES 담당자 | - | Applied | ❌ | N/A | 사람인 55211292. 2026.10.11 19:27 지원완료/미열람 확인. Data/Batch 이력서 35100532(15:06 저장) 및 GitHub URL 포트폴리오 제출. 로컬 기록과 지난 1년 회사 검색 0건 확인 후 제출. 코스닥 디스플레이 제조사, 청주 정규직, 경력 1~4년. 근거 output/application-verification-2026-10-11.md. |
+| 499 | 2026-10-11 | 에이테크솔루션 | AI·RPA·ETL 시스템 개발 및 운영 | - | Applied | ❌ | N/A | 사람인 54853954. 2026.10.11 19:36 지원완료/미열람 확인. Data/Batch 이력서 35100532(15:06 저장), GitHub URL 포트폴리오 제출. 로컬 트래커 및 지난 1년 에이테크 검색 0건 확인. 중견 제조기업 정규직. Oracle/MS SQL 경험은 원본에 없어 추가 주장하지 않음. 근거 output/application-verification-2026-10-11.md. |
+| 500 | 2026-10-11 | 미래로시스템 | Java Web Backend 개발자 | - | Applied | ❌ | N/A | 사람인 55179131. 2026.10.11 20:39 지원완료/미열람 및 이력서·포트폴리오 표시 확인. 최신 Data/Batch 이력서(2026.10.11 15:06 저장)와 GitHub URL 제출. 로컬 기록 및 지난 1년 미래로 검색 0건 확인 후 지원. 반도체·디스플레이 불량분석 솔루션 Backend/API, Java/Spring Boot/JPA, 대용량 데이터 처리, 정규직 경력 5년 이하. 이번 반도체 서버개발자/데이터엔지니어 한정 요청의 신규 제출 1건. |
+| 501 | 2026-10-12 | 세중 | IT 시스템 개발 경력 채용 | N/A | Applied | ✅ | — | 사람인 posting id 55128318. 온라인 이력서(2026-10-11 저장) 및 원본 박준호_이력서.pdf 첨부. 2026-10-12 브라우저 최종 제출 후 ‘입사지원 완료!’ 화면 확인. 이번 배치 신규 1건. |
+| 502 | 2026-10-12 | 카카오페이 | 서버 개발자 - 데이터 플랫폼 | N/A | Applied | ✅ | — | 공식 채용사이트 posting id 235177. 원본 박준호_이력서.pdf(142 kB) 첨부. 최종 확인에서 연락처·학력·경력 3곳 확인 후 제출. ‘지원서를 성공적으로 제출했습니다’ 화면 확인. 입사가능일 2026-11-02. |
+| 503 | 2026-10-12 | 인포뱅크 | [iComm] Backend Engineer(3년 이상) | N/A | Applied | ✅ | — | 잡코리아 posting id 50075959 발굴, 공식 flex 채용 rjzQRgRE7n 최종 제출. 브라우저에서 '박준호님의 입사 지원이 성공적으로 접수되었어요' 확인. 다운로드 폴더의 사용자 사람인 원본 PDF 직접 첨부, 별도 PDF 미생성. 상세값 output/application-infobank-2026-10-12.md. |
+| 504 | 2026-10-12 | 마크로젠 | JAVA개발자 경력 모집 | N/A | Applied | ✅ | — | 잡코리아 50048730 최종 제출. 지원완료 되었습니다 확인, 접수번호 445651148. 사용자 다운로드 원본 PDF 직접 첨부 및 Gmail 연락처 확인. output/application-macrogen-2026-10-12.md. |
+| 505 | 2026-10-12 | 다날 | IT기술팀 개발자 (경력) | N/A | Applied | ✅ | — | 잡코리아 50117383 지원완료 되었습니다 확인. 접수번호 445654091. Java Spring REST API 경력 2~5년 공고. 원본 PDF 첨부, Gmail 연락처. 상세 output/application-danal-2026-10-12.md. |
+| 506 | 2026-10-12 | 에이텍 | 해외AP개발팀 (SE 파트) | N/A | Applied | ✅ | — | 잡코리아 49807688 지원완료 되었습니다 확인. 접수번호 445656132. Java Spring 서버·배치 개발 경력 2년 이상 정규직. 원본 PDF 첨부 및 Gmail 연락처 확인. output/application-atec-2026-10-12.md. |
+| 507 | 2026-10-12 | 현대오토에버 | [SDx] Backend Developer - Robot/Smart Factory | N/A | Applied | ✅ | — | 공식 Greeting 220755. 원본 PDF 142 kB 및 cv.md 기반 설명 564자 제출. 최종 화면 지원서를 성공적으로 제출했습니다 확인. output/application-hyundai-autoever-2026-10-12.md |
+| 508 | 2026-10-12 | 유비온 | AI백엔드 엔지니어 경력 모집 | N/A | Applied | ✅ | — | 잡코리아 50007983 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445661719. 코스닥 상장사 정규직. Data/Batch 이력서 29491309 및 원본 PDF 첨부, Gmail 연락처 확인. 상세 output/application-ubion-2026-10-12.md. |
+| 509 | 2026-10-12 | Spoqa(스포카) | 백엔드 프로그래머(3년 이상) | N/A | Applied | ✅ | — | 잡코리아 49988111 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445662756. 강남구 대치동 정규직 경력 3년 이상. Java/Python/Spring/Elasticsearch 백엔드 개발. Data/Batch 이력서 29491309 및 원본 PDF 첨부 확인. 상세 output/application-spoqa-2026-10-12.md. |
+| 510 | 2026-10-12 | 천재교육 | AI센터 데이터엔지니어 | N/A | Applied | ✅ | — | 잡코리아 49994913 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445663298. 중견기업(사원수 500~1000명). Python/Airflow/Hadoop/Kubernetes 데이터 엔지니어. Data/Batch 이력서 29491309 및 원본 PDF 첨부, Gmail 연락처 확인. 상세 output/application-chunjae-2026-10-12.md. |
+| 511 | 2026-10-12 | 농심NDS | 공공 SI 경력 개발 (AA/TA/DBA/개발) | N/A | Applied | ✅ | — | 잡코리아 50063042 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445663759. 농심그룹 IT계열 중견기업. Data/Batch 이력서 29491309 및 원본 PDF 첨부, Gmail 연락처 확인. 상세 output/application-nds-2026-10-12.md. |
+| 512 | 2026-10-12 | 위세아이텍 | 데이터 아키텍트 (Data Architect) | N/A | Applied | ✅ | — | 잡코리아 50046914 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445664476. 코스닥 상장 AI·빅데이터 솔루션 기업. 데이터 아키텍트 분야 선택, Data/Batch 이력서 29491309 및 원본 PDF 첨부, Gmail 연락처 확인. 상세 output/application-wiseeyetech-2026-10-12.md. |
+| 513 | 2026-10-12 | 한솔PNS | 제조부품 MES 운영/개발 | N/A | Applied | ✅ | — | 잡코리아 49974774 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445665031. 한솔그룹 코스피 상장 IT 계열사. 제조부품 MES 시스템 운영·개발. Data/Batch 이력서 29491309 및 원본 PDF 첨부, Gmail 연락처 확인. 상세 output/application-hansol-pns-2026-10-12.md. |
+| 514 | 2026-10-12 | 비스텔리젼스 | AI Solution Engineer | N/A | Applied | ✅ | — | 잡코리아 49950001 OnPass 즉시지원 최종 제출. 입사지원 현황 실시간 등재 확인(passRNo 323675104). 반도체/스마트팩토리 AI 예지보전(FDC/PdM) 전문기업. Data/Batch 이력서 29491309 및 원본 PDF 첨부 확인. 상세 output/application-bistel-2026-10-12.md. |
+| 515 | 2026-10-12 | (주)윙키 | 백엔드 개발자 (Python/AWS) - 풀재택 | N/A | Applied | ✅ | — | 잡코리아 49820356 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445669278. AI 에듀테크 백엔드 개발, 100% 풀재택근무. Data/Batch 이력서 29491309 및 원본 PDF 첨부, Gmail 연락처 확인. 상세 output/application-winky-2026-10-12.md. |
+| 516 | 2026-10-12 | 캐치잇플레이 | AI 학습 플랫폼 백엔드 엔지니어 (재택근무 가능) | N/A | Applied | ✅ | — | 잡코리아 49777221 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445670453. AI 학습 플랫폼 Node/PostgreSQL/Redis 백엔드, 재택근무 가능 공고. Data/Batch 이력서 29491309 및 원본 PDF 첨부 확인. 상세 output/application-catchitplay-2026-10-12.md. |
+| 517 | 2026-10-12 | 이너버스 | 백엔드 개발자 (재택근무 가능) | N/A | Applied | ✅ | — | 잡코리아 50130208 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445670789. 정보보안 솔루션 백엔드 개발, 재택근무 가능 공고. Data/Batch 이력서 29491309 및 원본 PDF 첨부 확인. 상세 output/application-innerverse-2026-10-12.md. |
+| 518 | 2026-10-12 | (주)에어프레미아랩스 | Backend 경력직 (재택/원격근무 가능) | N/A | Applied | ✅ | — | 잡코리아 49919246 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445673196. 항공/모빌리티 테크 백엔드 개발, 재택/원격근무 가능 공고. Data/Batch 이력서 29491309 및 원본 PDF 첨부 확인. 상세 output/application-airpremialabs-2026-10-12.md. |
+| 519 | 2026-10-12 | (주)이우소프트 | 백엔드 엔지니어(Platform·인증/권한) (재택/원격근무 가능) | N/A | Applied | ✅ | — | 잡코리아 50131409 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445673506. 바텍 계열 헬스케어 SW 백엔드 플랫폼·인증/권한 개발, 재택/원격근무 가능 공고. Data/Batch 이력서 29491309 및 원본 PDF 첨부 확인. 상세 output/application-ewoosoft-2026-10-12.md. |
+| 520 | 2026-10-12 | 비욘드데이터 | 데이터아키텍트(DA) (정규직/프리랜서) | N/A | Applied | ✅ | — | 잡코리아 49939913 OnPass 즉시지원 최종 제출. 지원완료 되었습니다 확인, 접수번호 445674825. 고용형태 정규직/프리랜서 병기. Data/Batch 온라인 이력서 29491309 제출. 상세 output/application-beyonddata-2026-10-12.md. |
+| 521 | 2026-10-12 | 망고카 | 글로벌 플랫폼 백엔드 개발자 | — | Applied | ✅ | — | 잡코리아 job id 50120096; 지원완료 되었습니다 확인; co_pass_no=445679689; R_No=29491309; PartIdx=41229671; 기존 기본 이력서 및 사용자 원본 PDF 첨부. C#/.NET 사용 스택이나 해당 실무 경력은 주장하지 않음. |
+| 522 | 2026-10-13 | ㈜대니스 | 반도체FAB MCS (SM/SI)개발 - C#, JAVA | — | Applied | ✅ | — | 잡코리아 gNo 50077763 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775224; PartIdx=41184435; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 523 | 2026-10-13 | ㈜마루한소프트 | 대형 반도체회사 물류시스템 개발  [ JAVA, 리액트 , 고급 ] | — | Applied | ✅ | — | 잡코리아 gNo 50130921 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775237; PartIdx=41241323; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 524 | 2026-10-13 | ㈜담다랩스 | 삼성 반도체 경영관리시스템(마진관리, 자금충당관리) 개발 | — | Applied | ✅ | — | 잡코리아 gNo 50123567 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775250; PartIdx=41233451; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 525 | 2026-10-13 | 인포그램㈜ | 반도체 운영 시스템 개발자(경력) | — | Applied | ✅ | — | 잡코리아 gNo 50126145 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775258; PartIdx=41236242; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 526 | 2026-10-13 | 라인소프트㈜ | 스마트팩토리 솔루션 개발자  (MES, MCS) | — | Applied | ✅ | — | 잡코리아 gNo 50132731 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775290; PartIdx=41243296; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 527 | 2026-10-13 | ㈜비지언스 | AI 기반 스마트팩토리 솔루션 개발자 모집 | — | Applied | ✅ | — | 잡코리아 gNo 49947732 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775310; PartIdx=41045087; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 528 | 2026-10-13 | 알파리졸브 | 스마트팩토리/FEMS 소프트웨어 개발자 | — | Applied | ✅ | — | 잡코리아 gNo 50080591 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775324; PartIdx=41187476; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 529 | 2026-10-13 | 캐치잇플레이 | AI 학습 플랫폼 - 백엔드 엔지니어 / Mid-Senior (재택근무 가능) | — | Applied | ✅ | — | 잡코리아 gNo 50155037 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775340; PartIdx=41267209; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 530 | 2026-10-13 | ㈜퓨어글로벌 | 데이터 엔지니어 Data Engineer 정규직 | — | Applied | ✅ | — | 잡코리아 gNo 50048516 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775353; PartIdx=41153370; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 531 | 2026-10-13 | ㈜천화 | SK하이닉스 React  Spring Boot | — | Applied | ✅ | — | 잡코리아 gNo 50041324 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775370; PartIdx=41145479; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 532 | 2026-10-13 | ㈜블로믹스 | 게임 서비스 플랫폼 백엔드 리드 개발자 공고 | — | Applied | ✅ | — | 잡코리아 gNo 49957220 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775393; PartIdx=41055359; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 533 | 2026-10-13 | ㈜트라이얼인포매틱스 | 임상시험IT솔루션 - 백엔드 개발자 (팀원) | — | Applied | ✅ | — | 잡코리아 gNo 50068732 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775405; PartIdx=41174823; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 534 | 2026-10-13 | 엠케이피㈜ | 반도체 제조업 소프트웨어(SW) 개발 대졸 신입 | — | Applied | ✅ | — | 잡코리아 gNo 50051580 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775480; PartIdx=41156673; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 535 | 2026-10-13 | ㈜피델릭스 | [신입] 메모리 반도체 영업/마케팅 | — | Applied | ✅ | — | 잡코리아 gNo 50120368 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775484; PartIdx=41229963; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 536 | 2026-10-13 | ㈜팩토리아이엠에스 | 드론 하드웨어 설계 및 제작 유경험자 | — | Applied | ✅ | — | 잡코리아 gNo 50158385 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775492; PartIdx=41270787; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 537 | 2026-10-13 | ㈜피델릭스 | [신입] 메모리반도체 Project Manager | — | Applied | ✅ | — | 잡코리아 gNo 50121161 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775502; PartIdx=41230823; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 538 | 2026-10-13 | 에이씨테크 | 소프트웨어개발 엔지니어 | — | Applied | ✅ | — | 잡코리아 gNo 50040808 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775520; PartIdx=41144918; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 539 | 2026-10-13 | ㈜세미플로우텍 | 제품 설계 직원 정규직 (동탄근무) | — | Applied | ✅ | — | 잡코리아 gNo 50157595 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775531; PartIdx=41269926; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 540 | 2026-10-13 | ㈜제이티아이 | [신입] 반도체 · LCD 검사 및 자동화설비 기계설계 모집 | — | Applied | ✅ | — | 잡코리아 gNo 50059066 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775547; PartIdx=41164492; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 541 | 2026-10-13 | ㈜엔티아이피 | 경기도 안성근무  반도체 회사 설비 시스템 개발 C#.NET개발자 모집의건 | — | Applied | ✅ | — | 잡코리아 gNo 50089509 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775556; PartIdx=41197051; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 542 | 2026-10-13 | ㈜제이티아이 | [경력] 반도체 · LCD 검사 및 자동화설비 기계설계 모집 | — | Applied | ✅ | — | 잡코리아 gNo 50059045 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775566; PartIdx=41164471; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 543 | 2026-10-13 | 위프로커넥티드서비시즈인크 | [위프로커넥티드서비시즈인크] Talent Pool - Software Engineer | — | Applied | ✅ | — | 잡코리아 gNo 49985041 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775580; PartIdx=41085167; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 544 | 2026-10-13 | 코닝나노프로텍㈜ | [코닝나노프로텍] AI Vision S/W Engineer(Mid-level 이상) | — | Applied | ✅ | — | 잡코리아 gNo 50102327 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775601; PartIdx=41210647; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 545 | 2026-10-13 | ㈜나노시스템 | [연구소][솔루션개발팀]3차원측정기 SW개발자 | — | Applied | ✅ | — | 잡코리아 gNo 49981069 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775615; PartIdx=41080904; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 546 | 2026-10-13 | ㈜인성테크놀로지 | 의료기기  이미용기기  개발 | — | Applied | ✅ | — | 잡코리아 gNo 50148186 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775637; PartIdx=41259715; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 547 | 2026-10-13 | 블루닷㈜ | 코덱 소프트웨어 엔지니어 (신입) | — | Applied | ✅ | — | 잡코리아 gNo 50126594 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775655; PartIdx=41236716; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 548 | 2026-10-13 | ㈜코비스테크놀로지 | 장비 소프트웨어 엔지니어 (반도체 측정 장비) | — | Applied | ✅ | — | 잡코리아 gNo 50123656 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775673; PartIdx=41233560; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 549 | 2026-10-13 | 테크밸리㈜ | 2026년 하반기 각 부문 신입/경력 모집 | — | Applied | ✅ | — | 잡코리아 gNo 50136516 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775680; PartIdx=41247460; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 550 | 2026-10-13 | ㈜삼성에이엑스아이 | [숙식교육무료]삼성SDS RPA 연계 AI부트캠프 | — | Applied | ✅ | — | 잡코리아 gNo 49985450 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775688; PartIdx=41085588; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 551 | 2026-10-13 | ㈜아이셋디엑스 | 반도체 제조 시스템 소프트웨어 개발자 | — | Applied | ✅ | — | 잡코리아 gNo 50045191 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445775694; PartIdx=41149741; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 552 | 2026-10-13 | 지에스리테일(GS리테일) | [AX본부] AI데이터부문 데이터엔지니어링팀 데이터 엔지니어 5년 내외 | — | Applied | ✅ | — | 원티드(Wanted) job_id 391384 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118156; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 553 | 2026-10-13 | 보스반도체 | ML Systems Runtime Engineer | — | Applied | ✅ | — | 원티드(Wanted) job_id 344181 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118158; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 554 | 2026-10-13 | 콕스웨이브 | [AX AgentX] 데이터 엔지니어(RAG/LLM Pipeline) | — | Applied | ✅ | — | 원티드(Wanted) job_id 390999 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118161; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 555 | 2026-10-13 | 다이브엣지 테크놀로지 | AI/데이터 엔지니어  EV Fleet 예측 | — | Applied | ✅ | — | 원티드(Wanted) job_id 390460 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118163; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 556 | 2026-10-13 | 데이터다이나믹스 | Big Data 데이터 엔지니어(Python) | — | Applied | ✅ | — | 원티드(Wanted) job_id 384775 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118164; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 557 | 2026-10-13 | 트리노드 | [부산/3년 이상] 그로스전략셀 - 데이터 엔지니어 | — | Applied | ✅ | — | 원티드(Wanted) job_id 381633 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118167; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 558 | 2026-10-13 | 웅진씽크빅 | 데이터 엔지니어(Data Engineer) | — | Applied | ✅ | — | 원티드(Wanted) job_id 380495 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118169; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 559 | 2026-10-13 | 잉클 | PLC 데이터 엔지니어 | — | Applied | ✅ | — | 원티드(Wanted) job_id 379945 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118170; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 560 | 2026-10-13 | 피에프씨테크놀로지스 | B2B Data Engineer(B2B 데이터 엔지니어) - Databricks | — | Applied | ✅ | — | 원티드(Wanted) job_id 379570 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118173; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 561 | 2026-10-13 | 잉클 | 데이터 엔지니어 (3년 이상) | — | Applied | ✅ | — | 원티드(Wanted) job_id 370717 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118175; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 562 | 2026-10-13 | 플래티어 | [AI CX사업부문] 데이터 엔지니어 | — | Applied | ✅ | — | 원티드(Wanted) job_id 362890 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118176; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 563 | 2026-10-13 | 크몽(kmong) | Data Engineer (3년 이상) | — | Applied | ✅ | — | 원티드(Wanted) job_id 391399 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118177; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 564 | 2026-10-13 | 토스플레이스 | Data Engineer (Streaming) | — | Applied | ✅ | — | 원티드(Wanted) job_id 390447 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118178; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 565 | 2026-10-13 | 토스플레이스 | Data Engineer (Platform) | — | Applied | ✅ | — | 원티드(Wanted) job_id 390446 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118179; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 566 | 2026-10-13 | 에이아이트릭스(AITRICS) | Data Engineer | — | Applied | ✅ | — | 원티드(Wanted) job_id 390016 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118180; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 567 | 2026-10-13 | 휴톰 | Data Engineer | — | Applied | ✅ | — | 원티드(Wanted) job_id 383058 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118182; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 568 | 2026-10-13 | 미리비트 | Data Engineer & Local LLM AI Agent Engineer | — | Applied | ✅ | — | 원티드(Wanted) job_id 382386 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118184; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 569 | 2026-10-13 | 에이아이트릭스(AITRICS) | Healthcare Data Engineer (계약직) | — | Applied | ✅ | — | 원티드(Wanted) job_id 380610 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118185; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 570 | 2026-10-13 | 에이아이트릭스(AITRICS) | HAX Infra Data Engineer | — | Applied | ✅ | — | 원티드(Wanted) job_id 379809 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118187; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 571 | 2026-10-13 | 터틀날리지 | Databricks Data Engineer | — | Applied | ✅ | — | 원티드(Wanted) job_id 371923 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118189; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 572 | 2026-10-13 | 뷰리드 강남오피스 | 백엔드 개발자(계약직) | — | Applied | ✅ | — | 원티드(Wanted) job_id 391566 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118191; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 573 | 2026-10-13 | 코너 | 백엔드 개발자 (3년 이상) | — | Applied | ✅ | — | 원티드(Wanted) job_id 391542 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118192; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 574 | 2026-10-13 | 포스타입 | 백엔드 엔지니어(신입~5년 이하) | — | Applied | ✅ | — | 원티드(Wanted) job_id 391396 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118193; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 575 | 2026-10-13 | 에이블제이 | 백엔드 엔지니어 | — | Applied | ✅ | — | 원티드(Wanted) job_id 391334 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118194; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 576 | 2026-10-13 | 인플루엔셜(윌라) | 백엔드 개발자 | — | Applied | ✅ | — | 원티드(Wanted) job_id 391071 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118197; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 577 | 2026-10-13 | 마이페어 | 백엔드 기반 웹 풀스택 개발자 | — | Applied | ✅ | — | 원티드(Wanted) job_id 391005 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118198; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 578 | 2026-10-13 | 고이장례연구소 | 프로덕트 엔지니어링 매니저(백엔드) | — | Applied | ✅ | — | 원티드(Wanted) job_id 390907 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118199; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 579 | 2026-10-13 | 모멘티 | 백엔드 개발자 (1~3년) [역삼역] | — | Applied | ✅ | — | 원티드(Wanted) job_id 390891 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118202; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 580 | 2026-10-13 | 화해글로벌 | 프로덕트 엔지니어(백엔드) | — | Applied | ✅ | — | 원티드(Wanted) job_id 390316 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118203; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 581 | 2026-10-13 | 피엑스디(pxd) | [XE 그룹] AI eXperience Engineer(AX) - AI 플랫폼 & 백엔드 | — | Applied | ✅ | — | 원티드(Wanted) job_id 390241 실시간 지원 제출 완결; 공식 접수 ID apply_id=18118204; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' (key: AAUCBQoKAQFPBA8BAA0HBUpA) 및 PDF 원본 첨부 제출 확인. |
+| 582 | 2026-10-13 | 기업 | 엠피닉스㈜  - [광주/첨단] 제조혁신팀 양산 설비 보전 (PM/BM) 경력무관 | — | Applied | ✅ | — | 잡코리아 gNo 50124194 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445784243; PartIdx=41234118; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 583 | 2026-10-13 | 기업 | 엠피닉스㈜  - [광주/첨단] 제조혁신팀 신규설비 도입 및 자동화 담당 공고 | — | Applied | ✅ | — | 잡코리아 gNo 50124154 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445784252; PartIdx=41234078; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 584 | 2026-10-13 | 기업 | 엠피닉스㈜  - [광주/첨단] 제조혁신팀 PLC 제어 담당 경력직 공고 | — | Applied | ✅ | — | 잡코리아 gNo 50123615 OnPass 즉시지원 실시간 제출 완결; 접수번호 co_pass_no=445784272; PartIdx=41233515; 기본 온라인 이력서 29491309 및 원본 PDF 첨부 확인. |
+| 585 | 2026-10-13 | 위시켓 (Wishket) | [프로젝트 159059] AI/SEO 기반 콘텐츠 자동 생산 및 파이프라인 시스템 개발 | — | Applied | ✅ | — | 위시켓 파트너스(junho8889) 100% 원격/재택 프로젝트 제안서 지원 완결; 예산 25,000,000원 / 180일 제안; LLM RAG API 및 Airflow 1,973만 건 대용량 파이프라인 경력 소개서 첨부 제출 확인. |
+| 586 | 2026-10-13 | 팀42 | 데이터 엔지니어 | — | Applied | ✅ | — | 원티드(Wanted) job_id 334072 실시간 지원 제출 완결; 공식 접수 ID apply_id=18121208; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' 및 PDF 원본 첨부 확인. |
+| 587 | 2026-10-13 | 웨이커 | Python 백엔드 엔지니어 (3년 이상) | — | Applied | ✅ | — | 원티드(Wanted) job_id 382162 실시간 지원 제출 완결; 공식 접수 ID apply_id=18121209; 기본 이력서 '데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호' 및 PDF 원본 첨부 확인. |
 | SRM-150 | 2026-08-16 | 사람인 (Saramin) | Java/Spring Boot 백엔드 개발자 타깃 150개 공고 | 4.5/5 | Applied | 📄 | N/A | 사람인 OAuth 연동, 맞춤 복사 이력서(`[복사] 운영 안정성과 데이터 정합성을 개선하는 Java/Spring Boot 백엔드 개발자 박준호`) 기반 **총 150개 채용공고 지원 완결** (`apply-status-list` 150건 실시간 검증 완료) |
+
+| #588 | 드림어스컴퍼니 | 음악 서비스 백엔드 서버 개발자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/376666) | apply_id: 18122976 (Wanted Direct API 제출 완료) |
+| #589 | 이글로벌시스템 | 백엔드/서버 개발자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/99189) | apply_id: 18122977 (Wanted Direct API 제출 완료) |
+| #590 | 슈프리마 | AI 카메라 임베디드 웹서버 개발자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390655) | apply_id: 18122978 (Wanted Direct API 제출 완료) |
+| #591 | 이든크루 | C/C++ 서버 개발자 (LAMP 플랫폼, 2~10년차) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384657) | apply_id: 18122979 (Wanted Direct API 제출 완료) |
+| #592 | 솔루션퀀트 | 백엔드 개발자 (Python) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384004) | apply_id: 18122982 (Wanted Direct API 제출 완료) |
+| #593 | 라텔앤드파트너즈 | 백엔드 개발자 (3년 이상) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389751) | apply_id: 18122983 (Wanted Direct API 제출 완료) |
+| #594 | 올세일코퍼레이션(ALLSALECorp) | 백엔드 개발자(Backend Engineer) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389639) | apply_id: 18122984 (Wanted Direct API 제출 완료) |
+| #595 | 매드업 | [개발 본부] 주니어 백엔드 개발자 (전문연구요원 가능) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/222550) | apply_id: 18122985 (Wanted Direct API 제출 완료) |
+| #596 | 버터소프트 | 헬스케어 서비스 백엔드 개발자 [Spring] | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389830) | apply_id: 18122986 (Wanted Direct API 제출 완료) |
+| #597 | 고위드 | Backend Engineer (백엔드 개발자/1~3년) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383359) | apply_id: 18122987 (Wanted Direct API 제출 완료) |
+| #598 | 한솔피엔에스 | 제조부품 MES 운영/개발 3년 이상 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369311) | apply_id: 18122996 (Wanted Direct API 제출 완료) |
+| #599 | 동방파스텍 | ERP&MES 관리자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380489) | apply_id: 18122997 (Wanted Direct API 제출 완료) |
+| #600 | 문그룹 | 백엔드 기술책임자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391359) | apply_id: 18123018 (Wanted Direct API 제출 완료) |
+| #601 | 아치서울 | 백엔드 개발자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391283) | apply_id: 18123019 (Wanted Direct API 제출 완료) |
+| #602 | 크립토랩 | 백엔드 개발자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391272) | apply_id: 18123020 (Wanted Direct API 제출 완료) |
+| #603 | 메타팩토리코퍼레이션 | 백엔드 개발 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391116) | apply_id: 18123022 (Wanted Direct API 제출 완료) |
+| #604 | 인커럽트 | 개발 리드(Node.js · TypeScript, 백엔드·인프라 중심) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390943) | apply_id: 18123023 (Wanted Direct API 제출 완료) |
+| #605 | 모멘티 | 백엔드 개발자 (4~10년) [역삼역] | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390892) | apply_id: 18123024 (Wanted Direct API 제출 완료) |
+| #606 | 다이렉트클라우드랩 | Private Cloud 백엔드 엔지니어[재택가능] | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390838) | apply_id: 18123025 (Wanted Direct API 제출 완료) |
+| #607 | 루멘테라 | 백엔드 개발자 (신입·주니어) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390781) | apply_id: 18123026 (Wanted Direct API 제출 완료) |
+| #608 | 다이렉트클라우드랩 | 백엔드 엔지니어[재택가능] | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390763) | apply_id: 18123027 (Wanted Direct API 제출 완료) |
+| #609 | 트리거스 | 백엔드 개발자 5년 이상 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390760) | apply_id: 18123028 (Wanted Direct API 제출 완료) |
+| #610 | 엠에스오토텍 | 신입 풀스택 개발자｜스마트팩토리 시스템(공장 운영 자동화/효율화) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392016) | apply_id: 18123035 (Wanted Direct API 제출 완료) |
+| #611 | 엠에스오토텍 | 풀스택 개발자｜스마트팩토리 시스템(공장 운영 자동화/효율화) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/379957) | apply_id: 18123036 (Wanted Direct API 제출 완료) |
+| #612 | 한국딥러닝 | AI MLOps 엔지니어 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391906) | apply_id: 18123037 (Wanted Direct API 제출 완료) |
+| #613 | 리소리우스 | MLOps | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390877) | apply_id: 18123038 (Wanted Direct API 제출 완료) |
+| #614 | 워트인텔리전스 | Senior AI Engineer (LLM / NLP / MLOps) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389828) | apply_id: 18123039 (Wanted Direct API 제출 완료) |
+| #615 | 마키나락스 | Solution Architect (MLOps) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389511) | apply_id: 18123041 (Wanted Direct API 제출 완료) |
+| #616 | 룰루랩(lululab) | MLOps Engineer (Junior) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385272) | apply_id: 18123042 (Wanted Direct API 제출 완료) |
+| #617 | 오토메타 | MLOps Engineer (MLOps 엔지니어) | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384695) | apply_id: 18123044 (Wanted Direct API 제출 완료) |
+| #618 | 에버엑스 | [기술혁신실] MLOps Engineer | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383230) | apply_id: 18123045 (Wanted Direct API 제출 완료) |
+| #619 | 위시드 | MLOps / AI 에이전트 개발자 | KR | 2026-10-13 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382306) | apply_id: 18123046 (Wanted Direct API 제출 완료) |
+| #620 | 위시켓 (Wishket) | React 기반 디지털 트윈 웹 서비스 프론트엔드 개발 (100% 재택) | KR | 2026-10-13 | — | Applied | [Wishket](https://www.wishket.com/project/159057/) | 프로젝트 159057 지원 완료 (예산 35,000,000원 / 300일 / 100% 재택 제안서 제출) |
+| #621 | 레시피온 | 제조 시스템 솔루션 (ERP,SCM,MES, Smart Factory) 전문가 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382435) | apply_id: 18130767 (Wanted Direct API 제출 완료) |
+| #622 | 하이지노 | Senior MES 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382279) | apply_id: 18130769 (Wanted Direct API 제출 완료) |
+| #623 | 한솔피엔에스 | MES PL 9년 이상 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361359) | apply_id: 18130770 (Wanted Direct API 제출 완료) |
+| #624 | 서울옥션 | 웹서비스개발팀 백엔드 개발자(10년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390699) | apply_id: 18130771 (Wanted Direct API 제출 완료) |
+| #625 | 넥스트그라운드 | [인턴] 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390302) | apply_id: 18130772 (Wanted Direct API 제출 완료) |
+| #626 | 누리미디어(DBpia) | [AI사업] AI 서비스 백엔드 개발자 (6년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390206) | apply_id: 18130773 (Wanted Direct API 제출 완료) |
+| #627 | 청림인베스트 | 개발팀 [백엔드 개발자] | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389562) | apply_id: 18130775 (Wanted Direct API 제출 완료) |
+| #628 | 진이어스 | 백엔드 개발자 (7년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389369) | apply_id: 18130776 (Wanted Direct API 제출 완료) |
+| #629 | 나우동인건축사사무소 | 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389284) | apply_id: 18130777 (Wanted Direct API 제출 완료) |
+| #630 | 버블탭 | 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389128) | apply_id: 18130778 (Wanted Direct API 제출 완료) |
+| #631 | 보스반도체 | System Architect | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391753) | apply_id: 18131106 (Wanted Direct API 제출 완료) |
+| #632 | 아이씨티케이 | 반도체 FAE | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383200) | apply_id: 18131107 (Wanted Direct API 제출 완료) |
+| #633 | 히팅스퀘어 | 반도체 기능성 세라믹 부품 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365314) | apply_id: 18131108 (Wanted Direct API 제출 완료) |
+| #634 | 잇다반도체 | SOC Design Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/346170) | apply_id: 18131110 (Wanted Direct API 제출 완료) |
+| #635 | 보스반도체 | SoC Field Application Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/325521) | apply_id: 18131111 (Wanted Direct API 제출 완료) |
+| #636 | 보스반도체 | [병특포함] SOC RTL Design Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/325488) | apply_id: 18131113 (Wanted Direct API 제출 완료) |
+| #637 | 랭코드 | ASP.NET Core 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388855) | apply_id: 18131114 (Wanted Direct API 제출 완료) |
+| #638 | 미스터마인드 | [성남] 백엔드 개발자 (C# 개발자 우대) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388482) | apply_id: 18131115 (Wanted Direct API 제출 완료) |
+| #639 | 앵커스 | 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388375) | apply_id: 18131118 (Wanted Direct API 제출 완료) |
+| #640 | 시옷 | 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386353) | apply_id: 18131119 (Wanted Direct API 제출 완료) |
+| #641 | 헥토월렛원  | 백엔드 개발자(AML 전담) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/385548) | apply_id: 18131121 (Wanted Direct API 제출 완료 / 유저 요청으로 제외 및 Discard 처리) |
+| #642 | 인딥에이아이 | AI 채용솔루션 백엔드 개발자(NestJS, React) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383796) | apply_id: 18131122 (Wanted Direct API 제출 완료) |
+| #643 | 헥토월렛원  | 백엔드 개발자(가상자산 지갑 서비스 오하이월렛) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/383274) | apply_id: 18131124 (Wanted Direct API 제출 완료 / 유저 요청으로 제외 및 Discard 처리) |
+| #644 | 위펀(스낵24) | 백엔드 개발자 (경력 5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382960) | apply_id: 18131125 (Wanted Direct API 제출 완료) |
+| #645 | 화이트큐브 | [산업기능요원/보충역/전직]백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382919) | apply_id: 18131126 (Wanted Direct API 제출 완료) |
+| #646 | 알프레드 | 시니어 데이터 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385075) | apply_id: 18131339 (Wanted Direct API 제출 완료) |
+| #647 | 위즈코어 | ML 데이터 엔지니어 (시니어) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380091) | apply_id: 18131341 (Wanted Direct API 제출 완료) |
+| #648 | 페어스퀘어랩 | [클로인트] 시니어 데이터 엔지니어 (Senior Data Engineer) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380039) | apply_id: 18131342 (Wanted Direct API 제출 완료) |
+| #649 | 피에프씨테크놀로지스 | B2B Senior Data Engineer(B2B 시니어 데이터 엔지니어) - Databricks | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/379567) | apply_id: 18131343 (Wanted Direct API 제출 완료) |
+| #650 | 지신 | [Infra/Platform - Data Engineer] 데이터 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378555) | apply_id: 18131346 (Wanted Direct API 제출 완료) |
+| #651 | 바로팜 | 데이터 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/377859) | apply_id: 18131347 (Wanted Direct API 제출 완료) |
+| #652 | 아정네트웍스 | [아정당] 데이터 엔지니어 (서울) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/351339) | apply_id: 18131348 (Wanted Direct API 제출 완료) |
+| #653 | 컬리 | 시니어 데이터 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/334058) | apply_id: 18131349 (Wanted Direct API 제출 완료) |
+| #654 | 핵클(Hackle) | 데이터 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/159253) | apply_id: 18131350 (Wanted Direct API 제출 완료) |
+| #655 | 모비두(소스라이브) | 백엔드 개발 리더 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390709) | apply_id: 18131351 (Wanted Direct API 제출 완료) |
+| #656 | 에이블리코퍼레이션 | 시니어 백엔드 엔지니어 (상품/재고) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389814) | apply_id: 18131354 (Wanted Direct API 제출 완료) |
+| #657 | 오토노머스에이투지 | 자율주행 정밀지도개발팀원(백엔드 시니어 개발자) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389568) | apply_id: 18131356 (Wanted Direct API 제출 완료) |
+| #658 | 엠에이엠비(MAMB) | 백엔드 엔지니어 (Python·자동화 시스템/3년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389068) | apply_id: 18131357 (Wanted Direct API 제출 완료) |
+| #659 | 피트릭스 | 백엔드 서버 개발자 (Node.js / Azure) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389038) | apply_id: 18131359 (Wanted Direct API 제출 완료) |
+| #660 | 인플루디오 | [포카마켓] 백엔드 파트장 (8년~13년) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389029) | apply_id: 18131360 (Wanted Direct API 제출 완료) |
+| #661 | 기웅정보통신 | AI Native 소프트웨어 엔지니어 (AX/데이터 플랫폼)(시니어) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387846) | apply_id: 18131640 (Wanted Direct API 제출 완료) |
+| #662 | 다음 | 데이터 플랫폼 엔지니어(신입) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/373625) | apply_id: 18131643 (Wanted Direct API 제출 완료) |
+| #663 | 기웅정보통신 | AI Native 소프트웨어 엔지니어(AX/데이터 플랫폼)(주니어) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369037) | apply_id: 18131645 (Wanted Direct API 제출 완료) |
+| #664 | 스카이월드와이드 | PostgreSQL Techinal Lead / Principal Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/340348) | apply_id: 18131646 (Wanted Direct API 제출 완료) |
+| #665 | 문토 | 소프트웨어 엔지니어(신입·주니어) / 신사업 팀 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391896) | apply_id: 18131652 (Wanted Direct API 제출 완료) |
+| #666 | 히포크랏랩스(Hippocrat Labs) | 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391467) | apply_id: 18131653 (Wanted Direct API 제출 완료) |
+| #667 | 크립토랩 | 동형암호 솔루션 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391265) | apply_id: 18131654 (Wanted Direct API 제출 완료) |
+| #668 | 콕스웨이브 | [AX krewa] 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390996) | apply_id: 18131655 (Wanted Direct API 제출 완료) |
+| #669 | 씨메스로보틱스 | [청주] 어플리케이션 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390367) | apply_id: 18131656 (Wanted Direct API 제출 완료) |
+| #670 | 문토 | 소프트웨어 엔지니어 / 신사업 팀 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388978) | apply_id: 18131657 (Wanted Direct API 제출 완료) |
+| #671 | 스피드플로어 | 로봇 소프트웨어 엔지니어 (Robotics Software · Backend) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387747) | apply_id: 18131658 (Wanted Direct API 제출 완료) |
+| #672 | 빅웨이브로보틱스 | 소프트웨어 엔지니어링팀 리더 (7년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387621) | apply_id: 18131659 (Wanted Direct API 제출 완료) |
+| #673 | 씨메스로보틱스 | 시스템 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386010) | apply_id: 18131660 (Wanted Direct API 제출 완료) |
+| #674 | 핸디즈 | [어반스테이] 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385763) | apply_id: 18131661 (Wanted Direct API 제출 완료) |
+| #675 | 두핸즈(품고) | 로보틱스 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384323) | apply_id: 18131662 (Wanted Direct API 제출 완료) |
+| #676 | 후플렉스 | Java 백엔드 리드 개발자 (5~10년) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388971) | apply_id: 18131680 (Wanted Direct API 제출 완료) |
+| #677 | 에이블리코퍼레이션 | 시니어 백엔드 엔지니어 (주문/결제) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388714) | apply_id: 18131681 (Wanted Direct API 제출 완료) |
+| #678 | 에이블리코퍼레이션 | 시니어 백엔드 엔지니어 (정산) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388712) | apply_id: 18131682 (Wanted Direct API 제출 완료) |
+| #679 | 에이블리코퍼레이션 | 시니어 백엔드 엔지니어 (광고) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388711) | apply_id: 18131684 (Wanted Direct API 제출 완료) |
+| #680 | 코인원(coinone) | 백엔드개발팀 팀장 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388222) | apply_id: 18131686 (Wanted Direct API 제출 완료) |
+| #681 | 오렌지스퀘어 | 시니어 백엔드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385658) | apply_id: 18131690 (Wanted Direct API 제출 완료) |
+| #682 | 어스얼라이언스 | 백엔드 엔지니어 (3년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384714) | apply_id: 18131691 (Wanted Direct API 제출 완료) |
+| #683 | 미래엔 | 디지털 학습 플랫폼 백엔드 개발팀장 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384357) | apply_id: 18131692 (Wanted Direct API 제출 완료) |
+| #684 | 연호엔지니어링 | 시니어 Python 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382821) | apply_id: 18131696 (Wanted Direct API 제출 완료) |
+| #685 | 버즈빌(buzzvil) | [광고 운영 시스템] 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380956) | apply_id: 18131697 (Wanted Direct API 제출 완료) |
+| #686 | 트리플오스 | 백엔드 개발자(신입) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/356275) | apply_id: 18131698 (Wanted Direct API 제출 완료) |
+| #687 | 알라딘커뮤니케이션 | 개발2팀 백엔드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/326834) | apply_id: 18131700 (Wanted Direct API 제출 완료) |
+| #688 | 드림어스컴퍼니 | 콘텐츠 플랫폼 백엔드 개발(신입) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/373760) | apply_id: 18131701 (Wanted Direct API 제출 완료) |
+| #689 | 캐치잇플레이(Catch it english) | AI 학습 플랫폼 백엔드 엔지니어 Mid-Senior(재택근무가능) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380511) | apply_id: 18131704 (Wanted Direct API 제출 완료) |
+| #690 | 컬리 | 커머스 백엔드 개발자 (상품/주문/회원/파트너) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/338214) | apply_id: 17675644 (Wanted Direct API 제출 완료) |
+| #691 | 토기 | 백엔드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/351104) | apply_id: 18131705 (Wanted Direct API 제출 완료) |
+| #692 | 에이블리코퍼레이션 | 시니어 백엔드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/356350) | apply_id: 18131706 (Wanted Direct API 제출 완료) |
+| #693 | 리비바이오 | 백엔드개발자(Node.js) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382750) | apply_id: 18131707 (Wanted Direct API 제출 완료) |
+| #694 | 인티그레이션(메디스트림) | [인턴] EMR,CRM 솔루션 백엔드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378211) | apply_id: 18131710 (Wanted Direct API 제출 완료) |
+| #695 | 드림어스컴퍼니 | [인턴]콘텐츠 플랫폼 백엔드 개발 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375356) | apply_id: 18131711 (Wanted Direct API 제출 완료) |
+| #696 | 케이티밀리의서재 | 백엔드 개발자 (결제 및 제휴연동 개발) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365200) | apply_id: 18131714 (Wanted Direct API 제출 완료) |
+| #697 | 누아 | 백엔드 개발자 (Spring Framework) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/215761) | apply_id: 18131716 (Wanted Direct API 제출 완료) |
+| #698 | 아이아이컴바인드 | 백엔드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/322056) | apply_id: 18131717 (Wanted Direct API 제출 완료) |
+| #699 | 컬리 | 핀테크 백엔드 개발자 (결제) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/334745) | apply_id: 18131718 (Wanted Direct API 제출 완료) |
+| #700 | 긴트 | 백엔드 개발자(5년~10년) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/272432) | apply_id: 18131719 (Wanted Direct API 제출 완료) |
+| #701 | 모비두(소스라이브) | 백엔드 개발자 - Data Platform (5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380526) | apply_id: 18131720 (Wanted Direct API 제출 완료) |
+| #702 | 메이아이 | Backend Engineer (백엔드 엔지니어) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375249) | apply_id: 18131721 (Wanted Direct API 제출 완료) |
+| #703 | 티웨이브 | 시니어 백엔드 개발자 (8년이상~20년이하) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/320729) | apply_id: 18131723 (Wanted Direct API 제출 완료) |
+| #704 | 크레바스에이아이 | [인턴] 서버 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/377832) | apply_id: 18131724 (Wanted Direct API 제출 완료) |
+| #705 | 테크핀레이팅스 | [ICT 본부] 백앤드(BE)/서버 개발자 (5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/376031) | apply_id: 18131725 (Wanted Direct API 제출 완료) |
+| #706 | 이스트소프트(ESTsoft) | [ESTsecurity] 리눅스 백엔드 서버 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367000) | apply_id: 18131727 (Wanted Direct API 제출 완료) |
+| #707 | 베이글코드(Bagelcode) | [Platform] 서버 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/259710) | apply_id: 18131729 (Wanted Direct API 제출 완료) |
+| #708 | 이글로벌시스템 | [신입] 백엔드/서버 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/182714) | apply_id: 18131730 (Wanted Direct API 제출 완료) |
+| #709 | 이모코그 | 주니어 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381632) | apply_id: 18131732 (Wanted Direct API 제출 완료) |
+| #710 | 에이블랩스 | 제어 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381282) | apply_id: 18131733 (Wanted Direct API 제출 완료) |
+| #711 | 에이블랩스 | 소프트웨어 엔지니어 (실험 자동화 장비) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381281) | apply_id: 18131734 (Wanted Direct API 제출 완료) |
+| #712 | 에이블랩스 | 소프트웨어 엔지니어 (스케줄링 엔진) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381278) | apply_id: 18131735 (Wanted Direct API 제출 완료) |
+| #713 | 큐피스트(글램) | 소프트웨어 엔지니어(플랫폼 · 풀스택 / Senior) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/377278) | apply_id: 18131736 (Wanted Direct API 제출 완료) |
+| #714 | 이모코그 | 시니어 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375363) | apply_id: 18131737 (Wanted Direct API 제출 완료) |
+| #715 | 마이프랜차이즈 | R&D 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/371280) | apply_id: 18131738 (Wanted Direct API 제출 완료) |
+| #716 | 인이지 | 소프트웨어 엔지니어 미들/시니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367144) | apply_id: 18131739 (Wanted Direct API 제출 완료) |
+| #717 | 인이지 | 소프트웨어 엔지니어 신입/주니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/366812) | apply_id: 18131741 (Wanted Direct API 제출 완료) |
+| #718 | 다이버즈 | 소프트웨어 엔지니어 (React / Next.js / Node.js) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/349671) | apply_id: 18131742 (Wanted Direct API 제출 완료) |
+| #719 | 에이티씨아이 | 소프트웨어 엔지니어 (Full Stack) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/348483) | apply_id: 18131743 (Wanted Direct API 제출 완료) |
+| #720 | 모빌리티랩 | ROS 기반 임베디드 드론 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/342302) | apply_id: 18131744 (Wanted Direct API 제출 완료) |
+| #721 | 니어스랩 | [개발부문] 소프트웨어 엔지니어 (Embedded Vision) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/338243) | apply_id: 18131745 (Wanted Direct API 제출 완료) |
+| #722 | 사각 | 소프트웨어 엔지니어 (AI Agent) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/338044) | apply_id: 18131746 (Wanted Direct API 제출 완료) |
+| #723 | 사각 | 소프트웨어 엔지니어 (Backend) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/338042) | apply_id: 18131747 (Wanted Direct API 제출 완료) |
+| #724 | 위로보틱스 | 휴머노이드 로봇 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/328617) | apply_id: 18131748 (Wanted Direct API 제출 완료) |
+| #725 | 니어스랩 | [개발부문] 소프트웨어 엔지니어 (Ground Control System) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/322195) | apply_id: 18131749 (Wanted Direct API 제출 완료) |
+| #726 | 블루닷 | 코덱 소프트웨어 엔지니어 3년 이상 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/313462) | apply_id: 18131751 (Wanted Direct API 제출 완료) |
+| #727 | 큐노바 | 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/308020) | apply_id: 18131752 (Wanted Direct API 제출 완료) |
+| #728 | 엑소시스템즈 | AI 소프트웨어 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/288559) | apply_id: 18131753 (Wanted Direct API 제출 완료) |
+| #729 | 콕스웨이브 | [DevOps] DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390994) | apply_id: 18131754 (Wanted Direct API 제출 완료) |
+| #730 | 다이렉트클라우드랩 | Private Cloud DevOps 엔지니어[재택가능] | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390765) | apply_id: 18131755 (Wanted Direct API 제출 완료) |
+| #731 | 다이렉트클라우드랩 | DevOps 엔지니어[재택가능] | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390764) | apply_id: 18131756 (Wanted Direct API 제출 완료) |
+| #732 | 잡플래닛 | DevOps / SRE (5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390337) | apply_id: 18131757 (Wanted Direct API 제출 완료) |
+| #733 | 에이에프아이 | [뒤끝] DevOps 프로그래머 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389760) | apply_id: 18131758 (Wanted Direct API 제출 완료) |
+| #734 | 로앤컴퍼니(lawtalk) | DevOps (3년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389274) | apply_id: 18131759 (Wanted Direct API 제출 완료) |
+| #735 | 부릉 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389174) | apply_id: 18131760 (Wanted Direct API 제출 완료) |
+| #736 | 오픈소스컨설팅 | DevOps엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388812) | apply_id: 18131761 (Wanted Direct API 제출 완료) |
+| #737 | 위메이드(WEMADE) | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387907) | apply_id: 18131763 (Wanted Direct API 제출 완료) |
+| #738 | 핀다(FINDA) | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387464) | apply_id: 18131765 (Wanted Direct API 제출 완료) |
+| #739 | 패스트레인(여신티켓) | 인프라 운영 담당자 (DevOps/SRE) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387095) | apply_id: 18131766 (Wanted Direct API 제출 완료) |
+| #740 | 데이터라이즈 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386345) | apply_id: 18131768 (Wanted Direct API 제출 완료) |
+| #741 | 원프레딕트(onepredict) | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386084) | apply_id: 18131769 (Wanted Direct API 제출 완료) |
+| #742 | 모레 | SRE/DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385906) | apply_id: 18131770 (Wanted Direct API 제출 완료) |
+| #743 | 토스뱅크 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385879) | apply_id: 18131773 (Wanted Direct API 제출 완료) |
+| #744 | 이그레브 | [대형통신사] DevOps Engineer 3년 이상 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384644) | apply_id: 18131774 (Wanted Direct API 제출 완료) |
+| #745 | 이노그리드 | [BD본부] 테크브릿지팀 DevOps (차장 이상 / 팀원) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384458) | apply_id: 18131775 (Wanted Direct API 제출 완료) |
+| #746 | 이그레브 | [대형통신사] DevOps / SRE Engineer 8년 이상 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384337) | apply_id: 18131776 (Wanted Direct API 제출 완료) |
+| #747 | 카카오페이증권(kakaopay증권) | DevOps 엔지니어(SRE)(시니어) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382098) | apply_id: 18131777 (Wanted Direct API 제출 완료) |
+| #748 | 셀타스퀘어 | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381706) | apply_id: 18131778 (Wanted Direct API 제출 완료) |
+| #749 | 지넥슨 | 온프레미스 서버 유지보수 및 DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381133) | apply_id: 18131779 (Wanted Direct API 제출 완료) |
+| #750 | 메디트(Medit) | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380517) | apply_id: 18131780 (Wanted Direct API 제출 완료) |
+| #751 | 엘리스 | 인프라 DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378621) | apply_id: 18131781 (Wanted Direct API 제출 완료) |
+| #752 | 여기어때컴퍼니 | DevOps Team Leader | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/376254) | apply_id: 18131782 (Wanted Direct API 제출 완료) |
+| #753 | 디지털엑스 | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/376201) | apply_id: 18131783 (Wanted Direct API 제출 완료) |
+| #754 | 모요 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375209) | apply_id: 18131784 (Wanted Direct API 제출 완료) |
+| #755 | 비상교육 | GPU 최적화 엔지니어 (DevOps) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375025) | apply_id: 18131785 (Wanted Direct API 제출 완료) |
+| #756 | 비상교육 | Lead DevOps/AI Platform Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375022) | apply_id: 18131786 (Wanted Direct API 제출 완료) |
+| #757 | 씨제이이엔엠(CJ ENM) | [Mnet Plus] DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/373347) | apply_id: 18131787 (Wanted Direct API 제출 완료) |
+| #758 | 클로버추얼패션(CLOVirtualFashion) | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/373193) | apply_id: 18131788 (Wanted Direct API 제출 완료) |
+| #759 | 비상교육 | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372671) | apply_id: 18131789 (Wanted Direct API 제출 완료) |
+| #760 | 퓨쳐스콜레 | Platform Engineer Lead (DevOps) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/371498) | apply_id: 18131790 (Wanted Direct API 제출 완료) |
+| #761 | 도브러너 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370740) | apply_id: 18131792 (Wanted Direct API 제출 완료) |
+| #762 | 헬스커넥트 | [인바이츠생태계] DevOps | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369942) | apply_id: 18131793 (Wanted Direct API 제출 완료) |
+| #763 | 피에프씨테크놀로지스 | DevOps Engineer(데브옵스 엔지니어) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367602) | apply_id: 18131794 (Wanted Direct API 제출 완료) |
+| #764 | 에어프레미아랩스 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367078) | apply_id: 18131795 (Wanted Direct API 제출 완료) |
+| #765 | 피처링(FeaturingCorp.) | [프로덕트] DevOps | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/366660) | apply_id: 18131796 (Wanted Direct API 제출 완료) |
+| #766 | 피에프씨테크놀로지스 | DevOps Lead(데브옵스 리드) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365587) | apply_id: 18131797 (Wanted Direct API 제출 완료) |
+| #767 | 에이비일팔공(AB180) | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365460) | apply_id: 18131798 (Wanted Direct API 제출 완료) |
+| #768 | 루닛(Lunit) | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/362539) | apply_id: 18131799 (Wanted Direct API 제출 완료) |
+| #769 | 카카오뱅크(kakaobank) | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/359731) | apply_id: 18131800 (Wanted Direct API 제출 완료) |
+| #770 | 아임웹 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/358995) | apply_id: 18131802 (Wanted Direct API 제출 완료) |
+| #771 | 알체라 | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/357185) | apply_id: 18131803 (Wanted Direct API 제출 완료) |
+| #772 | 넥스트증권 | DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/355991) | apply_id: 18131804 (Wanted Direct API 제출 완료) |
+| #773 | 싸이터 | 인프라 엔지니어(DevOps) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/353835) | apply_id: 18131805 (Wanted Direct API 제출 완료) |
+| #774 | 에임인텔리전스 | DevOps Engineer(시리즈A 120억 투자) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/353679) | apply_id: 18131807 (Wanted Direct API 제출 완료) |
+| #775 | 아르고스아이덴티티코리아 | DevOps(DevSec) Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/353413) | apply_id: 18131808 (Wanted Direct API 제출 완료) |
+| #776 | 더즌(dozn) | 개발본부 백엔드 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392217) | apply_id: 18132126 (Wanted Direct API 제출 완료) |
+| #777 | 패스트뷰 | [차살때 그로스] 프로덕트 엔지니어 (백엔드, 5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392216) | apply_id: 18132127 (Wanted Direct API 제출 완료) |
+| #778 | 에이아이스타 | 계산과학 연구원(DFT·MD 전산모사·Python 자동화) - 이차전지·신소재 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391526) | apply_id: 18132137 (Wanted Direct API 제출 완료) |
+| #779 | 더페어글로벌 | 프로덕트 엔지니어 (Python / 2년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391243) | apply_id: 18132139 (Wanted Direct API 제출 완료) |
+| #780 | 휴이노 | Back-end SWE (Python / Django) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390538) | apply_id: 18132141 (Wanted Direct API 제출 완료) |
+| #781 | 씨메스로보틱스 | Backend (Python) 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390370) | apply_id: 18132144 (Wanted Direct API 제출 완료) |
+| #782 | 이그레브 | 멀티 LLM Python 개발자 8년 이상 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384983) | apply_id: 18132145 (Wanted Direct API 제출 완료) |
+| #783 | 둠둠 | 드론 백엔드 개발자 (C++, Python) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/382811) | apply_id: 18132148 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #784 | 페르소나에이아이 | Python Developer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382491) | apply_id: 18132150 (Wanted Direct API 제출 완료) |
+| #785 | 페르소나에이아이 | Python Developer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381810) | apply_id: 18132151 (Wanted Direct API 제출 완료) |
+| #786 | 지엔에이컴퍼니 | [플레이오] Backend Engineer (Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378627) | apply_id: 18132153 (Wanted Direct API 제출 완료) |
+| #787 | 엠지알브이 | Python Backend Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/374348) | apply_id: 18132154 (Wanted Direct API 제출 완료) |
+| #788 | 바로팜 | 백엔드 개발자 (Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367917) | apply_id: 18132155 (Wanted Direct API 제출 완료) |
+| #789 | 에이젠글로벌 | BackEnd Developer (Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/355498) | apply_id: 18132158 (Wanted Direct API 제출 완료) |
+| #790 | 모라이(MORAI) | 디지털트윈 저작 도구 개발자 (Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/355071) | apply_id: 18132159 (Wanted Direct API 제출 완료) |
+| #791 | 씨이랩 | AI Agent & Python Backend Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/351804) | apply_id: 18132161 (Wanted Direct API 제출 완료) |
+| #792 | 써냅스 | C#/Python 소프트웨어 개발자 (건축 분야) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/346301) | apply_id: 18132162 (Wanted Direct API 제출 완료) |
+| #793 | 페르소나에이아이 | Python Developer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/341771) | apply_id: 18132163 (Wanted Direct API 제출 완료) |
+| #794 | 씨이랩 | NVIDIA Omniverse 관련 Python 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/303824) | apply_id: 18132165 (Wanted Direct API 제출 완료) |
+| #795 | 키즈노트 | 백엔드 개발자(Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/294971) | apply_id: 18132166 (Wanted Direct API 제출 완료) |
+| #796 | 앰버로드 | Back-End engineer(Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/290980) | apply_id: 18132168 (Wanted Direct API 제출 완료) |
+| #797 | 퍼스트해빗 | 백엔드 개발자 (Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/270970) | apply_id: 18132171 (Wanted Direct API 제출 완료) |
+| #798 | 엘리스 | 시니어 백엔드 엔지니어 (Python) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/230306) | apply_id: 18132172 (Wanted Direct API 제출 완료) |
+| #799 | 우리엔 | [중견 계열사] 의료영상 3D 어플리케이션 개발자 (C++/C#) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/391326) | apply_id: 18132175 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #800 | 우리엔 | [중견 계열사] Windows Application 개발자 (C/C++) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/391323) | apply_id: 18132176 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #801 | 아이넥스코퍼레이션 | C++/Qt 의료영상 애플리케이션 개발자(주니어) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/389418) | apply_id: 18132177 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #802 | 파더스랩 | [대구] Embedded C++ 소프트웨어 개발자 (2년이상) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/389218) | apply_id: 18132179 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #803 | 캐드윈시스템 | 소프트웨어 개발 (CAD/CAM, C++/C#) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/387915) | apply_id: 18132180 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #804 | 소만사 | 엔드포인트 보안 EDR 소프트웨어 C++개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/387411) | apply_id: 18132181 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #805 | 소만사 | 네트워크보안 소프트웨어 C++개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/387409) | apply_id: 18132182 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #806 | 소만사 | 엔드포인트 보안 소프트웨어 C++개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/387407) | apply_id: 18132183 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #807 | 스누아이랩 | [전문연구요원] C# / C++ 소프트웨어 개발자 (신입) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/387100) | apply_id: 18132185 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #808 | 스포츠투아이 | C++ 머신비전 S/W 엔지니어 (스포츠 영상 판독 분야) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/385280) | apply_id: 18132187 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #809 | 이우소프트 | 의료영상 SW 개발자 (C++/Qt) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/383610) | apply_id: 18132189 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #810 | 반디소프트인터내셔널 | Windows 데스크톱 앱 개발자(C++) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/377235) | apply_id: 18132191 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #811 | 스누아이랩 | C#/C++ 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/373576) | apply_id: 18132193 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #812 | 이스트소프트(ESTsoft) | [ESTsecurity] Windows C++ 어플리케이션 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/356357) | apply_id: 18132194 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #813 | 메디인테크 | [전문연구요원 가능] 소프트웨어 개발자 (C++ ) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/334864) | apply_id: 18132195 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #814 | 메디인테크 | [전문연구요원 가능] 소프트웨어 개발자 (C++ ) (신입) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/334858) | apply_id: 18132198 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #815 | 오렌지랩스 | WIN32 시스템 소프트웨어(C++) 개발 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/277479) | apply_id: 18132203 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #816 | 넥스오 | 임베디드 하드웨어 엔지니어 — 회로·PCB 설계 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/392113) | apply_id: 18132204 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #817 | 페리지에어로스페이스 | 임베디드 펌웨어 엔지니어 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/390315) | apply_id: 18132205 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #818 | 퀀텀에어로 | 시니어 임베디드 소프트웨어 개발자 10년이상 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/387010) | apply_id: 18132206 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #819 | 크립토랩 | 수석 임베디드 시스템 아키텍트·기술총괄 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/384682) | apply_id: 18132207 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #820 | 리옵스(LiOps) | 임베디드 엔지니어 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/384584) | apply_id: 18132208 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #821 | 카이트다이나믹스 | 임베디드 펌웨어 및 제어 엔지니어 Embedded Firmware & Controls Engineer | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/384224) | apply_id: 18132210 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #822 | 메쥬(하이카디) | 의료기기 임베디드 펌웨어 개발자 (원주 근무) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/384208) | apply_id: 18132212 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #823 | 엣지크로스 | 임베디드 소프트웨어 개발자(신입) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/383980) | apply_id: 18132213 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #824 | 웨어러블에이아이 | 임베디드 하드웨어 설계 엔지니어 (3년 이상) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/382368) | apply_id: 18132214 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #825 | 아이시냅스 | 임베디드 / F/W(펌웨어) 개발자 (신입) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/381203) | apply_id: 18132216 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #826 | 아이시냅스 | 임베디드 / F/W(펌웨어) 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/381200) | apply_id: 18132217 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #827 | 홀리데이로보틱스 | 기능안전 임베디드 엔지니어 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/380385) | apply_id: 18132218 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #828 | 디에스엠 | [모노리스 사업부] 임베디드 코어 유닛 · 펌웨어 개발 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/377718) | apply_id: 18132221 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #829 | 드림에이스 | 임베디드 소프트웨어 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/374414) | apply_id: 18132223 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #830 | 햅티 | 하드웨어 임베디드 엔지니어 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/374369) | apply_id: 18132225 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #831 | 크래블 | 임베디드(펌웨어) 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/372341) | apply_id: 18132226 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #832 | 디하이브 | 임베디드 펌웨어 시니어 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/366867) | apply_id: 18132229 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #833 | 디하이브 | 임베디드 FW 시니어 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/361271) | apply_id: 18132231 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #834 | 프리그로우 | 임베디드 엔지니어 (부산) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/350768) | apply_id: 18132234 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #835 | 니어스랩 | [개발부문] 임베디드 엔지니어 (Sensor & Driver) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/342490) | apply_id: 18132236 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #836 | 니어스랩 | [개발부문] 임베디드 시스템 프로그래머 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/322199) | apply_id: 18132237 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #837 | 바딧 | 임베디드 개발자 (5년이상) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/301071) | apply_id: 18132239 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #838 | 씨드로닉스 | 임베디드 시스템 SW 개발/운영 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/293517) | apply_id: 18132240 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #839 | 엑소시스템즈 | [디지털 헬스케어] 생체신호 기반 AI 의료기기 임베디드 개발자 (병역특례 가능) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/286681) | apply_id: 18132241 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #840 | 긴트 | 임베디드소프트웨어 개발자 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/251989) | apply_id: 18132242 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #841 | 아이코어 | 머신비전 임베디드 개발자 (펌웨어, FPGA) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/196838) | apply_id: 18132243 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #842 | 에스알브이포지셔닝 | 임베디드 개발자(3년 이상) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/144230) | apply_id: 18132244 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #843 | 에스엠하이플러스 | 클라우드 아키텍트(AWS) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392099) | apply_id: 18132246 (Wanted Direct API 제출 완료) |
+| #844 | 다키클라우드코리아 | AI Native 학습 플랫폼·LLM 모델 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391785) | apply_id: 18132247 (Wanted Direct API 제출 완료) |
+| #845 | 다키클라우드코리아 | AI Native 추론 플랫폼 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391783) | apply_id: 18132248 (Wanted Direct API 제출 완료) |
+| #846 | 데이원컴퍼니 | 클라우드 인프라 운영 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390990) | apply_id: 18132249 (Wanted Direct API 제출 완료) |
+| #847 | 에누마 | 클라우드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390413) | apply_id: 18132251 (Wanted Direct API 제출 완료) |
+| #848 | 코오롱베니트 | 클라우드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389450) | apply_id: 18132253 (Wanted Direct API 제출 완료) |
+| #849 | 이노그리드 | [CCoE본부] 클라우드 엔지니어링실_TA | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388678) | apply_id: 18132255 (Wanted Direct API 제출 완료) |
+| #850 | 커넥트웨이브 | [메이크샵] 클라우드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386923) | apply_id: 18132256 (Wanted Direct API 제출 완료) |
+| #851 | 위시켓 | 클라우드 엔지니어(AWS Solutions Architect) (1~5년) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386877) | apply_id: 18132257 (Wanted Direct API 제출 완료) |
+| #852 | 파이오링크 | [전문연구요원] 프라이빗 클라우드(HCI) 가상화 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386829) | apply_id: 18132258 (Wanted Direct API 제출 완료) |
+| #853 | 몬드리안에이아이 | 클라우드 풀스택 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384747) | apply_id: 18132259 (Wanted Direct API 제출 완료) |
+| #854 | 유모스원 | 클라우드 인프라 & DevSecOps 보안 엔지니어 (Infrastructure & DevSecOps Security) | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/383580) | apply_id: 18132260 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #855 | 롯데카드 | 클라우드 아키텍트(Cloud Architect) 직무 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383533) | apply_id: 18132262 (Wanted Direct API 제출 완료) |
+| #856 | 교보문고 | 클라우드/컨테이너 엔지니어 (3년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378380) | apply_id: 18132264 (Wanted Direct API 제출 완료) |
+| #857 | 의식주컴퍼니(런드리고) | Senior DevSecOps / 클라우드 인프라 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375398) | apply_id: 18132265 (Wanted Direct API 제출 완료) |
+| #858 | 다키클라우드코리아 | 시니어 엔지니어 (Agent Native Cloud / AI Agent) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/371314) | apply_id: 18132266 (Wanted Direct API 제출 완료) |
+| #859 | 파이오링크 | 웹방화벽 네트워크 및 클라우드 개발 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/369638) | apply_id: 18132267 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #860 | 엘리스 | 클라우드 서포트 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/354908) | apply_id: 18132269 (Wanted Direct API 제출 완료) |
+| #861 | 아타드(ATAD) | 클라우드 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/346638) | apply_id: 18132270 (Wanted Direct API 제출 완료) |
+| #862 | 엘리스 | 시니어 클라우드 풀스택 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/338215) | apply_id: 18132273 (Wanted Direct API 제출 완료) |
+| #863 | 이지케어텍 | 의료 IT 인프라 엔지니어(서버·네트워크·클라우드 운영 | KR | 2026-10-14 | — | Discarded | [Wanted](https://www.wanted.co.kr/wd/335131) | apply_id: 18132274 (Wanted Direct API 제출 완료) | (유저 요청: 비부합 포지션 지원 취소 완료)
+| #864 | 엘리스 | 클라우드 풀스택 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/330270) | apply_id: 18132276 (Wanted Direct API 제출 완료) |
+| #865 | 다키클라우드코리아 | 시니어 풀스택 개발자 (Cloud Platform) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/325523) | apply_id: 18132282 (Wanted Direct API 제출 완료) |
+| #866 | 파이오링크 | [전문연구요원] 애플리케이션 및 클라우드Cloud 개발 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/269408) | apply_id: 18132284 (Wanted Direct API 제출 완료) |
+| #867 | 파이오링크 | 애플리케이션 및 클라우드 개발 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/242610) | apply_id: 18132285 (Wanted Direct API 제출 완료) |
+| #868 | 엘리스 | 클라우드 시스템 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/208423) | apply_id: 18132286 (Wanted Direct API 제출 완료) |
+| #869 | 크림페이 | DevOps 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/351047) | apply_id: 18132289 (Wanted Direct API 제출 완료) |
+| #870 | 미리디 | [미리캔버스] DevOps Part Lead | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/349603) | apply_id: 18132290 (Wanted Direct API 제출 완료) |
+| #871 | 디라티오 | 블록체인 메인넷 DevOps | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/349077) | apply_id: 18132292 (Wanted Direct API 제출 완료) |
+| #872 | 시어스랩(Seerslab) | DevOps Engineer 2년 이상 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/348786) | apply_id: 18132293 (Wanted Direct API 제출 완료) |
+| #873 | 앤트랩스케이알 | 수석급 시스템 엔지니어/DevOps | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/348553) | apply_id: 18132294 (Wanted Direct API 제출 완료) |
+| #874 | 디스펙터 | Devops 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/343889) | apply_id: 18132296 (Wanted Direct API 제출 완료) |
+| #875 | 노타(Nota) | [NetsPresso] DevOps Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/337910) | apply_id: 18132297 (Wanted Direct API 제출 완료) |
+| #876 | 위시켓 (Wishket) | 동네 매장 쇼윈도 앱·웹 MVP 구축 (AI 추천) (100% 원격/외주) | KR | 2026-10-14 | — | Applied | [Wishket](https://www.wishket.com/project/159095/) | 프로젝트 159095 지원 완료 (예산 15,000,000원(50% 할인 제안) / 90일 / 100% 원격 제안서 제출 완료) |
+| #877 | 데브즈유나이티드게임즈 | 라이브 게임 서비스 플랫폼/DevOps 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392203) | apply_id: 18133168 (Wanted Direct API 제출 완료) |
+| #878 | 인포시즈 | Sr. Software Engineer, Backend (AI Security Platform) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392224) | apply_id: 18133175 (Wanted Direct API 제출 완료) |
+| #879 | 쿠팡 | [쿠팡페이] 백엔드 개발자 (Fintech Data Platform) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392187) | apply_id: 18133176 (Wanted Direct API 제출 완료) |
+| #880 | 쓰리더블유 | 풀스택 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392168) | apply_id: 18133177 (Wanted Direct API 제출 완료) |
+| #881 | 딜라이트룸(Alarmy) | [알라미] Backend Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392107) | apply_id: 18133179 (Wanted Direct API 제출 완료) |
+| #882 | 뉴빌리티 | [Autonomy] System Engineer - Media Streaming | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392042) | apply_id: 18133180 (Wanted Direct API 제출 완료) |
+| #883 | 글로벌머니익스프레스 | [GME/핀테크] B2B 서버개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392000) | apply_id: 18133181 (Wanted Direct API 제출 완료) |
+| #884 | 비사이드코리아 | Back-end 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391920) | apply_id: 18133182 (Wanted Direct API 제출 완료) |
+| #885 | 알리는사람들 | Tech Team Leader(재택근무) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391880) | apply_id: 18133183 (Wanted Direct API 제출 완료) |
+| #886 | 룩코 | [에이클로젯] Software Engineer (Problem Solver) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391802) | apply_id: 18133184 (Wanted Direct API 제출 완료) |
+| #887 | 비비티에이아이코리아 | Full Stack 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391750) | apply_id: 18133185 (Wanted Direct API 제출 완료) |
+| #888 | 21세기전파상(리퍼센트) | [리퍼센트] AI 프로덕트 빌더 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391617) | apply_id: 18133187 (Wanted Direct API 제출 완료) |
+| #889 | 한빛앤 | Product Engineer (Backend Focus) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391537) | apply_id: 18133188 (Wanted Direct API 제출 완료) |
+| #890 | 에이텍 | 해외AP개발팀 (SE파트) (팀원) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391535) | apply_id: 18133189 (Wanted Direct API 제출 완료) |
+| #891 | 크몽(kmong) | Product Engineer (5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391397) | apply_id: 18133190 (Wanted Direct API 제출 완료) |
+| #892 | 데이터드리븐 | 풀스택 제품 개발자(3년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391394) | apply_id: 18133191 (Wanted Direct API 제출 완료) |
+| #893 | 빌드잇 | Senior Product Engineer (7년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391380) | apply_id: 18133193 (Wanted Direct API 제출 완료) |
+| #894 | 풀리 | Founding Full-Stack AI Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391372) | apply_id: 18133194 (Wanted Direct API 제출 완료) |
+| #895 | 데이원컴퍼니 | [포도 스피킹] Product Engineer 2~5년 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391293) | apply_id: 18133196 (Wanted Direct API 제출 완료) |
+| #896 | 미소(miso) | Back-end Engineer (구독형 서비스) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391251) | apply_id: 18133197 (Wanted Direct API 제출 완료) |
+| #897 | 미소(miso) | Back-end Engineer (견적형 서비스) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391250) | apply_id: 18133199 (Wanted Direct API 제출 완료) |
+| #898 | 미소(miso) | Back-end Engineer (AI) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391233) | apply_id: 18133200 (Wanted Direct API 제출 완료) |
+| #899 | 쿠팡 | Staff Backend Engineer (Interstellar) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391136) | apply_id: 18133202 (Wanted Direct API 제출 완료) |
+| #900 | 이우소프트 | Backend Engineer (시스템 연동 · 설치형 서버) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391070) | apply_id: 18133204 (Wanted Direct API 제출 완료) |
+| #901 | 이우소프트 | Backend Engineer (Platform · 인증/권한) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391068) | apply_id: 18133205 (Wanted Direct API 제출 완료) |
+| #902 | 넵튠(Neptune) | 플랫폼사업본부 플랫폼개발실 InDSP TF 서버개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391046) | apply_id: 18133206 (Wanted Direct API 제출 완료) |
+| #903 | 어스에이트(EarthEight,Inc.) | AI/Computer Vision 연구개발 인재 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390942) | apply_id: 18133207 (Wanted Direct API 제출 완료) |
+| #904 | 디어젠 | AI 제품·서비스 풀스택 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390894) | apply_id: 18133208 (Wanted Direct API 제출 완료) |
+| #905 | 부스터스 | Back-end Engineer (Full-Stack) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390859) | apply_id: 18133209 (Wanted Direct API 제출 완료) |
+| #906 | 바이블인베스트먼트 | 자동매매 프로그램 개발 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390808) | apply_id: 18133210 (Wanted Direct API 제출 완료) |
+| #907 | 오엠티아이코리아 | ASP.NET 개발자(신입) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390768) | apply_id: 18133211 (Wanted Direct API 제출 완료) |
+| #908 | 리스타 | 광고 플랫폼 풀스택 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386949) | apply_id: 18134720 (Wanted Direct API 제출 완료) |
+| #909 | 유닛블랙 | 풀스택 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386910) | apply_id: 18134721 (Wanted Direct API 제출 완료) |
+| #910 | 루닛(Lunit) | Senior Full Stack Engineer · AI Platform | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386547) | apply_id: 18134722 (Wanted Direct API 제출 완료) |
+| #911 | 오케스트로 | [OKESTRO AGI] 클라리넷(Clarinet) 제품개발 리더 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386282) | apply_id: 18134723 (Wanted Direct API 제출 완료) |
+| #912 | 보살핌 | 시니어 프로덕트 엔지니어 (Senior Product Engineer) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386123) | apply_id: 18134725 (Wanted Direct API 제출 완료) |
+| #913 | 기어세컨드 | 풀스택 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385667) | apply_id: 18134727 (Wanted Direct API 제출 완료) |
+| #914 | 맥킨리라이스 | [레드롭 AI] Senior Staff Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385661) | apply_id: 18134729 (Wanted Direct API 제출 완료) |
+| #915 | 딥그로브 | [인턴] AX 프로덕트 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385618) | apply_id: 18134730 (Wanted Direct API 제출 완료) |
+| #916 | 캐스팅엔 | Senior Java Backend Developer (8~12년) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385570) | apply_id: 18134731 (Wanted Direct API 제출 완료) |
+| #917 | 현대오토에버 | [EnIT] Service Engineer - AD 운영 및 아키텍처 설계 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385551) | apply_id: 18134732 (Wanted Direct API 제출 완료) |
+| #918 | 비스텔리젼스 | Full stack 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385532) | apply_id: 18134733 (Wanted Direct API 제출 완료) |
+| #919 | 뷰티스닥터 | 프로덕트 디벨로퍼-3년 이상 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385480) | apply_id: 18134734 (Wanted Direct API 제출 완료) |
+| #920 | 클루닉스 | [서울] AI/HPC 플랫폼 개발 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385380) | apply_id: 18134736 (Wanted Direct API 제출 완료) |
+| #921 | 라프텔(Laftel) | AX 매니저 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385343) | apply_id: 18134737 (Wanted Direct API 제출 완료) |
+| #922 | 더씨에스알 | AI 엔지니어 (LLM·RAG) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385276) | apply_id: 18134738 (Wanted Direct API 제출 완료) |
+| #923 | 에고이즘 | AX Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385206) | apply_id: 18134739 (Wanted Direct API 제출 완료) |
+| #924 | 퍼플아이오 | [코오롱몰] 커머스 웹 개발자 (7년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384901) | apply_id: 18134741 (Wanted Direct API 제출 완료) |
+| #925 | 쿠팡 | [쿠팡] Engineering Manager (Eats Merchant) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384900) | apply_id: 18134742 (Wanted Direct API 제출 완료) |
+| #926 | 오토메타 | AI Systems Architect (AI 시스템 아키텍트) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384694) | apply_id: 18134743 (Wanted Direct API 제출 완료) |
+| #927 | 오토메타 | Forward Deployed Engineer (FDE) — 공공·국방 AX (계약직) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384585) | apply_id: 18134744 (Wanted Direct API 제출 완료) |
+| #928 | 오토메타 | Forward Deployed Engineer (FDE) — 공공·국방 AX | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384574) | apply_id: 18134746 (Wanted Direct API 제출 완료) |
+| #929 | 휴멜로 | [Tikita] AI 프로덕트 엔지니어 (풀스택) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384525) | apply_id: 18134748 (Wanted Direct API 제출 완료) |
+| #930 | 톤28 | 시니어 풀스택 개발자 (Senior Full-Stack Engineer) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384400) | apply_id: 18134749 (Wanted Direct API 제출 완료) |
+| #931 | 클로봇 | 로봇 미들웨어 SW 개발 리더 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384284) | apply_id: 18134750 (Wanted Direct API 제출 완료) |
+| #932 | 메쥬(하이카디) | SW 엔지니어 (원주 근무) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384216) | apply_id: 18134751 (Wanted Direct API 제출 완료) |
+| #933 | 유에스소프트 | ERP 주니어 개발자 (C# / Oracle) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383963) | apply_id: 18134752 (Wanted Direct API 제출 완료) |
+| #934 | 제네시스네스트 | Flutter App 개발자 (1년~8년) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383778) | apply_id: 18134753 (Wanted Direct API 제출 완료) |
+| #935 | 메크랩 | AI 기반 CAD/Simulation 솔루션 개발 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383759) | apply_id: 18134754 (Wanted Direct API 제출 완료) |
+| #936 | 세타원코리아 | Product Engineer (Full-stack) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383662) | apply_id: 18134755 (Wanted Direct API 제출 완료) |
+| #937 | 메이저맵 | 프로덕트 엔지니어(개발 직군) (3~5년) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383584) | apply_id: 18134757 (Wanted Direct API 제출 완료) |
+| #938 | 트웰브랩스(TwelveLabs) | Senior Platform Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383564) | apply_id: 18134758 (Wanted Direct API 제출 완료) |
+| #939 | 샐러드랩 | 이커머스 솔루션(SaaS) 풀스택 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383502) | apply_id: 18134760 (Wanted Direct API 제출 완료) |
+| #940 | 포티투닷(42dot) | Senior Performance Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383435) | apply_id: 18134761 (Wanted Direct API 제출 완료) |
+| #941 | 메이즈 | [RIZE] Backend 중심 개발 리드 (Hands-on Tech Lead) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383032) | apply_id: 18134763 (Wanted Direct API 제출 완료) |
+| #942 | 마드라스체크(플로우) | [AI Work Agent 플로우] 풀스택 제품 개발자(웹·플랫폼) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382910) | apply_id: 18134764 (Wanted Direct API 제출 완료) |
+| #943 | 텐 | 네트워크 엔지니어 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382904) | apply_id: 18134766 (Wanted Direct API 제출 완료) |
+| #944 | 리비바이오 | 백엔드개발 산업기능요원(Node.js) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382752) | apply_id: 18134767 (Wanted Direct API 제출 완료) |
+| #945 | 캐폴랩스 | [인턴] 개발자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382447) | apply_id: 18134768 (Wanted Direct API 제출 완료) |
+| #946 | 부스터스 | Forward Deployed Engineer (FDE) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382343) | apply_id: 18134769 (Wanted Direct API 제출 완료) |
+| #947 | 비바리퍼블리카(토스) | [토스] IPCC, AICC 구축 운영 담당자 | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382282) | apply_id: 18134770 (Wanted Direct API 제출 완료) |
+| #948 | 개념원리 | Back-End 시니어 개발자 (5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382177) | apply_id: 18134771 (Wanted Direct API 제출 완료) |
+| #949 | 개념원리 | Back-End 개발자 (3년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382176) | apply_id: 18134772 (Wanted Direct API 제출 완료) |
+| #950 | 트웰브랩스(TwelveLabs) | Senior Infrastructure Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382142) | apply_id: 18134773 (Wanted Direct API 제출 완료) |
+| #951 | 굿닥(goodoc) | 백엔드 엔지니어 (Node.js, 5년 이상) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382075) | apply_id: 18134774 (Wanted Direct API 제출 완료) |
+| #952 | 큐피스트(글램) | Head of Engineering | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382026) | apply_id: 18134775 (Wanted Direct API 제출 완료) |
+| #953 | 인핸스(Enhans) | AI Backend Engineer (Computer Use) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381989) | apply_id: 18134776 (Wanted Direct API 제출 완료) |
+| #954 | 인핸스(Enhans) | Product Engineer (AgentOS) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381979) | apply_id: 18134777 (Wanted Direct API 제출 완료) |
+| #955 | 커넥트웨이브 | [CC CTO] Search Engineer | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381931) | apply_id: 18134778 (Wanted Direct API 제출 완료) |
+| #956 | 베슬에이아이(VESSL AI) | Backend Software Engineer (Senior) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381880) | apply_id: 18134781 (Wanted Direct API 제출 완료) |
+| #957 | 베슬에이아이(VESSL AI) | Backend Software Engineer (Junior) | KR | 2026-10-14 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381871) | apply_id: 18134782 (Wanted Direct API 제출 완료) |
+| #958 | 픽스업 | Founding Engineer [Harvard Innovation Lab 창업 벤처] | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/373153) | apply_id: 18137681 (Wanted Direct API 제출 완료) |
+| #959 | 본투비 | 시니어 프로덕트 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372852) | apply_id: 18137682 (Wanted Direct API 제출 완료) |
+| #960 | 비하베스트 | Forward Deployed Engineer (FDE) 1년 이상 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372773) | apply_id: 18137683 (Wanted Direct API 제출 완료) |
+| #961 | 브릭에이아이 | 풀스택 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372730) | apply_id: 18137684 (Wanted Direct API 제출 완료) |
+| #962 | 와따에이아이 | [판교] 백엔드 JAVA 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372230) | apply_id: 18137685 (Wanted Direct API 제출 완료) |
+| #963 | 벙커키즈 | [위프(WHIF)] Tech- LLM Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372076) | apply_id: 18137686 (Wanted Direct API 제출 완료) |
+| #964 | 제틱에이아이 | Backend Engineer (AI Infrastructure SaaS) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/371406) | apply_id: 18137687 (Wanted Direct API 제출 완료) |
+| #965 | 모플 | [인턴] AI 수요예측 서비스 Software Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/371152) | apply_id: 18137688 (Wanted Direct API 제출 완료) |
+| #966 | 망고부스트 | [전문연구요원 우대] RDMA and AI Netwokrking Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370954) | apply_id: 18137689 (Wanted Direct API 제출 완료) |
+| #967 | 망고부스트 | [전문연구요원 우대] High Performance AI Storage | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370923) | apply_id: 18137690 (Wanted Direct API 제출 완료) |
+| #968 | 샵라이브 | Software Engineer (Back-end) - 10년 이상 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370860) | apply_id: 18137691 (Wanted Direct API 제출 완료) |
+| #969 | 키즈노트 | CTO 직속 개발 리더 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370546) | apply_id: 18137692 (Wanted Direct API 제출 완료) |
+| #970 | 알프레드 | Backend Engineer(7년+) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370221) | apply_id: 18137693 (Wanted Direct API 제출 완료) |
+| #971 | 에이치아이티 | 풀스택 개발자(Nest.js 서버, React 및 Flutter web) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370193) | apply_id: 18137694 (Wanted Direct API 제출 완료) |
+| #972 | 디써클 | [인턴] Backend Engineer - Applied AI | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369979) | apply_id: 18137695 (Wanted Direct API 제출 완료) |
+| #973 | 타이드풀(TIDEPOOL) | AI-Product Engineer (Senior) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369792) | apply_id: 18137696 (Wanted Direct API 제출 완료) |
+| #974 | 마키나락스 | Backend Engineer (Runway Platform) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369738) | apply_id: 18137697 (Wanted Direct API 제출 완료) |
+| #975 | 퍼펙토리 | [공짱] 풀스택 리드 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369586) | apply_id: 18137699 (Wanted Direct API 제출 완료) |
+| #976 | 컨시언스테크놀로지 | Founding Solution Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/368645) | apply_id: 17348087 (Wanted Direct API 제출 완료) |
+| #977 | 테크타카(ARGO) | Software Engineer (Backend)_신입 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/368286) | apply_id: 18137700 (Wanted Direct API 제출 완료) |
+| #978 | 액션파워 | [다글로] AI Backend 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/368135) | apply_id: 18137701 (Wanted Direct API 제출 완료) |
+| #979 | 매니패스트 | 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367839) | apply_id: 18137702 (Wanted Direct API 제출 완료) |
+| #980 | 이스트소프트(ESTsoft) | [ESTsecurity] 윈도우 패치 수집·배포 시스템 및 패치 관리 모듈 개발 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367190) | apply_id: 18137703 (Wanted Direct API 제출 완료) |
+| #981 | 카카오헬스케어 | 케어챗 B/E 개발자 (5~10년) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/366910) | apply_id: 17675639 (Wanted Direct API 제출 완료) |
+| #982 | 인포시즈 | Sr. Forward Deployed Engineer (Sr. FDE) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/366617) | apply_id: 18137704 (Wanted Direct API 제출 완료) |
+| #983 | 핀크(Finnq) | [하나금융그룹 자회사] 서버개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/366595) | apply_id: 18137705 (Wanted Direct API 제출 완료) |
+| #984 | 동선컴퍼니 | [동네선물 플랫폼] 풀스택 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365927) | apply_id: 18137706 (Wanted Direct API 제출 완료) |
+| #985 | 라포랩스 | Server Platform Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365392) | apply_id: 18137707 (Wanted Direct API 제출 완료) |
+| #986 | 코오롱베니트 | IBM 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365385) | apply_id: 18137708 (Wanted Direct API 제출 완료) |
+| #987 | 르몽 | 백엔드 엔지니어 겸 개발 PM | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365319) | apply_id: 18137709 (Wanted Direct API 제출 완료) |
+| #988 | 딥그로브 | 백엔드 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365175) | apply_id: 18137710 (Wanted Direct API 제출 완료) |
+| #989 | 스펙터 | Backend Engineer (5년~10년) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/364566) | apply_id: 18137711 (Wanted Direct API 제출 완료) |
+| #990 | 바로팜 | AI 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/363893) | apply_id: 18137712 (Wanted Direct API 제출 완료) |
+| #991 | 비바리퍼블리카(토스) | [토스] Node.js Developer (자동화) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/363475) | apply_id: 18137713 (Wanted Direct API 제출 완료) |
+| #992 | 인티그레이션(메디스트림) | [AX] Product Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/363150) | apply_id: 18137714 (Wanted Direct API 제출 완료) |
+| #993 | 에이젠글로벌 | BackEnd Developer (Java) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/362687) | apply_id: 17833787 (Wanted Direct API 제출 완료) |
+| #994 | 아이티무유 | 풀스택 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/362043) | apply_id: 18137715 (Wanted Direct API 제출 완료) |
+| #995 | 스누아이랩 | 엣지 디바이스용 영상 인식 솔루션 개발자 (5년 이상) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361968) | apply_id: 18137716 (Wanted Direct API 제출 완료) |
+| #996 | 더블미디어 | 백엔드 엔지니어 (5년 이상/부산) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361788) | apply_id: 18137717 (Wanted Direct API 제출 완료) |
+| #997 | 에어스메디컬 | AX Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361768) | apply_id: 18137718 (Wanted Direct API 제출 완료) |
+| #998 | 인포시즈 | Forward Deployed Engineer (FDE) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361641) | apply_id: 17348091 (Wanted Direct API 제출 완료) |
+| #999 | 네오사피엔스(타입캐스트) | AI System Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361158) | apply_id: 18137719 (Wanted Direct API 제출 완료) |
+| #1000 | 페칭 | 글로벌 패션 디자이너 커머스 주니어 프로덕트 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/360966) | apply_id: 18137720 (Wanted Direct API 제출 완료) |
+| #1001 | 페칭 | 글로벌 패션 디자이너 커머스 테크리드 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/360959) | apply_id: 18137721 (Wanted Direct API 제출 완료) |
+| #1002 | 빅셀글로벌 | 데이터 크롤링 백엔드 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/360574) | apply_id: 18137722 (Wanted Direct API 제출 완료) |
+| #1003 | 업스테이지 | AI Engineer - LLM Serving Platform  | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/360493) | apply_id: 18137723 (Wanted Direct API 제출 완료) |
+| #1004 | 피닉스랩유한회사 서울지점 | Full Stack Engineer (Seoul) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/360450) | apply_id: 18137724 (Wanted Direct API 제출 완료) |
+| #1005 | 투모로로보틱스 | Web Platform 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/358839) | apply_id: 18137725 (Wanted Direct API 제출 완료) |
+| #1006 | 어쎈드 | Product Engineer (AI/LLM 기반 리서치 프로덕트) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/358406) | apply_id: 18137726 (Wanted Direct API 제출 완료) |
+| #1007 | 아티언스 | AI 서비스 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/357650) | apply_id: 18137727 (Wanted Direct API 제출 완료) |
+| #1015 | 현대오토에버 | [EnIT] Backend Developer - 인증/계정플랫폼 개발 및 운영 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385488) | apply_id: 18143047 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1016 | 스카이랩스(SkyLabs) | SW검증 팀장 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386313) | apply_id: 18143050 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1017 | 스카이랩스(SkyLabs) | 머신러닝/딥러닝 Researcher (신입,전문연구요원 신규편입 및 전직 가능) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/311491) | apply_id: 18143052 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1018 | 마스킷 | [LG전자 스핀오프] AI SI Project Lead(PM/PL) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389428) | apply_id: 18143053 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1019 | 올거나이즈코리아(Allganize Korea) | FDE(Infra) - Kubernetes Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392278) | apply_id: 18143054 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1020 | 올거나이즈코리아(Allganize Korea) | FDE(SW) - Solutions Architect | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392269) | apply_id: 18143055 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1021 | 올거나이즈코리아(Allganize Korea) | [계약직] Infra Engineer / K8S 필수, 6년 이상 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392281) | apply_id: 18143056 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1022 | 마이크로픽스 | Computer vision(영상처리) algorithm 개발자(3-5년 차) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/341997) | apply_id: 18143057 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1023 | 엣지크로스 | AI SW 엔지니어–Algorithmic AI(5년 이상/전문연구원 가능) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/319757) | apply_id: 18143058 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1024 | 세나클 | [네이버계열사]EMR 구축 및 운영 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/272589) | apply_id: 18143061 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1025 | 카카오헬스케어 | AI Agent Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/359711) | apply_id: 18143065 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1026 | 카카오뱅크(kakaobank) | LLM 서빙 및 추론 최적화 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382107) | apply_id: 18143066 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1027 | 카카오헬스케어 | AI/ML Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380160) | apply_id: 18143068 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1028 | 카카오페이증권(kakaopay증권) | AI Native Engineering팀 AI 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/339967) | apply_id: 18143069 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1029 | 카카오모빌리티(kakaomobility) | 머신러닝 research scientist (R&D) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/364303) | apply_id: 18143070 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1030 | 카카오모빌리티(kakaomobility) | 자율주행 AI 엔지니어 (R&D) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361692) | apply_id: 18143071 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1031 | 카카오모빌리티(kakaomobility) | 자율주행 시스템 엔지니어 (R&D) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/377782) | apply_id: 18143072 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1032 | 카카오페이증권(kakaopay증권) | 데이터베이스 엔지니어(시니어) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/286371) | apply_id: 18143074 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1033 | 카카오헬스케어 | DBA (Database Administrator) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/379103) | apply_id: 18143075 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1034 | 카카오모빌리티(kakaomobility) | 자율주행 AI Perception 엔지니어 (R&D) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372211) | apply_id: 18143076 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1035 | 카카오모빌리티(kakaomobility) | SLAM research scientist (R&D) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/364313) | apply_id: 18143077 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1036 | 카카오모빌리티(kakaomobility) | 자율주행 SLAM 엔지니어 (R&D) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361689) | apply_id: 18143078 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1037 | 팀블라인드세일즈앤마케팅코리아 | AI Technical Lead (AI 테크 리드) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/347462) | apply_id: 18143079 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1038 | 펄어비스 | 검은사막 온라인 게임플레이 프로그래머 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/236361) | apply_id: 18143081 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1039 | 쿠팡 | [쿠팡페이] Staff Front-end Engineer (Rocket Pay) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389697) | apply_id: 18143082 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1040 | 쿠팡 | Staff Back-end Engineer (Rocket Pay) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381767) | apply_id: 18143084 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1041 | 쿠팡 | Staff Backend Engineer (Coupang Pay) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384796) | apply_id: 18143085 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1042 | 쿠팡 | Senior Product Manager, New Fintech Product | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/352784) | apply_id: 18143086 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1043 | 쿠팡 | [Coupang] Senior Data Analyst (Audit Automation & Data Analytics) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385087) | apply_id: 18143088 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1044 | 쿠팡 | Senior Back-end Engineer(Advertiser Platform) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392247) | apply_id: 18143090 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1045 | 쿠팡 | [Coupang Pay] Senior Backend Engineer (계약직) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382456) | apply_id: 18143091 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1046 | 쿠팡 | Senior Staff, Machine Learning Engineer (쿠팡 이츠 검색- 디렉터 급) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383669) | apply_id: 18143092 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1047 | 토스플레이스 | Server Developer (Product) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/323996) | apply_id: 17675626 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1048 | 오토스테이 | 풀스택 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386840) | apply_id: 18143093 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1049 | 비바리퍼블리카(토스) | [토스인슈어런스] Systems Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388137) | apply_id: 18143094 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1050 | 토스플레이스 | Node.js Developer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/305444) | apply_id: 18143095 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1051 | 비바리퍼블리카(토스) | [토스] Node.js Developer (Ads) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/374054) | apply_id: 18143096 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1052 | 토스플레이스 | Site Reliability Engineer (SRE) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/376504) | apply_id: 18143097 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1053 | 토스플레이스 | DevOps Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/322625) | apply_id: 18143098 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1054 | 비바리퍼블리카(토스) | [토스] System Engineer (GPU) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/347560) | apply_id: 18143099 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1055 | 토스페이먼츠 | DBA | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375800) | apply_id: 18143101 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1056 | 토스페이먼츠 | Technical Account Manager (Global) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/304037) | apply_id: 18143102 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1057 | 씨제이올리브영(CJ올리브영) | Forward Deployed AI Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388977) | apply_id: 18143104 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1058 | 씨제이올리브영(CJ올리브영) | 엔터프라이즈플랫폼유닛 Front-end | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/337446) | apply_id: 18143108 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1059 | 씨제이올리브영(CJ올리브영) | 커머스플랫폼유닛 Front-end | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/337438) | apply_id: 18143110 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1060 | 씨제이올리브영(CJ올리브영) | 코어플랫폼유닛 Back-end | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/337434) | apply_id: 18143111 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1061 | 씨제이올리브영(CJ올리브영) | 커머스플랫폼유닛 Back-end | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/337437) | apply_id: 17675618 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1062 | 씨제이올리브영(CJ올리브영) | 검색 플랫폼 개발자 (Front-end) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/366991) | apply_id: 18143112 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1063 | 씨제이올리브영(CJ올리브영) | Data Scientist (AI 추천) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/365670) | apply_id: 18143113 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1064 | 씨제이올리브영(CJ올리브영) | Data Analyst (분석) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/359170) | apply_id: 18143114 (대기업/빅테크 Wanted Direct API 제출 완료) |
+| #1065 | KCC정보통신 | 백엔드 리드 개발자(8년이상) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370732) | apply_id: 18144772 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1066 | 토스뱅크 | AIOps Platform Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392448) | apply_id: 18144784 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1067 | 씨제이올리브영(CJ올리브영) | Data Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/351571) | apply_id: 18144785 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1068 | 씨제이올리브영(CJ올리브영) | Data Analytics Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382625) | apply_id: 18144787 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1069 | 씨제이올리브영(CJ올리브영) | Data Architect (주니어) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/360141) | apply_id: 18144788 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1070 | 씨제이올리브영(CJ올리브영) | Platform Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/373690) | apply_id: 18144789 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1071 | 씨제이올리브영(CJ올리브영) | Data Service Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382627) | apply_id: 18144790 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1072 | 씨제이올리브영(CJ올리브영) | Data Scientist | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/337496) | apply_id: 18144791 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1073 | 씨제이올리브영(CJ올리브영) | Data Architect (시니어) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/371804) | apply_id: 18144792 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1074 | 유디임팩트 | [underdogs] 프로덕트 풀스택 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381814) | apply_id: 18144795 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1075 | 쏠리드윈텍 | 위성 EGSE(지상시험장비) 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/379005) | apply_id: 18144796 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1076 | 롯데카드 | 데이터 아키텍트(DA, Data Architect) 직무 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/371546) | apply_id: 18144797 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1077 | 위메이드(WEMADE) | 게임 이상탐지 엔지니어(AI/FDS) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384494) | apply_id: 18144799 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1078 | 안랩블록체인컴퍼니 | DevOps 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/279199) | apply_id: 18144800 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1079 | 우리엔 | [중견 계열사] 시스템 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391321) | apply_id: 18144802 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1080 | 우리엔 | [중견 계열사] 의료 영상 소프트웨어 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391324) | apply_id: 18144803 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1081 | 우리엔 | [중견 계열사] 동물용 CT Vision AI 개발자 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391322) | apply_id: 18144804 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1082 | 버킷플레이스(오늘의집) | Data Analyst (Finance) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392294) | apply_id: 18145107 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1083 | 에이블리코퍼레이션 | 머신러닝 엔지니어 (추천) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388727) | apply_id: 18145108 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1084 | 에이블리코퍼레이션 | 검색 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/278097) | apply_id: 18145109 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1085 | 컬리 | 커머스 시니어 백엔드 개발자(홈/전시/광고) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/325490) | apply_id: 18145110 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1086 | 컬리 | 서버 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/335716) | apply_id: 18145111 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1087 | 위대한상상(요기요) | [Tech] Data Engineer (DW, 5년 이상) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389557) | apply_id: 18145112 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1088 | 위대한상상(요기요) | [Tech] BI Data Engineer(7년 이상) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372312) | apply_id: 18145113 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1089 | 디비아이엔씨(DB Inc) | 그룹 관계사(DB생명) DBA/SAP | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/370344) | apply_id: 18145263 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1090 | 루닛(Lunit) | Senior Backend Engineer(ML Serving) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369655) | apply_id: 18145264 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1091 | 쏘카(SOCAR) | Platform Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387560) | apply_id: 18145265 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1092 | 부릉 | Backend Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389173) | apply_id: 18145266 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1093 | 부릉 | Data Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389175) | apply_id: 18145268 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1094 | 코인원(coinone) | Cloud DBA | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388587) | apply_id: 18145342 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1095 | 채널코퍼레이션 | [채널톡] Software Engineer, Senior | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/338292) | apply_id: 18145345 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1096 | 하이퍼커넥트 | Senior Data & Analytics Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/367668) | apply_id: 18145346 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1097 | 자비스앤빌런즈(삼쩜삼) | DBA | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385911) | apply_id: 18145347 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1098 | 포티투닷(42dot) | Senior Backend Engineer (Gateway/IAM) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384995) | apply_id: 18145350 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1099 | 클로봇 | 시스템 연동 플랫폼 아키텍트 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388294) | apply_id: 18145351 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1100 | 에이아이트릭스(AITRICS) | HAX Backend Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390913) | apply_id: 18145352 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1101 | 커넥트웨이브 | [CC CTO] Backend Engineer (회원플랫폼) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/377953) | apply_id: 18145573 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1102 | 커넥트웨이브 | [CC CTO] Backend Engineer (자동차/학원) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/377914) | apply_id: 18145574 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1103 | 커넥트웨이브 | [CC CTO] DBA | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381207) | apply_id: 18145575 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1104 | 콕스웨이브 | [AX krewa] 리서치 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390998) | apply_id: 18145576 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1105 | 커넥트웨이브 | [CC CTO] Data Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392319) | apply_id: 18145577 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1106 | 폴라리스쓰리디(Polaris3D) | 이리온 설치 플랫폼 풀스택 개발자 (서울) | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381919) | apply_id: 18145578 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1107 | 케이티밀리의서재 | AI 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/361671) | apply_id: 18145579 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1108 | 패스트파이브 | Backend Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392517) | apply_id: 18146054 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1109 | 뤼튼테크놀로지스 | Platform Engineer | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/299619) | apply_id: 18146058 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1110 | 크라우드웍스 | Physical AI 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378927) | apply_id: 18146060 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1111 | 크라우드웍스 | AI Agent 엔지니어 | KR | 2026-10-15 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381470) | apply_id: 18146061 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1112 | 피엠인터내셔널코리아 | Sr. AI 및 데이터 분석 전문가 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392663) | apply_id: 18151135 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1113 | 커넥셔너리 | Data Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392657) | apply_id: 18151136 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1114 | 바이오리서치에이아이 | 데이터엔지니어(주니어) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392637) | apply_id: 18151137 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1115 | 마켓보로 | Senior Data Engineer (LLM·Data Platform) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392292) | apply_id: 18151139 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1116 | 모티프드라이브 | Back-end Engineer (Data Platform) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392208) | apply_id: 18151140 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1117 | 투라 | AI·커머스 업무자동화 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392100) | apply_id: 18151142 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1118 | 모요 | Data Analytics Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392080) | apply_id: 18151144 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1119 | 한국딥러닝 | AI 엔지니어 3년 이상 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391899) | apply_id: 18151145 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1120 | 콘센트릭스서비스코리아 | 데이터엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391793) | apply_id: 18151146 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1121 | 백패커 | Data Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391183) | apply_id: 18151149 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1122 | 로민 | ML(머신러닝) 엔지니어 (전문연구요원 신규 편입) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391154) | apply_id: 18151150 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1123 | 오디케이미디어 (OnDemandKorea) | Backend Developer (Data Platform) (5~12년) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391153) | apply_id: 18151151 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1124 | 리소리우스 | Data Ingestion Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390871) | apply_id: 18151152 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1125 | 슈퍼센트 | Data Architect(3년 이상) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390793) | apply_id: 18151154 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1126 | 워트인텔리전스 | Data Analytics Engineer (5년 이상) / 데이터 분석 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390749) | apply_id: 18151155 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1127 | 앤서스랩코리아 | Data Warehouse Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390549) | apply_id: 18151156 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1128 | 딥오토 | AI Platform Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387640) | apply_id: 18151158 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1129 | 모비데이즈(Mobidays) | AX 엔지니어 (주니어) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380970) | apply_id: 18151160 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1130 | 모먼츠컴퍼니 | AI 자동화 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389005) | apply_id: 18151161 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1131 | 엘리스 | AI 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/198065) | apply_id: 18151163 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1132 | 웅진씽크빅 | 데이터분석가(Data Analyst) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/372919) | apply_id: 18151165 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1133 | 스푼랩스 | DBA | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369573) | apply_id: 18151166 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1134 | 아이트럭 | AI/ML 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385896) | apply_id: 18151168 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1135 | 스포칩 | AI 기반 풀스택 개발자(바이브코딩 / MVP 개발) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391067) | apply_id: 18151170 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1136 | 뉴앤디 | 풀스택 엔지니어(3~5년) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390139) | apply_id: 18151171 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1137 | 무인화연구소 | 무인공간 AIoT 공간 운영 OS(Space OS)공간 AI 에이전트 엔지니어 (TypeScript · LLM Agent · IoT) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390126) | apply_id: 18151174 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1138 | 트렉시 | node.js 개발자 (3년 이상) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389461) | apply_id: 18151176 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1139 | 헤루 | Product Engineer (프로덕트 엔지니어) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389124) | apply_id: 18151178 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1140 | 한국모바일결제 | AI Product Engineer (개발·유지보수·서버운영) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389052) | apply_id: 18151179 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1141 | 라이브데이터 | 풀스택 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388465) | apply_id: 18151181 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1142 | 브랜치앤바운드 | Full stack Software Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387112) | apply_id: 18151182 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1143 | 큐피스트(글램) | Backend Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386240) | apply_id: 18151183 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1144 | 세븐픽쳐스 | [동행클럽(구 넷플연가)·동행] 프로덕트 엔지니어 (풀스택, 1년 이상) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375088) | apply_id: 18151185 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1145 | 비누랩스 | Software Engineer (웹 개발 / 글로벌팀) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383005) | apply_id: 18151187 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1146 | 밀리만코리아(Milliman) | Software Engineer (Application 개발) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/246286) | apply_id: 18151189 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1147 | 서스틴베스트 | AI 엔지니어 (LLM Application & Backend) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392570) | apply_id: 18151191 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1148 | 에듀템 | AI 개발자/연구원 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392425) | apply_id: 18151192 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1149 | 모티프드라이브 | Data Analyst (Data Curation & Scenario Mining) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392215) | apply_id: 18151194 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1150 | 로보톰 | [스테이지핸즈] ROS2 로봇 소프트웨어 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392179) | apply_id: 18151195 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1151 | 잉카인터넷 | [AX Group] AI 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391664) | apply_id: 18151196 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1152 | 모레 | NPU Software Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391610) | apply_id: 18151199 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1153 | 위드포인츠 | 3D 코어엔진 개발자 (선임급) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391477) | apply_id: 18151201 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1154 | 위드포인츠 | 3D Vision Application 개발자 (책임급) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391475) | apply_id: 18151202 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1155 | 다음 | Agentic AI Search 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391393) | apply_id: 18151203 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1156 | 한국딥러닝 | AI 엔지니어 7년(리드급) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391026) | apply_id: 18151204 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1157 | 수퍼게이트 | Openstack 플랫폼 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390506) | apply_id: 18151206 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1158 | 씨메스로보틱스 | 로보틱스 SW 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390379) | apply_id: 18151207 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1159 | 시에리텍 | Embedded Linux 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390226) | apply_id: 18151208 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1160 | 하이픽셀 | 프로덕트 엔지니어 (풀스택 · AI 활용) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390109) | apply_id: 18151209 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1161 | 로민 | 솔루션 운영 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390100) | apply_id: 18151210 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1162 | 비큐에이아이 | AI개발자 (10년 이상) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389631) | apply_id: 18151211 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1163 | 엔엑스엔랩스 | [Lead/Senior] Software Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389610) | apply_id: 18151213 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1164 | 엔엑스엔랩스 | Software Engineer (전문연구요원) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389609) | apply_id: 18151214 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1165 | 서치독 | Web Application 개발자 (풀스택) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389606) | apply_id: 18151216 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1166 | 서치독 | SaaS 플랫폼 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389603) | apply_id: 18151217 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1167 | 라쿠텐심포니코리아 | (T&I) Backend Product Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388702) | apply_id: 18151220 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1168 | 오픈소스컨설팅 | 쿠버네티스(Kubernetes) 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392557) | apply_id: 18151225 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1169 | 유비온 | 플랫폼엔지니어링팀 운영자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392378) | apply_id: 18151227 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1170 | 에스넷아이씨티 | 네트워크 보안 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392251) | apply_id: 18151228 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1171 | 인터웍스미디어 | 인프라 엔지니어(경력 2~ 3년) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391857) | apply_id: 18151229 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1172 | 레신저스 | Test 엔지니어 (Test Engineer) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391670) | apply_id: 18151230 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1173 | 솔트룩스(Saltlux) | 시스템엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391491) | apply_id: 18151231 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1174 | 펜타시큐리티 | 보안 네트워크 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391455) | apply_id: 18151232 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1175 | 그린에스씨에이 | 산업제어시스템 보안 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391284) | apply_id: 18151235 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1176 | 오엠티아이코리아 | 시스템 엔지니어 (2~7년) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390766) | apply_id: 18151237 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1177 | 라포랩스 | Software Engineer (Backend) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390722) | apply_id: 18151238 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1178 | 누리미디어(DBpia) | [개발운영] 시스템 엔지니어 (5년 이상) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390205) | apply_id: 18151239 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1179 | 애자일소다 | AI Platform System Architecture Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389920) | apply_id: 18151241 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1180 | 매니코어소프트 | AI인프라R&D팀 AI 인프라 시스템 연구원 (선임급) 겸 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389408) | apply_id: 18151242 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1182 | 디비아이엔씨(DB Inc) | 그룹고객사(DB손해보험) 인프라 운영 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/377624) | apply_id: 18151246 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1183 | 히포크랏랩스(Hippocrat Labs) | 보안 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/359171) | apply_id: 18151247 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1184 | 코오롱베니트 | 시스템 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385360) | apply_id: 18151248 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1185 | 제논 | [인공지능솔루션] 인프라 엔지니어 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/347247) | apply_id: 18151249 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1186 | 와탭랩스(WhaTapLabs) | 데브옵스 엔지니어(플랫폼 엔지니어) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/40159) | apply_id: 18151251 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1187 | 큐빅 | Infrastructure & Platform Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387090) | apply_id: 18151252 (대기업/중견기업 Wanted Direct API 제출 완료) |
+| #1188 | 에니아이(Aniai) | Senior Robotics Software Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/380866) | apply_id: 18151715 (스마트 제조 로보틱스 Wanted Direct API 제출 완료) |
+| #1189 | 이지케어텍 | 의료IT S/W 개발자 (2년 이상) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/331808) | apply_id: 18151940 (의료정보 대형솔루션 Wanted Direct API 제출 완료) |
+| #1190 | 메리츠증권 | 주식매매 및 본사후선업무 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392659) | apply_id: 18156714 (금융/증권 대형 엔터프라이즈 코어 원장시스템 개발 Wanted Direct API 제출 완료) |
+| #1191 | 메리츠증권 | Data Scientist | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392650) | apply_id: 18156715 (금융 데이터 분석 및 모델링 파이프라인 Wanted Direct API 제출 완료) |
+| #1192 | 티에스엔랩 | 시스템 개발자(C · Linux · 실시간 네트워크) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/369334) | apply_id: 18156716 (Linux 저지연 네트워크 분산 시스템 Wanted Direct API 제출 완료) |
+| #1193 | 바이올렛페이 | [point3] AX Product Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/375643) | apply_id: 18156732 (Wanted Direct API 경력직 제출 완료) |
+| #1194 | 윗유 | AX Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392673) | apply_id: 18156733 (Wanted Direct API 경력직 제출 완료) |
+| #1195 | 플라잎 | Learning-based Navigation Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392630) | apply_id: 18156734 (Wanted Direct API 경력직 제출 완료) |
+| #1196 | 텔레픽스 | Foward Deployed Engineer (FDE) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392591) | apply_id: 18156735 (Wanted Direct API 경력직 제출 완료) |
+| #1197 | 오픈엣지테크놀로지 | [DRAM PHY] Physical Implementation Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392437) | apply_id: 18156736 (Wanted Direct API 경력직 제출 완료) |
+| #1198 | 오픈엣지테크놀로지 | [DRAM PHY] Physical Design Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392438) | apply_id: 18156737 (Wanted Direct API 경력직 제출 완료) |
+| #1199 | 코너스톤파트너스디지털 | AI/ML Engineer (Manufacturing AI & AI Agent) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/178246) | apply_id: 18156738 (Wanted Direct API 경력직 제출 완료) |
+| #1200 | 데이터그릿 | GritDB 데이터베이스 엔진 GritSurfer 연구원 (주니어,3~5년) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392185) | apply_id: 18156739 (Wanted Direct API 경력직 제출 완료) |
+| #1201 | 어크로스비 | DevSecOps Engineer 3년 이상 (전문연구요원 가능) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383499) | apply_id: 18156740 (Wanted Direct API 경력직 제출 완료) |
+| #1202 | 에이치에스소프트 | [부산지사]웹 개발자 (대구 상주 근무) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392262) | apply_id: 18156741 (Wanted Direct API 경력직 제출 완료) |
+| #1203 | 사이오닉에이아이 | MLOps Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378381) | apply_id: 18156742 (Wanted Direct API 경력직 제출 완료) |
+| #1204 | 사이오닉에이아이 | DevOps Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/378378) | apply_id: 18156743 (Wanted Direct API 경력직 제출 완료) |
+| #1205 | 노드인프라 | 디지털자산 솔루션 개발자 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/142761) | apply_id: 18156744 (Wanted Direct API 경력직 제출 완료) |
+| #1206 | 블록체인랩스 | Blockchain Core Engineer - InfraBlockchain | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/138941) | apply_id: 18156745 (Wanted Direct API 경력직 제출 완료) |
+| #1207 | 클레로보틱스 | [FDE] Forward Deployed Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392199) | apply_id: 18156746 (Wanted Direct API 경력직 제출 완료) |
+| #1208 | 디플리 | Forward Deployed Engineer (FDE) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/341560) | apply_id: 18156747 (Wanted Direct API 경력직 제출 완료) |
+| #1209 | 이노버스 | 크로스플랫폼 앱 개발자(Flutter) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392142) | apply_id: 18156748 (Wanted Direct API 경력직 제출 완료) |
+| #1210 | 호랑에듀 | [한글코딩 호랑] 호랑 풀스택 개발 매니저 | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392094) | apply_id: 18156749 (Wanted Direct API 경력직 제출 완료) |
+| #1211 | 스페이스에이아이 | Robotics Research Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/381849) | apply_id: 18156750 (Wanted Direct API 경력직 제출 완료) |
+| #1212 | 이자 | LLM 트레이닝 엔지니어(데이터 사이언티스트) | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/382476) | apply_id: 18156751 (Wanted Direct API 경력직 제출 완료) |
+| #1213 | 플라잎 | Applied AI Engineer | KR | 2026-10-16 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/391752) | apply_id: 18156752 (Wanted Direct API 경력직 제출 완료) |
+| #1214 | (주)GS리테일 | [AX본부] AI데이터부문 데이터엔지니어링팀 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/346279) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1215 | (주)코니바이에린 | [재택근무] 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/347563) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1216 | (주)유니코써치 | 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/298893) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1217 | (주)핀다 | Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/307421) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1218 | (주)아정네트웍스 | [아정당] Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/340268) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1219 | (주)페어스퀘어랩 | [페어스퀘어랩/클로인트] Sr.데이터엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/333154) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1220 | 브리스캔영어쏘시에이츠(주) | Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/347146) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1221 | (주)위대한상상 | [Tech] Business Intelligence Data Engineer(7년 이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/323841) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1222 | (주)힐링페이퍼 | [강남언니] Analytics Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/343196) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1223 | (주)에이아이트릭스 | HAX Infra Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/332199) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1224 | (주)대웅 | [대웅] Data실 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/327454) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1225 | (주)한국신용데이터 | [자회사-한국평가정보(KCS)] Data Engineer(5년이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/328588) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1226 | (주)제너시스비비큐 | [BBQ] Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/332649) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1227 | (주)위대한상상 | [Tech] Data Engineer (DW, 5년 이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/343798) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1228 | (주)리멤버앤컴퍼니 | Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/319051) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1229 | (주)프로써치코리아 | 에너지 대기업 AX 데이터엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/300953) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1230 | 아이펙스(주) | Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/339966) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1231 | CJ올리브영(주) | AI Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/262824) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1232 | (주)에이아이트릭스 | Healthcare Data Engineer (1년 계약직) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/333946) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1233 | (주)프로써치코리아 | Top-tier금융사 데이터엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/233653) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1234 | (주)한미글로벌건축사사무소 | [한미글로벌]AX실 AI/Data 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/346778) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1235 | (주)바잉스퀘어 | [바잉스퀘어] 데이터 엔지니어 (5년 이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/346664) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1236 | (주)구다이글로벌 | [구다이글로벌] Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/339807) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1237 | (주)원프레딕트 | Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/327954) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1238 | 킨드릴코리아유한책임회사 | Data Architect | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/336137) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1239 | CJ대한통운(주) | [TES물류기술연구소] 데이터 엔지니어 경력 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/324889) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1240 | (주)새팜 | 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/345090) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1241 | 핵클(주) | 데이터 엔지니어 (Data Engineer) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/306724) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1242 | (주)버킷플레이스 | Data Analyst (Finance) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/347096) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1243 | 엔카닷컴(주) | Analytics Engineer (5년 이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/346507) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1244 | 11번가(주) | [11번가] 데이터 플랫폼 엔지니어(거버넌스&자동화) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/343346) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1245 | (주)워트인텔리전스 | AI Data Engineer (5년 이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/336350) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1246 | (주)컬리 | 시니어 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/293961) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1247 | 뉴셀렉트(주) | 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/326937) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1248 | (주)여기어때컴퍼니 | Data Analyst [User Behavior] | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341221) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1249 | (주)비바리퍼블리카 | [토스] DataOps Manager | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/337863) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1250 | (주)유니코써치 | 데이터엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/282230) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1251 | (주)윌로그 | Data Engineer (Junior) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/333949) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1252 | (주)미리디 | [미리디] Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/324086) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1253 | (주)유니코써치 | [글로벌 인슈어테크] Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/345489) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1254 | (주)베이글코드 | [DATA&AI] Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/321990) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1255 | (주)유모스원 | AI Data Engineer (Ontology & Knowledge Base) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/332374) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1256 | (주)브레이브모바일 | [숨고] Data Scientist | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/324835) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1257 | (주)윌로그 | [인턴] Data Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/340967) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1258 | HL만도(주) | Data 아키텍처 경력직 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341738) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1259 | (주)마켓보로 | Senior Data Engineer (LLM·Data Platform) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/347278) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1260 | (주)페이타랩 | 데이터 엔지니어(Growth Data Engineer) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/278735) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1261 | (주)대웅 | 웰다 Data Science 담당 경력직 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/342390) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1262 | (주)왓섭 | 데이터팀 / Python 개발자 (5년차 이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/258949) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1263 | (주)큐빅 | Data Scientist | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/326947) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1264 | (주)비바리퍼블리카 | [토스뱅크] ML Engineer (Product) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/308001) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1265 | 람다256(주) | 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/345457) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1266 | (주)에비드넷 | 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/311622) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1267 | (주)지신 | [Infra/Platform] 데이터 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/345065) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1268 | (주)비바리퍼블리카 | [토스뱅크] AIOps Platform Engineer | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/322879) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1269 | 쿠팡(주) | Senior Data Analyst (Catalog) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/313345) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1270 | (주)스푼랩스 | Business Data Analyst (2~7년) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/347261) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1271 | (주)유니코써치 | [마포/AI솔루션]BI/데이터 분석 엔지니어 | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/346305) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1272 | 인포뱅크(주) | CRM Dev Engineer (4년 이상) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/347329) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1273 | (주)위시켓 | AIDP IRE(Internal Research Engineer) (3~8년) | KR | 2026-10-17 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/325952) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1274 | 디라티오 | 암호화폐 거래소 백엔드 개발자 (7년 이상) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384151) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1275 | 엠서클 | \[웰다\] Product Engineer_BackEnd 파트 3년 이상 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384120) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1276 | 인핸스(Enhans) | AI Backend Engineer (Document AI) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/383989) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1277 | 아이지넷(보닥) | \[보닥\] JAVA Backend Engineer (10~12년) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384432) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1278 | 이그레브 | \[대형통신사\] Data Platform Engineer 8년 이상 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/384339) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1279 | 덧셈컴퍼니 | 백엔드 개발자(3년 이상) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/385747) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1280 | 스튜디오얌얌 | 백엔드 개발자 (Backend Engineer) - 서비스 기획부터 함께하는 Product Engineer | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/390060) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1281 | 비큐에이아이 | [RDPLINE] 백엔드개발자 3년 이상 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392946) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1282 | 버즈빌(buzzvil) | [전문연구요원] 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392858) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1283 | 넥스트그라운드 | [인턴] 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392855) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1284 | 인딥에이아이 | 백엔드 개발자 (Middle/4~7년) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392773) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1285 | 인딥에이아이 | 백엔드 개발자 (Junior/1~3년) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392770) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1286 | 전우APS | [계약직/6개월] 백엔드 개발자 (API 연동·데이터 자동화) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392641) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1287 | 피지엠파트너스 | 백엔드 개발자 (Node.js) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392256) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1288 | 아정네트웍스 | [아정당] ​CRM 백엔드 ​개발자 (서울) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/389666) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1289 | 아레스3 | 서버 개발자 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/392284) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1290 | 위시켓 (Project #158493) | Python/Kubernetes 기반 산업용 AI MLOps 파이프라인 백엔드 개발 | KR | 2026-10-19 | [475](../reports/475-wishket-industrial-ai-mlops-backend-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/158493/) | 위시켓 도급 발굴 (월 730만/90일, 100% 재택), 엔셀 1,973만건(30.6% 단축) + Airflow 자동복구 + K8s/Docker 및 3대 안심약속 제안서 작성 완료 |
+| #1291 | 위시켓 (Project #159145) | Oracle/SP 기반 개인정보(CI) 암호화 전환 개발 | KR | 2026-10-19 | [476](../reports/476-wishket-oracle-privacy-encryption-batch-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/159145/) | 위시켓 도급 발굴 (총 500만/30일, 100% 재택), 헥토이노베이션 SafeCash 무결성 0건 + Chunk 분할커밋 + 롤백체계 및 안심검증 제안서 작성 완료 |
+| #1292 | 위시켓 (Project #159059) | AI/SEO 기반 콘텐츠 자동 생산 및 파이프라인 시스템 | KR | 2026-10-19 | [477](../reports/477-wishket-ai-seo-content-pipeline-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/159059/) | 위시켓 도급 발굴 (총 2,500만/180일, 100% 재택), 헥토 SmartQ RAG(정확도 80% 향상) + 엔셀 Airflow 대용량 배치 + 비개발자 어드민 제안서 작성 완료 |
+| #1293 | 프리모아 (Project #48530) | 글로벌 커스텀 굿즈 쇼핑몰 및 매장 연동 웹앱 구축 | KR | 2026-10-19 | [478](../reports/478-freemoa-custom-goods-ecommerce-2026-10-19.md) | Applied | [Freemoa](https://www.freemoa.net/m4/s41_v?p_id=48530) | 프리모아 외주 발굴 (총 2,500만/69일, 100% 재택), Loopers 이커머스 아키텍처 + SafeCash 결제무결성 0건 + 실시간 온오프라인 재고연동 제안서 작성 완료 |
+| #1294 | 프리모아 (Project #48524) | 말레이시아 구인구직 매칭 플랫폼 웹 서비스 구축 | KR | 2026-10-19 | [479](../reports/479-freemoa-job-matching-platform-2026-10-19.md) | Applied | [Freemoa](https://www.freemoa.net/m4/s41_v?p_id=48524) | 프리모아 외주 발굴 (총 2,500만/90일, 100% 재택), VoiceLink 실시간 매칭/원자적선점 + 헥토 SmartQ 추천정확도 80% + 글로벌 HR 제안서 작성 완료 |
+| #1295 | 프리모아 (Project #48514) | 뷰티샵 시간제 예약·선결제 앱 및 관리자 개발 | KR | 2026-10-19 | [480](../reports/480-freemoa-reservation-payment-backend-2026-10-19.md) | Applied | [Freemoa](https://www.freemoa.net/m4/s41_v?p_id=48514) | 프리모아 외주 발굴 (총 6,000만/120일, 100% 재택), VoiceLink 중복예약 원천차단(Redis Lua) + SafeCash 예약금선결제/정산 0건 + 직관적어드민 제안서 작성 완료 |
+| #1296 | 마인드허브 | 백엔드 개발자 (인프라·플랫폼) 1년 이상 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/388281) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1297 | 트레이스포스 | 백엔드 엔지니어 (Go)—트레이스포스 엔지니어 | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/387925) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1298 | 더블유컨셉코리아(W컨셉) | 백엔드기획 (PM) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/386132) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1299 | 드림어스컴퍼니 | 콘텐츠 플랫폼 백엔드 개발(3년 이상) | KR | 2026-10-19 | — | Applied | [Wanted](https://www.wanted.co.kr/wd/376669) | apply_id: N/A (Wanted Direct API 경력직 제출 완료) |
+| #1300 | (주)드림어스컴퍼니 | 데이터 분석/엔지니어링 리더 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/342510) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1301 | (주)스트라드비젼 | Data AI Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/316468) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1302 | (주)핀다 | Data Platform Team Lead | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/336094) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1303 | (주)유모스원 | Senior Data System Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/325334) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1304 | 위즈코어(주) | ML 데이터 엔지니어 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/333229) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1305 | 쿠팡(주) | [쿠팡]Data Analyst Manager | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/258165) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1306 | (주)미리비트 | 빅데이터 엔지니어,서버 백엔드 엔지니어 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/261902) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1307 | 쿠팡(주) | 백엔드 개발자 (Global Mobility & Business Travel) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/337883) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1308 | (주)크라우드웍스 | Data Platform Engineer(Backend) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341796) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1309 | (주)카카오헬스케어 | [경력] AI/ML Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/333564) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1310 | (주)리멤버앤컴퍼니 | AI Agent Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/295650) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1311 | (주)무신사 | Machine Learning Engineer (AI) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/335369) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1312 | (주)위대한상상 | [Tech] Data Governance Lead (10년 이상) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/311962) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1313 | (주)유니코써치 | [대기업 계열사] Data Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/334854) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1314 | (주)스트라드비젼 | Data Engineering Group Lead | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341846) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1315 | (주)비바리퍼블리카 | [토스] Business Analyst | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/336997) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1316 | (주)버즈빌 | [광고 추천팀] ML 엔지니어 (경력 5년 이상) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/289803) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1317 | 사카드코리아(주) | Data Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/233970) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1318 | (주)바로팜 | 데이터 엔지니어 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/330323) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1319 | (주)에스씨케이컴퍼니 | [스타벅스] MLOps Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/340440) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1320 | (주)인포시즈 | Sr. Forward Deployed Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/322136) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1321 | (주)스켈터랩스 | Applied AI Technical Engineer (ML) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/248418) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1322 | (주)무신사 | Backend Engineer (Core AI) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/335371) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1323 | (주)채널코퍼레이션 | [채널톡] Data Analyst | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/342971) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1324 | (주)크라우드웍스 | RAG / Search Engineer (Backend) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341603) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1325 | (주)스트라드비젼 | Data ML Team Lead | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341837) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1326 | 쿠팡(주) | AI 개발자 (보안 자동화 및 탐지 시스템) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/344916) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1327 | (주)파운트 | [핀테크/AI] Robo-Advisor System Engineer(경력) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/257378) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1328 | 주식회사 케이티 밀리의서재 | AI 엔지니어 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/313583) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1329 | (주)미리비트 | 빅데이터 백엔드 Spark 개발자 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/231561) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1330 | CJ올리브영(주) | [CJ올리브영] Data Scientist | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/329798) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1331 | (주)루닛 | [루닛]Senior Full Stack Engineer · AI Platform | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341040) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1332 | (주)에이아이트릭스 | Data Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/341551) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1333 | (주)헤딩써치 | FDE 데이터 전문가 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/331813) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1334 | 쿠팡(주) | [쿠팡이츠] Senior, Machine Learning Engineer (Search and Discovery) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/317929) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1335 | (주)인라이플 | 데이터 사이언티스트 | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/338754) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1336 | (주)스푼랩스 | Business Data Analyst (7년 이상) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/339324) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1337 | (주)유모스원 | Agentic AI System Engineer | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/325284) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1338 | (주)어니스트에이아이 | [어니스트AI] 데이터 애널리스트(Data Analyst) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/347915) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1339 | (주)스트라드비젼 | Senior Data Collection Manager (Dongtan) | KR | 2026-10-19 | — | Applied | [Remember](https://career.rememberapp.co.kr/job/posting/300612) | (Remember Direct API 경력직 프로필 제출 완료) |
+| #1340 | 위시켓 (Project #159127) | 공간향기 B2B 현장 서비스 관리 웹 인수·검수 및 서버 배포 | KR | 2026-10-19 | [481](../reports/481-wishket-b2b-field-service-audit-deployment-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/159127/) | 위시켓 도급 발굴 (총 800만/60일, 100% 재택), AI작성 React/NestJS 인수검수 + PostgreSQL 17 안정화 + 리눅스 서버구축 및 3대 안심약속 제안서 작성 완료 |
+| #1341 | 위시켓 (Project #159132) | 톰캣 기반 시스템 API 데이터 전송 오류 및 추가 수정 | KR | 2026-10-19 | [482](../reports/482-wishket-tomcat-api-data-transmission-hotfix-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/159132/) | 위시켓 도급 발굴 (총 100만/14일, 100% 재택), 헥토 SafeCash 0건오류 + 톰캣 API 로그트레이싱 + 장비데이터 무결성 검증 및 지속파트너 제안서 작성 완료 |
+| #1342 | 위시켓 (Project #158178) | Kubernetes 기반 On-premise 인프라 구축 및 Field Engineer (올거나이즈) | KR | 2026-10-19 | [483](../reports/483-wishket-allganize-kubernetes-onprem-ai-infra-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/158178/) | 위시켓 도급 발굴 (월 600만/180일, 총 3,600만, 100% 원격), 엔셀 반도체팹 망분리 폐쇄망 K8s/Airflow + 헥토 SmartQ RAG/LLM 연동 및 3대 안심약속 제안서 작성 완료 |
+| #1343 | 위시켓 (Project #159091) | ETL 기반 반도체 Data Lake 시스템 개발 | KR | 2026-10-19 | [484](../reports/484-wishket-semiconductor-datalake-etl-airflow-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/159091/) | 위시켓 도급 발굴 (월 730만/75일, 총 1,825만, 100% 원격), 엔셀 반도체팹 1,973만건(30.6%단축) + Airflow DAG 모듈화 + k8s/S3 스트리밍 적재 및 3대 안심약속 제안서 작성 완료 |
+| #1344 | 위시켓 (Project #158840) | 삼성 Java+오픈소스 기반 모니터링 시스템 백엔드 개발 | KR | 2026-10-19 | [485](../reports/485-wishket-samsung-java-monitoring-backend-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/158840/) | 위시켓 도급 발굴 (월 730만/90일, 100% 원격), Java 21 Modulith + MyBatis/PostgreSQL 튜닝 + EKS 컨테이너 배포 및 3대 안심약속 제안서 작성 완료 |
+| #1345 | 위시켓 (Project #159043) | 머신러닝 기반 사주 및 자미두수 예측 모델 개발 (재택) | KR | 2026-10-19 | [486](../reports/486-wishket-astrology-ml-prediction-model-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/159043/) | 위시켓 도급 발굴 (월 500만/60일, 총 1,000만, 100% 재택), POSTECH 포스코 AI/빅데이터 최우수상 + Python 피처엔지니어링 + 예측모델 패키징 제안서 작성 완료 |
+| #1346 | 와탭랩스 | 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55242193) | (Saramin Direct 입사지원 완료, APM 모니터링 백엔드) |
+| #1347 | 모젯 | [경력] 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55228089) | (Saramin Direct 동시지원 완료, AI 매칭 99%) |
+| #1348 | 클라비 | 기술연구소 Backend 경력직 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54940261) | (Saramin Direct 동시지원 완료, AI 매칭 99%) |
+| #1349 | 엘세븐시큐리티 | AI·보안 솔루션 웹 풀스택 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55151100) | (Saramin Direct 동시지원 완료, 보안 솔루션) |
+| #1350 | 지엔에이컴퍼니 | Backend Engineer (Python) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55239073) | (Saramin Direct 동시지원 완료, 파이썬 백엔드) |
+| #1351 | 코세틱 | 코세틱 백엔드 개발자 채용 (경력) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55147917) | (Saramin Direct 동시지원 완료, Java 백엔드) |
+| #1352 | 지아이티 | [현대차그룹] 백엔드개발 경력 (클라우드 진단 플랫폼) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55210151) | (Saramin Direct 입사지원 완료, 현대/기아 클라우드 진단 플랫폼 백엔드) |
+| #1353 | 테크핀레이팅스 | [ICT 본부] 백앤드(BE)/서버 개발자 (경력 5년 이상) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55260639) | (Saramin Direct 동시지원 완료, AI 매칭 99% 핀테크/신용평가 백엔드) |
+| #1354 | 디리아 | 백엔드 개발자 채용 (경력 3년 이상) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55132451) | (Saramin Direct 동시지원 완료, AI 매칭 99% 금융 솔루션) |
+| #1355 | 데일리페이 | 핀테크 서비스 Back-End 개발 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55186687) | (Saramin Direct 동시지원 완료, AI 매칭 97% 핀테크/정산 플랫폼) |
+| #1356 | 스토어링크 | 백엔드 개발자 채용 (3년 이상) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55115268) | (Saramin Direct 동시지원 완료, AI 매칭 97% 빅데이터/마케팅 플랫폼) |
+| #1357 | 드림어스컴퍼니 | 음악 서비스 백엔드 서버 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55090653) | (Saramin Direct 동시지원 완료, AI 매칭 94% FLO 음악 서비스 백엔드) |
+| #1358 | 써로마인드 | [써로마인드] 풀스택 · 프론트엔드 · 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55007380) | (Saramin Direct 입사지원 완료, AI 플랫폼 백엔드) |
+| #1359 | 진이어스 | 백엔드 개발자 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55145675) | (Saramin Direct 동시지원 완료, AI 매칭 97%) |
+| #1360 | 지금24 | 대한민국 대표 지원금 플랫폼 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55142341) | (Saramin Direct 동시지원 완료, AI 매칭 97% 지원금 플랫폼) |
+| #1361 | 넥스원소프트 | 솔루션 개발자 채용 (경력 3년 이상) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55146905) | (Saramin Direct 동시지원 완료, AI 매칭 97% 보안/인증 솔루션) |
+| #1362 | 데이터사이언스랩 | AI 솔루션 / 백엔드 엔지니어 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55198506) | (Saramin Direct 동시지원 완료, AI 매칭 97% AI 솔루션/백엔드) |
+| #1363 | 트라이얼인포매틱스 | 임상시험IT솔루션 - Back-end Developer | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54853952) | (Saramin Direct 동시지원 완료, AI 매칭 97% 의료/임상 솔루션) |
+| #1364 | 위시켓 (Project #156569) | 공공 교육서비스(LMS) 풀스택 개발 (100% 재택근무) | KR | 2026-10-19 | [487](../reports/487-wishket-public-education-lms-fullstack-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/156569/) | 위시켓 도급 발굴 (월 600만/270일, 총 5,400만, 100% 재택), 엔셀 1,973만건(30.6%단축) + SafeCash 무결성 0건 + VoiceLink 동시성제어 및 3대 안심약속 제안서 작성 완료 |
+| #1365 | 블룸에이아이 | [블룸에이아이] 백엔드 개발자 경력직 (5년이상) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54932924) | (Saramin Direct 입사지원 완료, Java/MySQL/ElasticStack/K8s 백엔드) |
+| #1366 | 큐피스트 | [글로벌 AI Chat] 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54409733) | (Saramin Direct 동시지원 완료, AI 매칭 99% 글로벌 서비스 백엔드) |
+| #1367 | 월터워커 | 백엔드 엔지니어 경력 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55089704) | (Saramin Direct 동시지원 완료, AI 매칭 97%) |
+| #1368 | 드랩 | [드랩아트] 비주얼 생성형 AI 파이썬 백엔드 풀스택 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54975308) | (Saramin Direct 동시지원 완료, AI 매칭 97% 생성형 AI 백엔드) |
+| #1369 | 허니냅스 | 글로벌 사이트 백엔드 개발 및 서비스 운영 팀장 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55149095) | (Saramin Direct 동시지원 완료, AI 매칭 97% 글로벌 백엔드) |
+| #1370 | 와이톤 | 백엔드 개발자 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55115564) | (Saramin Direct 동시지원 완료, AI 매칭 97%) |
+| #1371 | 퍼포먼스바이티비더블유에이 | [퍼포먼스바이TBWA] AI 백엔드 개발자 (경력 6년이상) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55187761) | (Saramin Direct 입사지원 완료, AI 백엔드 개발자) |
+| #1372 | 스트라토 | 백엔드 개발자 경력 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55110923) | (Saramin Direct 입사지원 완료, Java/Spring 백엔드) |
+| #1373 | 에이지엘 | [ 예비 유니콘 ] 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55105068) | (Saramin Direct 동시지원 완료, AI 매칭 97% 골프 테크/글로벌 백엔드) |
+| #1374 | 미로아이티 | Back End 개발 경력직 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55145480) | (Saramin Direct 동시지원 완료, AI 매칭 97% 백엔드/소프트웨어) |
+| #1375 | 이우소프트 | Backend Engineer(Platform · 인증/권한) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55242731) | (Saramin Direct 동시지원 완료, AI 매칭 97% 플랫폼 인증/권한 백엔드) |
+| #1376 | 퍼니랜드 | (주)퍼니랜드 백엔드 개발자 모집해요 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55028023) | (Saramin Direct 동시지원 완료, AI 매칭 97% 서비스 백엔드) |
+| #1377 | 알프레드 | Backend Engineer(7년+) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55109618) | (Saramin Direct 동시지원 완료, AI 매칭 97% 글로벌 백엔드) |
+| #1378 | 위시켓 (Project #159142) | 피부진단기 연동 맞춤 시술 추천·상담 시각화 프로그램 개발 (100% 원격 도급) | KR | 2026-10-19 | [488](../reports/488-wishket-skin-diagnostic-consultation-web-2026-10-19.md) | Applied | [Wishket](https://www.wishket.com/project/159142/) | 위시켓 도급 발굴 (총 1,000만/60일, 100% 원격), 엔셀 1,973만건 최적화 + SafeCash 0건 무결성 + VoiceLink WebSocket 실시간 동기화 및 3대 안심약속 제안서 작성 완료 |
+| #1379 | 핀다 | 백엔드 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55262223) | (Saramin Direct 입사지원 완료, 핀테크/대출 플랫폼 백엔드) |
+| #1380 | 바로팜 | 백엔드 개발자 (Python) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55236275) | (Saramin Direct 동시지원 완료, AI 매칭 97% 의약품 커머스/플랫폼) |
+| #1381 | 엘핀 | 풀스택 개발자 채용(React, React Native, Go, Spring Boot) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55119886) | (Saramin Direct 동시지원 완료, AI 매칭 94% 위치기반 핀테크) |
+| #1382 | 케이지파이낸셜 | [KG파이낸셜] 백오피스 및 웹사이트 개발자 경력 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55225924) | (Saramin Direct 동시지원 완료, AI 매칭 92% 금융/백오피스) |
+| #1383 | 패스트레인 | 백엔드 개발자 (여신티켓) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55224091) | (Saramin Direct 동시지원 완료, AI 매칭 92% 뷰티/의료 플랫폼) |
+| #1384 | 프리모아 (Project #48535) | 치과 CBCT STL 추출·정렬 프로그램 개발 (100% 원격 도급) | KR | 2026-10-19 | [489](../reports/489-freemoa-dental-cbct-stl-python-pipeline-2026-10-19.md) | Applied | [Freemoa](https://www.freemoa.net/m4/s41?pno=48535) | 프리모아 도급 발굴 (총 1,000만/70일, 100% 원격 비대면), Ncell 1,973만건(30.6%단축) 파이프라인 + SafeCash 무결성 및 3대 안심약속 제안서 작성 완료 |
+| #1385 | 세나테크놀로지 | 웹 풀스택 개발/운영 엔지니어 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55159098) | (Saramin Direct 입사지원 완료, 카카오게임즈 자회사/글로벌 1위 중견기업) |
+| #1386 | 비즈테크아이 | [LG CNS 자회사] Web 기반 솔루션 개발 및 운영 담당자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55186555) | (Saramin Direct 입사지원 완료, LG CNS 자회사/대기업 계열사) |
+| #1387 | 동행복권 | 동행복권 시스템운영팀 경력직 채용 (JAVA) | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55212426) | (Saramin Direct 입사지원 완료, 기획재정부 지정 공공 복권사업 수탁기관/공기업) |
+| #1388 | 스테이지파이브 | [통신사] STAGE FIVE '백엔드(노드)' 경력자 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55178114) | (Saramin Direct 입사지원 완료, 제4이통사/카카오 관계사 대기업군) |
+| #1389 | 엑시스아이티 | [고려아연계열/엑시스아이티] System Engineer 경력 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55039773) | (Saramin Direct 입사지원 완료, 고려아연 계열 IT 전문사/대기업 계열사) |
+| #1390 | 포시에스 | eformsign 전자문서 서비스 웹 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54974480) | (Saramin Direct 입사지원 완료, 코스닥 상장 전자문서 1위 중견기업) |
