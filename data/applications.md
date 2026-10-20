@@ -1332,3 +1332,9 @@
 | #1388 | 스테이지파이브 | [통신사] STAGE FIVE '백엔드(노드)' 경력자 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55178114) | (Saramin Direct 입사지원 완료, 제4이통사/카카오 관계사 대기업군) |
 | #1389 | 엑시스아이티 | [고려아연계열/엑시스아이티] System Engineer 경력 채용 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55039773) | (Saramin Direct 입사지원 완료, 고려아연 계열 IT 전문사/대기업 계열사) |
 | #1390 | 포시에스 | eformsign 전자문서 서비스 웹 개발자 | KR | 2026-10-19 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54974480) | (Saramin Direct 입사지원 완료, 코스닥 상장 전자문서 1위 중견기업) |
+| #1391 | 네이트커뮤니케이션즈 | Java 백엔드 개발자 채용 (포털 서비스) | KR | 2026-10-20 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55238609) | (Saramin Direct 입사지원 완료, Nate 판/뉴스 검색 색인 및 통합알림 백엔드) |
+| #1392 | 이동의즐거움 | [이동의즐거움] 모바일 서비스 개발 경력직 채용 (Platform&BackEnd) | KR | 2026-10-20 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55308734) | (Saramin Direct 입사지원 완료, 로카모빌리티/이비카드 계열 핀테크 중견기업) |
+| #1393 | 휴맥스 | 휴맥스 시니어 웹 개발자 (10년 이상) | KR | 2026-10-20 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=54809555) | (Saramin Direct 입사지원 완료, 코스닥 상장 글로벌 모빌리티/셋톱 중견기업) |
+| #1394 | 지어소프트 | IT서비스부문 Web/Sever, Cloud 개발자 채용 (개발자) | KR | 2026-10-20 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55225116) | (Saramin Direct 입사지원 완료, 코스닥 상장 오아시스마켓 모회사/중견 IT기업) |
+| #1395 | 브레인즈컴퍼니 | Application성능관리솔루션개발자(경력) | KR | 2026-10-20 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55330605) | (Saramin Direct 입사지원 완료, 코스닥 상장 공공/엔터프라이즈 통합관제 1위 중견기업) |
+| #1396 | 다이퀘스트 | [다이퀘스트] AI 서비스 백엔드 개발자 | KR | 2026-10-20 | — | Applied | [Saramin](https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55142737) | (Saramin Direct 입사지원 완료, 솔트룩스 자회사/공공·금융 AI 전문기업) |
