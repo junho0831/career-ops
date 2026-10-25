@@ -103,3 +103,18 @@
 - [ ] 파이썬 매크로/스크립트나 DevTools 조작 없이 현재 설치된 `browsermcp` 도구로만 수행되었는가?
 - [ ] 회사의 주요 업무/스택에 가장 적합한 이력서 버전이 선택되었는가?
 - [ ] 최종 제출 후 화면에 지원 완료 상태가 반영되었는가?
+
+---
+
+## 6. 주요 플랫폼별 계정 및 로그인 방식 요약
+상세 계정 정보는 [`config/profile.yml`](../config/profile.yml)의 `domain_accounts`를 기준 데이터로 관리합니다.
+
+| 플랫폼 | 도메인 | 로그인 방식 | 계정 정보 | 비고 |
+| :--- | :--- | :--- | :--- | :--- |
+| **위시켓 (Wishket)** | `wishket.com` | **Google 소셜 로그인** | `junho6667@gmail.com` | 100% 원격 외주/프리랜서 프로젝트 제안 |
+| **프리모아 (Freemoa)** | `freemoa.net` | **네이버 소셜 로그인** | `junho8889@naver.com` | 100% 원격 외주/프리랜서 프로젝트 제안 |
+| **원티드 (Wanted)** | `wanted.co.kr` | 이메일 로그인 / OneID | `junho8889@naver.com` | 원클릭 다이렉트 지원 |
+| **리멤버 (Remember)** | `rememberapp.co.kr` | Google 소셜 로그인 | `junho6667@gmail.com` | 오픈프로필 및 이직 제안 |
+| **사람인 (Saramin)** | `saramin.co.kr` | 개인회원 로그인 / 소셜 | `junho8889@naver.com` | 빠른 입사지원 및 공고 스크랩 |
+| **잡코리아 (JobKorea)** | `jobkorea.co.kr` | 개인회원 로그인 | 등록 계정 | 온라인 입사지원 |
+| **현대자동차 (Hyundai)** | `talent.hyundai.com` | 지원자 채용 계정 | `junho8889@naver.com` | 채용 포털 직접 지원 |

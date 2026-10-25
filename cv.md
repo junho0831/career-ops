@@ -2,7 +2,7 @@
 
 데이터 정합성과 배치 안정성을 개선하는 Data/Batch Backend Engineer입니다. Java/Spring Boot 백엔드 경력을 바탕으로 Python/Airflow 기반 FTP 배치, ER Dose RAW/EUV 로그 파싱, PostgreSQL 대용량 적재를 운영하고 있습니다. 약 1,973만 건 처리에서 청크 조회·파싱과 COPY 적재를 겹치는 파이프라인으로 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축했으며, DIE 수율·불량 유형과 EUV Root Cause를 일별 집계해 재실행 가능한 형태로 적재했습니다. 검색 장애 fallback, Redis 인증 상태, RDB 제약 조건, 운영자 재처리 API처럼 데이터 생성부터 복구까지 이어지는 운영 흐름도 개선해 왔습니다.
 
-Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831 | Portfolio: https://github.com/junho0831
+Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/junho0831 | Blog: https://so-dak.com | Portfolio: https://github.com/junho0831
 
 - **생년월일:** 1992.08.31
 - **병역:** 육군 수송 병장, 만기제대 (`2011.10.24 ~ 2013.07.23`)
@@ -15,7 +15,7 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 - Java/Spring Boot 기반 백엔드 개발 경력 3년+
 - Python/Airflow 기반 FTP 배치 이관, RAW/EUV 로그 파싱, 구조화 적재, 재처리 흐름 운영 경험
 - 약 1,973만 건 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축한 PostgreSQL 청크/COPY 파이프라인 개선 경험
-- DIE 수율·불량 유형과 EUV Root Cause를 일별 집계하고 UPSERT해 재실행 결과의 정합성을 확보한 경험
+- DIE 수율·불량 유형과 EUV Root Cause를 일별 집계하고 날짜 범위별 DELETE 후 INSERT로 집계를 교체하는 재처리 흐름 구현 경험
 - Elasticsearch fallback, Redis TTL 인증 상태, RDB 제약 조건, Admin 재처리 API 기반 운영 복구 경험
 - Redis Lua Script, DB Outbox, `FOR UPDATE SKIP LOCKED`, `PESSIMISTIC_WRITE` 기반 실시간 상태 정합성 구현 경험
 
@@ -23,7 +23,7 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 
 - **Backend:** Java, Spring Boot, JPA, REST API
 - **Data / Infra:** PostgreSQL, MySQL, Redis, Elasticsearch, Server-side Cursor, COPY, Range Partition
-- **Realtime / Ops:** LiveKit, WebRTC, Docker, Nginx, SSL, DNS
+- **Realtime / Ops:** LiveKit, WebRTC, RabbitMQ, Redis Pub/Sub, Docker, Nginx, SSL, DNS
 - **Automation / Batch:** GitLab CI/CD, Airflow, Crontab, FTP, Log Parsing
 - **Testing / Auth:** JUnit5, Mockito, JWT, OAuth2, Spring Security
 - **AI / Search:** OpenAI API, LangChain, RAG
@@ -38,14 +38,20 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 #### Prism - Airflow 데이터 처리 자동화
 `Python` `Airflow` `PostgreSQL` `FTP`
 - FTP 파일 처리 배치에서 실패 지점 추적이 어렵고 재실행 시 중복 적재·원본 삭제 순서 문제가 생길 수 있어, Java 배치를 Python/Airflow DAG로 이관하며 처리 단계를 재설계
-- 다운로드, 검증, 변환, 저장, 업로드, 원본 정리 단계를 task로 분리해 어느 단계에서 실패했는지 확인하고 해당 지점부터 재처리할 수 있도록 개선
+- FTP DAG의 단일 `run_combined` 작업이 배치 내부 다운로드·검증·변환·업로드·DB 저장·원본 정리 흐름을 실행하도록 구성하고, ER Dose는 별도 DAG의 EUV·RAW 파싱 작업으로 분리
 - ER Dose RAW warning 파싱과 EUV root cause 파싱을 별도 실행 경로로 분리하고, `mbeat.er_data_raw_euv.contents`를 구조화 컬럼으로 적재하는 processor/repository 경로 구성
 - `Root clause`, `Exposesue I D`, 문자열 `\\n`, 단위 제거, `3.0 -> 3` 정수 변환 같은 운영 로그 변형을 파서에 반영하고, 개별 필드 실패 시 `NULL` 처리로 전체 row 유실 방지
-- 업로드 성공과 DB commit 이후에만 FTP 원본을 삭제하도록 순서를 고정해 장애 발생 시 데이터 유실 없이 재실행 가능하도록 설계
-- `source_file` unique constraint와 upsert 적재 로직을 적용해 동일 파일이 반복 실행에서 중복 적재되는 문제 방지
+- FTP 이미지·텍스트 결합 처리에서 업로드 성공 후 DB commit, 이후 원본 삭제 순서를 적용하고, 텍스트 단독 경로는 DB commit 이후 삭제하도록 구성
+- RUPI 이미지 메타데이터에 `source_file` unique constraint와 upsert를 적용해 동일 이미지 파일의 중복 메타데이터 적재 방지
 - 입력일+전일 FTP 폴더 병행 스캔, `max_active_runs=1`, `catchup=false`, scratch 파일 정리로 날짜 경계 누락과 반복 실행 리스크 축소
-- `code_occur_time` 기준 range partition에 청크별 COPY 적재하고, 서버사이드 커서 기반 조회와 대기 적재를 1건으로 제한해 이전 청크의 적재와 다음 청크의 조회·파싱을 겹쳐 실행함으로써 약 1,973만 건 처리 시간을 `4,175초 -> 2,896초`로 30.6% 단축
-- Lot 시작·종료 이벤트와 DW 오류 로그를 처리 구간별로 결합해 DIE 수율·불량 유형을 집계하고, EUV Root Cause 빈도와 함께 일별 요약 테이블에 UPSERT하여 재실행 시 결과 정합성 확보
+- `code_occur_time` 기준 range partition에 청크별 COPY 적재하고, 서버사이드 커서 기반 조회와 대기 적재를 1건으로 제한해 이전 청크의 적재와 다음 청크의 조회·파싱을 겹쳐 실행. 약 1,973만 건 RAW 작업, `chunk_size=30000` 조건의 기록된 운영 비교에서 `4,175초 -> 2,896초`로 처리 시간 30.6% 단축
+- Lot 시작·종료 이벤트와 DW 오류 로그를 처리 구간별로 결합해 DIE 수율·불량 유형과 EUV Root Cause를 일별 집계. 지정 날짜 범위의 DELETE 후 INSERT 방식으로 집계를 교체하며, 두 SQL은 별도 실행이므로 삽입 실패 시 재시도 필요
+
+<!-- 2026-10-12 사용자 승인 코드 검증 반영. PythonStudy 9a324fe:
+dags/ftp_batch_hourly_dag.py, dags/er_dose_daily_dag.py,
+ftp_batch/app/batch_runner.py, ftp_batch/processors/rupi_processor.py,
+er_dose/raw/raw_repository.py, docs/pr/er_dose_pipeline_reload_optimization.md.
+성능 수치는 기록과 일치하나 이번 로컬 검증에서 대용량 운영 작업을 재측정하지 않음. -->
 
 #### DataForge - Spring 검색/인증/관리 API
 `Java` `Spring Boot` `PostgreSQL` `Redis` `Elasticsearch` `JWT` `OAuth2`
@@ -112,17 +118,25 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 ---
 
 ### VoiceLink | 실시간 매칭·통화 서비스
-`2024 ~ 현재` · 개인 서비스 · `Java` `Spring Boot` `Redis` `Lua Script` `DB Outbox` `Pub/Sub` `LiveKit` `Docker` `Nginx` `WebRTC`
+`2024 ~ 현재` · 개인 서비스 · `Java` `Spring Boot` `Redis` `Lua Script` `DB Outbox` `RabbitMQ` `Pub/Sub` `LiveKit` `Docker` `Nginx` `WebRTC`
 
 서비스: https://voice-link.co.kr
 
 - AI를 구현·디버깅·문서화·실험 보조 도구로 활용해 실시간 음성 매칭 서비스를 1인으로 설계·개발·배포·운영
 - 실시간 매칭에서 취소 직후 stale 결과가 반환되거나 동일 후보가 중복 선점되는 문제가 있어, Redis ZSET 대기열, Presence TTL, Lua Script 기반 Atomic Claim으로 후보 조회·선점 흐름을 원자화
 - 재매칭 직후 이전 결과가 반환되는 문제를 막기 위해 Cancel Marker를 매칭 확정 전후로 재검증하고 stale 결과를 즉시 폐기하는 구조 적용
-- Pub/Sub 유실 또는 노드 재시작 시 결과 전달이 끊길 수 있어, DB Outbox + Redis Pub/Sub + TTL result key와 `FOR UPDATE SKIP LOCKED` 기반 발행 구조로 매칭 결과 회수 가능성 확보
+- DB Outbox에 발송 이벤트를 기록하고 TTL result key를 유지해 매칭 결과 회수 경로 확보. RabbitMQ 발행기가 활성화되면 우선 발행하고 실패 시 활성화된 Redis Pub/Sub 발행기로 전환하는 경로 구현
+- 2026.07 결과 전달 안정성 개선: `FOR UPDATE SKIP LOCKED` 기반 선점에 유효기간과 lease token을 적용하고, 동일 token의 작업자만 완료·실패 상태를 갱신하도록 구성. 지수 백오프·최대 재시도 횟수와 발행 전 취소·종료 검사 적용
 - 이전 SSE 종료 콜백이 새 대기열을 삭제하는 race condition을 막기 위해 `DeferredResult` 정리 범위를 현재 연결 인스턴스로 제한
 - LiveKit webhook과 `/match/end`를 DB `CallSession.ended_at` 기준으로 통합하고 `PESSIMISTIC_WRITE`로 세션 종료 처리를 직렬화해 유령 세션과 종료 후 재매칭 충돌 해결
 - Docker, Nginx reverse proxy/stream SNI, Let's Encrypt SSL, TURN 포트포워딩, DNS 연결까지 직접 구성해 실서비스 운영
+
+<!-- 2026-10-12 사용자 승인 코드 검증 반영. VoiceLink 37109d5;
+2026-07-16 개선 커밋 5091eba: MatchResultRealtimePublisher,
+MatchOutboxRepository, MatchOutboxLeaseService, MatchOutboxPublisher.
+Outbox 최초 도입은 2026-01-02, Lua 매칭 이력은 2026-01-30이므로
+최근 6개월 경험은 7월의 전달 안정성 개선을 중심으로 설명한다.
+현재 코드의 선택형 브로커 경로를 확인한 것이며 실제 배포 설정·브로커 장애 복구를 검증한 것은 아님. -->
 
 ---
 

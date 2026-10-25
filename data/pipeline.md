@@ -270,17 +270,17 @@
 - [ ] https://www.jumpit.co.kr/position/54924502 | 뷰리드 강남오피스 | 백엔드 개발자 채용 | 서울
 - [ ] https://www.jumpit.co.kr/position/54908188 | 제네시스네스트 | Java 백엔드 개발자 \[경력 1~8년\] | 서울
 - [ ] https://www.wanted.co.kr/wd/384247 | 스터닝 | 백엔드 개발자(3년 이하) | 서울
-- [ ] https://www.wanted.co.kr/wd/384151 | 디라티오 | 암호화폐 거래소 백엔드 개발자 (7년 이상) | 서울
-- [ ] https://www.wanted.co.kr/wd/384120 | 엠서클 | \[웰다\] Product Engineer_BackEnd 파트 3년 이상 | 서울
+- [x] https://www.wanted.co.kr/wd/384151 | 디라티오 | 암호화폐 거래소 백엔드 개발자 (7년 이상) | 서울
+- [x] https://www.wanted.co.kr/wd/384120 | 엠서클 | \[웰다\] Product Engineer_BackEnd 파트 3년 이상 | 서울
 - [x] https://www.wanted.co.kr/wd/384093 | 위밋모빌리티 | Airflow / Python 개발자 | 서울 · 공고마감 ❌
 - [ ] https://www.wanted.co.kr/wd/384070 | 모멘티 | 백엔드 개발자 (4~10년) \[역삼역\] | 서울
-- [ ] https://www.wanted.co.kr/wd/383989 | 인핸스(Enhans) | AI Backend Engineer (Document AI) | 서울
+- [x] https://www.wanted.co.kr/wd/383989 | 인핸스(Enhans) | AI Backend Engineer (Document AI) | 서울
 - [ ] https://www.wanted.co.kr/wd/383861 | 쿠팡 | \[쿠팡\] 백엔드 개발자 (Orchestration Platform) | 서울
 - [ ] https://www.wanted.co.kr/wd/383855 | 닥터프레소 | 백엔드 개발자 | 서울
 - [ ] https://www.wanted.co.kr/wd/383634 | 카테노이드 | 백엔드 엔지니어(B2B 연동/플랫폼) 10년 이상 | 서울
 - [ ] https://www.wanted.co.kr/wd/384500 | 사줘 | 백엔드_Ops Engineering (5년이하) | 경기
-- [ ] https://www.wanted.co.kr/wd/384432 | 아이지넷(보닥) | \[보닥\] JAVA Backend Engineer (10~12년) | 서울
-- [ ] https://www.wanted.co.kr/wd/384339 | 이그레브 | \[대형통신사\] Data Platform Engineer 8년 이상 | 서울
+- [x] https://www.wanted.co.kr/wd/384432 | 아이지넷(보닥) | \[보닥\] JAVA Backend Engineer (10~12년) | 서울
+- [x] https://www.wanted.co.kr/wd/384339 | 이그레브 | \[대형통신사\] Data Platform Engineer 8년 이상 | 서울
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932973&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | 주식회사라피플코리아리미티드 | 국내 대기업 계열사 - 백엔드 개발 경력자(과장-부장) | 서울 강남구
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932924&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)블룸에이아이 | \[블룸에이아이\] 백엔드 개발자 경력직 채용 (5년이상) | 서울 중구
 - [ ] https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54932839&location=ts&searchword=%EB%B0%B1%EC%97%94%EB%93%9C+Java+Spring&searchType=search&paid_fl=n&search_uuid=1c51cfdd-f3cd-42e6-8760-9b320892c709 | (주)밀리언웨어 | \[이천,긴급\] 초급 개발자 모집 ( Spring Boot) | 경기 이천시
@@ -326,7 +326,7 @@
 - [ ] https://www.jumpit.co.kr/position/54912041 | 알티앤씨(주) | 백엔드 개발자(리더급) | 서울
 - [ ] https://www.jumpit.co.kr/position/54991881 | 비즈톡 | 카카오/네이버 연계시스템 서버 개발자 | 서울
 - [ ] https://www.wanted.co.kr/wd/385817 | 글로벌머니익스프레스 | \[Remittance\] 서버개발자 (5년 이상) | 서울
-- [ ] https://www.wanted.co.kr/wd/385747 | 덧셈컴퍼니 | 백엔드 개발자(3년 이상) | 서울
+- [x] https://www.wanted.co.kr/wd/385747 | 덧셈컴퍼니 | 백엔드 개발자(3년 이상) | 서울
 - [ ] https://www.wanted.co.kr/wd/384841 | 헥토 | AI Agent 플랫폼 백엔드 개발자 (Python) 5년 이상 | 서울
 - [ ] https://www.wanted.co.kr/wd/385845 | 택스캔버스 | AI Backend Engineer | 서울
 - [ ] https://www.wanted.co.kr/wd/385826 | 에스엠하이플러스 | Data Engineer | 서울
@@ -438,7 +438,7 @@
 - [ ] https://www.wanted.co.kr/wd/391136 | 쿠팡 | Staff Backend Engineer (Interstellar) | 서울
 - [ ] https://www.wanted.co.kr/wd/390760 | 트리거스 | 백엔드 개발자 5년 이상 | 서울
 - [ ] https://www.wanted.co.kr/wd/390699 | 서울옥션 | 웹서비스개발팀 백엔드 개발자(10년 이상) | 서울
-- [ ] https://www.wanted.co.kr/wd/390060 | 스튜디오얌얌 | 백엔드 개발자 (Backend Engineer) - 서비스 기획부터 함께하는 Product Engineer | 서울
+- [x] https://www.wanted.co.kr/wd/390060 | 스튜디오얌얌 | 백엔드 개발자 (Backend Engineer) - 서비스 기획부터 함께하는 Product Engineer | 서울
 - [ ] https://www.wanted.co.kr/wd/390021 | 롯데카드 | 서버 개발자 | 서울
 - [ ] https://www.wanted.co.kr/wd/391283 | 아치서울 | 백엔드 개발자 | 서울
 - [ ] https://www.wanted.co.kr/wd/391183 | 백패커 | Data Engineer | 서울
