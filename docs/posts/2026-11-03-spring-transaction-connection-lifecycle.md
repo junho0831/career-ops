@@ -1,9 +1,11 @@
 ---
 title: '@Transactional 하나로 두 SQL이 묶이는 이유'
 description: Spring과 H2에서 이체 실패, 내부 호출, 커넥션 공유, flush 후 롤백을 직접 비교하며 JDBC부터 JPA까지 트랜잭션의 경계를 따라간다.
-date: '2026-11-03'
-revised: '2026-11-03'
-status: draft
+date: '2026-11-04'
+revised: '2026-11-04'
+status: publish
+post_id: 1794
+url: https://so-dak.com/spring-transaction-connection-lifecycle/
 ---
 
 A에게서 1만 원을 뺐다. B에게 넣기 전에 예외가 났다. A의 돈은 돌아올까?
@@ -137,14 +139,20 @@ new TransactionTemplate(transactionManager).executeWithoutResult(status -> {
 
 이번 실험은 “두 SQL을 함께 되돌리는가”를 확인했다. 두 요청이 같은 잔액을 동시에 쓰는 경쟁까지 해결한 것은 아니다. 실제 이체에는 잔액 부족·대상 존재·영향받은 행 수 검사와 잠금 또는 버전 기반 충돌 처리도 필요하다.
 
-`@Transactional`이 붙었는지만 확인하는 대신, 이제는 **프록시를 통과했는지, 어떤 리소스를 공유했는지, 언제 반환했는지**를 이어서 설명할 수 있다. 새로운 스레드의 `@Async` 작업도 같은 ThreadLocal을 자동으로 이어받지 않으므로 이 경계를 다시 잡아야 한다.
+`@Transactional`이 붙었는지만 확인하는 대신, 이제는 **프록시를 통과했는지, 어떤 리소스를 공유했는지, 언제 반환했는지**를 이어서 설명할 수 있다. 새로운 스레드의 `@Async` 작업도 같은 ThreadLocal을 자동으로 이어받지 않으므로 이 경계를 다시 잡아야 한다. 비동기 작업이 쌓이는 문제는 [스레드 풀과 대기열 용량](https://so-dak.com/%eb%b0%b1%ec%97%94%eb%93%9c-%ec%95%84%ed%82%a4%ed%85%8d%ec%b2%98-spring-boot-async%ec%99%80-threadpool%ec%9d%84-%ed%99%9c%ec%9a%a9%ed%95%9c-%eb%8c%80%ea%b7%9c%eb%aa%a8-%ed%8a%b8%eb%9e%98%ed%94%bd/)에서 이어서 다뤘다.
 
-재현 코드는 저장소의 `assets/examples/spring-transactions`에 있다. Java 17과 Gradle 8.14.2에서 다음 명령으로 네 시나리오를 실행한다.
+[재현 코드 ZIP](https://so-dak.com/wp-content/uploads/2026/11/spring-transactions-example.zip)을 내려받아 압축을 푼다. Java 17과 Gradle 8.14.2가 준비됐다면 압축을 푼 위치에서 다음 명령으로 네 시나리오를 실행할 수 있다. 처음 실행할 때는 Maven Central에서 의존성을 내려받는다.
 
 ```bash
-gradle -p assets/examples/spring-transactions run
+gradle -p spring-transactions run
 ```
 
-실행 환경: 2026-11-03 Linux·Java 17.0.20.1·Spring 6.1.6·HikariCP 5.0.1·Hibernate 6.4.4.Final·H2 2.2.224. JDBC는 `DataSourceTransactionManager`, JPA는 Hibernate의 리소스 로컬 트랜잭션을 사용했다.
+실행 환경: 2026-11-03 최초 실행, 2026-11-04 배포 ZIP 재검증. Linux·Java 17.0.20.1·Spring 6.1.6·HikariCP 5.0.1·Hibernate 6.4.4.Final·H2 2.2.224. JDBC는 `DataSourceTransactionManager`, JPA는 Hibernate의 리소스 로컬 트랜잭션을 사용했다.
 
 확인 범위: 단일 프로세스·단일 H2 메모리 DB·합성 계좌이며, 네 시나리오는 프록시 롤백, 내부 호출, 커넥션 공유·반환, 영속 객체 동일성·flush 후 롤백이다. 실제 DB의 장애·동시 이체·풀 고갈 부하나 분산 트랜잭션은 측정하지 않았다.
+
+## 참고 자료
+
+- [Spring의 선언적 트랜잭션과 프록시](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
+- [Spring 6.1.6 DataSourceUtils](https://docs.spring.io/spring-framework/docs/6.1.6/javadoc-api/org/springframework/jdbc/datasource/DataSourceUtils.html)
+- [Hibernate 6.4의 flush 동작](https://docs.hibernate.org/orm/6.4/userguide/html_single/#flushing)
