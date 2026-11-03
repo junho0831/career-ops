@@ -2,7 +2,7 @@
 title: WebSocket은 연결됐는데 목소리는 어디로 갈까
 description: VoiceLink의 API·SSE, LiveKit WebSocket, WebRTC 음성 경로를 나눠 연결 성공만으로 통화 성공을 판단할 수 없는 이유를 설명한다.
 date: '2026-10-14'
-revised: '2026-10-15'
+revised: '2026-11-01'
 post_id: 1737
 url: https://so-dak.com/voicelink-signaling-media-path/
 ---
@@ -31,7 +31,17 @@ flowchart TD
 
 ## ‘연결됨’ 다음에 확인할 것
 
-`LiveKitService.connect()`는 `room.connect()`를 기다린 뒤 마이크 트랙을 만들고 `publishAudioTrack()`을 호출한다. 이후 오디오 재생을 시도한다. WebSocket이 열렸다는 관찰 하나에는 이 뒤의 과정이 담기지 않는다.
+`LiveKitService.connect()`의 흐름을 줄이면 이렇다. 실행할 코드가 아닌 호출 순서다.
+
+```text
+room.connect() 완료
+→ 마이크 트랙 생성·발행
+→ _tryStartAudio() 호출
+→ 현재 연결 시도인지 확인
+→ ready 통지
+```
+
+WebSocket이 열렸다는 관찰 하나에는 마이크 발행과 오디오 재생 결과가 담기지 않는다.
 
 재생 처리에는 눈여겨볼 부분이 있다. `_tryStartAudio()`는 `room.startAudio()`가 실패하면 예외를 밖으로 던지지 않고 `false`를 돌려준다. 그런데 호출하는 쪽은 그 반환값을 분기하지 않고 다음 `ready` 단계로 간다. **코드의 준비 완료 표시와 실제 재생 성공도 같은 뜻이 아니었다.**
 
@@ -41,7 +51,7 @@ flowchart TD
 - 발행·구독은 됐는데 수신 패킷이 늘지 않는다면 선택된 미디어 경로를 살핀다. 이때 [외부 TURN 구성](https://so-dak.com/livekit-external-turn/)도 확인 대상이 된다.
 - 수신 패킷은 늘지만 무음이라면 오디오 재생 상태와 음량, 출력 장치를 이어서 본다. 패킷 도착만으로 소리가 들렸다고 결론 내리지 않는다.
 
-코드와 프로토콜에서 정리한 점검 순서이며 실제 장애 재현 결과는 아니다. [마이크 권한과 연결 수명](https://so-dak.com/webrtc-livekit-%ec%97%b0%eb%8f%99-%ed%9a%8c%ea%b3%a0-%ea%b7%b8%eb%83%a5-%ec%98%a4%ed%94%88%ec%86%8c%ec%8a%a4-%ec%84%9c%eb%b2%84-%eb%9d%84%ec%9a%b0%eb%a9%b4-%eb%90%98%eb%8a%94-%ea%b1%b0-%ec%95%84/)을 따로 보는 것도, ‘연결됨’ 한 단어에 가려진 단계를 나누기 위해서다.
+코드와 프로토콜에서 도출한 점검 순서이며 실제 무음 장애를 재현한 결과는 아니다. 취소 후 다시 연결한 경우라면 [옛 마이크와 새 방을 구분하는 처리](https://so-dak.com/webrtc-livekit-%ec%97%b0%eb%8f%99-%ed%9a%8c%ea%b3%a0-%ea%b7%b8%eb%83%a5-%ec%98%a4%ed%94%88%ec%86%8c%ec%8a%a4-%ec%84%9c%eb%b2%84-%eb%9d%84%ec%9a%b0%eb%a9%b4-%eb%90%98%eb%8a%94-%ea%b1%b0-%ec%95%84/)도 함께 확인해야 한다.
 
 ## 참고 자료
 
@@ -49,3 +59,5 @@ flowchart TD
 - [LiveKit SFU: 발행자에서 구독자로 미디어 전달](https://docs.livekit.io/reference/internals/livekit-sfu/)
 
 근거: 2026-10-15 VoiceLink `37109d5`의 `MatchResponseFactory`, `LiveKitTokenService`, Flutter `match_api.dart`·`livekit_service.dart`, 연결 테스트, `livekit.yaml`과 통화 수명주기 문서를 대조했다. 방과 마이크 트랙을 바꿔 넣는 대역 테스트를 두 기기의 실제 음성 수신 근거로 쓰지 않았다.
+
+2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

@@ -3,11 +3,13 @@ post_id: 919
 title: async 함수가 긴 JSON 파싱을 대신해 주지는 않는다
 description: 작은 JSON 파싱 실험으로 async의 실행 순서와 compute의 역할을 비교하고, 네이티브와 웹에서 달라지는 실행 위치를 설명한다.
 date: '2026-06-23'
-revised: '2026-10-12'
+revised: '2026-11-01'
 url: https://so-dak.com/%eb%aa%a8%eb%b0%94%ec%9d%bc-%ec%b5%9c%ec%a0%81%ed%99%94-flutter-isolate%eb%a1%9c-ui-%eb%b2%84%eb%b2%85%ec%9e%84jank-%ed%95%b4%ea%b2%b0-%eb%b0%8f-60fps-%eb%8b%ac%ec%84%b1/
 ---
 
-JSON 파싱 함수에 `async`를 붙이면 긴 계산도 화면 밖에서 돌아갈까? Flutter 3.38.3·Dart 3.10.1에서 작은 예제로 실행 순서를 확인했다. VoiceLink에 도입한 기능이 아닌 독립 학습 실험이다.
+`before → decode → after`. JSON 파싱 함수에 `async`를 붙이고 앞뒤에 표시를 찍었더니 나온 순서다. 호출 다음 줄보다 파싱이 먼저 실행됐다.
+
+Flutter 3.38.3·Dart 3.10.1의 독립 학습 실험이다. VoiceLink에 도입한 기능이나 프레임 개선 결과는 아니다.
 
 함수 앞뒤에 표시를 넣었다. 테스트의 핵심 부분이다.
 
@@ -26,7 +28,9 @@ expect(order, ['before', 'decode', 'after']);
 expect(await result, [{'id': 1}]);
 ```
 
-2026-10-10 Linux에서 실행한 결과는 `before → decode → after`였다. 호출부가 다음 줄로 가기 전에 `jsonDecode`가 실행됐다. `Future`를 반환해도 계산은 여전히 호출한 isolate에서 동기적으로 진행된다. **`async`를 붙였다고 계산을 맡아 줄 작업자가 생긴 것은 아니었다.**
+2026-10-10 Linux에서 이 검증이 통과했다. `Future`를 반환해도 여기의 `jsonDecode`는 호출한 isolate에서 동기적으로 진행된다.
+
+예를 들어 `await`로 응답 다운로드를 기다렸다고 하자. 기다림이 끝난 뒤 큰 JSON을 파싱하는 일까지 자동으로 다른 곳에 맡겨지지는 않는다. **네트워크를 기다리는 시간과 데이터를 계산하는 시간은 나눠 봐야 한다.**
 
 ## 계산만 따로 맡겨 본다
 
@@ -77,8 +81,6 @@ Future<List<int>> parseItemIdsAsync(String source) {
 
 작은 입력은 계산보다 isolate를 시작하고 데이터를 전달하는 비용이 더 클 수도 있다. 이번 네 테스트가 확인한 것도 실행 순서와 반환값·오류이지, 프레임 개선은 아니다. 실제로 옮길 계산은 같은 입력의 처리 시간과 UI 프레임을 비교해 골라야 한다.
 
-파싱을 오래 한다면 먼저 볼 것은 함수 앞의 `async`가 아니라 **계산이 실행되는 자리**다. `Future`를 돌려주는 함수와 다른 isolate에서 일하는 함수는 같은 뜻이 아니다.
-
 ## 참고 자료
 
 - [Flutter의 concurrency와 isolates](https://docs.flutter.dev/perf/isolates)
@@ -86,3 +88,5 @@ Future<List<int>> parseItemIdsAsync(String source) {
 - [Flutter 성능 프로파일링](https://docs.flutter.dev/perf/ui-performance)
 
 실험 근거: 2026-10-10 Linux·Flutter 3.38.3·Dart 3.10.1에서 실행 순서 하나와 `compute` 입력 세 개, 총 네 테스트가 통과했다. 웹 실행과 UI 프레임은 측정하지 않았다. 2026-10-12 대조한 VoiceLink `37109d5`의 `frontend/lib`·`frontend/test`에는 `compute`나 `Isolate.run` 사용이 없다.
+
+2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

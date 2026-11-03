@@ -3,7 +3,7 @@ post_id: 719
 title: Docker가 있는데도 PostgreSQL 테스트는 건너뛰었다
 description: Docker API 버전 때문에 빠진 PostgreSQL 16 테스트를 실행하고, 두 트랜잭션의 잠금 경쟁을 어떤 순서로 검증했는지 따라간다.
 date: '2026-06-14'
-revised: '2026-10-12'
+revised: '2026-11-01'
 url: https://so-dak.com/testcontainers%eb%a5%bc-%ed%99%9c%ec%9a%a9%ed%95%9c-spring-boot-%ec%8b%a4%ec%8b%9c%ea%b0%84-%eb%a7%a4%ec%b9%ad-%eb%a1%9c%ec%a7%81-e2eend-to-end-%ed%86%b5%ed%95%a9-%ed%85%8c%ec%8a%a4%ed%8a%b8/
 ---
 
@@ -35,24 +35,21 @@ client version 1.32 is too old. Minimum supported API version is 1.40
 systemProperty 'api.version', '1.40'
 ```
 
-같은 `MatchOutboxRepositoryPostgresTest`를 다시 실행하자 PostgreSQL 16 컨테이너가 시작됐고, 테스트 한 개가 통과했다. 이제 빠졌던 테스트는 채웠다. 다만 저장소의 기본 설정을 고친 것은 아니므로, 재현할 때도 이 추가 조건을 함께 적어야 한다.
+같은 `MatchOutboxRepositoryPostgresTest`를 재실행하자 PostgreSQL 16 컨테이너가 시작됐고 **건너뜀 1개가 통과 1개로 바뀌었다.** 저장소의 기본 설정을 고친 것은 아니므로 이 결과에는 테스트 JVM의 추가 설정이 필요했다는 조건이 붙는다.
 
 ## 잠긴 첫 행을 정말 건너뛰었나
 
 이 테스트가 답하려는 질문은 작다. Outbox에 두 행이 있고 A가 첫 행을 잠갔을 때, B는 A를 기다리지 않고 다른 행을 가져올 수 있을까?
 
-`MatchOutboxRepository.lockBatchForClaim`의 SQL은 다음 조건으로 처리할 행을 고른다. 조회할 개수를 1로 줄여 선점 경쟁을 만들었다.
+`MatchOutboxRepository.lockBatchForClaim`은 미발송 상태와 재시도·임대 시각으로 대상 행을 고른다. 이 테스트는 조회 수를 1로 줄이고 SQL 끝의 두 조건을 확인한다. 전체 쿼리는 앞의 Outbox 글에 있다.
 
 ```sql
-SELECT * FROM match_outbox
-WHERE sent_at IS NULL
-  AND status IN ('PENDING', 'PROCESSING')
-  AND (next_attempt_at IS NULL OR next_attempt_at <= :now)
-  AND (locked_until IS NULL OR locked_until <= :now)
-ORDER BY COALESCE(next_attempt_at, created_at), id
-LIMIT 1
-FOR UPDATE SKIP LOCKED;
+-- 실제 조회의 끝부분 발췌
+LIMIT :limit
+FOR UPDATE SKIP LOCKED
 ```
+
+`limit=1`일 때 A가 잠근 첫 행을 B가 건너뛰어야 한다.
 
 가짜 저장소가 다른 행을 반환하게 하면 그 뒤의 서비스 동작은 검사할 수 있다. 여기서는 **DB가 잠긴 행을 실제로 건너뛰는지**가 궁금하다. 그래서 실제 엔진과 별도 트랜잭션을 쓴다.
 
@@ -79,7 +76,7 @@ assertThat(List.of(firstClaimedId, secondClaimedId))
 
 재실행은 이 순서와 ID 검증을 모두 통과했다. 테스트가 실패해도 첫 작업의 대기를 풀고 실행기를 닫도록 정리 코드를 둔다.
 
-이번에는 실패가 아니라 건너뜀 한 줄에 원인이 숨어 있었다. 초록색 결과를 읽을 때도, **확인하려던 질문이 실행 대상에 들어갔는지**부터 봐야 했다.
+CI에서도 이 경쟁을 반드시 검사하려면 건너뜀 개수까지 확인해야 한다. 테스트에는 Docker를 사용할 수 없을 때 건너뛰는 설정이 있어, **실패 0개만으로 PostgreSQL 잠금 검증을 통과했다고 표시할 수는 없다.**
 
 ## 참고 자료
 
@@ -88,3 +85,5 @@ assertThat(List.of(firstClaimedId, secondClaimedId))
 - [PostgreSQL 16 SELECT와 행 잠금](https://www.postgresql.org/docs/16/sql-select.html)
 
 근거: VoiceLink `1704b46`의 백엔드 실행 로그와 `MatchOutboxRepositoryPostgresTest` 재실행, 저장소 SQL·테스트 설정. 2026-10-12 기준 `37109d5`에서도 관련 저장소·테스트·빌드 설정은 동일하다. 조건부 재실행 환경은 Java 17.0.20.1·Spring Boot 3.2.5·Testcontainers 1.19.7이며 테스트 JVM의 Docker API 버전은 1.40이다. 브라우저·실기기 E2E 결과는 아니다.
+
+2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

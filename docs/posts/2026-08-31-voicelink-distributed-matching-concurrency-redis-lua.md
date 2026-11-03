@@ -3,7 +3,7 @@ post_id: 1430
 title: Redis Lua가 끝난 뒤에도 매칭은 끝나지 않았다
 description: 실제 Lua에 두 요청을 100회 보내 후보 선점과 제한 탐색을 확인하고, 선점 뒤 취소를 처리하는 VoiceLink 코드를 연결한다.
 date: '2026-08-31'
-revised: '2026-10-15'
+revised: '2026-11-01'
 url: https://so-dak.com/voicelink-distributed-matching-concurrency-redis-lua/
 ---
 
@@ -77,7 +77,7 @@ flowchart TD
  O --> D["로컬 응답<br/>별도 발행 경로"]
 ```
 
-`MatchFinalizer`는 세션 생성 전후와 응답 생성 뒤에 취소 신호를 확인한다. 처음 확인할 때 A가 기다리고 있었어도, DB에 세션을 저장하는 사이 취소할 수 있기 때문이다. 한 번 확인한 값을 끝까지 믿을 수 없다. 세션을 연 다음의 처리는 이렇다.
+`MatchFinalizer`는 세션 생성 전후와 응답 생성 뒤에 취소 신호를 확인한다. 처음엔 기다리던 A도 저장 중에 취소할 수 있어서다. 이미 세션을 열었다면 다음 분기로 들어간다.
 
 ```java
 if (requeueOnCancelSignal(clientA, clientB)) {
@@ -90,7 +90,7 @@ if (requeueOnCancelSignal(clientA, clientB)) {
 
 `MatchFinalizerTest`의 저장 후 취소 사례는 A의 취소 조회가 처음에는 `false`, 다음에는 `true`를 반환하게 만든다. 그때 B를 재등록하고 열린 세션을 닫으며, Outbox에 매칭 결과를 넣지 않는지 검사한다. 저장 전후와 응답 생성 뒤를 나눈 대역 테스트이며, 모든 시점의 취소나 실제 Redis·DB 복구를 증명하는 시험은 아니다.
 
-**복구한다고 두 사람을 모두 줄에 세울 수는 없다.** A는 그만 기다리겠다고 했고, B는 계속 기다리는 중이다. 되돌릴 상태도 그 차이를 따라야 한다.
+A는 그만 기다리겠다고 했고 B는 계속 기다리는 중이므로, 복구 대상은 B다. 다음으로 시험할 틈도 여기 있다. **B의 Redis 재등록이 실패하면 열린 DB 세션 정리까지 어떻게 진행되는가?** 현재의 대역 테스트와 Lua 100회 실험을 합쳐도 이 장애 복구까지 검증한 것은 아니다.
 
 ## 참고 자료
 
@@ -100,3 +100,5 @@ if (requeueOnCancelSignal(clientA, clientB)) {
 - [Spring Data Redis 스크립팅](https://docs.spring.io/spring-data/redis/reference/redis/scripting.html)
 
 근거: 2026-10-15 VoiceLink `37109d5`의 Lua·Redis 저장소·매칭 확정 코드·테스트와 매칭 흐름 문서를 재확인했다. 수치는 10월 9일 단일 Redis 인스턴스의 실험 기록이다. 재등록 도중 Redis 장애·프로세스 종료가 발생하는 경우와 Redis Cluster는 이 글의 검증 범위에 포함하지 않았다.
+
+2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

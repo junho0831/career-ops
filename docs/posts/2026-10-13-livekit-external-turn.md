@@ -2,7 +2,7 @@
 title: TURN을 껐는데 coturn은 왜 남아 있을까
 description: LiveKit의 turn.enabled와 rtc.turn_servers를 나란히 읽으며, 내장 TURN 비활성화와 외부 coturn 사용이 함께 성립하는 이유를 설명한다.
 date: '2026-10-14'
-revised: '2026-10-15'
+revised: '2026-11-01'
 post_id: 1738
 url: https://so-dak.com/livekit-external-turn/
 ---
@@ -52,8 +52,19 @@ flowchart TD
 
 프로젝트 문서의 TLS 경로가 좋은 예다. 클라이언트는 외부 **443**으로 접속하지만 coturn은 **5349**에서 받도록 설명돼 있다. 그 사이에서 Nginx가 TLS 요청의 서버 이름을 보고 coturn으로 보낸다. 숫자가 다르다고 곧바로 오타는 아니다. 대신 클라이언트에 알린 포트, Nginx 전달 대상, coturn 리스너가 한 경로로 이어지는지 봐야 한다.
 
-내장 TURN의 스위치 하나로 이 세 곳을 바꿀 수는 없다. 설정을 읽을 때도 **접속 정보를 알려 주는 쪽과 실제 중계 서버를 실행하는 쪽**을 나누면, 어디를 수정해야 하는지가 보인다. 후보가 있다는 사실과 실제 경로 선택의 차이는 [별도 로컬 실험](https://so-dak.com/turn-relay-verification/)에서 확인했다.
+여기서 파일 하나를 더 읽어야 한다. 저장소의 `infra/coturn/turnserver.conf` 템플릿은 `tls-listening-port=443`으로 적혀 있다. **문서의 내부 5349와 템플릿의 직접 수신 443은 그대로 섞어 쓸 수 없다.**
+
+| 구성 | 외부 접속 | coturn 수신 |
+| --- | --- | --- |
+| 템플릿의 직접 수신 | 443 | 443 |
+| 문서의 Nginx 경유 | 443 | 5349 |
+
+두 자료는 서로 다른 수신 구성을 전제한다. Nginx가 5349로 보내는데 coturn이 443만 듣는다면 연결이 이어지지 않는다. 현재 호스트가 어느 구성을 적용했는지는 이 저장소 대조만으로 확정하지 않았다.
+
+설정을 맞춘 뒤에도 [선택된 미디어 경로](https://so-dak.com/turn-relay-verification/)를 확인해야 한다. 외부 TURN을 목록에 넣었다는 사실만으로 이번 통화가 그 서버를 지났다고 말할 수는 없다.
 
 ## 확인한 근거
 
 2026-10-15 VoiceLink `37109d5`의 `livekit.yaml`, `docker-compose.yml`, `infra/coturn/turnserver.conf`, coturn 구축·서버 아키텍처 문서를 대조했다. 현재 구성을 해석한 글이며, 외부 coturn을 선택한 당시의 대안 비교를 재구성한 회고는 아니다. 문서의 TLS 경로를 호스트에서 다시 시험하지는 않았다. LiveKit 이미지 태그는 `latest`라 실행 서버 버전도 이 설정만으로 특정하지 않았다.
+
+2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

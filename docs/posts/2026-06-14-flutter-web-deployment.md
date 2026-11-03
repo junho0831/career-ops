@@ -3,7 +3,7 @@ post_id: 712
 title: Flutter 웹에서 화면 요청과 API 요청을 나누는 법
 description: Nginx가 앱 문서를 보내는 것과 Flutter가 통화 화면을 여는 것을 나눠 보고, API 분기와 /call 인자가 필요한 이유를 설명한다.
 date: '2026-06-14'
-revised: '2026-10-12'
+revised: '2026-11-01'
 url: https://so-dak.com/flutter-web%ea%b3%bc-spring-boot-%ec%97%b0%eb%8f%99%ec%9d%84-%ec%9c%84%ed%95%9c-nginx-%eb%a6%ac%eb%b2%84%ec%8a%a4-%ed%94%84%eb%a1%9d%ec%8b%9c-%eb%b0%8f-spa-%eb%9d%bc%ec%9a%b0%ed%8c%85-%ec%b5%9c/
 ---
 
@@ -29,7 +29,16 @@ location / {
 
 `/api/`는 백엔드로 넘기고, 나머지는 파일을 찾은 뒤 없으면 앱 문서를 보낸다. 이 `proxy_pass`에는 경로를 붙이지 않아 `/api/`를 포함한 요청 경로가 백엔드로 전달된다.
 
-따라서 **200이라는 숫자만으로 API 성공을 판단하면 안 된다.** JSON을 기대했는데 HTML이 왔다면 요청 분기부터 본다. 없는 JavaScript 파일도 위 fallback으로 HTML을 받을 수 있어 응답 내용과 `Content-Type`을 같이 확인한다.
+개발자 도구에서 다음처럼 보인다고 가정해 보자. 실제 장애 로그가 아닌 응답 예시다.
+
+```text
+요청: /api/items
+상태: 200
+Content-Type: text/html
+본문: <!DOCTYPE html> ...
+```
+
+**성공한 것은 문서 응답이지 JSON API가 아니다.** 이때는 Flutter의 JSON 파서보다 `/api/` 요청 분기를 먼저 본다. 없는 JavaScript 파일도 fallback으로 HTML을 받을 수 있으므로 상태 코드와 응답 본문을 함께 확인한다.
 
 ## /call은 주소만으로 열 수 없다
 
@@ -55,7 +64,7 @@ if (isAuthenticated &&
 | API에 JSON 대신 HTML이 옴 | `/api/` 분기와 전달 경로 |
 | 앱이 `/call`에서 `/main`으로 이동 | 인증 상태와 통화 인자 |
 
-표는 코드에서 도출한 점검 순서다. 같은 “화면이 안 열린다”여도, **앱 문서가 오지 않은 경우와 앱이 다른 화면을 선택한 경우**를 나누면 손댈 곳이 달라진다.
+표는 코드에서 도출한 점검 순서다. `/call` 새로고침을 지원하려면 마지막 행의 조건을 해결해야 한다. 정적 파일 응답을 고치는 것만으로는 사라진 통화 인자가 복원되지 않는다.
 
 ## 참고 자료
 
@@ -64,3 +73,5 @@ if (isAuthenticated &&
 - [Nginx try_files](https://nginx.org/en/docs/http/ngx_http_core_module.html#try_files)
 
 근거: 2026-10-12 VoiceLink `37109d5`의 `Dockerfile.frontend`, 웹 초기화 코드, `app_router.dart`·`app_routes.dart`, 라우터 테스트와 `docs/nginx-configuration-guide.md`를 대조했다. 같은 날 Linux·Flutter 3.38.3에서 위 인자 없는 `/call` 진입 테스트 한 개가 통과했다. 인증 대역을 쓴 라우터 검사이며, 운영 Nginx나 실제 브라우저 새로고침을 재현한 결과는 아니다.
+
+2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.
