@@ -4,7 +4,7 @@ title: 게시글 목록의 댓글 개수를 가져오는 세 가지 방법
 description: Hibernate와 H2에서 댓글 8·2·0개를 조회해 배치 로딩, fetch join, 집계의 SQL 수와 엔티티 적재 수를 비교한다.
 date: '2026-08-14'
 evidence_review: '보관 실험 기록 대조 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 url: https://so-dak.com/jpa-n1-%eb%ac%b8%ec%a0%9c%ec%99%80-fetch-join-%ec%8b%a4%eb%ac%b4-%ea%b3%a0%ec%b0%b0-lazy-loading%ec%9d%b4%eb%a9%b4-%eb%8b%a4-%ed%95%b4%ea%b2%b0%eb%90%98%eb%82%98/
 ---
 
@@ -14,7 +14,7 @@ url: https://so-dak.com/jpa-n1-%eb%ac%b8%ec%a0%9c%ec%99%80-fetch-join-%ec%8b%a4%
 
 ## 같은 세 게시글로 네 번 조회했다
 
-지연 로딩을 기준으로 놓고, **배치 로딩·fetch join·집계 세 가지 대안**을 비교했다. 그래서 아래 표에는 기준을 포함해 네 행이 나온다.
+같은 목록을 **배치 로딩·fetch join·집계**로 각각 만들고, 기본 지연 로딩과 비교했다.
 
 Java 클래스는 `Post`·`Comment`, HQL에서 쓰는 엔티티 이름은 `@Entity(name = "DemoPost")`·`@Entity(name = "DemoComment")`로 지정했다. 아래 쿼리의 `DemoPost`와 반환 타입 `Post.class`가 다른 이유다. [엔티티 이름 규칙](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#root-entity-references)
 
@@ -89,7 +89,7 @@ var rows = session.createQuery("""
 
 이 수치는 해당 데이터 조회만 센 결과다. 페이지 전체 개수를 구하는 별도 쿼리나 운영 DB의 실행 시간은 포함하지 않았다. 집계도 댓글 수가 많으면 DB에서 세는 비용이 들고, 댓글 내용이 필요한 상세 화면에는 이 결과만으로 부족하다.
 
-이 목록에는 ID·제목·댓글 수만 필요하므로 집계 결과로 충분하다. 반대로 댓글 본문을 펼치는 화면이라면 별도의 조회가 필요하다. **화면에 필요한 값부터 적어 놓으면**, SQL 횟수를 줄이다가 불필요한 객체를 전부 가져오는 선택을 피하기 쉽다.
+이 목록에서 필요한 값은 ID·제목·댓글 수였다. 그래서 집계로 충분했다. 댓글 본문을 펼쳐야 하는 화면이라면 선택이 달라진다. **SQL이 몇 번인가를 묻기 전에, 화면이 무엇을 쓸지부터 적어 보는 편이 낫다.**
 
 [전체 재현 코드 ZIP](https://so-dak.com/wp-content/uploads/2026/11/jpa-fetch-example-20261104.zip)에는 두 엔티티, 합성 데이터, 네 조회와 검사가 들어 있다. Java 17·Gradle 8.14.2에서 압축을 푼 뒤 실행한다.
 

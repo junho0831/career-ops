@@ -4,7 +4,7 @@ title: Docker가 있는데도 PostgreSQL 테스트는 건너뛰었다
 description: Docker API 버전 때문에 빠진 PostgreSQL 16 테스트를 실행하고, 두 트랜잭션의 잠금 경쟁을 어떤 순서로 검증했는지 따라간다.
 date: '2026-06-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 url: https://so-dak.com/testcontainers%eb%a5%bc-%ed%99%9c%ec%9a%a9%ed%95%9c-spring-boot-%ec%8b%a4%ec%8b%9c%ea%b0%84-%eb%a7%a4%ec%b9%ad-%eb%a1%9c%ec%a7%81-e2eend-to-end-%ed%86%b5%ed%95%a9-%ed%85%8c%ec%8a%a4%ed%8a%b8/
 ---
 
@@ -75,7 +75,7 @@ assertThat(List.of(firstClaimedId, secondClaimedId))
 
 `secondClaim.get`이 `releaseFirst.countDown`보다 앞에 있다. A를 풀기 전에 B의 결과를 받는 순서다. 단지 두 작업이 끝난 뒤 서로 다른 ID만 비교하는 것보다 확인 범위가 분명하다.
 
-재실행은 이 순서와 ID 검증을 모두 통과했다. 테스트가 실패해도 첫 작업의 대기를 풀고 실행기를 닫도록 정리 코드를 둔다.
+재실행에서는 A가 잠근 동안 B가 다른 행을 가져왔다. 이 순서와 ID 검사 모두 통과했다. 실패하더라도 A의 대기를 풀고 실행기를 닫도록 정리한다. 잠금 검사를 하다가 테스트 자체가 영원히 기다려서는 곤란하다.
 
 CI에서도 이 경쟁을 반드시 검사하려면 건너뜀 개수까지 확인해야 한다. 테스트에는 Docker를 사용할 수 없을 때 건너뛰는 설정이 있어, **실패 0개만으로 PostgreSQL 잠금 검증을 통과했다고 표시할 수는 없다.**
 

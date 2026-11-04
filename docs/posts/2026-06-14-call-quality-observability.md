@@ -3,7 +3,7 @@ post_id: 714
 title: 누적 손실률이 통화가 끊긴 순간을 가리는 이유
 description: 같은 패킷 손실이 누적으로는 0.91%, 짧은 구간에서는 10%가 되는 이유와 VoiceLink의 5초 표본을 읽을 때 필요한 조건을 살펴본다.
 date: '2026-06-14'
-revised: '2026-10-27'
+revised: '2026-11-05'
 url: https://so-dak.com/flutter-webrtc-%ed%86%b5%ed%99%94-%ed%92%88%ec%a7%88-%ec%b8%a1%ec%a0%95-redis-timeline%ec%9d%84-%ed%99%9c%ec%9a%a9%ed%95%9c-5%ec%b4%88-%eb%8b%a8%ec%9c%84-%eb%8d%b0%ec%9d%b4%ed%84%b0-%ec%88%98/
 ---
 
@@ -49,7 +49,7 @@ lost + received <= 0이어도 미측정
 
 같은 참가자여도 재연결로 수신 스트림이 바뀌었다면 새 기준 표본이 필요하다. 현재 전송 데이터에는 스트림 식별자와 원본 통계의 측정 시각이 없다. `capturedAtEpochMillis`는 앱이 표본을 만든 시각이므로, 마지막으로 받은 통계가 정확히 그 시점의 값이라고 볼 수도 없다.
 
-따라서 구간 계산을 붙이려면 원본 통계의 시각과 스트림 식별 정보를 먼저 남겨야 한다. 손실 카운터는 추정 방식상 음수가 될 수도 있어, 값이 줄었다고 무조건 초기화로 처리해서는 안 된다. [W3C 통계 정의](https://www.w3.org/TR/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetslost)도 이 점을 명시한다.
+최근 5초를 구하려면 결국 **언제 측정한 어느 스트림의 값인지**부터 남겨야 한다. 손실 카운터는 추정 방식상 음수가 될 수도 있어, 값이 줄었다고 무조건 초기화로 처리해서는 안 된다. [W3C 통계 정의](https://www.w3.org/TR/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetslost)도 이 점을 명시한다.
 
 마지막으로, **측정하지 못한 값은 0%가 아니다.** 모니터는 카운터가 없으면 손실률을 `null`로 두고, 수신 통계 자체가 없으면 품질을 `POOR`로 분류한다. 이 경고만으로 패킷 손실을 관측했다고 말할 수는 없다. 구간 분석에서도 비교할 두 표본이나 패킷 증가분이 없으면 미측정으로 남겨야 한다.
 

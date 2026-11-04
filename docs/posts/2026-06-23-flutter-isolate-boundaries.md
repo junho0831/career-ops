@@ -4,7 +4,7 @@ title: async 함수가 긴 JSON 파싱을 대신해 주지는 않는다
 description: 작은 JSON 파싱 실험으로 async의 실행 순서와 compute의 역할을 비교하고, 네이티브와 웹에서 달라지는 실행 위치를 설명한다.
 date: '2026-06-23'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 url: https://so-dak.com/%eb%aa%a8%eb%b0%94%ec%9d%bc-%ec%b5%9c%ec%a0%81%ed%99%94-flutter-isolate%eb%a1%9c-ui-%eb%b2%84%eb%b2%85%ec%9e%84jank-%ed%95%b4%ea%b2%b0-%eb%b0%8f-60fps-%eb%8b%ac%ec%84%b1/
 ---
 
@@ -12,7 +12,7 @@ url: https://so-dak.com/%eb%aa%a8%eb%b0%94%ec%9d%bc-%ec%b5%9c%ec%a0%81%ed%99%94-
 
 Flutter 3.38.3·Dart 3.10.1의 독립 학습 실험이다. VoiceLink에 도입한 기능이나 프레임 개선 결과는 아니다.
 
-함수 앞뒤에 표시를 넣었다. 테스트의 핵심 부분이다.
+아래 테스트는 파싱 호출 전후에 표시를 넣어 실행 순서를 확인한다.
 
 ```dart
 final order = <String>[];
@@ -67,7 +67,7 @@ Future<List<int>> parseItemIdsAsync(String source) {
 | `{"id":1}` | 목록이 아니므로 `FormatException` |
 | `[{"id":"1"}]` | ID가 정수가 아니므로 `FormatException` |
 
-잘못된 입력을 빈 목록으로 바꾸지 않았다. “항목이 없다”와 “응답 형식이 틀렸다”를 호출부가 구분할 수 있게 한 것이다. 계산을 옮겨도 결과와 오류를 처리할 책임은 남는다.
+ID가 `"1"`이면 숫자로 슬쩍 바꾸지 않고 오류를 낸다. 빈 목록을 돌려주면 “항목이 없는 정상 응답”과 구분할 수 없기 때문이다. 계산 장소를 옮겨도 입력을 검사하는 일은 남는다.
 
 ## 같은 compute인데 웹에서는 다르다
 

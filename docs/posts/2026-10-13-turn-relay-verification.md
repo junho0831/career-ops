@@ -3,7 +3,7 @@ title: TURN 후보가 보인다고 중계 중인 건 아니다
 description: 같은 PC에서 coturn과 두 WebRTC 연결을 띄워 직접 연결과 강제 중계를 비교했다. 선택된 candidate pair, relayProtocol, 수신 RTP 패킷으로 확인한 결과를 정리한다.
 date: '2026-10-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 post_id: 1739
 url: https://so-dak.com/turn-relay-verification/
 ---
@@ -42,7 +42,7 @@ relay·TCP  A 76→126  B 76→127
 
 `protocol`은 후보 자체의 전송 프로토콜이고, 로컬 중계 후보의 `relayProtocol`은 **브라우저에서 TURN 서버까지 사용한 전송 방식**이다. 이번 TCP 조건에서는 각각 `udp`, `tcp`로 갈렸다.
 
-다음은 연결 후 통계에서 그 둘을 나눠 읽는 예시다. 후보 목록에서 `relay`를 검색하는 대신, **현재 transport가 가리키는 선택된 쌍부터 찾는다.** 그 쌍의 ID로 로컬·원격 후보를 읽으면 이번 연결에 쓰인 후보의 정보를 볼 수 있다. 통계가 아직 없으면 건너뛴다.
+아래 코드는 **현재 선택된 쌍 → 그 쌍의 로컬·원격 후보** 순서로 읽는다. 후보 명단 전체에서 `relay`를 찾는 것과 다른 부분이다. 아직 선택 정보가 없으면 건너뛴다.
 
 ```javascript
 const stats = await pc.getStats();

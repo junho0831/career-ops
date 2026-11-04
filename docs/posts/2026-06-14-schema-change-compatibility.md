@@ -3,7 +3,7 @@ post_id: 716
 title: sent_at이 있다고 발송 성공은 아니었다
 description: 발송을 포기해도 sent_at을 채우던 Outbox에서 과거 실패가 SENT로 바뀌는 조건과 상태 변환 전에 확인할 기록을 살펴본다.
 date: '2026-06-14'
-revised: '2026-10-27'
+revised: '2026-11-05'
 url: https://so-dak.com/jpa-ddl-autoupdate%ec%9d%98-%ec%9c%84%ed%97%98%ec%84%b1%ea%b3%bc-flyway%eb%a5%bc-%ed%99%9c%ec%9a%a9%ed%95%9c-%ec%95%88%ec%a0%84%ed%95%9c-db-%eb%a7%88%ec%9d%b4%ea%b7%b8%eb%a0%88%ec%9d%b4%ec%85%98/
 ---
 
@@ -48,7 +48,9 @@ Hibernate `validate` 역시 컬럼과 엔티티의 구조를 검사할 뿐, 그 
 
 반대로 `FAILED`로 분류된 행은 후속 SQL에서 `sent_at`을 비운다. 새 코드의 최종 실패 테스트도 `FAILED`와 빈 시각을 함께 기대한다. [Outbox의 재시도와 최종 실패](https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/)를 새 상태로 구분하는 부분이다.
 
-적용할 때는 두 조건도 남는다. 구버전 앱이 계속 행을 쓰면 한 번의 변환으로는 이후 데이터를 처리하지 못한다. 쓰기를 멈추거나 호환되는 쓰기와 추가 변환을 준비해야 한다. 또 이 파일은 수동 실행용이며, `CREATE INDEX CONCURRENTLY`가 있어 전체를 한 트랜잭션으로 감쌀 수 없다. 중간 실패 시 적용된 단계부터 확인해야 한다.
+실행 순서도 중요하다. 변환 도중 구버전 앱이 새 행을 쓰면 그 행은 한 번 끝난 변환에서 빠질 수 있다. 쓰기를 멈추거나, 호환되는 쓰기와 추가 변환이 필요하다.
+
+이 파일은 수동 실행용이다. `CREATE INDEX CONCURRENTLY`가 포함돼 전체를 한 트랜잭션으로 묶을 수 없으니, 중간에 멈췄다면 어디까지 적용됐는지부터 확인한다.
 
 이 변환에서 먼저 필요한 것은 더 강한 `NOT NULL` 제약이 아니다. **같이 생긴 두 행을 구분할 기록이 남아 있는지**다. 그 기록이 없으면 SQL만으로 과거의 성공을 복원할 수 없다.
 

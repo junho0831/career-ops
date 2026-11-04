@@ -3,7 +3,7 @@ title: WebSocket은 연결됐는데 목소리는 어디로 갈까
 description: VoiceLink의 API·SSE, LiveKit WebSocket, WebRTC 음성 경로를 나눠 연결 성공만으로 통화 성공을 판단할 수 없는 이유를 설명한다.
 date: '2026-10-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 post_id: 1737
 url: https://so-dak.com/voicelink-signaling-media-path/
 ---
@@ -46,7 +46,7 @@ WebSocket이 열렸다는 관찰 하나에는 마이크 발행과 오디오 재�
 
 재생 처리에는 눈여겨볼 부분이 있다. `_tryStartAudio()`는 `room.startAudio()`가 실패하면 예외를 밖으로 던지지 않고 `false`를 돌려준다. 그런데 호출하는 쪽은 그 반환값을 분기하지 않고 다음 `ready` 단계로 간다. **코드의 준비 완료 표시와 실제 재생 성공도 같은 뜻이 아니었다.**
 
-앞의 무음 상황에 적용하면 확인할 곳이 달라진다.
+소리가 안 들릴 때도 연결을 처음부터 전부 의심하기보다, 어디까지 진행됐는지 따라가면 범위가 좁아진다.
 
 - 마이크 트랙 발행 전이라면 권한과 트랙 생성부터 본다. 보낸 적이 없는 소리를 중계 서버에서 찾을 수는 없다.
 - 발행·구독은 됐는데 수신 패킷이 늘지 않는다면 선택된 미디어 경로를 살핀다. 이때 [외부 TURN 구성](https://so-dak.com/livekit-external-turn/)도 확인 대상이 된다.

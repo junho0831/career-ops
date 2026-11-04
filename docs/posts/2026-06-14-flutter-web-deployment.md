@@ -4,13 +4,13 @@ title: Flutter 웹에서 화면 요청과 API 요청을 나누는 법
 description: Nginx가 앱 문서를 보내는 것과 Flutter가 통화 화면을 여는 것을 나눠 보고, API 분기와 /call 인자가 필요한 이유를 설명한다.
 date: '2026-06-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 url: https://so-dak.com/flutter-web%ea%b3%bc-spring-boot-%ec%97%b0%eb%8f%99%ec%9d%84-%ec%9c%84%ed%95%9c-nginx-%eb%a6%ac%eb%b2%84%ec%8a%a4-%ed%94%84%eb%a1%9d%ec%8b%9c-%eb%b0%8f-spa-%eb%9d%bc%ec%9a%b0%ed%8c%85-%ec%b5%9c/
 ---
 
 VoiceLink의 웹 Dockerfile은 없는 화면 경로에 `index.html`을 돌려준다. 그런데 `/call`에 인자 없이 들어가면 라우터는 `/main`으로 보낸다. 앱 문서는 받았는데 통화 화면은 안 열린다.
 
-**문서를 받는 일과 화면을 여는 일은 서로 다른 단계다.** Flutter 3.38.3을 쓰는 프로젝트의 Nginx 설정과 라우터를 함께 읽어 보면, 어디에서 막혔는지 나눌 수 있다.
+여기서 Nginx 설정만 바꾸면 계속 엉뚱한 곳을 고치게 된다. **서버가 앱 문서를 보냈는지, 실행된 앱이 어떤 화면을 골랐는지** 순서대로 보면 된다. Flutter 3.38.3을 쓰는 프로젝트의 두 설정을 함께 읽었다.
 
 ## 화면에는 앱 문서를, API에는 API 응답을
 

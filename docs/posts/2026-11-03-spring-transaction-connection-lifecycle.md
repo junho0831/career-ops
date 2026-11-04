@@ -2,7 +2,7 @@
 title: '@Transactional 하나로 두 SQL이 묶이는 이유'
 description: Spring과 H2에서 이체 실패, 내부 호출, 커넥션 공유, flush 후 롤백을 직접 비교하며 JDBC부터 JPA까지 트랜잭션의 경계를 따라간다.
 date: '2026-11-04'
-revised: '2026-11-04'
+revised: '2026-11-05'
 status: publish
 post_id: 1794
 url: https://so-dak.com/spring-transaction-connection-lifecycle/
@@ -22,7 +22,8 @@ Spring 6.1.6과 H2로 작은 실험을 만들었다. A 5만 원·B 2만 원의 �
 @Transactional
 public void failTransfer() {
     jdbc.update(
-        "update account set balance=balance-10000 where id=1");
+        "update account set balance=balance-10000 "
+        + "where id=1");
     throw new StopTransfer();
 }
 
@@ -46,7 +47,7 @@ public void callInternally() {
 
 ## SQL 두 개가 같은 커넥션을 만나는 곳
 
-순수 JDBC에서는 같은 `Connection`의 자동 커밋을 끄고 두 SQL을 실행한 뒤 커밋하거나 롤백할 수 있다. Spring도 DB 대신 송금하는 것은 아니다. 그 커넥션을 **누가 빌리고, 공유하고, 반환할지** 관리한다.
+순수 JDBC에서는 같은 `Connection`의 자동 커밋을 끄고 두 SQL을 실행한 뒤 커밋하거나 롤백할 수 있다. Spring은 그 커넥션을 **누가 빌리고, 두 SQL에 공유하고, 언제 반환할지** 관리한다.
 
 | 구성 요소 | 이 실험에서 맡은 일 |
 | --- | --- |
@@ -89,16 +90,6 @@ TransactionInterceptor가 트랜잭션 매니저 호출
 
 풀 고갈을 보면 느린 SQL, DB 잠금 대기, 외부 호출을 포함한 긴 트랜잭션, 반환 누락을 먼저 나눠 본다. `connectionTimeout`은 풀에서 빌리기를 기다리는 제한이지 SQL 실행 제한이 아니다. `maxLifetime`도 실행 중인 쿼리를 그 시각에 강제로 끊는 설정은 아니다. [HikariCP 설정 설명](https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby)
 
-전파 속성도 커넥션 점유와 연결된다.
-
-| 전파 | 기존 트랜잭션이 있다면 |
-| --- | --- |
-| REQUIRED | 기존 물리 트랜잭션에 참여 |
-| REQUIRES_NEW | 기존 것을 보류하고 독립 트랜잭션 시작 |
-| NESTED | 지원되는 경우 같은 트랜잭션에 저장점 사용 |
-
-JDBC의 `REQUIRES_NEW`는 바깥 커넥션을 보유한 채 안쪽 커넥션을 더 빌릴 수 있다. 풀의 전부를 바깥 요청들이 잡고 있다면 안쪽 요청은 반환을 기다린다. 감사 로그 하나를 따로 남기려다가 커넥션 대기를 만들 수도 있는 이유다. [Spring 전파 설명](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/tx-propagation.html)
-
 ## JPA에서는 객체가 하나 더 관리된다
 
 JDBC의 `Connection`은 DB와 통신한다. JPA의 `EntityManager`는 엔티티와 영속성 컨텍스트를 관리한다. 이름만 다른 커넥션이 아니다.
@@ -115,29 +106,7 @@ rollback → 새 조회: 50,000
 
 **SQL이 실행됐다는 사실과 변경이 확정됐다는 사실은 달랐다.** flush는 커밋이 아니며, 영속성 컨텍스트를 비우는 `clear()`와도 다르다. 자동 flush는 커밋 전뿐 아니라 일부 쿼리 실행 전에도 일어날 수 있다. [Hibernate의 flushing 설명](https://docs.hibernate.org/orm/6.4/userguide/html_single/#flushing)
 
-Spring에서 JPA를 쓸 때는 보통 `JpaTransactionManager`가 EntityManager와 트랜잭션을 조정한다. 컨텍스트의 수명과 JDBC 커넥션 점유 시간은 설정에 따라 달라질 수 있다. 또한 **JDBC 저장점으로 돌아갔다고 JPA의 관리 객체 상태까지 되감기는 것은 아니다.** JPA 자체에는 중첩 트랜잭션 의미가 없으므로 `NESTED`를 그대로 기대하면 안 된다. [JpaTransactionManager의 지원 범위](https://docs.spring.io/spring-framework/docs/6.1.6/javadoc-api/org/springframework/orm/jpa/JpaTransactionManager.html)
-
-## 직접 만든 트랜잭션 코드에서 빠뜨리기 쉬운 것
-
-프록시로 업무 코드를 감싸는 실습은 구조를 이해하는 데 좋다. 다만 `try` 안에 업무 실행과 커밋을 함께 넣고, 모든 예외에서 다시 롤백하는 코드는 피해야 한다.
-
-Spring의 `PlatformTransactionManager.commit()`이 예외를 던졌다면 트랜잭션은 이미 정리된 상태다. 뒤이어 `rollback()`을 호출하면 새 예외로 최초 커밋 실패를 가릴 수 있다. [commit 이후 rollback 금지 계약](https://docs.spring.io/spring-framework/docs/6.1.6/javadoc-api/org/springframework/transaction/PlatformTransactionManager.html)
-
-이 글의 실험처럼 Spring이 경계를 관리하게 하거나, 프로그램 방식이 필요하면 다음처럼 `TransactionTemplate`을 쓰는 편이 분명하다. 실패를 주입한 앞의 메서드와 달리, 두 SQL을 실행하는 사용 예시다.
-
-```java
-var template = new TransactionTemplate(transactionManager);
-template.executeWithoutResult(status -> {
-    jdbc.update("update account set balance=balance-10000 "
-        + "where id=1");
-    jdbc.update("update account set balance=balance+10000 "
-        + "where id=2");
-});
-```
-
-직접 JDBC 정리 코드를 만든다면 원래 자동 커밋 상태를 기억하고, 정리 중 발생한 예외가 최초 실패를 덮지 않게 해야 한다. 미완료 트랜잭션에서 `setAutoCommit(true)`로 바꾸면 커밋이 발생할 수 있으므로 “무조건 true로 돌리면 안전하다”도 틀리다. [JDBC 자동 커밋 변경 규칙](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html#setAutoCommit(boolean))
-
-예외 정책도 확인한다. 이번 Spring 6.1.6의 기본 선언적 정책은 `RuntimeException`·`Error`에 롤백한다. checked exception에는 별도 설정이 필요하다. 예외를 메서드 안에서 삼키면 정상 반환으로 보일 수 있고, 이미 참여 트랜잭션이 rollback-only로 표시했다면 정상 반환 뒤에도 커밋이 실패할 수 있다.
+Spring에서 JPA를 쓸 때는 보통 `JpaTransactionManager`가 EntityManager와 트랜잭션을 조정한다. 컨텍스트의 수명과 JDBC 커넥션 점유 시간은 설정에 따라 달라질 수 있다.
 
 ## 두 SQL의 롤백과 동시 이체는 다른 문제
 

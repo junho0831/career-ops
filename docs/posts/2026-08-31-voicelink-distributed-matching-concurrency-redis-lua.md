@@ -4,7 +4,7 @@ title: Redis Lua가 끝난 뒤에도 매칭은 끝나지 않았다
 description: 실제 Lua에 두 요청을 100회 보내 후보 선점과 제한 탐색을 확인하고, 선점 뒤 취소를 처리하는 VoiceLink 코드를 연결한다.
 date: '2026-08-31'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 url: https://so-dak.com/voicelink-distributed-matching-concurrency-redis-lua/
 ---
 
@@ -91,7 +91,7 @@ if (requeueOnCancelSignal(clientA, clientB)) {
 
 `MatchFinalizerTest`의 저장 후 취소 사례는 A의 취소 조회가 처음에는 `false`, 다음에는 `true`를 반환하게 만든다. 그때 B를 재등록하고 열린 세션을 닫으며, Outbox에 매칭 결과를 넣지 않는지 검사한다. 저장 전후와 응답 생성 뒤를 나눈 대역 테스트이며, 모든 시점의 취소나 실제 Redis·DB 복구를 증명하는 시험은 아니다.
 
-A는 그만 기다리겠다고 했고 B는 계속 기다리는 중이므로, 복구 대상은 B다. 다음으로 시험할 틈도 여기 있다. **B의 Redis 재등록이 실패하면 열린 DB 세션 정리까지 어떻게 진행되는가?** 현재의 대역 테스트와 Lua 100회 실험을 합쳐도 이 장애 복구까지 검증한 것은 아니다.
+A는 취소했고 B는 계속 기다린다. 그래서 다시 줄에 넣을 사람은 B다. 다만 **B를 Redis에 다시 넣다가 실패하는 경우**는 별도 문제다. Lua 100회 실험은 후보 선점을, 대역 테스트는 취소 처리 순서를 확인했다. 둘 다 실제 Redis·DB 사이의 장애 복구 시험을 대신하지는 못한다.
 
 ## 참고 자료
 

@@ -3,7 +3,7 @@ post_id: 921
 title: 열세 번째 작업을 거절한 스레드 풀
 description: 끝나지 않는 작업을 열세 개 제출한 Java 실험으로 작업자 수, 큐, 접수 거절과 업무 완료를 구분한다.
 date: '2026-06-24'
-revised: '2026-11-04'
+revised: '2026-11-05'
 url: https://so-dak.com/%eb%b0%b1%ec%97%94%eb%93%9c-%ec%95%84%ed%82%a4%ed%85%8d%ec%b2%98-spring-boot-async%ec%99%80-threadpool%ec%9d%84-%ed%99%9c%ec%9a%a9%ed%95%9c-%eb%8c%80%ea%b7%9c%eb%aa%a8-%ed%8a%b8%eb%9e%98%ed%94%bd/
 ---
 
@@ -31,7 +31,7 @@ var pool = new ThreadPoolExecutor(
     new ThreadPoolExecutor.AbortPolicy());
 ```
 
-재현할 때는 각 작업이 `gate.await()`에서 기다리도록 하고, 제출한 쪽에서 `RejectedExecutionException`을 센다. 출력 후 `finally`에서 `gate.countDown()`과 `shutdown()`을 호출해 작업을 풀었다. 종료를 5초 기다려도 남으면 `shutdownNow()`로 정리하고 실패 처리했다.
+실험에서는 작업들이 `gate.await()`에서 기다리게 했다. 먼저 들어간 작업이 끝나 자리를 비우지 못하도록 막은 것이다. 제출한 쪽은 `RejectedExecutionException`을 세고, `finally`에서 대기를 푼 뒤 실행기를 종료한다. 5초 안에 끝나지 않으면 `shutdownNow()`로 정리하고 실험을 실패시킨다.
 
 실제 요청은 작업을 마치고 자리를 비운다. 따라서 “이 풀은 항상 열세 번째를 거절한다”로 외우면 안 된다. 이번 실험에서 일부러 막은 것이 바로 그 빈자리다.
 

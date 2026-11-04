@@ -3,7 +3,7 @@ title: TURN을 껐는데 coturn은 왜 남아 있을까
 description: LiveKit의 turn.enabled와 rtc.turn_servers를 나란히 읽으며, 내장 TURN 비활성화와 외부 coturn 사용이 함께 성립하는 이유를 설명한다.
 date: '2026-10-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 post_id: 1738
 url: https://so-dak.com/livekit-external-turn/
 ---
@@ -49,7 +49,7 @@ flowchart TD
 
 ## 설정을 고칠 곳도 나뉜다
 
-이 구조에서는 LiveKit을 재시작하는 것과 호스트의 coturn을 재시작하는 것이 별개다. `rtc.turn_servers`를 바꾸는 일은 클라이언트에 알려 줄 접속 정보를 바꾸는 것이지, coturn의 리스너를 새로 여는 작업이 아니다.
+`rtc.turn_servers`에서 포트를 바꿔도 coturn이 그 포트를 새로 듣기 시작하지는 않는다. 이 목록은 클라이언트에게 건넬 접속 정보다. **알려 준 주소와 실제로 열어 둔 주소**를 함께 맞춰야 하고, LiveKit과 호스트의 coturn도 각각 재시작해야 할 수 있다.
 
 프로젝트 문서의 TLS 경로가 좋은 예다. 클라이언트는 외부 **443**으로 접속하지만 coturn은 **5349**에서 받도록 설명돼 있다. 그 사이에서 Nginx가 TLS 요청의 서버 이름을 보고 coturn으로 보낸다. 숫자가 다르다고 곧바로 오타는 아니다. 대신 클라이언트에 알린 포트, Nginx 전달 대상, coturn 리스너가 한 경로로 이어지는지 봐야 한다.
 

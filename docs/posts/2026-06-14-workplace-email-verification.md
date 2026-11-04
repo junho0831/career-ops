@@ -4,7 +4,7 @@ title: 이메일 코드 확인과 회사명 승인은 왜 별개일까
 description: 메일 수신 확인과 회사명 승인, 늦게 도착한 이전 코드, 같은 주소의 동시 확인을 구체적인 상황으로 설명한다.
 date: '2026-06-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-04'
+revised: '2026-11-05'
 url: https://so-dak.com/%ec%a7%81%ec%9e%a5%ec%9d%b8-%eb%a7%a4%ec%b9%ad-%ec%84%9c%eb%b9%84%ec%8a%a4-redis-ttl%ec%9d%84-%ed%99%9c%ec%9a%a9%ed%95%9c-%eb%b9%84%eb%8f%99%ea%b8%b0-%ec%9d%b4%eb%a9%94%ec%9d%bc-%ec%9d%b8%ec%a6%9d/
 ---
 
@@ -55,7 +55,7 @@ A가 코드를 맞혔어도 그 도메인의 회사명은 검토 중일 수 있�
 
 반면 재전송 대기는 주소가 아니라 사용자 ID를 기준으로 둔다. 주소만 바꿔도 60초 제한을 피하지는 못한다. 다른 주소로 발급했던 임시 상태까지 한꺼번에 지우는 구조는 아니다.
 
-오답을 입력할 때도 수명은 다시 300초로 시작하면 안 된다. 서비스는 Redis에서 남은 TTL을 읽어 시도 횟수를 올린 상태를 그 시간만큼 저장한다. `confirmCodeRejectsOnMismatchAndIncreasesAttemptCount` 테스트는 남은 시간을 120초로 두고, `attempts=1`과 **120초 TTL이 함께 저장되는지** 검사한다. 화면의 카운트다운은 이 서버 판단을 안내할 뿐이다.
+오답을 낼 때마다 유효 시간이 5분으로 돌아가면, 틀릴수록 코드가 오래 산다. 서비스는 Redis에서 남은 TTL을 읽고, 시도 횟수만 올린 상태를 **남아 있던 시간만큼** 저장한다. `confirmCodeRejectsOnMismatchAndIncreasesAttemptCount` 테스트는 남은 시간을 120초로 두고, `attempts=1`과 **120초 TTL이 함께 저장되는지** 검사한다. 화면의 카운트다운은 이 서버 판단을 안내할 뿐이다.
 
 ## 메일을 보냈다는 기록만으로 완료할 수 없는 이유
 
