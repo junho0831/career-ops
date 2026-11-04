@@ -3,7 +3,8 @@ post_id: 712
 title: Flutter 웹에서 화면 요청과 API 요청을 나누는 법
 description: Nginx가 앱 문서를 보내는 것과 Flutter가 통화 화면을 여는 것을 나눠 보고, API 분기와 /call 인자가 필요한 이유를 설명한다.
 date: '2026-06-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/flutter-web%ea%b3%bc-spring-boot-%ec%97%b0%eb%8f%99%ec%9d%84-%ec%9c%84%ed%95%9c-nginx-%eb%a6%ac%eb%b2%84%ec%8a%a4-%ed%94%84%eb%a1%9d%ec%8b%9c-%eb%b0%8f-spa-%eb%9d%bc%ec%9a%b0%ed%8c%85-%ec%b5%9c/
 ---
 
@@ -73,5 +74,3 @@ if (isAuthenticated &&
 - [Nginx try_files](https://nginx.org/en/docs/http/ngx_http_core_module.html#try_files)
 
 근거: 2026-10-12 VoiceLink `37109d5`의 `Dockerfile.frontend`, 웹 초기화 코드, `app_router.dart`·`app_routes.dart`, 라우터 테스트와 `docs/nginx-configuration-guide.md`를 대조했다. 같은 날 Linux·Flutter 3.38.3에서 위 인자 없는 `/call` 진입 테스트 한 개가 통과했다. 인증 대역을 쓴 라우터 검사이며, 운영 Nginx나 실제 브라우저 새로고침을 재현한 결과는 아니다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

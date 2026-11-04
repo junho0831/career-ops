@@ -3,7 +3,8 @@ post_id: 713
 title: 차단은 한쪽이 했는데 매칭은 양쪽을 막아야 했다
 description: 차단한 A와 먼저 매칭을 요청한 B의 예시로 양방향 검사, 참가자 권한, 중복 저장의 규칙을 설명한다.
 date: '2026-06-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/%eb%9e%9c%eb%8d%a4-%eb%a7%a4%ec%b9%ad-%ec%84%9c%eb%b9%84%ec%8a%a4-%ec%95%85%ec%84%b1-%ec%9c%a0%ec%a0%80-%ec%b0%a8%eb%8b%a8-redis-%ea%b8%b0%eb%b0%98-%eb%b9%a0%eb%a5%b8-%eb%a7%a4%ec%b9%ad-%ed%95%84/
 ---
 
@@ -67,5 +68,3 @@ B의 목록이 비어 있어도 A가 B를 차단했다면 연결하지 않는다
 - [Spring 선언적 트랜잭션](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
 
 근거: 2026-10-12 VoiceLink `37109d5`의 차단·신고 서비스와 엔티티, 후보 복구 코드, `docs/user-safety.md`를 대조했다. 10월 10일 `1704b46`에서 안전 서비스 9개·컨트롤러 4개 테스트가 통과했다. 동시 저장·매칭 경쟁의 실제 DB 시험은 포함하지 않았다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

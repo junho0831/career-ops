@@ -3,7 +3,8 @@ post_id: 1248
 title: 잠금 안에서 캐시를 한 번 더 읽는 이유
 description: 캐시가 비었다고 확인한 요청도 잠금을 기다리는 동안 상황이 달라질 수 있다. VoiceLink의 두 번의 조회와 여덟 요청 테스트로 그 이유를 따라간다.
 date: '2026-08-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/redis-cache-stampede-%ed%98%84%ec%83%81-%ea%b7%b9%eb%b3%b5%ea%b8%b0-%ec%ba%90%ec%8b%9c-%ec%a0%81%ec%9a%a9%ed%95%98%eb%a9%b4-db-%eb%b6%80%ed%95%98-%eb%81%9d-%ec%95%84%eb%8b%8c%ea%b0%80/
 ---
 
@@ -82,5 +83,3 @@ verify(rtcRoomStatePort, times(1))
 - [Java 언어 명세: synchronized와 메모리 모델](https://docs.oracle.com/javase/specs/jls/se17/html/jls-17.html)
 
 프로젝트 근거: VoiceLink `37109d5`의 `ActiveSessionResolver`, `MatchProperties`, `LiveKitRoomStateService`, `ActiveSessionResolverTest`와 `docs/matching-call-lifecycle.md`. 2026-10-12 Linux·Java 17에서 관련 테스트 9개가 통과했다. 동시성 테스트의 250ms 미만 조건은 로컬 대역 시험의 판정 기준이며 서비스 응답 시간 목표가 아니다. 참가자 조회 실패도 `false`로 반환될 수 있어, 호출을 합치는 검증을 실제 방 상태의 정확성 검증으로 확대하지 않는다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

@@ -2,7 +2,8 @@
 title: WebSocket은 연결됐는데 목소리는 어디로 갈까
 description: VoiceLink의 API·SSE, LiveKit WebSocket, WebRTC 음성 경로를 나눠 연결 성공만으로 통화 성공을 판단할 수 없는 이유를 설명한다.
 date: '2026-10-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 post_id: 1737
 url: https://so-dak.com/voicelink-signaling-media-path/
 ---
@@ -59,5 +60,3 @@ WebSocket이 열렸다는 관찰 하나에는 마이크 발행과 오디오 재�
 - [LiveKit SFU: 발행자에서 구독자로 미디어 전달](https://docs.livekit.io/reference/internals/livekit-sfu/)
 
 근거: 2026-10-15 VoiceLink `37109d5`의 `MatchResponseFactory`, `LiveKitTokenService`, Flutter `match_api.dart`·`livekit_service.dart`, 연결 테스트, `livekit.yaml`과 통화 수명주기 문서를 대조했다. 방과 마이크 트랙을 바꿔 넣는 대역 테스트를 두 기기의 실제 음성 수신 근거로 쓰지 않았다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

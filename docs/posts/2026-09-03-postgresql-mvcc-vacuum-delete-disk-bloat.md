@@ -3,7 +3,8 @@ post_id: 1397
 title: DELETE가 행을 지워도 파일 크기는 남는 이유
 description: PostgreSQL 14.20에서 10만 행 중 9만 행을 삭제하고 옛 스냅샷, VACUUM, 실제 파일 크기의 차이를 확인한다.
 date: '2026-09-03'
-revised: '2026-11-01'
+evidence_review: '보관 실험 기록 대조 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/postgresql-mvcc-vacuum-delete-disk-bloat/
 ---
 
@@ -111,5 +112,3 @@ SELECT pg_size_pretty(pg_relation_size('mvcc_example')) AS heap,
 - [PostgreSQL 14 pgstattuple](https://www.postgresql.org/docs/14/pgstattuple.html)
 
 근거: 2026-10-10 Linux Docker·PostgreSQL 14.20(Debian)의 독립 DB에서 실행한 SQL과 관찰값. 10만 행과 별도 연결의 스냅샷을 사용해 테이블 본체 크기·pgstattuple 결과를 비교했다. 이 값으로 다른 환경의 bloat 비율을 추정하지 않는다.
-
-2026-11-01 재검토: 보관한 독립 실험 로그와 관찰값을 다시 대조하고 설명을 다듬었다. 수치는 재측정하지 않았다.

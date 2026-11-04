@@ -3,7 +3,8 @@ post_id: 1430
 title: Redis Lua가 끝난 뒤에도 매칭은 끝나지 않았다
 description: 실제 Lua에 두 요청을 100회 보내 후보 선점과 제한 탐색을 확인하고, 선점 뒤 취소를 처리하는 VoiceLink 코드를 연결한다.
 date: '2026-08-31'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/voicelink-distributed-matching-concurrency-redis-lua/
 ---
 
@@ -100,5 +101,3 @@ A는 그만 기다리겠다고 했고 B는 계속 기다리는 중이므로, 복
 - [Spring Data Redis 스크립팅](https://docs.spring.io/spring-data/redis/reference/redis/scripting.html)
 
 근거: 2026-10-15 VoiceLink `37109d5`의 Lua·Redis 저장소·매칭 확정 코드·테스트와 매칭 흐름 문서를 재확인했다. 수치는 10월 9일 단일 Redis 인스턴스의 실험 기록이다. 재등록 도중 Redis 장애·프로세스 종료가 발생하는 경우와 Redis Cluster는 이 글의 검증 범위에 포함하지 않았다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

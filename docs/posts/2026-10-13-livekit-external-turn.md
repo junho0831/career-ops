@@ -2,7 +2,8 @@
 title: TURN을 껐는데 coturn은 왜 남아 있을까
 description: LiveKit의 turn.enabled와 rtc.turn_servers를 나란히 읽으며, 내장 TURN 비활성화와 외부 coturn 사용이 함께 성립하는 이유를 설명한다.
 date: '2026-10-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 post_id: 1738
 url: https://so-dak.com/livekit-external-turn/
 ---
@@ -66,5 +67,3 @@ flowchart TD
 ## 확인한 근거
 
 2026-10-15 VoiceLink `37109d5`의 `livekit.yaml`, `docker-compose.yml`, `infra/coturn/turnserver.conf`, coturn 구축·서버 아키텍처 문서를 대조했다. 현재 구성을 해석한 글이며, 외부 coturn을 선택한 당시의 대안 비교를 재구성한 회고는 아니다. 문서의 TLS 경로를 호스트에서 다시 시험하지는 않았다. LiveKit 이미지 태그는 `latest`라 실행 서버 버전도 이 설정만으로 특정하지 않았다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

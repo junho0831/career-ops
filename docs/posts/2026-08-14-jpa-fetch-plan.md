@@ -3,7 +3,8 @@ post_id: 1247
 title: 게시글 목록의 댓글 개수를 가져오는 세 가지 방법
 description: Hibernate와 H2에서 댓글 8·2·0개를 조회해 배치 로딩, fetch join, 집계의 SQL 수와 엔티티 적재 수를 비교한다.
 date: '2026-08-14'
-revised: '2026-11-01'
+evidence_review: '보관 실험 기록 대조 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/jpa-n1-%eb%ac%b8%ec%a0%9c%ec%99%80-fetch-join-%ec%8b%a4%eb%ac%b4-%ea%b3%a0%ec%b0%b0-lazy-loading%ec%9d%b4%eb%a9%b4-%eb%8b%a4-%ed%95%b4%ea%b2%b0%eb%90%98%eb%82%98/
 ---
 
@@ -13,7 +14,11 @@ url: https://so-dak.com/jpa-n1-%eb%ac%b8%ec%a0%9c%ec%99%80-fetch-join-%ec%8b%a4%
 
 ## 같은 세 게시글로 네 번 조회했다
 
-모델은 `DemoPost`와 `DemoComment`다. 게시글의 댓글은 `@OneToMany(mappedBy = "post")`, 댓글의 게시글은 `@ManyToOne(fetch = LAZY)`로 연결했다. 댓글 본문에는 `text`를 넣었다. 이는 서비스 데이터가 아닌 실험용 입력이다.
+지연 로딩을 기준으로 놓고, **배치 로딩·fetch join·집계 세 가지 대안**을 비교했다. 그래서 아래 표에는 기준을 포함해 네 행이 나온다.
+
+Java 클래스는 `Post`·`Comment`, HQL에서 쓰는 엔티티 이름은 `@Entity(name = "DemoPost")`·`@Entity(name = "DemoComment")`로 지정했다. 아래 쿼리의 `DemoPost`와 반환 타입 `Post.class`가 다른 이유다. [엔티티 이름 규칙](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#root-entity-references)
+
+게시글의 댓글은 `@OneToMany(mappedBy = "post")`, 댓글의 게시글은 `@ManyToOne(fetch = LAZY)`로 연결했다. 댓글 본문에는 `text`를 넣었다. 이는 서비스 데이터가 아닌 실험용 입력이다.
 
 각 비교에 같은 입력을 저장하고 **새 Hibernate 세션**에서 조회했다. 2차 캐시와 쿼리 캐시는 끄고, 저장 단계 뒤 통계를 초기화했다. `hibernate.generate_statistics=true`로 조회 때의 SQL 준비 횟수와 엔티티 적재 수를 읽었다. `default_batch_fetch_size`는 기본 비교에서 0, 배치 비교에서 100이다.
 
@@ -77,7 +82,7 @@ var rows = session.createQuery("""
 
 | 조회 방식 | 반환 글 | SQL | 엔티티 |
 | --- | ---: | ---: | ---: |
-| 지연 로딩 | 3 | 4 | 13 |
+| 지연 로딩(비교 기준) | 3 | 4 | 13 |
 | 배치 100 | 3 | 2 | 13 |
 | fetch join·제한 2 | 2 | 1 | 13 |
 | 개수 집계 | 3 | 1 | 0 |
@@ -86,6 +91,14 @@ var rows = session.createQuery("""
 
 이 목록에는 ID·제목·댓글 수만 필요하므로 집계 결과로 충분하다. 반대로 댓글 본문을 펼치는 화면이라면 별도의 조회가 필요하다. **화면에 필요한 값부터 적어 놓으면**, SQL 횟수를 줄이다가 불필요한 객체를 전부 가져오는 선택을 피하기 쉽다.
 
+[전체 재현 코드 ZIP](https://so-dak.com/wp-content/uploads/2026/11/jpa-fetch-example-20261104.zip)에는 두 엔티티, 합성 데이터, 네 조회와 검사가 들어 있다. Java 17·Gradle 8.14.2에서 압축을 푼 뒤 실행한다.
+
+```bash
+gradle -p jpa-fetch run
+```
+
+2026년 11월 4일 배포 ZIP에서 네 조건을 다시 실행해 표의 SQL 수·엔티티 수·반환값이 같은지 확인했다. `ALL_ASSERTIONS_PASSED`가 마지막에 나오며, fetch join의 메모리 페이지 처리 경고는 이 실험에서 예상한 출력이다.
+
 ## 참고 자료
 
 - [Hibernate 6.4 배치 fetching](https://docs.hibernate.org/orm/6.4/userguide/html_single/#fetching-batch)
@@ -93,6 +106,4 @@ var rows = session.createQuery("""
 - [Hibernate 6.4 HQL: 집계 함수와 NULL](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#aggregate-functions)
 - [Spring Data JPA projections](https://docs.spring.io/spring-data/jpa/reference/repositories/projections.html)
 
-근거: 2026-10-10 독립 Java 실험의 실제 SQL·Hibernate 통계·반환값. VoiceLink `1704b46`와 `b159c1d`의 관련 설정과 의존성은 동일했다. 이 글의 수치는 작은 모델의 적재량 비교이며 운영 성능 측정은 아니다.
-
-2026-11-01 재검토: 보관한 독립 실험 로그와 관찰값을 다시 대조하고 설명을 다듬었다. 수치는 재측정하지 않았다.
+근거: 2026-10-10 최초 실행과 2026-11-04 배포 예제의 실제 SQL·Hibernate 통계·반환값. 작은 모델의 적재량 비교이며 운영 성능 측정은 아니다.

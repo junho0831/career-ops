@@ -3,7 +3,8 @@ post_id: 1246
 title: 파일을 올린 뒤 실패한 배치를 다시 실행해도 될까
 description: PythonStudy의 실제 배치에 삭제 실패를 주입해 DB 커밋, 정상 반환, 같은 작업 재실행 시 중복 행을 확인한다.
 date: '2026-08-14'
-revised: '2026-11-01'
+evidence_review: 'PythonStudy 9a324fe (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/airflow-%eb%b0%b1%ed%95%84backfill-%eb%a9%b1%eb%93%b1%ec%84%b1-%ed%9a%8c%ea%b3%a0-%ec%97%90%eb%9f%ac-%eb%82%98%eb%a9%b4-clear-%eb%88%84%eb%a5%b4%ea%b3%a0-%ec%9e%ac%ec%8b%a4%ed%96%89%ed%95%98/
 ---
 
@@ -84,5 +85,3 @@ README에도 DB 커밋 후 FTP 삭제 실패의 재시도 큐는 아직 없다�
 - [SQLite UPSERT](https://www.sqlite.org/lang_upsert.html)
 
 근거: PythonStudy `9a324fe`의 DAG·호출부·`BatchRunner`·DB 계층·스키마와 README, `79be1f8`과의 관련 파일 대조. 2026-10-10 Python 3.12.3·SQLite 3.45.1에서 합성 입력으로 실행했으며 업로드·삭제는 대역이었다. 2026-10-12에는 관련 코드와 README를 다시 대조했으며 실험을 재실행하지 않았다.
-
-2026-11-01 재검토: PythonStudy `9a324fe`의 배치 처리·저장·DAG·README를 다시 대조했다. 삭제 실패 실험은 재실행하지 않았다.

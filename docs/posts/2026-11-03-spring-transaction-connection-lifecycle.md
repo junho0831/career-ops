@@ -31,17 +31,18 @@ public void callInternally() {
 }
 ```
 
-매 실험 전 잔액을 초기화했다. 정상 이체 메서드에는 B의 잔액을 올리는 SQL도 넣었다.
+매 실험 전 잔액을 초기화했다. 정상 이체에는 B의 잔액을 올리는 SQL도 넣었다. 여기에 **두 SQL을 모두 실행한 뒤 실패하는 경우**를 추가했다. 예외 직전에는 같은 트랜잭션에서 4만 원·3만 원을 읽고, 롤백 후 새 조회로 원래 잔액을 확인했다.
 
 | 호출 경로 | A(원) | B(원) |
 | --- | ---: | ---: |
 | 외부 → 실패 | 50,000 | 20,000 |
 | 외부 → 내부 호출 → 실패 | 40,000 | 20,000 |
 | 외부 → 정상 이체 | 40,000 | 30,000 |
+| 외부 → 차감·입금 후 실패 | 50,000 | 20,000 |
 
 첫 번째는 차감이 롤백됐다. 두 번째는 바깥 메서드에 트랜잭션이 없고 내부 호출이 프록시를 통과하지 않아, JDBC의 자동 커밋으로 차감이 확정됐다. 기존 트랜잭션이 있는 내부 호출까지 전부 트랜잭션 없이 실행된다는 뜻은 아니다. **내부 메서드에 붙인 별도의 설정이 적용되지 않는 것**이다. [Spring 프록시 방식의 적용 범위](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
 
-그럼 첫 번째 호출에서는 누가 SQL을 묶었을까?
+마지막 경우에는 차감과 입금이 함께 취소됐다. 두 SQL을 누가 같은 트랜잭션으로 묶었을까?
 
 ## SQL 두 개가 같은 커넥션을 만나는 곳
 
@@ -125,9 +126,12 @@ Spring의 `PlatformTransactionManager.commit()`이 예외를 던졌다면 트랜
 이 글의 실험처럼 Spring이 경계를 관리하게 하거나, 프로그램 방식이 필요하면 다음처럼 `TransactionTemplate`을 쓰는 편이 분명하다. 실패를 주입한 앞의 메서드와 달리, 두 SQL을 실행하는 사용 예시다.
 
 ```java
-new TransactionTemplate(transactionManager).executeWithoutResult(status -> {
-    jdbc.update("update account set balance=balance-10000 where id=1");
-    jdbc.update("update account set balance=balance+10000 where id=2");
+var template = new TransactionTemplate(transactionManager);
+template.executeWithoutResult(status -> {
+    jdbc.update("update account set balance=balance-10000 "
+        + "where id=1");
+    jdbc.update("update account set balance=balance+10000 "
+        + "where id=2");
 });
 ```
 
@@ -135,13 +139,13 @@ new TransactionTemplate(transactionManager).executeWithoutResult(status -> {
 
 예외 정책도 확인한다. 이번 Spring 6.1.6의 기본 선언적 정책은 `RuntimeException`·`Error`에 롤백한다. checked exception에는 별도 설정이 필요하다. 예외를 메서드 안에서 삼키면 정상 반환으로 보일 수 있고, 이미 참여 트랜잭션이 rollback-only로 표시했다면 정상 반환 뒤에도 커밋이 실패할 수 있다.
 
-## 다음 이체에서 확인할 문제
+## 두 SQL의 롤백과 동시 이체는 다른 문제
 
 이번 실험은 “두 SQL을 함께 되돌리는가”를 확인했다. 두 요청이 같은 잔액을 동시에 쓰는 경쟁까지 해결한 것은 아니다. 실제 이체에는 잔액 부족·대상 존재·영향받은 행 수 검사와 잠금 또는 버전 기반 충돌 처리도 필요하다.
 
 `@Transactional`이 붙었는지만 확인하는 대신, 이제는 **프록시를 통과했는지, 어떤 리소스를 공유했는지, 언제 반환했는지**를 이어서 설명할 수 있다. 새로운 스레드의 `@Async` 작업도 같은 ThreadLocal을 자동으로 이어받지 않으므로 이 경계를 다시 잡아야 한다. 비동기 작업이 쌓이는 문제는 [스레드 풀과 대기열 용량](https://so-dak.com/%eb%b0%b1%ec%97%94%eb%93%9c-%ec%95%84%ed%82%a4%ed%85%8d%ec%b2%98-spring-boot-async%ec%99%80-threadpool%ec%9d%84-%ed%99%9c%ec%9a%a9%ed%95%9c-%eb%8c%80%ea%b7%9c%eb%aa%a8-%ed%8a%b8%eb%9e%98%ed%94%bd/)에서 이어서 다뤘다.
 
-[재현 코드 ZIP](https://so-dak.com/wp-content/uploads/2026/11/spring-transactions-example.zip)을 내려받아 압축을 푼다. Java 17과 Gradle 8.14.2가 준비됐다면 압축을 푼 위치에서 다음 명령으로 네 시나리오를 실행할 수 있다. 처음 실행할 때는 Maven Central에서 의존성을 내려받는다.
+[재현 코드 ZIP](https://so-dak.com/wp-content/uploads/2026/11/spring-transactions-example-20261104.zip)을 내려받아 압축을 푼다. Java 17과 Gradle 8.14.2가 준비됐다면 압축을 푼 위치에서 다음 명령으로 다섯 시나리오를 실행할 수 있다. 처음 실행할 때는 Maven Central에서 의존성을 내려받는다.
 
 ```bash
 gradle -p spring-transactions run
@@ -149,7 +153,7 @@ gradle -p spring-transactions run
 
 실행 환경: 2026-11-03 최초 실행, 2026-11-04 배포 ZIP 재검증. Linux·Java 17.0.20.1·Spring 6.1.6·HikariCP 5.0.1·Hibernate 6.4.4.Final·H2 2.2.224. JDBC는 `DataSourceTransactionManager`, JPA는 Hibernate의 리소스 로컬 트랜잭션을 사용했다.
 
-확인 범위: 단일 프로세스·단일 H2 메모리 DB·합성 계좌이며, 네 시나리오는 프록시 롤백, 내부 호출, 커넥션 공유·반환, 영속 객체 동일성·flush 후 롤백이다. 실제 DB의 장애·동시 이체·풀 고갈 부하나 분산 트랜잭션은 측정하지 않았다.
+확인 범위: 단일 프로세스·단일 H2 메모리 DB·합성 계좌다. 차감 직후 롤백, 차감·입금 뒤 롤백, 내부 호출, 커넥션 공유·반환, 영속 객체 동일성·flush 후 롤백까지 다섯 시나리오가 통과했다. 실제 DB의 장애·동시 이체·풀 고갈 부하나 분산 트랜잭션은 측정하지 않았다.
 
 ## 참고 자료
 

@@ -3,7 +3,8 @@ post_id: 719
 title: Docker가 있는데도 PostgreSQL 테스트는 건너뛰었다
 description: Docker API 버전 때문에 빠진 PostgreSQL 16 테스트를 실행하고, 두 트랜잭션의 잠금 경쟁을 어떤 순서로 검증했는지 따라간다.
 date: '2026-06-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/testcontainers%eb%a5%bc-%ed%99%9c%ec%9a%a9%ed%95%9c-spring-boot-%ec%8b%a4%ec%8b%9c%ea%b0%84-%eb%a7%a4%ec%b9%ad-%eb%a1%9c%ec%a7%81-e2eend-to-end-%ed%86%b5%ed%95%a9-%ed%85%8c%ec%8a%a4%ed%8a%b8/
 ---
 
@@ -85,5 +86,3 @@ CI에서도 이 경쟁을 반드시 검사하려면 건너뜀 개수까지 확�
 - [PostgreSQL 16 SELECT와 행 잠금](https://www.postgresql.org/docs/16/sql-select.html)
 
 근거: VoiceLink `1704b46`의 백엔드 실행 로그와 `MatchOutboxRepositoryPostgresTest` 재실행, 저장소 SQL·테스트 설정. 2026-10-12 기준 `37109d5`에서도 관련 저장소·테스트·빌드 설정은 동일하다. 조건부 재실행 환경은 Java 17.0.20.1·Spring Boot 3.2.5·Testcontainers 1.19.7이며 테스트 JVM의 Docker API 버전은 1.40이다. 브라우저·실기기 E2E 결과는 아니다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

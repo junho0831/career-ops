@@ -3,7 +3,7 @@ post_id: 921
 title: 열세 번째 작업을 거절한 스레드 풀
 description: 끝나지 않는 작업을 열세 개 제출한 Java 실험으로 작업자 수, 큐, 접수 거절과 업무 완료를 구분한다.
 date: '2026-06-24'
-revised: '2026-10-27'
+revised: '2026-11-04'
 url: https://so-dak.com/%eb%b0%b1%ec%97%94%eb%93%9c-%ec%95%84%ed%82%a4%ed%85%8d%ec%b2%98-spring-boot-async%ec%99%80-threadpool%ec%9d%84-%ed%99%9c%ec%9a%a9%ed%95%9c-%eb%8c%80%ea%b7%9c%eb%aa%a8-%ed%8a%b8%eb%9e%98%ed%94%bd/
 ---
 
@@ -57,6 +57,15 @@ VoiceLink의 `MatchOutboxPublisher`도 `newFixedThreadPool`을 사용한다. `ap
 거절됐다면 호출자에게 접수 실패를 알려야 한다. 나중에라도 반드시 처리할 작업이면 메모리 큐 밖에 기록을 남기는 방법도 필요하다. VoiceLink에서 그 기록을 다루는 부분은 [Outbox의 선점과 재시도](https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/) 글에 따로 정리했다.
 
 풀 크기를 정하기 전에 API의 성공 응답이 **접수 성공인지, 업무 완료인지**부터 정해두는 편이 좋다. 같은 `accepted=13`도 그 약속에 따라 전혀 다르게 읽힌다.
+
+[두 풀을 비교하는 전체 코드 ZIP](https://so-dak.com/wp-content/uploads/2026/11/thread-pool-example-20261104.zip)을 풀고 `thread-pool` 폴더에서 실행한다. Java 17 외의 의존성은 없다.
+
+```bash
+javac AsyncCapacityDemo.java
+java AsyncCapacityDemo
+```
+
+2026년 11월 4일 배포 ZIP에서 접수·거절 수와 대기 작업 수까지 검사했다. 제한 큐에는 8개, 고정 풀에는 11개가 대기했고, 작업을 풀어 준 뒤 두 실행기 모두 종료됐다.
 
 검증: 2026년 10월 27일 Linux·Java 17.0.20.1에서 두 독립 예제를 실행했다. VoiceLink `46282d5`의 발행기·임대 서비스·설정·관련 테스트와 DB 적용 문서를 대조했다. 이 실험은 작업 접수 비교이며, 서비스 처리량이나 운영 부하를 측정한 결과는 아니다.
 

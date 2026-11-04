@@ -3,7 +3,8 @@ post_id: 715
 title: 'Outbox 한 행의 수명: 저장·선점·발행·재시도'
 description: 워커 두 개가 Outbox 행을 선점하는 과정과 발행 후 완료 기록 실패를 상태도와 실제 SQL로 설명한다.
 date: '2026-06-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 url: https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/
 ---
 
@@ -73,5 +74,3 @@ stateDiagram-v2
 - [Spring 트랜잭션 경계](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
 
 근거: 2026-10-12 VoiceLink `37109d5`의 매칭 확정·Outbox 코드와 설정, `docs/matching-call-lifecycle.md`를 대조했다. 본문의 구조 변경은 `5091eba` 이력에서 확인했다. 10월 10일 `1704b46`에서 Outbox 서비스 2개·임대 서비스 3개·발행기 3개 테스트가 통과했다. PostgreSQL 16 동시 선점 테스트는 Docker API 불일치로 건너뛰었으나 테스트 JVM에 API `1.40`을 지정한 재실행에서 1개가 통과했다. 발행 직후 강제 종료와 화면 중복 반영은 검증하지 않았다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.

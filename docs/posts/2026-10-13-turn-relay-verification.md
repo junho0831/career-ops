@@ -2,7 +2,8 @@
 title: TURN 후보가 보인다고 중계 중인 건 아니다
 description: 같은 PC에서 coturn과 두 WebRTC 연결을 띄워 직접 연결과 강제 중계를 비교했다. 선택된 candidate pair, relayProtocol, 수신 RTP 패킷으로 확인한 결과를 정리한다.
 date: '2026-10-14'
-revised: '2026-11-01'
+evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
+revised: '2026-11-04'
 post_id: 1739
 url: https://so-dak.com/turn-relay-verification/
 ---
@@ -17,9 +18,9 @@ url: https://so-dak.com/turn-relay-verification/
 
 조건마다 연결을 새로 만들었다. 기본 정책인 `all`에서는 직접 연결과 중계 후보를 허용하고, `relay`에서는 중계 후보만 사용하도록 제한했다. TURN 접속은 UDP와 TCP로 나눴다. 연결된 뒤 수신 통계를 읽고, 1초 후 다시 읽었다.
 
-| 조건 | 선택 후보 | TURN 접속 |
+| 조건 | 선택 후보 | 중계 전송 |
 | --- | --- | --- |
-| all·UDP | host / host | 없음 |
+| all·UDP | host / host | 직접 경로 |
 | relay·UDP | relay / relay | udp |
 | relay·TCP | relay / relay | tcp |
 
@@ -31,7 +32,7 @@ relay·UDP  A 76→126  B 76→126
 relay·TCP  A 76→126  B 76→127
 ```
 
-첫 조건에서도 A의 후보 목록에는 `relay`가 있었다. 하지만 **선택된 쌍은 `host`와 `host`**였다. TURN 서버를 설정하고 중계 후보까지 얻었어도, 이 연결은 직접 경로를 골랐다.
+첫 조건에서도 A는 TURN 서버에서 중계 후보를 얻었다. 따라서 “TURN 서버에 접속하지 않았다”는 뜻은 아니다. **선택된 쌍은 `host`와 `host`**였고, 실제 오디오 패킷이 다니는 경로로 직접 연결을 골랐다는 뜻이다.
 
 중계를 강제한 두 조건에서는 양쪽 모두 중계 후보를 선택했고 수신 RTP 오디오 패킷도 늘었다. 단순히 `connected`만 읽었을 때보다 “그 경로로 패킷이 왔다”는 근거가 하나 더 생겼다. 패킷 수 차이로 UDP와 TCP의 성능을 비교하는 실험은 아니다.
 
@@ -68,11 +69,22 @@ VoiceLink의 `CallQualityMonitor.extractIcePath()`는 선택 ID나 `selected`·`
 
 한 PC의 두 브라우저 연결끼리 SDP를 교환했으므로 [LiveKit SFU](https://so-dak.com/voicelink-signaling-media-path/)와 TLS 접속은 포함하지 않았다. 다음 시험은 [프로젝트의 외부 coturn](https://so-dak.com/livekit-external-turn/)을 거치는 서로 다른 기기에서 해야 한다. 선택된 쌍과 패킷 증가에 더해 실제 오디오 재생까지 확인하면, 이번에 남긴 무음 여부의 빈칸도 채울 수 있다.
 
+[로컬 재현 코드 ZIP](https://so-dak.com/wp-content/uploads/2026/11/turn-relay-example-20261104.zip)에는 coturn 실행, 브라우저 연결 두 개, 세 조건의 통계 검사가 들어 있다. Linux·Python 3.12·coturn 4.6.1을 기준으로, 압축을 푼 `turn-relay` 폴더에서 실행한다.
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/playwright install chromium
+.venv/bin/python relay_experiment.py
+```
+
+coturn의 `turnserver`가 실행 경로에 있어야 하며 필요한 로컬 포트는 ZIP의 `README.txt`에 적었다. 인증값은 실행할 때 새로 만들고 임시 설정은 종료할 때 지운다. 이 로컬 전용 설정을 배포용 TURN 설정으로 쓰면 안 된다.
+
+2026년 11월 4일 배포 ZIP에서도 세 조건의 경로와 양쪽 수신 패킷 증가를 확인했다. 본문 패킷 숫자는 10월 13일 기록을 유지했다. 패킷 수를 똑같이 맞추는 검사가 아니라 **선택 경로와 증가 여부**를 확인하는 검사다.
+
 ## 참고 자료
 
 - [W3C WebRTC Statistics: candidate와 relayProtocol](https://www.w3.org/TR/webrtc-stats/#dom-rtcicecandidatestats)
 - [W3C WebRTC: ICE 전송 정책](https://www.w3.org/TR/webrtc/#rtcicetransportpolicy-enum)
 
 측정일은 2026-10-13이다. 10월 15일 원래 실험 기록과 VoiceLink `37109d5`의 `call_quality_monitor.dart`·관련 테스트를 다시 대조했으며, 표의 수치는 새로 측정한 값으로 바꾸지 않았다.
-
-2026-11-01 재검토: VoiceLink `46282d5`의 관련 구현·설정·테스트·문서를 다시 대조했다. 위 테스트·실험 수치는 당시 기록이며 이번에 새로 측정한 값은 아니다.
