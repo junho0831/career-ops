@@ -4,7 +4,7 @@ title: 취소한 통화의 마이크가 뒤늦게 허용되면
 description: VoiceLink 연결 테스트에서 늦은 마이크 허용과 15초 타임아웃을 따라가며, 취소한 방과 새 방을 구분하는 코드를 읽는다.
 date: '2026-08-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-05'
+revised: '2026-11-06'
 url: https://so-dak.com/webrtc-livekit-%ec%97%b0%eb%8f%99-%ed%9a%8c%ea%b3%a0-%ea%b7%b8%eb%83%a5-%ec%98%a4%ed%94%88%ec%86%8c%ec%8a%a4-%ec%84%9c%eb%b2%84-%eb%9d%84%ec%9a%b0%eb%a9%b4-%eb%90%98%eb%8a%94-%ea%b1%b0-%ec%95%84/
 ---
 
@@ -36,7 +36,9 @@ expect(next.disconnects, 0);
 
 ## 옛 실패가 공용 disconnect를 부르면
 
-`LiveKitService`의 `disconnect()`는 시도 번호인 `_connectionGeneration`을 증가시킨다. 연결을 시작할 때 잡아둔 번호와 달라졌다면 그 작업은 옛 시도다. 마이크 획득 뒤, 트랙 발행 뒤에도 이 번호를 확인한다.
+연결을 시작한 작업은 당시의 시도 번호를 보관한다. `disconnect()`는 공유 번호 `_connectionGeneration`을 증가시킨다. 나중에 권한 응답이 와도 **보관한 번호와 지금 번호가 다르면 이미 취소된 작업**이라고 판별할 수 있다.
+
+이 비교가 권한 요청 자체를 취소하지는 않는다. 대신 `await` 이후 작업이 다시 진행될 때 옛 결과를 발행하지 않게 한다. 그래서 마이크 획득 뒤와 트랙 발행 뒤에도 번호를 확인하고, 늦게 얻은 자원은 따로 정리한다.
 
 옛 권한 요청이 실패했다고 무조건 공용 `disconnect()`를 부르면 지금 서비스가 가진 두 번째 방까지 닫힐 수 있다. 청소하러 왔다가 새 손님까지 내보내는 셈이다. 실제 예외 처리의 방 정리 부분은 이렇게 갈린다.
 

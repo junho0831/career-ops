@@ -4,13 +4,13 @@ title: 게시글 목록의 댓글 개수를 가져오는 세 가지 방법
 description: Hibernate와 H2에서 댓글 8·2·0개를 조회해 배치 로딩, fetch join, 집계의 SQL 수와 엔티티 적재 수를 비교한다.
 date: '2026-08-14'
 evidence_review: '보관 실험 기록 대조 (2026-11-01)'
-revised: '2026-11-05'
+revised: '2026-11-06'
 url: https://so-dak.com/jpa-n1-%eb%ac%b8%ec%a0%9c%ec%99%80-fetch-join-%ec%8b%a4%eb%ac%b4-%ea%b3%a0%ec%b0%b0-lazy-loading%ec%9d%b4%eb%a9%b4-%eb%8b%a4-%ed%95%b4%ea%b2%b0%eb%90%98%eb%82%98/
 ---
 
 게시글 세 개에 댓글이 각각 여덟 개, 두 개, 0개 달려 있다. 목록에 필요한 것은 제목과 댓글 개수뿐이다. `post.getComments().size()`로 만들면 댓글 본문까지 읽을까?
 
-2026년 10월 10일 Java 17.0.20.1·Hibernate 6.4.4.Final·H2 2.2.224에서 작은 모델을 별도로 만들어 비교했다. 배치 조회를 켜니 SQL은 네 번에서 두 번으로 줄었다. 그런데 읽어 들인 엔티티는 여전히 열세 개였다. **조회 횟수가 줄어도 필요 없는 데이터가 사라지는 것은 아니었다.**
+여기서 구분할 것은 **SQL을 묶어 보내는 것과 읽을 데이터 자체를 줄이는 것**이다. 배치 로딩은 여러 댓글 컬렉션을 묶어서 읽고, 집계는 댓글 객체 대신 개수를 반환한다. 이 차이가 조회 횟수와 엔티티 수에 어떻게 드러나는지, 2026년 10월 10일 Java 17.0.20.1·Hibernate 6.4.4.Final·H2 2.2.224로 비교했다.
 
 ## 같은 세 게시글로 네 번 조회했다
 
@@ -22,7 +22,9 @@ Java 클래스는 `Post`·`Comment`, HQL에서 쓰는 엔티티 이름은 `@Enti
 
 각 비교에 같은 입력을 저장하고 **새 Hibernate 세션**에서 조회했다. 2차 캐시와 쿼리 캐시는 끄고, 저장 단계 뒤 통계를 초기화했다. `hibernate.generate_statistics=true`로 조회 때의 SQL 준비 횟수와 엔티티 적재 수를 읽었다. `default_batch_fetch_size`는 기본 비교에서 0, 배치 비교에서 100이다.
 
-먼저 게시글 세 개를 읽고 댓글 개수를 만들었다. 실험 코드에서 조회한 부분이다.
+이 모델의 댓글 컬렉션은 아직 읽지 않은 상태로 남겨 둘 수 있다. 하지만 아래처럼 `size()`를 부르면, 이 설정의 Hibernate는 컬렉션을 초기화해 댓글들을 읽고 그 크기를 구한다. `size()`를 자동으로 `COUNT` 쿼리로 바꿔 주는 구성이 아니다.
+
+배치 로딩을 켜면 세션이 추적하는 미초기화 컬렉션들을 묶어 읽을 수 있다. **왕복 횟수를 줄이는 방법이지, 댓글 객체를 개수 하나로 바꾸는 방법은 아니다.** 다음 코드의 반환값과 적재 수를 함께 센 이유다.
 
 ```java
 var posts = session.createQuery(
@@ -101,6 +103,7 @@ gradle -p jpa-fetch run
 
 ## 참고 자료
 
+- [Hibernate 6.4.4 컬렉션 초기화 구현](https://github.com/hibernate/hibernate-orm/blob/6.4.4/hibernate-core/src/main/java/org/hibernate/collection/spi/AbstractPersistentCollection.java)
 - [Hibernate 6.4 배치 fetching](https://docs.hibernate.org/orm/6.4/userguide/html_single/#fetching-batch)
 - [Hibernate 6.4 HQL: association fetching](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#association-fetching)
 - [Hibernate 6.4 HQL: 집계 함수와 NULL](https://docs.hibernate.org/orm/6.4/querylanguage/html_single/#aggregate-functions)

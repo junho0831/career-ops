@@ -4,7 +4,7 @@ title: Redis Lua가 끝난 뒤에도 매칭은 끝나지 않았다
 description: 실제 Lua에 두 요청을 100회 보내 후보 선점과 제한 탐색을 확인하고, 선점 뒤 취소를 처리하는 VoiceLink 코드를 연결한다.
 date: '2026-08-31'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-05'
+revised: '2026-11-06'
 url: https://so-dak.com/voicelink-distributed-matching-concurrency-redis-lua/
 ---
 
@@ -27,7 +27,9 @@ if removed == 1 then
 end
 ```
 
-`ZREM`이 1일 때만 이번 요청이 후보를 제거한 것이다. 이어 presence 키가 남아 있는 후보를 반환한다. Lua 실행 도중 다른 명령이 끼어들지 않으므로 이 판단을 한 덩어리로 할 수 있다.
+Redis는 이 스크립트가 실행되는 동안 다른 클라이언트의 명령을 끼워 실행하지 않는다. 그래서 A가 후보를 읽고 제거하는 사이 C가 같은 후보를 가져가는 순서를 차단한다. **확인과 상태 변경을 Redis 안의 한 실행으로 묶는 것**이다.
+
+`ZREM`이 1이면 이번 요청이 실제로 후보를 제거했다. 0이면 제거하지 못했으므로 반환하지 않는다. 이어 presence가 남았는지 확인해 유효한 후보만 반환한다. 이 순서가 아래 경쟁 실험의 판정 근거다.
 
 ## 같은 후보에 두 요청을 보내봤다
 

@@ -3,7 +3,7 @@ post_id: 710
 title: 세 개의 401이 같은 리프레시 토큰을 사용한다면
 description: API 세 개가 동시에 401을 받는 예시로 공유 갱신 Future, 토큰 소비, 응답 유실 뒤 남는 상태를 읽는다.
 date: '2026-06-14'
-revised: '2026-11-05'
+revised: '2026-11-06'
 url: https://so-dak.com/spring-boot-redis-jwt-access-token%ea%b3%bc-opaque-refresh-token-%ec%95%88%ec%a0%84%ed%95%98%ea%b2%8c-%ea%b4%80%eb%a6%ac%ed%95%98%ea%b8%b0/
 ---
 
@@ -13,7 +13,7 @@ VoiceLink 서버는 이 토큰을 한 번 쓰면 소비한다. 첫 갱신이 성
 
 ## 세 요청이 기다릴 것은 하나의 갱신 결과
 
-첫 요청 A가 갱신을 시작하면 B와 C는 진행 중인 `Future`를 기다린다. 새 토큰을 받은 뒤에는 각자 원래 API를 다시 보낸다. API 세 개를 차례로 실행할 필요는 없다.
+첫 요청 A가 갱신을 시작하면 그 작업의 `Future`를 변수에 보관한다. 완료 전에 들어온 B와 C는 새 갱신을 만들지 않고 같은 `Future`를 반환받는다. **하나의 완료 결과를 여러 요청이 기다리는 구조**다. 새 토큰을 받으면 각자 원래 API를 다시 보낸다. API 세 개 자체를 차례로 실행할 필요는 없다.
 
 ```mermaid
 flowchart TD

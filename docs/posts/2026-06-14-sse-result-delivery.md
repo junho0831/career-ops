@@ -4,13 +4,13 @@ title: SSE는 서버를 건너도 연결 객체는 건너가지 않는다
 description: 서버 B에서 만든 매칭 결과가 브로커와 서버 A의 로컬 대기를 거쳐 앱에 도착하는 과정, 전달을 놓쳤을 때의 조회 경로를 설명한다.
 date: '2026-06-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-05'
+revised: '2026-11-06'
 url: https://so-dak.com/spring-boot-sseserver-sent-events%eb%a1%9c-%ec%8b%a4%ec%8b%9c%ea%b0%84-%eb%a7%a4%ec%b9%ad-%ec%83%81%ed%83%9c-%ed%91%b8%ec%8b%9c-%ea%b5%ac%ed%98%84%ed%95%98%ea%b8%b0/
 ---
 
 사용자는 서버 A에 연결돼 있는데 매칭은 서버 B에서 끝났다고 하자. B가 “상대 찾았어요”를 만들어도 A의 연결 객체에 바로 쓸 수는 없다. 그 객체는 A의 메모리에 있다.
 
-**서버 사이로 보내야 할 것은 매칭 결과다.** VoiceLink의 Java 17·Spring Boot 3.2.5 구현을 두 서버 예시로 따라가 보자.
+SSE는 앱이 연 HTTP 응답을 유지하면서 이벤트를 쓰는 방식이다. A가 가진 응답 객체를 다른 프로세스 B가 메시지로 받아서 이어 쓰는 구조는 아니다. **서버 사이에는 매칭 결과를 보내고, 실제 응답에는 연결을 가진 A가 쓴다.** VoiceLink의 Java 17·Spring Boot 3.2.5 구현을 두 서버 예시로 따라가 보자.
 
 ```mermaid
 flowchart TD

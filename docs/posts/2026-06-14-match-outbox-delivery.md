@@ -4,11 +4,13 @@ title: 'Outbox 한 행의 수명: 저장·선점·발행·재시도'
 description: 워커 두 개가 Outbox 행을 선점하는 과정과 발행 후 완료 기록 실패를 상태도와 실제 SQL로 설명한다.
 date: '2026-06-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-05'
+revised: '2026-11-06'
 url: https://so-dak.com/%eb%b6%84%ec%82%b0-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%a0%95%ed%95%a9%ec%84%b1-%eb%b3%b4%ec%9e%a5-transactional-outbox-pattern%ec%9c%bc%eb%a1%9c-%eb%a7%a4%ec%b9%ad-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%eb%b0%9c/
 ---
 
 통화방은 저장됐는데 결과를 보내기 전에 서버가 꺼지면, 사용자는 계속 기다릴 수 있다. VoiceLink의 Outbox는 통화방과 “보낼 결과”를 같은 DB 트랜잭션에 남겨 이 틈을 다룬다.
+
+같은 트랜잭션이므로 둘 다 커밋되거나 둘 다 롤백된다. 커밋됐다면 발행 전에 프로세스가 꺼져도 보낼 행이 DB에 남아 다음 워커가 찾을 수 있다. **외부 메시지 발행을 DB와 한 번에 커밋하는 대신, 다시 보낼 의무를 DB에 저장하는 원리**다.
 
 변경 이력 `5091eba` 전에는 `publishPending`의 트랜잭션 안에서 행을 잠그고 외부 발행까지 했다. 이후에는 선점 트랜잭션과 발행을 나누고 임대 토큰을 붙였다. Java 17·Spring Boot 3.2.5 코드에서 무엇이 달라졌는지 행 하나로 따라가 보자. 아래 워커 A·B의 순서는 설명용이다.
 

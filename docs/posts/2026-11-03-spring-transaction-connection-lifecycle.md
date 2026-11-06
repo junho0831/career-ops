@@ -2,7 +2,7 @@
 title: '@Transactional 하나로 두 SQL이 묶이는 이유'
 description: Spring과 H2에서 이체 실패, 내부 호출, 커넥션 공유, flush 후 롤백을 직접 비교하며 JDBC부터 JPA까지 트랜잭션의 경계를 따라간다.
 date: '2026-11-04'
-revised: '2026-11-05'
+revised: '2026-11-06'
 status: publish
 post_id: 1794
 url: https://so-dak.com/spring-transaction-connection-lifecycle/
@@ -10,7 +10,9 @@ url: https://so-dak.com/spring-transaction-connection-lifecycle/
 
 A에게서 1만 원을 뺐다. B에게 넣기 전에 예외가 났다. A의 돈은 돌아올까?
 
-`@Transactional`이 붙은 메서드라도 **어디서 호출했는지**에 따라 결과가 달랐다. 같은 코드를 Spring 프록시로 부르면 돌아왔고, 같은 객체 안에서 부르면 차감된 채 남았다. 어노테이션은 붙어 있는데 돈은 안 돌아온다. 이쯤 되면 메서드 본문 말고 호출 경로를 봐야 한다.
+Spring의 기본 프록시 방식에서는 메서드 바깥의 프록시가 호출을 받아 트랜잭션을 준비한다. 이 예제에서는 메서드가 정상 반환하면 커밋하고, 런타임 예외가 밖으로 전달되면 롤백한다. **어노테이션이 메서드 본문을 바꾸는 방식은 아니다.**
+
+그래서 같은 객체 안에서 메서드를 직접 부르면 이 프록시를 지나지 않는다. 호출 경로 하나가 잔액에 어떤 차이를 만드는지 비교했다.
 
 Spring 6.1.6과 H2로 작은 실험을 만들었다. A 5만 원·B 2만 원의 합성 데이터이며, 실제 계좌나 서비스 장애를 재현한 것은 아니다.
 
@@ -47,7 +49,9 @@ public void callInternally() {
 
 ## SQL 두 개가 같은 커넥션을 만나는 곳
 
-순수 JDBC에서는 같은 `Connection`의 자동 커밋을 끄고 두 SQL을 실행한 뒤 커밋하거나 롤백할 수 있다. Spring은 그 커넥션을 **누가 빌리고, 두 SQL에 공유하고, 언제 반환할지** 관리한다.
+이 실험에서 자동 커밋이 켜져 있으면 차감 SQL이 완료됐을 때 그 변경은 이미 확정된다. 이후 Java 예외만 던져서는 되돌릴 수 없다. 자동 커밋을 끄고 같은 JDBC 커넥션에서 두 SQL을 실행하면, 마지막 커밋 또는 롤백까지 하나의 DB 트랜잭션으로 처리할 수 있다. [JDBC 자동 커밋 규칙](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html#setAutoCommit(boolean))
+
+Spring은 이 커넥션을 **누가 빌리고, 두 SQL에 공유하고, 언제 반환할지** 관리한다.
 
 | 구성 요소 | 이 실험에서 맡은 일 |
 | --- | --- |

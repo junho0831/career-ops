@@ -4,11 +4,13 @@ title: async 함수가 긴 JSON 파싱을 대신해 주지는 않는다
 description: 작은 JSON 파싱 실험으로 async의 실행 순서와 compute의 역할을 비교하고, 네이티브와 웹에서 달라지는 실행 위치를 설명한다.
 date: '2026-06-23'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-05'
+revised: '2026-11-06'
 url: https://so-dak.com/%eb%aa%a8%eb%b0%94%ec%9d%bc-%ec%b5%9c%ec%a0%81%ed%99%94-flutter-isolate%eb%a1%9c-ui-%eb%b2%84%eb%b2%85%ec%9e%84jank-%ed%95%b4%ea%b2%b0-%eb%b0%8f-60fps-%eb%8b%ac%ec%84%b1/
 ---
 
-`before → decode → after`. JSON 파싱 함수에 `async`를 붙이고 앞뒤에 표시를 찍었더니 나온 순서다. 호출 다음 줄보다 파싱이 먼저 실행됐다.
+`async`를 붙이면 긴 JSON 파싱도 다른 곳에서 실행될까? Dart의 `async` 함수는 첫 `await`까지 동기적으로 실행한다. 아래 함수에는 `await`가 없어서 `jsonDecode`를 끝내기 전에는 호출한 쪽의 다음 줄로 넘어가지 않는다. [Dart의 async 실행 규칙](https://dart.dev/language/async)
+
+`Future`는 나중에 결과나 오류를 받는 통로다. 그 반환 타입만으로 새 isolate가 만들어지는 것은 아니다. 이 실행 순서를 작은 테스트로 확인했다.
 
 Flutter 3.38.3·Dart 3.10.1의 독립 학습 실험이다. VoiceLink에 도입한 기능이나 프레임 개선 결과는 아니다.
 
@@ -78,7 +80,7 @@ ID가 `"1"`이면 숫자로 슬쩍 바꾸지 않고 오류를 낸다. 빈 목록
 | 네이티브 | 별도 isolate |
 | 웹 | 현재 이벤트 루프 |
 
-네이티브에서는 계산을 다른 isolate로 옮길 수 있다. 반면 웹은 `compute`를 써도 긴 계산이 화면과 같은 이벤트 루프를 차지한다. 코드 한 줄을 바꿨다는 이유로 두 환경 모두에서 버벅임이 줄었다고 할 수는 없다.
+네이티브의 `compute`는 콜백과 입력을 별도 isolate에서 처리하고 결과를 돌려준다. 주 isolate가 그 계산을 직접 수행하는 시간을 줄일 수 있지만, isolate 시작과 데이터 전달 비용이 생긴다. 웹에서는 콜백이 현재 이벤트 루프에서 실행되므로 같은 호출이 계산의 병렬 실행을 뜻하지는 않는다.
 
 작은 입력은 계산보다 isolate를 시작하고 데이터를 전달하는 비용이 더 클 수도 있다. 이번 네 테스트가 확인한 것도 실행 순서와 반환값·오류이지, 프레임 개선은 아니다. 실제로 옮길 계산은 같은 입력의 처리 시간과 UI 프레임을 비교해 골라야 한다.
 
