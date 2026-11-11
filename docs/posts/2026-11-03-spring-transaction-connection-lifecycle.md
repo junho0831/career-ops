@@ -2,7 +2,7 @@
 title: '@Transactional 하나로 두 SQL이 묶이는 이유'
 description: Spring과 H2에서 이체 실패, 내부 호출, 커넥션 공유, flush 후 롤백을 직접 비교하며 JDBC부터 JPA까지 트랜잭션의 경계를 따라간다.
 date: '2026-11-04'
-revised: '2026-11-06'
+revised: '2026-11-11'
 status: publish
 post_id: 1794
 url: https://so-dak.com/spring-transaction-connection-lifecycle/
@@ -10,11 +10,7 @@ url: https://so-dak.com/spring-transaction-connection-lifecycle/
 
 A에게서 1만 원을 뺐다. B에게 넣기 전에 예외가 났다. A의 돈은 돌아올까?
 
-Spring의 기본 프록시 방식에서는 메서드 바깥의 프록시가 호출을 받아 트랜잭션을 준비한다. 이 예제에서는 메서드가 정상 반환하면 커밋하고, 런타임 예외가 밖으로 전달되면 롤백한다. **어노테이션이 메서드 본문을 바꾸는 방식은 아니다.**
-
-그래서 같은 객체 안에서 메서드를 직접 부르면 이 프록시를 지나지 않는다. 호출 경로 하나가 잔액에 어떤 차이를 만드는지 비교했다.
-
-Spring 6.1.6과 H2로 작은 실험을 만들었다. A 5만 원·B 2만 원의 합성 데이터이며, 실제 계좌나 서비스 장애를 재현한 것은 아니다.
+같은 차감 코드를 두 경로로 호출해 봤다. Spring 6.1.6과 H2에 A 5만 원·B 2만 원을 넣은 실험이며, 실제 계좌나 서비스 장애를 재현한 것은 아니다.
 
 ## 같은 차감 코드, 다른 잔액
 
@@ -38,18 +34,20 @@ public void callInternally() {
 
 | 호출 경로 | A(원) | B(원) |
 | --- | ---: | ---: |
-| 외부 → 실패 | 50,000 | 20,000 |
-| 외부 → 내부 호출 → 실패 | 40,000 | 20,000 |
-| 외부 → 정상 이체 | 40,000 | 30,000 |
-| 외부 → 차감·입금 후 실패 | 50,000 | 20,000 |
+| 프록시 → 차감 후 실패 | 50,000 | 20,000 |
+| 내부 호출 → 차감 후 실패 | 40,000 | 20,000 |
+| 프록시 → 정상 이체 | 40,000 | 30,000 |
+| 프록시 → 차감·입금 후 실패 | 50,000 | 20,000 |
 
-첫 번째는 차감이 롤백됐다. 두 번째는 바깥 메서드에 트랜잭션이 없고 내부 호출이 프록시를 통과하지 않아, JDBC의 자동 커밋으로 차감이 확정됐다. 기존 트랜잭션이 있는 내부 호출까지 전부 트랜잭션 없이 실행된다는 뜻은 아니다. **내부 메서드에 붙인 별도의 설정이 적용되지 않는 것**이다. [Spring 프록시 방식의 적용 범위](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
+Spring의 기본 방식에서는 프록시가 트랜잭션을 시작한다. 이 실험에서는 메서드가 정상 반환하면 커밋하고, `StopTransfer`가 밖으로 나오면 롤백한다.
+
+두 번째 행의 `callInternally()`에는 트랜잭션이 없다. 그 안에서 `failTransfer()`를 직접 부르면 프록시를 거치지 않아 **차감 SQL이 자동 커밋으로 먼저 확정된다.** 그다음에 예외를 던져도 이미 확정된 차감은 되돌아오지 않는다. 바깥에 트랜잭션이 이미 있다면 내부 호출도 그 안에서 실행될 수 있지만, 내부 메서드에 붙인 별도의 설정은 적용되지 않는다. [Spring 프록시 방식의 적용 범위](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/annotations.html)
 
 마지막 경우에는 차감과 입금이 함께 취소됐다. 두 SQL을 누가 같은 트랜잭션으로 묶었을까?
 
 ## SQL 두 개가 같은 커넥션을 만나는 곳
 
-이 실험에서 자동 커밋이 켜져 있으면 차감 SQL이 완료됐을 때 그 변경은 이미 확정된다. 이후 Java 예외만 던져서는 되돌릴 수 없다. 자동 커밋을 끄고 같은 JDBC 커넥션에서 두 SQL을 실행하면, 마지막 커밋 또는 롤백까지 하나의 DB 트랜잭션으로 처리할 수 있다. [JDBC 자동 커밋 규칙](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html#setAutoCommit(boolean))
+자동 커밋을 끄고 같은 JDBC 커넥션에서 차감과 입금을 실행하면, 두 변경을 마지막 커밋에서 함께 확정하거나 롤백에서 함께 되돌릴 수 있다. [JDBC 자동 커밋 규칙](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html#setAutoCommit(boolean))
 
 Spring은 이 커넥션을 **누가 빌리고, 두 SQL에 공유하고, 언제 반환할지** 관리한다.
 

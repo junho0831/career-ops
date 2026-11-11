@@ -4,7 +4,7 @@ title: 잠금 안에서 캐시를 한 번 더 읽는 이유
 description: 캐시가 비었다고 확인한 요청도 잠금을 기다리는 동안 상황이 달라질 수 있다. VoiceLink의 두 번의 조회와 여덟 요청 테스트로 그 이유를 따라간다.
 date: '2026-08-14'
 evidence_review: 'VoiceLink 46282d5 (2026-11-01)'
-revised: '2026-11-06'
+revised: '2026-11-11'
 url: https://so-dak.com/redis-cache-stampede-%ed%98%84%ec%83%81-%ea%b7%b9%eb%b3%b5%ea%b8%b0-%ec%ba%90%ec%8b%9c-%ec%a0%81%ec%9a%a9%ed%95%98%eb%a9%b4-db-%eb%b6%80%ed%95%98-%eb%81%9d-%ec%95%84%eb%8b%8c%ea%b0%80/
 ---
 
@@ -26,7 +26,7 @@ url: https://so-dak.com/redis-cache-stampede-%ed%98%84%ec%83%81-%ea%b7%b9%eb%b3%
 | A 차례 | LiveKit 조회 후 저장 | 잠금 대기 |
 | B 차례 | 반환 완료 | 새 캐시를 읽고 반환 |
 
-B가 처음 본 “캐시 없음”은 맞았다. 다만 자기 차례가 왔을 때는 낡은 정보다. 잠금만 얻고 곧바로 LiveKit을 조회하면, 중복 호출이 사라지는 대신 줄을 서서 실행된다.
+B가 처음 봤을 때는 쓸 수 있는 캐시가 없었다. 하지만 잠금을 기다리는 사이 A가 값을 채웠다. **잠금만 걸고 다시 읽지 않으면, B도 차례가 왔을 때 LiveKit을 호출한다.** 두 호출이 동시에 일어나지는 않아도 같은 조회는 반복된다.
 
 ## 같은 코드지만 두 조회의 일이 다르다
 
