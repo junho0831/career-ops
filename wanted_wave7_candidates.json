@@ -1,0 +1,382 @@
+[
+  {
+    "id": "397404",
+    "company": "다우기술",
+    "position": "증권 HTS 채널 개발"
+  },
+  {
+    "id": "397051",
+    "company": "윤회",
+    "position": "[팀장급]엔지니어링 리더"
+  },
+  {
+    "id": "396835",
+    "company": "에스케이그룹 (SK)",
+    "position": "[SK inc.(AX)] Telco. 컨택센터 Application 운영/개발 전문가"
+  },
+  {
+    "id": "396834",
+    "company": "에스케이그룹 (SK)",
+    "position": "[SK inc.(AX)] AI 기반 차세대 통신 BSS/OSS(NOVA) 응용개발 분야 전문가"
+  },
+  {
+    "id": "396343",
+    "company": "메타(Meta)",
+    "position": "Business Engineer"
+  },
+  {
+    "id": "395245",
+    "company": "서치오에스에이아이",
+    "position": "FDE(Forward Deployed Engineer) 신입"
+  },
+  {
+    "id": "398040",
+    "company": "니우스엔",
+    "position": "AI Film Researcher"
+  },
+  {
+    "id": "397357",
+    "company": "하이퍼커넥트",
+    "position": "Senior Machine Learning Research Scientist (Azar)"
+  },
+  {
+    "id": "395831",
+    "company": "우주에이엠에프",
+    "position": "[3년이상] AI Engineer"
+  },
+  {
+    "id": "395549",
+    "company": "셀렉트스타",
+    "position": "AI Research Engineer _ LLM & Agent Research"
+  },
+  {
+    "id": "395102",
+    "company": "로민",
+    "position": "AI 데이터 매니저"
+  },
+  {
+    "id": "394577",
+    "company": "클레온",
+    "position": "Research Engineer – 실시간 ASR (3년 이상)"
+  },
+  {
+    "id": "394270",
+    "company": "인포시즈",
+    "position": "Applied Scientist, Machine Learning — AI Security"
+  },
+  {
+    "id": "394267",
+    "company": "로민",
+    "position": "ML 엔지니어"
+  },
+  {
+    "id": "394149",
+    "company": "로콘",
+    "position": "지식그래프, 온톨로지 연구원"
+  },
+  {
+    "id": "393922",
+    "company": "에스아이에이",
+    "position": "AI Research Engineer  VLM & Multimodal AI"
+  },
+  {
+    "id": "393889",
+    "company": "햅티",
+    "position": "Physical AI 데이터·머신러닝 엔지니어—센서 데이터·엣지 AI"
+  },
+  {
+    "id": "393806",
+    "company": "몽구스에이아이",
+    "position": "AI Engineer"
+  },
+  {
+    "id": "393731",
+    "company": "마인드브이알",
+    "position": "AI 연구개발자 (감정 인식, AI 휴먼 / 1~5년)"
+  },
+  {
+    "id": "393321",
+    "company": "커넥셔너리",
+    "position": "문서 AI·NLP 응용 ML 엔지니어"
+  },
+  {
+    "id": "393305",
+    "company": "휴머스온",
+    "position": "데이터 엔지니어"
+  },
+  {
+    "id": "391916",
+    "company": "메크랩",
+    "position": "CAD 데이터 기반 AI 튜닝 엔지니어"
+  },
+  {
+    "id": "391677",
+    "company": "보스턴컨설팅그룹(BCG)",
+    "position": "(Senior) Forward Deployed AI Scientist, South Korea - BCG X"
+  },
+  {
+    "id": "390875",
+    "company": "리소리우스",
+    "position": "ML Data  Engineer"
+  },
+  {
+    "id": "389543",
+    "company": "슈퍼진",
+    "position": "AI Research Engineer (3년이상)"
+  },
+  {
+    "id": "388767",
+    "company": "현대자동차그룹 (HYUNDAI)",
+    "position": "달 탐사 모빌리티 자율주행 소프트웨어 엔지니어"
+  },
+  {
+    "id": "388657",
+    "company": "페어스퀘어랩",
+    "position": "DeFi(AMM) 연구 전문연구요원 (병역특례)"
+  },
+  {
+    "id": "388464",
+    "company": "아이지에이웍스(IGAWorks)",
+    "position": "데이터 사이언티스트 (통계 모델링)"
+  },
+  {
+    "id": "387677",
+    "company": "한화그룹 (Hanwha)",
+    "position": "[한화시스템/ICT] 온톨로지(Ontology) 전문가"
+  },
+  {
+    "id": "387346",
+    "company": "에스케이그룹 (SK)",
+    "position": "[SK inc.(AX)] AI Model 엔지니어"
+  },
+  {
+    "id": "387244",
+    "company": "Tiki Ai",
+    "position": "AI Evaluation Engineer"
+  },
+  {
+    "id": "387017",
+    "company": "바이오리서치에이아이",
+    "position": "Scientific AI Engineer"
+  },
+  {
+    "id": "386703",
+    "company": "딜로이트(Deloitte)",
+    "position": "26년 하반기 AI 전문 컨설턴트"
+  },
+  {
+    "id": "386086",
+    "company": "원프레딕트(onepredict)",
+    "position": "Data Scientist"
+  },
+  {
+    "id": "386079",
+    "company": "원프레딕트(onepredict)",
+    "position": "Data Scientist (고객사 FDE)"
+  },
+  {
+    "id": "385904",
+    "company": "캐롯아이",
+    "position": "AI 엔지니어 (AI Agent & Forecasting)"
+  },
+  {
+    "id": "385271",
+    "company": "헥토",
+    "position": "AI Research Enginee 3년 이상"
+  },
+  {
+    "id": "384704",
+    "company": "코너스톤앤컴퍼니",
+    "position": "Data Engineer(3년 이상)"
+  },
+  {
+    "id": "384679",
+    "company": "아이벡스",
+    "position": "[전문연구요원 가능] Deep Learning Research Engineer"
+  },
+  {
+    "id": "383574",
+    "company": "딥아이",
+    "position": "LLM 엔지니어 개발자"
+  },
+  {
+    "id": "383234",
+    "company": "에버엑스",
+    "position": "[기술혁신실] AI Software Engineer(VLM-Eval)"
+  },
+  {
+    "id": "382272",
+    "company": "데이콘",
+    "position": "AI 경진대회운영 매니저"
+  },
+  {
+    "id": "396720",
+    "company": "트리플콤마(골드스푼)",
+    "position": "모바일 앱 개발자 (Flutter)"
+  },
+  {
+    "id": "396156",
+    "company": "어글리랩",
+    "position": "물류 앱 개발자 (1년~3년 이하)"
+  },
+  {
+    "id": "395409",
+    "company": "휴로틱스",
+    "position": "[제품개발본부] Mobile App 개발자"
+  },
+  {
+    "id": "395192",
+    "company": "포티투닷(42dot)",
+    "position": "Test Automation Engineer (IVI System)"
+  },
+  {
+    "id": "393774",
+    "company": "플링캐스트",
+    "position": "안드로이드개발자"
+  },
+  {
+    "id": "393041",
+    "company": "와이즈버즈(wisebirds)",
+    "position": "프로덕트 모바일 앱 개발자 (Lean Developer)"
+  },
+  {
+    "id": "386374",
+    "company": "위로보틱스",
+    "position": "[Wearable Robot] 모바일 앱 Jr. 개발자"
+  },
+  {
+    "id": "380728",
+    "company": "스캐터랩(제타)",
+    "position": "Ad-Tech Developer"
+  },
+  {
+    "id": "378286",
+    "company": "에이에스엑스컴퍼니",
+    "position": "풀스택 개발자"
+  },
+  {
+    "id": "374666",
+    "company": "오웰헬스",
+    "position": "AI 네이티브 개발자"
+  },
+  {
+    "id": "370636",
+    "company": "에이비일팔공(AB180)",
+    "position": "Solutions Architect"
+  },
+  {
+    "id": "361810",
+    "company": "이지케어텍",
+    "position": "솔루션 풀스텍 .NET 개발자"
+  },
+  {
+    "id": "348913",
+    "company": "애쉬코어테크놀로지스",
+    "position": "Frontend Developer"
+  },
+  {
+    "id": "347683",
+    "company": "스캐터랩(제타)",
+    "position": "Mobile Engineer (React Native)"
+  },
+  {
+    "id": "321830",
+    "company": "라이너(Liner)",
+    "position": "Mobile Engineer (React Native)"
+  },
+  {
+    "id": "82181",
+    "company": "보이저엑스(VoyagerX)",
+    "position": "[Vrew/vFlat] 안드로이드 개발자"
+  },
+  {
+    "id": "396518",
+    "company": "어스얼라이언스",
+    "position": "백엔드 엔지니어 (3년 이상)"
+  },
+  {
+    "id": "395256",
+    "company": "문그룹",
+    "position": "대구 웹서비스 초기 핵심 멤버 풀스택 개발자"
+  },
+  {
+    "id": "394804",
+    "company": "리스타",
+    "position": "광고 플랫폼 풀스택 개발자"
+  },
+  {
+    "id": "393805",
+    "company": "로앤컴퍼니(lawtalk)",
+    "position": "FDE팀 Full Stack Engineer"
+  },
+  {
+    "id": "393333",
+    "company": "에이치아이티",
+    "position": "풀스택 개발자(Nest.js 서버, React 웹)"
+  },
+  {
+    "id": "393009",
+    "company": "에이아이구루",
+    "position": "AX Product Engineer ( Full-Cycle )"
+  },
+  {
+    "id": "391128",
+    "company": "이우소프트",
+    "position": "AI Agent Engineer(LLM · TypeScript)"
+  },
+  {
+    "id": "386860",
+    "company": "딥파인",
+    "position": "백엔드 개발자 (물류)"
+  },
+  {
+    "id": "384174",
+    "company": "위에이알",
+    "position": "풀스택개발자(3년 이상)"
+  },
+  {
+    "id": "383601",
+    "company": "미리디",
+    "position": "Applied Algorithm Engineer [산업기능요원/전문연구요원]"
+  },
+  {
+    "id": "381221",
+    "company": "케이제로",
+    "position": "[레슨톡] Product Engineer"
+  },
+  {
+    "id": "380730",
+    "company": "커버링",
+    "position": "백엔드 엔지니어(1-3년)"
+  },
+  {
+    "id": "377070",
+    "company": "사줘",
+    "position": "백엔드_Integration & Reliablity (3년-7년)"
+  },
+  {
+    "id": "375489",
+    "company": "모젯(정오의데이트)",
+    "position": "백엔드 개발자 (산업기능요원 보충역/전직 가능)"
+  },
+  {
+    "id": "374007",
+    "company": "미리디",
+    "position": "[미리캔버스] Applied Algorithm Engineer"
+  },
+  {
+    "id": "369739",
+    "company": "팀카이",
+    "position": "FDE (Forward Deployed Engineer)"
+  },
+  {
+    "id": "366934",
+    "company": "씨드로닉스",
+    "position": "백엔드 엔지니어"
+  },
+  {
+    "id": "362313",
+    "company": "쏘카(SOCAR)",
+    "position": "Product Engineer"
+  }
+]
