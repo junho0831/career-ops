@@ -1,0 +1,128 @@
+[
+  {
+    "id": "398462",
+    "company": "코오롱베니트",
+    "position": "FDE(Forward Deployed Engineer)",
+    "location": "경기"
+  },
+  {
+    "id": "396742",
+    "company": "컨시언스테크놀로지",
+    "position": "Forward Deployed Engineer (FDE)",
+    "location": "경기"
+  },
+  {
+    "id": "395871",
+    "company": "포트로직스",
+    "position": "[FDE] Forward Deployed Engineer - 오퍼레이션 셀",
+    "location": "경기"
+  },
+  {
+    "id": "395717",
+    "company": "포트로직스",
+    "position": "[FDE] Forward Deployed Engineer - 그로스 셀",
+    "location": "경기"
+  },
+  {
+    "id": "390131",
+    "company": "포트로직스",
+    "position": "[FDE] Forward Deployed Engineer - 디플로이드 셀",
+    "location": "경기"
+  },
+  {
+    "id": "378276",
+    "company": "브레인크루",
+    "position": "AI Engineer (Forward Deployed Engineer)",
+    "location": "경기"
+  },
+  {
+    "id": "394732",
+    "company": "클레로보틱스",
+    "position": "[FDE] 전방 배치 엔지니어 (3차원 머신비전 SW) (5년 이상)",
+    "location": "경기"
+  },
+  {
+    "id": "392270",
+    "company": "더큐티컴파니",
+    "position": "Solutions Engineer",
+    "location": "경기"
+  },
+  {
+    "id": "396140",
+    "company": "클로닉스",
+    "position": "기술지원 엔지니어(Field Engineer ·On-site Hardware Maintenance)",
+    "location": "경기"
+  },
+  {
+    "id": "394945",
+    "company": "나비프라",
+    "position": "필드 엔지니어",
+    "location": "경기"
+  },
+  {
+    "id": "394692",
+    "company": "클로봇",
+    "position": "솔루션 필드 엔지니어",
+    "location": "경기"
+  },
+  {
+    "id": "343880",
+    "company": "디스펙터",
+    "position": "로봇 필드 엔지니어 (현장 기술지원·QA/QC)",
+    "location": "경기"
+  },
+  {
+    "id": "334734",
+    "company": "클로봇",
+    "position": "물류 필드 엔지니어",
+    "location": "경기"
+  },
+  {
+    "id": "396973",
+    "company": "우리엔",
+    "position": "[중견 계열사] CS 기술지원",
+    "location": "경기"
+  },
+  {
+    "id": "396294",
+    "company": "비트센싱",
+    "position": "[자율주행] 솔루션 기술지원 (FAE)",
+    "location": "경기"
+  },
+  {
+    "id": "395439",
+    "company": "에스케이그룹 (SK)",
+    "position": "[SK signet] 충방전기개발팀 - SW개발·현장 기술지원 (Senior)",
+    "location": "경기"
+  },
+  {
+    "id": "395438",
+    "company": "에스케이그룹 (SK)",
+    "position": "[SK signet] 충방전기개발팀 - SW개발·현장 기술지원 (Junior)",
+    "location": "경기"
+  },
+  {
+    "id": "393720",
+    "company": "인투씨엔에스",
+    "position": "기술지원 담당자",
+    "location": "경기"
+  },
+  {
+    "id": "393551",
+    "company": "슈프리마",
+    "position": "국내 기술지원 담당자",
+    "location": "경기"
+  },
+  {
+    "id": "383241",
+    "company": "체크멀",
+    "position": "기술지원 엔지니어",
+    "location": "경기"
+  },
+  {
+    "id": "325388",
+    "company": "미래시그널",
+    "position": "백본 ·L3 스위치 기술지원 / 망 설계 전문가",
+    "location": "경기"
+  }
+]
