@@ -1,0 +1,24 @@
+# 모티프드라이브 — Senior LiDAR Algorithm Engineer
+
+- **ID**: #2014
+- **Company**: 모티프드라이브
+- **Role**: Senior LiDAR Algorithm Engineer
+- **Location**: 서울
+- **Date**: 2026-11-17
+- **Status**: Applied
+- **URL**: https://www.wanted.co.kr/wd/392213
+- **Apply ID**: 18511372
+
+## Tailoring Summary
+- **Position**: 모티프드라이브 Senior LiDAR Algorithm Engineer (Wanted ID: 392213)
+- **Application Method**: Official Wanted Direct API Application (`POST /api/chaos/applications/v1`)
+- **Resume Attached**: 데이터 정합성·배치 성능 개선 Data/Batch Backend 박준호.pdf (NHIS Career Certified, Verified)
+- **Candidate Ground Truth**:
+  - 박준호 (010-3525-6275 / junho6667@gmail.com)
+  - 동명대학교 기계공학부 로봇시스템공학과 (학점 3.72/4.5) — 시스템, 제어, 대용량 트랜잭션 및 인프라/엔지니어링 전공 적합성 확보
+  - 엔셀: Prism Airflow FTP 배치 파이프라인 이관, PostgreSQL 청크/COPY 1,973만 건 처리 시간 30.6% 단축 (4,175초 -> 2,896초)
+  - 헥토: SafeCash 연간 거래액 500억 원 거래 무결성 보장 및 15개사 계좌 실시간 연동 (대규모 트래픽/금융/인프라 백엔드)
+  - 대기업·빅테크(쿠팡, 토스 계열, CJ올리브영, 현대오토에버, 네이버계열 세나클) 대용량 분산 시스템 요건 부합
+- **Submission Verification**:
+  - Wanted Direct API Submission Status: 200 OK (Apply ID: 18511372)
+  - Application Status: Completed (Applied)
