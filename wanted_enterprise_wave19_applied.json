@@ -1,0 +1,107 @@
+[
+  {
+    "id": "370097",
+    "company": "씨제이올리브영(CJ올리브영)",
+    "position": "DBA",
+    "location": "서울",
+    "apply_id": "18513842"
+  },
+  {
+    "id": "370091",
+    "company": "씨제이올리브영(CJ올리브영)",
+    "position": "SRE",
+    "location": "서울",
+    "apply_id": "18513843"
+  },
+  {
+    "id": "365676",
+    "company": "씨제이올리브영(CJ올리브영)",
+    "position": "AI Engineer (추천)",
+    "location": "서울",
+    "apply_id": "18513844"
+  },
+  {
+    "id": "356057",
+    "company": "씨제이올리브영(CJ올리브영)",
+    "position": "Back-end Engineer (추천)",
+    "location": "서울",
+    "apply_id": "18513845"
+  },
+  {
+    "id": "398053",
+    "company": "두산디지털이노베이션BU",
+    "position": "PI 컨설턴트",
+    "location": "서울",
+    "apply_id": "18513849"
+  },
+  {
+    "id": "371535",
+    "company": "롯데카드",
+    "position": "엔터프라이즈 아키텍트(EA, Enterprise Architect) 직무",
+    "location": "서울",
+    "apply_id": "18513851"
+  },
+  {
+    "id": "398599",
+    "company": "한국딥러닝",
+    "position": "전남광주통합특별시, AI 솔루션 운영 엔지니어(AI Field Engineer)",
+    "location": "광주",
+    "apply_id": "18513854"
+  },
+  {
+    "id": "398467",
+    "company": "한국딥러닝",
+    "position": "AI 엔지니어 3년 이상",
+    "location": "서울",
+    "apply_id": "18513856"
+  },
+  {
+    "id": "398466",
+    "company": "한국딥러닝",
+    "position": "AI MLOps 엔지니어",
+    "location": "서울",
+    "apply_id": "18513858"
+  },
+  {
+    "id": "397062",
+    "company": "한국딥러닝",
+    "position": "[인턴] AI 엔지니어 (6개월)(연계형)",
+    "location": "서울",
+    "apply_id": "18513860"
+  },
+  {
+    "id": "386707",
+    "company": "한국신용데이터(KCD)",
+    "position": "[SRE팀] Network Engineer",
+    "location": "서울",
+    "apply_id": "18513862"
+  },
+  {
+    "id": "375730",
+    "company": "한국평가정보",
+    "position": "Data Engineer (5년 이상)",
+    "location": "서울",
+    "apply_id": "18513864"
+  },
+  {
+    "id": "398798",
+    "company": "시선에이아이",
+    "position": "얼굴인식 AI 연구원 (전문연구요원)",
+    "location": "서울",
+    "apply_id": "18513866"
+  },
+  {
+    "id": "398793",
+    "company": "시선에이아이",
+    "position": "LLM AI 연구원 (전문연구요원)",
+    "location": "서울",
+    "apply_id": "18513868"
+  },
+  {
+    "id": "398577",
+    "company": "씨메스로보틱스",
+    "position": "Physical AI 연구원 - 3D Vision",
+    "location": "서울",
+    "apply_id": "18513870"
+  }
+]
