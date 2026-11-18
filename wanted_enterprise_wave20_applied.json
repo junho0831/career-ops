@@ -1,0 +1,107 @@
+[
+  {
+    "id": "398576",
+    "company": "씨메스로보틱스",
+    "position": "Physical AI 연구원 - Robot Hand",
+    "location": "서울",
+    "apply_id": "18521890"
+  },
+  {
+    "id": "398138",
+    "company": "뉴로클",
+    "position": "AI 딥러닝 연구원 (박사/석사 전문연구요원 가능)",
+    "location": "서울",
+    "apply_id": "18521891"
+  },
+  {
+    "id": "397140",
+    "company": "보로노이",
+    "position": "임상 수리 통계 모델링 연구원",
+    "location": "인천",
+    "apply_id": "18521892"
+  },
+  {
+    "id": "396917",
+    "company": "레인보우로보틱스",
+    "position": "펌웨어 개발(책임 연구원/과장급)",
+    "location": "세종",
+    "apply_id": "18521893"
+  },
+  {
+    "id": "396232",
+    "company": "부전전자",
+    "position": "컴퓨터비전 연구원 (영상 기반 드론 탐지·추적)",
+    "location": "서울",
+    "apply_id": "18521894"
+  },
+  {
+    "id": "395569",
+    "company": "케이앤피",
+    "position": "기업부설연구소 H/W, F/W 설계 및 양산 플로우 총괄 책임연구원",
+    "location": "경북",
+    "apply_id": "18521895"
+  },
+  {
+    "id": "389916",
+    "company": "팀엘리시움",
+    "position": "[전문연구요원] 디지털 헬스케어 AI/Computer Vision 연구원",
+    "location": "서울",
+    "apply_id": "18521896"
+  },
+  {
+    "id": "389257",
+    "company": "데이터그릿",
+    "position": "GritDB 데이터베이스 엔진 GritSurfer 연구원 (시니어, 6년 이상)",
+    "location": "서울",
+    "apply_id": "18521898"
+  },
+  {
+    "id": "384530",
+    "company": "세종분석연구원",
+    "position": "Senior AI Engineer",
+    "location": "서울",
+    "apply_id": "18521899"
+  },
+  {
+    "id": "369436",
+    "company": "엔젤로보틱스",
+    "position": "VLA 기반 로봇 모션 제어 연구원",
+    "location": "대전",
+    "apply_id": "18521900"
+  },
+  {
+    "id": "348177",
+    "company": "폴스타헬스케어",
+    "position": "의료AI연구원",
+    "location": "서울",
+    "apply_id": "18521901"
+  },
+  {
+    "id": "327687",
+    "company": "아로아랩스",
+    "position": "AI 국제 물류 스타트업 AI/ML 연구원",
+    "location": "서울",
+    "apply_id": "18521902"
+  },
+  {
+    "id": "319759",
+    "company": "엣지크로스",
+    "position": "AI SW 엔지니어 - Agentic AI(3년 이상/전문연구원 가능)",
+    "location": "서울",
+    "apply_id": "18521903"
+  },
+  {
+    "id": "319135",
+    "company": "옵트에이아이",
+    "position": "(전문연 가능) LLM/VLM 연구원",
+    "location": "서울",
+    "apply_id": "18521904"
+  },
+  {
+    "id": "314856",
+    "company": "노바에어",
+    "position": "AI 기반 항공 난류 예측 및 물리·수치모델링 연구원 (기상학·대기과학 분야)",
+    "location": "서울",
+    "apply_id": "18521906"
+  }
+]
