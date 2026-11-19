@@ -2,19 +2,21 @@
 
 ## Your Target Roles
 
-| Archetype | Thematic axes | What they buy |
-|-----------|---------------|---------------|
-| **Data / Batch Backend Engineer** | Airflow, FTP ingestion, parsing/validation, structured loading, relational constraints, recurring jobs | Someone who turns fragile file/log workflows into reliable data pipelines with clear success/failure boundaries |
-| **Backend Engineer** | API design, domain logic, auth, data integrity | Someone who ships reliable backend features end-to-end |
-| **Platform / Reliability Engineer** | CI/CD, incident reduction, fallback design, operations | Someone who lowers operational risk and improves delivery speed |
-| **Search / Integration Backend Engineer** | Elasticsearch, Redis, JWT/OAuth2, system integration | Someone who keeps critical flows stable across multiple systems |
+| Archetype | Thematic axes | What they buy | Source CV |
+|-----------|---------------|---------------|-----------|
+| **Web & Platform Backend Engineer** | Concurrency, Redis Lua, DB Outbox, Fallback, WebRTC, Solo ops | Someone who builds high-availability web platforms, APIs, and real-time services that survive failures | `cv-platform.md` |
+| **Fintech & Transaction Backend Engineer** | MyData, 0-defect, Transaction integrity, Pessimistic lock, SafeCash Admin | Someone who guarantees financial/data consistency and zero-defect operational recovery | `cv-fintech.md` |
+| **Data & Batch Pipeline Engineer** | Airflow DAG, 19.7M COPY chunk loading, 30.6% latency cut, Partitioning, Reprocessing | Someone who turns fragile file/log workflows into reliable, idempotent high-volume data pipelines | `cv-data.md` |
+| **Platform / Reliability Engineer** | CI/CD, incident reduction, fallback design, operations | Someone who lowers operational risk and improves delivery speed | cv.md |
+| **Search / Integration Backend Engineer** | Elasticsearch, Redis, JWT/OAuth2, system integration | Someone who keeps critical flows stable across multiple systems | cv.md |
 
 ## Your Adaptive Framing
 
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
-| Data / Batch Backend | Airflow workflow automation, FTP ingestion/parsing/validation, ER Dose RAW/EUV parsing separation, structured loading, durable-success-before-source-delete flow, unique+upsert safeguards, chunk/partition loading | cv.md |
-| Backend Engineer | End-to-end ownership from design to deployment, standardized exception handling, practical debugging, maintainable APIs, AI-assisted solo execution on live service | cv.md |
+| Web & Platform Backend | VoiceLink live service (Redis Lua atomic claim, DB Outbox, FOR UPDATE SKIP LOCKED, LiveKit WebRTC), DataForge ES DB fallback, standardized error responses, Docker/Nginx solo ops | cv-platform.md |
+| Fintech & Transaction | SafeCash MyData batch & Admin reprocessing API (monthly data integrity issues 3 -> 0), VoiceLink transactional integrity (Pessimistic lock, Outbox), DataForge unique constraints, idempotent reload | cv-fintech.md |
+| Data & Batch Pipeline | Airflow workflow automation, FTP ingestion/parsing/validation, ER Dose RAW/EUV parsing separation, chunk/partition COPY loading (30.6% latency cut), unique+upsert safeguards | cv-data.md |
 | Platform / Reliability | CI/CD automation, zero-failure deployments, graceful degradation, faster incident analysis, AI-assisted solo ops iteration | cv.md |
 | Search / Integration | Elasticsearch fallback, RAG search, RDB indexes/unique constraints, auth/session consistency, internal tooling | cv.md |
 

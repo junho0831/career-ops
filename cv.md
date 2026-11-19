@@ -109,6 +109,7 @@ er_dose/raw/raw_repository.py, docs/pr/er_dose_pipeline_reload_optimization.md.
 
 `Flutter` `390×844 모바일 UI` `WebView` `사진 자동 확인` `검색·필터` `판매글 fallback`
 
+- Flutter 기반 쿠폰 관리 앱 **쿠폰포켓**을 단독 개발 — [Google Play](https://play.google.com/store/apps/details?id=com.pocketportal.pocket_portal)
 - 쿠폰 자산을 검색·보관·회수하고, 중고거래 판매글 작성까지 이어지는 모바일 흐름을 설계·구현
 - 390×844 기준으로 홈·쿠폰 검색 결과·전체 보관함·쿠폰 상세·회수 요약·회수 기록 화면을 점검해 정보 우선순위와 빈 상태를 정리
 - 쿠폰 상세의 고정 완료 액션 바와 본문이 겹치지 않도록 불투명 하단 영역과 여백을 적용
@@ -194,6 +195,20 @@ Outbox 최초 도입은 2026-01-02, Lua 매칭 이력은 2026-01-30이므로
 ---
 
 ## Additional Project
+
+### 쿠폰포켓 (Pocket Portal)
+`2026.11 ~ 현재` · `AI-Assisted Development` `Android` `On-Device OCR` `Google Play Store`
+- AI 코딩 도구를 워크플로우에 적극 도입하여 기획·구현부터 구글 플레이스토어 심사·배포까지 1인 풀사이클로 완주한 모바일 유틸리티 앱
+- 개인정보 보호 및 서버 비용 절감을 위해 외부 통신 없는 온디바이스(On-Device) OCR 및 이미지 로컬 처리 파이프라인 채택
+- 유효기간 기반 로컬 푸시 알림, 지도 연동 사용처 검색, C2C 중고 판매 지원(바코드 마스킹 및 템플릿 초안 생성) 기능 구현
+- 스토어 출시 및 운영: Google Play Store 배포 (`com.pocketportal.pocket_portal`)
+
+### Card Draft: Three Factions
+`2026.11 ~ 현재` · `AI-Assisted Development` `Android` `Deck Building RPG` `Google Play Store`
+- AI 기반 코드 생성 및 반복 프로토타이핑을 활용해 5~10분 세션 호흡의 모바일 싱글플레이 덱빌딩 카드 RPG 1인 제작 및 출시
+- 3대 세력 필살기 시스템, 5칸 전장 전투, 상태 이상 및 시너지 연계 등 턴제 전투 규칙 및 데이터 구조 설계
+- Android 16 호환성 검증 및 오프라인 환경에 최적화된 모바일 조작 안정성 확보
+- 스토어 출시 및 운영: Google Play Store 배포 (`com.card_draft`)
 
 ### 와글와글 소모임
 `2023.09 ~ 2023.10` · `Java` `Spring Boot` `Spring Security` `OAuth2` `JWT`

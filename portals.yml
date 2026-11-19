@@ -53,7 +53,7 @@ title_filter:
     - "백엔드 개발자"
     - "Backend Engineer"
     - "Server Engineer"
-    # 보조 탐색: 제조/반도체 교차 및 AI Backend
+    # 보조 탐색: 제조/반도체 교차 및 AI Backend / 확장 키워드
     - "반도체 데이터"
     - "제조 데이터"
     - "MES 개발"
@@ -64,6 +64,25 @@ title_filter:
     - "공정"
     - "설비"
     - "로봇"
+    # 확장 탐색: AI Agent / LLM / FastAPI / 풀스택 / 연계 / O&M
+    - "AI Agent"
+    - "AI 엔지니어"
+    - "AX 엔지니어"
+    - "LLM"
+    - "RAG"
+    - "FastAPI"
+    - "연계 솔루션"
+    - "EAI"
+    - "ESB"
+    - "FMS"
+    - "Fleet"
+    - "플랫폼 엔지니어"
+    - "풀스택"
+    - "Full-Stack"
+    - "크롤링"
+    - "스크래핑"
+    - "시스템 운영"
+    - "O&M"
   negative:
     # Hard Negatives (공고 제목/주요직무 기준 필수 제외 직군만 유지)
     # 본문에 React/Vue/QA/PM 단어가 있어도 백엔드가 주업무면 탈락시키지 않음
