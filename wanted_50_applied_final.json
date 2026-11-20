@@ -1,0 +1,352 @@
+[
+  {
+    "id": "399332",
+    "company": "크리에이츠",
+    "position": "백엔드 개발자",
+    "location": "서울",
+    "apply_id": "18540916"
+  },
+  {
+    "id": "399315",
+    "company": "워시스왓(세탁특공대)",
+    "position": "QA Manager",
+    "location": "서울",
+    "apply_id": "18540921"
+  },
+  {
+    "id": "399313",
+    "company": "카카오페이증권(kakaopay증권)",
+    "position": "VulnOps 담당자(시니어)",
+    "location": "경기",
+    "apply_id": "18540923"
+  },
+  {
+    "id": "399298",
+    "company": "닥커넥트",
+    "position": "AI 엔지니어 (백엔드팀)",
+    "location": "인천",
+    "apply_id": "18540924"
+  },
+  {
+    "id": "399297",
+    "company": "피에프씨테크놀로지스",
+    "position": "AI Platform Engineer(AI 플랫폼 엔지니어)",
+    "location": "서울",
+    "apply_id": "18540925"
+  },
+  {
+    "id": "399296",
+    "company": "번개장터",
+    "position": "DevSecOps Engineer (Junior)",
+    "location": "서울",
+    "apply_id": "18540926"
+  },
+  {
+    "id": "399294",
+    "company": "소프트먼트",
+    "position": "QR오더 백엔드 개발자 (Java/Spring, 5년 이상)",
+    "location": "서울",
+    "apply_id": "18540927"
+  },
+  {
+    "id": "399272",
+    "company": "인핸스(Enhans)",
+    "position": "AgentOS Engineering Lead",
+    "location": "서울",
+    "apply_id": "18540928"
+  },
+  {
+    "id": "399244",
+    "company": "알티올",
+    "position": "물류 시스템 유지보수 개발자",
+    "location": "인천",
+    "apply_id": "18540929"
+  },
+  {
+    "id": "399214",
+    "company": "문토",
+    "position": "[커뮤니티·데이팅] 소프트웨어 엔지니어 (신입~3년)",
+    "location": "서울",
+    "apply_id": "18540930"
+  },
+  {
+    "id": "399209",
+    "company": "문토",
+    "position": "[인턴] 소프트웨어 엔지니어 (전환형)",
+    "location": "서울",
+    "apply_id": "18540931"
+  },
+  {
+    "id": "399204",
+    "company": "젭(zep)",
+    "position": "백엔드 테크 리드",
+    "location": "서울",
+    "apply_id": "18540933"
+  },
+  {
+    "id": "399203",
+    "company": "라텔앤드파트너즈",
+    "position": "백엔드 개발자 (3년 이상)",
+    "location": "서울",
+    "apply_id": "18540934"
+  },
+  {
+    "id": "399200",
+    "company": "라텔앤드파트너즈",
+    "position": "백엔드 개발자 (5년 이상)",
+    "location": "서울",
+    "apply_id": "18540935"
+  },
+  {
+    "id": "399183",
+    "company": "카카오뱅크(kakaobank)",
+    "position": "쿠버네티스(Kubernetes) 엔지니어",
+    "location": "경기",
+    "apply_id": "18540936"
+  },
+  {
+    "id": "399182",
+    "company": "액시언",
+    "position": "IT Infra Engineer",
+    "location": "경기",
+    "apply_id": "18540937"
+  },
+  {
+    "id": "399178",
+    "company": "로민",
+    "position": "개발팀 리드 엔지니어",
+    "location": "서울",
+    "apply_id": "18540938"
+  },
+  {
+    "id": "399169",
+    "company": "에비드넷",
+    "position": "의료데이터 엔지니어링 팀장 (Healthcare Data Engineering Lead)",
+    "location": "서울",
+    "apply_id": "18540939"
+  },
+  {
+    "id": "399167",
+    "company": "페블스퀘어",
+    "position": "On-Device AI Engineer",
+    "location": "경기",
+    "apply_id": "18540940"
+  },
+  {
+    "id": "399160",
+    "company": "로민",
+    "position": "솔루션 개발 엔지니어",
+    "location": "서울",
+    "apply_id": "18540941"
+  },
+  {
+    "id": "399156",
+    "company": "브이투브이",
+    "position": "Product Engineer (Backend)",
+    "location": "서울",
+    "apply_id": "18540943"
+  },
+  {
+    "id": "399150",
+    "company": "로민",
+    "position": "ML 엔지니어",
+    "location": "서울",
+    "apply_id": "18540944"
+  },
+  {
+    "id": "399141",
+    "company": "인핸스(Enhans)",
+    "position": "Security Operations Lead",
+    "location": "서울",
+    "apply_id": "18540945"
+  },
+  {
+    "id": "399127",
+    "company": "아주큐엠에스",
+    "position": "서비스데스크 운영(계약직)",
+    "location": "서울",
+    "apply_id": "18540946"
+  },
+  {
+    "id": "399102",
+    "company": "모라이(MORAI)",
+    "position": "물리기반 센서 시뮬레이션 Integration Engineer (1년 계약직)",
+    "location": "서울",
+    "apply_id": "18540948"
+  },
+  {
+    "id": "399091",
+    "company": "더파운더즈",
+    "position": "[인턴][ANUA] BI & Data Engineer 전환형",
+    "location": "서울",
+    "apply_id": "18540949"
+  },
+  {
+    "id": "399060",
+    "company": "바잉스퀘어",
+    "position": "Back-end Engineer",
+    "location": "서울",
+    "apply_id": "18540950"
+  },
+  {
+    "id": "399055",
+    "company": "에프앤엘코퍼레이션",
+    "position": "[경영지원] DX Part - DX Leader",
+    "location": "서울",
+    "apply_id": "18540951"
+  },
+  {
+    "id": "399025",
+    "company": "모요",
+    "position": "Backend Developer - 개통스쿼드",
+    "location": "서울",
+    "apply_id": "18540952"
+  },
+  {
+    "id": "399009",
+    "company": "쿼드마이너",
+    "position": "인프라보안 담당자",
+    "location": "서울",
+    "apply_id": "18540953"
+  },
+  {
+    "id": "398993",
+    "company": "아우토크립트",
+    "position": "FMS 백엔드 개발자 [신입]",
+    "location": "서울",
+    "apply_id": "18540954"
+  },
+  {
+    "id": "398989",
+    "company": "페블스퀘어",
+    "position": "Infra/DevOps Engineer",
+    "location": "경기",
+    "apply_id": "18540955"
+  },
+  {
+    "id": "398960",
+    "company": "스킨서울랩(SkinseoulLab)",
+    "position": "비즈니스 인텔리전스 엔지니어",
+    "location": "서울",
+    "apply_id": "18540956"
+  },
+  {
+    "id": "398941",
+    "company": "컬리",
+    "position": "광고 PM(Product Manager)",
+    "location": "서울",
+    "apply_id": "18540957"
+  },
+  {
+    "id": "398936",
+    "company": "휴넷",
+    "position": "IOS 앱 개발자",
+    "location": "서울",
+    "apply_id": "18540958"
+  },
+  {
+    "id": "398920",
+    "company": "넵튠(Neptune)",
+    "position": "플랫폼사업본부 플랫폼개발실 InDSP TF 서버개발자",
+    "location": "서울",
+    "apply_id": "18540959"
+  },
+  {
+    "id": "398916",
+    "company": "미리디",
+    "position": "[미리캔버스] 프론트엔드 엔지니어 (Product)",
+    "location": "서울",
+    "apply_id": "18540960"
+  },
+  {
+    "id": "398907",
+    "company": "스푼랩스",
+    "position": "DBA",
+    "location": "서울",
+    "apply_id": "18540961"
+  },
+  {
+    "id": "398905",
+    "company": "인라이플",
+    "position": "데이터 사이언티스트",
+    "location": "서울",
+    "apply_id": "18540963"
+  },
+  {
+    "id": "398900",
+    "company": "다우기술",
+    "position": "인터넷서비스 인프라 엔지니어",
+    "location": "경기",
+    "apply_id": "18540964"
+  },
+  {
+    "id": "398879",
+    "company": "빌드잇",
+    "position": "Product Engineer (Backend/Frontend, 2년 이상/5년 이하)",
+    "location": "경기",
+    "apply_id": "18540965"
+  },
+  {
+    "id": "398868",
+    "company": "웅진",
+    "position": "클라우드 아키텍트 (AWS)",
+    "location": "서울",
+    "apply_id": "18540966"
+  },
+  {
+    "id": "398865",
+    "company": "뷰노",
+    "position": "SW개발본부 SW Engineer [신논현 오피스]",
+    "location": "서울",
+    "apply_id": "18540967"
+  },
+  {
+    "id": "398862",
+    "company": "뷰노",
+    "position": "HATIV SW Engineer [영등포 오피스]",
+    "location": "서울",
+    "apply_id": "18540968"
+  },
+  {
+    "id": "398861",
+    "company": "핀다(FINDA)",
+    "position": "웹프론트엔드 엔지니어",
+    "location": "서울",
+    "apply_id": "18540969"
+  },
+  {
+    "id": "398854",
+    "company": "대륜",
+    "position": "스카이즈코리아 SEO 마케팅 팀원(판교/부산)",
+    "location": "경기",
+    "apply_id": "18540970"
+  },
+  {
+    "id": "398818",
+    "company": "알티올",
+    "position": "물류자동화 시스템 엔지니어 및 H/W(하드웨어) 개발자",
+    "location": "인천",
+    "apply_id": "18540972"
+  },
+  {
+    "id": "398801",
+    "company": "시선에이아이",
+    "position": "Windows C++ 개발자 (보안 솔루션)",
+    "location": "서울",
+    "apply_id": "18540973"
+  },
+  {
+    "id": "398796",
+    "company": "시선에이아이",
+    "position": "AI 인프라 엔지니어 (온프레미스·AWS·K8s)",
+    "location": "서울",
+    "apply_id": "18540974"
+  },
+  {
+    "id": "398795",
+    "company": "우리엔",
+    "position": "[중견 계열사] 의료 영상 SW Architect",
+    "location": "경기",
+    "apply_id": "18540975"
+  }
+]
