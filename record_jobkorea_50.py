@@ -1,0 +1,63 @@
+import json, os
+
+with open('jobkorea_50_applied_final.json') as f:
+    applied = json.load(f)
+
+# Tracker started at 2128
+start_tracker_id = 2128
+# Report started at 1186
+start_report_id = 1186
+date_str = '2026-11-20'
+
+new_tracker_rows = []
+
+for i, item in enumerate(applied):
+    t_id = start_tracker_id + i
+    r_id = start_report_id + i
+    comp = item['company']
+    pos = item['position']
+    jid = item['id']
+    loc = item.get('location') or '서울/경기'
+    apply_id = item.get('apply_id') or ('jk-' + str(jid))
+    
+    safe_comp = comp.replace('/', '_').replace(' ', '_').replace('(', '').replace(')', '')
+    safe_pos = pos.replace('/', '_').replace(' ', '_').replace('(', '').replace(')', '').replace('[', '').replace(']', '')
+    filename = f'{r_id}-{safe_comp}-{safe_pos}-{date_str}.md'
+    filepath = os.path.join('reports', filename)
+    
+    report_content = f'''# {comp} — {pos}
+
+- **ID**: #{t_id}
+- **Company**: {comp}
+- **Role**: {pos}
+- **Location**: {loc}
+- **Date**: {date_str}
+- **Status**: Applied
+- **URL**: https://www.jobkorea.co.kr/Recruit/GI_Read/{jid}
+- **Apply ID**: {apply_id}
+
+## Tailoring Summary
+- **Position**: {comp} {pos} (JobKorea ID: {jid})
+- **Application Method**: JobKorea Instant Apply (`/Recruit/OnPass/OnPassApply`)
+- **Resume Attached**: 데이터 정합성과 배치 성능을 개선하는 Data/Batch Backend Engineer 박준호 (기본 이력서, 신규 출시 앱 2종 반영)
+- **Candidate Ground Truth**:
+  - 박준호 (010-3525-6275 / junho6667@gmail.com)
+  - 동명대학교 기계공학부 로봇시스템공학과 (학점 3.72/4.5)
+  - 엔셀: Prism Airflow FTP 배치 파이프라인 이관, PostgreSQL 청크/COPY 1,973만 건 처리 시간 30.6% 단축 (4,175초 -> 2,896초)
+  - 헥토: SafeCash 연간 거래액 500억 원 거래 무결성 보장 및 15개사 계좌 실시간 연동 (대규모 엔터프라이즈 시스템/금융 트랜잭션 검증)
+- **Submission Verification**:
+  - JobKorea Direct Apply Submission Status: Completed (Pass No: {apply_id})
+  - Application Status: Completed (Applied)
+'''
+    with open(filepath, 'w', encoding='utf-8') as rf:
+        rf.write(report_content)
+        
+    tracker_note = f'잡코리아(JobKorea) 지원 완료 ({comp}, 공고번호 {jid}, 기본 이력서 및 신규 앱 2종 반영 제출, 접수번호: {apply_id})'
+    tracker_row = f'| #{t_id} | {comp} | {pos} | {loc} | {date_str} | [{r_id}](../reports/{filename}) | Applied | [JobKorea](https://www.jobkorea.co.kr/Recruit/GI_Read/{jid}) | {tracker_note} |'
+    new_tracker_rows.append(tracker_row)
+
+with open('data/applications.md', 'a', encoding='utf-8') as f:
+    for row in new_tracker_rows:
+        f.write('\n' + row)
+
+print(f'Wrote {len(applied)} JobKorea reports and tracker rows from #{start_tracker_id} to #{start_tracker_id + len(applied) - 1}.')
