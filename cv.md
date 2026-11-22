@@ -21,7 +21,7 @@ Email: junho6667@gmail.com | Phone: 010-3525-6275 | GitHub: https://github.com/j
 
 ## Core Skills
 
-- **Backend:** Java, Spring Boot, JPA, REST API
+- **Backend:** Java, Python, Spring Boot, JPA, REST API
 - **Data / Infra:** PostgreSQL, MySQL, Redis, Elasticsearch, Server-side Cursor, COPY, Range Partition
 - **Realtime / Ops:** LiveKit, WebRTC, RabbitMQ, Redis Pub/Sub, Docker, Nginx, SSL, DNS
 - **Automation / Batch:** GitLab CI/CD, Airflow, Crontab, FTP, Log Parsing
@@ -104,16 +104,17 @@ er_dose/raw/raw_repository.py, docs/pr/er_dose_pipeline_reload_optimization.md.
 
 ## Project
 
-### 쿠폰 자산 회수·중고거래 준비 앱
-`2026.08 ~ 현재` · 진행 중 · 단독 개발 (참여율 100%)
+### 쿠폰포켓 (Pocket Portal) | 쿠폰 관리·중고거래 준비 앱
+`2026.08 ~ 현재` · 단독 개발 · Google Play 배포 (`2026.11`)
 
-`Flutter` `390×844 모바일 UI` `WebView` `사진 자동 확인` `검색·필터` `판매글 fallback`
+`Flutter` `Android` `WebView` `On-Device OCR` `로컬 알림`
 
-- 쿠폰 자산을 검색·보관·회수하고, 중고거래 판매글 작성까지 이어지는 모바일 흐름을 설계·구현
-- 390×844 기준으로 홈·쿠폰 검색 결과·전체 보관함·쿠폰 상세·회수 요약·회수 기록 화면을 점검해 정보 우선순위와 빈 상태를 정리
-- 쿠폰 상세의 고정 완료 액션 바와 본문이 겹치지 않도록 불투명 하단 영역과 여백을 적용
-- 사진 자동 확인에서 권한 범위와 재확인 행동을 분리하고, 판매글 준비 화면에서 거래 사이트 선택·초안 확인·복사 행동을 세로 흐름으로 구성
-- 로그인·작성 URL 이동이 필요한 WebView에서는 자동 입력이 불가능한 경우를 고려해 복사 후 직접 붙여 넣는 fallback 흐름을 제공
+- Flutter 기반 쿠폰 관리 앱을 기획·구현하고 Google Play 심사·배포까지 1인으로 진행
+- 외부 통신 없는 온디바이스 OCR과 이미지 로컬 처리로 쿠폰 정보를 관리하고, 유효기간 기반 로컬 알림과 지도 연동 사용처 검색 구현
+- 쿠폰 검색·보관·회수 및 회수 기록을 연결하고, 사진 접근 권한 범위와 재확인 행동을 분리해 모바일 흐름 구성
+- C2C 판매 준비에 바코드 마스킹과 판매글 템플릿 초안을 적용하고, WebView 자동 입력이 어려운 경우 복사·붙여넣기 fallback 제공
+- 모바일 화면의 정보 우선순위·빈 상태를 점검하고, 쿠폰 상세의 고정 액션 바와 본문이 겹치지 않도록 하단 영역과 여백 조정
+- **Google Play:** https://play.google.com/store/apps/details?id=com.pocketportal.pocket_portal
 
 ---
 
@@ -142,16 +143,16 @@ Outbox 최초 도입은 2026-01-02, Lua 매칭 이력은 2026-01-30이므로
 
 ## Education
 
-### 부산고등학교
-`2008.03 ~ 2011.02` · 졸업
-
----
-
 ### 동명대학교 (4년제)
 `2015.03 ~ 2019.03` · 졸업
 - **전공**: 로봇시스템공학과 (이과계열)
 - **학점**: 3.72 / 4.5
 - **졸업 작품/논문**: 도립진자 제어 시스템 설계 및 구현
+
+---
+
+### 부산고등학교
+`2008.03 ~ 2011.02` · 졸업
 
 ---
 
@@ -165,6 +166,10 @@ Outbox 최초 도입은 2026-01-02, Lua 매칭 이력은 2026-01-30이므로
 `2022.04 ~ 2022.07` (640시간)
 - Java/Spring 기반 풀스택 인텐시브 개발 교육 수료
 
+### 공공빅데이터 교육
+`2020.08 ~ 2020.09`
+- 빅데이터 활용 과정 수료 및 우수상 수상
+
 ### 더조은컴퓨터학원 | 응용소프트웨어 JAVA개발자 양성과정
 `2019.10 ~ 2020.03` (840시간)
 - Java/RDBMS 애플리케이션 개발 전문과정 수료
@@ -172,10 +177,6 @@ Outbox 최초 도입은 2026-01-02, Lua 매칭 이력은 2026-01-30이므로
 ### 포스텍 (포항공과대학교) | 포스코 AI / Big Data 교육
 `2019.04 ~ 2019.06` (480시간)
 - AI 및 데이터 분석 파이프라인 교육 수료 및 최우수조 선정
-
-### 공공빅데이터 교육
-`2020.08 ~ 2020.09`
-- 빅데이터 활용 과정 수료 및 우수상 수상
 
 ---
 
@@ -188,12 +189,20 @@ Outbox 최초 도입은 2026-01-02, Lua 매칭 이력은 2026-01-30이므로
 
 ## Activities & Volunteer
 
-- **동명대학교 로봇시스템공학과 학생회장** | `2016.03 ~ 2016.12`
 - **대한적십자 헌혈은장 (120회 이상)** | `2010.07 ~ 2019.09`
+- **동명대학교 로봇시스템공학과 학생회장** | `2016.03 ~ 2016.12`
 
 ---
 
 ## Additional Project
+
+### Card Draft: Three Factions
+`2026.11 ~ 현재` · `AI-Assisted Development` `Android` `Deck Building RPG` `Google Play Store`
+- **Google Play**: https://play.google.com/store/apps/details?id=com.card_draft
+- AI 기반 코드 생성 및 반복 프로토타이핑을 활용해 5~10분 세션 호흡의 모바일 싱글플레이 덱빌딩 카드 RPG 1인 제작 및 출시
+- 3대 세력 필살기 시스템, 5칸 전장 전투, 상태 이상 및 시너지 연계 등 턴제 전투 규칙 및 데이터 구조 설계
+- Android 16 호환성 검증 및 오프라인 환경에 최적화된 모바일 조작 안정성 확보
+- 스토어 출시 및 운영: Google Play Store 배포 (`com.card_draft`)
 
 ### 와글와글 소모임
 `2023.09 ~ 2023.10` · `Java` `Spring Boot` `Spring Security` `OAuth2` `JWT`
