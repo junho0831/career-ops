@@ -1,0 +1,22 @@
+# 이노션 — 데이터 엔지니어 (Digital Analytics)
+
+- **ID**: #2291
+- **Company**: 이노션
+- **Role**: 데이터 엔지니어 (Digital Analytics)
+- **Location**: 서울 서초 (경력)
+- **Date**: 2026-11-22
+- **Status**: Applied
+- **URL**: https://innocean.recruiter.co.kr/career/jobs/128457
+- **Source**: Jasoseol (자소설닷컴 실시간 공고 선별)
+
+## Tailoring Summary
+- **Position**: 이노션 데이터 엔지니어 (Digital Analytics)
+- **Application Method**: Direct Career Portal via Jasoseol (자소설닷컴 공식 연계 지원)
+- **Resume Attached**: 데이터 정합성과 배치 성능을 개선하는 Data/Batch Backend Engineer 박준호 (대표 이력서, 신규 출시 앱 2종 반영)
+- **Key Technical Alignment**:
+  - 현대차그룹 글로벌 디지털 마케팅 데이터 파이프라인 구축 및 BigQuery 분석 마트 모델링
+  - Spring Boot / Java / Python 기반 고가용성 백엔드 및 대용량 배치/데이터 파이프라인 역량 강조
+  - 실시간 결제/데이터 트랜잭션 무결성 및 인프라 운영 자동화 경험 일치
+
+- **Submission Verification**:
+  - Status: Completed (Applied)
